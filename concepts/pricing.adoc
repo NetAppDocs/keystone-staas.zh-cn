@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: concepts/pricing.html 
+keywords: pricing, billing introduction, Keystone billing 
+summary: Keystone定价 
+---
+= Keystone定价
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone 可以为您的存储订阅提供可预测的前期定价。
+
+如果您更喜欢运营支出(OpEx)消费模式而不是资本支出(Capex)或租赁模式、则可以选择Keystone按需购买模式来满足您灵活且可扩展的消费需求。
+
+Keystone为您提供了以下计费工具：
+
+* 您可以根据已提交的 IOPS 和延迟容量付费，以满足各种工作负载需求。不同的性能服务层—极高、高级、性能、标准、价值、 通过对象、您可以根据为Keystone购买的服务级别管理存储。
+* 它可以为已提交容量提供可预测的计费，并按使用情况为可变（突发）容量使用量付费。
+* 您可以为硬件，核心操作系统选择捆绑包价格，并以每 TiB 价格获得支持。对于每种存储类型，文件，块，对象或云存储服务，您都有一张发票。
+* 选择灵活的服务和付款期限：您可以选择每个站点12个月、25 TiB或更多。此后、您可以自动续订12个月。
+
+
+Keystone计费基于已提交容量和可变突发消耗量。
+
+有关Keystone中支持的不同容量的信息、请参见 link:../concepts/supported-storage-capacity.html["Keystone支持的存储容量"]

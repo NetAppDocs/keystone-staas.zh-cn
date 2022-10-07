@@ -1,0 +1,137 @@
+---
+sidebar: sidebar 
+permalink: concepts/equinix.html 
+keywords: netapp, keystone, Equinix 
+summary: Keystone和Equinix 
+---
+= 由Equinix提供支持的Keystone联合定位服务
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp与Equinix合作、在Equinix数据中心托管NetApp Keystone 服务、以确保为您提供统一的解决方案。
+
+Equinix提供的Keystone联合定位(Co-Lo)服务与标准Keystone服务产品保持不变。
+
+在此服务中：
+
+* Equinix提供空间、电力、散热、网络和发票、 和存储。
+* 为某些Keystone销售申请提供支持。
+* 这些服务在11个国家或地区的21个数据中心中均受支持。
+
+
+Equinix的数据中心位于以下位置：
+
+|===
+| 数据中心 | 国家 / 地区 
+
+
+ a| 
+阿姆斯特丹
+| 荷兰 
+
+
+ a| 
+亚特兰大
+| U.S. 
+
+
+ a| 
+芝加哥
+| U.S. 
+
+
+ a| 
+达拉斯
+| U.S. 
+
+
+ a| 
+丹佛
+| U.S. 
+
+
+ a| 
+法兰克福
+| 德国 
+
+
+ a| 
+伦敦
+| 英国 
+
+
+ a| 
+失去了洛杉矶
+| U.S. 
+
+
+ a| 
+马德里
+| 西班牙 
+
+
+ a| 
+墨尔本
+| 澳大利亚 
+
+
+ a| 
+迈阿密
+| U.S. 
+
+
+ a| 
+米兰
+| 意大利 
+
+
+ a| 
+大城
+| 日本 
+
+
+ a| 
+巴黎
+| 法国 
+
+
+ a| 
+西雅图
+| U.S. 
+
+
+ a| 
+硅谷
+| U.S. 
+
+
+ a| 
+悉尼
+| 澳大利亚 
+
+
+ a| 
+东京
+| 日本 
+
+
+ a| 
+Toronto
+| 加拿大 
+
+
+ a| 
+华盛顿州
+| U.S. 
+
+
+ a| 
+苏黎世
+| 瑞士 
+|===

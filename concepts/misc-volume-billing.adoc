@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: concepts/misc-volume-billing.html 
+keywords: Billing and miscellaneous scenarios 
+summary: 根据其他卷类型计费 
+---
+= Keystone计费的其他方案
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone计费有多种情形、您应熟悉这些情形。
+
+
+
+== 为克隆的卷计费
+
+如果在 ONTAP 中克隆了卷，而您使用这些卷来备份和还原数据，则可以继续使用这些克隆，而无需支付任何额外费用。但是，在您的业务中用于任何其他目的的克隆卷会收取很长时间的费用。
+
+请注意以下事项：
+
+* 在克隆创建的前 24 小时内不会考虑克隆卷上的消耗量；在此期间不会产生任何费用。
+* 如果没有向卷写入新数据、则不会考虑使用具有标准和价值服务级别的克隆卷。例如，在备份或还原使用情形中，从克隆卷备份或还原数据不会更改克隆卷本身中的数据，也不会将其视为消耗。
+
+
+
+
+== 高级数据保护计费
+
+高级数据保护使用 NetApp MetroCluster 在两个物理隔离的集群之间镜像数据。对于MetroCluster 镜像聚合、数据写入两次、每个集群一次。Keystone服务会单独为每一方的消费收取费用、从而产生两个相同的消费记录。如果您通过ONTAP System Manager (System Manager)或Active IQ Unified Manager (Unified Manager)监控集群、则可能会发现这些工具上报告的使用量与Keystone上报告的使用量之间存在差异。System Manager和Unified Manager不会报告镜像(远程)集群上的卷、在这样做时、会报告Keystone服务报告的一半使用指标。
+
+站点A和站点B在MetroCluster 配置中设置。当用户在站点 A 中创建一个 10 TB 的卷时，会在站点 B 中创建一个 10 TB 的相同卷Keystone可确定每个站点的10 TB使用量、总增加量为20 TB。System Manager和Unified Manager报告在站点A中创建了10 TB卷、但不报告站点B中的10 TB卷
+
+此外、在具有高级数据保护的Keystone系统上创建的所有卷都将计入高级数据保护的使用量、而不管这些卷是否已镜像。
+
+
+
+== 临时卷的计费
+
+有时， ONTAP 会在移动卷时创建临时（ TMP ）卷。这些临时卷的使用寿命很短，不会对这些卷上的使用量进行计费。
+
+
+
+== 计费和自适应 QoS 策略
+
+Keystone根据服务级别衡量使用情况。每个服务级别都与一个特定的自适应服务质量(QoS)策略相关联。在部署期间、您将了解所订阅的Keystone服务的每个QoS策略的详细信息。在存储管理操作期间、请确保您的卷已根据您订阅的服务级别分配适当的QoS策略、以避免意外计费。有关 ONTAP 中 QoS 策略的详细信息，请参见 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"]。
+
+
+
+== 为 SnapMirror 目标计费
+
+受在源上分配的服务级别的QoS策略管理的SnapMirror目标卷的定价。但是，如果源没有关联的 QoS 策略，则会根据最低可用服务级别对目标进行计费。
+
+
+
+== LUN 计费
+
+对于 LUN ，通常遵循与受 QoS 策略管理的卷相同的计费模式。如果在 LUN 上设置了单独的 QoS 策略，则：
+
+* LUN 的大小将根据该 LUN 的关联服务级别进行计数以供使用。
+* 卷中的剩余空间（如果有）将根据卷上设置的服务级别的 QoS 策略进行收费。
+
+
+
+
+== 系统卷和根卷
+
+系统卷和根卷会作为Keystone服务整体监控的一部分进行监控、但不会计入或计费。这些卷上的消费免除计费。

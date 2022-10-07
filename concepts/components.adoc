@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: concepts/components.html 
+keywords: infrastructure component, deployment requirement, installation requirement 
+summary: 基础架构组件 
+---
+= 用于部署的组件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+在您的环境中启用NetApp Keystone 服务有多种要求。
+
+
+
+== 站点要求
+
+某些站点特定的要求、例如空间、机架、PDU、电源、 和散热、以及此处讨论的其他网络和安全要求。
+
+
+
+=== 空间
+
+用于托管Keystone基础架构设备的占地空间(由客户提供)。NetApp 会根据最终配置提供重量规格。
+
+
+
+=== 机架
+
+客户运营的产品中的四个后机架（由客户提供）。在 NetApp 运营的产品中， NetApp 或客户均可根据要求提供机架。NetApp 提供 42 个深机架。
+
+
+
+=== PDU
+
+您应提供配电单元（ PDU ），该配电单元连接到两个单独的受保护电路，并具有足够的 C13 插座。在客户运营的产品中，在某些情况下，需要 C19 网点。在NetApp运营的产品中、NetApp或客户均可根据要求提供PDU。
+
+
+
+=== 电源
+
+您应提供所需的电源。NetApp 将根据 200V 额定电压（典型 A ，最大 A ，典型 W ，最大 W ，电源线类型， 和数量），具体取决于最终配置。所有组件都具有冗余电源。NetApp 将提供机柜内电源线。
+
+
+
+=== 散热
+
+NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU ，最大 BTU ）。
+
+
+
+=== Storage Virtual Machine
+
+部署Storage Virtual Machine (Storage VM)时应遵循以下要求、以支持监控和计量Keystone订阅。Keystone收集器需要一个Storage VM；OpsRamp网关需要另一个Storage VM
+
+* Keystone收集器—用于收集使用情况指标：
++
+** vCPU：4
+** VRAM：16 GB
+** vDisk：200 GB
+
+
+* OpsRamp网关—用于实时监控+ Keystone GSSC提供的远程支持ONTAP ：
++
+** vCPU：8
+** VRAM：16 GB
+** vDisk：100 GB
+
+
+
+
+
+
+=== 部署选项
+
+可以通过以下方法部署Keystone收集器：
+
+* VMware OVA模板(需要VMware vCenter Server 6.7或更高版本)
+* 客户提供Red Hat Enterprise Linux 7或8或CentOS 7 Linux服务器、并通过`.rpm`安装过程安装Keystone软件。
+
+
+OpsRamp网关部署在以下配置中：
+
+* VMware OVA模板(需要VMware vCenter Server 6.7或更高版本)
+* 可启动的.iso安装程序
++
+** Citrix XenServer
+** Microsoft Hyper-V
+** 基于内核的虚拟机(Linux KVM)
+
+
+
+
+
+
+=== 网络
+
+要运行和维护Keystone收集器和OpsRamp网关、需要对以下服务进行出站访问：
+
+* support.netapp.com (使用情况数据上传)
+* keystone.netapp.com (软件更新)
+* hub.docker.io (软件更新)
+
+
+根据客户要求和使用的存储控制器、NetApp可以在客户站点提供10 GB、40 GB和100 GB连接。
+
+NetApp仅为NetApp提供的基础架构设备提供所需的收发器。您应提供客户设备所需的收发器、并使用缆线连接到NetApp提供的Keystone基础架构设备。
+
+
+
+== 远程访问要求
+
+客户数据中心安装的存储基础架构或客户拥有的同地服务与Keystone运营中心之间需要网络连接。客户负责提供计算和虚拟机以及互联网服务。网络设计将采用安全协议、NetApp和客户都将批准防火墙策略。
+
+NetApp需要访问为监控和管理而安装的硬件和软件组件、以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络(VPN)连接并访问所需数据。为了克服客户认为因向新服务打开防火墙端口而导致的任何操作复杂性、监控工具会启动外部连接。OpsRamp和Zuora等NetApp云应用程序使用此连接来执行相应的服务。此方法可满足客户的要求、即不打开防火墙端口、但可以访问属于此服务一部分的监控组件。

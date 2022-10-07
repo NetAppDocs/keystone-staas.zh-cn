@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: concepts/infra.html 
+keywords: keystone infrastructure, infra 
+summary: Keystone基础架构 
+---
+= Keystone基础架构
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+本节介绍适用于NetApp和客户操作环境的NetApp Keystone 基础架构、架构和管理应用程序。
+
+Keystone基础架构、设计、技术选择和组件产品仅由NetApp提供。NetApp 保留采取以下操作的权利：
+
+* 选择，替换或重新利用产品。
+* 如果认为合适，请使用新技术更新产品。
+* 增加或减少产品容量以满足服务要求。
+* 修改架构，技术和 / 或产品以满足服务要求。
+
+
+Keystone基础架构包括多个组件、例如以下组件：
+
+* 包括存储控制器的Keystone基础架构
+* 用于管理和运行服务的工具，例如 OpsRamp ， Active IQ 和 Active IQ Unified Manager 。
+
+
+
+
+== 存储平台
+
+企业级应用程序需要存储平台来支持快速配置工作流、保持持续可用性、以低延迟持续运行高工作负载、提供更高的性能、并支持与主要云提供商的集成。NetApp提供了多种产品和技术来满足这些要求。对于Keystone服务、NetApp使用AFF 和StorageGRID 平台。
+
+
+
+== 监控工具
+
+在Keystone客户运营的服务中、存储基础架构和监控工具会安装在您的站点上。存储基础架构由支持初始订单所需的存储硬件组成、并可配置为稍后订购更多存储。
+
+除了存储设备之外、还配置了两个监控工具来监控存储和使用情况。
+
+* OpsRamp本地网关：OpsRamp是一个基于云的应用程序、用于监控您的网络。它内置了与NetApp存储平台的集成功能、可用于收集环境数据并监控网络。通过使用您站点上安装的本地网关与云门户进行通信、可以启用此服务。有关信息、请参见
+* Keystone Data Collector：Keystone收集器为Keystone客户提供计费服务。此应用程序与Active IQ Unified Manager 捆绑在一起。它每五分钟定期从ONTAP 和StorageGRID 控制器收集一次数据。处理数据、并通过用于生成计费数据的AutoSupport 机制将元数据发送到集中式Active IQ 数据湖。Active IQ 数据湖处理数据以进行计费、并将其发送给Zuora进行计费。您可以通过Active IQ 数字顾问客户门户登录并查看Keystone订阅的订阅和消费详细信息。
+
+
+image:mgmt-stack.png[""]
+
+有关详细信息，请参见 link:../integrations/keystone-aiq.html["Keystone和Active IQ 数字顾问"]

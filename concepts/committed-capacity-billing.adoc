@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: concepts/committed-capacity-billing.html 
+keywords: Billing based on committed capacity, committed capacity billing 
+summary: 支持的存储容量 
+---
+= 根据已提交容量计费
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone (Keystone)计费基于在Keystone服务订阅中为您承诺的容量。
+
+已承诺容量是指您和NetApp/合作伙伴接受的单一订阅中各种服务的容量。此容量在每个Keystone订单上进行说明、并会进行计费、而不管实际消耗量如何。
+
+有关Keystone中支持的不同容量的信息、请参见 link:../concepts/supported-storage-capacity.html["Keystone支持的存储容量"]

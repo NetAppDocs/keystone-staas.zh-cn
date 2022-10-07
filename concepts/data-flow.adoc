@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-flow.html 
+keywords: data flow 
+summary: Keystone数据流 
+---
+= Keystone数据流
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone系统会遇到通过Keystone收集器流量和监控数据流这两个系统的数据流。
+
+
+
+== Keystone收集器数据流
+
+Keystone收集器会定期对存储控制器启动REST API调用、并获取控制器的使用情况详细信息、如下图所述：。
+
+image:collector-data-flow.png[""]
+
+.图例
+. NetApp收集器启动与Active-IQ云门户的HTTPS会话。
+. 客户操作的防火墙必须允许此连接。
+. Active IQ 云门户接受此连接并与NetApp收集器建立通道。
+. NetApp收集器会建立一个与存储控制器的管理连接的REST API会话、获取环境数据并将其发送到Active IQ 门户。
+
+
+
+
+== 监控数据流
+
+持续监控存储基础架构的运行状况是Keystone服务最重要的功能之一。Keystone使用OpsRamp进行监控、需要远程访问客户网络。下图介绍了OpsRamp工具如何保护对客户位置的远程访问。
+
+image:monitoring-flow.png[""]
+
+.图例
+. OpsRamp网关启动与云中的OpsRamp云门户的TLS会话。
+. 客户操作的防火墙必须允许此连接。
+. 云中的OpsRamp服务器接受连接。
+. 在OpsRamp云门户和OpsRamp本地网关之间建立TLS通道。
+. NetApp控制器使用SNMP协议发送警报或响应API请求到OpsRamp本地网关。
+. OpsRamp本地网关使用之前建立的TLS会话将这些警报发送到其云门户。
+

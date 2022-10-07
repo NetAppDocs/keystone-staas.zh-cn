@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: concepts/billing-schedules.html 
+keywords: billing schedules, schedule for payment 
+summary: Keystone中的计费计划 
+---
+= 计费计划
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone订阅按月和按年计费。
+
+
+
+== 按月计费
+
+发票每月发送一次。对于提供服务的月份，将在下个月发送发票。例如，您在 1 月份使用的服务的发票将在 2 月初交付。此发票包括已提交容量的费用以及任何突发使用情况（如果适用）。
+
+
+
+== 按年计费
+
+在每个订阅年度开始时，系统会为已提交容量的最低付款生成一张发票。它会在订阅开始日期生成。订阅季度结束时会发送另一张发票，汇总该季度累积的任何突发使用量的适用费用。如果已提交容量在订阅期间发生更改，则会在已提交容量更改生效的当天为该订阅年度其余时间按比例分配的最低付款发送发票。

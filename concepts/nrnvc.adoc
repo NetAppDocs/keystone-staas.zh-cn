@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: concepts/nrnvc.html 
+keywords: Non-returnable, non-volatile components, SnapLock compliance, add-on service 
+summary: 不可退回的非易失性组件以及SnapLock 合规性 
+---
+= 不可退回的非易失性组件以及SnapLock 合规性
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+作为NetApp Keystone 订阅的一部分、NetApp为您的文件、块和对象服务扩展了不可退回的非易失性组件(NRNVC)服务。
+
+您可以在Keystone订阅中订阅此附加服务。有关基础存储和云存储服务的信息、请参见 link:supported-storage-services.html["支持的存储服务"]
+
+有关服务级别的信息、请参见 link:../concepts/service-levels.html["Keystone中的服务级别"]
+
+如果NetApp以其他方式恢复其在交付服务时使用的所有物理资产、则NetApp不会恢复在整个服务期限内或服务终止时使用的物理存储介质。
+
+如果您已购买此服务，请注意以下事项：
+
+* 在服务期限结束时、或者在服务期限内出现故障或发现有缺陷时、您无需退回任何驱动器和非易失性内存。
+* 但是、您需要为驱动器和/或非易失性内存生成销毁证书、不能用于任何其他目的。
+* 与NRNVC相关的额外成本按总存储服务(包括存储服务、高级数据保护和数据分层)每月账单的百分比进行计费。
+* 此服务仅适用于文件、块和对象服务。
+
+
+
+
+== SnapLock 合规性
+
+SnapLock 技术可在卷中设置的到期日期之后使驱动器不可用、从而启用NRNVC功能。要在卷上使用SnapLock 技术、您需要订阅NRNVC。这仅适用于文件和块服务。
+
+有关SnapLock 技术的信息、请参见 https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html["什么是 SnapLock"]

@@ -1,0 +1,77 @@
+---
+sidebar: sidebar 
+permalink: concepts/operational-models.html 
+keywords: Operational models, partner operations, customer operations, roles and responsibilities, r&r 
+summary: Keystone中的操作模式 
+---
+= Keystone中的操作模式
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone (Keystone)提供了两种服务交付运营模式：合作伙伴运营模式和客户运营模式。
+
+* *合作伙伴运营模式*：在此模式下、合作伙伴或服务提供商将为其最终客户运营服务。对于NetApp、合作伙伴是参考的合同方。租户是合作伙伴的客户、与NetApp没有任何计费关系。合作伙伴运营的模式通常具有多租户环境、其中租户和最终客户/子租户拥有自己的订阅、并由合作伙伴付费。配对管理员对所有租户执行管理任务。
+* *客户运营模式*：在客户运营模式下、作为客户、您可以根据选定的性能层和存储服务类型订阅Keystone服务。NetApp定义了架构和产品、并在您的内部部署Keystone。您需要通过存储和IT资源管理基础架构。作为客户、您是NetApp或合作伙伴/服务提供商的租户或子租户、根据您的合同、您可以提出由NetApp或您的服务提供商处理的服务请求。您的客户管理员可以从您的站点(环境)中执行管理任务。这些任务与环境中的用户相关联。
+
+
+
+
+== 整个服务生命周期中的角色和职责
+
+* * 合作伙伴运营模式 * ：角色和职责的份额取决于您与服务提供商或合作伙伴之间的 SLA 。有关信息，请联系您的服务提供商。
+* * 客户运营模式 * ：下表总结了整体服务生命周期模式以及在客户运营的环境中与其相关的角色和职责。
+
+
+|===
+| 任务 | NetApp | 客户 
+
+
+ a| 
+安装及相关任务
+
+* 安装
+* 配置
+* 部署
+* 板载
+
+| image:check.png[""] | 无 
+
+
+ a| 
+管理和监控
+
+* 监控
+* report
+* 执行管理任务
+* 警报
+
+| 无 | image:check.png[""] 
+
+
+ a| 
+操作和优化
+
+* 管理容量
+* 管理性能
+* 管理 SLA
+
+| 无 | image:check.png[""] 
+
+
+ a| 
+支持
+
+* 为客户提供支持
+* 硬件中断修复
+* 软件支持
+* 升级和修补程序
+
+| image:check.png[""] | 无 
+|===
+有关部署的详细信息、请参见 link:../concepts/infra.html["Keystone基础架构"] 和 link:..//concepts/components.html["用于部署的组件"]
