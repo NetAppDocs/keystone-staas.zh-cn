@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>Keystone中的服务质量(QoS)</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Keystone中的服务质量(QoS)" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/keystone-staas/concepts/qos.html" />
+	<meta property="og:description" content="Keystone的服务质量" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/keystone-staas/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Keystone的服务质量">
+  <meta name="keywords" content=" PSL and QoS, service level quality of service"><!-- Icons -->
+  <link rel="icon" href="/zh-cn/keystone-staas/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-cn/keystone-staas/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-cn/keystone-staas/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/custom-dropdown.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    function addAdobeLaunch(adobeId) {
+      var head = document.getElementsByTagName('head')[0];
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/"+adobeId+".min.js";
+      head.appendChild(adobe);
+    }
+
+    function addGoogleAnalytics(gtagId) {
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id="+gtagId;
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gtagId);
+    }
+
+    function addConsent(consentId) {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/"+consentId+"/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = consentId;
+      head.appendChild(onetrustScript);
+    }addConsent("72570c5c-fe30-465f-b0e0-b77f7fb4ae34");
+    addAdobeLaunch("launch-e9ff3acac59f");
+    addGoogleAnalytics("UA-81697994-3");function OptanonWrapper() { }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/keystone-staas/js/na-search.js'></script><script src='/zh-cn/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-cn/keystone-staas/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-cn/keystone-staas/js/na-utility.js'></script>
+  <script src='/zh-cn/keystone-staas/js/clouddocs.js'></script>
+  <script src='/zh-cn/keystone-staas/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-cn/keystone-staas/js/toc.js'></script>
+  <script src='/zh-cn/keystone-staas/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/zh-cn/keystone-staas/js/custom-dropdown.js'></script>
+  <script src='/zh-cn/keystone-staas/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/keystone-staas/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/keystone-staas/js/jszip.min.js'></script>
+  <script src='/zh-cn/keystone-staas/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/keystone-staas/issues/new?body=Page%3A%20[Keystone中的服务质量(QoS)](https://docs.netapp.com/zh-cn/keystone-staas/concepts/qos.html)&template=public-issue-template.md" class="page-nav-contribute-link" role="button"><img src="/zh-cn/keystone-staas/images/discuss-sm.svg" alt="" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/keystone-staas/blob/main/concepts/qos.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/keystone-staas/images/edit-sm.svg" alt="" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/keystone-staas/images/article-sm.svg" alt="" class="github-icon" />提供者指南</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此页面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">产品和解决方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支持和培训</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">云中心</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社区</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">日志</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客户案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-cn/keystone-staas/search.html"
+          data-type="widget" 
+          data-placeholder="搜索文档"
+          data-no-results-found="未找到与 {query} 匹配的结果。"
+          data-did-you-mean="搜索 {suggestion}。"
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?"
+          data-results-found="找到 {hitCount} 个结果"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone-staas/concepts/qos.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone-staas/concepts/qos.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone-staas/concepts/qos.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone-staas/concepts/qos.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone-staas/concepts/qos.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone-staas/concepts/qos.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone-staas/concepts/qos.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <button id="btn-sidebar-collapse" onclick="hideSidebar()"><img src="/zh-cn/keystone-staas/images/collapse.png" alt="折叠导航面板"></button>
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-cn/keystone-staas/images/pdf.png" alt="" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/zh-cn/keystone-staas/pdfs/fullsite-sidebar/Keystone文档.pdf" >
+          <img src="/zh-cn/keystone-staas/images/pdf.png" alt="" width="16" height="16"/>此文档站点的 PDF</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone-staas/pdfs/sidebar/入门.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone-staas/images/pdf.png" alt="" width="16" height="16"/>
+            入门
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone-staas/pdfs/sidebar/附加服务.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone-staas/images/pdf.png" alt="" width="16" height="16"/>
+            附加服务
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone-staas/pdfs/sidebar/有关服务级别的更多信息.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone-staas/images/pdf.png" alt="" width="16" height="16"/>
+            有关服务级别的更多信息
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone-staas/pdfs/sidebar/计费.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone-staas/images/pdf.png" alt="" width="16" height="16"/>
+            计费
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone-staas/pdfs/sidebar/Keystone基础架构.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone-staas/images/pdf.png" alt="" width="16" height="16"/>
+            Keystone基础架构
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone-staas/pdfs/sidebar/利用Keystone服务完成更多任务.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone-staas/images/pdf.png" alt="" width="16" height="16"/>
+            利用Keystone服务完成更多任务
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-cn/keystone-staas/images/pdf-zip.png" alt="" width="16" height="16"/>
+      <pre>收集单独的 PDF 文档<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone文档"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/index.html">
+        Keystone文档
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="入门"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> 入门</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="了解Keystone"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/overview.html">
+        了解Keystone
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone支持的存储容量"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/supported-storage-capacity.html">
+        Keystone支持的存储容量
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone服务的指标和定义"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/metrics.html">
+        Keystone服务的指标和定义
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone中支持的存储类型"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/supported-storage-services.html">
+        Keystone中支持的存储类型
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone中的服务级别"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/service-levels.html">
+        Keystone中的服务级别
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="附加服务"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> 附加服务</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="数据分层"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/data-tiering.html">
+        数据分层
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="高级数据保护"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/adp.html">
+        高级数据保护
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="U.S.公民支持(USCS)"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/uscs.html">
+        U.S.公民支持(USCS)
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="不可退回的非易失性组件以及SnapLock 合规性"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/nrnvc.html">
+        不可退回的非易失性组件以及SnapLock 合规性
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone和Equinix"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/equinix.html">
+        Keystone和Equinix
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="有关服务级别的更多信息"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> 有关服务级别的更多信息</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Quality of service"
+      data-li-level="2#" 
+      class="  active "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/qos.html">
+        Quality of service
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="服务级别的容量要求"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/capacity-requirements.html">
+        服务级别的容量要求
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="计费"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> 计费</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone定价"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/pricing.html">
+        Keystone定价
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="根据已提交容量计费"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/committed-capacity-billing.html">
+        根据已提交容量计费
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="根据已用容量进行计量"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/consumed-capacity-billing.html">
+        根据已用容量进行计量
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="按突发消耗计费"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/burst-consumption-billing.html">
+        按突发消耗计费
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="根据其他卷类型计费"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/misc-volume-billing.html">
+        根据其他卷类型计费
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="计费计划"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/billing-schedules.html">
+        计费计划
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="合作伙伴和客户运营的环境"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/operational-models.html">
+        合作伙伴和客户运营的环境
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone基础架构"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Keystone基础架构</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="基础架构详细信息"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/infra.html">
+        基础架构详细信息
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="组件"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/components.html">
+        组件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="将OpsRamp用作监控应用程序"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/opsramp.html">
+        将OpsRamp用作监控应用程序
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="数据流"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/data-flow.html">
+        数据流
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp全球服务支持中心"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/concepts/gssc.html">
+        NetApp全球服务支持中心
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="利用Keystone服务完成更多任务"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> 利用Keystone服务完成更多任务</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone和Cloud Manager"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/integrations/keystone-cm.html">
+        Keystone和Cloud Manager
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone和Active IQ 数字顾问"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/integrations/keystone-aiq.html">
+        Keystone和Active IQ 数字顾问
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律声明"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/zh-cn/keystone-staas/legal-notices.html">
+        法律声明
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <div class="ie-utility">
+  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/zh-cn/keystone-staas/images/expand.png" alt="展开导航面板"></button>
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-cn/keystone-staas/">Keystone</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Keystone中的服务质量(QoS)</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-10-07 21:19:06 +0000">10/07/2022</time>
+    
+  
+
+<span>提供者
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如启动多个系统)可能会占用整个资源一段时间、并影响其他工作负载。有关QoS的信息、请参见 <a href="https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html">"QoS 概述保证吞吐量"</a>。</p>
+</div>
+<div class="paragraph">
+<p>应用QoS可确保应用程序每次都能获得一致的性能。NetApp ONTAP 为QoS上限定义了两个参数- <a href="https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-ceilings-qos-max">"QoS最大值"</a>和吞吐量下限- <a href="https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-floors-qos-min">"QoS最小值"</a>。QoS最大值表示工作负载可以达到的最大IOPS或MBps或IOPS和MBps数。另一方面、QoS最小值可保证工作负载的吞吐量不低于特定数量的IOPS或MBps、或者IOPS和MBps。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="自适应-qos">自适应 QoS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>自适应QoS用于Keystone服务、该服务会在大小发生变化时保持IOPS与TB/ GB的比率、并自动应用QoS策略。有关自适应QoS的信息、请参见 <a href="https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos">"关于自适应 QoS"</a>。</p>
+</div>
+<div class="paragraph">
+<p>Keystone为您提供了自适应QoS策略、您可以在集群投入生产后设置这些策略。您应确保所有卷都与系统中已创建且可用的正确自适应QoS策略相关联。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone-staas/images/note.svg" alt="注">
+</td>
+<td class="content">
+如果未正确对卷应用自适应QoS策略、则会根据您的订阅以最高服务级别对这些卷进行测量和计费。这可能会导致意外的突发费用。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="配置自适应qos策略组">配置自适应QoS策略组</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>您可以配置自适应QoS策略、以便根据卷大小自动扩展吞吐量上限或下限。要配置策略、您应注意以下事项：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>策略组名称：自适应QoS策略组的名称。例如、<code>Keystone_Extreme</code>。</p>
+</li>
+<li>
+<p>vserver：Vserver或Storage VM (Storage Virtual Machine)的名称。</p>
+</li>
+<li>
+<p>预期IOPS：只要有性能保证、ONTAP 至少提供的IOPS/TiB数。</p>
+</li>
+<li>
+<p>峰值IOPS。在性能受到限制之前、卷可以使用的最大IOPS/TiB数。</p>
+</li>
+<li>
+<p>预期IOPS分配：预期IOPS是考虑已分配空间还是已用空间。此字段控制卷的预期可用IOPS是基于卷的已配置大小还是已用大小。在Keystone中、所有QoS计算均基于已用空间。</p>
+</li>
+<li>
+<p>峰值IOPS分配：峰值IOPS是考虑已分配空间还是已用空间。此字段控制卷可用的峰值IOPS是基于卷的已配置大小还是已用大小。在Keystone中、所有QoS计算均基于已用空间。</p>
+</li>
+<li>
+<p>绝对最小IOPS：如果卷大小非常小、并且可能会导致IOPS数量不可接受、则应用于卷的最低预期IOPS数。对于`Extreme`、此值默认为1、000；对于`Premium`、此值默认为500；对于其他服务级别、此值默认为75。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone-staas/images/note.svg" alt="注">
+</td>
+<td class="content">
+这不是IOPS密度(例如75 IOPS/TiB)、而是绝对最小IOPS数。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/ontap/performance-admin/adaptive-qos-policy-groups-task.html">"使用自适应 QoS 策略组"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="自适应qos策略的设置">自适应QoS策略的设置</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>自适应QoS策略的设置因每个服务级别而异。</p>
+</div>
+<div class="sect2">
+<h3 id="至尊服务级别的设置">至尊服务级别的设置</h3>
+<div class="paragraph">
+<p>对于至尊服务级别、请使用以下设置和命令：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>命令示例：</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>qos adaptive-policy-group create -policy group &lt;Keystone_extreme&gt; -vserver &lt;SVM_name&gt; -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation used-space -peak-iops-allocation used-space -block-size 32K</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>最小卷大小：100 GiB、0.1 TiB</p>
+</li>
+<li>
+<p>最大卷大小：10 TiB</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="高级服务级别的设置">高级服务级别的设置</h3>
+<div class="paragraph">
+<p>对于高级服务级别、以下是设置和命令：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>命令示例：</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>qos adaptive-policy-group create -policy group &lt;Keystone_premium&gt; -vserver &lt;SVM_name&gt; -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation used-space -peak-iops-allocation used-space -block-size 32K</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>最小卷大小：500 GiB、0.5 TiB</p>
+</li>
+<li>
+<p>最大卷大小：50 TiB</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="性能服务级别的设置">性能服务级别的设置</h3>
+<div class="paragraph">
+<p>对于性能服务级别、请使用以下设置和命令：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>命令示例：</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>qos adaptive-policy-group create -policy group &lt;Keystone_performance&gt; -vserver &lt;SVM_name&gt; -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation used-space -peak-iops-allocation used-space -block-size 32K</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>最小卷大小：500 GiB、0.5 TiB</p>
+</li>
+<li>
+<p>最大卷大小：80 TiB</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="值服务级别的设置">值服务级别的设置</h3>
+<div class="paragraph">
+<p>对于价值服务级别、请使用以下设置和命令：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>命令示例：</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>qos adaptive-policy-group create -policy group &lt;Keystone_premium&gt; -vserver &lt;SVM_name&gt; -expected-iops 64 -peak-iops 128 -expected-iops-allocation used-space -peak-iops-allocation used-space -block-size 32K</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>最小卷大小：1 TiB</p>
+</li>
+<li>
+<p>最大卷大小：100 TiB</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="卷大小建议">卷大小建议</h3>
+<div class="paragraph">
+<p>此处所述的每个服务级别的最小和最大卷大小可为卷提供最佳IOPS和延迟值。如果在这些准则之外创建的卷过多、可能会对这些卷的性能产生负面影响。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="块大小计算">块大小计算</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在使用以下设置计算块大小之前、请注意以下几点：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>IOPS/TiB = Mbps/TiB除以(块大小* 1024)</p>
+</li>
+<li>
+<p>块大小以KB/IO为单位</p>
+</li>
+<li>
+<p>TIB = 1024 GiB；GiB = 1024 MiB；MIB = 1024 KiB；KiB = 1024字节；根据基数2</p>
+</li>
+<li>
+<p>TB = 1000 GB；GB = 1000 MB；MB = 1000 KB；KB = 1000字节；按基数10计算</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>要计算A服务级别的吞吐量、例如`Extreme`服务级别：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>最大IOPS：12、288</p>
+</li>
+<li>
+<p>每个I/O的块大小：32 KB</p>
+</li>
+<li>
+<p>最大吞吐量=(12288 * 32 * 1024)/(1024 * 1024)= 384 MBps/ TiB</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>如果卷包含700 GiB的已用逻辑数据、则可用吞吐量将为：</p>
+</div>
+<div class="paragraph">
+<p><code>m最大吞吐量= 384 * 0.7 = 268.8MBps</code></p>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">条款和条件</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隐私政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 设置</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a target="_self" href="javascript:netapp_mailto()">发送有关此页面的反馈</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/keystone-staas/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/keystone-staas/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/keystone-staas/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/keystone-staas/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/keystone-staas/js/www-ntap.js'></script>
+    <script src='/zh-cn/keystone-staas/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/keystone-staas/js/sidebar.js'></script>
+  </body></html>
