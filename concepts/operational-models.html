@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/zh-cn/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/zh-cn/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/zh-cn/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/keystone-staas/js/na-search.js'></script><script src='/zh-cn/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-cn/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/zh-cn/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/keystone-staas/js/na-search.js'></script><script src='/zh-cn/keystone-staas/js/na-pagenav.js'></script><script src='/zh-cn/keystone-staas/js/na-utility.js'></script>
   <script src='/zh-cn/keystone-staas/js/clouddocs.js'></script>
   <script src='/zh-cn/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/zh-cn/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 入门</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="了解Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 附加服务</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="数据分层"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 有关服务级别的更多信息</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Quality of service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 计费</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone定价"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Keystone基础架构</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="基础架构详细信息"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 利用Keystone服务完成更多任务</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone和Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:19:06 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:43:30 +0000">11/17/2022</time>
     
   
 
@@ -927,10 +915,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p><strong>合作伙伴运营模式</strong>：在此模式下、合作伙伴或服务提供商将为其最终客户运营服务。对于NetApp、合作伙伴是参考的合同方。租户是合作伙伴的客户、与NetApp没有任何计费关系。合作伙伴运营的模式通常具有多租户环境、其中租户和最终客户/子租户拥有自己的订阅、并由合作伙伴付费。配对管理员对所有租户执行管理任务。</p>
+<p><strong>合作伙伴运营模式</strong>：合作伙伴或服务提供商为其最终客户运营服务。对于NetApp、合作伙伴是参考的合同方。租户是合作伙伴的客户、与NetApp没有任何计费关系。合作伙伴运营的模式具有多租户环境、租户和最终客户/子租户拥有自己的订阅、并由合作伙伴付费。配对管理员对所有租户执行管理任务。</p>
 </li>
 <li>
-<p><strong>客户运营模式</strong>：在客户运营模式下、作为客户、您可以根据选定的性能层和存储服务类型订阅Keystone服务。NetApp定义了架构和产品、并在您的内部部署Keystone。您需要通过存储和IT资源管理基础架构。作为客户、您是NetApp或合作伙伴/服务提供商的租户或子租户、根据您的合同、您可以提出由NetApp或您的服务提供商处理的服务请求。您的客户管理员可以从您的站点(环境)中执行管理任务。这些任务与环境中的用户相关联。</p>
+<p><strong>客户运营模式</strong>：作为客户、您可以根据选定的性能层和存储服务类型订阅Keystone服务。NetApp定义了架构和产品、并在您的内部部署Keystone。您需要通过存储和IT资源管理基础架构。作为客户、您是NetApp的租户或子租户或合作伙伴/服务提供商。根据您的合同、您可以提出由NetApp或您的服务提供商处理的服务请求。您的管理员可以从您的站点(环境)执行管理任务。这些任务与环境中的用户相关联。</p>
 </li>
 </ul>
 </div>
@@ -1055,7 +1043,7 @@
 </tbody>
 </table>
 <div class="paragraph">
-<p>有关部署的详细信息、请参见 <a href="../concepts/infra.html">"Keystone基础架构"</a> 和 <a href="..//concepts/components.html">"用于部署的组件"</a></p>
+<p>有关部署的详细信息、请参见 <a href="../concepts/infra.html">"Keystone基础架构"</a> 和 <a href="..//concepts/components.html">"用于部署的组件"</a>。</p>
 </div>
 </div>
 </div>

@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/zh-cn/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/zh-cn/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/zh-cn/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/zh-cn/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/keystone-staas/js/na-search.js'></script><script src='/zh-cn/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-cn/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/zh-cn/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/zh-cn/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/keystone-staas/js/na-search.js'></script><script src='/zh-cn/keystone-staas/js/na-pagenav.js'></script><script src='/zh-cn/keystone-staas/js/na-utility.js'></script>
   <script src='/zh-cn/keystone-staas/js/clouddocs.js'></script>
   <script src='/zh-cn/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/zh-cn/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 入门</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="了解Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 附加服务</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="数据分层"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 有关服务级别的更多信息</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Quality of service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 计费</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone定价"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Keystone基础架构</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="基础架构详细信息"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 利用Keystone服务完成更多任务</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone和Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:19:06 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:43:30 +0000">11/17/2022</time>
     
   
 
@@ -922,16 +910,19 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Keystone服务支持ONTAP 的基本存储类型、例如文件和块存储。它还支持StorageGRID 平台的对象存储。此外、还支持Cloud Volumes ONTAP 的数据管理功能。</p>
+<p>Keystone服务支持ONTAP 、文件和块的基本存储类型。它还支持StorageGRID 平台的对象存储以及Cloud Volumes ONTAP 的数据管理功能。</p>
 </div>
 <div class="paragraph">
-<p>有关服务级别的信息、请参见 <a href="../concepts/service-levels.html">"Keystone中的服务级别"</a></p>
+<p>有关服务级别的信息、请参见 <a href="../concepts/service-levels.html">"Keystone中的服务级别"</a>。</p>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="基础存储服务">基础存储服务</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Keystone的基础存储服务可利用SnapMirror、SnapVault 和Snapshot等NetApp技术提供数据保护服务、并在支持的NetApp存储目标上为文件和块存储服务提供分层功能。此外、您还可以选择附加服务来保护数据和分层数据。有关附加服务的信息、请参见 <a href="../concepts/adp.html">"高级数据保护"</a> 和 <a href="../concepts/data-tiering.html">"数据分层"</a>。</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -969,7 +960,7 @@
 <p>对象存储</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">基于StorageGRID 平台</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">支持跨多个站点的多个信息生命周期管理(ILM)策略。注意：每个站点必须有单独的订阅。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">支持跨多个站点的多个信息生命周期管理(ILM)策略。注意：每个站点应具有单独的订阅。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">S3</p></td>
 </tr>
 </tbody>
@@ -987,7 +978,7 @@
 </table>
 </div>
 <div class="paragraph">
-<p>有关数据分层的详细信息、请参见 <a href="../concepts/data-tiering.html">"数据分层"</a>有关数据保护服务的信息、请参见 <a href="../concepts/adp.html">"高级数据保护"</a></p>
+<p>有关数据分层的详细信息、请参见 <a href="../concepts/data-tiering.html">"数据分层"</a>。有关数据保护服务的信息、请参见 <a href="../concepts/adp.html">"高级数据保护"</a>。</p>
 </div>
 </div>
 </div>
@@ -995,7 +986,7 @@
 <h2 id="云存储服务">云存储服务</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Keystone支持Cloud Volumes ONTAP 的_Data管理功能、在AWS、Azure和Google_上均受支持。此服务可与您的现有订阅同时使用。云服务可以在服务期限内的任意时刻包含在内。但是、如果您不打算续订订订阅、则在订阅的最后90天内、您将无法包含云服务。</p>
+<p>Keystone支持Amazon Web Services (AWS)、Microsoft Azure和Google云平台上的Cloud Volumes ONTAP 的数据管理功能。此服务可与您的现有订阅同时使用。云服务可以在服务期限内的任意时刻包含在内。但是、如果您不打算续订订订阅、则在订阅的最后90天内、您将无法包含云服务。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1004,7 +995,7 @@
 <img src="/us-en/keystone-staas/images/note.svg" alt="注">
 </td>
 <td class="content">
-NetApp不会在您的Keystone订阅中提供基于超大规模云的计算和存储基础架构、您需要从超大规模云服务提供商处购买这些基础架构。
+NetApp不会在您的Keystone订阅中提供基于超大规模云的计算和存储基础架构；您需要从超大规模云服务提供商处购买这些基础架构。
 </td>
 </tr>
 </table>
