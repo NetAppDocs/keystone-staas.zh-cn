@@ -16,15 +16,15 @@ summary: Keystone的服务质量
 [role="lead"]
 存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如启动多个系统)可能会占用整个资源一段时间、并影响其他工作负载。有关QoS的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"]。
 
-应用QoS可确保应用程序每次都能获得一致的性能。NetApp ONTAP 为QoS上限定义了两个参数- https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-ceilings-qos-max["QoS最大值"]和吞吐量下限- https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-floors-qos-min["QoS最小值"]。QoS最大值表示工作负载可以达到的最大IOPS或MBps或IOPS和MBps数。另一方面、QoS最小值可保证工作负载的吞吐量不低于特定数量的IOPS或MBps、或者IOPS和MBps。
+应用QoS可确保应用程序每次都能获得一致的性能。NetApp ONTAP 为QoS上限定义了两个参数- https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-ceilings-qos-max["QoS最大值"]和吞吐量下限- https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-floors-qos-min["QoS最小值"]。QoS最大值表示工作负载可以达到的最大IOPS或MBps或IOPS和MBps数。另一方面、QoS最小值可保证工作负载的吞吐量不低于特定数量的IOPS或MBps或IOPS和MBps。
 
 
 
 == 自适应 QoS
 
-自适应QoS用于Keystone服务、该服务会在大小发生变化时保持IOPS与TB/ GB的比率、并自动应用QoS策略。有关自适应QoS的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["关于自适应 QoS"]。
+随着大小的变化、Keystone服务会使用自适应QoS来保持IOPS与TB/ GB的比率、系统会自动应用QoS策略。有关自适应QoS的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["关于自适应 QoS"]。
 
-Keystone为您提供了自适应QoS策略、您可以在集群投入生产后设置这些策略。您应确保所有卷都与系统中已创建且可用的正确自适应QoS策略相关联。
+Keystone为您提供了自适应QoS策略、您可以在集群投入使用后设置这些策略。您应确保所有卷都与系统中已创建且可用的正确自适应QoS策略相关联。
 
 
 NOTE: 如果未正确对卷应用自适应QoS策略、则会根据您的订阅以最高服务级别对这些卷进行测量和计费。这可能会导致意外的突发费用。
@@ -60,7 +60,7 @@ NOTE: 这不是IOPS密度(例如75 IOPS/TiB)、而是绝对最小IOPS数。
 
 === 至尊服务级别的设置
 
-对于至尊服务级别、请使用以下设置和命令：
+适用于极致服务级别的设置和命令：
 
 * 命令示例：
 
@@ -76,8 +76,7 @@ qos adaptive-policy-group create -policy group <Keystone_extreme> -vserver <SVM_
 
 === 高级服务级别的设置
 
-对于高级服务级别、以下是设置和命令：
-
+ Settings and commands for the Premium service level:
 * 命令示例：
 
 
@@ -92,7 +91,7 @@ qos adaptive-policy-group create -policy group <Keystone_premium> -vserver <SVM_
 
 === 性能服务级别的设置
 
-对于性能服务级别、请使用以下设置和命令：
+性能服务级别的设置和命令：
 
 * 命令示例：
 
@@ -108,8 +107,7 @@ qos adaptive-policy-group create -policy group <Keystone_performance> -vserver <
 
 === 值服务级别的设置
 
-对于价值服务级别、请使用以下设置和命令：
-
+ Settings and commands for the Value  service level:
 * 命令示例：
 
 
