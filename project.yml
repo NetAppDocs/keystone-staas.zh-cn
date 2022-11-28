@@ -19,7 +19,7 @@ sidebar:
       url: "/concepts/supported-storage-capacity.html"
     - title: Keystone服务的指标和定义
       url: "/concepts/metrics.html"
-    - title: Keystone中支持的存储类型
+    - title: Keystone中支持的存储服务
       url: "/concepts/supported-storage-services.html"
     - title: Keystone中的服务级别
       url: "/concepts/service-levels.html"
@@ -71,9 +71,9 @@ sidebar:
     url: "/concepts/gssc.html"
   - title: 利用Keystone服务完成更多任务
     entries:
-    - title: Keystone和Cloud Manager
+    - title: Keystone和BlueXP
       url: "/integrations/keystone-cm.html"
-    - title: Keystone和Active IQ 数字顾问
+    - title: Keystone和Digital Advisor
       url: "/integrations/keystone-aiq.html"
   - title: 法律声明
     url: "/legal-notices.html"
@@ -117,9 +117,9 @@ homepage:
     links:
     - title: 了解您的支持团队(Keystone GSSC)
       url: "/concepts/gssc.html"
-    - title: Keystone和Cloud Manager
+    - title: Keystone和BlueXP
       url: "/integrations/keystone-cm.html"
-    - title: Keystone和Active IQ 数字顾问
+    - title: Keystone和Digital Advisor
       url: "/integrations/keystone-aiq.html"
     - title: 美国公民支持
       url: "/concepts/uscs.html"
@@ -127,9 +127,9 @@ homepage:
     links:
     - title: Keystone Flex 订阅
       url: https://docs.netapp.com/us-en/keystone/
-    - title: Active IQ Digital Advisor
+    - title: Digital Advisor
       url: https://docs.netapp.com/us-en/active-iq/index.html
-    - title: Cloud Manager
+    - title: BlueXP
       url: https://docs.netapp.com/us-en/cloud-manager-family/
     - title: Active IQ Unified Manager
       url: https://docs.netapp.com/us-en/active-iq-unified-manager/

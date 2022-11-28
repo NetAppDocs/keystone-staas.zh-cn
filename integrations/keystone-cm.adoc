@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: integrations/keystone-cm.html 
-keywords: Keystone-Cloud Manager 
-summary: Keystone和Cloud Manager 
+keywords: Keystone-BlueXP 
+summary: Keystone和BlueXP 
 ---
-= Keystone和Cloud Manager
+= Keystone和BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: Keystone和Cloud Manager
 
 
 [role="lead"]
-如果您通过Keystone订阅购买云服务、则可以通过Cloud Manager访问和管理这些服务。
+如果您通过Keystone订阅购买云服务、则可以通过BlueXP访问和管理这些服务。
 
-作为Keystone客户、如果您订阅了Cloud Volumes ONTAP 、则可以使用Keystone服务对Cloud Volumes ONTAP 使用量进行收费、并通过Cloud Manager查看您的计费和使用量详细信息。
+作为Keystone客户、如果您订阅了Cloud Volumes ONTAP 、则可以使用Keystone服务对Cloud Volumes ONTAP 使用量进行收费、并通过BlueXP查看您的计费和使用量详细信息。
 
-为此、您应创建一个或多个Cloud Manager帐户并将其与Keystone帐户关联起来。在通过Keystone购买云服务时、您需要向Keystone Success Manager提供Cloud Manager帐户的详细信息。这样可以通过您的Keystone订阅正确计量和计费您的云服务使用量。
+为此、您应创建一个或多个BlueXP帐户并将其与您的Keystone帐户关联起来。在通过Keystone购买云服务时、您需要向Keystone Success Manager提供您的BlueXP帐户的详细信息。这样可以通过您的Keystone订阅正确计量和计费您的云服务使用量。
 
-有关详细信息，请参见 Cloud Manager 文档中的以下链接：
+有关详细信息、请参见BlueXP文档中的以下链接：
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#keystone-flex-subscription["Keystone订阅"]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-keystone.html["管理Keystone订阅"]

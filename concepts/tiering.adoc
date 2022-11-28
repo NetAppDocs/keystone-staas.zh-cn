@@ -16,7 +16,7 @@ summary: 附加、其他服务详细信息、数据分层
 [role="lead"]
 默认情况下、Keystone基础服务包括通过您订阅的文件和块服务进行分层的功能、这些功能可识别不太常用的数据、并将其分层到NetApp拥有、部署和管理的冷存储。如果要将冷数据分层到任何非NetApp存储、例如任何企业云存储、则可以使用分层作为附加服务。
 
-只有在将数据分层到AWS S3、Azure Blob和EMC ECS等任何非NetApp存储时、才需要分层附加服务。
+只有在将数据分层到任何非NetApp存储(例如Amazon Web Services (AWS) S3、Azure Blob、Google Cloud Platform (GCP)以及其他受支持的S3兼容第三方对象存储)时、才需要分层附加服务。
 
 有关基础存储和云存储服务的信息、请参见 link:../concepts/supported-storage-services.html["支持的存储服务"]。
 
