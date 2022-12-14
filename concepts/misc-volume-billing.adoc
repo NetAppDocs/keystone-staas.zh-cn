@@ -34,6 +34,7 @@ NOTE: 注意：
 
 如果您通过ONTAP System Manager (System Manager)或Active IQ Unified Manager (Unified Manager)监控集群、则可能会发现这些工具上报告的使用量与Keystone上报告的使用量之间存在差异。System Manager和Unified Manager不会报告镜像(远程)集群上的卷、在这样做时、会报告Keystone服务报告的一半使用指标。
 
+.示例
 站点A和站点B在MetroCluster 配置中设置。当用户在站点 A 中创建一个 10 TB 的卷时，会在站点 B 中创建一个 10 TB 的相同卷Keystone可确定每个站点的10 TB使用量、总增加量为20 TB。System Manager和Unified Manager报告在站点A中创建了10 TB卷、但不报告站点B中的10 TB卷
 
 此外、在具有高级数据保护的Keystone系统上创建的所有卷都将计入高级数据保护的使用量、而不管这些卷是否已镜像。
