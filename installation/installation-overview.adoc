@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: installation/installation-overview.html 
+keywords: installation, Keystone Collector 
+summary: 什么是Keystone收集器 
+---
+= Keystone收集器概述
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+要获得并启用Keystone服务、您应在站点的VMware vSphere或Linux系统上安装Keystone收集器。
+
+
+NOTE: 此处提供的安装和配置信息仅适用于ONTAP。
+
+Keystone收集器是Keystone计费平台的主要组件、它可以利用Active IQ Unified Manager 和其他应用程序连接到ONTAP 存储系统、并使您能够监控存储环境的运行状况、同时发送计费数据进行报告。
+
+此架构图概述了在典型Keystone环境中的成分组件及其连接。
+
+image:collector-arch.png[""]

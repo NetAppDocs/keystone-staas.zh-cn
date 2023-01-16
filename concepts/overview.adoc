@@ -22,6 +22,8 @@ image:nkfsosm_image2.png["错误：缺少图形映像"]
 
 Keystone可为块、文件和对象数据类型提供预定义服务级别的存储容量、这些数据类型可在内部部署并由NetApp、合作伙伴或客户操作。Keystone可与NetApp云服务结合使用、例如、可部署在您选择的超大规模环境中的Cloud Volumes ONTAP。
 
+Keystone订阅与速率计划相关联。一个订阅可以附加多个速率计划。
+
 
 
 == Keystone存储即服务(STaaS)

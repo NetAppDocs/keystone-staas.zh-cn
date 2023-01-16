@@ -28,7 +28,7 @@ NetApp全球服务和支持中心(GSSC)可监控您的产品和订阅服务的�
 
 == Keystone Success Manager
 
-Keystone成功经理是一名美国员工美国公民土壤。其职责在您的NetApp Keystone 协议中进行了规定。
+Keystone成功经理(KSM)是一名美国员工美国公民土壤。其职责在您的NetApp Keystone 协议中进行了规定。
 
 
 

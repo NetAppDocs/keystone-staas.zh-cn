@@ -14,7 +14,7 @@ summary: 基础架构组件
 
 
 [role="lead"]
-本节列出了在您的环境中启用NetApp Keystone 服务所需的组件。
+本节列出了在您的环境中启用NetApp Keystone STaaS服务所需的组件。
 
 
 

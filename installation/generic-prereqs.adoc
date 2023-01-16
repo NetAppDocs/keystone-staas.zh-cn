@@ -1,0 +1,199 @@
+= 其他要求
+:allow-uri-read: 
+
+
+
+
+== 其他要求
+
+请确保满足以下一般要求：
+
+
+
+=== 网络要求
+
+下表介绍了Keystone收集器的网络连接要求。
+
+
+NOTE: Keystone收集器需要Internet连接。您可以通过默认网关(通过NAT)或HTTP代理直接路由来提供Internet连接。此处介绍了这两种变体。
+
+|===
+
+
+| 源 | 目标 | 服务 | 协议和端口 | 类别 | 目的 
+
+
+ a| 
+Keystone收集器
+ a| 
+Active IQ Unified Manager (Unified Manager)
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+必填
+ a| 
+Keystone收集器使用情况指标收集
+
+
+
+ a| 
+Keystone收集器
+ a| 
+Internet (根据后面提供的URL要求)
+ a| 
+HTTP ， HTTPS
+ a| 
+TCP 80、TCP 443
+ a| 
+必填(Internet连接)
+ a| 
+Keystone收集器软件、操作系统更新和指标上传
+
+
+
+ a| 
+Keystone收集器
+ a| 
+客户HTTP代理
+ a| 
+HTTP代理
+ a| 
+客户代理端口
+ a| 
+必填(Internet连接)
+ a| 
+Keystone收集器软件、操作系统更新和指标上传
+
+
+
+ a| 
+Keystone收集器
+ a| 
+客户DNS服务器
+ a| 
+DNS
+ a| 
+TCP/UDP 53
+ a| 
+必填
+ a| 
+DNS解析
+
+
+
+ a| 
+Keystone收集器
+ a| 
+客户NTP服务器
+ a| 
+NTP
+ a| 
+UDP 123
+ a| 
+必填
+ a| 
+时间同步
+
+
+
+ a| 
+客户的运营工作站
+ a| 
+Keystone收集器
+ a| 
+SSH
+ a| 
+TCP 22
+ a| 
+管理
+ a| 
+访问Keystone收集器管理
+
+
+
+ a| 
+NetApp ONTAP 集群和节点管理地址
+ a| 
+Keystone收集器
+ a| 
+http_8000、ping
+ a| 
+TCP 8000、ICMP回显请求/回复
+ a| 
+可选功能
+ a| 
+用于更新ONTAP 固件的Web服务器
+
+
+
+ a| 
+Keystone收集器
+ a| 
+Unified Manager
+ a| 
+MySQL
+ a| 
+TCP 3306
+ a| 
+可选功能
+ a| 
+Keystone收集器的性能指标集合
+
+
+
+ a| 
+Keystone收集器
+ a| 
+客户监控系统
+ a| 
+HTTP
+ a| 
+TCP 777
+ a| 
+可选功能
+ a| 
+Keystone收集器运行状况报告
+
+|===
+
+
+=== URL访问
+
+Keystone收集器需要访问以下Internet主机：
+
+|===
+
+
+| Address | reason 
+
+
+ a| 
+https://keystone.netapp.com[]
+ a| 
+Keystone收集器软件更新和使用情况报告
+
+
+
+ a| 
+https://support.netapp.com[]
+ a| 
+NetApp总部提供计费信息和AutoSupport 交付
+
+
+
+ a| 
+https://mirror.centos.org[]
+https://mirrorlist.centos.org[]
+ a| 
+Keystone收集器的操作系统更新(仅限OVA部署)
+
+
+
+ a| 
+http://repo.mysql.com[]
+ a| 
+下载并更新mysql依赖关系(仅适用于Linux部署)
+
+|===

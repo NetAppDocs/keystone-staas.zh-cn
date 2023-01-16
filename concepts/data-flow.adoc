@@ -14,7 +14,7 @@ summary: Keystone数据流
 
 
 [role="lead"]
-Keystone系统会遇到通过Keystone收集器流量传输的数据流并监控数据流。
+Keystone STaaS系统会遇到通过Keystone收集器流量传输的数据流、并监控数据流。
 
 
 

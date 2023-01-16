@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concepts/gssc.html 
-keywords: Global Services Support Center, GSSC, Keystone support 
+keywords: Global Services Support Center, GSSC, Keystone support, service request, support ticket 
 summary: NetApp全球服务支持中心GSSC 
 ---
 = NetApp全球服务支持中心
@@ -49,6 +49,16 @@ NOTE: 在合作伙伴运营的模式中、租户和子租户的服务请求将�
 NetApp全球服务和支持中心(GSSC)可监控您的产品和订阅服务的运行状况、提供远程支持、并与您的Keystone Success Manager合作。监控与相关Keystone订阅订单相关的产品的所有人员均为在美国运营的美国公民土壤。
 
 .Keystone Success Manager
-Keystone成功经理是一名美国员工美国公民土壤。这些职责在您的NetApp Keystone 协议中进行了规定。
+Keystone Success Manager (KSM)与您密切合作、为您提供Keystone服务、并在每周或每月的计费和运营报告中向您提供最新信息。这些职责在您的NetApp Keystone 协议中进行了说明。
 
-有关信息，请参见 link:../concepts/uscs.html["U.S.公民支持(USCS)"]。
+
+
+== 正在生成服务请求
+
+在入职期间、如果您获得了用于访问和使用NetApp Keystone ServiceNow的凭据、则可以使用此门户为您的Keystone订阅相关的问题生成服务请求：
+
+https://netappgssc.service-now.com/csm[]
+
+在提交服务请求之前、请确保已准备好系统详细信息、日志和相关信息。当您提出服务请求时、GSSC团队会收到支持服务单并访问相关信息以进行故障排除。您可以按照您的ServiceNow服务单了解状态和解决方案。
+
+有关添加支持包的信息、请参见 link:../installation/monitor-health.html["生成并收集支持包"]。

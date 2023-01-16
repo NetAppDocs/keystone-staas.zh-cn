@@ -14,7 +14,7 @@ summary: Keystone基础架构
 
 
 [role="lead"]
-本节介绍适用于NetApp和客户操作环境的NetApp Keystone 基础架构、架构和管理应用程序。
+本节介绍适用于NetApp和客户操作环境的NetApp Keystone STaaS基础架构、架构和管理应用程序。
 
 Keystone基础架构、设计、技术选择和组件产品仅由NetApp提供。NetApp 保留采取以下操作的权利：
 

@@ -1,0 +1,92 @@
+---
+sidebar: sidebar 
+permalink: installation/aiqum-req.html 
+keywords: keystone unified manager prerequisites, aiqum config keystone 
+summary: Keystone Unified Manager的前提条件 
+---
+= Active IQ Unified Manager 的前提条件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+要设置和启用Keystone收集器、应使用特定配置安装Active IQ Unified Manager (Unified Manager)。
+
+确保已将Unified Manager服务器配置为安装了Unified Manager 9.7或更高版本且已启用API网关功能的位置。
+
+有关安装Unified Manager的信息、请参见以下链接：
+
+* https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["在VMware vSphere系统上安装Unified Manager"]
+* https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/concept_requirements_for_install_unified_manager.html["在 Linux 系统上安装 Unified Manager"]
+
+
+
+
+== 创建Unified Manager用户
+
+您应在Unified Manager中创建以下用户、以便Keystone收集器收集使用情况和性能数据：
+
+* Keystone收集器的服务帐户 `Operator` 用户角色。收集使用情况数据需要此用户。Keystone收集器服务通过API与Unified Manager进行通信。通信需要此服务帐户。
+* 答 `Database` 用户帐户、使用 `Report Schema` 角色。收集性能数据时需要此用户。
+
+
+有关用户创建、用户类型和用户角色的信息、请参见以下链接：
+
+* https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_definitions_of_user_types.html["用户类型的定义"]
+* https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_definitions_of_user_roles.html["用户角色的定义"]
+* https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_unified_manager_roles_and_capabilities.html["Unified Manager 用户角色和功能"]
+
+
+.步骤
+. 使用应用程序管理员用户凭据登录到Unified Manager Web UI。安装期间会创建一个默认管理员用户。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["访问 Unified Manager Web UI"]。
+. 使用创建用户 `Operator role`。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_users.html["添加用户"]。
+. 创建 `Database` 用户。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_create_database_user.html["创建数据库用户"]。
+
+
+image:um-add-user.png[""]
+
+
+
+== 在Unified Manager中启用API网关
+
+Keystone收集器可使用Unified Manager API网关与ONTAP 集群进行通信。
+
+您可以从Web UI启用API网关、也可以通过Unified Manager命令行界面运行几个命令来启用API网关。
+
+
+
+=== 从Web UI启用API网关
+
+要从Unified Manager Web UI启用API网关、请执行以下步骤：
+
+.步骤
+. 使用应用程序管理员用户凭据登录到Unified Manager Web UI。安装期间会创建一个默认管理员用户。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["访问 Unified Manager Web UI"]。
+. 有关启用API网关的信息、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/concept_api_gateway.html["启用 API 网关"]。
+
+
+
+
+=== 通过Unified Manager命令行界面启用API网关
+
+以下步骤介绍如何通过Unified Manager命令行界面启用API网关访问。
+
+有关支持的命令的详细信息、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_supported_unified_manager_cli_commands.html["支持的 Unified Manager 命令行界面命令"]。
+
+.步骤
+. 在Unified Manager服务器上、开始SSH会话并登录到Unified Manager命令行界面。
+`um cli login -u _<umadmin>_`
+. 验证是否已启用API网关。
+`um option list api.gateway.enabled`如果返回的值为 `true`、表示已启用API网关功能。
+. 如果返回的值为 `false`下、运行此命令以启用API网关功能：
+`um option set api.gateway.enabled=true`
+. 重新启动Unified Manager服务器以应用设置。有关信息、请参见：
++
+** 在Linux系统上、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/task_restart_unified_manager.html["正在重新启动 Unified Manager"]。
+** 在VMware vSphere系统上、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/task_restart_unified_manager_virtual_machine.html["重新启动 Unified Manager 虚拟机"]。
+
+
+

@@ -14,7 +14,7 @@ summary: Keystone中的计费计划
 
 
 [role="lead"]
-Keystone订阅按月和按年计费。
+Keystone STaaS订阅按月和按年计费。
 
 
 

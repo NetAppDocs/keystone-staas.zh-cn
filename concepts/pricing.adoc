@@ -14,7 +14,7 @@ summary: Keystone定价
 
 
 [role="lead"]
-NetApp Keystone 可以为您的存储订阅提供可预测的前期定价。
+NetApp Keystone STaaS可为您的存储订阅提供可预测的前期定价。
 
 如果您更喜欢运营支出(OpEx)消费模式而不是资本支出(Capex)或租赁模式、则可以选择Keystone按需购买模式来满足您灵活且可扩展的消费需求。
 

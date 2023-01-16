@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concepts/supported-storage-services.html 
-keywords: storage service, service definition, keystone STaaS storage service, 
-summary: 支持的存储服务 
+keywords: storage, service, service definition, keystone STaaS services, 
+summary: Keystone STaaS服务 
 ---
-= 支持的存储服务
+= Keystone STaaS服务支持的存储
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,39 +14,87 @@ summary: 支持的存储服务
 
 
 [role="lead"]
-Keystone服务支持ONTAP 、文件和块的基本存储类型。它还支持StorageGRID 平台的对象存储以及Cloud Volumes ONTAP 的数据管理功能。
+Keystone STaaS服务支持ONTAP 的文件和块存储、StorageGRID 平台的对象存储以及Cloud Volumes ONTAP 的数据管理功能。
 
-有关服务级别的信息、请参见 link:../concepts/service-levels.html["Keystone中的服务级别"]。
+Keystone STaaS可为您的存储提供标准和可选服务。
+
+* Keystone STaaS标准服务*：标准服务包含在基本订阅中、不单独收取费用。
+
+* Keystone STaaS附加服务*：这些服务是可选的付费服务、可在标准Keystone STaaS订阅服务基础上提供额外的实用程序和优势。
+
+Keystone STaaS服务可以彼此共存。例如、云存储订阅可以与文件、块和对象存储订阅同时使用。在现有存储订阅的服务期限内、可以随时包括云服务。但是、如果您不打算续订现有文件、块和对象订阅、则在订阅的最后90天内无法添加云存储订阅。
 
 
 
-== 基础存储服务
+== 文件、块和对象存储服务
 
-文件和块的基础存储服务可利用SnapMirror、SnapVault 和Snapshot等NetApp技术提供默认数据保护服务。默认情况下、文件和块存储服务层中也会包括到NetApp存储目标的数据分层。此外、您还可以选择附加服务来保护数据和分层数据。有关附加服务的信息、请参见 link:../concepts/adp.html["高级数据保护"] 和 link:../concepts/data-tiering.html["数据分层"]。
+用于ONTAP 文件和块存储以及StorageGRID 对象存储的Keystone STaaS服务支持多种功能和协议、下表对此进行了说明：
 
 |===
-| 存储服务 | 基础 | 支持的功能 | 协议 
+| 存储 | 平台 | 协议 | 支持的功能 
 
 
  a| 
 文件存储
-| 基于ONTAP 技术 | 支持的ONTAP 功能：FlexVol FlexGroup Snapshot副本SnapMirror (异步) SnapVault SnapLock 企业级FabricPool /云分层还原克隆SnapCenter (许可证包含在内、但不属于Keystone服务、不提供有保证的管理) | NFS和CIFS。 
+ a| 
+ONTAP
+ a| 
+NFS和CIFS
+ a| 
+支持的ONTAP 功能：
+
+* FlexVol
+* FlexGroup
+* Snapshot 副本
+* SnapMirror (异步)
+* SnapVault
+* SnapLock 企业
+* FabricPool /云分层
+* SnapRestore
+* FlexClone
+* SnapCenter (包括许可证、但不属于Keystone服务、不保证进行管理)
+
+
 
 
  a| 
 块存储
-| 基于ONTAP 技术 | 支持的ONTAP 功能：FlexVol FlexGroup Snapshot副本SnapMirror (异步) SnapVault SnapLock 企业级FabricPool /云分层还原克隆SnapCenter (许可证包含在内、但不属于Keystone服务、不提供有保证的管理) | FC和iSCSI 
+ a| 
+ONTAP
+ a| 
+FC和iSCSI
+ a| 
+支持的ONTAP 功能：
+
+* FlexVol
+* FlexGroup
+* Snapshot 副本
+* SnapMirror (异步)
+* SnapVault
+* SnapLock 企业
+* FabricPool /云分层
+* SnapRestore
+* FlexClone
+* SnapCenter (包括许可证、但不属于Keystone服务、不保证进行管理)
+
+
 
 
  a| 
 对象存储
-| 基于StorageGRID 平台 | 支持跨多个站点的多个信息生命周期管理(ILM)策略。注意：每个站点应具有单独的订阅。 | S3 
+ a| 
+StorageGRID
+ a| 
+S3
+ a| 
+支持跨多个站点的多个信息生命周期管理(ILM)策略。*注意*：每个站点都需要单独订阅。
+
 |===
 
 
 == 云存储服务
 
-Keystone支持Amazon Web Services (AWS)、Microsoft Azure和Google云平台上的Cloud Volumes ONTAP 的数据管理功能。此服务可与您的现有订阅同时使用。云服务可以在服务期限内的任意时刻包含在内。但是、如果您不打算续订订订阅、则在订阅的最后90天内、您将无法包含云服务。
+Keystone STaaS可提供云存储服务。Keystone STaaS支持Amazon Web Services (AWS)、Microsoft Azure和Google云平台上的Cloud Volumes ONTAP 数据管理功能。
 
 
-NOTE: NetApp不会在您的Keystone订阅中提供基于超大规模云的计算和存储基础架构；您需要从超大规模云服务提供商处购买这些基础架构。
+NOTE: NetApp不会在Keystone STaaS订阅中提供Cloud Volumes ONTAP 所需的基于超大规模扩展的计算、存储和网络服务；这些订阅需要直接从超大规模云服务提供商处购买。

@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: installation/linux-installation.html 
+keywords: Linux installation Keystone, Linux Collector installation 
+summary: 在Linux上安装Keystone收集器 
+---
+= 在Linux系统上安装Keystone收集器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone收集器软件由联机YUM软件存储库分发。您需要在Linux服务器上导入并安装文件。
+
+按照以下步骤在Linux服务器上安装软件：
+
+. 通过SSH连接到Keystone收集器服务器并升级到 `root` 权限。
+. 导入Keystone公共签名：
+`# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
+. 通过检查RPM数据库中Keystone计费平台的指纹来确保导入的公共证书正确：
+`# rpm -qa gpg-pubkey --qf '%_<Description>_'|gpg --show-keys --fingerprint`正确的指纹如下所示：
+`90B3 83AF E07B 658A 6058  5B4E 76C2 45E4 33B6 C17D`
+. 下载 `keystonerepo.rpm` 文件：
+`# wget https://keystone.netapp.com/repo/keystonerepo.rpm`
+. 验证文件的真实性：
+`rpm --checksig -v keystonerepo.rpm`真实文件的签名如下所示：
+`Header V4 RSA/SHA512 Signature, key ID 33b6c17d: OK`
+. 安装YUM软件存储库文件：
+`# yum install keystonerepo.rpm`
+. 安装Keystone repo后、通过YUM软件包管理器安装keyston-collector软件包：
+`# yum install keystone-collector`
+
