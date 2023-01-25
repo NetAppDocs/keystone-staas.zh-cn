@@ -32,7 +32,7 @@ $ curl http://127.0.0.1:7777/uber/health
 
 .Linux用户、请注意以下已知问题描述 ：
 
-NOTE: *问题描述 收集器*：Keystone收集器在使用量计量系统中运行多个容器。如果Red Hat Enterprise Linux 8.x服务器使用美国国防信息系统局(DISA)安全技术实施指南(Stig)策略进行了加固、则会间歇性地看到一个已知的问题描述 with folicyd (文件访问策略守护进程)。此问题描述 标识为 link:https://bugzilla.redhat.com/show_bug.cgi?id=1907870["错误1907870"]。*临时解决策 *：在Red Hat Enterprise解决问题之前、NetApp建议您通过输入来解决此问题描述 `fapolicyd` 进入许可模式。在中 /`etc/fapolicyd/fapolicyd.conf`、设置的值 `permissive = 1`。
+NOTE: *问题描述 收集器*：Keystone收集器在使用量计量系统中运行多个容器。如果Red Hat Enterprise Linux 8.x服务器使用美国国防信息系统局(DISA)安全技术实施指南(Stig)策略进行了加固、则会间歇性地看到一个已知的问题描述 with folicyd (文件访问策略守护进程)。此问题描述 标识为 link:https://bugzilla.redhat.com/show_bug.cgi?id=1907870["错误1907870"^]。*临时解决策 *：在Red Hat Enterprise解决问题之前、NetApp建议您通过输入来解决此问题描述 `fapolicyd` 进入许可模式。在中 /`etc/fapolicyd/fapolicyd.conf`、设置的值 `permissive = 1`。
 
 
 

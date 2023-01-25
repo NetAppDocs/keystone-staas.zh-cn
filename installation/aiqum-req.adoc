@@ -20,8 +20,8 @@ summary: Keystone Unified Manager的前提条件
 
 有关安装Unified Manager的信息、请参见以下链接：
 
-* https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["在VMware vSphere系统上安装Unified Manager"]
-* https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/concept_requirements_for_install_unified_manager.html["在 Linux 系统上安装 Unified Manager"]
+* https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["在VMware vSphere系统上安装Unified Manager"^]
+* https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/concept_requirements_for_install_unified_manager.html["在 Linux 系统上安装 Unified Manager"^]
 
 
 
@@ -36,15 +36,15 @@ summary: Keystone Unified Manager的前提条件
 
 有关用户创建、用户类型和用户角色的信息、请参见以下链接：
 
-* https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_definitions_of_user_types.html["用户类型的定义"]
-* https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_definitions_of_user_roles.html["用户角色的定义"]
-* https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_unified_manager_roles_and_capabilities.html["Unified Manager 用户角色和功能"]
+* https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_definitions_of_user_types.html["用户类型的定义"^]
+* https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_definitions_of_user_roles.html["用户角色的定义"^]
+* https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_unified_manager_roles_and_capabilities.html["Unified Manager 用户角色和功能"^]
 
 
 .步骤
-. 使用应用程序管理员用户凭据登录到Unified Manager Web UI。安装期间会创建一个默认管理员用户。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["访问 Unified Manager Web UI"]。
-. 使用创建用户 `Operator role`。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_users.html["添加用户"]。
-. 创建 `Database` 用户。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_create_database_user.html["创建数据库用户"]。
+. 使用应用程序管理员用户凭据登录到Unified Manager Web UI。安装期间会创建一个默认管理员用户。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["访问 Unified Manager Web UI"^]。
+. 使用创建用户 `Operator role`。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_users.html["添加用户"^]。
+. 创建 `Database` 用户。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_create_database_user.html["创建数据库用户"^]。
 
 
 image:um-add-user.png[""]
@@ -64,8 +64,8 @@ Keystone收集器可使用Unified Manager API网关与ONTAP 集群进行通信�
 要从Unified Manager Web UI启用API网关、请执行以下步骤：
 
 .步骤
-. 使用应用程序管理员用户凭据登录到Unified Manager Web UI。安装期间会创建一个默认管理员用户。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["访问 Unified Manager Web UI"]。
-. 有关启用API网关的信息、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/concept_api_gateway.html["启用 API 网关"]。
+. 使用应用程序管理员用户凭据登录到Unified Manager Web UI。安装期间会创建一个默认管理员用户。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["访问 Unified Manager Web UI"^]。
+. 有关启用API网关的信息、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/concept_api_gateway.html["启用 API 网关"^]。
 
 
 
@@ -74,7 +74,7 @@ Keystone收集器可使用Unified Manager API网关与ONTAP 集群进行通信�
 
 以下步骤介绍如何通过Unified Manager命令行界面启用API网关访问。
 
-有关支持的命令的详细信息、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_supported_unified_manager_cli_commands.html["支持的 Unified Manager 命令行界面命令"]。
+有关支持的命令的详细信息、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_supported_unified_manager_cli_commands.html["支持的 Unified Manager 命令行界面命令"^]。
 
 .步骤
 . 在Unified Manager服务器上、开始SSH会话并登录到Unified Manager命令行界面。
@@ -85,8 +85,8 @@ Keystone收集器可使用Unified Manager API网关与ONTAP 集群进行通信�
 `um option set api.gateway.enabled=true`
 . 重新启动Unified Manager服务器以应用设置。有关信息、请参见：
 +
-** 在Linux系统上、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/task_restart_unified_manager.html["正在重新启动 Unified Manager"]。
-** 在VMware vSphere系统上、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/task_restart_unified_manager_virtual_machine.html["重新启动 Unified Manager 虚拟机"]。
+** 在Linux系统上、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/task_restart_unified_manager.html["正在重新启动 Unified Manager"^]。
+** 在VMware vSphere系统上、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/task_restart_unified_manager_virtual_machine.html["重新启动 Unified Manager 虚拟机"^]。
 
 
 

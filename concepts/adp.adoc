@@ -23,7 +23,7 @@ NOTE: 用于文件和块存储的Keystone STaaS标准服务可利用SnapMirror�
 
 有关服务级别的信息、请参见 link:../concepts/service-levels.html["Keystone中的服务级别"]。
 
-Keystone高级数据保护服务可以将数据同步镜像到二级站点。如果主站点发生灾难、二级站点可以接管、而不会丢失任何数据。此功能可利用两个站点之间的MetroCluster 配置来实现数据保护。您只能对文件和块存储服务使用高级数据保护附加服务。有关ONTAP MetroCluster 的信息、请参见 link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster 文档"]。
+Keystone高级数据保护服务可以将数据同步镜像到二级站点。如果主站点发生灾难、二级站点可以接管、而不会丢失任何数据。此功能可利用两个站点之间的MetroCluster 配置来实现数据保护。您只能对文件和块存储服务使用高级数据保护附加服务。有关ONTAP MetroCluster 的信息、请参见 link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster 文档"^]。
 
 附加费用适用于订阅中的所有容量：源数据、镜像副本数据和未镜像数据。
 

@@ -14,15 +14,15 @@ summary: Keystone的服务质量
 
 
 [role="lead"]
-存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如启动多个系统)可能会占用整个资源一段时间、并影响其他工作负载。有关QoS的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"]。
+存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如启动多个系统)可能会占用整个资源一段时间、并影响其他工作负载。有关QoS的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"^]。
 
-应用QoS可确保应用程序每次都能获得一致的性能。NetApp ONTAP 为QoS上限定义了两个参数- https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-ceilings-qos-max["QoS最大值"]和吞吐量下限- https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-floors-qos-min["QoS最小值"]。QoS最大值表示工作负载可以达到的最大IOPS或MBps或IOPS和MBps数。另一方面、QoS最小值可保证工作负载的吞吐量不低于特定数量的IOPS或MBps或IOPS和MBps。
+应用QoS可确保应用程序每次都能获得一致的性能。NetApp ONTAP 为QoS定义了两个参数：上限- https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-ceilings-qos-max["QoS最大值"^]和吞吐量下限- https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-floors-qos-min["QoS最小值"^]。QoS最大值表示工作负载可以达到的最大IOPS或MBps或IOPS和MBps数。另一方面、QoS最小值可保证工作负载的吞吐量不低于特定数量的IOPS或MBps或IOPS和MBps。
 
 
 
 == 自适应 QoS
 
-随着大小的变化、Keystone服务会使用自适应QoS来保持IOPS与TB/ GB的比率、系统会自动应用QoS策略。有关自适应QoS的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["关于自适应 QoS"]。
+Keystone服务使用自适应QoS (AQoS)来保持IOPS与TB/ GB的比率、因为大小会发生变化、因此会自动应用QoS策略。有关自适应QoS的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["关于自适应 QoS"^]。
 
 Keystone为您提供了自适应QoS策略、您可以在集群投入使用后设置这些策略。您应确保所有卷都与系统中已创建且可用的正确自适应QoS策略相关联。
 
@@ -35,26 +35,26 @@ NOTE: 如果未正确对卷应用自适应QoS策略、则会根据您的订阅�
 
 您可以配置自适应QoS策略、以便根据卷大小自动扩展吞吐量上限或下限。要配置策略、您应注意以下事项：
 
-* 策略组名称：自适应QoS策略组的名称。例如、`Keystone_Extreme`。
-* vserver：Vserver或Storage VM (Storage Virtual Machine)的名称。
-* 预期IOPS：只要有性能保证、ONTAP 至少提供的IOPS/TiB数。
-* 峰值IOPS。在性能受到限制之前、卷可以使用的最大IOPS/TiB数。
-* 预期IOPS分配：预期IOPS是考虑已分配空间还是已用空间。此字段控制卷的预期可用IOPS是基于卷的已配置大小还是已用大小。在Keystone中、所有QoS计算均基于已用空间。
-* 峰值IOPS分配：峰值IOPS是考虑已分配空间还是已用空间。此字段控制卷可用的峰值IOPS是基于卷的已配置大小还是已用大小。在Keystone中、所有QoS计算均基于已用空间。
-* 绝对最小IOPS：如果卷大小非常小、并且可能会导致IOPS数量不可接受、则应用于卷的最低预期IOPS数。对于`Extreme`、此值默认为1、000；对于`Premium`、此值默认为500；对于其他服务级别、此值默认为75。
+* *策略组名称*：自适应QoS策略组的名称。例如： `Keystone_extreme`。
+* * vserver*：Vserver或Storage VM (Storage Virtual Machine)的名称。
+* *预期IOPS*：只要有性能保证、ONTAP 提供的最小IOPS/TiB数。
+* *峰值IOPS*：在性能受到限制之前卷可使用的最大IOPS/TiB数。
+* *预期IOPS分配*：此字段控制卷的预期可用IOPS是基于卷的已分配大小还是已用大小。在Keystone中、此值基于已分配的空间。
+* *峰值IOPS分配*：此字段控制卷可用的峰值IOPS是基于卷的已分配大小还是已用大小。在Keystone中、此值基于已用空间。
+* *绝对最小IOPS*：如果卷大小非常小、并且可能会导致不可接受的IOPS数量、则应用于卷的预期IOPS的最低数量。对于、此值默认为1、000 `Extreme`、500表示 `Premium`和75表示其他服务级别。
 +
 
 NOTE: 这不是IOPS密度(例如75 IOPS/TiB)、而是绝对最小IOPS数。
 
 
 
-有关详细信息，请参见 https://docs.netapp.com/us-en/ontap/performance-admin/adaptive-qos-policy-groups-task.html["使用自适应 QoS 策略组"]。
+有关IO密度的信息、请参见 link:../concepts/metrics.html["Keystone服务中使用的指标和定义"]。有关AQO策略组的详细信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/adaptive-qos-policy-groups-task.html["使用自适应 QoS 策略组"^]。
 
 
 
 == 自适应QoS策略的设置
 
-自适应QoS策略的设置因每个服务级别而异。
+以下各节介绍了每个服务级别的自适应QoS策略设置。此处提供的每个服务级别的最小和最大卷大小可为卷提供最佳IOPS和延迟值。如果在这些准则之外创建的卷过多、可能会对这些卷的性能产生负面影响。
 
 
 
@@ -66,7 +66,7 @@ NOTE: 这不是IOPS密度(例如75 IOPS/TiB)、而是绝对最小IOPS数。
 
 
 ....
-qos adaptive-policy-group create -policy group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation used-space -peak-iops-allocation used-space -block-size 32K
+qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 1000
 ....
 * 最小卷大小：100 GiB、0.1 TiB
 * 最大卷大小：10 TiB
@@ -76,12 +76,13 @@ qos adaptive-policy-group create -policy group <Keystone_extreme> -vserver <SVM_
 
 === 高级服务级别的设置
 
- Settings and commands for the Premium service level:
+高级服务级别的设置和命令：
+
 * 命令示例：
 
 
 ....
-qos adaptive-policy-group create -policy group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation used-space -peak-iops-allocation used-space -block-size 32K
+qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 500
 ....
 * 最小卷大小：500 GiB、0.5 TiB
 * 最大卷大小：50 TiB
@@ -97,7 +98,7 @@ qos adaptive-policy-group create -policy group <Keystone_premium> -vserver <SVM_
 
 
 ....
-qos adaptive-policy-group create -policy group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation used-space -peak-iops-allocation used-space -block-size 32K
+qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 250
 ....
 * 最小卷大小：500 GiB、0.5 TiB
 * 最大卷大小：80 TiB
@@ -105,14 +106,15 @@ qos adaptive-policy-group create -policy group <Keystone_performance> -vserver <
 
 
 
-=== 值服务级别的设置
+=== 标准服务级别的设置
 
- Settings and commands for the Value  service level:
+标准服务级别的设置和命令：
+
 * 命令示例：
 
 
 ....
-qos adaptive-policy-group create -policy group <Keystone_premium> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation used-space -peak-iops-allocation used-space -block-size 32K
+qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 77
 ....
 * 最小卷大小：1 TiB
 * 最大卷大小：100 TiB
@@ -120,9 +122,19 @@ qos adaptive-policy-group create -policy group <Keystone_premium> -vserver <SVM_
 
 
 
-=== 卷大小建议
+=== 值服务级别的设置
 
-此处所述的每个服务级别的最小和最大卷大小可为卷提供最佳IOPS和延迟值。如果在这些准则之外创建的卷过多、可能会对这些卷的性能产生负面影响。
+值服务级别的设置和命令：
+
+* 命令示例：
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 59
+....
+* 最小卷大小：1 TiB
+* 最大卷大小：100 TiB
+
 
 
 
