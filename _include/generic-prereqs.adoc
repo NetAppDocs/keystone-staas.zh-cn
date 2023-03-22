@@ -24,7 +24,7 @@ NOTE: Keystone收集器需要Internet连接。您可以通过默认网关(通过
 
 
  a| 
-Keystone收集器
+Keystone收集器(适用于Keystone ONTAP)
  a| 
 Active IQ Unified Manager (Unified Manager)
  a| 
@@ -32,14 +32,29 @@ HTTPS
  a| 
 TCP 443
  a| 
-必填
+必需(如果使用Keystone ONTAP)
  a| 
-Keystone收集器使用情况指标收集
+ONTAP 的Keystone收集器使用情况指标收集
 
 
 
  a| 
-Keystone收集器
+Keystone收集器(适用于Keystone StorageGRID)
+ a| 
+StorageGRID 管理节点
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+必需(如果使用Keystone StorageGRID)
+ a| 
+StorageGRID 的Keystone收集器使用情况指标收集
+
+
+
+ a| 
+Keystone收集器(通用)
  a| 
 Internet (根据后面提供的URL要求)
  a| 
@@ -54,7 +69,7 @@ Keystone收集器软件、操作系统更新和指标上传
 
 
  a| 
-Keystone收集器
+Keystone收集器(通用)
  a| 
 客户HTTP代理
  a| 
@@ -69,7 +84,7 @@ Keystone收集器软件、操作系统更新和指标上传
 
 
  a| 
-Keystone收集器
+Keystone收集器(通用)
  a| 
 客户DNS服务器
  a| 
@@ -84,7 +99,7 @@ DNS解析
 
 
  a| 
-Keystone收集器
+Keystone收集器(通用)
  a| 
 客户NTP服务器
  a| 
@@ -95,6 +110,36 @@ UDP 123
 必填
  a| 
 时间同步
+
+
+
+ a| 
+Keystone收集器(适用于Keystone ONTAP)
+ a| 
+Unified Manager
+ a| 
+MySQL
+ a| 
+TCP 3306
+ a| 
+可选功能
+ a| 
+Keystone收集器的性能指标集合
+
+
+
+ a| 
+Keystone收集器(通用)
+ a| 
+客户监控系统
+ a| 
+HTTP
+ a| 
+TCP 777
+ a| 
+可选功能
+ a| 
+Keystone收集器运行状况报告
 
 
 
@@ -125,36 +170,6 @@ TCP 8000、ICMP回显请求/回复
 可选功能
  a| 
 用于更新ONTAP 固件的Web服务器
-
-
-
- a| 
-Keystone收集器
- a| 
-Unified Manager
- a| 
-MySQL
- a| 
-TCP 3306
- a| 
-可选功能
- a| 
-Keystone收集器的性能指标集合
-
-
-
- a| 
-Keystone收集器
- a| 
-客户监控系统
- a| 
-HTTP
- a| 
-TCP 777
- a| 
-可选功能
- a| 
-Keystone收集器运行状况报告
 
 |===
 

@@ -1,0 +1,315 @@
+---
+sidebar: sidebar 
+permalink: installation/data-collection.html 
+keywords: type of data collected by Keystone collector 
+summary: 按Keystone收集器收集ONTAP 和StorageGRID 的计费数据 
+---
+= Keystone收集的用户数据类型
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone可收集Keystone ONTAP 和Keystone StoragGRID订阅的配置、状态和使用情况信息。如果在Keystone收集器中启用了此选项、则它也只能收集ONTAP 的性能数据。
+
+
+
+== ONTAP 数据收集
+
+.为ONTAP 收集使用情况数据
+[%collapsible]
+====
+以下列表是为ONTAP 收集的容量消耗数据的代表性示例：
+
+* 集群
++
+** 集群UUID
+** 集群名称
+** 序列号
+** 位置(基于ONTAP 集群中的值输入)
+** 联系方式
+** version
+
+
+* 节点
++
+** 序列号
+** Node name
+
+
+* Volumes
++
+** Aggregate name
+** 卷名称
+** 卷实例UUID
+** IsCloneVolume标志
+** IsFlexGroup成分卷标志
+** isSpaceEnforcementLogical标志
+** IsSpaceReportingLogical标志
+** 逻辑空间已用字节时间
+** PercentSnapshotSpace
+** PerformanceTierInactiveUserData
+** PerformanceTierInactiveUserDataPercent
+** QoSAdaptivePolicyGroup名称
+** QoSPolicyGroup名称
+** Size
+** 已用
+** 物理使用
+** SizeUsedBySnapshots
+** Type
+** VolumeStyle扩展
+** Vserver name
+** isvsRoot标志
+
+
+* SVM
++
+** VserverName
+** VserverUUID
+** 子类型
+
+
+* 存储聚合
++
+** 存储类型
+** Aggregate name
+** 聚合UUID
+
+
+* 聚合对象存储
++
+** ObjectStoreName
+** ObjectStoreUUID
+** ProviderType
+** Aggregate name
+
+
+* 克隆卷
++
+** FlexClone
+** Size
+** 已用
+** vserver
+** Type
+** 父卷
+** ParentVserver
+** 等成分卷
+** SplitEssite
+** State
+** FlexCloneUsedPercent
+
+
+* 存储 LUN
++
+** LUN UUID
+** LUN 名称
+** Size
+** 已用
+** isReserved标志
+** 已申请标志
+** 逻辑单元名称
+** QoSPolicyUUID
+** QoSPolicyName
+** 卷UUID
+** 卷名称
+** SVMUUID
+** SVM 名称
+
+
+* 存储卷
++
+** 卷实例UUID
+** 卷名称
+** SVMName
+** SVMUUID
+** QoSPolicyUUID
+** QoSPolicyName
+** 容量层占用空间
+** 性能层占用空间
+** 总占用空间
+** 层策略
+** IsProtected标志
+** IsDestination标志
+** 已用
+** 物理使用
+** CloneParentUUID
+** 逻辑空间已用字节时间
+
+
+* QoS 策略组
++
+** PolicyGroup
+** QoSPolicyUUID
+** 最大吞吐量
+** 最小吞吐量
+** 最大ThroughputIOPS
+** 最大ThroughputMBps
+** 最小ThroughputIOPS
+** 最小ThroughputMBps
+** IsSharred标志
+
+
+* ONTAP 自适应QoS策略组
++
+** QoSPolicyName
+** QoSPolicyUUID
+** PeakIOPS
+** PeakIOPSAllocation
+** 绝对最小IOPS
+** 已指定IOPS
+** ExpectedIOPSAllocation
+** 块大小
+
+
+* 占用空间
++
+** vserver
+** Volume
+** 总占用空间
+** VolumeBlocksFooprintBin0
+** VolumeBlocksFooprintBin1
+
+
+* MetroCluster 集群
++
+** 集群UUID
+** 集群名称
+** 远程集群UUID
+** RemoteCluserName
+** 本地配置状态
+** RemoteConfiguration状态
+** 模式
+
+
+* 收集器的可观察性指标
++
+** 收集时间
+** 已查询Active IQ Unified Manager API端点
+** 响应时间
+** 记录数
+** AIQUMInstance IP
+** CollectorInstance ID
+
+
+
+
+====
+.为ONTAP 收集性能数据
+[%collapsible]
+====
+以下列表是为ONTAP 收集的性能数据的代表性示例：
+
+* 集群名称
+* 集群UUID
+* 对象ID
+* 卷名称
+* 卷实例UUID
+* vserver
+* VserverUUID
+* 节点串行
+* ONTAPVersion
+* AIQUM版本
+* 聚合
+* 聚合UUID
+* ResourceKey
+* 时间戳
+* IOPSPerTb
+* 延迟
+* 读取延迟
+* 写入MBps
+* QoSMinThroughputLatency
+* QoSNBladeLatency
+* UsedHeadRoom
+* CacheMissRatio
+* 其他延迟
+* QoSAgregateLatency
+* IOPS
+* QoSNetworkLetency
+* 可用操作
+* 写入延迟
+* QoSCSPOICY延迟
+* QoSClusterInterconnectLatency
+* 其他MBps
+* QoSCopLatency
+* QoSDBlade延迟
+* 利用率
+* 读取IOPS
+* MBps
+* 其他IOPS
+* QoSPolicyGroupLatency
+* 读取MBps
+* QoSSyncSnapmirrorLatency
+* 写入IOPS
+
+
+====
+.限制私有数据访问时删除的项列表
+[%collapsible]
+====
+如果在Keystone收集器上启用了*删除私有数据*选项、则不会为ONTAP 提供以下使用信息。默认情况下，此选项处于启用状态。
+
+* 集群名称
+* 集群位置
+* 集群联系人
+* 节点名称
+* Aggregate name
+* 卷名称
+* QoSAdaptivePolicyGroup名称
+* QoSPolicyGroup名称
+* Vserver name
+* 存储LUN名称
+* Aggregate name
+* 逻辑单元名称
+* SVM 名称
+* AIQUMInstance IP
+* FlexClone
+* RemoteClusterName
+
+
+====
+
+
+== StorageGRID 数据收集
+
+.为StorageGRID 收集使用情况数据
+[%collapsible]
+====
+以下列表是的代表性示例 `Logical Data` 为StorageGRID 收集：
+
+* StorageGRID ID
+* 帐户 ID
+* 帐户名称
+* 帐户配额字节
+* Bucket Name
+* 存储分段对象计数
+* 存储分段数据字节
+
+
+以下列表是的代表性示例 `Physical Data` 为StorageGRID 收集：
+
+* StorageGRID ID
+* 节点 ID
+* 站点ID
+* 站点名称
+* 实例
+* StorageGRID 存储利用率字节数
+* StorageGRID 存储利用率元数据字节
+
+
+====
+.限制私有数据访问时删除的项列表
+[%collapsible]
+====
+如果在Keystone收集器上启用了*删除私有数据*选项、则不会为StorageGRID 提供以下使用信息。默认情况下，此选项处于启用状态。
+
+* 帐户名称
+* BucketName
+* 站点名称
+* 实例/NodeName
+
+
+====

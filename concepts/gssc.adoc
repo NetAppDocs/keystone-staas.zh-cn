@@ -14,7 +14,7 @@ summary: NetApp全球服务支持中心GSSC
 
 
 [role="lead"]
-NetApp Keystone 服务可利用NetApp全球服务和支持中心(GSSC)、NetApp Keystone 成功经理和NetApp Keystone 服务交付经理来运行。
+NetApp全球服务和支持中心(GSSC)和NetApp Keystone 成功经理(KSM)负责为您提供Keystone订阅服务。
 
 
 
@@ -36,7 +36,7 @@ NetApp全球服务和支持中心(GSSC)团队主要为NetApp Keystone 客户提�
 
 NOTE: 在合作伙伴运营的模式中、租户和子租户的服务请求将分配给合作伙伴的服务台。合作伙伴的支持工具可能已与 OpsRamp 和 GSSC 应用程序集成。只有 L3 问题才会通过 GSSC 上报给 NetApp 。
 
-有关详细信息，请参见
+有关Keystone服务的详细信息、请参见：
 
 * NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
 * NetApp 产品文档https://docs.netapp.com["https://docs.netapp.com"^]

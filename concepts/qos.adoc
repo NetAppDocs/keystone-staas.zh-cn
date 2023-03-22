@@ -22,26 +22,26 @@ summary: Keystone的服务质量
 
 == 自适应 QoS
 
-Keystone服务使用自适应QoS (AQoS)来保持IOPS与TB/ GB的比率、因为大小会发生变化、因此会自动应用QoS策略。有关自适应QoS的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["关于自适应 QoS"^]。
+Keystone服务使用自适应QoS (AQoS)来保持IOPS与TB/ GB的比率、因为大小会发生变化、因此会自动应用QoS策略。有关AQO策略的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["关于自适应 QoS"^]。
 
-Keystone为您提供了自适应QoS策略、您可以在集群投入使用后设置这些策略。您应确保所有卷都与系统中已创建且可用的正确自适应QoS策略相关联。
+Keystone为您提供了AQO策略、您可以在集群投入使用后设置这些策略。您应确保所有卷都与系统中已创建并可用的正确AQO策略相关联。
 
 
-NOTE: 如果未正确对卷应用自适应QoS策略、则会根据您的订阅以最高服务级别对这些卷进行测量和计费。这可能会导致意外的突发费用。
+NOTE: 如果您未在卷上正确应用AQO策略、则会根据您的订阅以最高服务级别对这些卷进行测量和计费。这可能会导致意外的突发费用。
 
 
 
 == 配置自适应QoS策略组
 
-您可以配置自适应QoS策略、以便根据卷大小自动扩展吞吐量上限或下限。要配置策略、您应注意以下事项：
+您可以配置自适应QoS (AQoS)策略、以便根据卷大小自动扩展吞吐量上限或下限。要配置策略、您应注意以下事项：
 
-* *策略组名称*：自适应QoS策略组的名称。例如： `Keystone_extreme`。
+* *策略组名称*：AQO策略组的名称。例如： `Keystone_extreme`。
 * * vserver*：Vserver或Storage VM (Storage Virtual Machine)的名称。
 * *预期IOPS*：只要有性能保证、ONTAP 提供的最小IOPS/TiB数。
 * *峰值IOPS*：在性能受到限制之前卷可使用的最大IOPS/TiB数。
 * *预期IOPS分配*：此字段控制卷的预期可用IOPS是基于卷的已分配大小还是已用大小。在Keystone中、此值基于已分配的空间。
 * *峰值IOPS分配*：此字段控制卷可用的峰值IOPS是基于卷的已分配大小还是已用大小。在Keystone中、此值基于已用空间。
-* *绝对最小IOPS*：如果卷大小非常小、并且可能会导致不可接受的IOPS数量、则应用于卷的预期IOPS的最低数量。对于、此值默认为1、000 `Extreme`、500表示 `Premium`和75表示其他服务级别。
+* *绝对最小IOPS*：如果卷大小非常小、并且可能会导致不可接受的IOPS数量、则应用于卷的预期IOPS的最低数量。对于、此值默认为1、000 `Extreme`、500表示 `Premium`和250 `Performance`和75 `Standard` 和 `Value` 服务级别。
 +
 
 NOTE: 这不是IOPS密度(例如75 IOPS/TiB)、而是绝对最小IOPS数。
@@ -54,7 +54,7 @@ NOTE: 这不是IOPS密度(例如75 IOPS/TiB)、而是绝对最小IOPS数。
 
 == 自适应QoS策略的设置
 
-以下各节介绍了每个服务级别的自适应QoS策略设置。此处提供的每个服务级别的最小和最大卷大小可为卷提供最佳IOPS和延迟值。如果在这些准则之外创建的卷过多、可能会对这些卷的性能产生负面影响。
+以下各节介绍了每个服务级别的自适应QoS (AQoS)策略设置。此处提供的每个服务级别的最小和最大卷大小可为卷提供最佳IOPS和延迟值。如果在这些准则之外创建的卷过多、可能会对这些卷的性能产生负面影响。
 
 
 
@@ -66,7 +66,7 @@ NOTE: 这不是IOPS密度(例如75 IOPS/TiB)、而是绝对最小IOPS数。
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 1000
+qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 1000
 ....
 * 最小卷大小：100 GiB、0.1 TiB
 * 最大卷大小：10 TiB
@@ -82,7 +82,7 @@ qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 500
+qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 500
 ....
 * 最小卷大小：500 GiB、0.5 TiB
 * 最大卷大小：50 TiB
@@ -98,7 +98,7 @@ qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 250
+qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 250
 ....
 * 最小卷大小：500 GiB、0.5 TiB
 * 最大卷大小：80 TiB
@@ -114,7 +114,7 @@ qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 77
+qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
 * 最小卷大小：1 TiB
 * 最大卷大小：100 TiB
@@ -130,7 +130,7 @@ qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 59
+qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
 * 最小卷大小：1 TiB
 * 最大卷大小：100 TiB

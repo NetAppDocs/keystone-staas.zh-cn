@@ -21,7 +21,7 @@ summary: 通过Keystone收集器监控系统运行状况
 [listing]
 ----
 $ curl http://127.0.0.1:7777/uber/health
-{"is_healthy": true, "component_details": {"vicmet": "Running", "minio": "Running", "ks-collector": "Running", "ks-billing": "Running", "chronyd": "Running"}}
+{"is_healthy": true, "component_details": {"vicmet": "Running", "ks-collector": "Running", "ks-billing": "Running", "chronyd": "Running"}}
 ----
 返回以下状态代码：
 
@@ -103,5 +103,5 @@ NOTE: *问题描述 收集器*：Keystone收集器在使用量计量系统中运
 `$ keystone-collector-tui`
 . 转至*故障排除>生成支持包*。image:tui-sup-bundl.png[""]
 . 生成时、将显示保存分发包的位置。使用FTP、SFTP或SCP连接到该位置并将日志文件下载到本地系统。image:tui-sup-bundl-2.png[""]
-. 下载文件后、您可以将其附加到Keystone ServiceNow支持服务单中。有关信息，请参见 link:../concepts/gssc.html["正在生成服务请求"]。
+. 下载文件后、您可以将其附加到Keystone ServiceNow支持服务单中。有关提交服务单的信息、请参见 link:../concepts/gssc.html["正在生成服务请求"]。
 

@@ -1,0 +1,89 @@
+---
+sidebar: sidebar 
+permalink: installation/addl-req.html 
+keywords: keystone unified manager prerequisites, aiqum config keystone 
+summary: Keystone Unified Manager的前提条件 
+---
+= ONTAP 和StorageGRID 的其他前提条件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您应完成ONTAP 和StorageGRID 的一些其他前提条件。除了Linux/VMware vSphere系统要求之外、请确保您已完成这些特定前提条件。单击所需选项卡以了解更多信息。
+
+[role="tabbed-block"]
+====
+.ONTAP
+--
+要在ONTAP 中安装Keystone收集器、请先执行以下步骤：
+
+. 确保已为Active IQ Unified Manager (Unified Manager)服务器配置Unified Manager 9.7或更高版本。有关安装Unified Manager的信息、请参见以下链接：
++
+** https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["在VMware vSphere系统上安装Unified Manager"^]
+** https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/concept_requirements_for_install_unified_manager.html["在 Linux 系统上安装 Unified Manager"^]
+
+
+. 确保已将ONTAP 集群添加到Unified Manager中。有关添加集群的信息、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_clusters.html["添加集群"^]。
+. 创建具有特定角色的Unified Manager用户以收集使用情况和性能数据。执行以下步骤。有关用户角色的信息、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_definitions_of_user_roles.html["用户角色的定义"^]。
++
+.. 使用安装期间生成的默认应用程序管理员用户凭据登录到Unified Manager Web UI。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["访问 Unified Manager Web UI"^]。
+.. 使用为Keystone收集器创建服务帐户 `Operator` 用户角色。Keystone收集器服务API使用此服务帐户与Unified Manager进行通信并收集使用情况数据。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_users.html["添加用户"^]。
+.. 创建 `Database` 用户帐户、使用 `Report Schema` 角色。收集性能数据时需要此用户。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_create_database_user.html["创建数据库用户"^]。
+
+
+. 在Unified Manager中启用API网关。Keystone收集器可利用API网关功能与ONTAP 集群进行通信。您可以从Web UI启用API网关、也可以通过Unified Manager命令行界面运行几个命令来启用API网关。
++
+.Web UI
+要从Unified Manager Web UI启用API网关、请登录到Unified Manager Web UI并启用API网关。有关信息，请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/concept_api_gateway.html["启用 API 网关"^]。
+
++
+.命令行界面
+要通过Unified Manager命令行界面启用API网关、请执行以下步骤：
+
++
+.. 在Unified Manager服务器上、开始SSH会话并登录到Unified Manager命令行界面。
+`um cli login -u _<umadmin>_`有关CLI命令的信息、请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_supported_unified_manager_cli_commands.html["支持的 Unified Manager 命令行界面命令"^]。
+.. 验证是否已启用API网关。
+`um option list api.gateway.enabled`答 `true` 值表示已启用API网关。
+.. 如果返回的值为 `false`、运行以下命令：
+`um option set api.gateway.enabled=true`
+.. 重新启动Unified Manager服务器：
++
+*** Linux ： https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/task_restart_unified_manager.html["正在重新启动 Unified Manager"^]。
+*** VMware vSphere： https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/task_restart_unified_manager_virtual_machine.html["重新启动 Unified Manager 虚拟机"^]。
+
+
+
+
+
+
+--
+.StorageGRID
+--
+在StorageGRID 上安装Keystone收集器需要以下配置。
+
+* StorageGRID `11.4.0` 或更高版本。有关升级StorageGRID 的信息、请参见 link:https://docs.netapp.com/us-en/storagegrid-116/upgrade/index.html["Upgrade StorageGRID software ：概述"^]。
+* 应创建StorageGRID 本地管理员用户帐户以收集使用情况数据。Keystone收集器服务使用此服务帐户通过管理员节点API与StorageGRID 进行通信。
++
+.步骤
+.. 登录到网格管理器。请参见 https://docs.netapp.com/us-en/storagegrid-116/admin/signing-in-to-grid-manager.html["登录到网格管理器"^]。
+.. 使用创建本地管理组 `Access mode: Read-only`。请参见 https://docs.netapp.com/us-en/storagegrid-116/admin/managing-admin-groups.html#create-an-admin-group["创建管理组"^]。
+.. 添加以下权限：
++
+*** 租户帐户
+*** 维护
+*** 指标查询
+
+
+.. 创建Keystone服务帐户用户并将其与管理组关联。请参见 https://docs.netapp.com/us-en/storagegrid-116/admin/managing-users.html["管理用户"]。
+
+
+
+
+--
+====

@@ -14,15 +14,36 @@ summary: Keystone收集器的配置
 
 
 [role="lead"]
-要使Keystone收集器能够收集存储环境中的使用情况数据、您需要完成一些配置任务。这是一次激活所需收集器组件并将其与Active IQ Unified Manager (Unified Manager)关联的活动。
+要使Keystone收集器能够收集存储环境中的使用情况数据、您需要完成一些配置任务。此活动是一次性的、用于激活所需的收集器组件并将其与存储环境相关联。
 
-可以监控由Unified Manager管理的所有ONTAP 集群。请按照以下步骤操作：
+
+NOTE: Keystone收集器可为您提供Keystone收集器管理终端用户界面(TUI)实用程序来执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。
 
 .步骤
 . 打开Keystone收集器管理TUI实用程序：
 `$ keystone-collector-tui`
-. 转至"**配置">"KS-Collector"以打开Keystone收集器配置屏幕、并添加Unified Manager服务器和服务帐户的详细信息。如果出于SLA目的、此环境需要性能监控、请启用"*收集ONTAP 性能数据"*选项、并提供Unified Manager数据库用户帐户详细信息。有关信息，请参见 link:../aiqum-req.html["创建Unified Manager用户"]。
-. 切换"**启用KS-Collector Service"*字段。
+. 转至"**配置">"KS-Collector"*以打开Keystone收集器配置屏幕、查看可用的更新选项。
+. 更新所需选项。
++
+.<strong> 协议</strong>
+[%collapsible]
+====
+** *收集ONTAP 使用量*：此选项可用于收集ONTAP 的使用量数据。添加Active IQ Unified Manager (Unified Manager)服务器和服务帐户的详细信息。
+** *收集ONTAP 性能数据*：此选项可用于收集ONTAP 的性能数据。默认情况下、此选项处于禁用状态。如果您的环境需要进行性能监控以实现SLA、请启用此选项。提供Unified Manager数据库用户帐户详细信息。有关创建数据库用户的信息、请参见 link:../addl-req.html["创建Unified Manager用户"]。
+** *删除私有数据*：此选项将删除客户的特定私有数据、默认情况下处于启用状态。有关在启用此选项后从指标中排除哪些数据的信息、请参见 link:../installation/configuration.html#limit-collection-of-private-data["限制私有数据的收集"]。
+
+
+====
++
+.<strong> StorageS卷</strong>
+[%collapsible]
+====
+** *收集StorageGRID 使用情况*：此选项可用于收集节点使用情况详细信息。添加StorageGRID 节点地址和用户详细信息。
+** *删除私有数据*：此选项将删除客户的特定私有数据、默认情况下处于启用状态。有关在启用此选项后从指标中排除哪些数据的信息、请参见 link:../configuration.html#limit-collection-of-private-data["限制私有数据的收集"]。
+
+
+====
+. 切换"*使用系统启动KS-Collector"字段。
 . 单击"*保存"*。image:tui-1.png[""]
 . 返回TUI的主屏幕并验证"*服务状态"*信息、以确保Keystone收集器处于运行状况良好的状态。系统应显示这些服务处于"Overall"：Health"*状态。image:tui-2.png[""]
 . 在主屏幕上选择"Exitto Shell"选项、退出Keystone收集器管理TUI。
@@ -47,113 +68,8 @@ summary: Keystone收集器的配置
 
 Keystone收集器可收集执行订阅计量所需的有限配置、状态和性能信息。您可以选择通过屏蔽上传的内容中的敏感信息来进一步限制收集的信息。这不会影响计费计算。但是、限制信息可能会影响报告信息的可用性、因为某些要素(例如卷名称)会替换为UUID、而这些要素可以由用户轻松识别。
 
-可以在TUI配置屏幕上配置用于限制数据的选项"*删除私有数据"。默认情况下，此选项处于禁用状态。
+限制特定客户数据的收集是Keystone收集器TUI屏幕上的一个可配置选项。默认情况下、此选项*删除私有数据*处于启用状态。
 
 image:tui-4.png[""]
 
-
-
-=== 为收集使用情况而收集的信息示例列表
-
-以下列表是使用情况收集中包含的内容的代表性示例：
-
-* 集群
-+
-** 集群UUID
-** 序列号
-** 位置(基于ONTAP 集群中的值输入)
-** 联系方式
-
-
-* 节点
-+
-** 序列号
-** Node name
-
-
-* Volumes
-+
-** Aggregate name
-** 卷名称
-** 卷实例UUID
-** IsCloneVolume标志
-** IsFlexGroup成分卷标志
-** isSpaceEnforcementLogical标志
-** IsSpaceReportingLogical标志
-** 逻辑空间已用字节时间
-** PercentSnapshotSpace
-** PerformanceTierInactiveUserData
-** PerformanceTierInactiveUserDataPercent
-** QosAdaptivePolicyGroup名称
-** QosPolicyGroup名称
-** Size
-** SizeUsedBySnapshots
-** Type
-** VolumeStyle扩展
-** Vserver name
-** isvsRoot标志
-
-
-* StorageAggrs
-+
-** 存储类型
-** Aggregate name
-** 聚合UUID
-
-
-* AggregateObjectStores
-+
-** ObjectStoreName
-** ObjectStoreUUID
-** ProviderType
-** Aggregate name
-
-
-* StorageLuns
-+
-** LUN UUID
-** Size
-** 已用
-** isReserved标志
-** 已申请标志
-** 逻辑单元名称
-** QosPolicyUUID
-** QosPolicyName
-** 卷UUID
-** 卷名称
-** SvmUUID
-** SVM名称
-
-
-* 收集器的可观察性指标
-+
-** 收集时间
-** 已查询AIQUM API端点
-** 响应时间
-** 记录数
-** AiqumInstance IP
-** CollectorInstance ID
-
-
-
-
-
-
-=== 限制私有数据访问时删除的项列表
-
-启用*删除私有数据*选项后、将消除以下信息：
-
-* 集群名称
-* 集群位置
-* 集群联系人
-* 节点名称
-* Aggregate name
-* 卷名称
-* QosAdaptivePolicyGroup名称
-* QosPolicyGroup名称
-* Vserver name
-* Aggregate name
-* 逻辑单元名称
-* SVM名称
-* AiqumInstance IP
-
+有关在ONTAP 和StorageGRID 中删除的限制私有数据访问的项的信息、请参见 link:../installation/data-collection.html["限制私有数据访问时删除的项列表"]。

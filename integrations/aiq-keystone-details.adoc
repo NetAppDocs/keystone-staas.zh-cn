@@ -14,9 +14,9 @@ summary: Keystone订阅报告和图形
 
 
 [role="lead"]
-如果您已订阅NetApp Keystone STaaS服务、则可以在数字顾问信息板上的* Keystone订阅*小工具上监控您的使用情况。
+如果您已订阅NetApp Keystone STaaS服务、则可以在Active IQ 数字顾问(Digital Advisor)信息板上的* Keystone订阅*小工具上监控您的使用情况。
 
-有关Digital Advisor小工具的信息、请参见 https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["查看NetApp Keystone 订阅的容量利用率"^]。
+有关Digital Advisor小工具的信息、请参见 https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["查看NetApp Keystone 订阅的容量利用率"^]。
 
 单击小工具上的*查看更多详细信息*、在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规> Keystone订阅*。
 

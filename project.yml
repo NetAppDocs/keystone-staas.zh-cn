@@ -17,14 +17,14 @@ sidebar:
     entries:
     - title: 什么是Keystone收集器
       url: "/installation/installation-overview.html"
-    - title: 安装前提条件
+    - title: 安装Keystone收集器的前提条件
       entries:
       - title: VMware vSphere 前提条件
         url: "/installation/vapp-prereqs.html"
       - title: Linux前提条件
         url: "/installation/linux-prereqs.html"
-      - title: Active IQ Unified Manager 配置
-        url: "/installation/aiqum-req.html"
+      - title: ONTAP 和StorageGRID 的特定前提条件
+        url: "/installation/addl-req.html"
     - title: 安装操作步骤
       entries:
       - title: VMware vSphere部署
@@ -37,6 +37,8 @@ sidebar:
       url: "/installation/configuration.html"
     - title: 监控系统运行状况
       url: "/installation/monitor-health.html"
+    - title: 收集用于计费的数据
+      url: "/installation/data-collection.html"
   - title: 了解Keystone
     entries:
     - title: 支持的存储容量
@@ -97,9 +99,9 @@ sidebar:
     entries:
     - title: Keystone和BlueXP
       url: "/integrations/keystone-cm.html"
-    - title: Keystone和Digital Advisor
+    - title: Keystone和Active IQ 数字顾问
       url: "/integrations/keystone-aiq.html"
-    - title: Digital Advisor Keystone信息板和报告
+    - title: Active IQ 数字顾问Keystone报告
       url: "/integrations/aiq-keystone-details.html"
   - title: 法律声明
     url: "/legal-notices.html"
@@ -149,7 +151,7 @@ homepage:
       url: "/concepts/gssc.html"
     - title: Keystone和BlueXP
       url: "/integrations/keystone-cm.html"
-    - title: Keystone和Digital Advisor
+    - title: Keystone和Active IQ 数字顾问
       url: "/integrations/keystone-aiq.html"
     - title: 美国公民支持
       url: "/concepts/uscs.html"
@@ -157,7 +159,7 @@ homepage:
     links:
     - title: Keystone Flex 订阅
       url: https://docs.netapp.com/us-en/keystone/
-    - title: Digital Advisor
+    - title: Active IQ Digital Advisor
       url: https://docs.netapp.com/us-en/active-iq/index.html
     - title: BlueXP
       url: https://docs.netapp.com/us-en/cloud-manager-family/

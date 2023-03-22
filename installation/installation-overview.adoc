@@ -14,12 +14,12 @@ summary: 什么是Keystone收集器
 
 
 [role="lead"]
-要获得并启用Keystone服务、您应在站点的VMware vSphere或Linux系统上安装Keystone收集器。
+要使用Keystone服务并查看使用情况数据、您应在站点的VMware vSphere或Linux系统上安装Keystone收集器。
 
 
-NOTE: 此处提供的安装和配置信息仅适用于ONTAP。
+NOTE: 此处提供的安装和配置信息适用于ONTAP 和StorageGRID。这些要求和过程适用于ONTAP 和StorageGRID 、但有一些例外。
 
-Keystone收集器是Keystone计费平台的主要组件、它可以利用Active IQ Unified Manager 和其他应用程序连接到ONTAP 存储系统、并使您能够监控存储环境的运行状况、同时发送计费数据进行报告。
+Keystone收集器是Keystone计费平台的使用量采集组件、它利用Active IQ Unified Manager 和其他应用程序连接到ONTAP 和StorageGRID 系统、收集Keystone订阅的使用量和SLA性能计量所需的元数据。通过它、您可以监控系统运行状况、同时发送计费数据进行报告。
 
 此架构图概述了在典型Keystone环境中的成分组件及其连接。
 

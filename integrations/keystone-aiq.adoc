@@ -14,11 +14,11 @@ summary: Keystone和Digital Advisor
 
 
 [role="lead"]
-如果您已订阅NetApp Keystone 服务、则可以在"Digital Advisor"信息板上查看使用情况报告和图形。
+如果您已订阅NetApp Keystone 服务、则可以在Active IQ 数字顾问(Digital Advisor)信息板上查看使用情况报告和图形。
 
 通过Digital Advisor、您可以查看有关您拥有的NetApp基础架构的存储即服务(STaaS)详细信息和信息。Digital Advisor提供了一个信息板、可通过该信息板查看您的订阅、服务级别和容量使用情况、并可创建详细报告。
 
-有关Keystone的Digital Advisor信息板小工具的详细信息、请参见 https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["Digital Advisor文档"^]。
+有关Keystone的Digital Advisor信息板小工具的详细信息、请参见 https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Digital Advisor文档"^]。
 
 有关Keystone信息板和报告的详细信息、请参见 link:../integrations/aiq-keystone-details.html["Keystone订阅信息板和报告"]。
 
