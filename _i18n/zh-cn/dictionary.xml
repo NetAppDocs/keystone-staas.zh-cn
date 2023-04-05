@@ -830,8 +830,6 @@
   <block id="89fb8980c16c92d28af72e0579cfac9c" category="summary">Keystone订阅报告和图形</block>
   <block id="deaf5bbabe29231a9826b313fee569a1" category="doc">Keystone订阅信息板和报告</block>
   <block id="b5d0947d6bc5e70f868d560d859163f5" category="inline-link">查看NetApp Keystone 订阅的容量利用率</block>
-  <block id="530e795f91eac0d251eb1546c915f390" category="paragraph">单击小工具上的*查看更多详细信息*、在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规&gt; Keystone订阅*。</block>
-  <block id="2b5cc61793a2ba9e545466a73e93c16e" category="paragraph">订阅详细信息、每个服务级别的使用情况图表以及卷详细信息将显示在此屏幕的不同选项卡中。</block>
   <block id="016b01bead3857be9fd51bfef49b23aa" category="admonition">Keystone订阅中的容量消耗以Tib形式显示在信息板和报告上、最多可显示两位小数。如果使用量小于0.01TiB、则该值显示为0或<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。有关其他使用指标、请参见 <block ref="c526a2ccdbb16224fb861d4fec1eb67c" category="inline-link-macro-rx"></block>。有关Keystone中使用的不同容量的信息、请参见 <block ref="a2e2f97253342349ff9ef2b936b778d0" category="inline-link-macro-rx"></block>。</block>
   <block id="b3c0ed0e576799a24c9e0fda06bee006" category="section-title">查看订阅详细信息</block>
   <block id="b5d0d2658bdd7db17a2251c2d1fa6edb" category="paragraph">您可以在*订阅详细信息*选项卡中查看帐户名称的所有订阅。</block>
@@ -867,7 +865,6 @@
   <block id="d08b54ee187c7327910bae3997812ee1" category="list-text">*警告*：违规等问题将显示为警告。例如、如果受管集群中的卷未附加自适应QoS (AQoS)策略、您可以看到一条警告消息。您可以单击警告消息上的链接、在*系统详细信息*选项卡中查看不合规卷的列表。</block>
   <block id="0fdfd6d11ae114ae172cdc0ad002c349" category="paragraph">有关AQO策略的信息、请参见 <block ref="ec50deebd618280d321c610a1ff0d73b" category="inline-link-macro-rx"></block>。</block>
   <block id="2f79ebd4f32cabd1114c688445ebf53e" category="paragraph"><block ref="2f79ebd4f32cabd1114c688445ebf53e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7e3b81d04325da2b3bbb50d615754b46" category="paragraph">有关这些注意事项和警告消息的详细信息、请联系支持部门。有关信息，请参见 <block ref="a7ae718de79af41225531b7d4972e1ef" category="inline-link-macro-rx"></block>。</block>
   <block id="f303aa2ecdcc69fbc97adcf5a2476825" category="paragraph">通过Digital Advisor、您可以查看有关您拥有的NetApp基础架构的存储即服务(STaaS)详细信息和信息。Digital Advisor提供了一个信息板、可通过该信息板查看您的订阅、服务级别和容量使用情况、并可创建详细报告。</block>
   <block id="7a00a46aa8b851e05a0a8783db55e3ab" category="paragraph">有关Keystone信息板和报告的详细信息、请参见 <block ref="e4a96850db17c7110d770223b8207b51" category="inline-link-macro-rx"></block>。</block>
   <block id="ac6a5de4e069a7968a64e732a7cbd9af" category="admonition">*问题描述 收集器*：Keystone收集器在使用量计量系统中运行多个容器。如果Red Hat Enterprise Linux 8.x服务器使用美国国防信息系统局(DISA)安全技术实施指南(Stig)策略进行了加固、则会间歇性地看到一个已知的问题描述 with folicyd (文件访问策略守护进程)。此问题描述 标识为 <block ref="c6da6cbf9dd009f994ed56cf4b1ffbbb" category="inline-link-macro-rx"></block>。*临时解决策 *：在Red Hat Enterprise解决问题之前、NetApp建议您通过输入来解决此问题描述<block ref="f3104ccbad818f132c8760f414494a6b" prefix=" " category="inline-code"></block> 进入许可模式。在中 <block ref="14802523b331d06f88071877a80dca79" prefix="/" category="inline-code"></block>、设置的值<block ref="e2f21a3f9a4466418728abff3026c8d3" prefix=" " category="inline-code"></block>。</block>
@@ -1115,8 +1112,6 @@
   <block id="c9b73422281776827a4c8f78b386d48d" category="list-text">Keystone STaaS价值层、Keystone STaaS StorageGRID 对象层或现有SGWS网格(客户拥有)—无需额外付费；它属于标准服务。</block>
   <block id="bdb55621cf8fb40ec7b1841db7d1f702" category="paragraph">如果您已订阅NetApp Keystone 服务、则可以在Active IQ 数字顾问(Digital Advisor)信息板上查看使用情况报告和图形。</block>
   <block id="a8db66bfea8d3f0ff898a3ca39507082" category="paragraph">有关Keystone的Digital Advisor信息板小工具的详细信息、请参见<block ref="f1d08d608ab5c8900f388298993967cb" category="inline-link-rx"></block>。</block>
-  <block id="1df8c900e0f061f7bb2ff4a2177621de" category="paragraph">如果您已订阅NetApp Keystone STaaS服务、则可以在Active IQ 数字顾问(Digital Advisor)信息板上的* Keystone订阅*小工具上监控您的使用情况。</block>
-  <block id="9ff2a83b372e89b7fee5580c527d9e8e" category="paragraph">有关Digital Advisor小工具的信息、请参见<block ref="553d5c0a148912943ee201440d3b98c5" category="inline-link-rx"></block>。</block>
   <block id="bea3a7144124c0e70f43a6748e2fb32b" category="paragraph">有关Keystone和BlueXP的详细信息、请参见BlueXP文档中的以下链接：</block>
   <block id="db9c0d8e0c5e9a6fc69af04d34b56fee" category="sidebar">安装Keystone收集器的前提条件</block>
   <block id="80d2bb01a7a85d4aa2c304e7cde98a6e" category="sidebar">ONTAP 和StorageGRID 的特定前提条件</block>
@@ -1159,4 +1154,11 @@
   <block id="d599237a38a37deabe01bd34298be802" category="list-text">单击此链接可查看每个节点的节点名称和物理使用情况详细信息。</block>
   <block id="47e40976658c073c0e6048f08d9a27c6" category="paragraph"><block ref="47e40976658c073c0e6048f08d9a27c6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7a0a61d280e201148fcd091f8167d88f" category="list-text">*信息*：对于诸如订阅即将结束等问题、您可以看到信息警报。将光标悬停在信息图标上方、了解有关问题描述 的更多信息。</block>
+  <block id="1aa4a8544fc94c7ce0ff8c9bc46bb523" category="paragraph">通过Active IQ 数字顾问(Digital Advisor)信息板、您可以监控与NetApp Keystone 订阅相关的使用情况并生成报告。订阅Keystone服务时、您可以在Digital Advisor信息板上的* Keystone订阅*小工具中查看订阅和使用情况的详细信息。</block>
+  <block id="936acd8bca51b1c47ce51ce5d9e45134" category="admonition">此处提供的信息包括适用场景 ONTAP 和StorageGRID。相关章节指出了一些例外情况。</block>
+  <block id="90022a4ed9f097be4671116b6b5b7754" category="paragraph">有关Keystone Digital Advisor小工具的信息、请参见<block ref="553d5c0a148912943ee201440d3b98c5" category="inline-link-rx"></block>。</block>
+  <block id="af23688fe47e4923ebd83f7238688630" category="paragraph">要查看详细信息、请执行以下步骤：</block>
+  <block id="e84dede1181b53e24bdf1d55508b83bf" category="list-text">在Digital Advisor上、单击小工具上的*查看更多详细信息*、在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规&gt; Keystone订阅*。</block>
+  <block id="b49a48b1a3504debfe7fedab8ad4086d" category="paragraph">订阅详细信息、每个服务级别的使用情况图表以及卷详细信息将显示在* Keystone订阅*屏幕的不同选项卡中。</block>
+  <block id="de87c00cded561268b46fe5428fdd938" category="paragraph">有关这些注意事项和警告消息的详细信息、请联系NetApp支持部门。有关提出服务请求的信息、请参见 <block ref="1bf858345505311d2a0e9fcf6e1f42da" category="inline-link-macro-rx"></block>。</block>
 </blocks>
