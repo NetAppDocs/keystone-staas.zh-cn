@@ -37,6 +37,8 @@ sidebar:
       url: "/installation/configuration.html"
     - title: 监控系统运行状况
       url: "/installation/monitor-health.html"
+    - title: 升级Keystone收集器
+      url: "/installation/upgrade.html"
     - title: 收集用于计费的数据
       url: "/installation/data-collection.html"
   - title: 了解Keystone
@@ -89,8 +91,6 @@ sidebar:
       url: "/concepts/infra.html"
     - title: 组件
       url: "/concepts/components.html"
-    - title: 将OpsRamp用作监控应用程序
-      url: "/concepts/opsramp.html"
     - title: 数据流
       url: "/concepts/data-flow.html"
   - title: NetApp全球服务支持中心

@@ -27,31 +27,19 @@
   <block id="8c880fe54cae171fa97132f8c5e82297" category="section-title">散热</block>
   <block id="e49c1cb86b679c35d94b37728ee6dfb6" category="paragraph">NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU ，最大 BTU ）。</block>
   <block id="4d2caccc34711835f6ff99da411ac04e" category="section-title">Storage Virtual Machine</block>
-  <block id="02e1aa31c2191eece350edd271260aa9" category="paragraph">部署Storage Virtual Machine (Storage VM)时应遵循以下要求、以支持监控和计量Keystone订阅。Keystone收集器需要一个Storage VM；OpsRamp网关需要另一个Storage VM</block>
-  <block id="ea499517d120e59b698edd3b0e9b03ea" category="list-text">Keystone收集器—用于收集使用情况指标：</block>
-  <block id="8bdf4f114c9098ba3fdea93bebf82839" category="list-text">vCPU：4</block>
-  <block id="21c3987c5465a9d1dac24e575c718364" category="list-text">VRAM：16 GB</block>
-  <block id="7c0886fffc74a7b64e90744419e68707" category="list-text">vDisk：200 GB</block>
-  <block id="40d3a2dbc93408ab5e3aafd7fc3b4a19" category="list-text">OpsRamp网关—用于实时监控+ Keystone GSSC提供的远程支持ONTAP ：</block>
-  <block id="2f11c8227592a45cc8abe03cd297016d" category="list-text">vCPU：8</block>
-  <block id="f910487762637173c68eb89d21dcb743" category="list-text">vDisk：100 GB</block>
   <block id="b81687f75b28f9a0cfb73649c9cca458" category="section-title">部署选项</block>
   <block id="246dfda784335eef257ddd5ba4322a18" category="paragraph">可以通过以下方法部署Keystone收集器：</block>
   <block id="a100eabbc0de64e817f5268550f98e40" category="list-text">VMware OVA模板(需要VMware vCenter Server 6.7或更高版本)</block>
-  <block id="e306861432fdc26395776b050a8d4eff" category="list-text">客户提供Red Hat Enterprise Linux 7或8或CentOS 7 Linux服务器、并通过`.rpm`安装过程安装Keystone软件。</block>
-  <block id="3323e8fb7096cf3b5b43db57ba6576ee" category="paragraph">OpsRamp网关部署在以下配置中：</block>
   <block id="982460f46a9c865b5659aba58b2214e3" category="list-text">可启动的.iso安装程序</block>
   <block id="12d3f37fc10bb62fe3297b7457e90417" category="list-text">Citrix XenServer</block>
   <block id="bbc2d665b02dc421c5c756db4b973610" category="list-text">Microsoft Hyper-V</block>
   <block id="e05386baa04fdb8086234b221371bac1" category="list-text">基于内核的虚拟机(Linux KVM)</block>
   <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">网络</block>
-  <block id="c711d976f76bfa70e95af42b8654fb93" category="paragraph">要运行和维护Keystone收集器和OpsRamp网关、需要对以下服务进行出站访问：</block>
   <block id="6a289655b3295fc9e844e417d89ad1d9" category="list-text">support.netapp.com (使用情况数据上传)</block>
   <block id="28e1a3383bffc4e3398dba57600db789" category="list-text">keystone.netapp.com (软件更新)</block>
   <block id="ebe9aca07858175421a1a9356e13ef73" category="list-text">hub.docker.io (软件更新)</block>
   <block id="bc9ce1a2001f13d5a3489030a7b630e9" category="paragraph">NetApp仅为NetApp提供的基础架构设备提供所需的收发器。您应提供客户设备所需的收发器、并使用缆线连接到NetApp提供的Keystone基础架构设备。</block>
   <block id="d701dcea67fd884a29f39c9adfdeb8bf" category="section-title">远程访问要求</block>
-  <block id="e087b210b0b25de538565418ba75ff89" category="paragraph">NetApp需要访问为监控和管理而安装的硬件和软件组件、以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络(VPN)连接并访问所需数据。为了克服客户认为因向新服务打开防火墙端口而导致的任何操作复杂性、监控工具会启动外部连接。OpsRamp和Zuora等NetApp云应用程序使用此连接来执行相应的服务。此方法可满足客户的要求、即不打开防火墙端口、但可以访问属于此服务一部分的监控组件。</block>
   <block id="b33c741c562e791f067740096844ffe9" category="summary">欢迎使用Keystone</block>
   <block id="8ae3d79d3f1b6cb3022dbfb96c477b67" category="doc">了解NetApp Keystone</block>
   <block id="341d84aa26cb4521474864e04ea2a63b" category="inline-image-macro">错误：缺少图形映像</block>
@@ -190,13 +178,11 @@
   <block id="c9f8c46c19cc33ee0a4a750a7062ea9e" category="list-text">增加或减少产品容量以满足服务要求。</block>
   <block id="c922e260c91e9dfb9972aed0ec4df400" category="list-text">修改架构，技术和 / 或产品以满足服务要求。</block>
   <block id="63960c1414ae7aedf0bb17dff5c6759d" category="paragraph">Keystone基础架构包括多个组件、例如以下组件：</block>
-  <block id="50b3ca2bf45db45c46e3f489f5322d29" category="list-text">用于管理和运行服务的工具，例如 OpsRamp ， Active IQ 和 Active IQ Unified Manager 。</block>
   <block id="f9267c96d3041f6412751f589901c372" category="section-title">存储平台</block>
   <block id="414aed93a577927f0e7911bc9b07e11e" category="paragraph">企业级应用程序需要存储平台来支持快速配置工作流、保持持续可用性、以低延迟持续运行高工作负载、提供更高的性能、并支持与主要云提供商的集成。NetApp提供了多种产品和技术来满足这些要求。对于Keystone服务、NetApp使用AFF 和StorageGRID 平台。</block>
   <block id="2e36da56dea864a88d8bfe77e37ce8ce" category="section-title">监控工具</block>
   <block id="6961b64b96800d43e0da115e9763a226" category="paragraph">在Keystone客户运营的服务中、存储基础架构和监控工具会安装在您的站点上。存储基础架构由支持初始订单所需的存储硬件组成、并可配置为稍后订购更多存储。</block>
   <block id="ae031eb46bb3af9ef59c200e318f13e4" category="paragraph">除了存储设备之外、还配置了两个监控工具来监控存储和使用情况。</block>
-  <block id="fd743d6b8cc0efa021c01a2c37789e28" category="list-text">OpsRamp本地网关：OpsRamp是一个基于云的应用程序、用于监控您的网络。它内置了与NetApp存储平台的集成功能、可用于收集环境数据并监控网络。通过使用您站点上安装的本地网关与云门户进行通信、可以启用此服务。有关信息、请参见</block>
   <block id="4a08d1835c4f40051f2bf2514b677434" category="paragraph"><block ref="4a08d1835c4f40051f2bf2514b677434" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8ef6698c4c0c28e13ff87fec7e5388eb" category="summary">高级数据保护</block>
   <block id="c575a20db4934726a8fadd53d81a0c98" category="inline-link-macro">Keystone中的服务级别</block>
@@ -258,18 +244,6 @@
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">不适用</block>
   <block id="6872c2b6282a1ff41523f7b84a51d4da" category="section-title">云存储</block>
   <block id="a6b775035306fc8ea9ed0392f6da3bfa" category="cell">灾难恢复、软件开发/测试、业务应用程序</block>
-  <block id="34de092c612c654c5fd27c6d9ff3bfeb" category="summary">将OpsRamp用作监控应用程序</block>
-  <block id="b81ff76d52b237aa245e39913f840b9d" category="paragraph">此工具具有丰富而强大的功能、可用于发现应用程序、服务器、网络设备、容器以及IT环境中通常使用的其他资源等资产。此远程管理服务易于部署在不同位置、可快速收集数据、并可在集中式信息板上轻松查看。要获取有关OpsRamp计划的更多信息、请访问<block ref="4490de11b8adc62f0a394db07a9aef6e" category="inline-link-rx"></block>。</block>
-  <block id="6c00330d2a26248fda642bc7d5579f3d" category="paragraph"><block ref="6c00330d2a26248fda642bc7d5579f3d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ebaea1050d4e42fa1326b2f740b72922" category="paragraph">在OpsRamp架构中、集中式SaaS应用程序有两个不同的组件、如图所示。在监控站点上、可以使用OpsRamp本地网关从资产中收集数据、也可以使用要监控的资源中的OpsRamp代理、或者同时使用本地网关和代理。</block>
-  <block id="7edf5493dbd819b6a6022e6339f194cf" category="paragraph">OpsRamp云门户是一个基于SaaS的应用程序、用于从客户位置安装的代理或本地网关收集元数据、并对其进行处理、然后将其显示在信息板上并提供观察结果。Keystone监控团队会定期监控此信息板、以获得深入见解。</block>
-  <block id="e3bd1d9c0841cd12eb394cd52e1a4088" category="paragraph">OpsRamp集中式工具和OpsRamp本地网关协同工作来监控和管理资产。集中式工具发出命令、本地网关对其执行操作、收集数据并将其发送回集中式门户。</block>
-  <block id="0f63e54ffaa738810d523b9c01ab58ef" category="paragraph">客户站点上安装的OpsRamp本地网关具有多种优势、例如：</block>
-  <block id="479380705f5d366e922b5a0bd903e4fd" category="list-text">无需在所有资产上安装OpsRamp代理。</block>
-  <block id="c4c52b5ed565bb0d9e83873baf1f9507" category="list-text">这些资产只能指向本地网关、该网关可以聚合警报并将其发送到集中式门户。</block>
-  <block id="cb4542f091147cb7d66b55d0dde25cf2" category="list-text">客户可以限制和监控本地网关上的传入和传出流量、而不是允许在不同设备上部署OpsRamp代理流量。</block>
-  <block id="a7b66a2d4e4ff13875009f305dd65473" category="section-title">OpsRamp安全性</block>
-  <block id="9489d34587f04c7f6c07ccbb6980e343" category="paragraph">OpsRamp符合SOC 2 Type II等标准、并托管在符合ISO 27001和SOC 1 Type I安全性、可用性和机密性标准的第1层数据中心提供商中。</block>
   <block id="f52cc80996d4c5f54309a0095c010fa7" category="summary">Keystone中的计费计划</block>
   <block id="dfd0252d57910ac70c5c31013436bba6" category="doc">计费计划</block>
   <block id="7f5043ec0394d759e4ce437fc8c9cd52" category="section-title">按月计费</block>
@@ -352,14 +326,8 @@
   <block id="0476a04360a8efd6e70433fd2939cef7" category="section-title">Keystone收集器数据流</block>
   <block id="7084d98d1c25d2e28eda5dd92c5dd52b" category="paragraph"><block ref="7084d98d1c25d2e28eda5dd92c5dd52b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9b27e12d584b3438e811533b32e026e8" category="list-title">图例</block>
-  <block id="478005d1fa6a104e77b4c5d4465024ad" category="list-text">Active IQ 云门户接受此连接并与NetApp收集器建立通道。</block>
-  <block id="f287fa36e151b864ec592cb7dde90241" category="list-text">NetApp收集器会建立一个与存储控制器的管理连接的REST API会话、获取环境数据并将其发送到Active IQ 门户。</block>
   <block id="4cf8f8268c14ee43943d5216b5df21a8" category="section-title">监控数据流</block>
   <block id="325857741b37b2bb27cc84f38d841478" category="paragraph"><block ref="325857741b37b2bb27cc84f38d841478" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="32f2b8075d98a5c6dd0b7181201d5f6f" category="list-text">OpsRamp网关启动与云中的OpsRamp云门户的TLS会话。</block>
-  <block id="061a5118e14c355a024e0623887781e4" category="list-text">云中的OpsRamp服务器接受连接。</block>
-  <block id="7eeacfd620ed4cc0dd3247fe4b415256" category="list-text">NetApp控制器使用SNMP协议发送警报或响应API请求到OpsRamp本地网关。</block>
-  <block id="e7cd3e2d72716bd82dcc540f399a494a" category="list-text">OpsRamp本地网关使用之前建立的TLS会话将这些警报发送到其云门户。</block>
   <block id="7621fcf3337893076016c8382d82f20e" category="summary">附加、其他服务详细信息、数据分层</block>
   <block id="20ce0ec8b53728092deec662a7406cb1" category="summary">不可退回的非易失性组件以及SnapLock 合规性</block>
   <block id="240f8cd7a5a26e96dd18576d36e316a8" category="paragraph">作为NetApp Keystone 订阅的一部分、NetApp为您的文件、块和对象服务扩展了不可退回的非易失性组件(NRNVC)服务。</block>
@@ -375,7 +343,6 @@
   <block id="0a01a33e5f29d399207cdf2d0bedd8e4" category="section-title">追加信息和支持联系人</block>
   <block id="41ac6df99b19964ddc5db21ba036a552" category="paragraph">NetApp全球服务和支持中心(GSSC)团队主要为NetApp Keystone 客户提供服务支持。您可以使用以下信息联系支持团队。</block>
   <block id="74ded5eeafd192c5308818ba594b43cc" category="list-text">全球服务联系人：<block ref="85c2386291061c6540196c84b0b38a60" category="inline-link-rx"></block></block>
-  <block id="d07ce0fbeead06848c212d3cd2b328b8" category="admonition">在合作伙伴运营的模式中、租户和子租户的服务请求将分配给合作伙伴的服务台。合作伙伴的支持工具可能已与 OpsRamp 和 GSSC 应用程序集成。只有 L3 问题才会通过 GSSC 上报给 NetApp 。</block>
   <block id="f0c94d09bc7d41e3ed09416fd1ed8a12" category="inline-link"><block ref="f0c94d09bc7d41e3ed09416fd1ed8a12" category="inline-link-rx"></block></block>
   <block id="1c6d9d150de7c9865ab3839ec9e99e4b" category="list-text">NetApp Keystone<block ref="4b675bc45aec5ce1523a19f69a2ff928" category="inline-link-rx"></block></block>
   <block id="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link"><block ref="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link-rx"></block></block>
@@ -384,7 +351,6 @@
   <block id="b89d8ed8d5adb2dd42ea11be1617f29c" category="paragraph">有关数据流的详细信息、请参见 <block ref="f2276c2e5545294a1a6121724c0f31c5" category="inline-link-macro-rx"></block>。</block>
   <block id="fc860be5f135f0d58f6a4cc1a552d57f" category="inline-link">Keystone订阅</block>
   <block id="ae45517d4d9ba30bece696a3b49d1b3f" category="inline-link">管理Keystone订阅</block>
-  <block id="885a7272db12515ccb176ecc5739bfc0" category="summary">NetApp Keystone 文档</block>
   <block id="eafe2da4c3641f4864397b0d97fff137" category="doc">Keystone文档</block>
   <block id="e5471403f1b2eefb0fe47b6193a72bbc" category="sidebar">Keystone文档</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
@@ -418,13 +384,6 @@
   <block id="6dd7fd4aac069a06bec3ae24a6b1b39b" category="paragraph">有关Keystone中支持的不同容量的信息、请参见 <block ref="85c4e06da3b978d5cb2b8ba9dc870124" category="inline-link-macro-rx"></block>。</block>
   <block id="8816d718cde960556e2d767cd7bc6a24" category="paragraph">阅读以下各节、了解您的订阅中哪些内容受此附加服务的约束、并根据NetApp Keystone 协议的条款提供。f脚 注：声明1[此处所述服务和服务受完全执行的Keystone协议的约束、限制和约束。]</block>
   <block id="0d3d10747b66177a1b3af60bfd44a1fb" category="list-text">包括存储控制器的Keystone基础架构。</block>
-  <block id="89cef79468c8f24b5592618910250749" category="paragraph">OpsRamp是一款基于SaaS的应用程序、Keystone使用它来发现、监控和持续管理资产。借助OpsRamp、NetApp的监控团队可以为部署Keystone的客户远程提供远程监控和管理服务。</block>
-  <block id="5d57eb43585ab01713e66412df10a352" category="paragraph">此外、OpsRamp还为Keystone提供了以下安全功能：</block>
-  <block id="e1466eb3e782c18a45e9d3b56d234cf9" category="list-text">OpsRamp可维护用户活动日志、Keystone可生成有关用户活动的临时或计划报告。</block>
-  <block id="99f231b87a910643a9f502f189ab4b2e" category="list-text">从OpsRamp网关到OpsRamp云门户的所有通信均采用TLS加密。</block>
-  <block id="4a63430b87c3d541d5081a16fb763229" category="list-text">空闲数据和正在传输的数据使用TLS进行加密。</block>
-  <block id="445063650bd188bc1560a387c9e2fda6" category="list-text">OpsRamp为Keystone提供了双因素身份验证选项。</block>
-  <block id="08bef988fb33844f1581780bcae3e160" category="list-text">OpsRamp可实施基于角色的访问控制、从而使Keystone能够创建多个角色并为用户分配适当的权限。</block>
   <block id="dfafb0db4cb7ff50434d65c4ee640f1a" category="paragraph">这是客户放置在Keystone基础架构上的数据。所有Keystone容量均指逻辑容量。例如、如果Keystone基础架构上存储了1 TiB文件、则应至少购买1 TiB的容量。</block>
   <block id="6695ab4bfa1eb6d5122189f790f27577" category="paragraph">订阅期间每月支付的最低逻辑容量：</block>
   <block id="9cd5acb8fb327acbb895954f39411c04" category="paragraph">已用容量是指服务当前正在使用的容量(以TiB为单位)。Keystone服务会考虑特定服务级别上所有卷的逻辑已用大小(而不是已用物理容量)之和、以计算该服务级别的已用容量。</block>
@@ -463,18 +422,14 @@
   <block id="1ad380d64aaf6780bee52adfb88395c3" category="list-text">客户或合作伙伴应至少在下一个计费周期前一周将重新分配请求正式提交给Keystone Success Manager (KSM)。</block>
   <block id="c34a82bbff22f4441417f697ffc59087" category="paragraph">NetApp 为 NetApp Keystone 客户远程提供运营服务。这些服务涵盖存储管理活动中的一系列操作准则。这些服务包括资产和配置管理、容量和性能管理、变更管理、事件、意外事件和问题管理、服务请求履行和报告。NetApp会根据需要展示控制状态和支持证据。</block>
   <block id="11cc259f3fbff7a9b169739c7cd9d613" category="list-text">如果您有待处理案例/服务单需要上报、请发送电子邮件至以下地址之一：keystone.services@netapp.com keystone.escalations@netapp.com</block>
-  <block id="d1add80e839b6da3fad5b5d1d018df10" category="list-text">NetApp使用基于云的远程网关解决方案 OpsRamp主动监控和连接到NetApp Keystone 环境以进行故障排除。有关 OpsRamp 的信息，请参见<block ref="ddbfe3d63449639712fee69542f32fdc" category="inline-link-rx"></block>。</block>
   <block id="a7bfd854f2e9dacfba92f6c8e2081c3e" category="list-text">此服务仅适用于文件、块和对象服务。</block>
   <block id="b6a3337f47df4fd3f63ff2c1a9f8ec5b" category="paragraph">SnapLock 技术可在卷中设置的到期日期之后使驱动器不可用、从而启用NRNVC功能。要在卷上使用SnapLock 技术、您需要订阅NRNVC。这仅适用于文件和块服务。</block>
   <block id="efdd84de779f9c449b249d2bf90a01c0" category="paragraph">有关SnapLock 技术的信息、请参见<block ref="7bc47f340e579853a1daae86dfb72c77" category="inline-link-rx"></block>。</block>
   <block id="789c0cf84faa868401f2d0fbccadc981" category="paragraph">附加费用适用于订阅中的所有容量：源数据、镜像副本数据和未镜像数据。</block>
   <block id="707341c09d7ffe7d139516dd4be5dcc7" category="inline-image-macro">Keystone支持的MetroCluster 配置</block>
   <block id="5aca18c7a53d30f1878ae1f0a8d3c847" category="paragraph"><block ref="5aca18c7a53d30f1878ae1f0a8d3c847" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="04db7938f4aae80febe728615cf9c8db" category="paragraph">Keystone收集器会向存储控制器启动REST API调用、并定期获取控制器的使用情况详细信息。</block>
   <block id="ce200ab0b7646380f2bbefd2970ed633" category="list-text">NetApp收集器启动与Active-IQ云门户的HTTPS会话。</block>
   <block id="f3cab949200d7bfe230983c92bd7983f" category="list-text">客户操作的防火墙允许进行连接。</block>
-  <block id="a2f06455c2f260b0476431c3e2f57923" category="paragraph">持续监控存储基础架构的运行状况是Keystone服务最重要的功能之一。为了进行监控、Keystone使用OpsRamp、该应用程序需要远程访问客户的网络。下图介绍了OpsRamp工具如何保护对客户位置的远程访问。</block>
-  <block id="ec48f6d1568a522d91aa99ed84175f9c" category="list-text">在OpsRamp云门户和OpsRamp本地网关之间建立TLS通道。</block>
   <block id="e3cdbc99a0d31e7434525d73238dcc2c" category="paragraph">在每个订阅年度开始时，系统会为已提交容量的最低付款生成一张发票。它会在订阅开始日期生成。订阅季度结束时会发送另一张发票，汇总该季度累积的任何突发使用量的适用费用。如果已提交容量在订阅期间发生更改、则会在当天为该订阅年度其余时间按比例分配的最低付款开具发票。计费是从已提交容量更改生效之日开始计算的。</block>
   <block id="d3d3ac1aa803d52f00804394fdd5bc1d" category="list-text">您可以根据已提交的 IOPS 和延迟容量付费，以满足各种工作负载需求。不同的性能服务层—极高、高级、性能、标准、价值、 通过和对象、您可以根据所购买的服务级别管理存储。</block>
   <block id="5e803820900b74b1d5d53cef450d8ad7" category="list-text">选择灵活的服务和付款期限：您可以选择每个站点12个月、25 TiB或更多。此后、您可以自动续订12个月。</block>
@@ -484,7 +439,6 @@
   <block id="580577f00c6e952d8dad642fa30380db" category="summary">Keystone和Digital Advisor</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisor文档</block>
   <block id="d98e1323795a96bdb4ab923442544f4f" category="summary">Keystone和BlueXP</block>
-  <block id="3736dc740e568bfea8adb597902add6e" category="paragraph">如果您通过Keystone订阅购买云服务、则可以通过BlueXP访问和管理这些服务。</block>
   <block id="ec5a85d1400f8bf17dec61b11740d60c" category="paragraph">作为Keystone客户、如果您订阅了Cloud Volumes ONTAP 、则可以使用Keystone服务对Cloud Volumes ONTAP 使用量进行收费、并通过BlueXP查看您的计费和使用量详细信息。</block>
   <block id="f208065131ee7ec38a881083b91c06e2" category="cell">FC和iSCSI</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="sidebar">BlueXP</block>
@@ -585,7 +539,6 @@
   <block id="141b2b4361a2b3c206d10e1c27378c2e" category="section-title">云存储服务</block>
   <block id="d96e0cf44b3111cb9ae984add2b97c74" category="paragraph">Keystone STaaS可提供云存储服务。Keystone STaaS支持Amazon Web Services (AWS)、Microsoft Azure和Google云平台上的Cloud Volumes ONTAP 数据管理功能。</block>
   <block id="2a947eac17f71a99037966f44ce8252d" category="admonition">NetApp不会在Keystone STaaS订阅中提供Cloud Volumes ONTAP 所需的基于超大规模扩展的计算、存储和网络服务；这些订阅需要直接从超大规模云服务提供商处购买。</block>
-  <block id="3c39698e203a007bdc130ebf68723826" category="paragraph">Keystone STaaS系统会遇到通过Keystone收集器流量传输的数据流、并监控数据流。</block>
   <block id="a0c7c7077f5d8959ac636195329edca4" category="summary">通过Keystone收集器监控系统运行状况</block>
   <block id="3b02682cee7334412169a53934571445" category="doc">监控系统运行状况</block>
   <block id="31a7b7e95b2779c762661c1e75f2a6e9" category="paragraph">您可以使用支持HTTP请求的任何监控系统、通过Keystone收集器服务监控系统运行状况。</block>
@@ -606,7 +559,6 @@
   <block id="605bfbf78c12bdf4b9a6daaba7623219" category="section-title">生成并收集支持包</block>
   <block id="d4bdb971d4927e036a3519461abe909f" category="paragraph">通过Keystone收集器TUI、您可以生成支持包、然后将其添加到服务请求中以解决支持问题。请遵循此操作步骤 ：</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
-  <block id="89c3fbc86e0ef018aeeb33b0c6503ca0" category="list-text">打开Keystone收集器管理TUI实用程序：<block ref="7ef986487970dbcf0ed301b58d2828c9" prefix=" " category="inline-code"></block></block>
   <block id="e385fa90b60165281bae11b6e25bff3d" category="list-text">转至*故障排除&gt;生成支持包*。<block ref="dc6483f3f6b233df000a8215567c9e17" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7521a40f5abb349afff3a7d5461c3d42" category="list-text">生成时、将显示保存分发包的位置。使用FTP、SFTP或SCP连接到该位置并将日志文件下载到本地系统。<block ref="0fc318456f84a64b43e2d29821df0fc8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b34b056c73270f2209f1e8eeb513e7cc" category="summary">Keystone收集器的配置</block>
@@ -617,7 +569,6 @@
   <block id="3d3aea279fd0dfc2c6c0a6f4af62eaf7" category="list-text">在主屏幕上选择"Exitto Shell"选项、退出Keystone收集器管理TUI。</block>
   <block id="08762317d694c743ae82817d9e878a50" category="section-title">在Keystone收集器上配置HTTP代理</block>
   <block id="873671849cdb27df29bd825ffd9dbc0e" category="paragraph">收集器软件支持使用HTTP代理与Internet进行通信。可以在TUI中配置此功能。</block>
-  <block id="165ab03177c0cb7e86d181792acc3148" category="list-text">如果已关闭Keystone收集器管理TUI实用程序、请打开该实用程序：<block ref="7ef986487970dbcf0ed301b58d2828c9" prefix=" " category="inline-code"></block></block>
   <block id="7b7ae59492f5cdb1d6fbc156639ee5ac" category="list-text">切换"http代理"*字段、如果需要身份验证、请添加HTTP代理服务器、端口和凭据的详细信息。</block>
   <block id="5d6eeca323f191b847ccaa89868f1712" category="list-text">单击"*保存"*。<block ref="063c967c4bf177e696bdec9de5a25cb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d66ad38cacfcba154b86b0c6d12a28a9" category="section-title">限制私有数据的收集</block>
@@ -872,7 +823,6 @@
   <block id="6bf0a6b5934bc27f34497309b1c2ce0a" category="list-text"><block ref="6bf0a6b5934bc27f34497309b1c2ce0a" category="inline-link-rx"></block></block>
   <block id="e41d7b27749843cacc5b63d577d05563" category="paragraph">Keystone高级数据保护服务可以将数据同步镜像到二级站点。如果主站点发生灾难、二级站点可以接管、而不会丢失任何数据。此功能可利用两个站点之间的MetroCluster 配置来实现数据保护。您只能对文件和块存储服务使用高级数据保护附加服务。有关ONTAP MetroCluster 的信息、请参见 <block ref="80871b8782cc051e20935ca40e2a0650" category="inline-link-macro-rx"></block>。</block>
   <block id="580c330994127defe5cd5153bad3a4ba" category="paragraph">存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如启动多个系统)可能会占用整个资源一段时间、并影响其他工作负载。有关QoS的信息、请参见<block ref="3c8d0a20452a1fdd8de7e683059a52bc" category="inline-link-rx"></block>。</block>
-  <block id="179e62f7e40ac7f5694e829467ad076f" category="paragraph">应用QoS可确保应用程序每次都能获得一致的性能。NetApp ONTAP 为QoS定义了两个参数：上限-<block ref="f481633ea70c9b3dfd9b26e1e0045eee" category="inline-link-rx"></block>和吞吐量下限-<block ref="406d3c0c34cedc53d1b49a1bfac79dea" category="inline-link-rx"></block>。QoS最大值表示工作负载可以达到的最大IOPS或MBps或IOPS和MBps数。另一方面、QoS最小值可保证工作负载的吞吐量不低于特定数量的IOPS或MBps或IOPS和MBps。</block>
   <block id="e88f55d6b9c231a5c6bcae698bdfd7dc" category="list-text">* vserver*：Vserver或Storage VM (Storage Virtual Machine)的名称。</block>
   <block id="308ede543987c09a3ef34aff33fbd87f" category="list-text">*预期IOPS*：只要有性能保证、ONTAP 提供的最小IOPS/TiB数。</block>
   <block id="095c182a20e3d5d17cb203ffded54217" category="list-text">*峰值IOPS*：在性能受到限制之前卷可使用的最大IOPS/TiB数。</block>
@@ -1089,16 +1039,12 @@
   <block id="dc6558c87d9624db4f0f78e602308c49" category="list-text">更新所需选项。</block>
   <block id="14a76c71ca702ae118d765e420178711" category="example-title">&lt;strong&gt; 协议&lt;/strong&gt;</block>
   <block id="32a4a00508204d0cb7ced3d936d4dc7a" category="list-text">*收集ONTAP 使用量*：此选项可用于收集ONTAP 的使用量数据。添加Active IQ Unified Manager (Unified Manager)服务器和服务帐户的详细信息。</block>
-  <block id="c8be7cc513ae14bb1045efcf84ef815f" category="list-text">*收集ONTAP 性能数据*：此选项可用于收集ONTAP 的性能数据。默认情况下、此选项处于禁用状态。如果您的环境需要进行性能监控以实现SLA、请启用此选项。提供Unified Manager数据库用户帐户详细信息。有关创建数据库用户的信息、请参见 <block ref="c307c105b0ab23fea8108ee840b19ed9" category="inline-link-macro-rx"></block>。</block>
   <block id="c6f143141daaf99baf609e695430cce9" category="list-text">*删除私有数据*：此选项将删除客户的特定私有数据、默认情况下处于启用状态。有关在启用此选项后从指标中排除哪些数据的信息、请参见 <block ref="69ef82b790beb8f156793bc199a1126b" category="inline-link-macro-rx"></block>。</block>
   <block id="e70948bd792d621d062233c6553df7a4" category="example-title">&lt;strong&gt; StorageS卷&lt;/strong&gt;</block>
   <block id="12a12ceac3b9acaa003a52c7a4a9e107" category="list-text">*收集StorageGRID 使用情况*：此选项可用于收集节点使用情况详细信息。添加StorageGRID 节点地址和用户详细信息。</block>
-  <block id="501fbebe1e3204d65370c54a952426d7" category="list-text">*删除私有数据*：此选项将删除客户的特定私有数据、默认情况下处于启用状态。有关在启用此选项后从指标中排除哪些数据的信息、请参见 <block ref="e1f64bf8f82fdbd22932ca9afa1da14a" category="inline-link-macro-rx"></block>。</block>
   <block id="60027fcd2e5db75fada38cb8c25a89ad" category="list-text">切换"*使用系统启动KS-Collector"字段。</block>
   <block id="12d4a3f31d7915f04142a35be1ba5a37" category="paragraph">限制特定客户数据的收集是Keystone收集器TUI屏幕上的一个可配置选项。默认情况下、此选项*删除私有数据*处于启用状态。</block>
   <block id="dd771779768817666d39c63b55339112" category="paragraph">有关在ONTAP 和StorageGRID 中删除的限制私有数据访问的项的信息、请参见 <block ref="461595833a51b2e2463fa89ad8a35ca1" category="inline-link-macro-rx"></block>。</block>
-  <block id="1188f42df486498dbe3703f5415c86aa" category="list-text">Keystone Data Collector：Keystone收集器为Keystone客户提供计费服务。此应用程序与Active IQ Unified Manager 捆绑在一起。它每五分钟定期从ONTAP 和StorageGRID 控制器收集一次数据。处理数据、并通过用于生成计费数据的AutoSupport 机制将元数据发送到集中式Active IQ 数据湖。Active IQ 数据湖处理数据以进行计费、并将其发送给Zuora进行计费。您可以通过Active IQ 数字顾问(Digital Advisor)客户门户登录并查看Keystone订阅的订阅和消费详细信息。</block>
-  <block id="cf3d385bb2fcb3764b03ece3454042e6" category="paragraph">有关Digital Advisor信息板上Keystone报告的详细信息、请参见 <block ref="b7b6a2338cb0518cc39a6d3713bb6e47" category="inline-link-macro-rx"></block>。</block>
   <block id="6b71507d392708444982d424df1963c2" category="paragraph">用于ONTAP 文件和块存储以及StorageGRID 对象存储的Keystone STaaS服务支持多种功能和协议、下表对此进行了说明：</block>
   <block id="661319c881749fc4ef06edb56f84c952" category="paragraph">NetApp全球服务和支持中心(GSSC)和NetApp Keystone 成功经理(KSM)负责为您提供Keystone订阅服务。</block>
   <block id="5e3fca9227064d2d04c47a0f13b4fffe" category="paragraph">有关Keystone服务的详细信息、请参见：</block>
@@ -1161,4 +1107,43 @@
   <block id="e84dede1181b53e24bdf1d55508b83bf" category="list-text">在Digital Advisor上、单击小工具上的*查看更多详细信息*、在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规&gt; Keystone订阅*。</block>
   <block id="b49a48b1a3504debfe7fedab8ad4086d" category="paragraph">订阅详细信息、每个服务级别的使用情况图表以及卷详细信息将显示在* Keystone订阅*屏幕的不同选项卡中。</block>
   <block id="de87c00cded561268b46fe5428fdd938" category="paragraph">有关这些注意事项和警告消息的详细信息、请联系NetApp支持部门。有关提出服务请求的信息、请参见 <block ref="1bf858345505311d2a0e9fcf6e1f42da" category="inline-link-macro-rx"></block>。</block>
+  <block id="ed6736a84f4c19935077bc72bc043890" category="summary">NetApp Keystone 是一款按需购买、按需购买的存储即服务产品、可在一个订阅下同时提供内部和云数据存储服务、并能够跨云重新分配存储支出。</block>
+  <block id="b18e0c0378b51052e0196f91f5db38bd" category="list-text">启动Keystone收集器管理TUI实用程序：<block ref="7ef986487970dbcf0ed301b58d2828c9" prefix=" " category="inline-code"></block></block>
+  <block id="8458abf5be9e91efddd756b28ee59439" category="list-text">*收集ONTAP 性能数据*：此选项可用于收集ONTAP 的性能数据。默认情况下、此选项处于禁用状态。如果您的环境需要进行性能监控以实现SLA、请启用此选项。提供Unified Manager数据库用户帐户详细信息。有关创建数据库用户的信息、请参见 <block ref="f8f6ee868048b4a2fa1c02afb9ee5233" category="inline-link-macro-rx"></block>。</block>
+  <block id="78619a2b9d44b190ba76a3a6d430637f" category="list-text">如果已关闭Keystone收集器管理TUI实用程序、请重新启动该实用程序：<block ref="7ef986487970dbcf0ed301b58d2828c9" prefix=" " category="inline-code"></block></block>
+  <block id="416bf87280a0143cd22c8728b398c998" category="summary">升级Keystone收集器</block>
+  <block id="303598db14cdac7b8531356d3fa6ae67" category="doc">手动升级Keystone收集器</block>
+  <block id="eb5316849956503093c848cdd2e2189f" category="paragraph">默认情况下、Keystone收集器中的自动更新功能处于启用状态、该功能会在每个新版本中自动升级Keystone收集器软件。但是、您可以禁用此功能并手动升级软件。</block>
+  <block id="c5bc18b9ae708308f165d213528edb66" category="list-text">在维护屏幕上、选择*立即更新收集器*选项。</block>
+  <block id="5b540eaec8e7ad0922a0633df925d995" category="paragraph"><block ref="5b540eaec8e7ad0922a0633df925d995" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f8bc55f7c7f782e0fdeced65037abf84" category="paragraph">或者、也可以运行以下命令升级版本：</block>
+  <block id="cc30a50a97fd139786e6b433136865ca" category="paragraph"><block ref="cc30a50a97fd139786e6b433136865ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b31f1ebf783dc22abf4699b042b9b3db" category="list-text">重新启动Keystone收集器管理TUI、您可以在主屏幕的左上角看到最新版本。</block>
+  <block id="bb05cc2f27b372eeefcaf8c9d31c4fba" category="paragraph">或者、也可以运行此命令查看最新版本：</block>
+  <block id="26ff0e396ade6fe360b35528d3afe577" category="paragraph">Keystone STaaS系统中的数据流经Keystone收集器以及相关的监控系统AIOPS解决方案 工具。</block>
+  <block id="9e2f9cd4a9ee8b88a18988f62eb67dd7" category="paragraph">Keystone收集器会向存储控制器启动REST API调用、并定期获取控制器的使用情况详细信息、如本流程图所示：</block>
+  <block id="144be97e21d1c48cc88d9c1079fd7242" category="list-text">Active IQ 云门户接受此连接并与NetApp收集器建立通道。</block>
+  <block id="eb1ece97f0d4f33c42fe8c1270d9f97f" category="list-text">NetApp收集器会建立一个与存储控制器的管理连接的REST API会话、获取环境数据并将其发送到Active IQ 门户。</block>
+  <block id="9bd6f9bd3f316579290de54613357644" category="paragraph">持续监控存储基础架构的运行状况是Keystone服务最重要的功能之一。在监控和报告方面、Keystone使用的是AIOP解决方案 、它需要远程访问客户的网络。下图介绍了AIOP解决方案 工具如何保护对客户位置的远程访问。</block>
+  <block id="130d043e9f813aac96b9057c87348371" category="list-text">AIIOPS解决方案 网关启动与其云门户的TLS会话。</block>
+  <block id="243cf07b27b6811f47ef7011b0f2fcd7" category="list-text">云中的AIOP解决方案 服务器接受此连接。</block>
+  <block id="322f1e98181b58ca0f54061626b2d948" category="list-text">在云门户和本地网关之间建立TLS通道。</block>
+  <block id="450997fb0074b4d084ffcc7c81c8194e" category="list-text">NetApp控制器使用SNMP协议发送警报或对API请求做出响应。</block>
+  <block id="67b0e91889520881c5ec5d57fab5f89c" category="list-text">本地网关使用之前建立的TLS会话将这些警报发送到其云门户。</block>
+  <block id="0f1b5cef30787606dcebbe2aad12f047" category="list-text">用于管理和运行服务的工具、例如AIOPS解决方案 、Active IQ 和Active IQ Unified Manager。</block>
+  <block id="fe69a54042d9eff356aefd4641754a9d" category="list-text">AIOP解决方案 本地网关：用于监控网络的基于云的应用程序。它内置了与NetApp存储平台的集成功能、可用于收集环境数据并监控网络。通过使用您站点上安装的本地网关与云门户进行通信、可以启用此服务。</block>
+  <block id="370f5a2dcf3c761999eec9796ac7cb95" category="list-text">Keystone Data Collector：Keystone收集器为Keystone客户提供计费服务。此应用程序与Active IQ Unified Manager 捆绑在一起。它会每五分钟从ONTAP 和StorageGRID 控制器收集一次数据。处理数据、并通过用于生成计费数据的AutoSupport 机制将元数据发送到集中式Active IQ 数据湖。Active IQ 数据湖处理计费数据并将其发送给Zuora进行计费。</block>
+  <block id="829e513ac5aad09d167e66738057fee0" category="paragraph">通过Active IQ 数字顾问(Digital Advisor)、您可以登录并查看Keystone订阅的订阅和消费详细信息。有关Digital Advisor信息板上Keystone报告的详细信息、请参见 <block ref="b7b6a2338cb0518cc39a6d3713bb6e47" category="inline-link-macro-rx"></block>。</block>
+  <block id="b061e71795ea0169fae5918033aa1426" category="inline-link-macro">Keystone收集器安装指南</block>
+  <block id="ea6877769314a06b5bfd259d5acd9b87" category="paragraph">部署Keystone收集器和AIOPS解决方案 网关需要使用Storage Virtual Machine (Storage VM)。安装Keystone收集器的前提条件如下： <block ref="1b1d53dc449052d2c1633c8027db333d" category="inline-link-macro-rx"></block>。其他要求将在部署期间共享。</block>
+  <block id="78723ce66f58e9e7caf198aa1ec6dc10" category="list-text">客户提供Red Hat Enterprise Linux 7或8或CentOS 7 Linux服务器。Keystone软件通过安装<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block> 安装过程。</block>
+  <block id="b264c507ce69115ec3b1ea258739f71a" category="paragraph">AIOPS解决方案 网关部署在以下配置中：</block>
+  <block id="aed4f4cade15fb6fd54071211fa815d9" category="paragraph">要运行和维护Keystone收集器和AIOPS解决方案 网关、需要对以下服务进行出站访问：</block>
+  <block id="ea105b45dba9cd611a536c923ac08e2a" category="paragraph">NetApp需要访问为监控和管理而安装的硬件和软件组件、以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络(VPN)连接并访问所需数据。为了克服客户认为因向新服务打开防火墙端口而导致的任何操作复杂性、监控工具会启动外部连接。AIOP解决方案 和Zuora等NetApp云应用程序使用此连接来执行相应的服务。此方法可满足客户的要求、即不打开防火墙端口、但可以访问属于此服务一部分的监控组件。</block>
+  <block id="3db5d9db3e9bbb96192cdbca3e683f2d" category="list-text">NetApp使用AIOPS解决方案 主动监控和连接到NetApp Keystone 环境以进行故障排除。</block>
+  <block id="f117a997c71ee803b4f42cc859317819" category="admonition">在合作伙伴运营的模式中、租户和子租户的服务请求将分配给合作伙伴的服务台。合作伙伴的支持工具可能已与AIOPS解决方案 和GSSC应用程序集成。只有 L3 问题才会通过 GSSC 上报给 NetApp 。</block>
+  <block id="9a7e6b4e1f16d4dce53a800b22ea9ce5" category="paragraph">应用QoS可确保应用程序每次都能获得一致的性能。NetApp ONTAP 为QoS定义了两个参数：上限-<block ref="f481633ea70c9b3dfd9b26e1e0045eee" category="inline-link-rx"></block>和吞吐量下限-<block ref="406d3c0c34cedc53d1b49a1bfac79dea" category="inline-link-rx"></block>。QoS最大值表示工作负载可以达到的最大IOPS或MBps或IOPS和MBps数。另一方面、QoS最小值可保证工作负载的吞吐量不低于特定数量的IOPS或MBps或IOPS和MBps。</block>
+  <block id="3416d8a49fd5d49140366de8fbebad06" category="paragraph">NetApp BlueXP是一个完整的平台、可通过其自己的交互式可视化信息板监控数百个数据源。如果您通过NetApp Keystone 订阅购买云服务、则可以通过BlueXP访问和管理这些服务。</block>
+  <block id="eca1859cccb72b784538dc03d0802c4d" category="paragraph">BlueXP Digital Advisor信息板为您提供了一个图形视图和详细功能、用于监控Keystone订阅使用情况并生成报告。有关Digital Advisor信息板和Keystone的详细信息、请参见 <block ref="e4a96850db17c7110d770223b8207b51" category="inline-link-macro-rx"></block>。</block>
+  <block id="2951c1f61944250838607486af8b4ac0" category="sidebar">升级Keystone收集器</block>
 </blocks>

@@ -20,7 +20,7 @@ summary: Keystone收集器的配置
 NOTE: Keystone收集器可为您提供Keystone收集器管理终端用户界面(TUI)实用程序来执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。
 
 .步骤
-. 打开Keystone收集器管理TUI实用程序：
+. 启动Keystone收集器管理TUI实用程序：
 `$ keystone-collector-tui`
 . 转至"**配置">"KS-Collector"*以打开Keystone收集器配置屏幕、查看可用的更新选项。
 . 更新所需选项。
@@ -29,7 +29,7 @@ NOTE: Keystone收集器可为您提供Keystone收集器管理终端用户界面(
 [%collapsible]
 ====
 ** *收集ONTAP 使用量*：此选项可用于收集ONTAP 的使用量数据。添加Active IQ Unified Manager (Unified Manager)服务器和服务帐户的详细信息。
-** *收集ONTAP 性能数据*：此选项可用于收集ONTAP 的性能数据。默认情况下、此选项处于禁用状态。如果您的环境需要进行性能监控以实现SLA、请启用此选项。提供Unified Manager数据库用户帐户详细信息。有关创建数据库用户的信息、请参见 link:../addl-req.html["创建Unified Manager用户"]。
+** *收集ONTAP 性能数据*：此选项可用于收集ONTAP 的性能数据。默认情况下、此选项处于禁用状态。如果您的环境需要进行性能监控以实现SLA、请启用此选项。提供Unified Manager数据库用户帐户详细信息。有关创建数据库用户的信息、请参见 link:../installation/addl-req.html["创建Unified Manager用户"]。
 ** *删除私有数据*：此选项将删除客户的特定私有数据、默认情况下处于启用状态。有关在启用此选项后从指标中排除哪些数据的信息、请参见 link:../installation/configuration.html#limit-collection-of-private-data["限制私有数据的收集"]。
 
 
@@ -39,7 +39,7 @@ NOTE: Keystone收集器可为您提供Keystone收集器管理终端用户界面(
 [%collapsible]
 ====
 ** *收集StorageGRID 使用情况*：此选项可用于收集节点使用情况详细信息。添加StorageGRID 节点地址和用户详细信息。
-** *删除私有数据*：此选项将删除客户的特定私有数据、默认情况下处于启用状态。有关在启用此选项后从指标中排除哪些数据的信息、请参见 link:../configuration.html#limit-collection-of-private-data["限制私有数据的收集"]。
+** *删除私有数据*：此选项将删除客户的特定私有数据、默认情况下处于启用状态。有关在启用此选项后从指标中排除哪些数据的信息、请参见 link:../installation/configuration.html#limit-collection-of-private-data["限制私有数据的收集"]。
 
 
 ====
@@ -56,7 +56,7 @@ NOTE: Keystone收集器可为您提供Keystone收集器管理终端用户界面(
 收集器软件支持使用HTTP代理与Internet进行通信。可以在TUI中配置此功能。
 
 .步骤
-. 如果已关闭Keystone收集器管理TUI实用程序、请打开该实用程序：
+. 如果已关闭Keystone收集器管理TUI实用程序、请重新启动该实用程序：
 `$ keystone-collector-tui`
 . 切换"http代理"*字段、如果需要身份验证、请添加HTTP代理服务器、端口和凭据的详细信息。
 . 单击"*保存"*。image:tui-3.png[""]

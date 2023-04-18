@@ -56,23 +56,7 @@ NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU �
 
 === Storage Virtual Machine
 
-部署Storage Virtual Machine (Storage VM)时应遵循以下要求、以支持监控和计量Keystone订阅。Keystone收集器需要一个Storage VM；OpsRamp网关需要另一个Storage VM
-
-* Keystone收集器—用于收集使用情况指标：
-+
-** vCPU：4
-** VRAM：16 GB
-** vDisk：200 GB
-
-
-* OpsRamp网关—用于实时监控+ Keystone GSSC提供的远程支持ONTAP ：
-+
-** vCPU：8
-** VRAM：16 GB
-** vDisk：100 GB
-
-
-
+部署Keystone收集器和AIOPS解决方案 网关需要使用Storage Virtual Machine (Storage VM)。安装Keystone收集器的前提条件如下： link:..//installation/installation-overview.html["Keystone收集器安装指南"]。其他要求将在部署期间共享。
 
 
 
@@ -81,10 +65,10 @@ NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU �
 可以通过以下方法部署Keystone收集器：
 
 * VMware OVA模板(需要VMware vCenter Server 6.7或更高版本)
-* 客户提供Red Hat Enterprise Linux 7或8或CentOS 7 Linux服务器、并通过`.rpm`安装过程安装Keystone软件。
+* 客户提供Red Hat Enterprise Linux 7或8或CentOS 7 Linux服务器。Keystone软件通过安装 `.rpm` 安装过程。
 
 
-OpsRamp网关部署在以下配置中：
+AIOPS解决方案 网关部署在以下配置中：
 
 * VMware OVA模板(需要VMware vCenter Server 6.7或更高版本)
 * 可启动的.iso安装程序
@@ -100,7 +84,7 @@ OpsRamp网关部署在以下配置中：
 
 === 网络
 
-要运行和维护Keystone收集器和OpsRamp网关、需要对以下服务进行出站访问：
+要运行和维护Keystone收集器和AIOPS解决方案 网关、需要对以下服务进行出站访问：
 
 * support.netapp.com (使用情况数据上传)
 * keystone.netapp.com (软件更新)
@@ -117,4 +101,4 @@ NetApp仅为NetApp提供的基础架构设备提供所需的收发器。您应�
 
 客户数据中心安装的存储基础架构或客户拥有的联合服务与Keystone运营中心之间需要网络连接。客户负责提供计算和虚拟机以及互联网服务。网络设计应采用安全协议、并且NetApp和客户都将批准防火墙策略。
 
-NetApp需要访问为监控和管理而安装的硬件和软件组件、以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络(VPN)连接并访问所需数据。为了克服客户认为因向新服务打开防火墙端口而导致的任何操作复杂性、监控工具会启动外部连接。OpsRamp和Zuora等NetApp云应用程序使用此连接来执行相应的服务。此方法可满足客户的要求、即不打开防火墙端口、但可以访问属于此服务一部分的监控组件。
+NetApp需要访问为监控和管理而安装的硬件和软件组件、以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络(VPN)连接并访问所需数据。为了克服客户认为因向新服务打开防火墙端口而导致的任何操作复杂性、监控工具会启动外部连接。AIOP解决方案 和Zuora等NetApp云应用程序使用此连接来执行相应的服务。此方法可满足客户的要求、即不打开防火墙端口、但可以访问属于此服务一部分的监控组件。
