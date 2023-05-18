@@ -44,8 +44,8 @@ NOTE: Keystone收集器可为您提供Keystone收集器管理终端用户界面(
 
 ====
 . 切换"*使用系统启动KS-Collector"字段。
-. 单击"*保存"*。image:tui-1.png[""]
-. 返回TUI的主屏幕并验证"*服务状态"*信息、以确保Keystone收集器处于运行状况良好的状态。系统应显示这些服务处于"Overall"：Health"*状态。image:tui-2.png[""]
+. 单击"*保存"*。image:tui-1.png["TUI屏幕"]
+. 返回TUI的主屏幕并验证"*服务状态"*信息、以确保Keystone收集器处于运行状况良好的状态。系统应显示这些服务处于"Overall"：Health"*状态。image:tui-2.png["TUI屏幕"]
 . 在主屏幕上选择"Exitto Shell"选项、退出Keystone收集器管理TUI。
 
 
@@ -59,7 +59,7 @@ NOTE: Keystone收集器可为您提供Keystone收集器管理终端用户界面(
 . 如果已关闭Keystone收集器管理TUI实用程序、请重新启动该实用程序：
 `$ keystone-collector-tui`
 . 切换"http代理"*字段、如果需要身份验证、请添加HTTP代理服务器、端口和凭据的详细信息。
-. 单击"*保存"*。image:tui-3.png[""]
+. 单击"*保存"*。image:tui-3.png["TUI屏幕"]
 
 
 
@@ -70,6 +70,6 @@ Keystone收集器可收集执行订阅计量所需的有限配置、状态和性
 
 限制特定客户数据的收集是Keystone收集器TUI屏幕上的一个可配置选项。默认情况下、此选项*删除私有数据*处于启用状态。
 
-image:tui-4.png[""]
+image:tui-4.png["TUI屏幕"]
 
 有关在ONTAP 和StorageGRID 中删除的限制私有数据访问的项的信息、请参见 link:../installation/data-collection.html["限制私有数据访问时删除的项列表"]。

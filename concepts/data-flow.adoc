@@ -22,7 +22,7 @@ Keystone STaaS系统中的数据流经Keystone收集器以及相关的监控系�
 
 Keystone收集器会向存储控制器启动REST API调用、并定期获取控制器的使用情况详细信息、如本流程图所示：
 
-image:collector-data-flow.png[""]
+image:collector-data-flow.png["显示了收集器组件中的数据流"]
 
 .图例
 . NetApp收集器启动与Active-IQ云门户的HTTPS会话。
@@ -37,7 +37,7 @@ image:collector-data-flow.png[""]
 
 持续监控存储基础架构的运行状况是Keystone服务最重要的功能之一。在监控和报告方面、Keystone使用的是AIOP解决方案 、它需要远程访问客户的网络。下图介绍了AIOP解决方案 工具如何保护对客户位置的远程访问。
 
-image:monitoring-flow.png[""]
+image:monitoring-flow.png["数据流"]
 
 .图例
 . AIIOPS解决方案 网关启动与其云门户的TLS会话。

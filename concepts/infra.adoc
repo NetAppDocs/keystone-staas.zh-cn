@@ -48,6 +48,6 @@ Keystone基础架构包括多个组件、例如以下组件：
 * Keystone Data Collector：Keystone收集器为Keystone客户提供计费服务。此应用程序与Active IQ Unified Manager 捆绑在一起。它会每五分钟从ONTAP 和StorageGRID 控制器收集一次数据。处理数据、并通过用于生成计费数据的AutoSupport 机制将元数据发送到集中式Active IQ 数据湖。Active IQ 数据湖处理计费数据并将其发送给Zuora进行计费。
 
 
-image:mgmt-stack.png[""]
+image:mgmt-stack.png["管理堆栈"]
 
 通过Active IQ 数字顾问(Digital Advisor)、您可以登录并查看Keystone订阅的订阅和消费详细信息。有关Digital Advisor信息板上Keystone报告的详细信息、请参见 link:../integrations/keystone-aiq.html["Keystone和Digital Advisor"]。

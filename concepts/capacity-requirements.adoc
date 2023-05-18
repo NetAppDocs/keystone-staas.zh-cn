@@ -111,7 +111,7 @@ Keystone STaaS服务级别的容量要求与Keystone STaaS订阅支持的文件�
 
 容量缩减(每年一次)适用于_Annual in adval_支付模式和仅限内部部署。它不适用于云服务或混合云服务。它提供内部容量配置、每个订阅的每个服务级别可减少多达25%的容量。这种减少每年一次、以便在下一个年度计费期开始时生效。在期限内、基于内部服务的年度支付额应大于200、000美元、以便利用容量缩减。由于此计费模式仅支持内部部署、因此无法将支出从内部重新分配到云服务。下图显示了一个年度容量缩减示例。
 
-image:capacity-reduction.png[""]
+image:capacity-reduction.png["显示容量缩减的图像"]
 
 
 
@@ -132,4 +132,4 @@ image:capacity-reduction.png[""]
 
 下图显示了一个季度支出重新分配示例：
 
-image:spend-alloc.png[""]
+image:spend-alloc.png["如何分配支出"]

@@ -23,4 +23,4 @@ Keystone收集器是Keystone计费平台的使用量采集组件、它利用Acti
 
 此架构图概述了在典型Keystone环境中的成分组件及其连接。
 
-image:collector-arch.png[""]
+image:collector-arch.png["收集器架构"]

@@ -28,7 +28,7 @@ NetApp 为 NetApp Keystone 客户远程提供运营服务。这些服务涵盖�
 
 NetApp全球服务和支持中心(GSSC)团队主要为NetApp Keystone 客户提供服务支持。您可以使用以下信息联系支持团队。
 
-* 全球服务联系人：https://www.netapp.com/us/contact-us/support.aspx[]
+* 全球服务联系人：https://[]
 * 如果您有待处理案例/服务单需要上报、请发送电子邮件至以下地址之一：keystone.services@netapp.com keystone.escalations@netapp.com
 * NetApp使用AIOPS解决方案 主动监控和连接到NetApp Keystone 环境以进行故障排除。
 
@@ -38,8 +38,8 @@ NOTE: 在合作伙伴运营的模式中、租户和子租户的服务请求将�
 
 有关Keystone服务的详细信息、请参见：
 
-* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
-* NetApp 产品文档https://docs.netapp.com["https://docs.netapp.com"^]
+* NetApp Keystonehttps://["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* NetApp 产品文档https://["https://docs.netapp.com"^]
 
 
 
@@ -57,7 +57,7 @@ Keystone Success Manager (KSM)与您密切合作、为您提供Keystone服务、
 
 在入职期间、如果您获得了用于访问和使用NetApp Keystone ServiceNow的凭据、则可以使用此门户为您的Keystone订阅相关的问题生成服务请求：
 
-https://netappgssc.service-now.com/csm[]
+https://[]
 
 在提交服务请求之前、请确保已准备好系统详细信息、日志和相关信息。当您提出服务请求时、GSSC团队会收到支持服务单并访问相关信息以进行故障排除。您可以按照您的ServiceNow服务单了解状态和解决方案。
 

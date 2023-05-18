@@ -40,7 +40,7 @@ NetApp Keystone (Keystone) STaaS提供了两种服务交付运营模式：合作
 * 部署
 * 板载
 
-| image:check.png[""] | 无 
+| image:check.png["复选标记"] | 无 
 
 
  a| 
@@ -51,7 +51,7 @@ NetApp Keystone (Keystone) STaaS提供了两种服务交付运营模式：合作
 * 执行管理任务
 * 警报
 
-| 无 | image:check.png[""] 
+| 无 | image:check.png["复选标记"] 
 
 
  a| 
@@ -61,7 +61,7 @@ NetApp Keystone (Keystone) STaaS提供了两种服务交付运营模式：合作
 * 管理性能
 * 管理 SLA
 
-| 无 | image:check.png[""] 
+| 无 | image:check.png["复选标记"] 
 
 
  a| 
@@ -72,6 +72,6 @@ NetApp Keystone (Keystone) STaaS提供了两种服务交付运营模式：合作
 * 软件支持
 * 升级和修补程序
 
-| image:check.png[""] | 无 
+| image:check.png["复选标记"] | 无 
 |===
 有关部署的详细信息、请参见 link:../concepts/infra.html["Keystone基础架构"] 和 link:..//concepts/components.html["用于部署的组件"]。

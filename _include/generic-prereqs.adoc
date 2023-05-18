@@ -6,13 +6,13 @@
 
 == 其他要求
 
-请确保满足以下一般要求：
+确保满足以下通用要求：
 
 
 
 === 网络要求
 
-下表介绍了Keystone收集器的网络连接要求。
+下表列出了Keystone收集器的网络连接要求。
 
 
 NOTE: Keystone收集器需要Internet连接。您可以通过默认网关(通过NAT)或HTTP代理直接路由来提供Internet连接。此处介绍了这两种变体。
@@ -185,30 +185,30 @@ Keystone收集器需要访问以下Internet主机：
 
 
  a| 
-https://keystone.netapp.com[]
+https://[]
  a| 
 Keystone收集器软件更新和使用情况报告
 
 
 
  a| 
-https://support.netapp.com[]
+https://[]
  a| 
 NetApp总部提供计费信息和AutoSupport 交付
 
 
 
  a| 
-https://mirror.centos.org[]
-https://mirrorlist.centos.org[]
+https://[]
+https://[]
  a| 
 Keystone收集器的操作系统更新(仅限OVA部署)
 
 
 
  a| 
-http://repo.mysql.com[]
+https://[]
  a| 
-下载并更新mysql依赖关系(仅适用于Linux部署)
+下载并更新MySQL依赖项(仅适用于Linux部署)
 
 |===

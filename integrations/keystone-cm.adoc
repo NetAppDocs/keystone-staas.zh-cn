@@ -24,6 +24,6 @@ BlueXP Digital Advisor信息板为您提供了一个图形视图和详细功能�
 
 有关Keystone和BlueXP的详细信息、请参见BlueXP文档中的以下链接：
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#keystone-flex-subscription["Keystone订阅"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-keystone.html["管理Keystone订阅"^]
+* https://["Keystone订阅"^]
+* https://["管理Keystone订阅"^]
 
