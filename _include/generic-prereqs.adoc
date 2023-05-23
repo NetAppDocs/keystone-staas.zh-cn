@@ -185,29 +185,29 @@ Keystone收集器需要访问以下Internet主机：
 
 
  a| 
-https://[]
+https://keystone.netapp.com[]
  a| 
 Keystone收集器软件更新和使用情况报告
 
 
 
  a| 
-https://[]
+https://support.netapp.com[]
  a| 
 NetApp总部提供计费信息和AutoSupport 交付
 
 
 
  a| 
-https://[]
-https://[]
+https://mirror.centos.org[]
+https://mirrorlist.centos.org[]
  a| 
 Keystone收集器的操作系统更新(仅限OVA部署)
 
 
 
  a| 
-https://[]
+https://repo.mysql.com[]
  a| 
 下载并更新MySQL依赖项(仅适用于Linux部署)
 

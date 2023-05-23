@@ -36,4 +36,4 @@ summary: 不可退回的非易失性组件以及SnapLock 合规性
 
 SnapLock 技术可在卷中设置的到期日期之后使驱动器不可用、从而启用NRNVC功能。要在卷上使用SnapLock 技术、您需要订阅NRNVC。这仅适用于文件和块服务。
 
-有关SnapLock 技术的信息、请参见 https://["什么是 SnapLock"]。
+有关SnapLock 技术的信息、请参见 https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html["什么是 SnapLock"]。
