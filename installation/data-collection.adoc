@@ -20,7 +20,7 @@ Keystone可收集Keystone ONTAP 和Keystone StoragGRID订阅的配置、状态�
 
 == ONTAP 数据收集
 
-.为ONTAP 收集使用情况数据
+.为ONTAP收集的<strong>数据： 4.</strong>
 [%collapsible]
 ====
 以下列表是为ONTAP 收集的容量消耗数据的代表性示例：
@@ -198,7 +198,7 @@ Keystone可收集Keystone ONTAP 和Keystone StoragGRID订阅的配置、状态�
 
 
 ====
-.为ONTAP 收集性能数据
+.为ONTAP收集的<strong>数据： 4.</strong>
 [%collapsible]
 ====
 以下列表是为ONTAP 收集的性能数据的代表性示例：
@@ -247,7 +247,7 @@ Keystone可收集Keystone ONTAP 和Keystone StoragGRID订阅的配置、状态�
 
 
 ====
-.限制私有数据访问时删除的项列表
+.在限制私有数据访问时删除的<strong>项的清单：单击</strong>
 [%collapsible]
 ====
 如果在Keystone收集器上启用了*删除私有数据*选项、则不会为ONTAP 提供以下使用信息。默认情况下，此选项处于启用状态。
@@ -275,7 +275,7 @@ Keystone可收集Keystone ONTAP 和Keystone StoragGRID订阅的配置、状态�
 
 == StorageGRID 数据收集
 
-.为StorageGRID 收集使用情况数据
+.为StorageGRID收集的<strong>数据： 4.</strong>
 [%collapsible]
 ====
 以下列表是的代表性示例 `Logical Data` 为StorageGRID 收集：
@@ -301,7 +301,7 @@ Keystone可收集Keystone ONTAP 和Keystone StoragGRID订阅的配置、状态�
 
 
 ====
-.限制私有数据访问时删除的项列表
+.在限制私有数据访问时删除的<strong>项的清单：单击</strong>
 [%collapsible]
 ====
 如果在Keystone收集器上启用了*删除私有数据*选项、则不会为StorageGRID 提供以下使用信息。默认情况下，此选项处于启用状态。
