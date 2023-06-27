@@ -177,7 +177,6 @@
   <block id="2e36da56dea864a88d8bfe77e37ce8ce" category="section-title">监控工具</block>
   <block id="6961b64b96800d43e0da115e9763a226" category="paragraph">在Keystone客户运营的服务中、存储基础架构和监控工具会安装在您的站点上。存储基础架构由支持初始订单所需的存储硬件组成、并可配置为稍后订购更多存储。</block>
   <block id="ae031eb46bb3af9ef59c200e318f13e4" category="paragraph">除了存储设备之外、还配置了两个监控工具来监控存储和使用情况。</block>
-  <block id="8ef6698c4c0c28e13ff87fec7e5388eb" category="summary">高级数据保护</block>
   <block id="c575a20db4934726a8fadd53d81a0c98" category="inline-link-macro">Keystone中的服务级别</block>
   <block id="7f4d4fbe08a8a895671d05c4a82b0c85" category="inline-link-macro">MetroCluster 文档</block>
   <block id="b21152b7b912739b58060e9f661767eb" category="list-text">源集群和目标集群的存储均需付费。此附加服务还会对主卷和二级(镜像)卷进行收费。</block>
@@ -474,11 +473,9 @@
   <block id="4dc2830ae7b31704bf74b200d5350dea" category="paragraph">本节列出了在您的环境中启用NetApp Keystone STaaS服务所需的组件。</block>
   <block id="d9a2f9a8831ac707c49715a960ba187b" category="paragraph">NetApp Keystone STaaS可为您的存储订阅提供可预测的前期定价。</block>
   <block id="0da0fcb34ab6233293608a6a36f3a615" category="paragraph">Keystone订阅与速率计划相关联。一个订阅可以附加多个速率计划。</block>
-  <block id="54695ebc80c3da92b703e05eb198d2e8" category="paragraph">您可以在Keystone STaaS订阅中订阅高级数据保护附加服务。此附加服务可利用NetApp MetroCluster 技术确保在0恢复点目标(RPO)时为任务关键型工作负载提供高效的数据保护。</block>
   <block id="a0a3d7ac5998dcdf5286d5aa1997225c" category="admonition">用于文件和块存储的Keystone STaaS标准服务可利用SnapMirror、SnapVault 和Snapshot等NetApp技术提供默认数据保护服务。</block>
   <block id="4a313a9affe19522ce794cef41abbe6f" category="paragraph">有关标准服务和云服务的信息、请参见 <block ref="32999c765ee523f7718a7908120f4502" category="inline-link-macro-rx"></block>。</block>
   <block id="4d194848bc2fab0aa3d23867126f7f3c" category="list-text">对于此服务、关联存储上已承诺的容量的100%配置为已承诺容量。</block>
-  <block id="3bed866597de0e328e69ae5fc7a77800" category="list-text">此费用仅适用于您的文件和块存储。支持以下MetroCluster 方案：</block>
   <block id="5ad44de5caf375074e7467a13558fc7e" category="paragraph">NetApp Keystone (Keystone)计费基于在Keystone订阅中为您承诺的容量。</block>
   <block id="659758cbadfbaf62f8c0cdaf453308f1" category="paragraph">已提交容量是指在购买订阅时为特定服务级别提交的容量。已提交容量可以是您和NetApp/合作伙伴接受的单个订阅中各种服务级别的总容量。此容量会在每个Keystone订单上进行说明、并进行计费、而不管实际容量消耗如何。</block>
   <block id="86ba425a7f98b24ee3070233e0aabfd1" category="doc">Keystone STaaS服务支持的存储</block>
@@ -728,7 +725,6 @@
   <block id="89fb8980c16c92d28af72e0579cfac9c" category="summary">Keystone订阅报告和图形</block>
   <block id="deaf5bbabe29231a9826b313fee569a1" category="doc">Keystone订阅信息板和报告</block>
   <block id="b5d0947d6bc5e70f868d560d859163f5" category="inline-link">查看NetApp Keystone 订阅的容量利用率</block>
-  <block id="016b01bead3857be9fd51bfef49b23aa" category="admonition">Keystone订阅中的容量消耗以Tib形式显示在信息板和报告上、最多可显示两位小数。如果使用量小于0.01TiB、则该值显示为0或<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。有关其他使用指标、请参见 <block ref="c526a2ccdbb16224fb861d4fec1eb67c" category="inline-link-macro-rx"></block>。有关Keystone中使用的不同容量的信息、请参见 <block ref="a2e2f97253342349ff9ef2b936b778d0" category="inline-link-macro-rx"></block>。</block>
   <block id="b3c0ed0e576799a24c9e0fda06bee006" category="section-title">查看订阅详细信息</block>
   <block id="b5d0d2658bdd7db17a2251c2d1fa6edb" category="paragraph">您可以在*订阅详细信息*选项卡中查看帐户名称的所有订阅。</block>
   <block id="60d8073bb007efeabf44bc4eea759210" category="paragraph">对于每个订阅编号、您可以查看以下信息：</block>
@@ -757,7 +753,6 @@
   <block id="ac6a5de4e069a7968a64e732a7cbd9af" category="admonition">*问题描述 收集器*：Keystone收集器在使用量计量系统中运行多个容器。如果Red Hat Enterprise Linux 8.x服务器使用美国国防信息系统局(DISA)安全技术实施指南(Stig)策略进行了加固、则会间歇性地看到一个已知的问题描述 with folicyd (文件访问策略守护进程)。此问题描述 标识为 <block ref="c6da6cbf9dd009f994ed56cf4b1ffbbb" category="inline-link-macro-rx"></block>。*临时解决策 *：在Red Hat Enterprise解决问题之前、NetApp建议您通过输入来解决此问题描述<block ref="f3104ccbad818f132c8760f414494a6b" prefix=" " category="inline-code"></block> 进入许可模式。在中 <block ref="14802523b331d06f88071877a80dca79" prefix="/" category="inline-code"></block>、设置的值<block ref="e2f21a3f9a4466418728abff3026c8d3" prefix=" " category="inline-code"></block>。</block>
   <block id="9893071aa012ae6b029eae73ae2be44e" category="list-text"><block ref="9893071aa012ae6b029eae73ae2be44e" category="inline-link-rx"></block></block>
   <block id="6bf0a6b5934bc27f34497309b1c2ce0a" category="list-text"><block ref="6bf0a6b5934bc27f34497309b1c2ce0a" category="inline-link-rx"></block></block>
-  <block id="e41d7b27749843cacc5b63d577d05563" category="paragraph">Keystone高级数据保护服务可以将数据同步镜像到二级站点。如果主站点发生灾难、二级站点可以接管、而不会丢失任何数据。此功能可利用两个站点之间的MetroCluster 配置来实现数据保护。您只能对文件和块存储服务使用高级数据保护附加服务。有关ONTAP MetroCluster 的信息、请参见 <block ref="80871b8782cc051e20935ca40e2a0650" category="inline-link-macro-rx"></block>。</block>
   <block id="e88f55d6b9c231a5c6bcae698bdfd7dc" category="list-text">* vserver*：Vserver或Storage VM (Storage Virtual Machine)的名称。</block>
   <block id="83968617de22b9218018ccb02b138d69" category="paragraph">有关IO密度的信息、请参见 <block ref="3ce2bf0236919e451c90f574367e80ae" category="inline-link-macro-rx"></block>。有关AQO策略组的详细信息、请参见<block ref="e1f6c27c218a9f9df79e5c49fb7040d6" category="inline-link-rx"></block>。</block>
   <block id="d1dc13c797f457ef0f8af6fba8c638fa" category="paragraph">高级服务级别的设置和命令：</block>
@@ -1113,7 +1108,6 @@
   <block id="14d0dc302a669d6a99952e49afc7861a" category="list-text">*峰值IOPS分配*：此参数用于控制卷可用的峰值IOPS是基于卷的已分配大小还是已使用大小。在Keystone中、此值基于已用空间。</block>
   <block id="783d230c76cf1ff0dfbc8c98d7a8b01c" category="paragraph">Keystone STaaS可通过订阅以预定义的性能服务级别(服务级别)提供数据存储容量。由Keystone服务管理的每个卷都与一个服务级别相关联。</block>
   <block id="4d5ef2163c192509afec8de9ab79da82" category="paragraph">每个服务级别均由其I/O密度(即IOP/TiB/卷)定义。这是性能(每秒输入/输出操作数[IOS])与已用存储容量(TiB)的比率、即每个卷平均延迟时的IOS/TiB。</block>
-  <block id="46d655df10f0a99ca8d68059cbb399d8" category="paragraph">此处列出了受支持的存储类型、文件、块、对象和云服务的服务级别。</block>
   <block id="c5164a8ba9242ffd5faec20d25175dbe" category="section-title">文件和块存储的服务级别</block>
   <block id="55b9320c8c3c184ea9542aa4a82ecd70" category="cell">*每个卷分配的最大IOS/逻辑Tib*</block>
   <block id="2951c92ac7129eb5950ee23f07140f99" category="cell">*每个卷存储的最大MBps/logical Tibs @ 32K B/S*</block>
@@ -1123,7 +1117,6 @@
   <block id="f43c7285b135d5fc56405612d8c6e970" category="cell">17 毫秒</block>
   <block id="d6b228a8ed209a51c109dc08e1f357ce" category="cell">*块大小*</block>
   <block id="333ed6369ef878defe6b851fcb7a250f" category="section-title">有关文件和块存储服务级别的更多信息</block>
-  <block id="c4701e06633afc0b1161fbc6049cc803" category="paragraph">服务级别指标取决于以下条件：</block>
   <block id="210b39d4b6b8c3231fc8e5027adff975" category="list-text">文件和块存储的服务级别支持ONTAP 9.7及更高版本。</block>
   <block id="5d743a4a8a32b74983387e8966fc8dfd" category="list-text">服务级别的IOps/TiB/卷、MBps/TiB/卷和延迟值基于卷中存储的数据量、32 KB块大小以及70%读取和30%写入IO操作的随机组合。</block>
   <block id="1ce7cadb42fda63031710acdb1e36d13" category="list-text">根据实际或假设的块大小、系统工作负载并发性或输入输出操作、实际IOps/TiB/卷和MBps/TiB/卷可能会有所不同。</block>
@@ -1162,7 +1155,6 @@
   <block id="c146cff58b20f1e3ad6a2139acf308cc" category="paragraph"><block ref="c146cff58b20f1e3ad6a2139acf308cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8f49e2b6da7339d918b4030b299167c" category="admonition">根据查询的日期范围、使用情况图表将显示在30个数据收集点范围内。</block>
   <block id="793c1a98e090ba1b0f167e3a8b0c5b37" category="paragraph">此时将显示卷详细信息。您可以将鼠标悬停在列标题旁边的信息图标上、滚动浏览列并了解有关这些列的更多信息。您可以按列排序并筛选列表以查看特定信息。</block>
-  <block id="8bb44c11261c5988fa7a0b17c52ecf8a" category="admonition">您可以单击*复制节点序列*按钮来复制单个节点序列号。</block>
   <block id="0bb9d5f8cc89f1784aecd52a98b80f07" category="inline-image-macro">系统详细信息选项卡</block>
   <block id="8b672bec07d1efa43e526f4981ffb4e7" category="paragraph"><block ref="8b672bec07d1efa43e526f4981ffb4e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="71f95b1426db5071da237d6bf6575ce7" category="inline-image-macro">StorageGRID 弹出窗口</block>
@@ -1204,4 +1196,44 @@
 <block ref="de3bc771b0100381aa743c5ecbd3a7df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1f5e8b836d490bee65ada2e551662a8f" category="sidebar">安装Keystone收集器</block>
   <block id="da152509ccdb6d6b167f659fc63ed210" category="sidebar">Keystone订阅版本1 (以前称为Keystone Flex订阅)</block>
+  <block id="f4797200b978e2cdf72d828512836645" category="admonition">Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位显示、并四舍五入为小数点后两位。如果使用量小于0.01TiB、则该值显示为0或<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。有关其他使用指标、请参见 <block ref="c526a2ccdbb16224fb861d4fec1eb67c" category="inline-link-macro-rx"></block>。有关Keystone中使用的不同容量的信息、请参见 <block ref="a2e2f97253342349ff9ef2b936b778d0" category="inline-link-macro-rx"></block>。</block>
+  <block id="2cee56420a8bf3ad373606551a8bc8bf" category="inline-link-macro">有关高级数据保护的其他详细信息</block>
+  <block id="526c2c9d422fdf2baef9369203b39c92" category="admonition">如果您已订阅高级数据保护附加服务、则可以单击订阅编号对应的工具提示、在MetroCluster设置中查看合作伙伴订阅的跟踪ID。要了解如何在MetroCluster配置中查看合作伙伴订阅的详细使用情况、请参阅 <block ref="f15f9282100c644cf5e8c3defc83d6f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="42bebeddc58d2391cdbd55afc8071faa" category="paragraph">如果您已订阅高级数据保护附加服务、则可以在*订阅时间序列*选项卡上查看MetroCluster合作伙伴站点的消费数据分类。</block>
+  <block id="3f20b3134627198be1e0ff879a88cd8f" category="inline-link-macro">高级数据保护</block>
+  <block id="31983c33f891876ff7bcaee65805fde0" category="paragraph">有关高级数据保护附加服务的信息、请参见 <block ref="a91680a6ffe7d115054b2a3a29590c88" category="inline-link-macro-rx"></block>。</block>
+  <block id="04db5afbef84567f5c1ef044a2971b66" category="paragraph">如果您的ONTAP 存储环境中的集群是在MetroCluster 设置中配置的、则Keystone订阅的使用情况数据将拆分到同一时间序列图表中、以显示主站点和镜像站点上基本服务级别的使用情况。</block>
+  <block id="569bc20a83ee79e720c8118dfd3197e4" category="admonition">仅针对基本服务级别拆分消耗条形图。对于高级数据保护附加服务(即_Advanced Data-Protect_服务级别)、不会显示此分界。</block>
+  <block id="fb3cbb66357c55c4f429abc77ecde8bb" category="paragraph-title">高级数据保护服务级别</block>
+  <block id="5d9e0154046c312de36f5dd604c13626" category="paragraph">对于_高级数据保护_服务级别、总使用量在合作伙伴站点之间分摊、每个合作伙伴站点的使用量将通过单独的订阅反映出来并计费；即主站点的一个订阅、镜像站点的另一个订阅。因此，当您在*订阅时间序列*选项卡上选择主站点的订阅编号时，高级数据保护附加服务的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster配置中的每个配对站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。</block>
+  <block id="dc22a90e0f32f2a7c39774489ee8fb79" category="admonition">*订阅详细信息*选项卡中订阅的跟踪ID旁边的工具提示可帮助您在MetroCluster设置中识别合作伙伴订阅。</block>
+  <block id="c3c3060e985c56412fb0189a9c010a6d" category="paragraph-title">基本服务级别</block>
+  <block id="fe1654f1038a98c579f04107a47b091b" category="paragraph">对于基本服务级别、每个卷在主站点和镜像站点配置时计费、因此、同一条形图会根据主站点和镜像站点的使用情况进行拆分。</block>
+  <block id="65626369a820db5271fac7f41d059e93" category="paragraph-title">您可以看到的主要订阅内容</block>
+  <block id="6f66763d1fa17a342e4bfd7244527ffb" category="paragraph">下图显示了_Extreme服务级别(基础服务级别)和主订阅编号的图表。"相同时间"序列图表以主站点所用颜色代码的较浅阴影标记镜像站点的使用量。鼠标悬停时的工具提示会显示主站点和镜像站点的消耗分解(以TiB为单位)、分别为1.02 TiB和1.05 TiB。</block>
+  <block id="7cbd40b0470c3f0ea1063db9202530ff" category="inline-image-macro">MCC主系统</block>
+  <block id="69ee7237e9b9f659b4b0f2cee316a662" category="paragraph"><block ref="69ee7237e9b9f659b4b0f2cee316a662" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8aed2cb2a7e1e2ed4080282a23781e67" category="paragraph">对于_Advanced Data-Protect_服务级别、图表如下所示：</block>
+  <block id="4bb0adac0644b7c8396196d410d47909" category="inline-image-macro">MCC主底座</block>
+  <block id="252d078185bf1100894fa3aae110fb74" category="paragraph"><block ref="252d078185bf1100894fa3aae110fb74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cd9124dc0715967bbbd4e31ad8a6f35d" category="paragraph-title">您可以看到的二级(镜像站点)订阅内容</block>
+  <block id="de7e96b640e5109ff5e8bcbb7abf5849" category="paragraph">在检查二级订阅时、您会发现、与配对站点位于同一数据收集点的_Extreme服务级别(基础服务级别)条形图已反转、主站点和镜像站点的消耗细分分别为1.05 TiB和1.02 TiB。</block>
+  <block id="ff58d4e2d2a69e5e91f9509907ba3bd1" category="inline-image-macro">MCC镜像</block>
+  <block id="292d6b6f6df888f5de022ad6bebc7e52" category="paragraph"><block ref="292d6b6f6df888f5de022ad6bebc7e52" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="20222cfe14bec28299c2fc51ff2ec704" category="paragraph">对于_Advanced Data-Protect_服务级别、配对站点上的同一个收集点的图表如下所示：</block>
+  <block id="ab682f0abbe8b97aaec76b435ca52575" category="inline-image-macro">MCC镜像底座</block>
+  <block id="c2294c5f58d4fff77fcc282af6601d4a" category="paragraph"><block ref="c2294c5f58d4fff77fcc282af6601d4a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="48d59ef93e565c1c62d4604f7ddf6561" category="inline-link">了解 MetroCluster 数据保护和灾难恢复</block>
+  <block id="11faa60292999fe44e704021ce9a5657" category="paragraph">有关MetroCluster 如何保护数据的信息、请参见<block ref="f22c59fda71318ed939c4a5a7c90b447" category="inline-link-rx"></block>。</block>
+  <block id="af16b731bd6e35896b00c75d9acfb1d5" category="admonition">对于高级数据保护附加服务、将显示一个附加列、指示此卷在MetroCluster配置中是主卷还是镜像卷。您可以单击*复制节点序列*按钮来复制单个节点序列号。</block>
+  <block id="815d49ae1d640489fc7d71580a9136fb" category="paragraph">您可以订阅Keystone STaaS订阅中的高级数据保护附加服务。此附加服务可利用NetApp MetroCluster 技术确保在0恢复点目标(RPO)时为任务关键型工作负载提供高效的数据保护。</block>
+  <block id="5d15d69b71166851acc9decce7574df8" category="paragraph">Keystone高级数据保护服务可以将数据同步镜像到二级站点。如果主站点发生灾难、二级站点可以接管、而不会丢失任何数据。此功能可利用两个站点之间的MetroCluster 配置来实现数据保护。您只能对文件和块存储服务使用高级数据保护附加服务。作为此附加服务的一部分、<block ref="fb78d2349716eae6da0fd092c4f02857" prefix=" " category="inline-code"></block> 服务级别已分配给您的订阅。
+有关ONTAP MetroCluster 的信息、请参见 <block ref="80871b8782cc051e20935ca40e2a0650" category="inline-link-macro-rx"></block>。</block>
+  <block id="a59ea5d7cacb8e29da18d9bb6da809c7" category="paragraph">有关如何查看MetroCluster配置中的使用情况的信息、请参见 <block ref="f15f9282100c644cf5e8c3defc83d6f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">请注意以下事项：</block>
+  <block id="c2c11a830d011ece03d73534208897a1" category="list-text">此费用仅适用于您的文件和块存储。</block>
+  <block id="3505917ad3d0afd6896fab28f67d309e" category="paragraph">支持以下MetroCluster 方案：</block>
+  <block id="fd625bdcc192280e06814e4fa60837f3" category="paragraph">您可以根据存储环境以及存储和使用需求选择服务级别。默认情况下、您可以使用基本服务级别。如果您选择了附加服务、则还可以使用特定服务级别。例如、对于高级数据保护附加服务、_Advanced Data-Protect_服务级别将分配给您的订阅。</block>
+  <block id="725c798ca9f90c6a2a238988b14387a6" category="paragraph">此处列出了受支持的存储类型、文件、块、对象和云服务的基本服务级别。</block>
+  <block id="6839a21037309515ac19670a2a6b09fe" category="paragraph">基本服务级别指标取决于以下条件：</block>
 </blocks>
