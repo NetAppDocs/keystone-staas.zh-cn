@@ -69,6 +69,8 @@ sidebar:
       url: "/concepts/qos.html"
     - title: 服务级别的容量要求
       url: "/concepts/capacity-requirements.html"
+    - title: 可持续性SLA服务级别
+      url: "/concepts/sla-sustainability.html"
   - title: 计费
     entries:
     - title: Keystone定价

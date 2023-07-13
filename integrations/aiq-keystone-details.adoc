@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/aiq-keystone-details.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, iq sustainability, digital advisor sustainability, metrocluster, storagegrid, ontap, tracking id, burst usage, alerts 
 summary: Keystone订阅报告和图形 
 ---
 = Keystone订阅信息板和报告
@@ -21,26 +21,26 @@ NOTE: 此处提供的信息包括适用场景 ONTAP 和StorageGRID。相关章�
 
 有关Keystone Digital Advisor小工具的信息、请参见 https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["查看NetApp Keystone 订阅的容量利用率"^]。
 
-要查看详细信息、请执行以下步骤：
+要查看Keystone订阅和使用情况详细信息、请执行以下步骤：
 
 .步骤
-. 在Digital Advisor上、单击小工具上的*查看更多详细信息*、在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规> Keystone订阅*。
-
-
+. 登录到Digital Advisor。您可以看到* Keystone订阅*小工具、其中汇总了已购买Keystone服务的容量使用情况。
+. 在* Keystone订阅*小工具中、单击*查看更多详细信息*以在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规> Keystone订阅*。
 订阅详细信息、每个服务级别的使用情况图表以及卷详细信息将显示在* Keystone订阅*屏幕的不同选项卡中。
+
 
 
 NOTE: Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位显示、并四舍五入为小数点后两位。如果使用量小于0.01TiB、则该值显示为0或 `No Usage`。有关其他使用指标、请参见 link:../concepts/metrics.html#metrics-measurement["衡量指标"]。有关Keystone中使用的不同容量的信息、请参见 link:../concepts/supported-storage-capacity.html["支持的存储容量"]。
 
 
 
-== 查看订阅详细信息
+== 查看所有订阅
 
-您可以在*订阅详细信息*选项卡中查看帐户名称的所有订阅。
+您可以在*所有订阅*选项卡中查看所有订阅的列表。
 
-image:aiq-ks-dtls.png["订阅详细信息选项卡"]
+image:all-subs.png["所有订阅选项卡的图像"]
 
-对于每个订阅编号、您可以查看以下信息：
+对于每个订阅、您可以查看以下信息：
 
 * *订阅编号*：NetApp分配的Keystone订阅的订阅编号。
 * *跟踪ID*：激活订阅时分配的跟踪ID。这是每个订阅和站点的唯一ID、用于跟踪订阅。
@@ -49,19 +49,13 @@ image:aiq-ks-dtls.png["订阅详细信息选项卡"]
 TIP: 如果您已订阅高级数据保护附加服务、则可以单击订阅编号对应的工具提示、在MetroCluster设置中查看合作伙伴订阅的跟踪ID。要了解如何在MetroCluster配置中查看合作伙伴订阅的详细使用情况、请参阅 link:../integrations/aiq-keystone-details.html#additional-details-for-advanced-data-protection["有关高级数据保护的其他详细信息"]。
 
 * *使用类型*：您可能订阅了多个Keystone (版本1)或Keystone STaaS (版本2)订阅。对于这两种订阅类型、服务级别的费率计划规则可能会有所不同。通过查看此列中的值、您可以了解使用类型是按任一的已配置使用量还是逻辑使用量计费 `v1` 或 `v2`。有关Keystone订阅版本1的详细信息、请参见 https://docs.netapp.com/us-en/keystone/index.html["NetApp Keystone 文档"]。
-* *计费期限*：订阅的计费期限、例如每月、每季度或每年。
+* *Billing Period *：订阅的计费期限，如每月、每季度或每年。
 * *开始日期*：订阅的开始日期。
-* *结束日期*：订阅的结束日期。空白日期表示订阅没有结束日期、它将自动续订。根据此日期、您可能会看到即将到期或附加了自动续订策略的订阅的信息消息。
-* *使用状态*：指示已使用或过度使用的订阅量。如果要查看最高消耗记录、可以按此列对列表进行排序。
-* image:aiq-ks-time-icon.png["图标。"]：单击此图标将打开*订阅时间序列*选项卡、在此可以查看此订阅中包含的每个服务级别的历史使用情况数据
+* *结束日期*：订阅的结束日期。空的日期字段表示订阅没有结束日期、它将自动续订。根据此日期、您可能会看到订阅即将结束或附加了自动续订策略的通知。
+* *使用状态*：显示使用情况指示符以指示使用量是在订阅限制之内还是超出订阅限制。如果要查看最高消耗记录、可以按此列对列表进行排序。
+* image:subs-dtls-icon.png["图标。"]：单击此订阅图标将打开*订阅详细信息*选项卡，其中包含该订阅的其他详细信息。
+* image:aiq-ks-time-icon.png["图标。"]：单击此图标将打开*时间序列*选项卡，您可以在其中查看此订阅中每个服务级别的历史使用数据。
 
-
-您可以单击订阅记录的向下箭头来查看更多详细信息。服务级别名称、已提交、已使用、可用容量以及当前和累积突发使用量等详细信息将显示在TiB中。
-
-
-TIP: 系统将突出显示消耗量较高的特定服务级别。您还可以查看为卷生成的警告和警报。
-
-有关Keystone存储服务和相关服务级别的信息、请参见 link:../concepts/service-levels.html["Keystone中的服务级别"]。
 
 您可以参考以下使用情况指示器来检查每个订阅的使用状态：
 
@@ -72,12 +66,69 @@ image:icon-grey.png["灰点图标"]：未根据服务级别的已提交容量记
 
 
 
-== 查看历史订阅数据图表
+== 查看订阅详细信息
 
-*订阅时间序列*选项卡显示特定时间段的订阅历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。
+要了解订阅的详细信息，请单击*订阅详细信息*选项卡，然后选择所需的订阅编号。
+
+image:aiq-ks-dtls.png["订阅详细信息选项卡"]
+
+服务级别名称、已提交、已使用、可用容量以及当前和累积突发使用量等详细信息将显示在TiB中。
+
+
+TIP: 。 image:icon-info.png["信息图标"] 每个列旁边的图标提供有关该列的全面信息。系统将突出显示消耗量较高的特定服务级别。您还可以查看为卷生成的警告和警报。
+
+有关Keystone存储服务和相关服务级别的信息、请参见 link:../concepts/service-levels.html["Keystone中的服务级别"]。
+
+
+
+== 查看可持续性SLA详细信息
+
+.了解更多信息。
+[%collapsible]
+====
+只有在与NetApp签订了有效的可持续性服务级别协议(SLA)后、"*SLA Details*(SLA详细信息)"选项卡才可用。有关Keystone STaaS中的可持续性SLA的信息、请参见 link:../concepts/sla-sustainability.html["Keystone的可持续性SLA"]。
+
+"*SLA Details*(SLA详细信息*)"选项卡为您提供可持续SLA详细信息。
 
 .步骤
-. 单击*订阅时间序列*选项卡。
+. 单击*SLA细节*选项卡。
+. 选择要查看其详细信息的所需订阅。您只能查看符合Sustainability SLA标准的订阅。有关条件的信息、请参见 link:../concepts/sla-sustainability.html#eligibility-criteria-for-sustainability-sla["可持续性SLA的资格标准"]。
+
+
+您可以查看当月与可持续发展相关的衡量指标的每日细分：
+
+image:sla-sustainability.png["列出可持续性详细信息的SLA详细信息选项卡"]
+
+此时将显示以下详细信息：
+
+* *订阅*：您选择的订阅的订阅编号、开始日期、结束日期和计费期限。
+* *平均可持续性*：此订阅的最后一个计费期间的平均功耗(以瓦特/ TiB为单位)。
+* *day*：检索此数据项的日期。
+* *Generated Date*：月份的实际日期。
+* *平均瓦特*：集群当天的平均功耗瓦特。
+* *有效容量(TiB*)：服务级别的已提交容量与已分配突发容量之和。
+* *实际瓦特(TiB*)：实际瓦特/ TiB是集群当天的实际每TiB功耗。您可以将其与* SLA瓦特/ TiB*中的值进行比较，以分析任何超调。
+* *SLA瓦特/ TiB*：SLA中定义的服务级别的瓦特/ TiB值。
+* *平均温度(^o^C)*：日平均环境温度。
+* *存储效率比率*：Keystone存储环境中的存储效率比率。这是启用存储效率设置后系统使用的总逻辑空间与用于存储数据的总物理空间之比。有关存储效率比率的信息、请参见 https://docs.netapp.com/us-en/active-iq/concept_overview_storage_efficiency.html["了解存储效率"^]。
+
+
+如果违反SLA、则为图标 image:warning.png["警告图标"] 列旁边会告知您违规行为的性质。此时将显示以下警告：
+
+* 环境温度：如果温度超出25^o^C - 27^o^C的范围
+* SLA瓦特/ TiB：如果未满足服务级别SLA指标。有关信息，请参见 link:../concepts/sla-sustainability.html#sustainability-service-level["可持续性服务级别"]。
+* 存储效率比率：如果存储效率小于2：1。
+
+
+====
+
+
+== 查看历史订阅数据图表
+
+*时间序列*选项卡显示特定时间段内您的订阅的历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。
+
+.步骤
+. 单击*时间序列*选项卡。
 . 选择要查看其详细信息的所需订阅。默认情况下、系统会选择您帐户名称中的第一个订阅。
 . 从*自日期*和*至日期*字段中的日历图标中选择时间范围。默认时间范围是从计费周期的开始日期到当前日期。
 +
@@ -91,8 +142,8 @@ image:aiq-ks-subtime-2.png["时间序列选项卡"]
 
 此时将显示以下详细信息：
 
-* *订阅详细信息*：订阅的开始和结束日期以及计费期限、例如季度、年度等。
-* *使用情况图表*：条形图显示服务级别名称以及在日期范围内根据该服务级别消耗的容量。收集的日期和时间显示在图表底部。
+* 订阅详细信息：订阅的开始日期和结束日期以及计费期、例如季度、年度等。
+* 使用情况图表：条形图显示日期范围内服务级别名称以及该服务级别的已用容量。收集的日期和时间显示在图表底部。
 +
 
 NOTE: 根据查询的日期范围、使用情况图表将显示在30个数据收集点范围内。
@@ -136,10 +187,10 @@ NOTE: *当前已用*、*当前突发*和*累积突发*指标用于确定订阅�
 
 === 有关高级数据保护的其他详细信息
 
-.单击此处
+.了解更多信息。
 [%collapsible]
 ====
-如果您已订阅高级数据保护附加服务、则可以在*订阅时间序列*选项卡上查看MetroCluster合作伙伴站点的消费数据分类。
+如果您已订阅高级数据保护附加服务、则可以在*时间序列*选项卡上查看MetroCluster合作伙伴站点的消费数据的分解情况。
 
 有关高级数据保护附加服务的信息、请参见 link:../concepts/adp.html["高级数据保护"]。
 
@@ -149,7 +200,7 @@ NOTE: *当前已用*、*当前突发*和*累积突发*指标用于确定订阅�
 NOTE: 仅针对基本服务级别拆分消耗条形图。对于高级数据保护附加服务(即_Advanced Data-Protect_服务级别)、不会显示此分界。
 
 .高级数据保护服务级别
-对于_高级数据保护_服务级别、总使用量在合作伙伴站点之间分摊、每个合作伙伴站点的使用量将通过单独的订阅反映出来并计费；即主站点的一个订阅、镜像站点的另一个订阅。因此，当您在*订阅时间序列*选项卡上选择主站点的订阅编号时，高级数据保护附加服务的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster配置中的每个配对站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。
+对于_高级数据保护_服务级别、总使用量在合作伙伴站点之间分摊、每个合作伙伴站点的使用量将通过单独的订阅反映出来并计费；即主站点的一个订阅、镜像站点的另一个订阅。因此，当您在*时间序列*选项卡上选择主站点的订阅编号时，高级数据保护附加服务的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster配置中的每个配对站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。
 
 
 TIP: *订阅详细信息*选项卡中订阅的跟踪ID旁边的工具提示可帮助您在MetroCluster设置中识别合作伙伴订阅。
@@ -188,7 +239,7 @@ image:adp-mir.png["MCC镜像底座"]
 
 === ONTAP卷详细信息
 
-.单击此处
+.了解更多信息。
 [%collapsible]
 ====
 对于ONTAP 、*系统详细信息*选项卡将显示相关信息、例如Keystone订阅所管理的存储环境中卷的容量使用情况、卷类型、集群、聚合和服务级别。
@@ -212,7 +263,7 @@ image:aiq-ks-sysdtls.png["系统详细信息选项卡"]
 
 === StorageGRID节点和使用情况详细信息
 
-.单击此处
+.了解更多信息。
 [%collapsible]
 ====
 对于StorageGRID 、此选项卡将显示对象存储环境中节点的物理使用情况。
@@ -238,7 +289,7 @@ image:sg-link-2.png["StorageGRID 弹出窗口"]
 
 详细信息以CSV格式生成、您可以保存这些详细信息以供将来使用。
 
-*订阅时间序列*选项卡的示例报告、其中会转换图形数据：
+用于*时间序列*选项卡的示例报告，其中转换了图形数据：
 
 image:report.png["报告的CSV"]
 
