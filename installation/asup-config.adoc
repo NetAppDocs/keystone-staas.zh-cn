@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: installation/asup-config.html 
+keywords: ASUP, AutoSupport configuration 
+summary: 用于为Keystone配置AutoSupport的操作步骤 
+---
+= 为Keystone配置AutoSupport
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用AutoSupport遥测机制时、Keystone服务会根据AutoSupport遥测数据执行使用情况计量。要获得所需的粒度级别、您应将AutoSupport配置为在ONTAP集群发送的每日支持包中加入Keystone数据。
+
+.开始之前
+在将AutoSupport配置为包含Keystone数据之前、应注意以下事项。
+
+* 您可以使用ONTAP命令行界面编辑AutoSupport遥测选项。有关管理AutoSupport服务和系统(集群)管理员角色的信息、请参见 https://docs.netapp.com/us-en/ontap/system-admin/manage-autosupport-concept.html["管理 AutoSupport 概述"^] 和 https://docs.netapp.com/us-en/ontap/system-admin/cluster-svm-administrators-concept.html["集群和 SVM 管理员"^]。
+* 您可以在Daily AutoSupport软件包中包含以下子系统、以确保为Keystone精确收集数据。有关AutoSupport子系统的信息、请参见 https://docs.netapp.com/us-en/ontap/system-admin/autosupport-subsystem-collection-reference.html["什么是 AutoSupport 子系统"^]。
++
+|===
+| 子系统名称 | Keystone需要数据项 
+
+
+ a| 
+WAFL
+| `VOLUME-CLONE-SHOW.XML` 
+
+
+ a| 
+性能
+| `QOS-POLICY-GROUP.XML` 和 `QOS-ADAPTIVE-POLICY.XML` 
+
+
+ a| 
+Snapshot
+| `SNAPSHOT.XML` 
+
+
+ a| 
+平台
+| `ENVIRONMENT.txt` 
+|===
++
+默认情况下、这些子系统包含在每周AutoSupport捆绑包中、其中包含 `asup_type` 是_dot-regular、和 `asup_subject` Is _HA Group Notification (Weekly_log) NOTICE_。但是、您需要将其添加到每日捆绑包中、以便检索和报告Keystone使用情况数据。
+
+
+
+.步骤
+. 以系统管理员用户身份、使用SSH登录到Keystone ONTAP集群。有关信息，请参见 https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-ssh-task.html["使用SSH访问集群"^]。
+. 运行以下命令并验证现有配置：
++
+`autosupport trigger show -node * -autosupport-message management.log -instance`
+
++
+有关此命令的详细信息，请参见 https://docs.netapp.com/us-en/ontap-cli-9131/system-node-autosupport-manifest-show.html#parameters["system node AutoSupport manifest show"^]。
+
+. 运行以下命令以修改每日日志内容：
++
+`autosupport trigger modify -node * -autosupport-message management.log -basic-additional _<existing comma-separated subsystems>_, _<new subsystems>_`
+
++
+有关此命令的详细信息，请参见 https://docs.netapp.com/us-en/ontap-cli-9131/system-node-autosupport-trigger-modify.html["系统节点AutoSupport 触发修改"^]。
+
+

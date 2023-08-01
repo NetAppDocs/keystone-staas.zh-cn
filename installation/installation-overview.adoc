@@ -17,7 +17,7 @@ summary: 什么是Keystone收集器
 要使用Keystone服务并查看使用情况数据、您应在站点的VMware vSphere或Linux系统上安装Keystone收集器。
 
 
-NOTE: Keystone收集器代表收集Keystone系统使用情况数据的标准方法。如果您的环境不支持Keystone收集器、您可以向Keystone产品管理部门寻求授权、以使用AutoSupport数据作为替代方案。有关AutoSupport遥测数据的信息、请参见 https://docs.netapp.com/us-en/active-iq/concept_autosupport.html["AutoSupport"^]。
+NOTE: Keystone收集器代表收集Keystone系统使用情况数据的标准方法。如果您的环境不支持Keystone收集器、您可以向Keystone产品管理部门寻求授权、以使用AutoSupport遥测机制作为替代方案。有关AutoSupport的信息、请参见 https://docs.netapp.com/us-en/active-iq/concept_autosupport.html["AutoSupport"^]。有关为Keystone配置AutoSupport的信息、请参见 link:../installation/asup-config.html["为Keystone配置AutoSupport"]。
 
 Keystone收集器是Keystone计费平台的使用量采集组件、它利用Active IQ Unified Manager 和其他应用程序连接到ONTAP 和StorageGRID 系统、收集Keystone订阅的使用量和SLA性能计量所需的元数据。通过它、您可以监控系统运行状况、同时发送计费数据进行报告。
 

@@ -39,6 +39,8 @@ sidebar:
       url: "/installation/monitor-health.html"
     - title: 升级Keystone收集器
       url: "/installation/upgrade.html"
+    - title: 为Keystone配置AutoSupport
+      url: "/installation/asup-config.html"
     - title: 收集用于计费的数据
       url: "/installation/data-collection.html"
   - title: 了解Keystone
