@@ -4,15 +4,11 @@
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="5c578a7cd5fdea7f09cabf897bbb389d" category="summary">基础架构组件</block>
   <block id="3c0d9137e7a6bf6e7b1cbaad394ac5ec" category="doc">用于部署的组件</block>
   <block id="c9da0796f309773995aa86a3901c5e00" category="section-title">站点要求</block>
@@ -501,7 +497,6 @@
   <block id="a701f5d044348085ee4f97fef6636845" category="list-text">FlexClone</block>
   <block id="7d2113229d846a15533e691c746ce4c8" category="list-text">SnapCenter (包括许可证、但不属于Keystone服务、不保证进行管理)</block>
   <block id="392d70ca39f31f10bd637936769788df" category="paragraph">StorageGRID</block>
-  <block id="121b4f8b22349a8498673b224a8c239b" category="paragraph">支持跨多个站点的多个信息生命周期管理(ILM)策略。*注意*：每个站点都需要单独订阅。</block>
   <block id="141b2b4361a2b3c206d10e1c27378c2e" category="section-title">云存储服务</block>
   <block id="d96e0cf44b3111cb9ae984add2b97c74" category="paragraph">Keystone STaaS可提供云存储服务。Keystone STaaS支持Amazon Web Services (AWS)、Microsoft Azure和Google云平台上的Cloud Volumes ONTAP 数据管理功能。</block>
   <block id="2a947eac17f71a99037966f44ce8252d" category="admonition">NetApp不会在Keystone STaaS订阅中提供Cloud Volumes ONTAP 所需的基于超大规模扩展的计算、存储和网络服务；这些订阅需要直接从超大规模云服务提供商处购买。</block>
@@ -1099,10 +1094,6 @@
   <block id="c5164a8ba9242ffd5faec20d25175dbe" category="section-title">文件和块存储的服务级别</block>
   <block id="55b9320c8c3c184ea9542aa4a82ecd70" category="cell">*每个卷分配的最大IOS/逻辑Tib*</block>
   <block id="2951c92ac7129eb5950ee23f07140f99" category="cell">*每个卷存储的最大MBps/logical Tibs @ 32K B/S*</block>
-  <block id="2fab0c2c1260d4eab832ce495d9a945f" category="cell">1 毫秒</block>
-  <block id="084351f847be6c607173d4bf38542f71" category="cell">2 毫秒</block>
-  <block id="f694c7926734a582b5156c24b9e7b563" category="cell">4毫秒</block>
-  <block id="f43c7285b135d5fc56405612d8c6e970" category="cell">17 毫秒</block>
   <block id="d6b228a8ed209a51c109dc08e1f357ce" category="cell">*块大小*</block>
   <block id="333ed6369ef878defe6b851fcb7a250f" category="section-title">有关文件和块存储服务级别的更多信息</block>
   <block id="210b39d4b6b8c3231fc8e5027adff975" category="list-text">文件和块存储的服务级别支持ONTAP 9.7及更高版本。</block>
@@ -1205,7 +1196,6 @@
   <block id="c2c11a830d011ece03d73534208897a1" category="list-text">此费用仅适用于您的文件和块存储。</block>
   <block id="3505917ad3d0afd6896fab28f67d309e" category="paragraph">支持以下MetroCluster 方案：</block>
   <block id="fd625bdcc192280e06814e4fa60837f3" category="paragraph">您可以根据存储环境以及存储和使用需求选择服务级别。默认情况下、您可以使用基本服务级别。如果您选择了附加服务、则还可以使用特定服务级别。例如、对于高级数据保护附加服务、_Advanced Data-Protect_服务级别将分配给您的订阅。</block>
-  <block id="725c798ca9f90c6a2a238988b14387a6" category="paragraph">此处列出了受支持的存储类型、文件、块、对象和云服务的基本服务级别。</block>
   <block id="6839a21037309515ac19670a2a6b09fe" category="paragraph">基本服务级别指标取决于以下条件：</block>
   <block id="42bb1b11612744ae96538087e8d89e64" category="paragraph">要查看Keystone订阅和使用情况详细信息、请执行以下步骤：</block>
   <block id="34c39bccff9d0d20e19cce35894ae174" category="list-text">登录到Digital Advisor。您可以看到* Keystone订阅*小工具、其中汇总了已购买Keystone服务的容量使用情况。</block>
@@ -1339,4 +1329,24 @@
   <block id="a7b3681fbca584aa4e58ecc74f068237" category="paragraph"><block ref="1835384cfbb7a783927d2d026c6446bc" prefix="" category="inline-code"></block></block>
   <block id="20c41bcd9366cdbd961d6554489ea863" category="inline-link">系统节点AutoSupport 触发修改</block>
   <block id="5f6d98c1ed4256fab45f6c20e637744e" category="paragraph">有关此命令的详细信息，请参见<block ref="700e80291e0b2dbcd3452a610925a1ef" category="inline-link-rx"></block>。</block>
+  <block id="f6f491a1dd00e6523775a1db454cb803" category="admonition">提供了适用于NetApp Keystone STaaS服务级别的详细服务问题描述<block ref="4efefa0d10fd36d11c0037f9237e96ba" category="inline-link-rx"></block>。</block>
+  <block id="766bf6a1b0285febc0d67565c929ccb2" category="paragraph">以下各节介绍了受支持的存储类型、文件、块、对象和云服务的基本服务级别：</block>
+  <block id="2ecbbb6413b4f26bda9319a043adc2e2" category="cell">*目标延迟为90^第^个百位点*</block>
+  <block id="99f8d77b50f8491531357b2d907d59d1" category="cell">小于 1 毫秒</block>
+  <block id="6fad0b609a57af2ae4dbbf92ff728673" category="cell">小于2毫秒</block>
+  <block id="71d46f269394e963a516a1cc98340c17" category="cell">&lt;4毫秒</block>
+  <block id="342e06f2c04b016459176bdbbd984dfe" category="cell">小于17毫秒</block>
+  <block id="1b5106e844354f799e5aa0cfdd0ead2d" category="list-text">自主勒索软件保护^1^</block>
+  <block id="ec45d0e150ff641adb7da6f8f3be1d72" category="paragraph">支持跨多个站点的多个信息生命周期管理(ILM)策略^2^</block>
+  <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自主勒索软件保护</block>
+  <block id="6b51f04b870573bccac2a4d06532aa13" category="admonition">^1^有关ONTAP中的勒索软件保护的信息、请参见<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block>。
+^2^每个站点需要单独订阅。</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
 </blocks>
