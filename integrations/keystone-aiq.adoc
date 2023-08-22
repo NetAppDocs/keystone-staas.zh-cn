@@ -14,12 +14,42 @@ summary: Keystone和Digital Advisor
 
 
 [role="lead"]
-如果您已订阅NetApp Keystone 服务、则可以在Active IQ 数字顾问(Digital Advisor)信息板上查看使用情况报告和图形。
+如果您订阅了NetApp Keystone STaaS服务、则可以在Active IQ数字顾问(数字顾问)信息板的* Keystone订阅*小工具上大致了解您的订阅情况。
 
-通过Digital Advisor、您可以查看有关您拥有的NetApp基础架构的存储即服务(STaaS)详细信息和信息。Digital Advisor提供了一个信息板、可通过该信息板查看您的订阅、服务级别和容量使用情况、并可创建详细报告。
+Digital Advisor提供了一个统一的信息板，可通过*切换到旧/新信息板*按钮深入了解不同级别的订阅数据和使用情况信息。
+
+.默认(旧)信息板
+您可以根据订阅的服务级别查看订阅编号、帐户名称、订阅的开始和结束日期以及容量使用情况图。
+
+image:old-db.png["旧信息板"]
+
+.备选(新)信息板
+您可以查看按订阅显示的容量使用情况的详细信息、以及需要立即引起关注或采取措施的警告和警报。根据您的订阅和使用状态、此信息会有选择地显示。您可以查看以下信息：
+
+* 容量使用情况、例如：
++
+** 不使用。
+** 消耗量超过承诺容量的80%。
+** 突发使用量。
+** 消耗量超过突发容量。
+
+
+* 服务级别协议：订阅是否满足服务级别协议(SLA)中定义的可持续性目标。如果您的订阅符合SLA标准、您可以看到状态为_All Ok_。
+* 如果适用、则会显示其他警告。
++
+** *即将过期*：如果您的订阅在90天内过期。
+** *关键硬件升级*：如果任何关键硬件升级正在等待处理。
+** *AQoS警告*：您的卷未分配AQoS策略。
++
+
+TIP: 单击*订阅*链接可在*订阅*选项卡中查看过滤的订阅列表。
+
+
+
+
+
+image:new-db.png["新信息板"]
 
 有关Keystone的Digital Advisor信息板小工具的详细信息、请参见 https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Digital Advisor文档"^]。
 
 有关Keystone信息板和报告的详细信息、请参见 link:../integrations/aiq-keystone-details.html["Keystone订阅信息板和报告"]。
-
-有关数据流的详细信息、请参见 link:../concepts/infra.html["监控工具"]。
