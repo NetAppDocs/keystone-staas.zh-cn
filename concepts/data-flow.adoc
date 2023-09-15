@@ -40,7 +40,7 @@ image:collector-data-flow.png["显示了收集器组件中的数据流"]
 image:monitoring-flow.png["数据流"]
 
 .图例
-. AIIOPS解决方案 网关启动与其云门户的TLS会话。
+. AIOPS解决方案网关启动到云门户的TLS会话。
 . 客户操作的防火墙允许进行连接。
 . 云中的AIOP解决方案 服务器接受此连接。
 . 在云门户和本地网关之间建立TLS通道。

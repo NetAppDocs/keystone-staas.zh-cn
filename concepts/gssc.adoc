@@ -14,7 +14,7 @@ summary: NetApp全球服务支持中心GSSC
 
 
 [role="lead"]
-NetApp全球服务和支持中心(GSSC)和NetApp Keystone 成功经理(KSM)负责为您提供Keystone订阅服务。
+NetApp全球服务和支持中心(GSSC)和NetApp Keystone成功经理(KSM)负责为您的Keystone订阅提供服务。
 
 
 
@@ -49,7 +49,7 @@ NOTE: 在合作伙伴运营的模式中、租户和子租户的服务请求将�
 NetApp全球服务和支持中心(GSSC)可监控您的产品和订阅服务的运行状况、提供远程支持、并与您的Keystone Success Manager合作。监控与相关Keystone订阅订单相关的产品的所有人员均为在美国运营的美国公民土壤。
 
 .Keystone Success Manager
-Keystone Success Manager (KSM)与您密切合作、为您提供Keystone服务、并在每周或每月的计费和运营报告中向您提供最新信息。这些职责在您的NetApp Keystone 协议中进行了说明。
+Keystone成功管理器(KSM)将与您密切合作、为您提供Keystone服务、并向您提供每周或每月计费和运营报告的最新信息。这些职责在您的NetApp Keystone 协议中进行了说明。
 
 
 
@@ -59,6 +59,6 @@ Keystone Success Manager (KSM)与您密切合作、为您提供Keystone服务、
 
 https://netappgssc.service-now.com/csm[]
 
-在提交服务请求之前、请确保已准备好系统详细信息、日志和相关信息。当您提出服务请求时、GSSC团队会收到支持服务单并访问相关信息以进行故障排除。您可以按照您的ServiceNow服务单了解状态和解决方案。
+在提交服务请求之前、请确保已准备好系统详细信息、日志和相关信息。当您提出服务请求时、GSSC团队会收到支持服务单并访问相关信息以进行故障排除。您可以按照ServiceNow服务单了解状态和解决方案。
 
 有关添加支持包的信息、请参见 link:../installation/monitor-health.html["生成并收集支持包"]。

@@ -39,7 +39,7 @@ NetApp Keystone STaaS服务容量包括：
 在订阅期限内，您可以更改已提交的容量。但是，存在某些前提条件：
 
 * 可根据特定条件减少已提交的容量。有关信息，请参见 link:../concepts/capacity-requirements.html["容量减少"]。
-* 已提交容量不能在您的订阅到期前 90 天增加，除非此订阅将再续订 12 个月。
+* 承诺容量不能在订阅到期前90天增加、除非订阅续订12个月。
 * 您可以通过BlueXP界面或Keystone Success Manager (KSM)请求更改已提交容量。有关请求更改的信息，请参见 link:../concepts/gssc.html["NetApp全球服务支持中心"]。
 
 

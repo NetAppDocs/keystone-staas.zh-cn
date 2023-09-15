@@ -73,7 +73,6 @@
   <block id="3054b3eab6506b148b8f255cf6c91456" category="list-text">块大小以KB/IO为单位</block>
   <block id="b33667f1f1bd3abb2593a5226cf7aeec" category="list-text">TIB = 1024 GiB；GiB = 1024 MiB；MIB = 1024 KiB；KiB = 1024字节；根据基数2</block>
   <block id="3f2e7c232425cd76862bc1b0de689d36" category="list-text">TB = 1000 GB；GB = 1000 MB；MB = 1000 KB；KB = 1000字节；按基数10计算</block>
-  <block id="9cd254eadf6bd0f0b5adf539786046ab" category="paragraph">要计算A服务级别的吞吐量、例如`Extreme`服务级别：</block>
   <block id="5823839bc893623342447999dd558444" category="list-text">最大IOPS：12、288</block>
   <block id="d578d491479765feb511ce998c751bcc" category="list-text">每个I/O的块大小：32 KB</block>
   <block id="99bd16c85cd1ef64c6ea102f25b33359" category="list-text">最大吞吐量=(12288 * 32 * 1024)/(1024 * 1024)= 384 MBps/ TiB</block>
@@ -85,7 +84,6 @@
   <block id="ff6306dccf086261b36fc9764ec0a69c" category="section-title">为克隆的卷计费</block>
   <block id="9ecca21c579121ef7bd72dc9d12e518a" category="list-text">在克隆创建的前 24 小时内不会考虑克隆卷上的消耗量；在此期间不会产生任何费用。</block>
   <block id="d37a813a136d622d708c8200aef13f52" category="section-title">高级数据保护计费</block>
-  <block id="59461da5661eef64d28d9da99e80e312" category="paragraph">站点A和站点B在MetroCluster 配置中设置。当用户在站点 A 中创建一个 10 TB 的卷时，会在站点 B 中创建一个 10 TB 的相同卷Keystone可确定每个站点的10 TB使用量、总增加量为20 TB。System Manager和Unified Manager报告在站点A中创建了10 TB卷、但不报告站点B中的10 TB卷</block>
   <block id="eeeb76af3f8badbcccdfd5a1b14f4e37" category="paragraph">此外、在具有高级数据保护的Keystone系统上创建的所有卷都将计入高级数据保护的使用量、而不管这些卷是否已镜像。</block>
   <block id="ba4c22a98feebac558bbaac68b704e09" category="section-title">临时卷的计费</block>
   <block id="480da42f59e7a8b523d40d52ba830cb8" category="paragraph">有时， ONTAP 会在移动卷时创建临时（ TMP ）卷。这些临时卷的使用寿命很短，不会对这些卷上的使用量进行计费。</block>
@@ -98,9 +96,7 @@
   <block id="3655e8bb18b4941a3bf9ce392c24bbb4" category="paragraph">系统卷和根卷会作为Keystone服务整体监控的一部分进行监控、但不会计入或计费。这些卷上的消费免除计费。</block>
   <block id="8ae2f411abd3cc165322ca02f81cde27" category="summary">Keystone和Equinix</block>
   <block id="14c29ea9bc1bc3825786a06b4e07becd" category="doc">由Equinix提供支持的Keystone联合定位服务</block>
-  <block id="130c3598aa08fc7ea1a58f5a13c59e7c" category="paragraph">Equinix提供的Keystone联合定位(Co-Lo)服务与标准Keystone服务产品保持不变。</block>
   <block id="ab8f1d41f34d86519574f8ff7d968420" category="paragraph">在此服务中：</block>
-  <block id="2e986b8517427f1318fcb6cde88cfe70" category="list-text">Equinix提供空间、电力、散热、网络和发票、 和存储。</block>
   <block id="4014aa6ca6c4b222aeea8afca1522395" category="paragraph">Equinix的数据中心位于以下位置：</block>
   <block id="70b8a65cfdc8cb99446cf0efce595a78" category="cell">数据中心</block>
   <block id="59716c97497eb9694541f7c3d37b1a4d" category="cell">国家 / 地区</block>
@@ -142,7 +138,6 @@
   <block id="c779911684ebe3ceed4035306e2997c3" category="paragraph">NetApp全球服务和支持中心(GSSC)可监控您的产品和订阅服务的运行状况、提供远程支持、并与您的Keystone Success Manager合作。监控与相关Keystone订阅订单相关的产品的所有人员均为在美国运营的美国公民土壤。</block>
   <block id="b47b3a710484adb2c8cfacd64043b550" category="section-title">Keystone Success Manager</block>
   <block id="e8483ac20b1990d2362dd45e18cfb1d2" category="section-title">部署活动</block>
-  <block id="221d560cb3a4127ba5fc624a195a7f29" category="paragraph">如果适用、现场和远程部署和安装活动由美国执行美国公民土壤。脚注：免责声明：是否有适合现场活动的人员取决于Keystone系统的部署地点。]</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="section-title">支持</block>
   <block id="cedba9b370f4f8fb7584b8a96576dbce" category="paragraph">必要的现场故障排除和支持活动(如果有)由美国政府执行美国公民土壤。脚注：免责声明</block>
   <block id="2dd5f36775604dad2303abf8267a2c4a" category="summary">支持的存储容量</block>
@@ -154,7 +149,6 @@
   <block id="e80564e6a1386159e71203ed98662fc4" category="paragraph">在订阅期限内，您可以更改已提交的容量。但是，存在某些前提条件：</block>
   <block id="bd3fd623256db562bebda3e697d43452" category="inline-link-macro">容量减少</block>
   <block id="38ee5c58ab48cb8a1b633c2aea7a1e45" category="list-text">可根据特定条件减少已提交的容量。有关信息，请参见 <block ref="bce311488cda7b3fc83e86e7b3939fd8" category="inline-link-macro-rx"></block>。</block>
-  <block id="c7ba6335b772c84090b8f2d9dd8b58a3" category="list-text">已提交容量不能在您的订阅到期前 90 天增加，除非此订阅将再续订 12 个月。</block>
   <block id="1df0745e84cded8b1998d4aaf3fce411" category="inline-link-macro">NetApp全球服务支持中心</block>
   <block id="dd83b22a815febb6c6547eab078bbf30" category="section-title">已用容量</block>
   <block id="08d63a30cdbc798edef3e21cacda1ac2" category="section-title">突发容量</block>
@@ -313,7 +307,6 @@
   <block id="240f8cd7a5a26e96dd18576d36e316a8" category="paragraph">作为NetApp Keystone 订阅的一部分、NetApp为您的文件、块和对象服务扩展了不可退回的非易失性组件(NRNVC)服务。</block>
   <block id="c5362d4c47bc0b20f1e6873a4a685afd" category="paragraph">如果NetApp以其他方式恢复其在交付服务时使用的所有物理资产、则NetApp不会恢复在整个服务期限内或服务终止时使用的物理存储介质。</block>
   <block id="abda546406da466370337cf5c31e05a2" category="paragraph">如果您已购买此服务，请注意以下事项：</block>
-  <block id="8fb8439538faf3e9aca510b975990816" category="list-text">在服务期限结束时、或者在服务期限内出现故障或发现有缺陷时、您无需退回任何驱动器和非易失性内存。</block>
   <block id="c390ff57b01f3da644988ff384a92bf8" category="list-text">但是、您需要为驱动器和/或非易失性内存生成销毁证书、不能用于任何其他目的。</block>
   <block id="39fd5e3ddc496ef780ff5e3fe13bb2d1" category="section-title">SnapLock 合规性</block>
   <block id="f14c7b4687be07acacb0f5aeed1474f5" category="inline-link">什么是 SnapLock</block>
@@ -361,13 +354,11 @@
   <block id="352a60ab05e46c12f3319134b5ec7ee2" category="paragraph">有关服务级别的信息、请参见 <block ref="7ea66a5a0ec24dd88c60fc26a094a732" category="inline-link-macro-rx"></block>。</block>
   <block id="6dd7fd4aac069a06bec3ae24a6b1b39b" category="paragraph">有关Keystone中支持的不同容量的信息、请参见 <block ref="85c4e06da3b978d5cb2b8ba9dc870124" category="inline-link-macro-rx"></block>。</block>
   <block id="8816d718cde960556e2d767cd7bc6a24" category="paragraph">阅读以下各节、了解您的订阅中哪些内容受此附加服务的约束、并根据NetApp Keystone 协议的条款提供。f脚 注：声明1[此处所述服务和服务受完全执行的Keystone协议的约束、限制和约束。]</block>
-  <block id="0d3d10747b66177a1b3af60bfd44a1fb" category="list-text">包括存储控制器的Keystone基础架构。</block>
   <block id="dfafb0db4cb7ff50434d65c4ee640f1a" category="paragraph">这是客户放置在Keystone基础架构上的数据。所有Keystone容量均指逻辑容量。例如、如果Keystone基础架构上存储了1 TiB文件、则应至少购买1 TiB的容量。</block>
   <block id="6695ab4bfa1eb6d5122189f790f27577" category="paragraph">订阅期间每月支付的最低逻辑容量：</block>
   <block id="9cd5acb8fb327acbb895954f39411c04" category="paragraph">已用容量是指服务当前正在使用的容量(以TiB为单位)。Keystone服务会考虑特定服务级别上所有卷的逻辑已用大小(而不是已用物理容量)之和、以计算该服务级别的已用容量。</block>
   <block id="fc9d3df613063ee57906c461320744e2" category="admonition">注意：</block>
   <block id="422cb43011b8f4dd25975e284b167728" category="list-text">突发容量可以灵活地使用、并按消耗的平均值按日计费。</block>
-  <block id="a1cf2147a0b9adb61fa3b44016facca2" category="list-text">*可用性*：以服务成功响应的I/O请求数的百分比除以对服务发出的I/O请求总数。这是根据一个月内的服务划分来衡量的、不包括客户提供的设施、网络或其他服务计划内的服务停机或不可用情况。</block>
   <block id="dda89d5ef0cb22d8ac7b37078e4ba438" category="list-text">*持久性*：在不影响保真度的情况下访问数据的百分比、不包括客户导致的删除或损坏。</block>
   <block id="9ffbb75c521c240c36fc4eedce45c367" category="list-text">*延迟*：从客户端收到的I/O请求的服务时间、以服务划分(存储控制器I/O端口)为单位。</block>
   <block id="c51e1a8d511d7d17bd78e518ec1c554c" category="paragraph">吞吐量性能指标仅适用于基于以下各项的文件和块服务：</block>
@@ -380,8 +371,6 @@
   <block id="d96367d414f2f1ab0c8c14b8d62edc0e" category="list-text">为某些Keystone销售申请提供支持。</block>
   <block id="b6b6ef9bcccde24a7790b0a3093601da" category="paragraph">适用于极致服务级别的设置和命令：</block>
   <block id="0a32480150714670b636bea04f9ef2a1" category="paragraph">性能服务级别的设置和命令：</block>
-  <block id="6511616eb91e4f26f7a37fb73c9823b2" category="list-text">云计算、存储、网络等Cloud原生 服务由云提供商开具发票。</block>
-  <block id="60da46ad32edbb2f2b3eccbbafedcd9f" category="list-text">这些服务取决于云存储和计算特征。</block>
   <block id="77810f754f0d83cb5519f01e38866b76" category="paragraph">如果在ONTAP 中克隆了卷、而您使用这些卷来备份和还原数据、则可以继续使用这些克隆、而无需支付任何额外费用。但是，在您的业务中用于任何其他目的的克隆卷会收取很长时间的费用。</block>
   <block id="a1cc3d09aee1ee7b9c7c5bb4e7c0be32" category="list-text">如果没有向卷写入新数据、则不会考虑使用具有标准和价值服务级别的克隆卷。例如，在备份或还原使用情形中，从克隆卷备份或还原数据不会更改克隆卷本身中的数据，也不会将其视为消耗。</block>
   <block id="9899ef6b9a20de2fea89aa9492d2bbe6" category="paragraph">高级数据保护使用 NetApp MetroCluster 在两个物理隔离的集群之间镜像数据。对于MetroCluster 镜像聚合、数据写入两次、每个集群一次。Keystone服务会单独为每一方的消费收取费用、从而产生两个相同的消费记录。附加费用将应用于订阅中的所有容量、而不管数据是位于源、还是镜像或未镜像数据。</block>
@@ -390,14 +379,11 @@
   <block id="0d128bf188abd70ede35e6c24063c36b" category="paragraph">对于LUN、遵循与受QoS策略管理的卷相同的计费模式。如果在 LUN 上设置了单独的 QoS 策略，则：</block>
   <block id="67a947157c35cbacef18eda1e5eb037c" category="paragraph">NetApp Keystone (Keystone)是一种按需购买、基于订阅的服务模式、可为更喜欢运营支出消费模式而不是前期资本支出或租赁模式的企业提供无缝的混合云体验。</block>
   <block id="4547b014d12c5d4b1d98a0de125d1aee" category="paragraph">Keystone可帮助客户减少在管理不可预测的容量增长和复杂的采购周期方面的障碍、从而加快实现价值的速度。Keystone让客户可以根据业务优先级调整经济效益和运营。</block>
-  <block id="61b62d6f26e61958572029e4a86ce1d4" category="paragraph">Keystone可为块、文件和对象数据类型提供预定义服务级别的存储容量、这些数据类型可在内部部署并由NetApp、合作伙伴或客户操作。Keystone可与NetApp云服务结合使用、例如、可部署在您选择的超大规模环境中的Cloud Volumes ONTAP。</block>
-  <block id="b951d4a500df1c69379ce5b01a7c3ca4" category="paragraph">虽然大多数企业仍在制定混合云战略、但作为客户、您可以选择基于运营支出的按使用付费消费模式。您可能需要最终将所有工作负载迁移到云、但尚未制定明确的计划或计划将特定部分或所有工作负载迁移到云。Keystone存储即服务(STaaS)让您可以灵活地从内部服务入手、然后决定迁移到云的合适工作负载和时间点。Keystone STaaS可跨部署模式提供承诺保护。作为内部客户、您无需为云服务支付更多费用、而是可以重新分配内部支出以添加云服务、并基本上按重新分配前承诺的每月账单支付费用。</block>
   <block id="ba66768dfbbcde790d00e0de40f92803" category="paragraph">容量缩减(每年一次)适用于_Annual in adval_支付模式和仅限内部部署。它不适用于云服务或混合云服务。它提供内部容量配置、每个订阅的每个服务级别可减少多达25%的容量。这种减少每年一次、以便在下一个年度计费期开始时生效。在期限内、基于内部服务的年度支付额应大于200、000美元、以便利用容量缩减。由于此计费模式仅支持内部部署、因此无法将支出从内部重新分配到云服务。下图显示了一个年度容量缩减示例。</block>
   <block id="63da2e64853bf4155b1b1a1e9ee74a97" category="list-text">仅适用于承诺期限为1年、2年或3年的订阅。</block>
   <block id="6f4ccc7afb4abb0d69142d55085374fa" category="list-text">Cloud Volumes ONTAP 和Cloud Backup Service 容量应通过Keystone购买。</block>
   <block id="4f4722c6a50b91ee8454e98c0ddd908a" category="list-text">为利用重新分配的优势、内部基于服务的每月付款在期限内的任何时间均应大于16.7万美元。</block>
   <block id="1ad380d64aaf6780bee52adfb88395c3" category="list-text">客户或合作伙伴应至少在下一个计费周期前一周将重新分配请求正式提交给Keystone Success Manager (KSM)。</block>
-  <block id="c34a82bbff22f4441417f697ffc59087" category="paragraph">NetApp 为 NetApp Keystone 客户远程提供运营服务。这些服务涵盖存储管理活动中的一系列操作准则。这些服务包括资产和配置管理、容量和性能管理、变更管理、事件、意外事件和问题管理、服务请求履行和报告。NetApp会根据需要展示控制状态和支持证据。</block>
   <block id="11cc259f3fbff7a9b169739c7cd9d613" category="list-text">如果您有待处理案例/服务单需要上报、请发送电子邮件至以下地址之一：keystone.services@netapp.com keystone.escalations@netapp.com</block>
   <block id="a7bfd854f2e9dacfba92f6c8e2081c3e" category="list-text">此服务仅适用于文件、块和对象服务。</block>
   <block id="b6a3337f47df4fd3f63ff2c1a9f8ec5b" category="paragraph">SnapLock 技术可在卷中设置的到期日期之后使驱动器不可用、从而启用NRNVC功能。要在卷上使用SnapLock 技术、您需要订阅NRNVC。这仅适用于文件和块服务。</block>
@@ -425,23 +411,17 @@
   <block id="2875c453ae21cf76b51a8fa4752d6e33" category="paragraph">NetApp Keystone (Keystone) STaaS服务使用以下术语和定义来衡量指标：</block>
   <block id="c7c1919c4fd61189792daac01aa326b5" category="list-text">IO密度：IOPS/TiB：根据工作负载占用的总空间、每秒处理的输入/输出操作数(以太字节为单位)。</block>
   <block id="bb145603bcdc015d5b17c8a464ceb711" category="list-text">IOPS/TiB*中的*操作计数器图表：应用程序请求的每秒协议操作数除以工作负载使用的卷大小。</block>
-  <block id="8f8185258509b94d9c9eefe3d83808c3" category="paragraph">Keystone Success Manager (KSM)与您密切合作、为您提供Keystone服务、并在每周或每月的计费和运营报告中向您提供最新信息。这些职责在您的NetApp Keystone 协议中进行了说明。</block>
   <block id="2d0539451bff9f553647efc300f001de" category="section-title">正在生成服务请求</block>
   <block id="ec48441169568deaa659297bc5ea9f6c" category="paragraph">在入职期间、如果您获得了用于访问和使用NetApp Keystone ServiceNow的凭据、则可以使用此门户为您的Keystone订阅相关的问题生成服务请求：</block>
   <block id="e64e3a1feaf5661d9c2afb4c8987b792" category="paragraph"><block ref="e64e3a1feaf5661d9c2afb4c8987b792" category="inline-link-rx"></block></block>
-  <block id="aa6dcd727142c64ffc558ae8b1537058" category="paragraph">在提交服务请求之前、请确保已准备好系统详细信息、日志和相关信息。当您提出服务请求时、GSSC团队会收到支持服务单并访问相关信息以进行故障排除。您可以按照您的ServiceNow服务单了解状态和解决方案。</block>
   <block id="ce79b37185c18b2eba95931a0b15de7a" category="inline-link-macro">生成并收集支持包</block>
   <block id="d5bd195454f7264ad483f3ee67bec884" category="paragraph">有关添加支持包的信息、请参见 <block ref="bc06f0ccbc4013c0e8a3b640622ac4cb" category="inline-link-macro-rx"></block>。</block>
   <block id="6dbebf92ac20a669770a1b25c4ac6d66" category="paragraph">NetApp与Equinix合作、在Equinix数据中心托管NetApp Keystone STaaS服务、以确保为您提供统一的解决方案。</block>
   <block id="0d3b8d50ce10562facf7d3d2a493816b" category="paragraph">Keystone STaaS服务级别的容量要求与Keystone STaaS订阅支持的文件、块、对象或云存储不同。</block>
   <block id="7db88eb4a659597eed51505f20f9ec51" category="paragraph">下表显示了对象存储的最小容量要求：</block>
-  <block id="bd269faa583b89f04ebbaf5a355b9a79" category="list-text">根据Keystone协议、每个站点都有突发容量。通常、它比服务级别的已承诺容量高出20%。任何突发使用量只会在该计费期内计费。如果您需要的额外突发要求大于约定的容量、请联系支持部门。</block>
-  <block id="44ede7eae3cf7dbcd6a8e49ab4b69abd" category="paragraph">用于文件和块存储的Keystone STaaS标准服务包括分层功能、这些功能可识别不太常用的数据、并将其分层到支持Keystone STaaS的NetApp冷存储。如果要将冷数据分层到任何支持Keystone STaaS的非NetApp存储、您可以将数据分层作为附加服务。</block>
   <block id="702bdcf3d6f1e35319059ac6ab7ba5c9" category="inline-link-macro">Keystone STaaS服务</block>
   <block id="0bee51a2f4e179a1aa2d1018a8a84bbf" category="paragraph">有关标准服务和附加服务的信息、请参见 <block ref="32999c765ee523f7718a7908120f4502" category="inline-link-macro-rx"></block>。有关服务级别的信息、请参见 <block ref="7ea66a5a0ec24dd88c60fc26a094a732" category="inline-link-macro-rx"></block>。</block>
-  <block id="be5a33112670331049d3e9b43e6c3564" category="paragraph">只有在将数据分层到任何非NetApp存储时、才需要分层附加服务、例如Amazon Web Services (AWS) S3、Azure Blob、Google Cloud Platform (GCP)以及其他支持Keystone STaaS、S3兼容的第三方对象存储。</block>
   <block id="d96faa9e821e8ffac65b118996a9a5e9" category="paragraph">分层功能可利用NetApp FabricPool 技术自动将不常访问的数据分层到内部和外部的对象存储层。</block>
-  <block id="8f46846cb5a320a81c56569442428909" category="paragraph">通过附加数据分层服务、可以从极高、高级、性能、标准和价值层分层到对象存储目标。要分层的热数据：冷数据的比率不固定、每个层都单独进行计量和开票。</block>
   <block id="71768d30a875fb63ecbab55da018a191" category="paragraph">例如、如果冷存储层的目标为：</block>
   <block id="e73034c8c3d954eb2e6e052c00601420" category="list-text">公共云(AWS、Azure、Google)或Keystone STaaS支持的第三方对象存储—分层到冷存储目标的数据容量需要额外付费。</block>
   <block id="c32944bc40d1accb43f1f8bfaf090dce" category="paragraph">附加分层服务的费用贯穿整个订阅期限。</block>
@@ -463,7 +443,6 @@
   <block id="ceaa88393b953e384cdb413dd3572b41" category="list-text">*客户运营模式*：作为客户、您可以根据选定的服务级别和存储订阅Keystone服务。NetApp定义了架构和产品、并在您的内部部署Keystone。您需要通过存储和IT资源管理基础架构。作为客户、您是NetApp的租户或子租户或合作伙伴/服务提供商。根据您的合同、您可以提出由NetApp或您的服务提供商处理的服务请求。您的管理员可以从您的站点(环境)执行管理任务。这些任务与环境中的用户相关联。</block>
   <block id="d9074f8f6ffc16585a17ec283468500b" category="paragraph">Keystone STaaS可根据您在使用服务期间消耗的容量进行计量。</block>
   <block id="6d478c5e5b9eefab3f25d9f707b30bac" category="paragraph">已提交容量是指在购买订阅时为特定服务级别提交的容量。已用容量是工作负载实际使用的容量。作为Keystone服务部署的一部分、NetApp会持续监控和衡量服务的使用情况。系统每五分钟生成一次使用记录、详细说明您的订阅当前使用的容量。这些记录会在计费期间进行汇总，以生成发票和使用情况报告。</block>
-  <block id="f1a403608a25e7c3303a11caaf78dd6b" category="paragraph">您可以在Keystone订阅中订阅此附加服务。有关标准服务和云服务的信息、请参见 <block ref="f4af85410fdce7688ba5a57c75086b91" category="inline-link-macro-rx"></block>。</block>
   <block id="427fa3429ea764a6d2b1f1e8f8111b9e" category="list-text">与NRNVC相关的额外成本按月总订阅服务(包括标准服务、高级数据保护和数据分层)费用的百分比计。</block>
   <block id="4dc2830ae7b31704bf74b200d5350dea" category="paragraph">本节列出了在您的环境中启用NetApp Keystone STaaS服务所需的组件。</block>
   <block id="d9a2f9a8831ac707c49715a960ba187b" category="paragraph">NetApp Keystone STaaS可为您的存储订阅提供可预测的前期定价。</block>
@@ -502,7 +481,6 @@
   <block id="a0c7c7077f5d8959ac636195329edca4" category="summary">通过Keystone收集器监控系统运行状况</block>
   <block id="3b02682cee7334412169a53934571445" category="doc">监控系统运行状况</block>
   <block id="31a7b7e95b2779c762661c1e75f2a6e9" category="paragraph">您可以使用支持HTTP请求的任何监控系统、通过Keystone收集器服务监控系统运行状况。</block>
-  <block id="0244094e47a53ba0ffb391710aee6ac1" category="paragraph">默认情况下、Keystone运行状况服务不接受来自localhost以外任何IP的连接。Keystone运行状况端点为<block ref="b2445934e628b68d6950a1056d38299a" prefix=" " category="inline-code"></block>、并侦听端口上Keystone收集器服务器的所有接口<block ref="d79c8788088c2193f0244d8f1f36d2db" prefix=" " category="inline-code"></block>。查询时、端点将返回一个包含JSON输出的HTTP请求状态代码作为响应、用于描述Keystone收集器系统的状态。JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c5" prefix=" " category="inline-code"></block> 属性、布尔值；以及的每个组件状态的详细列表<block ref="39b49dc5cd8428b510bca14512a16a96" prefix=" " category="inline-code"></block> 属性。以下是一个示例：</block>
   <block id="c50c47143f58388e00647899f527fe17" category="paragraph">返回以下状态代码：</block>
   <block id="af5679ef3e891be048836388187233bc" category="list-text">* 200 *：表示所有受监控组件运行状况良好</block>
   <block id="0d0f0bfa30efe54b61794d83f9981d84" category="list-text">* 503 *：表示一个或多个组件运行状况不正常</block>
@@ -674,7 +652,6 @@
   <block id="250e025c960accde58851d9cba806aa4" category="list-text">使用OpenSSL验证此公共证书的OVA签名证书的真实性：<block ref="d67907543fcf70f6dfbc7d1139240042" prefix=" " category="inline-code"></block></block>
   <block id="09ecce71a847e29076b9c49beb846dae" category="list-text">在*部署OVF模板*向导的_Step 5_上、指定用于存储VM的位置。</block>
   <block id="8cd29cf88dddb3b6287a9351d1b4c067" category="list-text">在_Step 7 Customize templ板_上、指定管理员用户帐户的初始网络地址和密码。</block>
-  <block id="8bcd74591dc72ada87f255c862348f72" category="admonition">管理员密码以可反转格式存储在vCenter中、应用作启动凭据以获得对VMware vSphere系统的初始访问权限。在初始软件配置期间、应更改此管理员密码。IPv4地址的子网掩码应以CIDR表示法提供。例如、使用值24表示子网掩码255.255.255.0。</block>
   <block id="4ff6b73315fa76bc8171f5548ebb79ef" category="list-text">在*部署OVF模板*向导的_Step 8 Ready to Complete_上、查看配置并验证您是否已正确设置OVA部署的参数。</block>
   <block id="d5599cb082a40129e25bed4de770048b" category="paragraph">从模板部署VM并打开其电源后、打开与VM的SSH会话并使用临时管理员凭据登录以验证VM是否已做好配置准备。</block>
   <block id="a2840fbbafc1435ffe70d4b579b45ac6" category="section-title">初始系统配置</block>
@@ -750,8 +727,6 @@
   <block id="34d81e2d25f8511b6ab5f5b492c3aaa9" category="list-text">Keystone服务使您可以在服务级别承诺的容量之外使用额外的容量。这是突发容量。</block>
   <block id="d634acbcc57e75a34f7ef2ecf60eb69c" category="list-text">突发容量在Keystone协议中商定。它通常设置为比已承诺容量高出20%、并按与已承诺容量相同的速率收费。</block>
   <block id="c9963abc84e870941cff082c5577ec18" category="paragraph">NetApp Keystone (Keystone) STaaS计费基于突发容量、即您所消耗的容量、以及您订阅的已承诺容量。</block>
-  <block id="7e974afef4ba00b90e789eeac590a840" category="paragraph">您的突发限制已在Keystone协议中确定和指定。通常比已承诺容量高20%。</block>
-  <block id="391a68f52dcd5fd65d9c97ad33e80a85" category="paragraph">已提交容量是指在购买订阅时向您承诺的容量。已提交容量和突发容量按服务级别进行衡量。已用容量是工作负载实际使用的容量。如果消耗的容量大于某个服务级别的已承诺容量、则会记录突发消耗并相应地进行计费。通常比已承诺容量高20%。超过突发容量的使用量表示为"超过突发限制"。</block>
   <block id="103955022b1603eabc8ae0b8c08e287a" category="sidebar">如何查看每个服务级别的消耗情况？</block>
   <block id="1bcbd92a1182a8044032c0af47695d8a" category="list-text">下载<block ref="5bec9e04971ed49ee2b3c939afa7a801" prefix=" " category="inline-code"></block> 文件：<block ref="d1ed07754d396f9745478bc6388ae23a" prefix=" " category="inline-code"></block></block>
   <block id="61736ed4cf14c0d0047c1393f9ff68d3" category="admonition">完成安装后、您可以使用Keystone收集器管理终端用户界面(TUI)实用程序执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。请参见 <block ref="14e6b60cfb93c92598e40786e00457b6" category="inline-link-macro-rx"></block> 和 <block ref="81c399588663f35131a970a2d830c241" category="inline-link-macro-rx"></block>。</block>
@@ -937,7 +912,6 @@
   <block id="8439ccf1446c67100be4a3a73c3d339f" category="list-text">创建Keystone服务帐户用户并将其与管理组关联。请参见<block ref="3f81d882f8eb86176175a8f2f30c48b0" category="inline-link-rx"></block>。</block>
   <block id="82690bb37c8fd3910939c0d1c07adbfb" category="list-text">下载文件后、您可以将其附加到Keystone ServiceNow支持服务单中。有关提交服务单的信息、请参见 <block ref="a7ae718de79af41225531b7d4972e1ef" category="inline-link-macro-rx"></block>。</block>
   <block id="df14715a510ff9aeef732a94267cca9b" category="paragraph">要使Keystone收集器能够收集存储环境中的使用情况数据、您需要完成一些配置任务。此活动是一次性的、用于激活所需的收集器组件并将其与存储环境相关联。</block>
-  <block id="9ab33c1f92542debbe7fbaf0686e8431" category="admonition">Keystone收集器可为您提供Keystone收集器管理终端用户界面(TUI)实用程序来执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。</block>
   <block id="39c85d7f0eb110cd413fc170604d8bc6" category="list-text">转至"**配置"&gt;"KS-Collector"*以打开Keystone收集器配置屏幕、查看可用的更新选项。</block>
   <block id="dc6558c87d9624db4f0f78e602308c49" category="list-text">更新所需选项。</block>
   <block id="14a76c71ca702ae118d765e420178711" category="example-title">&lt;strong&gt; 协议&lt;/strong&gt;</block>
@@ -949,7 +923,6 @@
   <block id="12d4a3f31d7915f04142a35be1ba5a37" category="paragraph">限制特定客户数据的收集是Keystone收集器TUI屏幕上的一个可配置选项。默认情况下、此选项*删除私有数据*处于启用状态。</block>
   <block id="dd771779768817666d39c63b55339112" category="paragraph">有关在ONTAP 和StorageGRID 中删除的限制私有数据访问的项的信息、请参见 <block ref="461595833a51b2e2463fa89ad8a35ca1" category="inline-link-macro-rx"></block>。</block>
   <block id="6b71507d392708444982d424df1963c2" category="paragraph">用于ONTAP 文件和块存储以及StorageGRID 对象存储的Keystone STaaS服务支持多种功能和协议、下表对此进行了说明：</block>
-  <block id="661319c881749fc4ef06edb56f84c952" category="paragraph">NetApp全球服务和支持中心(GSSC)和NetApp Keystone 成功经理(KSM)负责为您提供Keystone订阅服务。</block>
   <block id="5e3fca9227064d2d04c47a0f13b4fffe" category="paragraph">有关Keystone服务的详细信息、请参见：</block>
   <block id="b41d880d5f9cddb842b19d183ce73f2e" category="paragraph">Keystone为您提供了AQO策略、您可以在集群投入使用后设置这些策略。您应确保所有卷都与系统中已创建并可用的正确AQO策略相关联。</block>
   <block id="783c1c698cfe222ca1a1c69b815e8a3c" category="list-text">*策略组名称*：AQO策略组的名称。例如：<block ref="e22fe87dc37298f80d1bbd25d59219b8" prefix=" " category="inline-code"></block>。</block>
@@ -998,7 +971,6 @@
   <block id="144be97e21d1c48cc88d9c1079fd7242" category="list-text">Active IQ 云门户接受此连接并与NetApp收集器建立通道。</block>
   <block id="eb1ece97f0d4f33c42fe8c1270d9f97f" category="list-text">NetApp收集器会建立一个与存储控制器的管理连接的REST API会话、获取环境数据并将其发送到Active IQ 门户。</block>
   <block id="9bd6f9bd3f316579290de54613357644" category="paragraph">持续监控存储基础架构的运行状况是Keystone服务最重要的功能之一。在监控和报告方面、Keystone使用的是AIOP解决方案 、它需要远程访问客户的网络。下图介绍了AIOP解决方案 工具如何保护对客户位置的远程访问。</block>
-  <block id="130d043e9f813aac96b9057c87348371" category="list-text">AIIOPS解决方案 网关启动与其云门户的TLS会话。</block>
   <block id="243cf07b27b6811f47ef7011b0f2fcd7" category="list-text">云中的AIOP解决方案 服务器接受此连接。</block>
   <block id="322f1e98181b58ca0f54061626b2d948" category="list-text">在云门户和本地网关之间建立TLS通道。</block>
   <block id="450997fb0074b4d084ffcc7c81c8194e" category="list-text">NetApp控制器使用SNMP协议发送警报或对API请求做出响应。</block>
@@ -1012,7 +984,6 @@
   <block id="78723ce66f58e9e7caf198aa1ec6dc10" category="list-text">客户提供Red Hat Enterprise Linux 7或8或CentOS 7 Linux服务器。Keystone软件通过安装<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block> 安装过程。</block>
   <block id="b264c507ce69115ec3b1ea258739f71a" category="paragraph">AIOPS解决方案 网关部署在以下配置中：</block>
   <block id="aed4f4cade15fb6fd54071211fa815d9" category="paragraph">要运行和维护Keystone收集器和AIOPS解决方案 网关、需要对以下服务进行出站访问：</block>
-  <block id="ea105b45dba9cd611a536c923ac08e2a" category="paragraph">NetApp需要访问为监控和管理而安装的硬件和软件组件、以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络(VPN)连接并访问所需数据。为了克服客户认为因向新服务打开防火墙端口而导致的任何操作复杂性、监控工具会启动外部连接。AIOP解决方案 和Zuora等NetApp云应用程序使用此连接来执行相应的服务。此方法可满足客户的要求、即不打开防火墙端口、但可以访问属于此服务一部分的监控组件。</block>
   <block id="3db5d9db3e9bbb96192cdbca3e683f2d" category="list-text">NetApp使用AIOPS解决方案 主动监控和连接到NetApp Keystone 环境以进行故障排除。</block>
   <block id="f117a997c71ee803b4f42cc859317819" category="admonition">在合作伙伴运营的模式中、租户和子租户的服务请求将分配给合作伙伴的服务台。合作伙伴的支持工具可能已与AIOPS解决方案 和GSSC应用程序集成。只有 L3 问题才会通过 GSSC 上报给 NetApp 。</block>
   <block id="3416d8a49fd5d49140366de8fbebad06" category="paragraph">NetApp BlueXP是一个完整的平台、可通过其自己的交互式可视化信息板监控数百个数据源。如果您通过NetApp Keystone 订阅购买云服务、则可以通过BlueXP访问和管理这些服务。</block>
@@ -1050,7 +1021,6 @@
   <block id="e55277c0c3f0e910a9213c7bc485b55e" category="paragraph"><block ref="e55277c0c3f0e910a9213c7bc485b55e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="61d927a1aed666979cd431fa1e2acade" category="inline-image-macro">复选标记</block>
   <block id="afa99e6515d2d53209947ce07fcae1c0" category="cell"><block ref="afa99e6515d2d53209947ce07fcae1c0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5f558fad18c536fde918f6d8470c0f4c" category="paragraph">存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如用于启动多个系统的工作负载)可能会在一段时间内占用大部分或全部资源、并影响其他工作负载。有关QoS的信息、请参见<block ref="3c8d0a20452a1fdd8de7e683059a52bc" category="inline-link-rx"></block>。</block>
   <block id="3e0c227cab019a94ad107467446bc4a1" category="paragraph">Keystone服务使用自适应QoS (AQoS)根据卷大小动态保持IOS/TiB比率。有关AQO策略的信息、请参见<block ref="837de1b03a328f464002642d845ea947" category="inline-link-rx"></block>。</block>
   <block id="772f84cc1580c3b2eb870e7f4a05c668" category="paragraph">如果ONTAP 卷未应用AQoS策略、则此卷不合规。没有QoS策略的卷是系统优先级列表中最后一个可提供任何可用输入输出操作的卷。但是、如果有任何输入-输出操作可用、则卷可能会占用所有可用的IO。</block>
   <block id="8076a815ea253b898f1e1205fc7aa039" category="admonition">如果您尚未对卷应用AQoS策略、系统将根据您的订阅按最高服务级别对这些卷进行衡量和收费。这可能会导致意外的突发费用。</block>
@@ -1156,8 +1126,6 @@
   <block id="11faa60292999fe44e704021ce9a5657" category="paragraph">有关MetroCluster 如何保护数据的信息、请参见<block ref="f22c59fda71318ed939c4a5a7c90b447" category="inline-link-rx"></block>。</block>
   <block id="af16b731bd6e35896b00c75d9acfb1d5" category="admonition">对于高级数据保护附加服务、将显示一个附加列、指示此卷在MetroCluster配置中是主卷还是镜像卷。您可以单击*复制节点序列*按钮来复制单个节点序列号。</block>
   <block id="815d49ae1d640489fc7d71580a9136fb" category="paragraph">您可以订阅Keystone STaaS订阅中的高级数据保护附加服务。此附加服务可利用NetApp MetroCluster 技术确保在0恢复点目标(RPO)时为任务关键型工作负载提供高效的数据保护。</block>
-  <block id="5d15d69b71166851acc9decce7574df8" category="paragraph">Keystone高级数据保护服务可以将数据同步镜像到二级站点。如果主站点发生灾难、二级站点可以接管、而不会丢失任何数据。此功能可利用两个站点之间的MetroCluster 配置来实现数据保护。您只能对文件和块存储服务使用高级数据保护附加服务。作为此附加服务的一部分、<block ref="fb78d2349716eae6da0fd092c4f02857" prefix=" " category="inline-code"></block> 服务级别已分配给您的订阅。
-有关ONTAP MetroCluster 的信息、请参见 <block ref="80871b8782cc051e20935ca40e2a0650" category="inline-link-macro-rx"></block>。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">请注意以下事项：</block>
   <block id="c2c11a830d011ece03d73534208897a1" category="list-text">此费用仅适用于您的文件和块存储。</block>
   <block id="3505917ad3d0afd6896fab28f67d309e" category="paragraph">支持以下MetroCluster 方案：</block>
@@ -1229,7 +1197,6 @@
   <block id="185e01eccb11afd93ab6330b3243709d" category="section-title">可持续性报告</block>
   <block id="214b7c6a2e578d02dcff6a6e0d01644e" category="paragraph">Active IQ数字顾问(数字顾问) Keystone信息板上的"SLA"选项卡提供了Keystone订阅的可持续性指标的详细视图。您可以查看指标并生成报告、以供将来分析和操作使用。</block>
   <block id="70b0f05ccb3363a22b7283ba77a6a703" category="section-title">可持续性服务抵免额</block>
-  <block id="418d8a3515dc0eaaa423eb4bf13f3ffb" category="paragraph">如果瓦特/ TiB消耗量超过或不符合SLA中为某个服务级别指定的标准、NetApp将针对计费期间报告的差异为所有符合条件的订阅提供服务抵免付款。如果未满足服务级别SLA指标、请在服务月结束前一周内与NetApp全球服务支持中心(GSSC)联系在确定违反服务级别时、将根据服务级别的已提交容量计算抵免额、并在下个月的发票中记入贷方。</block>
   <block id="c46a6fc145efc32d05eb0e6a28bea128" category="paragraph">有关信息，请参见 <block ref="3dc9ad4ab1c3dcaa061c2b4df6782877" category="inline-link-macro-rx"></block>。</block>
   <block id="ed55999d50b7451fbe4281de85f01c45" category="example-title">vCenter 7.0u1及更早版本：了解更多信息</block>
   <block id="ae33212e0f96fd19173ab021f7909861" category="example-title">vCenter 7.0u2及更高版本：了解更多信息</block>
@@ -1344,7 +1311,6 @@
   <block id="a631e5144b421d637d87cb74456c4660" category="paragraph">对于_高级数据保护_服务级别、总使用量在合作伙伴站点之间分摊、每个合作伙伴站点的使用量将通过单独的订阅反映出来并计费；一个订阅用于主站点、另一个订阅用于镜像站点。因此，当您在“*容量趋势”选项卡上选择主站点的订阅编号时，高级数据保护附加服务的使用情况图表仅显示主站点的离散使用情况详细信息。由于MetroCluster配置中的每个配对站点同时充当源和镜像、因此每个站点的总使用量包括在该站点创建的源卷和镜像卷。</block>
   <block id="f25c1d8bbc68ac70ff3f49b577f83657" category="admonition">“*当前使用情况*”选项卡中订阅跟踪ID旁边的工具提示可帮助您在MetroCluster设置中确定合作伙伴订阅。</block>
   <block id="e51f3e7f0941c06c83640e3bf3f8f64c" category="paragraph">下图显示了_Extreme服务级别(基础服务级别)和主订阅编号的图表。同一历史数据图表还以主站点所用相同颜色代码的较浅阴影显示镜像站点的占用情况。鼠标悬停时的工具提示会显示主站点和镜像站点的消耗情况(以TiB为单位)、分别为1.02 TiB和1.05 TiB。</block>
-  <block id="07f3c62f010b8713106aee665189cad9" category="paragraph">检查二级订阅时、您会看到与合作伙伴站点位于同一数据收集点的_Extreme服务级别(基础服务优势Usagel)条形图已反转、 主站点和镜像站点的消耗量分别为1.0５ TiB和1.02 TiB。</block>
   <block id="f9eade15df63147aad555cc771e3c457" category="section-title">查看卷和对象详细信息</block>
   <block id="ceee14333e6ef0ff6abd717629178c90" category="paragraph">在*卷和对象*选项卡上，您可以在ONTAP中查看卷的使用情况和其他详细信息。对于StorageGRID 、此选项卡将显示节点及其在对象存储环境中的个别使用情况。</block>
   <block id="cd87ede53b5a0c972741a144d8ed79f2" category="admonition">此选项卡的名称因站点部署的性质而异。如果同时具有卷和对象存储，则可以看到*卷和对象*选项卡。如果存储环境中只有ONTAP卷、则此名称将更改为*卷*。对于StorageGRID对象存储，可以看到*Objects*选项卡。</block>
@@ -1372,7 +1338,6 @@
   <block id="0c71fdbd18cfe700717d8fc9fcfaad93" category="list-text">服务级别协议：如果至少有一个订阅与NetApp签订了有效的可持续性服务级别协议(SLA)、则会显示此状态。此状态指示订阅是否符合SLA中定义的可持续性标准。如果您的订阅符合SLA标准、您可以看到状态为_All Ok_。</block>
   <block id="84e36dca9b7f489eeec9dce46a296483" category="section-title">信任自定义根CA</block>
   <block id="88a0d353b6ceac1d07247d77dcd50110" category="paragraph">根据公共根证书颁发机构(CA)验证证书是Keystone收集器安全功能的一部分。但是、如果需要、您可以将Keystone收集器配置为信任自定义根CA。</block>
-  <block id="bf4054ae750c261ffc8b2cf49b3baf33" category="paragraph">如果在系统防火墙中使用SSL/TLS检查、则会导致使用自定义CA证书重新加密基于Internet的流量。在接受根证书并允许进行连接之前、必须先配置相应设置、以将源验证为可信CA。请按照以下步骤操作：</block>
   <block id="cd13fbeabf87493e10f20a695d006bc0" category="list-text">准备CA证书。它应采用_base64编码的X.509文件格式。</block>
   <block id="48f228c4948d9832ec5d141d4a4e74c0" category="admonition">支持的文件扩展名为<block ref="bdf46f9562b038d0163af0feba0b1dfa" prefix=" " category="inline-code"></block>，<block ref="af5cc73b319c31cbd55a816803ea580b" prefix=" " category="inline-code"></block>，<block ref="7f3a311051199705aef988aa587f7b4d" prefix=" " category="inline-code"></block>。确保证书采用以下格式之一。</block>
   <block id="26030a362ba8ef1fc9d77a6177cbad4a" category="list-text">将证书复制到Keystone收集器服务器。记下文件的复制位置。</block>
@@ -1383,8 +1348,47 @@
   <block id="0d23c3e7a4d408a396659a0350ac7a08" category="list-text">按 Enter 键。此时将显示一个对话框、用于选择证书路径。</block>
   <block id="c77dc319069249add39f558f6b9fdec1" category="list-text">从文件系统浏览器中选择根证书或输入确切路径。</block>
   <block id="087c9dc5266982ef54ba80f023cbd793" category="list-text">按 Enter 键。返回到*Advanced*屏幕。</block>
-  <block id="215f6a98cf4df3a75c3e2413ba3efbe4" category="list-text">选择 * 保存 * 。此时将应用此配置。</block>
   <block id="03a891b6d33a248fa861083fe4247d1c" category="inline-image-macro">用于CA自定义的TUI屏幕</block>
   <block id="8763d534a475bad985b63c246739efb2" category="paragraph"><block ref="8763d534a475bad985b63c246739efb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="42b719750bcc67ec4565e4a291dd81b0" category="list-text">使用*维护&gt;更新系统*选项更新Keystone收集器。某些选定镜像可能不可用、系统详细信息会在重试几次后更新。</block>
+  <block id="a3eeaab8ffdf47da563e8086e097409a" category="paragraph">如果瓦特/ TiB消耗量超过或不符合SLA中为某个服务级别指定的标准、NetApp将针对计费期间报告的差异为所有符合条件的订阅提供服务抵免付款。如果未满足服务级别SLA指标、请在服务月结束前一周内与NetApp全球服务支持中心(GSSC)联系确定违反服务级别后、将根据服务级别的已承诺容量计算抵免额、并在下个月的发票中记入贷方。</block>
+  <block id="62da9737386f7b0511bd36a15644e898" category="paragraph">Keystone高级数据保护服务可以将数据同步镜像到二级站点。如果主站点发生灾难、二级站点可以接管、而不会丢失任何数据。此功能可利用两个站点之间的MetroCluster配置来启用数据保护。您只能对文件和块存储服务使用高级数据保护附加服务。作为此附加服务的一部分、<block ref="fb78d2349716eae6da0fd092c4f02857" prefix=" " category="inline-code"></block> 服务级别已分配给您的订阅。
+有关ONTAP MetroCluster 的信息、请参见 <block ref="80871b8782cc051e20935ca40e2a0650" category="inline-link-macro-rx"></block>。</block>
+  <block id="0315debcd2143476e3ac1f5e6124081b" category="paragraph">由Equynox提供支持的Keystone主机代管(Co-Lo)服务与标准Keystone服务产品保持不变。</block>
+  <block id="265c7056fa7758976cd1e340298b3542" category="list-text">Equ无限 空间、电耗、散热、网络、发票、 和存储。</block>
+  <block id="838f06702b7b628e0314113ea42a3b60" category="paragraph">您可以在订阅Keystone时订阅此附加服务。
+有关标准服务和云服务的信息、请参见 <block ref="f4af85410fdce7688ba5a57c75086b91" category="inline-link-macro-rx"></block>。</block>
+  <block id="e35bc286817799a8ecac7de0060837be" category="list-text">在服务期限结束时、或者如果驱动器和非易失性内存在服务期限内出现故障或发现有缺陷、则无需退回这些驱动器和非易失性内存。</block>
+  <block id="3a4be28bbb64456f61b6d1a38574d0ac" category="paragraph">您的突发限制已在Keystone协议中确定和指定。通常、它比已提交容量高20%。</block>
+  <block id="a8674139f5c9550b17be8bd10f91e77f" category="paragraph">已提交容量是指在购买订阅时向您承诺的容量。已提交容量和突发容量按服务级别进行衡量。已用容量是工作负载实际使用的容量。
+如果消耗的容量大于某个服务级别的已承诺容量、则会记录突发消耗并相应地进行计费。通常、它比已提交容量高20%。超过突发容量的使用量表示为"超过突发限制"。</block>
+  <block id="b178e2d86eb51156fb8d9a2bd509938c" category="list-text">计算、存储、网络等云原生服务由云提供商开具发票。</block>
+  <block id="296ad65314dcbf027a7993304c7a165d" category="list-text">这些服务依赖于云存储和计算特性。</block>
+  <block id="250f7d64786be93dcfc476bdd51bca8f" category="list-text">AIOPS解决方案网关启动到云门户的TLS会话。</block>
+  <block id="0c0de0453c5b0de437eb1976c3926361" category="paragraph">站点A和站点B在MetroCluster 配置中设置。当用户在站点 A 中创建一个 10 TB 的卷时，会在站点 B 中创建一个 10 TB 的相同卷Keystone可确定每个站点的10 TB使用量、总增加量为20 TB。System Manager和Unified Manager会报告在站点A中创建的10 TB卷、但不会在站点B中报告10 TB卷</block>
+  <block id="da20082463112c8970df057a21a7f47d" category="list-text">Keystone基础架构、包括存储控制器。</block>
+  <block id="91aa968d50f3d2ecebe3ba524c542adc" category="paragraph">NetApp需要访问为监控和管理而安装的硬件和软件组件、以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络(VPN)连接并访问所需数据。为了克服客户认为因向新服务打开防火墙端口而导致的任何操作复杂性、监控工具会启动外部连接。NetApp云应用程序(例如AIOPS解决方案和XURA）使用此连接来执行其各自的服务。此方法可满足客户的要求、即不打开防火墙端口、但可以访问属于此服务一部分的监控组件。</block>
+  <block id="5f961dc6311c34fa23cf40360afba9db" category="list-text">承诺容量不能在订阅到期前90天增加、除非订阅续订12个月。</block>
+  <block id="783e590ecfbaebc7caa0409a8cae6926" category="paragraph">用于文件和块存储的Keystone STaaS标准服务包括分层功能、这些功能可识别不太常用的数据、并将其分层到支持Keystone STaaS的NetApp冷存储。如果要将冷数据分层到任何支持Keystone STaaS的非NetApp存储、您可以将数据分层作为附加服务使用。</block>
+  <block id="29a37414986b666b1caba06ea110bc8c" category="paragraph">只有在将数据分层到任何非NetApp存储(例如Amazon Web Services (AWS) S3、Azure Blb、Google Cloud Platform (GCP)以及其他支持Keystone STaaS且与S3兼容的第三方对象存储)时、才需要分层附加服务。</block>
+  <block id="e426aef809a36320814cef7dd1913cb5" category="paragraph">通过附加数据分层服务、可以从极高、高级、性能、标准和价值层分层到对象存储目标。要分层的热IS数据与冷数据之比不固定、每个层都会进行计量并单独开票。</block>
+  <block id="50f20ac5f57d2ffea4caf14b3d8a8277" category="list-text">根据Keystone协议、每个站点都有突发容量。通常、此容量比服务级别的承诺容量高20%。任何突发使用量只会在该计费期内计费。如果您的额外突发需求超过您约定的容量、请联系支持部门。</block>
+  <block id="2809966e22bd3439cbbfaae3d51268b2" category="list-text">*可用性*：以服务成功响应的I/O请求数的百分比除以对服务发出的I/O请求总数。这在一个月内的服务划分时进行衡量、不包括计划内服务停机或客户提供的设施、网络或其他服务不可用。</block>
+  <block id="0d57513becb1cbc7c0fb1c95b5596678" category="paragraph">Keystone可为块、文件和对象数据类型提供预定义服务级别的存储容量、这些数据类型可在内部部署并由NetApp、合作伙伴或客户操作。Keystone可以与NetApp云服务(例如Cloud Volumes ONTAP)结合使用、这些服务可以部署在您选择的超规模环境中。</block>
+  <block id="d0c3240476cd608dd4aebdf601915cb6" category="paragraph">虽然大多数企业仍在制定混合云战略、但作为客户、您可以选择基于运营支出的"按使用付费"消费模式。您可能需要最终将所有工作负载迁移到云、但尚未制定明确的计划或计划将特定部分或所有工作负载迁移到云。Keystone存储即服务(STaaS)让您可以灵活地从内部服务入手、然后决定迁移到云的合适工作负载和时间点。Keystone STaaS可跨部署模式提供承诺保护。作为内部客户、您无需再为云服务支付更多费用、而是可以重新分配内部支出以添加云服务、并且基本上可以支付与此重新分配之前承诺的每月账单。</block>
+  <block id="c3241eb7a4fb8cf2ad4325cdfe553a55" category="paragraph">NetApp全球服务和支持中心(GSSC)和NetApp Keystone成功经理(KSM)负责为您的Keystone订阅提供服务。</block>
+  <block id="8a559914d26628167b5f08a9373076e9" category="paragraph">NetApp 为 NetApp Keystone 客户远程提供运营服务。这些服务涵盖存储管理活动中的一系列操作准则。这些服务包括资产和配置管理、容量和性能管理、变更管理、事件、意外事件和问题管理、服务请求履行和报告。NetApp会根据需要展示控制状态和支持证据。</block>
+  <block id="380091ff4f618bba4a7e7e4aa88a1ec1" category="paragraph">Keystone成功管理器(KSM)将与您密切合作、为您提供Keystone服务、并向您提供每周或每月计费和运营报告的最新信息。这些职责在您的NetApp Keystone 协议中进行了说明。</block>
+  <block id="215f812eba5abfc5c6f2c8dd59899a86" category="paragraph">在提交服务请求之前、请确保已准备好系统详细信息、日志和相关信息。当您提出服务请求时、GSSC团队会收到支持服务单并访问相关信息以进行故障排除。您可以按照ServiceNow服务单了解状态和解决方案。</block>
+  <block id="2a602722d561a089297c55fb5c3f444e" category="paragraph">存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如用于启动多个系统的工作负载)可能会在一段时间内占用大部分或全部资源、并影响其他工作负载。有关QoS的信息、请参见<block ref="3c8d0a20452a1fdd8de7e683059a52bc" category="inline-link-rx"></block>。</block>
+  <block id="e6493c4efe3fa5e48bce86284ff1aa5f" category="paragraph">计算服务级别的吞吐量、例如<block ref="ba1f6c59525d71aee4c027798d2470fd" prefix=" " category="inline-code"></block> 服务级别：</block>
+  <block id="82ed1e96c97e812264424ac485673960" category="paragraph">如果适用、现场和远程部署和安装活动由美国执行美国公民土壤。脚注：免责声明[现场活动是否有合适的人员取决于Keystone系统部署的地理位置。]</block>
+  <block id="de7e96b640e5109ff5e8bcbb7abf5849" category="paragraph">在检查二级订阅时、您会发现、与配对站点位于同一数据收集点的_Extreme服务级别(基础服务级别)条形图已反转、主站点和镜像站点的消耗细分分别为1.05 TiB和1.02 TiB。</block>
+  <block id="9415cbbaeaf88bca0512bbfe3c3cb334" category="paragraph">默认情况下、Keystone运行状况服务不接受来自本地主机以外的任何IP的连接。Keystone运行状况端点为<block ref="b2445934e628b68d6950a1056d38299a" prefix=" " category="inline-code"></block>、并侦听端口上Keystone收集器服务器的所有接口<block ref="d79c8788088c2193f0244d8f1f36d2db" prefix=" " category="inline-code"></block>。查询时、端点将返回一个包含JSON输出的HTTP请求状态代码作为响应、用于描述Keystone收集器系统的状态。
+JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c5" prefix=" " category="inline-code"></block> 属性、布尔值；以及的每个组件状态的详细列表<block ref="39b49dc5cd8428b510bca14512a16a96" prefix=" " category="inline-code"></block> 属性。
+以下是一个示例：</block>
+  <block id="d5fc9deaa6c1da2d57596bde9fcaa038" category="admonition">Keystone收集器提供了Keystone收集器管理终端用户界面(Terminal User Interface、TUI)实用程序、用于执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。</block>
+  <block id="c6f432b1870f0e6972013545b17800a3" category="paragraph">如果在系统防火墙中使用SSL/TLS检查、则会导致使用自定义CA证书重新加密基于Internet的流量。在接受根证书并允许进行连接之前、必须先配置相应设置、以将源验证为可信CA。请按照以下步骤操作：</block>
+  <block id="f9e29c5d1d04edbbfd564585d416bd59" category="list-text">选择 * 保存 * 。此时将应用此配置。</block>
+  <block id="f481813467557e4621102213f070e886" category="admonition">管理员密码以可逆格式存储在vCenter中、应用作启动凭据、以便首次访问VMware vSphere系统。在初始软件配置期间、应更改此管理员密码。IPv4地址的子网掩码应以CIDR表示法提供。例如、使用值24表示子网掩码255.255.255.0。</block>
 </blocks>

@@ -17,7 +17,7 @@ summary: Keystone收集器的配置
 要使Keystone收集器能够收集存储环境中的使用情况数据、您需要完成一些配置任务。此活动是一次性的、用于激活所需的收集器组件并将其与存储环境相关联。
 
 
-NOTE: Keystone收集器可为您提供Keystone收集器管理终端用户界面(TUI)实用程序来执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。
+NOTE: Keystone收集器提供了Keystone收集器管理终端用户界面(Terminal User Interface、TUI)实用程序、用于执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。
 
 .步骤
 . 启动Keystone收集器管理TUI实用程序：

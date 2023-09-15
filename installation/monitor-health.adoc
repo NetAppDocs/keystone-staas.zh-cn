@@ -16,7 +16,9 @@ summary: 通过Keystone收集器监控系统运行状况
 [role="lead"]
 您可以使用支持HTTP请求的任何监控系统、通过Keystone收集器服务监控系统运行状况。
 
-默认情况下、Keystone运行状况服务不接受来自localhost以外任何IP的连接。Keystone运行状况端点为 `/uber/health`、并侦听端口上Keystone收集器服务器的所有接口 `7777`。查询时、端点将返回一个包含JSON输出的HTTP请求状态代码作为响应、用于描述Keystone收集器系统的状态。JSON正文提供的整体运行状况 `is_healthy` 属性、布尔值；以及的每个组件状态的详细列表 `component_details` 属性。以下是一个示例：
+默认情况下、Keystone运行状况服务不接受来自本地主机以外的任何IP的连接。Keystone运行状况端点为 `/uber/health`、并侦听端口上Keystone收集器服务器的所有接口 `7777`。查询时、端点将返回一个包含JSON输出的HTTP请求状态代码作为响应、用于描述Keystone收集器系统的状态。
+JSON正文提供的整体运行状况 `is_healthy` 属性、布尔值；以及的每个组件状态的详细列表 `component_details` 属性。
+以下是一个示例：
 
 [listing]
 ----

@@ -175,7 +175,7 @@ qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_na
 
 
 .块大小计算示例
-要计算A服务级别的吞吐量、例如`Extreme`服务级别：
+计算服务级别的吞吐量、例如 `Extreme` 服务级别：
 
 * 最大IOPS：12、288
 * 每个I/O的块大小：32 KB

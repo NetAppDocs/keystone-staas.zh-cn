@@ -16,11 +16,11 @@ summary: Keystone和Equinix
 [role="lead"]
 NetApp与Equinix合作、在Equinix数据中心托管NetApp Keystone STaaS服务、以确保为您提供统一的解决方案。
 
-Equinix提供的Keystone联合定位(Co-Lo)服务与标准Keystone服务产品保持不变。
+由Equynox提供支持的Keystone主机代管(Co-Lo)服务与标准Keystone服务产品保持不变。
 
 在此服务中：
 
-* Equinix提供空间、电力、散热、网络和发票、 和存储。
+* Equ无限 空间、电耗、散热、网络、发票、 和存储。
 * 为某些Keystone销售申请提供支持。
 * 这些服务在11个国家/地区的数据中心内均受支持。
 
