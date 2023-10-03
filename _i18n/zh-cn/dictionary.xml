@@ -442,7 +442,6 @@
   <block id="1923c743bdc7a28d03225437a33faad3" category="paragraph">NetApp Keystone (Keystone) STaaS提供了两种服务交付运营模式：合作伙伴运营的模式和客户运营的模式。</block>
   <block id="ceaa88393b953e384cdb413dd3572b41" category="list-text">*客户运营模式*：作为客户、您可以根据选定的服务级别和存储订阅Keystone服务。NetApp定义了架构和产品、并在您的内部部署Keystone。您需要通过存储和IT资源管理基础架构。作为客户、您是NetApp的租户或子租户或合作伙伴/服务提供商。根据您的合同、您可以提出由NetApp或您的服务提供商处理的服务请求。您的管理员可以从您的站点(环境)执行管理任务。这些任务与环境中的用户相关联。</block>
   <block id="d9074f8f6ffc16585a17ec283468500b" category="paragraph">Keystone STaaS可根据您在使用服务期间消耗的容量进行计量。</block>
-  <block id="6d478c5e5b9eefab3f25d9f707b30bac" category="paragraph">已提交容量是指在购买订阅时为特定服务级别提交的容量。已用容量是工作负载实际使用的容量。作为Keystone服务部署的一部分、NetApp会持续监控和衡量服务的使用情况。系统每五分钟生成一次使用记录、详细说明您的订阅当前使用的容量。这些记录会在计费期间进行汇总，以生成发票和使用情况报告。</block>
   <block id="427fa3429ea764a6d2b1f1e8f8111b9e" category="list-text">与NRNVC相关的额外成本按月总订阅服务(包括标准服务、高级数据保护和数据分层)费用的百分比计。</block>
   <block id="4dc2830ae7b31704bf74b200d5350dea" category="paragraph">本节列出了在您的环境中启用NetApp Keystone STaaS服务所需的组件。</block>
   <block id="d9a2f9a8831ac707c49715a960ba187b" category="paragraph">NetApp Keystone STaaS可为您的存储订阅提供可预测的前期定价。</block>
@@ -1391,4 +1390,39 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="c6f432b1870f0e6972013545b17800a3" category="paragraph">如果在系统防火墙中使用SSL/TLS检查、则会导致使用自定义CA证书重新加密基于Internet的流量。在接受根证书并允许进行连接之前、必须先配置相应设置、以将源验证为可信CA。请按照以下步骤操作：</block>
   <block id="f9e29c5d1d04edbbfd564585d416bd59" category="list-text">选择 * 保存 * 。此时将应用此配置。</block>
   <block id="f481813467557e4621102213f070e886" category="admonition">管理员密码以可逆格式存储在vCenter中、应用作启动凭据、以便首次访问VMware vSphere系统。在初始软件配置期间、应更改此管理员密码。IPv4地址的子网掩码应以CIDR表示法提供。例如、使用值24表示子网掩码255.255.255.0。</block>
+  <block id="f55b179b8cade00ad34b1162d0791a0f" category="paragraph">已提交容量是指在购买订阅时为特定服务级别提交的容量。已用容量是工作负载实际使用的容量。
+作为Keystone服务部署的一部分、NetApp会持续监控和衡量服务的使用情况。系统至少每五分钟生成一次使用量记录、详细说明您的订阅当前使用的容量。这些记录会在计费期间进行汇总，以生成发票和使用情况报告。</block>
+  <block id="24cba01226edf9c3d3a2a54ff2dcb01b" category="section-title">查看ONTAP卷性能</block>
+  <block id="3b53297f45bd7b71fc7268ad58677e21" category="paragraph">您可以单击*性能*选项卡查看Keystone订阅所管理的ONTAP卷的性能详细信息。</block>
+  <block id="0fb53446c9ba4fb31807c3858dd35fc5" category="paragraph">您可能无法使用此选项卡查看ONTAP卷上的性能指标。要查看此选项卡、请联系支持部门。</block>
+  <block id="6e72d1d005343795162600a4ae63ec11" category="list-text">单击*Performance*选项卡。</block>
+  <block id="f1addfc8f24f051397cc85f6926bf8ed" category="list-text">选择订阅编号。默认情况下、将选择第一个订阅编号。</block>
+  <block id="f642e4642652119f9ec47a2dc27c51ff" category="list-text">从列表中选择所需的卷名称。</block>
+  <block id="52dc465dcb6a1292788d1d65f181d28c" category="inline-image-macro">图形图标</block>
+  <block id="c3663dd8e997e8e07f88f594ea89534a" category="paragraph">或者、您也可以单击 <block ref="813df7a1965c665b3db93a22dec39701" category="inline-image-macro-rx" type="image"></block> 图标(位于*卷*选项卡中的ONTAP卷旁边)以导航到此选项卡。</block>
+  <block id="748946393eca5431e5760647d605462b" category="list-text">选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。</block>
+  <block id="78ba841e2af7da29fc53dabaf1dfd5e5" category="inline-link-macro">Keystone中的服务级别</block>
+  <block id="bb690fa6b66cd77f49761854afb035e2" category="paragraph">检索到的详细信息基于每个服务级别的服务级别目标。例如、峰值IOPS、最大吞吐量、目标延迟和其他指标由服务级别的各个设置决定。有关设置的详细信息、请参见 <block ref="7141573db29c2af45d0b9d0159276c43" category="inline-link-macro-rx"></block>。</block>
+  <block id="8145d7f98eef781aeba1bf4e2ed3d8a0" category="admonition">如果选中*SLO参考行*复选框，则IOPS、吞吐量和延迟图将根据服务级别的服务级别目标呈现。否则、它们将以实际数字显示。</block>
+  <block id="1c9f2c60f5b1a2cf540da5ecfcf8f343" category="paragraph">水平图上显示的性能数据是每五分钟显示一次的平均值、并按照查询的日期范围进行排列。您可以滚动浏览图形并将鼠标悬停在特定数据点上、以进一步深入查看收集的数据。</block>
+  <block id="be7199993fdc167e8dadd6faa046275c" category="paragraph">您可以根据订阅编号、卷名称和选定日期范围的组合在以下部分中查看和比较性能指标。系统将根据分配给卷的服务级别显示详细信息。您可以查看集群名称和卷类型、即分配给卷的读取和写入权限。此外、还会显示与此卷关联的任何警告消息。</block>
+  <block id="4f1b175c93064365bb72c5f847f7bbd0" category="section-title">IOS/TiB</block>
+  <block id="a0746619a848c7d48f648ce50934b43d" category="paragraph">此部分将根据查询的日期范围显示卷中工作负载的输入-输出图形。此时将显示服务级别的峰值IOPS和当前IOPS (在过去五分钟内、不基于查询的日期范围)、以及时间范围内的最小、最大和平均IOPS (以IOS/TiB为单位)。</block>
+  <block id="39b7678a1c994ad158e2003e86860ff2" category="inline-image-macro">IOPS部分</block>
+  <block id="6eef5220ce0ee019d4add6ef8f2212e8" category="paragraph"><block ref="6eef5220ce0ee019d4add6ef8f2212e8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="35484398406e066f146becbf5ade9a1f" category="section-title">吞吐量(MBps/TiB)</block>
+  <block id="da4fa7ec69d7af1bb610207a3c277040" category="paragraph">此部分将根据查询的日期范围显示卷中工作负载的吞吐量图形。此时将显示服务级别的最大吞吐量(SLO最大值)和当前吞吐量(在过去五分钟内、不基于查询的日期范围)、以及时间范围的最小、最大和平均吞吐量(以MBps/TiB为单位)。</block>
+  <block id="7f753ebf99003e3a50de147adbf5688c" category="inline-image-macro">吞吐量图</block>
+  <block id="ded93b2a5ebed6aba8869fc052419dbb" category="paragraph"><block ref="ded93b2a5ebed6aba8869fc052419dbb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="561523f74b83ed5c17b02cb73ff8a80e" category="section-title">延迟(毫秒)</block>
+  <block id="e2ca784e5909e7dac9c413d2bf636dac" category="paragraph">此部分将根据查询的日期范围显示卷中工作负载的延迟图。此时将显示服务级别(SLO目标)的最大延迟和当前延迟(过去五分钟内的延迟、而不是基于查询的日期范围)、以及时间范围内的最小、最大和平均延迟(以毫秒为单位)。</block>
+  <block id="edf72d8b9161ba73ea48bf2e68fe9aed" category="paragraph">此图具有以下颜色：</block>
+  <block id="81989d847dc8278048053c5d03a4bea2" category="list-text">浅蓝色：_Laty_.这是实际延迟、包括Keystone服务以外的任何延迟。这可能包括额外的延迟、例如网络与客户端之间发生的延迟。</block>
+  <block id="4c8726ebb2509982ab96801bddd96ce9" category="list-text">深蓝色：_有效延迟_。有效延迟是指与SLA相关的延迟、仅适用于Keystone服务。</block>
+  <block id="ff4b5372ded8ea29de7805373e0a5338" category="inline-image-macro">性能图</block>
+  <block id="f00c097e03b4ce4a62527a13752de77d" category="paragraph"><block ref="f00c097e03b4ce4a62527a13752de77d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b8e154beb0e4292a33a0a1882f0e5a11" category="section-title">已用逻辑容量(TiB)</block>
+  <block id="72870aad377aa9744011edff931cfbe7" category="paragraph">此部分显示卷的已配置容量和已用逻辑容量。当前逻辑已用容量(在过去五分钟内、不基于查询的日期范围)以及时间范围的最小、最大和平均使用量将以Tibs为单位显示。在此图上、灰色区域表示已使用容量、黄色图表示逻辑使用量。</block>
+  <block id="55501f4ad85eceeadd5249ad583111f6" category="inline-image-macro">逻辑已用容量图</block>
+  <block id="5d511ef587684e994c938c0e19441988" category="paragraph"><block ref="5d511ef587684e994c938c0e19441988" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
