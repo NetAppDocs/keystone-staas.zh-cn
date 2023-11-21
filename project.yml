@@ -17,13 +17,13 @@ sidebar:
     entries:
     - title: 什么是Keystone收集器
       url: "/installation/installation-overview.html"
-    - title: 安装Keystone收集器的前提条件
+    - title: 准备系统以安装Keystone收集器
       entries:
-      - title: VMware vSphere 前提条件
+      - title: VMware vSphere 要求
         url: "/installation/vapp-prereqs.html"
-      - title: Linux前提条件
+      - title: Linux要求
         url: "/installation/linux-prereqs.html"
-      - title: ONTAP 和StorageGRID 的特定前提条件
+      - title: ONTAP和StorageGRID要求
         url: "/installation/addl-req.html"
     - title: 安装Keystone收集器
       entries:

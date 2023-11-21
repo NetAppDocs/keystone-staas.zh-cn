@@ -356,7 +356,6 @@
   <block id="dfafb0db4cb7ff50434d65c4ee640f1a" category="paragraph">这是客户放置在Keystone基础架构上的数据。所有Keystone容量均指逻辑容量。例如、如果Keystone基础架构上存储了1 TiB文件、则应至少购买1 TiB的容量。</block>
   <block id="6695ab4bfa1eb6d5122189f790f27577" category="paragraph">订阅期间每月支付的最低逻辑容量：</block>
   <block id="9cd5acb8fb327acbb895954f39411c04" category="paragraph">已用容量是指服务当前正在使用的容量(以TiB为单位)。Keystone服务会考虑特定服务级别上所有卷的逻辑已用大小(而不是已用物理容量)之和、以计算该服务级别的已用容量。</block>
-  <block id="fc9d3df613063ee57906c461320744e2" category="admonition">注意：</block>
   <block id="422cb43011b8f4dd25975e284b167728" category="list-text">突发容量可以灵活地使用、并按消耗的平均值按日计费。</block>
   <block id="dda89d5ef0cb22d8ac7b37078e4ba438" category="list-text">*持久性*：在不影响保真度的情况下访问数据的百分比、不包括客户导致的删除或损坏。</block>
   <block id="9ffbb75c521c240c36fc4eedce45c367" category="list-text">*延迟*：从客户端收到的I/O请求的服务时间、以服务划分(存储控制器I/O端口)为单位。</block>
@@ -676,8 +675,6 @@
   <block id="d40fe201ca96918eaf7db3c328dc1dac" category="sidebar">欢迎使用Keystone</block>
   <block id="4b5fef6350f906c92ead8e5fcb93fb21" category="sidebar">设置和配置Keystone</block>
   <block id="e5e7352eac1aab74c62e3fb3c13c93eb" category="sidebar">什么是Keystone收集器</block>
-  <block id="d495047561c1a08074d3afeeb5b5d172" category="sidebar">VMware vSphere 前提条件</block>
-  <block id="634b2ff9559aed00b394d1ea933e1865" category="sidebar">Linux前提条件</block>
   <block id="e1963f69cecc9ae42f0776dbde80b970" category="sidebar">VMware vSphere部署</block>
   <block id="1f331fee3a3f66a9a0cc8b4298329656" category="sidebar">Linux安装</block>
   <block id="5f263121a32bf1557841d7fe819ad1e8" category="sidebar">自动完整性验证</block>
@@ -718,8 +715,6 @@
   <block id="31dc6a9375ebd13745edd88d9ad398fa" category="paragraph">Keystone根据服务级别衡量使用情况。每个服务级别都与一个特定的自适应服务质量(QoS)策略相关联。在部署期间、您将了解所订阅的Keystone服务的每个QoS策略的详细信息。在存储管理操作期间、请确保您的卷已根据您订阅的服务级别分配适当的QoS策略、以避免意外计费。有关 ONTAP 中 QoS 策略的详细信息，请参见 <block ref="c361ea29a8da4892d7ebbf6b7b42594c" category="inline-link-macro-rx"></block>。</block>
   <block id="6ee89d6c0a15491675b7cc32e34a211d" category="list-text">*以千字节(GiB)、太字节(TiB)和对等字节(PIB)为单位的容量测量*：以1024为基数(1 GiB = 1024^3^字节、1 TiB = 1024^4^字节、1 PiB = 1024^5^字节)测量数据存储容量。</block>
   <block id="60a76fbd6768a42afc35ac611d023d65" category="paragraph">NetApp Keystone STaaS服务容量包括：</block>
-  <block id="33fdcc4581188d05dc6308f0e1c577d9" category="paragraph">超过服务级别承诺容量的任何消耗均为突发容量。</block>
-  <block id="34d81e2d25f8511b6ab5f5b492c3aaa9" category="list-text">Keystone服务使您可以在服务级别承诺的容量之外使用额外的容量。这是突发容量。</block>
   <block id="d634acbcc57e75a34f7ef2ecf60eb69c" category="list-text">突发容量在Keystone协议中商定。它通常设置为比已承诺容量高出20%、并按与已承诺容量相同的速率收费。</block>
   <block id="c9963abc84e870941cff082c5577ec18" category="paragraph">NetApp Keystone (Keystone) STaaS计费基于突发容量、即您所消耗的容量、以及您订阅的已承诺容量。</block>
   <block id="103955022b1603eabc8ae0b8c08e287a" category="sidebar">如何查看每个服务级别的消耗情况？</block>
@@ -870,10 +865,7 @@
   <block id="5f3404cf964777c8e1916a088cdbc3f1" category="paragraph">必需(如果使用Keystone StorageGRID)</block>
   <block id="d5afaa3fa8ab0daf63847efd0d324dda" category="paragraph">StorageGRID 的Keystone收集器使用情况指标收集</block>
   <block id="3a9be63d84e9a8b01937ad5727618ebd" category="paragraph">Keystone收集器(通用)</block>
-  <block id="5cf9b00e7eb204d30cc672cb9dc479ca" category="doc">ONTAP 和StorageGRID 的其他前提条件</block>
   <block id="5302a9af7c7db5b391c77f0b0b58a9ae" category="paragraph">您应完成ONTAP 和StorageGRID 的一些其他前提条件。除了Linux/VMware vSphere系统要求之外、请确保您已完成这些特定前提条件。单击所需选项卡以了解更多信息。</block>
-  <block id="e3d9300aee94dbd6833b9b494b4e413a" category="paragraph">要在ONTAP 中安装Keystone收集器、请先执行以下步骤：</block>
-  <block id="6b127757330398600af046a789f68aff" category="list-text">确保已为Active IQ Unified Manager (Unified Manager)服务器配置Unified Manager 9.7或更高版本。有关安装Unified Manager的信息、请参见以下链接：</block>
   <block id="29971410a584e921e5516d3f2b7bfb4d" category="inline-link">添加集群</block>
   <block id="86eb2db656d7aa748c750a4cf424c4f9" category="list-text">确保已将ONTAP 集群添加到Unified Manager中。有关添加集群的信息、请参见<block ref="b475884884d95a88bbe7062e46db77b2" category="inline-link-rx"></block>。</block>
   <block id="8c600472916c85183244220ecd5f7a13" category="list-text">创建具有特定角色的Unified Manager用户以收集使用情况和性能数据。执行以下步骤。有关用户角色的信息、请参见<block ref="710c561d5a618a0a66fb1efb6e45aca1" category="inline-link-rx"></block>。</block>
@@ -893,7 +885,6 @@
   <block id="afa819b7cc8f00a6b6f99f036c86710d" category="list-text">VMware vSphere：<block ref="e7d492a81a8574f8c260a7a7e9130e4b" category="inline-link-rx"></block>。</block>
   <block id="fd22d23fe0edf1a8c1823d661ceb51b0" category="paragraph">在StorageGRID 上安装Keystone收集器需要以下配置。</block>
   <block id="76038d247a602c0245b0f461368bb87c" category="inline-link-macro">Upgrade StorageGRID software ：概述</block>
-  <block id="7aa35054155773e318023838d4c86a8e" category="list-text">StorageGRID<block ref="86fb40f74065628551d7b9612d244430" prefix=" " category="inline-code"></block> 或更高版本。有关升级StorageGRID 的信息、请参见 <block ref="97cb3175bb06374adaf739435d4e2f76" category="inline-link-macro-rx"></block>。</block>
   <block id="2cb4d48e9d39b65ee9a134ead27cec2e" category="list-text">应创建StorageGRID 本地管理员用户帐户以收集使用情况数据。Keystone收集器服务使用此服务帐户通过管理员节点API与StorageGRID 进行通信。</block>
   <block id="bb0dd8b0b8efa5928afbafc369fda5e1" category="inline-link">登录到网格管理器</block>
   <block id="ba43950d2b1731602400692e36f66ae6" category="list-text">登录到网格管理器。请参见<block ref="8bf33c163893a69feada52e3ecdbe684" category="inline-link-rx"></block>。</block>
@@ -926,8 +917,6 @@
   <block id="c9b73422281776827a4c8f78b386d48d" category="list-text">Keystone STaaS价值层、Keystone STaaS StorageGRID 对象层或现有SGWS网格(客户拥有)—无需额外付费；它属于标准服务。</block>
   <block id="a8db66bfea8d3f0ff898a3ca39507082" category="paragraph">有关Keystone的Digital Advisor信息板小工具的详细信息、请参见<block ref="f1d08d608ab5c8900f388298993967cb" category="inline-link-rx"></block>。</block>
   <block id="bea3a7144124c0e70f43a6748e2fb32b" category="paragraph">有关Keystone和BlueXP的详细信息、请参见BlueXP文档中的以下链接：</block>
-  <block id="db9c0d8e0c5e9a6fc69af04d34b56fee" category="sidebar">安装Keystone收集器的前提条件</block>
-  <block id="80d2bb01a7a85d4aa2c304e7cde98a6e" category="sidebar">ONTAP 和StorageGRID 的特定前提条件</block>
   <block id="cdc9f551ac993c356214a8c16ca3cec2" category="sidebar">收集用于计费的数据</block>
   <block id="a3297beb0c913ab1ce7de0647b5264d0" category="sidebar">Keystone和Active IQ 数字顾问</block>
   <block id="9a404de1def328e606c1a36e84d959a4" category="sidebar">Active IQ 数字顾问Keystone报告</block>
@@ -1433,4 +1422,17 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="4c81eafa216c925957e13d302baa98d5" category="paragraph">您可以单击切换按钮*显示当前使用情况*来查看当前计费期间的使用量、突发使用量和应计突发数据。这些详细信息不基于查询的日期范围。</block>
   <block id="f9e4dd599c840788d289af630bc65cdb" category="list-text">*当前突发*：指示已用容量是否在定义的突发限制内或以上。如果任何使用量在您的订阅的突发限制范围内、例如、超出已提交容量20%、则属于突发限制范围。如果使用量超过突发限制、则进一步使用量将被视为超过突发限制。此字段显示特定颜色：</block>
   <block id="6b7dfe5a7e219d1bb1b0d4dec89d1cb1" category="list-text">*应计突发*：当前计费期间每月计算的应计突发使用量或已用容量的指标。累积突发使用量是根据服务级别的已使用容量和已用容量计算得出的：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
+  <block id="9f06d116e9e0b83604b7fd60a2234a51" category="doc">ONTAP和StorageGRID的要求</block>
+  <block id="7ddb33edf227a18eb76201fcb9e2c9db" category="list-title">软件要求</block>
+  <block id="c3ce6809be6bdc67ae978395484d0585" category="list-text">ONTAP 9.8或更高版本</block>
+  <block id="0f8980b0c0b4c0b3e722f39e2538063e" category="list-text">Active IQ Unified Manager (Unified Manager) 9.10或更高版本</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="paragraph-title">前提条件</block>
+  <block id="fbacd386f66318927b42b113c3987f00" category="paragraph">要在ONTAP上安装Keystone收集器、请根据前提条件执行以下步骤：</block>
+  <block id="ad98fcce772f03d25a2b4758c7fbf35c" category="list-text">确保已配置Unified Manager 9.10或更高版本。有关安装Unified Manager的信息、请参见以下链接：</block>
+  <block id="8414d36b2c6d9865a2f13b42f9ef6e91" category="list-text">StorageGRID<block ref="eb0ecbdf20891e5963990e2643405555" prefix=" " category="inline-code"></block> 或更高版本。有关升级StorageGRID 的信息、请参见 <block ref="97cb3175bb06374adaf739435d4e2f76" category="inline-link-macro-rx"></block>。</block>
+  <block id="cc3265dfeccaee5313f6c701aeabcbef" category="paragraph">Keystone服务使您可以在服务级别承诺的容量之外使用额外的容量。这是突发容量使用量。请注意以下几点：</block>
+  <block id="d576508763dba15b711e3f85b0a11488" category="sidebar">准备系统以安装Keystone收集器</block>
+  <block id="3d065b1064b64a83258ea086e540e24c" category="sidebar">VMware vSphere 要求</block>
+  <block id="d6b1f1fd1fdf75b3d429783334dff437" category="sidebar">Linux要求</block>
+  <block id="0c8ee1ed841afce50051203468faba79" category="sidebar">ONTAP和StorageGRID要求</block>
 </blocks>
