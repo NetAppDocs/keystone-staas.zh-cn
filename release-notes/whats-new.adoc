@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: release-notes/whats-new.html 
+keywords: 'new features, release notes, enhancements, what"s new' 
+summary: Keystone STaaS的新增功能和增强功能。 
+---
+= Keystone STaaS的新增功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能。
+
+
+
+== 2023年12月15日的新增功能和增强功能
+
+了解此版本中的新增功能。
+
+
+
+=== 可以按监视列表进行搜索
+
+Active IQ数字顾问(数字顾问)对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息、请参见 link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["使用Keystone监视列表进行搜索"^]。
+
+
+
+=== 转换为UTC时区的日期
+
+在Active IQ数字顾问的*Keystone订阅*屏幕的选项卡上返回的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。有关详细信息，请参见 link:../integrations/aiq-keystone-details.html["Keystone订阅信息板和报告"^]。

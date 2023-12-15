@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-limitations.html 
+keywords: limitations, known limitations in Keystone STaaS 
+summary: 已知限制确定了本产品版本不支持的平台、设备或功能、或者这些平台、设备或功能无法与产品正确交互操作。仔细审查这些限制。 
+---
+= 已知限制
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+已知限制用于标识Keystone STaaS服务或组件不支持的平台、设备或功能、或者不能正确互操作的平台、设备或功能。仔细审查这些限制。
+
+
+
+== Keystone收集器限制
+
+
+
+=== Keystone收集器无法在vSphere 8.0 Update 1上启动
+
+无法打开安装了VMware vSphere 8.0 Update 1的Keystone收集器虚拟机(VM)、并显示以下错误消息：
+
+`Property 'Gateway' must be configured for the VM to power on.`
+
+请参见知识库文章 link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_start_on_vSphere_8.0_U1["Keystone收集器无法在vSphere 8.0 U1上启动"^] 信息和解决方法。
+
+
+
+=== 无法通过Kerberos生成支持包
+
+如果使用Kerberos通过NFSv4挂载Keystone收集器主目录、则不会生成支持包、并显示以下错误消息：
+
+`subprocess.CalledProcessError: Command '['sosreport', '--batch', '-q', '--tmp-dir', '/home/<user>']' returned non-zero exit status 1.`
+
+请参见知识库文章 https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_generate_support_bundle_on_Kerberized_home_directory["Keystone收集器无法在经授权的主目录上生成支持包"^] 信息和解决方法。
+
+
+
+=== Keystone收集器无法与特定网络范围内的主机进行通信
+
+当时、Keystone收集器无法与10.88.0.0/16网络范围内的设备进行通信 `ks-collector` 服务正在运行。请参见知识库文章 link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_container_conflict_with_customer_network["Keystone收集器容器与客户网络冲突"^] 信息和解决方法。
+
+
+
+=== Keystone收集器无法验证客户根SSL CA证书
+
+如果在环境中的边界防火墙上启用了SSL/TLS检查来检查SSL/TLS流量、则Keystone收集器将无法建立HTTPS连接、因为客户的根CA证书不可信。
+
+有关详细信息和解决方法、请参见 link:..//installation/configuration.html#trust-a-custom-root-ca["信任自定义根CA"^] 或知识库文章 link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_cannot_verify_Customer_Root_SSL_CA_certificate["Keystone收集器无法验证客户根SSL CA证书"^]。

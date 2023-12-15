@@ -36,4 +36,4 @@ Keystone收集器软件由联机YUM软件存储库分发。您需要在Linux服�
 
 
 
-NOTE: 完成安装后、您可以使用Keystone收集器管理终端用户界面(TUI)实用程序执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。请参见 link:../installation/configuration.html["配置Keystone收集器"] 和 link:../installation/monitor-health.html["监控系统运行状况"]。
+NOTE: 完成安装后、您可以使用Keystone收集器管理终端用户界面(TUI)实用程序执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。请参见 link:../installation/configuration.html["配置Keystone收集器"] 和 link:../installation/monitor-health.html["监控系统运行状况"] 以了解相关信息。

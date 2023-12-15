@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-issues.html 
+keywords: netapp, keystone, release notes, known issues 
+summary: NetApp 服务引擎中的已知问题 
+---
+= NetApp 服务引擎中的已知问题
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone STaaS中报告了以下已知问题描述。在Keystone订阅中配置或使用存储时、您可能会遇到此问题描述。
+
+[cols="3*"]
+|===
+| 已知问题描述 | Description | 临时解决策 
+
+
+ a| 
+为镜像卷派生的服务级别不正确。
+ a| 
+如果在分层和对象存储的速率计划均适用的环境中同时启用了MetroCluster和FabricPool、则为镜像卷(成分卷和FabricPool卷)派生的服务级别可能不正确。
+ a| 
+无
+
+|===

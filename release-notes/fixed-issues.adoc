@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: release-notes/fixed-issues.html 
+keywords: fixed issues 
+summary: Keystone STaaS的不同版本中已修复的问题 
+---
+= 已修复的问题
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在NetApp Keystone STaaS服务的先前版本中发现的问题已在后续版本中得到修复。下表列出了修复程序。
+
+[cols="3*"]
+|===
+| 问题描述 | 修复之后 | 已在版本中修复 
+
+
+ a| 
+突发消耗记录的使用情况指示符显示为琥珀色。
+ a| 
+指示器显示为红色。
+ a| 
+2023年12月13日
+
+
+
+ a| 
+容量趋势、当前使用情况和性能选项卡中的日期范围和数据未转换为UTC时区。
+ a| 
+所有选项卡中的查询和数据的日期范围均以UTC时间(服务器时区)显示。UTC时区也会显示在选项卡上的每个日期字段的对应位置。
+ a| 
+2023年12月13日
+
+
+
+ a| 
+选项卡与下载的CSV报告之间的开始日期和结束日期不匹配。
+ a| 
+已修复。
+ a| 
+2023年12月13日
+
+|===

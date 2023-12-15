@@ -233,8 +233,8 @@ NetApp总部提供计费信息和AutoSupport 交付
 
 
  a| 
-https://mirror.centos.org[]
-https://mirrorlist.centos.org[]
+http://mirror.centos.org[]
+http://mirrorlist.centos.org[]
  a| 
 Keystone收集器的操作系统更新(仅限OVA部署)
 

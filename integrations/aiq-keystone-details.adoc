@@ -4,7 +4,7 @@ permalink: integrations/aiq-keystone-details.html
 keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, iq sustainability, digital advisor sustainability, metrocluster, storagegrid, ontap, tracking id, burst usage, alerts 
 summary: Keystone订阅报告和图形 
 ---
-= Keystone订阅信息板和报告
+= 使用Keystone信息板和报告
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -30,13 +30,13 @@ NOTE: 此处提供的信息包括适用场景 ONTAP 和StorageGRID。相关章�
 
 
 
-NOTE: Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位显示、并四舍五入为小数点后两位。如果使用量小于0.01TiB、则该值显示为0或 `No Usage`。在这些选项卡中为查询输入的本地时间将转换为UTC时间。因此、根据查询的时间、返回的数据可能会稍有不同。
+NOTE: Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位显示、并四舍五入为小数点后两位。如果使用量小于0.01TiB、则该值显示为0或 `No Usage`。这些屏幕上的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。
 
 有关使用情况指标的信息、请参见 link:../concepts/metrics.html#metrics-measurement["衡量指标"]。有关Keystone中使用的不同容量的信息、请参见 link:../concepts/supported-storage-capacity.html["支持的存储容量"]。
 
 
 
-== 查看订阅
+== 订阅
 
 您可以在*订阅*选项卡中查看所有订阅的列表。
 
@@ -68,7 +68,7 @@ image:icon-grey.png["灰点图标"]：未根据服务级别的已提交容量记
 
 
 
-== 查看订阅的使用情况详细信息
+== 当前使用情况
 
 要了解订阅的使用情况详细信息，请单击*当前使用情况*选项卡，然后选择所需的订阅编号。
 
@@ -83,22 +83,29 @@ TIP: 。 image:icon-info.png["信息图标"] 每个列旁边的图标提供有�
 
 
 
-== 查看可持续性SLA详细信息
+== SLA详细信息
+
+服务级别协议(SLA)是NetApp云存储解决方案的关键组成部分。SLA旨在提供有效、高质量和可靠的存储解决方案、作为Keystone STaaS服务产品的一部分。只有当您具有有效的NetApp Sustainability SLA时、* SLA详细信息*选项卡才可用。
+
+
+
+=== 查看可持续性SLA详细信息
 
 .了解更多信息。
 [%collapsible]
 ====
-只有在与NetApp签订了有效的可持续性服务级别协议(SLA)后、"*SLA Details*(SLA详细信息)"选项卡才可用。有关Keystone STaaS中的可持续性SLA的信息、请参见 link:../concepts/sla-sustainability.html["Keystone的可持续性SLA"]。
+仅当您与NetApp签订了有效的可持续性服务级别协议(SLA)时、*可持续性SLA*选项卡才可用。有关Keystone STaaS中的可持续性的信息、请参见 link:../concepts/sla-sustainability.html["Keystone的可持续性SLA"]。
 
-"*SLA Details*(SLA详细信息*)"选项卡为您提供可持续SLA详细信息。
+*Sustainability SLA*选项卡为您提供Sustainability SLA详细信息。
 
 .步骤
-. 单击*SLA细节*选项卡。
+. 单击*SLA详细信息> Sustainability SLA*。
 . 选择要查看其详细信息的所需订阅。您只能查看符合Sustainability SLA标准的订阅。有关条件的信息、请参见 link:../concepts/sla-sustainability.html#eligibility-criteria-for-sustainability-sla["可持续性SLA的资格标准"]。
-. 选择要查看其详细信息的年份和月份。您可以选择订阅处于活动状态的年份和月份。
+. 选择要查看其详细信息的年份和月份。默认情况下、将显示当前月份的数据。您可以选择订阅处于活动状态的年份和月份。
+. 单击 * 查看详细信息 * 。
 
 
-您可以查看选定月份的每日可持续性衡量指标细分：
+您可以查看选定月份的每日可持续性指标细分：
 
 image:sla-sustainability.png["列出可持续性详细信息的SLA详细信息选项卡"]
 
@@ -124,7 +131,7 @@ image:sla-sustainability.png["列出可持续性详细信息的SLA详细信息�
 ====
 
 
-== 查看历史使用情况数据
+== 容量趋势
 
 *容量趋势*选项卡显示特定时间段内Keystone订阅的历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。
 
@@ -253,7 +260,7 @@ image:adp-mir.png["MCC镜像底座"]
 ====
 
 
-== 查看卷和对象详细信息
+== 卷和对象
 
 在*卷和对象*选项卡上，您可以在ONTAP中查看卷的使用情况和其他详细信息。对于StorageGRID 、此选项卡将显示节点及其在对象存储环境中的个别使用情况。
 
@@ -262,7 +269,7 @@ NOTE: 此选项卡的名称因站点部署的性质而异。如果同时具有�
 
 
 
-=== ONTAP卷详细信息
+=== 查看ONTAP卷详细信息
 
 .了解更多信息。
 [%collapsible]
@@ -286,12 +293,12 @@ image:aiq-ks-sysdtls.png["卷和对象选项卡()"]
 ====
 
 
-=== StorageGRID节点和使用情况详细信息
+=== 查看StorageGRID节点和使用情况
 
 .了解更多信息。
 [%collapsible]
 ====
-对于StorageGRID 、此选项卡将显示对象存储环境中节点的物理使用情况。
+对于StorageGRID、此选项卡显示对象存储节点的物理使用情况。
 
 .步骤
 . 单击*Objects*选项卡。
@@ -308,11 +315,12 @@ image:sg-link-2.png["StorageGRID对话框"]
 ====
 
 
-== 查看ONTAP卷性能
+== 性能
 
-您可以单击*性能*选项卡查看Keystone订阅所管理的ONTAP卷的性能详细信息。
+通过*性能*选项卡、您可以查看Keystone订阅所管理的ONTAP卷的性能指标。
 
-您可能无法使用此选项卡查看ONTAP卷上的性能指标。要查看此选项卡、请联系支持部门。
+
+TIP: 您可以选择使用此选项卡。要查看此选项卡、请联系支持部门。
 
 .步骤
 . 单击*Performance*选项卡。
