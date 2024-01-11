@@ -50,4 +50,4 @@ Keystone基础架构包括多个组件、例如以下组件：
 
 image:mgmt-stack.png["管理堆栈"]
 
-通过Active IQ 数字顾问(Digital Advisor)、您可以登录并查看Keystone订阅的订阅和消费详细信息。有关Digital Advisor信息板上Keystone报告的详细信息、请参见 link:../integrations/keystone-aiq.html["Keystone和Digital Advisor"]。
+通过Active IQ数字顾问(也称为数字顾问)、您可以登录并查看Keystone订阅的订阅和使用详细信息。有关Digital Advisor信息板上Keystone报告的详细信息、请参见 link:../integrations/keystone-aiq.html["Keystone和Digital Advisor"]。

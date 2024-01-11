@@ -18,6 +18,26 @@ NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能
 
 
 
+== 2024年1月11日的新增功能和增强功能
+
+了解此版本中的新增功能。
+
+Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕上进行了以下更改。
+
+
+
+=== 针对累积突发返回的发票数据
+
+现在，*容量趋势*选项卡中的*应计突发*标签已修改为*已发票应计突发*。选择此选项可查看计费累积突发数据的月度图表。有关详细信息，请参见 link:../integrations/aiq-keystone-details.html#view-invoiced-accrued-burst["查看已开票的应计突发量"^]。
+
+
+
+=== 特定费率计划的应计消费详细信息
+
+如果您的订阅包含已提交容量为_zero_的费率计划、则可以在*容量趋势*选项卡中查看累积消耗详细信息。选择“*开票应计消费*”选项后，您可以查看开票应计消费数据的月度图表。
+
+
+
 == 2023年12月15日的新增功能和增强功能
 
 了解此版本中的新增功能。
@@ -26,7 +46,7 @@ NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能
 
 === 可以按监视列表进行搜索
 
-Active IQ数字顾问(数字顾问)对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息、请参见 link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["使用Keystone监视列表进行搜索"^]。
+Active IQ数字顾问(也称为数字顾问)中对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息、请参见 link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["使用Keystone监视列表进行搜索"^]。
 
 
 

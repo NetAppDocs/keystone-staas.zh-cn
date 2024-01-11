@@ -32,7 +32,6 @@
   <block id="e05386baa04fdb8086234b221371bac1" category="list-text">基于内核的虚拟机(Linux KVM)</block>
   <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">网络</block>
   <block id="6a289655b3295fc9e844e417d89ad1d9" category="list-text">support.netapp.com (使用情况数据上传)</block>
-  <block id="28e1a3383bffc4e3398dba57600db789" category="list-text">keystone.netapp.com (软件更新)</block>
   <block id="ebe9aca07858175421a1a9356e13ef73" category="list-text">hub.docker.io (软件更新)</block>
   <block id="bc9ce1a2001f13d5a3489030a7b630e9" category="paragraph">NetApp仅为NetApp提供的基础架构设备提供所需的收发器。您应提供客户设备所需的收发器、并使用缆线连接到NetApp提供的Keystone基础架构设备。</block>
   <block id="d701dcea67fd884a29f39c9adfdeb8bf" category="section-title">远程访问要求</block>
@@ -365,14 +364,11 @@
   <block id="536a21a9808fc714076b198f94a4a506" category="paragraph">如果您通过ONTAP System Manager (System Manager)或Active IQ Unified Manager (Unified Manager)监控集群、则可能会发现这些工具上报告的使用量与Keystone上报告的使用量之间存在差异。System Manager和Unified Manager不会报告镜像(远程)集群上的卷、在这样做时、会报告Keystone服务报告的一半使用指标。</block>
   <block id="34331c74c5db43631e74f0ed21504ce2" category="paragraph">SnapMirror目标卷的定价受源上分配的服务级别的QoS策略的制约。但是，如果源没有关联的 QoS 策略，则会根据最低可用服务级别对目标进行计费。</block>
   <block id="0d128bf188abd70ede35e6c24063c36b" category="paragraph">对于LUN、遵循与受QoS策略管理的卷相同的计费模式。如果在 LUN 上设置了单独的 QoS 策略，则：</block>
-  <block id="67a947157c35cbacef18eda1e5eb037c" category="paragraph">NetApp Keystone (Keystone)是一种按需购买、基于订阅的服务模式、可为更喜欢运营支出消费模式而不是前期资本支出或租赁模式的企业提供无缝的混合云体验。</block>
-  <block id="4547b014d12c5d4b1d98a0de125d1aee" category="paragraph">Keystone可帮助客户减少在管理不可预测的容量增长和复杂的采购周期方面的障碍、从而加快实现价值的速度。Keystone让客户可以根据业务优先级调整经济效益和运营。</block>
   <block id="ba66768dfbbcde790d00e0de40f92803" category="paragraph">容量缩减(每年一次)适用于_Annual in adval_支付模式和仅限内部部署。它不适用于云服务或混合云服务。它提供内部容量配置、每个订阅的每个服务级别可减少多达25%的容量。这种减少每年一次、以便在下一个年度计费期开始时生效。在期限内、基于内部服务的年度支付额应大于200、000美元、以便利用容量缩减。由于此计费模式仅支持内部部署、因此无法将支出从内部重新分配到云服务。下图显示了一个年度容量缩减示例。</block>
   <block id="63da2e64853bf4155b1b1a1e9ee74a97" category="list-text">仅适用于承诺期限为1年、2年或3年的订阅。</block>
   <block id="1ad380d64aaf6780bee52adfb88395c3" category="list-text">客户或合作伙伴应至少在下一个计费周期前一周将重新分配请求正式提交给Keystone Success Manager (KSM)。</block>
   <block id="11cc259f3fbff7a9b169739c7cd9d613" category="list-text">如果您有待处理案例/服务单需要上报、请发送电子邮件至以下地址之一：keystone.services@netapp.com keystone.escalations@netapp.com</block>
   <block id="a7bfd854f2e9dacfba92f6c8e2081c3e" category="list-text">此服务仅适用于文件、块和对象服务。</block>
-  <block id="b6a3337f47df4fd3f63ff2c1a9f8ec5b" category="paragraph">SnapLock 技术可在卷中设置的到期日期之后使驱动器不可用、从而启用NRNVC功能。要在卷上使用SnapLock 技术、您需要订阅NRNVC。这仅适用于文件和块服务。</block>
   <block id="789c0cf84faa868401f2d0fbccadc981" category="paragraph">附加费用适用于订阅中的所有容量：源数据、镜像副本数据和未镜像数据。</block>
   <block id="707341c09d7ffe7d139516dd4be5dcc7" category="inline-image-macro">Keystone支持的MetroCluster 配置</block>
   <block id="5aca18c7a53d30f1878ae1f0a8d3c847" category="paragraph"><block ref="5aca18c7a53d30f1878ae1f0a8d3c847" category="inline-image-macro-rx" type="image"></block></block>
@@ -423,7 +419,6 @@
   <block id="c553b9ccdf9dbcac0e340f4775dc3b5a" category="paragraph">Keystone成功经理(KSM)是一名美国员工美国公民土壤。其职责在您的NetApp Keystone 协议中进行了规定。</block>
   <block id="e7585d2ee2e8c627c9574df1d741ec59" category="paragraph">生成的每个消耗记录都会发生此过程。因此，突发消耗量反映了超出承诺容量的过度消耗容量的数量和使用期限。</block>
   <block id="1923c743bdc7a28d03225437a33faad3" category="paragraph">NetApp Keystone (Keystone) STaaS提供了两种服务交付运营模式：合作伙伴运营的模式和客户运营的模式。</block>
-  <block id="ceaa88393b953e384cdb413dd3572b41" category="list-text">*客户运营模式*：作为客户、您可以根据选定的服务级别和存储订阅Keystone服务。NetApp定义了架构和产品、并在您的内部部署Keystone。您需要通过存储和IT资源管理基础架构。作为客户、您是NetApp的租户或子租户或合作伙伴/服务提供商。根据您的合同、您可以提出由NetApp或您的服务提供商处理的服务请求。您的管理员可以从您的站点(环境)执行管理任务。这些任务与环境中的用户相关联。</block>
   <block id="d9074f8f6ffc16585a17ec283468500b" category="paragraph">Keystone STaaS可根据您在使用服务期间消耗的容量进行计量。</block>
   <block id="427fa3429ea764a6d2b1f1e8f8111b9e" category="list-text">与NRNVC相关的额外成本按月总订阅服务(包括标准服务、高级数据保护和数据分层)费用的百分比计。</block>
   <block id="4dc2830ae7b31704bf74b200d5350dea" category="paragraph">本节列出了在您的环境中启用NetApp Keystone STaaS服务所需的组件。</block>
@@ -650,7 +645,6 @@
   <block id="ea74ae761acf4f1176f873f6437675f6" category="paragraph">按照以下步骤在Linux服务器上安装软件：</block>
   <block id="6b0c7fd3768c26e569ee5662bdcc2738" category="list-text">通过SSH连接到Keystone收集器服务器并升级到<block ref="63a9f0ea7bb98050796b649e85481845" prefix=" " category="inline-code"></block> 权限。</block>
   <block id="fafcabb6e961377fe2b62d0f1d2e62be" category="list-text">导入Keystone公共签名：<block ref="ccf45be91ebaeda977037b149762acbd" prefix=" " category="inline-code"></block></block>
-  <block id="077a3466af24e8fb07c559fb31505772" category="list-text">通过检查RPM数据库中Keystone计费平台的指纹来确保导入的公共证书正确：<block ref="ea7401e26ed6546568cda192cd234905" prefix=" " category="inline-code"></block>正确的指纹如下所示：<block ref="0fd85ff4e797b2ec085aea480b3e9158" prefix=" " category="inline-code"></block></block>
   <block id="5000c92898e0e1c2f66f175bc48765b6" category="list-text">验证文件的真实性：<block ref="50a551e75e87c897a8ad2128c42de747" prefix=" " category="inline-code"></block>真实文件的签名如下所示：<block ref="4fc602b120696aeae5ab8b4ebd2a36e8" prefix=" " category="inline-code"></block></block>
   <block id="eb1f328dadd504e03e367eafd0c1e18c" category="list-text">安装YUM软件存储库文件：<block ref="90fdbfbbba2139b53a74cc0098f4e51e" prefix=" " category="inline-code"></block></block>
   <block id="9451601519fe8723586116a31c85beb6" category="list-text">安装Keystone repo后、通过YUM软件包管理器安装keyston-collector软件包：<block ref="94b62ee97dbb40aa61dd0d85daf3c424" prefix=" " category="inline-code"></block></block>
@@ -909,7 +903,6 @@
   <block id="4305e9b17980561df3c63a75f32b2075" category="list-text">选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。选择订阅编号后、将启用对象存储详细信息的链接。</block>
   <block id="d599237a38a37deabe01bd34298be802" category="list-text">单击此链接可查看每个节点的节点名称和物理使用情况详细信息。</block>
   <block id="7a0a61d280e201148fcd091f8167d88f" category="list-text">*信息*：对于诸如订阅即将结束等问题、您可以看到信息警报。将光标悬停在信息图标上方、了解有关问题描述 的更多信息。</block>
-  <block id="1aa4a8544fc94c7ce0ff8c9bc46bb523" category="paragraph">通过Active IQ 数字顾问(Digital Advisor)信息板、您可以监控与NetApp Keystone 订阅相关的使用情况并生成报告。订阅Keystone服务时、您可以在Digital Advisor信息板上的* Keystone订阅*小工具中查看订阅和使用情况的详细信息。</block>
   <block id="936acd8bca51b1c47ce51ce5d9e45134" category="admonition">此处提供的信息包括适用场景 ONTAP 和StorageGRID。相关章节指出了一些例外情况。</block>
   <block id="90022a4ed9f097be4671116b6b5b7754" category="paragraph">有关Keystone Digital Advisor小工具的信息、请参见<block ref="553d5c0a148912943ee201440d3b98c5" category="inline-link-rx"></block>。</block>
   <block id="de87c00cded561268b46fe5428fdd938" category="paragraph">有关这些注意事项和警告消息的详细信息、请联系NetApp支持部门。有关提出服务请求的信息、请参见 <block ref="1bf858345505311d2a0e9fcf6e1f42da" category="inline-link-macro-rx"></block>。</block>
@@ -936,7 +929,6 @@
   <block id="0f1b5cef30787606dcebbe2aad12f047" category="list-text">用于管理和运行服务的工具、例如AIOPS解决方案 、Active IQ 和Active IQ Unified Manager。</block>
   <block id="fe69a54042d9eff356aefd4641754a9d" category="list-text">AIOP解决方案 本地网关：用于监控网络的基于云的应用程序。它内置了与NetApp存储平台的集成功能、可用于收集环境数据并监控网络。通过使用您站点上安装的本地网关与云门户进行通信、可以启用此服务。</block>
   <block id="370f5a2dcf3c761999eec9796ac7cb95" category="list-text">Keystone Data Collector：Keystone收集器为Keystone客户提供计费服务。此应用程序与Active IQ Unified Manager 捆绑在一起。它会每五分钟从ONTAP 和StorageGRID 控制器收集一次数据。处理数据、并通过用于生成计费数据的AutoSupport 机制将元数据发送到集中式Active IQ 数据湖。Active IQ 数据湖处理计费数据并将其发送给Zuora进行计费。</block>
-  <block id="829e513ac5aad09d167e66738057fee0" category="paragraph">通过Active IQ 数字顾问(Digital Advisor)、您可以登录并查看Keystone订阅的订阅和消费详细信息。有关Digital Advisor信息板上Keystone报告的详细信息、请参见 <block ref="b7b6a2338cb0518cc39a6d3713bb6e47" category="inline-link-macro-rx"></block>。</block>
   <block id="b061e71795ea0169fae5918033aa1426" category="inline-link-macro">Keystone收集器安装指南</block>
   <block id="ea6877769314a06b5bfd259d5acd9b87" category="paragraph">部署Keystone收集器和AIOPS解决方案 网关需要使用Storage Virtual Machine (Storage VM)。安装Keystone收集器的前提条件如下： <block ref="1b1d53dc449052d2c1633c8027db333d" category="inline-link-macro-rx"></block>。其他要求将在部署期间共享。</block>
   <block id="78723ce66f58e9e7caf198aa1ec6dc10" category="list-text">客户提供Red Hat Enterprise Linux 7或8或CentOS 7 Linux服务器。Keystone软件通过安装<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block> 安装过程。</block>
@@ -1139,7 +1131,6 @@
   <block id="1d95129eb45966c31b9f9f4903b9ec10" category="list-text">环境工作环境温度应介于25°C和27°C之间</block>
   <block id="acfa283707517552a4ab7682cfe07549" category="list-text">应满足每个服务级别的最小承诺容量要求。</block>
   <block id="185e01eccb11afd93ab6330b3243709d" category="section-title">可持续性报告</block>
-  <block id="214b7c6a2e578d02dcff6a6e0d01644e" category="paragraph">Active IQ数字顾问(数字顾问) Keystone信息板上的"SLA"选项卡提供了Keystone订阅的可持续性指标的详细视图。您可以查看指标并生成报告、以供将来分析和操作使用。</block>
   <block id="c46a6fc145efc32d05eb0e6a28bea128" category="paragraph">有关信息，请参见 <block ref="3dc9ad4ab1c3dcaa061c2b4df6782877" category="inline-link-macro-rx"></block>。</block>
   <block id="ed55999d50b7451fbe4281de85f01c45" category="example-title">vCenter 7.0u1及更早版本：了解更多信息</block>
   <block id="ae33212e0f96fd19173ab021f7909861" category="example-title">vCenter 7.0u2及更高版本：了解更多信息</block>
@@ -1202,7 +1193,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="ad18d1cc4c02be72a25ef833b2c8c734" category="inline-link-macro">高级数据保护参考图表</block>
   <block id="f22aed9280914d2033fc08d85dff0a10" category="paragraph">有关如何查看MetroCluster配置中的使用情况的信息、请参见 <block ref="c29dea45eb21035a3f68a9ee63dca01a" category="inline-link-macro-rx"></block>。</block>
-  <block id="bd8705d6dc113ed9dd8ea9cd72a8dc71" category="paragraph">如果您订阅了NetApp Keystone STaaS服务、则可以在Active IQ数字顾问(数字顾问)信息板的* Keystone订阅*小工具上大致了解您的订阅情况。</block>
   <block id="9eb8ff0f43ab3ce564117624a689cfa3" category="paragraph">Digital Advisor提供了一个统一的信息板，可通过*切换到旧/新信息板*按钮深入了解不同级别的订阅数据和使用情况信息。</block>
   <block id="225101b6a3b9351114a047a3df14351f" category="paragraph-title">默认(旧)信息板</block>
   <block id="5ed038c610a4830d7271f424b6634183" category="inline-image-macro">旧信息板</block>
@@ -1354,7 +1344,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="5e46e614581cd458f9521294062d3783" category="list-text">一旦克隆卷超过父卷物理大小的10%、克隆将作为标准卷(逻辑使用容量)计费。</block>
   <block id="3819e943e22fd127a19d4e64664b72db" category="paragraph">有关使用情况指标的信息、请参见 <block ref="c526a2ccdbb16224fb861d4fec1eb67c" category="inline-link-macro-rx"></block>。有关Keystone中使用的不同容量的信息、请参见 <block ref="a2e2f97253342349ff9ef2b936b778d0" category="inline-link-macro-rx"></block>。</block>
   <block id="a4369c61f00316f67d280309b8795cde" category="paragraph">*容量趋势*选项卡显示特定时间段内Keystone订阅的历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。</block>
-  <block id="ef67282c9adc01fdca335af4d78a2c4b" category="list-text">如果要查看历史数据并分析容量使用趋势，请选择*Capacity Try*。如果要查看历史突发使用量数据，并根据发票分析计费使用量，请选择*应计突发*。</block>
   <block id="856c97744d50a2803c2f50202219de2d" category="section-title">查看容量趋势</block>
   <block id="b7d541aea481ae26f60f1033b3cab726" category="paragraph">如果选择了*Capacity Try*选项，请按照以下步骤操作：</block>
   <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">从*自日期*和*至日期*字段中的日历图标中选择时间范围。选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。您不能选择未来日期。</block>
@@ -1363,20 +1352,15 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="85c7c9dc88496ccb44926915d526201d" category="inline-image-macro">容量趋势选项卡、其中包含详细信息</block>
   <block id="476bf470b1b8dcf24df737be1ac03609" category="paragraph"><block ref="476bf470b1b8dcf24df737be1ac03609" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f8eaf321d70fdf3e9d097bb407d56130" category="paragraph">条形图中的以下颜色表示服务级别中定义的已用容量。图表中的每月数据用一条竖线分隔。</block>
-  <block id="a122d7ff9fbb0694ecb095cdf8f27baa" category="section-title">查看历史突发数据</block>
-  <block id="7f4aafd34e1281a2bb7098e5b06084bd" category="paragraph">如果您选择了*累积突发*选项，则默认情况下，您可以查看过去12个月的每月累积突发使用量数据。您可以按过去30个月的日期范围进行查询。</block>
-  <block id="75ddfeb3beb9d2a265ac2ce3b66ef050" category="admonition">累积突发使用量或已用容量是按当前计费期间的每月计算的。累积突发使用量是根据服务级别的已提交容量和已使用容量通过以下公式计算得出的：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
   <block id="952c204f277570032cf6454e003c63da" category="inline-image-macro">累积突发使用量图表</block>
   <block id="b9e135b5bcd23b0beff424e32497e77c" category="paragraph"><block ref="b9e135b5bcd23b0beff424e32497e77c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="36234decc68306d26e71012f98474aa1" category="paragraph">此功能在仅预览模式下可用。请联系您的KSM以了解有关此功能的更多信息。</block>
   <block id="efca37f4dc4125775aa5043cc3e4ba6c" category="list-text">选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。您不能选择未来日期。</block>
-  <block id="4c81eafa216c925957e13d302baa98d5" category="paragraph">您可以单击切换按钮*显示当前使用情况*来查看当前计费期间的使用量、突发使用量和应计突发数据。这些详细信息不基于查询的日期范围。</block>
   <block id="f9e4dd599c840788d289af630bc65cdb" category="list-text">*当前突发*：指示已用容量是否在定义的突发限制内或以上。如果任何使用量在您的订阅的突发限制范围内、例如、超出已提交容量20%、则属于突发限制范围。如果使用量超过突发限制、则进一步使用量将被视为超过突发限制。此字段显示特定颜色：</block>
   <block id="6b7dfe5a7e219d1bb1b0d4dec89d1cb1" category="list-text">*应计突发*：当前计费期间每月计算的应计突发使用量或已用容量的指标。累积突发使用量是根据服务级别的已使用容量和已用容量计算得出的：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
   <block id="9f06d116e9e0b83604b7fd60a2234a51" category="doc">ONTAP和StorageGRID的要求</block>
   <block id="7ddb33edf227a18eb76201fcb9e2c9db" category="list-title">软件要求</block>
   <block id="c3ce6809be6bdc67ae978395484d0585" category="list-text">ONTAP 9.8或更高版本</block>
-  <block id="0f8980b0c0b4c0b3e722f39e2538063e" category="list-text">Active IQ Unified Manager (Unified Manager) 9.10或更高版本</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="paragraph-title">前提条件</block>
   <block id="fbacd386f66318927b42b113c3987f00" category="paragraph">要在ONTAP上安装Keystone收集器、请根据前提条件执行以下步骤：</block>
   <block id="ad98fcce772f03d25a2b4758c7fbf35c" category="list-text">确保已配置Unified Manager 9.10或更高版本。有关安装Unified Manager的信息、请参见以下链接：</block>
@@ -1430,7 +1414,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="bad75a53f85a771cf752894cc064a3b7" category="admonition">完成安装后、您可以使用Keystone收集器管理终端用户界面(TUI)实用程序执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。请参见 <block ref="14e6b60cfb93c92598e40786e00457b6" category="inline-link-macro-rx"></block> 和 <block ref="81c399588663f35131a970a2d830c241" category="inline-link-macro-rx"></block> 以了解相关信息。</block>
   <block id="53c0c730b2c0dc69ef94550cb19434f5" category="paragraph">中提供的Keystone YUM存储库客户端配置<block ref="5bec9e04971ed49ee2b3c939afa7a801" prefix=" " category="inline-code"></block> 使用强制GPG检查 <block ref="5b974d7e48c1a0878cb562eeae59f1b6" prefix="(" category="inline-code"></block>)。如果通过Keystone存储库下载的任何RPM未通过签名验证、则无法安装。Keystone收集器的计划内自动更新功能会使用此功能、以确保您的站点仅安装有效且真实的软件。</block>
   <block id="1ae3a07b6896d577a03f95172e8b37ab" category="paragraph">有关SnapLock 技术的信息、请参见<block ref="75641a5590d09822bddecb04bdc449c0" category="inline-link-rx"></block>。</block>
-  <block id="147009f1fd514ea86c82a1aa22f620bb" category="paragraph">您可以从Active IQ数字顾问信息板上的Keystone小工具中了解与SLA相关的任何问题。</block>
   <block id="226d95bc6d792c050a420be49b381927" category="paragraph">符合以下标准的Keystone STaaS订阅符合可持续性SLA的条件：</block>
   <block id="3b916544092c6bba180097d47f80505f" category="section-title">服务抵免额</block>
   <block id="12d485f3f9a8db1779ed73cf44c137be" category="paragraph">存储即服务(STaaS)产品旨在为存储基础架构的采购、部署和管理提供类似于公有云的模式。虽然大多数企业仍在制定混合云战略、但作为客户、您可以选择基于运营支出的"按使用付费"消费模式。您可能需要最终将所有工作负载迁移到云、但尚未制定明确的计划或计划将特定部分或所有工作负载迁移到云。Keystone STaaS让您可以灵活地从内部服务入手、稍后再决定迁移到云的正确工作负载和时间点。Keystone STaaS可跨部署模式提供承诺保护。作为内部客户、您无需再为云服务支付更多费用、而是可以重新分配内部支出以添加云服务、并且基本上可以支付与此重新分配之前承诺的每月账单。</block>
@@ -1484,7 +1467,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e10851d151ada64fb52c2407a0767d85" category="section-title">2023年12月15日的新增功能和增强功能</block>
   <block id="f1294b2cae09e66a510612046224408f" category="paragraph">了解此版本中的新增功能。</block>
   <block id="6fec807bd8a0e3b00b3818404fe99ffa" category="section-title">可以按监视列表进行搜索</block>
-  <block id="64bdd98b13006bd513f441125b17180c" category="paragraph">Active IQ数字顾问(数字顾问)对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息、请参见 <block ref="b7d20955ed629544dc331da927df4d8e" category="inline-link-macro-rx"></block>。</block>
   <block id="e21135b6ab126eefb31b234c688584d2" category="section-title">转换为UTC时区的日期</block>
   <block id="c58866f1ef5f53d12f483be3139c8b21" category="paragraph">在Active IQ数字顾问的*Keystone订阅*屏幕的选项卡上返回的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。有关详细信息，请参见 <block ref="fd9d2abed6b27ddb199966f81ac84d0e" category="inline-link-macro-rx"></block>。</block>
   <block id="bbf5c00a5a74c975684f1ea9625170dc" category="summary">NetApp 服务引擎中的已知问题</block>
@@ -1522,4 +1504,53 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="60c2efc3e4aa54d923286d4b7554d471" category="sidebar">了解Keystone定价</block>
   <block id="c977c72cd7678128aadf339e54fc0498" category="sidebar">如何处理冷数据或使用率较低的数据？</block>
   <block id="3c433d996e071fc968830570a2649830" category="sidebar">如何保护Keystone数据？</block>
+  <block id="1bd52766b0b26f4e8685843d09982927" category="paragraph">通过Active IQ数字顾问(也称为数字顾问)信息板、您可以监控与NetApp Keystone订阅相关的使用情况并生成报告。订阅Keystone服务时、您可以在Digital Advisor信息板上的* Keystone订阅*小工具中查看订阅和使用情况的详细信息。</block>
+  <block id="989f69001ddcc32301bcbd805f65e578" category="list-text">如果要查看历史数据并分析容量使用趋势，请选择*Capacity Try*。如果要查看已生成发票的历史突发使用情况数据，请选择“*开票应计突发事件”。您可以使用此数据根据发票分析计费使用情况。</block>
+  <block id="3f27fae70e74fffb5824be09306c17a5" category="paragraph">您可以单击切换按钮*显示当前使用情况*来查看当前计费期间的使用量、突发使用量和应计突发数据。这些详细信息不基于查询的日期范围。</block>
+  <block id="b01022ea67a6b913d57f7194fcc72d9d" category="section-title">查看已开票的应计突发量</block>
+  <block id="db0ef40224829d8428d6c42004012b26" category="paragraph">如果您选择了*开票应计突发*选项，则默认情况下，您可以查看过去12个月内已计费的每月应计突发使用量数据。您可以按过去30个月的日期范围进行查询。此时将显示发票数据的条形图、如果尚未对使用量计费、则会显示该月的_Pending _。</block>
+  <block id="393673167b0e2f5fe79a42f45c884852" category="admonition">已开票的应计突发使用量是根据服务级别的已提交容量和已使用容量按计费期间计算的。</block>
+  <block id="f1b66c366268c014ead8756ce57df913" category="paragraph">如果您订阅了NetApp Keystone STaaS服务、则可以在Active IQ数字顾问(也称为数字顾问)信息板的* Keystone订阅*小工具上大致了解您的订阅情况。</block>
+  <block id="0cd22f9baa25202637cff789fe1dfe9f" category="list-text">Active IQ Unified Manager (Unified Manager) 9.10或更高版本</block>
+  <block id="81f184376266ed69a659d0030be070fc" category="list-text">通过检查RPM数据库中Keystone计费平台的指纹来确保导入的公共证书正确：<block ref="ea7401e26ed6546568cda192cd234905" prefix=" " category="inline-code"></block>
+正确的指纹如下所示：<block ref="821b59fa560f6b692841b490c9d51dfe" prefix=" " category="inline-code"></block></block>
+  <block id="82141214645629808da05e70bbc23bcf" category="list-text">keystone.netapp.com (软件更新)</block>
+  <block id="cbe21b6da30db10de9cd33de72b5dc48" category="paragraph">SnapLock 技术可在卷中设置的到期日期之后使驱动器不可用、从而启用NRNVC功能。要在卷上使用SnapLock 技术、您需要订阅NRNVC。这仅适用于文件和块服务。</block>
+  <block id="083c35221a46b4c297d0ce51fbf39a9f" category="paragraph">您可以从Active IQ数字顾问(也称为数字顾问)信息板上的Keystone小工具中了解与SLA相关的任何问题。</block>
+  <block id="7f1af236cf209696a1e8c52d7ccddf59" category="paragraph">Digital Advisor的SLA选项卡Keystone信息板提供Keystone订阅的可持续发展指标的详细视图。您可以查看指标并生成报告、以供将来分析和操作使用。</block>
+  <block id="25ee4dffb8ff9627245188cd5d5a88f9" category="paragraph">NetApp Keystone (Keystone)是一种按需购买、基于订阅的服务模式、可为更喜欢运营支出消费模式而不是前期资本支出或租赁模式的企业提供无缝的混合云体验。</block>
+  <block id="14ef43baeaecb16eed97981bac41fa1a" category="paragraph">Keystone可帮助客户减少在管理不可预测的容量增长和复杂的采购周期方面的障碍、从而加快实现价值的速度。Keystone让客户可以根据业务优先级调整经济效益和运营。</block>
+  <block id="d33f2a600ba4fe43084a26e95e4908c0" category="paragraph">* 相关信息 *</block>
+  <block id="e6158c69831c3faa8af6ba0dce7118fd" category="list-text"><block ref="e6158c69831c3faa8af6ba0dce7118fd" category="inline-link-macro-rx"></block></block>
+  <block id="9e38decf152b1fba3ebe0ddbb861a5a3" category="inline-link-macro">Keystone STaaS中的附加服务</block>
+  <block id="91ad65d98336ef29959957165ed0c9ea" category="list-text"><block ref="91ad65d98336ef29959957165ed0c9ea" category="inline-link-macro-rx"></block></block>
+  <block id="7141573db29c2af45d0b9d0159276c43" category="list-text"><block ref="7141573db29c2af45d0b9d0159276c43" category="inline-link-macro-rx"></block></block>
+  <block id="d7e5ccf918d68bf60a6b52690444d5ea" category="list-text"><block ref="d7e5ccf918d68bf60a6b52690444d5ea" category="inline-link-macro-rx"></block></block>
+  <block id="df7d31258a77cf6838aec404025cc8f0" category="list-text"><block ref="df7d31258a77cf6838aec404025cc8f0" category="inline-link-macro-rx"></block></block>
+  <block id="cb16f0d61d1b95d7ed2e3ddca87174cb" category="summary">Keystone中的附加服务</block>
+  <block id="a9d18fd494dd09ac109d0f41dd8200d6" category="paragraph">Keystone STaaS提供大量附加服务。您可以通过以下链接了解这些服务。您可以与KSM进行讨论、以评估和使用它们。</block>
+  <block id="a37b84ef7962958683b36fdd11870efe" category="list-text"><block ref="a37b84ef7962958683b36fdd11870efe" category="inline-link-macro-rx"></block></block>
+  <block id="a91680a6ffe7d115054b2a3a29590c88" category="list-text"><block ref="a91680a6ffe7d115054b2a3a29590c88" category="inline-link-macro-rx"></block></block>
+  <block id="507239d4f0e74cca132c8dcec4572685" category="inline-link-macro">U.S.公民支持</block>
+  <block id="bf1e0d5283510e73c95e48c522f105ac" category="list-text"><block ref="bf1e0d5283510e73c95e48c522f105ac" category="inline-link-macro-rx"></block></block>
+  <block id="15d6b82ce2a881c6c9b4c3896e1f4714" category="list-text"><block ref="15d6b82ce2a881c6c9b4c3896e1f4714" category="inline-link-macro-rx"></block></block>
+  <block id="caa6137168275fe348c2a04ff68b05bf" category="list-text"><block ref="caa6137168275fe348c2a04ff68b05bf" category="inline-link-macro-rx"></block></block>
+  <block id="a2e2f97253342349ff9ef2b936b778d0" category="list-text"><block ref="a2e2f97253342349ff9ef2b936b778d0" category="inline-link-macro-rx"></block></block>
+  <block id="9a951c3d80a9377bd47aaa657c36398a" category="list-text"><block ref="9a951c3d80a9377bd47aaa657c36398a" category="inline-link-macro-rx"></block></block>
+  <block id="01d1ce60b1a3aef68f02db880ec50307" category="list-text"><block ref="01d1ce60b1a3aef68f02db880ec50307" category="inline-link-macro-rx"></block></block>
+  <block id="a1daaed7f6b936bd29a0f32fd73bc833" category="list-text">*客户运营模式*：作为客户、您可以根据选定的服务级别和存储订阅Keystone服务。NetApp定义了架构和产品、并在您的内部部署Keystone。您需要通过存储和IT资源管理基础架构。作为客户、您是NetApp的租户或子租户或合作伙伴/服务提供商。根据您的合同、您可以提出由NetApp或您的服务提供商处理的服务请求。您的管理员可以从您的站点(环境)执行管理任务。这些任务与环境中的用户相关联。</block>
+  <block id="fe53175072711abfe4bc0ec0a1c8feda" category="list-text"><block ref="fe53175072711abfe4bc0ec0a1c8feda" category="inline-link-macro-rx"></block></block>
+  <block id="666607765db8e2a230407163fc7ea704" category="list-text"><block ref="666607765db8e2a230407163fc7ea704" category="inline-link-macro-rx"></block></block>
+  <block id="da7adc48e3ef5d5cba8270d6542a88e9" category="list-text"><block ref="da7adc48e3ef5d5cba8270d6542a88e9" category="inline-link-macro-rx"></block></block>
+  <block id="e9fba53fca09f539e7c7027e5b60c861" category="list-text"><block ref="e9fba53fca09f539e7c7027e5b60c861" category="inline-link-macro-rx"></block></block>
+  <block id="98bee96ae0c26b26f72606ccdc5c56ce" category="list-text"><block ref="98bee96ae0c26b26f72606ccdc5c56ce" category="inline-link-macro-rx"></block></block>
+  <block id="a6bf70467fe9fc8375125070b0747a86" category="paragraph">通过Active IQ数字顾问(也称为数字顾问)、您可以登录并查看Keystone订阅的订阅和使用详细信息。有关Digital Advisor信息板上Keystone报告的详细信息、请参见 <block ref="b7b6a2338cb0518cc39a6d3713bb6e47" category="inline-link-macro-rx"></block>。</block>
+  <block id="e38cc358974de030fd1c567512210d8f" category="section-title">2024年1月11日的新增功能和增强功能</block>
+  <block id="dd6cacccfb5522e606e79e89d7bcd87e" category="paragraph">Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕上进行了以下更改。</block>
+  <block id="b08a55fcdae4be7efabe97ebd6da5f96" category="section-title">针对累积突发返回的发票数据</block>
+  <block id="759e854fe7757cee8e9beb2f278e1082" category="paragraph">现在，*容量趋势*选项卡中的*应计突发*标签已修改为*已发票应计突发*。选择此选项可查看计费累积突发数据的月度图表。有关详细信息，请参见 <block ref="1de75f05c72d9ddec6f68e5103a83e4f" category="inline-link-macro-rx"></block>。</block>
+  <block id="038fa77b2d09a08187d251d11af66fec" category="section-title">特定费率计划的应计消费详细信息</block>
+  <block id="e8eb002764288209a5c4ba14af40e3c1" category="paragraph">如果您的订阅包含已提交容量为_zero_的费率计划、则可以在*容量趋势*选项卡中查看累积消耗详细信息。选择“*开票应计消费*”选项后，您可以查看开票应计消费数据的月度图表。</block>
+  <block id="c172354fb8ea09208116200c906a06f7" category="paragraph">Active IQ数字顾问(也称为数字顾问)中对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息、请参见 <block ref="b7d20955ed629544dc331da927df4d8e" category="inline-link-macro-rx"></block>。</block>
+  <block id="b35f87e6c022106392162120d7124d39" category="sidebar">查看Keystone信息板并管理订阅</block>
 </blocks>

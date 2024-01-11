@@ -16,7 +16,7 @@ summary: 可持续性、SLA、服务级别协议
 [role="lead"]
 NetApp Keystone STaaS提供服务级别协议或SLA支持的可持续性服务级别、定义每个服务级别的最大功耗/ TiB、以帮助您规划、监控和实现IT可持续性目标。
 
-您可以从Active IQ数字顾问信息板上的Keystone小工具中了解与SLA相关的任何问题。
+您可以从Active IQ数字顾问(也称为数字顾问)信息板上的Keystone小工具中了解与SLA相关的任何问题。
 
 
 
@@ -84,7 +84,7 @@ NetApp Keystone STaaS提供服务级别协议或SLA支持的可持续性服务�
 
 == 可持续性报告
 
-Active IQ数字顾问(数字顾问) Keystone信息板上的"SLA"选项卡提供了Keystone订阅的可持续性指标的详细视图。您可以查看指标并生成报告、以供将来分析和操作使用。
+Digital Advisor的SLA选项卡Keystone信息板提供Keystone订阅的可持续发展指标的详细视图。您可以查看指标并生成报告、以供将来分析和操作使用。
 
 有关Keystone信息板和报告的详细信息、请参见 link:../integrations/aiq-keystone-details.html["Keystone订阅信息板和报告"]。
 

@@ -135,3 +135,10 @@ NOTE: 延迟不包括在使用FabricPool 存储时向对象存储传输数据所
 
 
 ====
+* 相关信息 *
+
+* link:../concepts/supported-storage-capacity.html["支持的存储容量"]
+* link:..//concepts/metrics.html["Keystone服务中使用的指标和定义"]
+* link:../concepts/qos.html["Keystone中的服务质量(QoS)"]
+* link:../concepts/pricing.html["Keystone定价"]
+

@@ -29,3 +29,12 @@ Keystone为您提供了以下计费工具：
 Keystone计费基于已提交容量和可变突发消耗量。
 
 有关Keystone中支持的不同容量的信息、请参见 link:../concepts/supported-storage-capacity.html["Keystone支持的存储容量"]。
+
+* 相关信息 *
+
+* link:../concepts/committed-capacity-billing.html["根据已提交容量计费"]
+* link:../concepts/consumed-capacity-billing.html["根据已用容量进行计量"]
+* link:../concepts/burst-consumption-billing.html["按突发消耗计费"]
+* link:../concepts/misc-volume-billing.html["根据其他卷类型计费"]
+* link:../concepts/billing-schedules.html["计费计划"]
+
