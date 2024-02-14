@@ -56,9 +56,23 @@ sidebar:
   - title: 查看Keystone信息板并管理订阅
     entries:
     - title: 在Active IQ数字顾问上查看Keystone信息板
-      url: "/integrations/keystone-aiq.html"
-    - title: 查看消耗详细信息并生成报告
-      url: "/integrations/aiq-keystone-details.html"
+      entries:
+      - title: Keystone和Digital Advisor信息板
+        url: "/integrations/keystone-aiq.html"
+      - title: 查看消耗详细信息并生成报告
+        url: "/integrations/aiq-keystone-details.html"
+      - title: 订阅选项卡
+        url: "/integrations/subscriptions-tab.html"
+      - title: 当前使用量选项卡
+        url: "/integrations/current-usage-tab.html"
+      - title: SLA详细信息选项卡
+        url: "/integrations/sla-details-tab.html"
+      - title: 容量趋势选项卡
+        url: "/integrations/capacity-trend-tab.html"
+      - title: 卷和对象选项卡
+        url: "/integrations/volumes-objects-tab.html"
+      - title: 性能选项卡
+        url: "/integrations/performance-tab.html"
     - title: 从BlueXP管理Keystone订阅
       url: "/integrations/keystone-cm.html"
   - title: 了解Keystone
@@ -121,63 +135,3 @@ sidebar:
     url: "/concepts/gssc.html"
   - title: 法律声明
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: 入门
-    links:
-    - title: 什么是 NetApp Keystone ？
-      url: "/concepts/overview.html"
-    - title: 在VMware vSphere上安装Keystone收集器
-      url: "/installation/vapp-installation.html"
-    - title: 在Linux上安装Keystone收集器
-      url: "/installation/linux-installation.html"
-    - title: 在Digital Advisor上查看您的使用情况
-      url: "/integrations/keystone-aiq.html"
-    - title: 生成消耗报告
-      url: "/integrations/aiq-keystone-details.html"
-  - title: Keystone中支持的服务
-    links:
-    - title: Keystone服务级别
-      url: "/concepts/service-levels.html"
-    - title: 服务质量(QoS)
-      url: "/concepts/qos.html"
-    - title: 度量单位是多少？
-      url: "/concepts/metrics.html"
-    - title: 支持的基础存储是什么？
-      url: "/concepts/supported-storage-services.html"
-    - title: 我是否可以将支出从内部重新分配到云？
-      url: "/concepts/capacity-requirements.html#capacity-adjustments"
-  - title: Keystone定价和计费
-    links:
-    - title: 了解Keystone定价
-      url: "/concepts/pricing.html"
-    - title: 我的计费计划
-      url: "/concepts/billing-schedules.html"
-    - title: 根据已提交容量计费
-      url: "/concepts/committed-capacity-billing.html"
-    - title: 根据已用容量进行计量
-      url: "/concepts/consumed-capacity-billing.html"
-    - title: 如果我消耗的容量超过承诺的容量、会发生什么情况？
-      url: "/concepts/burst-consumption-billing.html"
-  - title: 利用Keystone服务完成更多任务
-    links:
-    - title: 了解您的支持团队(Keystone GSSC)
-      url: "/concepts/gssc.html"
-    - title: 如何处理冷数据或使用率较低的数据？
-      url: "/concepts/data-tiering.html"
-    - title: 如何保护Keystone数据？
-      url: "/concepts/adp.html"
-    - title: Keystone和BlueXP
-      url: "/integrations/keystone-cm.html"
-    - title: 美国公民支持
-      url: "/concepts/uscs.html"
-  - title: 了解更多信息
-    links:
-    - title: Keystone订阅版本1 (以前称为Keystone Flex订阅)
-      url: https://docs.netapp.com/us-en/keystone/
-    - title: Active IQ Digital Advisor
-      url: https://docs.netapp.com/us-en/active-iq/index.html
-    - title: BlueXP
-      url: https://docs.netapp.com/us-en/cloud-manager-family/
-    - title: Active IQ Unified Manager
-      url: https://docs.netapp.com/us-en/active-iq-unified-manager/

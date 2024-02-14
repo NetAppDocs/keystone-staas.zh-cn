@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: integrations/current-usage-tab.html 
+keywords: keystone-aiq, digital advisor keystone, current usage tab 
+summary: 'AIQ DA Keystone信息板上的"当前使用量"选项卡' 
+---
+= 当前使用量选项卡
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+“*当前使用情况*”选项卡显示您的订阅的使用情况详细信息。
+
+要查看此选项卡，请从左侧导航窗格转到*常规> Keystone订阅>当前使用情况*，然后选择所需的订阅编号。
+
+image:aiq-ks-dtls.png["当前使用量选项卡"]
+
+对于选定订阅、您可以查看详细信息、例如订阅的开始和结束日期、以及计费期限、例如每月或每年。在订阅使用量中、您可以查看服务级别名称、已提交、已使用、可用容量以及当前和应计突发使用量(以TiB为单位)。
+
+
+TIP: 。 image:icon-info.png["信息图标"] 每个列旁边的图标提供有关该列的全面信息。系统将突出显示消耗量较高的特定服务级别。您还可以查看为卷生成的警告和警报。
+
+有关Keystone存储服务和相关服务级别的信息、请参见 link:../concepts/service-levels.html["Keystone中的服务级别"]。
+
+与当前使用量结合使用时、您可能需要查看历史使用量数据以进行比较。单击*查看历史数据*按钮导航到*容量趋势*选项卡以查看同一订阅的历史数据。
+
+* 相关信息 *
+
+* link:../integrations/aiq-keystone-details.html["使用Keystone信息板和报告"]
+* link:../integrations/subscriptions-tab.html["订阅"]
+* link:../integrations/sla-details-tab.html["SLA详细信息"]
+* link:../integrations/capacity-trend-tab.html["容量趋势"]
+* link:../integrations/volumes-objects-tab.html["卷和对象()"]
+* link:../integrations/performance-tab.html["性能"]
+

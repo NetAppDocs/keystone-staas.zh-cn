@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: integrations/subscriptions-tab.html 
+keywords: keystone-aiq, digital advisor keystone, subscriptions-tab 
+summary: 'AIQ DA Keystone信息板上的"订阅"选项卡' 
+---
+= 订阅选项卡
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在*订阅*选项卡中查看所有订阅的列表。
+
+要查看此选项卡，请从左侧导航窗格转到*常规> Keystone订阅>订阅*。
+
+image:all-subs.png["\"订阅\"选项卡的图像"]
+
+您可以看到以下信息。对于某些字段和列、您可能会看到追加信息有关数据的信息或警告图标以及工具提示。
+
+* *订阅编号*：NetApp分配的Keystone订阅的订阅编号。
+* *跟踪ID*：激活订阅时分配的跟踪ID。这是每个订阅和站点的唯一ID、用于跟踪订阅。
++
+
+TIP: 如果您已订阅高级数据保护附加服务、则可以单击订阅编号对应的工具提示、在MetroCluster设置中查看合作伙伴订阅的跟踪ID。要了解如何在MetroCluster配置中查看合作伙伴订阅的详细使用情况、请参阅 link:../integrations/capacity-trend-tab.html#reference-charts-for-advanced-data-protection["高级数据保护参考图表"]。
+
+* *使用类型*：您可能订阅了多个Keystone (版本1)或Keystone STaaS (版本2)订阅。对于这两种订阅类型、服务级别的费率计划规则可能会有所不同。通过查看此列中的值、您可以了解使用类型是按任一的已配置使用量还是逻辑使用量计费 `v1` 或 `v2`。有关Keystone订阅版本1的详细信息、请参见 https://docs.netapp.com/us-en/keystone/index.html["NetApp Keystone 文档"^]。
+* *Billing Period *：订阅的计费期限，如每月、每季度或每年。
+* *开始日期*：订阅的开始日期。
+* *结束日期*：订阅的结束日期。如果您有每月自动续订的按月计费订阅、您会看到 `Month-on-month` 而不是结束日期。根据此日期、您可能会看到订阅即将结束或附加了自动续订策略的通知。
+* *使用状态*：显示使用情况指示符以指示使用量是在订阅限制之内还是超出订阅限制。如果要查看最高消耗记录、可以按此列对列表进行排序。
+* image:subs-dtls-icon.png["图标。"]：单击此订阅图标将打开*当前使用情况*选项卡，其中包含该订阅的使用情况详细信息。
+* image:aiq-ks-time-icon.png["图标。"]：单击此图标将打开*Capacity Try*选项卡，您可以在其中查看此订阅中每个服务级别的历史使用数据。
+
+
+您可以参考以下使用情况指示器来检查每个订阅的使用状态：
+
+image:usage-indicator.png["图标。"]
+
+.索引
+image:icon-grey.png["灰点图标"]：未根据服务级别的已提交容量记录容量使用情况image:icon-green.png["绿色圆点图标"]：使用量正常、在已承诺容量的80%范围内image:icon-amber.png["琥珀色圆点图标"]：最大使用量、即使用量即将达到已承诺容量的100%或更多。对于超过已提交容量80%的任何消耗、*已用*列将显示此指示符image:icon-red.png["红点图标"]：消耗量在突发限制范围内。突发消耗量是指在服务级别的100%已承诺容量之上、并且处于商定的突发使用量限制(例如120%)范围内的消耗量image:icon-purple.png["紫色圆点图标"]：表示消耗量超过规定的突发限制
+
+* 相关信息 *
+
+* link:../integrations/aiq-keystone-details.html["使用Keystone信息板和报告"]
+* link:../integrations/current-usage-tab.html["当前使用情况"]
+* link:../integrations/sla-details-tab.html["SLA详细信息"]
+* link:../integrations/capacity-trend-tab.html["容量趋势"]
+* link:../integrations/volumes-objects-tab.html["卷和对象()"]
+* link:../integrations/performance-tab.html["性能"]
+

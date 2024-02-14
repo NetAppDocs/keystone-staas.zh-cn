@@ -56,7 +56,7 @@ NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU �
 
 === Storage Virtual Machine
 
-部署Keystone收集器和AIOPS解决方案 网关需要使用Storage Virtual Machine (Storage VM)。安装Keystone收集器的前提条件如下： link:..//installation/installation-overview.html["Keystone收集器安装指南"]。其他要求将在部署期间共享。
+部署Keystone收集器和AIOPS解决方案 网关需要使用Storage Virtual Machine (Storage VM)。安装Keystone收集器的前提条件如下： link:../installation/installation-overview.html["Keystone收集器安装指南"]。其他要求将在部署期间共享。
 
 
 

@@ -52,9 +52,9 @@ Snapshot
 
 .步骤
 . 以系统管理员用户身份、使用SSH登录到Keystone ONTAP集群。有关信息，请参见 https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-ssh-task.html["使用SSH访问集群"^]。
-. 运行以下命令并验证现有配置：
+. 运行以下命令并验证现有子系统的现有配置：
 +
-`autosupport trigger show -node * -autosupport-message management.log -instance`
+`autosupport trigger show -node * -autosupport-message management.log -fields basic-additional`
 
 +
 有关此命令的详细信息，请参见 https://docs.netapp.com/us-en/ontap-cli-9131/system-node-autosupport-manifest-show.html#parameters["system node AutoSupport manifest show"^]。

@@ -14,7 +14,7 @@ summary: Keystone STaaS的不同版本中已修复的问题
 
 
 [role="lead"]
-在NetApp Keystone STaaS服务的先前版本中发现的问题已在后续版本中得到修复。下表列出了修复程序。
+在NetApp Keystone STaaS服务的先前版本中发现的问题已在后续版本中得到修复。下表列出了这些修复程序。
 
 [cols="3*"]
 |===

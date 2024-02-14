@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: integrations/sla-details-tab.html 
+keywords: keystone-aiq, digital advisor keystone, SLA details 
+summary: 'Keystone和Digital Advisor上的"SLA Details"选项卡' 
+---
+= SLA详细信息选项卡
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+只有当您与NetApp签订了有效的服务级别协议(SLA)时，"*SLA Details*(SLA详细信息)"选项卡才可用。只有当您拥有有效的Sustainability SLA时、*可持续性SLA*选项卡才可用。
+
+服务级别协议(SLA)是NetApp云存储解决方案的关键组成部分。SLA旨在提供有效、高质量和可靠的存储解决方案、作为Keystone STaaS服务产品的一部分。有关Keystone STaaS中的可持续性的信息、请参见 link:../concepts/sla-sustainability.html["Keystone的可持续性SLA"]。
+
+.步骤
+. 单击*常规> Keystone订阅> SLA详细信息> Sustainability SLA*。
+. 选择要查看其详细信息的所需订阅。您只能查看符合Sustainability SLA标准的订阅。有关条件的信息、请参见 link:../concepts/sla-sustainability.html#eligibility-criteria-for-sustainability-sla["可持续性SLA的资格标准"]。
+. 选择要查看其详细信息的年份和月份。默认情况下、将显示当前月份的数据。您可以选择订阅处于活动状态的年份和月份。
+. 单击 * 查看详细信息 * 。
+
+
+您可以查看选定月份的每日可持续性指标细分：
+
+image:sla-sustainability.png["列出可持续性详细信息的SLA详细信息选项卡"]
+
+此时将显示以下详细信息。对于某些字段和列、您可能会看到一些信息图标和工具提示、这些图标和提示为您提供了有关数据的追加信息。
+
+* *平均可持续性*：此订阅的最后一个计费期间的平均功耗(以瓦特/ TiB为单位)。
+* *Date*：收集SLA数据的日期。
+* *平均瓦特*：集群当天的平均功耗瓦特。
+* *有效容量(TiB*)：服务级别的已提交容量与已分配突发容量之和。
+* *实际瓦特(TiB*)：实际瓦特/ TiB是集群当天的实际每TiB功耗。您可以将其与* SLA瓦特/ TiB*中的值进行比较，以分析任何超调。
+* *SLA瓦特/ TiB*：SLA中定义的服务级别的瓦特/ TiB值。
+* *平均温度(^o^C)*：日平均环境温度。
+* *存储效率比率*：Keystone存储环境中的存储效率比率。这是启用存储效率设置后系统使用的总逻辑空间与用于存储数据的总物理空间之比。有关存储效率比率的信息、请参见 https://docs.netapp.com/us-en/active-iq/concept_overview_storage_efficiency.html["了解存储效率"^]。
+
+
+如果违反SLA、则为 image:warning.png["警告图标"] 列旁边的警告图标可告知您违规的性质。此时将显示以下警告：
+
+* 环境温度：如果温度超出25^o^C - 27^o^C的范围
+* SLA瓦特/ TiB：如果未满足服务级别SLA指标。有关信息，请参见 link:../concepts/sla-sustainability.html#sustainability-service-level["可持续性服务级别"]。
+* 存储效率比率：如果存储效率小于2：1。
+
+
+* 相关信息 *
+
+* link:../integrations/aiq-keystone-details.html["使用Keystone信息板和报告"]
+* link:../integrations/subscriptions-tab.html["订阅"]
+* link:../integrations/current-usage-tab.html["当前使用情况"]
+* link:../integrations/capacity-trend-tab.html["容量趋势"]
+* link:../integrations/volumes-objects-tab.html["卷和对象()"]
+* link:../integrations/performance-tab.html["性能"]
+
