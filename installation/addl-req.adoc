@@ -20,14 +20,12 @@ summary: Keystone Unified Manager的前提条件
 ====
 .ONTAP
 --
-.软件要求
+.软件版本
 . ONTAP 9.8或更高版本
 . Active IQ Unified Manager (Unified Manager) 9.10或更高版本
 
 
-.前提条件
-要在ONTAP上安装Keystone收集器、请根据前提条件执行以下步骤：
-
+.开始之前
 . 确保已配置Unified Manager 9.10或更高版本。有关安装Unified Manager的信息、请参见以下链接：
 +
 ** https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["在VMware vSphere系统上安装Unified Manager"^]

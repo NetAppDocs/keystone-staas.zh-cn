@@ -14,22 +14,36 @@ summary: volume-objects-tab
 
 
 [role="lead"]
-在*卷和对象*选项卡上，您可以在ONTAP中查看卷的使用情况和其他详细信息。对于StorageGRID 、此选项卡将显示节点及其在对象存储环境中的个别使用情况。
+使用*卷和对象*选项卡可查看ONTAP卷的摘要信息和详细信息。对于StorageGRID、您可以使用此选项卡读取对象存储环境中各个节点的使用情况。
 
 
-NOTE: 此选项卡的名称因站点部署的性质而异。如果同时具有卷和对象存储，则可以看到*卷和对象*选项卡。如果存储环境中只有ONTAP卷、则此名称将更改为*卷*。对于StorageGRID对象存储，可以看到*Objects*选项卡。
+NOTE: 此选项卡的标题因站点部署的性质而异。如果同时具有ONTAP和对象存储，则选项卡的标题将显示为*Volumes & Objects*。仅对于ONTAP，名称显示为*Volumes*。对于StorageGRID对象存储，可以看到*Objects*选项卡。
 
 
 
-== 查看ONTAP卷详细信息
+== 查看ONTAP卷摘要和详细信息
 
-对于ONTAP、*卷*选项卡将显示有关Keystone订阅所管理的存储环境中卷的容量使用情况、卷类型、集群、聚合和服务级别等信息。
+卷选项卡提供了有关ONTAP系统卷的不同级别的详细信息。有两个选项卡、每个选项卡用于显示ONTAP卷的摘要视图和详细信息视图。“*卷摘要*”选项卡提供映射到订阅服务级别的卷的总数。相应的卷将再次在*卷详细信息*选项卡中列出其详细信息。
 
-.步骤
-. 单击*常规> Keystone订阅>卷*。
+[role="tabbed-block"]
+====
+.卷摘要
+--
+. 单击*常规> Keystone订阅>卷和对象>卷摘要*。
+. 选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。
+
+
+对于选定的Keystone STaaS订阅、您可以查看卷总数、其AQoS合规状态以及所有这些卷的已提交、已使用和可用总容量。如果单击不合规卷的数量，您将看到在*Volume Details*选项卡中列出的各个卷。
+
+image:volume-summary.png["卷摘要选项卡"]
+
+--
+.卷详细信息
+--
+. 单击*常规> Keystone订阅>卷>卷详细信息*。
 . 选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。
 +
-此时将显示卷详细信息。您可以将鼠标悬停在列标题旁边的信息图标上、滚动浏览列并了解有关这些列的更多信息。您可以按列排序并筛选列表以查看特定信息。
+您可以查看卷的表格列表、例如容量使用情况、卷类型、集群、聚合以及分配的Keystone服务级别。您可以将鼠标悬停在列标题旁边的信息图标上、滚动浏览列并了解有关这些列的更多信息。您可以按列排序并筛选列表以查看特定信息。
 
 +
 
@@ -37,8 +51,10 @@ NOTE: 对于高级数据保护附加服务、将显示一个附加列、指示�
 
 
 
-image:aiq-ks-sysdtls.png["卷和对象选项卡()"]
+image:volume-details.png["卷详细信息选项卡"]
 
+--
+====
 
 
 == 查看StorageGRID节点和使用情况
@@ -65,4 +81,5 @@ image:sg-link-2.png["StorageGRID对话框"]
 * link:../integrations/sla-details-tab.html["SLA详细信息"]
 * link:../integrations/capacity-trend-tab.html["容量趋势"]
 * link:../integrations/performance-tab.html["性能"]
+* link:../integrations/assets-tab.html["资产"]
 

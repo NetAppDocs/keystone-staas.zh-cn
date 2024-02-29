@@ -84,4 +84,5 @@ image:perf-log-usd.png["逻辑已用容量图"]
 * link:../integrations/sla-details-tab.html["SLA详细信息"]
 * link:../integrations/capacity-trend-tab.html["容量趋势"]
 * link:../integrations/volumes-objects-tab.html["卷和对象()"]
+* link:../integrations/assets-tab.html["资产"]
 

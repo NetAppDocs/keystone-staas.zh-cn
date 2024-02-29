@@ -37,4 +37,5 @@ TIP: 。 image:icon-info.png["信息图标"] 每个列旁边的图标提供有�
 * link:../integrations/capacity-trend-tab.html["容量趋势"]
 * link:../integrations/volumes-objects-tab.html["卷和对象()"]
 * link:../integrations/performance-tab.html["性能"]
+* link:../integrations/assets-tab.html["资产选项卡"]
 

@@ -14,9 +14,11 @@ summary: 在Linux系统上安装Keystone收集器的前提条件
 
 
 [role="lead"]
-在Linux系统上安装Keystone收集器需要一些配置。
+使用所需软件准备Linux系统可确保Keystone收集器的精确安装和数据收集。
 
-.Linux服务器的前提条件：
+确保Linux和Keystone收集器服务器VM具有这些配置。
+
+.Linux服务器：
 * 操作系统：CentOS 7或Red Hat Enterprise Linux 8.6或更高版本
 * 首字母缩略语时间同步
 * 访问标准Linux软件存储库
@@ -30,7 +32,7 @@ summary: 在Linux系统上安装Keystone收集器的前提条件
 * Python 3 (3.6.8到3.9.13)
 
 
-.Keystone收集器服务器VM的前提条件：
+.Keystone收集器服务器VM：
 * 核心：2个CPU
 * RAM：4 GB RAM
 * 磁盘空间：50 GB vDisk

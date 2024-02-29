@@ -27,7 +27,7 @@ sidebar:
     entries:
     - title: 什么是Keystone收集器
       url: "/installation/installation-overview.html"
-    - title: 准备系统以安装Keystone收集器
+    - title: 准备系统
       entries:
       - title: VMware vSphere 要求
         url: "/installation/vapp-prereqs.html"
@@ -73,6 +73,8 @@ sidebar:
         url: "/integrations/volumes-objects-tab.html"
       - title: 性能选项卡
         url: "/integrations/performance-tab.html"
+      - title: 资产选项卡
+        url: "/integrations/assets-tab.html"
     - title: 从BlueXP管理Keystone订阅
       url: "/integrations/keystone-cm.html"
   - title: 了解Keystone

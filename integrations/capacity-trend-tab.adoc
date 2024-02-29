@@ -137,4 +137,5 @@ image:adp-mir.png["MCC镜像底座"]
 * link:../integrations/sla-details-tab.html["SLA详细信息"]
 * link:../integrations/volumes-objects-tab.html["卷和对象()"]
 * link:../integrations/performance-tab.html["性能"]
+* link:../integrations/assets-tab.html["资产"]
 

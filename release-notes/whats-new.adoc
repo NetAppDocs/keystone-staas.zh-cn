@@ -18,9 +18,39 @@ NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能
 
 
 
+== 2024年2月29日的新增功能和增强功能
+
+此版本的Active IQ数字顾问(也称为数字顾问)信息板和*Keystone订阅*屏幕上进行了多项增强：
+
+
+
+=== 新增了"Assets"(资产)选项卡
+
+Keystone订阅*屏幕现在包括*Assets*选项卡。此新选项卡可根据您的订阅提供集群级别的信息。有关详细信息，请参见 link:../integrations/assets-tab.html["资产选项卡"^]。
+
+
+
+=== 改进了卷和对象选项卡
+
+为使ONTAP系统卷更加清晰，在*Volumes*选项卡中添加了两个新的选项卡按钮：*卷摘要*和*卷详细信息*。"*卷摘要*"选项卡提供与您订阅的服务级别关联的卷的总数，包括其AQoS合规状态和容量信息。“*卷详细信息*”选项卡列出了所有卷及其具体信息。有关详细信息，请参见 link:../integrations/volumes-objects-tab.html["卷和对象选项卡()"^]。
+
+
+
+=== 增强了Digital Advisor的搜索体验
+
+现在，*Digital Advisor屏幕上的搜索参数包括Keystone订阅号码和为Keystone订阅创建的监视列表。您可以输入订阅编号或监视列表名称的前三个字符。有关详细信息，请参见 link:../integrations/keystone-aiq.html["在Active IQ数字顾问上查看Keystone信息板"^]。
+
+
+
+=== 查看消耗数据的时间戳
+
+您可以在*Keystone订阅*小工具的旧信息板上查看消耗数据的时间戳(UTC)。
+
+
+
 == 2024年2月13日的新增功能和增强功能
 
-Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕上进行了以下更改。
+Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕进行了以下增强。
 
 
 
@@ -34,7 +64,7 @@ Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕上进行�
 
 了解此版本中的新增功能。
 
-Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕上进行了以下更改。
+Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕具有以下增强功能。
 
 
 

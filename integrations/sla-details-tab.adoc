@@ -56,4 +56,5 @@ image:sla-sustainability.png["列出可持续性详细信息的SLA详细信息�
 * link:../integrations/capacity-trend-tab.html["容量趋势"]
 * link:../integrations/volumes-objects-tab.html["卷和对象()"]
 * link:../integrations/performance-tab.html["性能"]
+* link:../integrations/assets-tab.html["资产"]
 

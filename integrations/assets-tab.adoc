@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: integrations/assets-tab.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab 
+summary: Keystone订阅报告和图形 
+---
+= 资产选项卡
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用*资产*选项卡收集有关Keystone订阅所管理的集群和节点的观点。
+
+Active IQ数字顾问(数字顾问)提供有关部署的全面清单级信息。另一方面、Keystone信息板的*资产*选项卡会根据您的订阅累积集群级别的信息、并将其隔离并提供准确级别的详细信息。
+
+.步骤
+. 单击*常规> Keystone订阅>资产*。
+. 选择要查看其集群的订阅编号。
+
+
+您将看到集群详细信息、并按存储效率设置、平台类型和容量详细信息进行细分。单击其中一个集群将转到"Digital Advisor "屏幕上的*集群*小工具、从中可以获取该集群的追加信息。
+
+image:assets-tab.png["资产选项卡"]
+
+* 相关信息 *
+
+* link:../integrations/aiq-keystone-details.html["使用Keystone信息板和报告"]
+* link:../integrations/subscriptions-tab.html["订阅"]
+* link:../integrations/current-usage-tab.html["当前使用情况"]
+* link:../integrations/sla-details-tab.html["SLA详细信息"]
+* link:../integrations/volumes-objects-tab.html["卷和对象()"]
+* link:../integrations/capacity-trend-tab.html["容量趋势"]
+* link:../integrations/performance-tab.html["性能"]
+

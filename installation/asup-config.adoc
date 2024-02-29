@@ -14,9 +14,9 @@ summary: 用于为Keystone配置AutoSupport的操作步骤
 
 
 [role="lead"]
-使用AutoSupport遥测机制时、Keystone服务会根据AutoSupport遥测数据执行使用情况计量。要获得所需的粒度级别、您应将AutoSupport配置为在ONTAP集群发送的每日支持包中加入Keystone数据。
+使用AutoSupport遥测机制时、Keystone会根据AutoSupport遥测数据计算使用量。要获得所需的粒度级别、您应将AutoSupport配置为在ONTAP集群发送的每日支持包中加入Keystone数据。
 
-.开始之前
+.关于此任务
 在将AutoSupport配置为包含Keystone数据之前、应注意以下事项。
 
 * 您可以使用ONTAP命令行界面编辑AutoSupport遥测选项。有关管理AutoSupport服务和系统(集群)管理员角色的信息、请参见 https://docs.netapp.com/us-en/ontap/system-admin/manage-autosupport-concept.html["管理 AutoSupport 概述"^] 和 https://docs.netapp.com/us-en/ontap/system-admin/cluster-svm-administrators-concept.html["集群和 SVM 管理员"^]。

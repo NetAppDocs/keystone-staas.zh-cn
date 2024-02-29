@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: release-notes/known-issues.html 
 keywords: netapp, keystone, release notes, known issues 
-summary: NetApp 服务引擎中的已知问题 
+summary: Keystone STaaS中的已知问题 
 ---
-= NetApp 服务引擎中的已知问题
+= Keystone STaaS中的已知问题
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,9 @@ summary: NetApp 服务引擎中的已知问题
 
 
 [role="lead"]
-NetApp Keystone STaaS中报告了以下已知问题。在配置或使用由Keystone订阅管理的存储时、您可能会遇到这些问题。
+已知问题用于确定可能会妨碍您有效使用Keystone订阅服务的问题。
+
+NetApp Keystone STaaS中报告了以下已知问题。
 
 [cols="3*"]
 |===
@@ -22,19 +24,28 @@ NetApp Keystone STaaS中报告了以下已知问题。在配置或使用由Keyst
 
 
  a| 
-为镜像卷派生的服务级别不正确。
+在*卷*选项卡中、非合规性AQoS卷的数量偶尔不匹配。
  a| 
-如果在分层和对象存储的速率计划均适用的环境中同时启用了MetroCluster和FabricPool、则为镜像卷(成分卷和FabricPool卷)派生的服务级别可能不正确。
+如果为只满足一个服务级别的AQoS合规性的卷分配了两个服务级别，则“卷摘要”选项卡和“卷详细信息”选项卡上列出的AQoS非合规卷数可能会有所不同。
  a| 
 无
 
 
 
  a| 
-*订阅*选项卡中部分可见的链接和图标。
+未为AutoSupport订阅填充*Assets*选项卡。
  a| 
-一些链接和图标(例如指向*当前使用情况*选项卡的链接和某些列的工具提示)部分可见。
+如果使用AutoSupport遥测功能收集订阅号码的Keystone数据，则不会在*Assets*选项卡中检索任何信息。
  a| 
-不需要临时解决策。这些链路按预期工作。
+无
+
+
+
+ a| 
+工具提示外观不正确。
+ a| 
+*当前突发*索引图标的工具提示在*容量趋势*选项卡中显示不正确。
+ a| 
+请参阅正确的工具提示文本"_the ount of burst Capacity Currently Consumed.请注意、这适用于当前计费期间、而不是选定的日期范围。_"
 
 |===

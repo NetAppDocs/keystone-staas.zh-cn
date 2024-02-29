@@ -16,19 +16,19 @@ summary: Keystone和Digital Advisor
 [role="lead"]
 如果您订阅了NetApp Keystone STaaS服务、则可以在Active IQ数字顾问(也称为数字顾问)信息板的* Keystone订阅*小工具上大致了解您的订阅情况。
 
-您可以通过按客户名称或包含多个客户的监视列表名称搜索Keystone订阅详细信息。有关如何按监视列表搜索Keystone STaaS订阅的信息、请参见 link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["使用Keystone监视列表进行搜索"]。
+您可以通过输入客户或监视列表名称的前三个字符或Keystone订阅编号来搜索Keystone订阅。有关如何按监视列表搜索Keystone STaaS订阅的信息、请参见 link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["使用Keystone监视列表进行搜索"]。
 
 Digital Advisor提供了一个统一的信息板，可通过*切换到旧/新信息板*按钮深入了解不同级别的订阅数据和使用情况信息。
 
 .默认(旧)信息板
-您可以根据订阅的服务级别查看客户名称和订阅编号、帐户名称、订阅的开始和结束日期以及容量使用情况图。
+您可以根据订阅的服务级别查看客户名称和订阅编号、帐户名称、订阅的开始和结束日期以及容量使用情况图。您可以查看消耗数据的收集时间戳(UTC时间)。
 
 image:old-db.png["旧信息板"]
 
 .备选(新)信息板
 您可以查看按订阅显示的容量使用情况的详细信息、以及需要立即引起关注或采取措施的警告和警报。根据您的订阅和使用状态、此信息会有选择地显示。您可以查看以下信息：
 
-* 容量使用情况、例如：
+* *容量使用情况*：使用情况数据、例如：
 +
 ** 不使用。
 ** 消耗量超过承诺容量的80%。
@@ -36,8 +36,8 @@ image:old-db.png["旧信息板"]
 ** 消耗量超过突发容量。
 
 
-* 服务级别协议：如果至少有一个订阅与NetApp签订了有效的可持续性服务级别协议(SLA)、则会显示此状态。此状态指示订阅是否符合SLA中定义的可持续性标准。如果您的订阅符合SLA标准、您可以看到状态为_All Ok_。
-* 如果适用、则会显示其他警告。
+* *服务级别协议*：如果您至少有一个订阅与NetApp签订了有效的可持续性服务级别协议(SLA)、则会显示此状态。此状态指示订阅是否符合SLA中定义的可持续性标准。如果您的订阅符合SLA标准、您可以看到状态为_All Ok_。
+* *警报*：您可以看到适用于您的各种情形的警报。
 +
 ** *即将过期*：如果您的订阅在90天内过期。
 ** *关键硬件升级*：如果任何关键硬件升级正在等待处理。
@@ -58,21 +58,13 @@ image:new-db.png["新信息板"]
 
 
 
-== 使用Keystone监视列表进行搜索
+== 按Keystone监视列表搜索
 
 监视列表是Active IQ数字顾问(数字顾问)的一项功能。有关信息，请参见 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["了解监视列表"^]。有关创建监视列表的信息、请参见 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["创建监视列表"^]。
 
-Keystone STaaS支持创建监视列表并按监视列表进行搜索、以查看多个客户的订阅详细信息。请按照以下步骤为Keystone客户创建监视列表：
-
-. 在*创建监视列表*屏幕上、提供Keystone监视列表的名称。
-. 在*添加系统依据*字段中选择*类别*。默认情况下，在*Choose Category (选择类别)*字段中选择了*Customer*。
-. 按客户名称搜索所需客户并添加。您只能添加有权查看其详细信息的客户。
-. 单击 * 创建监视列表 * 。Digital Advisor屏幕将显示新监视列表的数据。
+对于Keystone STaaS、您可以为客户或订阅编号创建监视列表。您可以在Digital Advisor屏幕上按监视列表名称进行搜索。按监视列表搜索时，您可以在*Keystone订阅*小工具的*订阅*下拉列表中查看客户及其订阅。
 
 
-在Digital Advisor屏幕上按监视列表进行搜索时、您可以在*Keystone订阅*小工具的*订阅*下拉列表中查看客户及其订阅。
-
-
-TIP: 如果正在*Keystone订阅*小工具上查看_new_信息板，请单击*切换到旧信息板*以查看列表。
+NOTE: 按监视列表搜索将检索旧信息板上的订阅列表。如果监视列表包含订阅编号、则Digital Advisor信息板上仅会显示* Keystone订阅*小工具。
 
 image:watchlist.png["监视列表屏幕"]
