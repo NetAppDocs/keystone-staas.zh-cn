@@ -44,15 +44,16 @@ NOTE: Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位
 * link:../integrations/capacity-trend-tab.html["容量趋势"]
 * link:../integrations/volumes-objects-tab.html["卷和对象()"]
 * link:../integrations/performance-tab.html["性能"]
+* link:../integrations/assets-tab.html["资产"]
 
 
 
 
 == 生成报告
 
-通过单击下载按钮、您可以从每个选项卡生成并查看有关订阅详细信息、某个时间范围的历史使用情况数据以及卷详细信息的报告： image:download-icon.png["报告下载图标"]
+您可以为Keystone数据生成并查看报告。通过*Keystone订阅*页面上的每个选项卡，您可以单击下载按钮生成有关订阅、历史使用情况和突发使用情况、性能、资产以及卷和对象的报告： image:download-icon.png["报告下载图标"]
 
-详细信息以CSV格式生成、您可以保存这些详细信息以供将来使用。
+这些详细信息以CSV格式生成、您可以保存这些信息以供将来使用和比较。
 
 “*容量趋势”选项卡的示例报告，其中转换了图形数据：
 
