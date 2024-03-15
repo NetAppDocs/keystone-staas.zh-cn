@@ -24,18 +24,18 @@ NetApp Keystone STaaS中报告了以下已知问题。
 
 
  a| 
-在*卷*选项卡中、非合规性AQoS卷的数量偶尔不匹配。
+AutoSupport订阅不提供有关AQoS不合规卷和MetroCluster合作伙伴的信息。
  a| 
-如果为只满足一个服务级别的AQoS合规性的卷分配了两个服务级别，则“卷摘要”选项卡和“卷详细信息”选项卡上列出的AQoS非合规卷数可能会有所不同。
+如果使用AutoSupport遥测来收集Keystone数据，则如果Keystone数据在24小时内不存在，则“*卷摘要”和“当前使用情况”选项卡上列出的AQoS不兼容卷计数以及有关MetroCluster合作伙伴的信息将不可用。
  a| 
 无
 
 
 
  a| 
-未为AutoSupport订阅填充*Assets*选项卡。
+在*卷*选项卡中、非合规性AQoS卷的数量偶尔不匹配。
  a| 
-如果使用AutoSupport遥测功能收集订阅号码的Keystone数据，则不会在*Assets*选项卡中检索任何信息。
+如果为只满足一个服务级别的AQoS合规性的卷分配了两个服务级别，则“卷摘要”选项卡和“卷详细信息”选项卡上列出的AQoS非合规卷数可能会有所不同。
  a| 
 无
 

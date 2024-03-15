@@ -22,6 +22,15 @@ summary: Keystone STaaS的不同版本中已修复的问题
 
 
  a| 
+AutoSupport订阅的*Assets*选项卡上没有可用信息。
+ a| 
+已修复
+ a| 
+2024年3月14日
+
+
+
+ a| 
 如果在分层和对象存储的速率计划均适用的环境中同时启用了MetroCluster和FabricPool、则可能会错误地为镜像卷(成分卷和FabricPool卷)派生服务级别。
  a| 
 已为镜像卷应用正确的服务级别。
