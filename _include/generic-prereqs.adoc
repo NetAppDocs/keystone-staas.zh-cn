@@ -196,19 +196,4 @@ https://support.netapp.com[]
  a| 
 NetApp总部提供计费信息和AutoSupport 交付
 
-
-
- a| 
-http://mirror.centos.org[]
-http://mirrorlist.centos.org[]
- a| 
-Keystone收集器的操作系统更新(仅限OVA部署)
-
-
-
- a| 
-https://repo.mysql.com[]
- a| 
-下载并更新MySQL依赖项(仅适用于Linux部署)
-
 |===

@@ -40,7 +40,6 @@ NOTE: Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位
 
 * link:../integrations/subscriptions-tab.html["订阅"]
 * link:../integrations/current-usage-tab.html["当前使用情况"]
-* link:../integrations/sla-details-tab.html["SLA详细信息"]
 * link:../integrations/capacity-trend-tab.html["容量趋势"]
 * link:../integrations/volumes-objects-tab.html["卷和对象()"]
 * link:../integrations/performance-tab.html["性能"]

@@ -22,6 +22,33 @@ summary: Keystone STaaS的不同版本中已修复的问题
 
 
  a| 
+*Capacity Try*选项卡中的*Current Burst索引图标的工具提示文本不正确。
+ a| 
+显示正确的工具提示文本"_the ount of burst Capacity Currently Consumed.请注意、这适用于当前计费期间、而不是选定的日期范围。_"
+ a| 
+2024年3月28日
+
+
+
+ a| 
+如果Keystone数据在24小时内不存在、则AutoSupport订阅无法获得有关AQoS不合规卷和MetroCluster合作伙伴的信息。
+ a| 
+已修复
+ a| 
+2024年3月28日
+
+
+
+ a| 
+如果为仅满足一个服务级别的AQoS合规性的卷分配了两个服务级别，则"*卷摘要*"和"*卷详细信息*"选项卡上列出的AQoS不符合要求的卷数偶尔会不匹配。
+ a| 
+已修复
+ a| 
+2024年3月28日
+
+
+
+ a| 
 AutoSupport订阅的*Assets*选项卡上没有可用信息。
  a| 
 已修复

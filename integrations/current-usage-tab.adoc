@@ -33,7 +33,6 @@ TIP: 。 image:icon-info.png["信息图标"] 每个列旁边的图标提供有�
 
 * link:../integrations/aiq-keystone-details.html["使用Keystone信息板和报告"]
 * link:../integrations/subscriptions-tab.html["订阅"]
-* link:../integrations/sla-details-tab.html["SLA详细信息"]
 * link:../integrations/capacity-trend-tab.html["容量趋势"]
 * link:../integrations/volumes-objects-tab.html["卷和对象()"]
 * link:../integrations/performance-tab.html["性能"]
