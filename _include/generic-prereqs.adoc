@@ -58,7 +58,7 @@ Keystone收集器(通用)
  a| 
 Internet (根据后面提供的URL要求)
  a| 
-HTTP ， HTTPS
+HTTPS
  a| 
 TCP 80、TCP 443
  a| 
@@ -133,7 +133,7 @@ Keystone收集器(通用)
  a| 
 客户监控系统
  a| 
-HTTP
+HTTPS
  a| 
 TCP 777
  a| 

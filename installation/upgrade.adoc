@@ -24,7 +24,10 @@ summary: 升级Keystone收集器
 image:upgrade-1.png["TUI屏幕"]
 
 +
-或者、也可以运行以下命令升级版本：
+或者、也可以运行以下命令来升级版本：
+
++
+对于CentOS：
 
 +
 [listing]
@@ -34,13 +37,32 @@ sudo yum clean metadata && sudo yum install keystone-collector
 +
 image:upgrade-2.png["TUI屏幕"]
 
++
+对于Debian：
+
++
+[listing]
+----
+sudo apt-get update && sudo apt-get upgrade keystone-collector
+----
 . 重新启动Keystone收集器管理TUI、您可以在主屏幕的左上角看到最新版本。
 +
-或者、也可以运行此命令查看最新版本：
+或者、也可以运行以下命令来查看最新版本：
+
++
+对于CentOS：
 
 +
 [listing]
 ----
 rpm -q keystone-collector
+----
++
+对于Debian：
+
++
+[listing]
+----
+dpkg -l | grep keystone-collector
 ----
 

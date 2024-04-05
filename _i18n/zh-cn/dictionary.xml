@@ -564,7 +564,6 @@
   <block id="5f76d762520637f1eb1b8dd5e4b71129" category="paragraph">TCP 443</block>
   <block id="e89ab59baea830bd940c300886c50efe" category="paragraph">必填</block>
   <block id="8e77c75fd2b5c8f6c41f3c1b738d2a22" category="paragraph">Internet (根据后面提供的URL要求)</block>
-  <block id="1de3382e8d585a7e028aaf322ae1a2e1" category="paragraph">HTTP ， HTTPS</block>
   <block id="77af2ba0b86f594a268203e05693cb8f" category="paragraph">TCP 80、TCP 443</block>
   <block id="882da07ddabac1aa28b5f358bcbeb2ce" category="paragraph">必填(Internet连接)</block>
   <block id="01633331ef3bca3e96b0dfd60ceb54bd" category="paragraph">Keystone收集器软件、操作系统更新和指标上传</block>
@@ -594,7 +593,6 @@
   <block id="9bb201387a3fc98daabac0d0184d67b2" category="paragraph">TCP 3306</block>
   <block id="1cdcb6b512bcad3d3f44e441ef4b8b27" category="paragraph">Keystone收集器的性能指标集合</block>
   <block id="9dcb5a3c0168fd793b27b3a0ad251e42" category="paragraph">客户监控系统</block>
-  <block id="293c9ea246ff9985dc6f62a650f78986" category="paragraph">HTTP</block>
   <block id="763598941dbbbfc084a41d50118d7cf0" category="paragraph">TCP 777</block>
   <block id="6ef2c9b331690e63d11b8024f8e69408" category="paragraph">Keystone收集器运行状况报告</block>
   <block id="4e38d92cc04c51157b68c55909b859b7" category="section-title">URL访问</block>
@@ -606,9 +604,6 @@
   <block id="fbf8359989576f0800cb2da4a25f4be1" category="summary">在VMware vSphere系统上安装Keystone收集器的前提条件</block>
   <block id="2f0d22e6971fda1cbc3411961fec8360" category="doc">虚拟基础架构要求</block>
   <block id="080838bb01c5d3b3c97a54a92d98023d" category="list-text">操作系统：VMware vCenter Server和ESXi 6.5或更高版本</block>
-  <block id="a6074a8dda65f87c74db6e5b6a444683" category="list-text">核心：4个CPU</block>
-  <block id="f003ca1f65b35534eb0dad8c4f388f6a" category="list-text">RAM：12 GB RAM</block>
-  <block id="12bd6e40a7bc94d413c13b8520e74365" category="list-text">磁盘空间：200 GB vDisk</block>
   <block id="b0450b259fdefd76bfc3006ccd12c375" category="summary">在VMware系统上安装Keystone收集器</block>
   <block id="a1c9c4a1979d4de63c959aa0eb8db228" category="doc">在VMware vSphere系统上部署Keystone收集器</block>
   <block id="5636c5e292ad15c979ccdf35d4ddd63f" category="paragraph">在VMware vSphere系统上部署Keystone收集器包括下载OVA模板、使用*部署OVF模板*向导部署此模板、验证证书的完整性以及验证虚拟机是否已准备就绪。</block>
@@ -907,9 +902,7 @@
   <block id="303598db14cdac7b8531356d3fa6ae67" category="doc">手动升级Keystone收集器</block>
   <block id="eb5316849956503093c848cdd2e2189f" category="paragraph">默认情况下、Keystone收集器中的自动更新功能处于启用状态、该功能会在每个新版本中自动升级Keystone收集器软件。但是、您可以禁用此功能并手动升级软件。</block>
   <block id="c5bc18b9ae708308f165d213528edb66" category="list-text">在维护屏幕上、选择*立即更新收集器*选项。</block>
-  <block id="f8bc55f7c7f782e0fdeced65037abf84" category="paragraph">或者、也可以运行以下命令升级版本：</block>
   <block id="b31f1ebf783dc22abf4699b042b9b3db" category="list-text">重新启动Keystone收集器管理TUI、您可以在主屏幕的左上角看到最新版本。</block>
-  <block id="bb05cc2f27b372eeefcaf8c9d31c4fba" category="paragraph">或者、也可以运行此命令查看最新版本：</block>
   <block id="26ff0e396ade6fe360b35528d3afe577" category="paragraph">Keystone STaaS系统中的数据流经Keystone收集器以及相关的监控系统AIOPS解决方案 工具。</block>
   <block id="9e2f9cd4a9ee8b88a18988f62eb67dd7" category="paragraph">Keystone收集器会向存储控制器启动REST API调用、并定期获取控制器的使用情况详细信息、如本流程图所示：</block>
   <block id="144be97e21d1c48cc88d9c1079fd7242" category="list-text">Active IQ 云门户接受此连接并与NetApp收集器建立通道。</block>
@@ -1555,4 +1548,11 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="2edc64c57ca29e2f950fd753874bafbc" category="list-text">通过*性能*选项卡查看ONTAP卷的性能指标。</block>
   <block id="7a7b2bda8aa958fd2f922e2acb85ca1e" category="paragraph">所有这些内容均基于选定订阅日期显示数据。</block>
   <block id="f37be92ace88534a02480f8f04d48882" category="paragraph">未发现已知问题。</block>
+  <block id="5f2b8b9897b51974b3e829ddd4511e8e" category="paragraph">或者、也可以运行以下命令来升级版本：</block>
+  <block id="014327995266184e82832bad8c943216" category="paragraph">对于CentOS：</block>
+  <block id="21a26c88c032eccbe4aba03b7481511e" category="paragraph">对于Debian：</block>
+  <block id="6c6acbd25509a9e20307e1496a9b9db2" category="paragraph">或者、也可以运行以下命令来查看最新版本：</block>
+  <block id="0ed064e2cd201442fba4d1be4a8ee19c" category="list-text">核心：1个CPU</block>
+  <block id="2e82715d47e898df71b0f37522311a05" category="list-text">RAM：2 GB RAM</block>
+  <block id="54c62dd9045f6805a09d9d86b629862d" category="list-text">磁盘空间：20 GB vDisk</block>
 </blocks>
