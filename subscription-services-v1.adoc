@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: subscription-services-v1.html 
+keywords: Keystone Flex Subscriptions, kfs v1, keystone legacy, Keystone subscription services version 1 
+---
+= Keystone订阅服务|版本1
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS之前是Keystone订阅服务(以前称为Keystone Flex订阅服务)。
+
+虽然这两种服务在中的导航方式相似 link:./integrations/aiq-keystone-details.html["Keystone信息板"^]在成分卷服务级别、服务项目和计费原则方面、Keystone订阅服务与Keystone STaaS不同。自2024年4月起、NetApp仅维护和发布Keystone STaaS的文档。如果您仍在使用Keystone订阅服务、请联系您的KSM以获得迁移到Keystone STaaS的支持。如果需要、您可以在此处访问Keystone订阅服务文档的PDF版本：
+
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide.pdf["英语"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ja-jp.pdf["Japanese:"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ko-kr.pdf["韩语"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-zh-cn.pdf["中文(简体)"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-zh-tw.pdf["中文(繁体)"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-de-de.pdf["德语"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-es-es.pdf["西班牙语"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-fr-fr.pdf["法语"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-it-it.pdf["意大利语"^]
+

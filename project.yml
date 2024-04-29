@@ -99,6 +99,8 @@ sidebar:
         url: "/concepts/nrnvc.html"
       - title: Keystone和Equinix
         url: "/concepts/equinix.html"
+    - title: Keystone订阅服务版本1
+      url: "/subscription-services-v1.html"
   - title: 有关服务级别的更多信息
     entries:
     - title: Quality of service

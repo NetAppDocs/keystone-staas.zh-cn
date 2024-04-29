@@ -56,8 +56,6 @@ indexpage:
       url: "/concepts/uscs.html"
   - title: 了解更多信息
     links:
-    - title: Keystone订阅版本1 (以前称为Keystone Flex订阅)
-      url: https://docs.netapp.com/us-en/keystone/
     - title: Active IQ Digital Advisor
       url: https://docs.netapp.com/us-en/active-iq/index.html
     - title: BlueXP
