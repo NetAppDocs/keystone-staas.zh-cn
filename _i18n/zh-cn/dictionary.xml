@@ -619,12 +619,8 @@
   <block id="8cd29cf88dddb3b6287a9351d1b4c067" category="list-text">在_Step 7 Customize templ板_上、指定管理员用户帐户的初始网络地址和密码。</block>
   <block id="4ff6b73315fa76bc8171f5548ebb79ef" category="list-text">在*部署OVF模板*向导的_Step 8 Ready to Complete_上、查看配置并验证您是否已正确设置OVA部署的参数。</block>
   <block id="d5599cb082a40129e25bed4de770048b" category="paragraph">从模板部署VM并打开其电源后、打开与VM的SSH会话并使用临时管理员凭据登录以验证VM是否已做好配置准备。</block>
-  <block id="a2840fbbafc1435ffe70d4b579b45ac6" category="section-title">初始系统配置</block>
   <block id="a0416d96615fb872a7f19a13f6e245aa" category="admonition">完成部署后、您可以使用Keystone收集器管理终端用户界面(TUI)实用程序执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。</block>
-  <block id="25f96d2dea5d65fdf3a40639ee4d2baf" category="list-text">如果需要、请在TUI的*配置&gt;网络*部分中配置代理详细信息。</block>
   <block id="ea0dbfc6ab6c0af39db6e8b2db365d7f" category="list-text">在*配置&gt;系统*部分中配置系统主机名、位置和NTP服务器。</block>
-  <block id="b6b465ab63a0aae38b40c4f7c52e2ebe" category="list-text">更新*维护&gt;用户*部分中的管理员密码。</block>
-  <block id="6d001a04aa3a4da5de64981a8c657ad6" category="list-text">在*配置&gt;高级*部分中、将初始OVA配置标记为完成。</block>
   <block id="84f5023b640dd27c1674e40684ab2961" category="summary">在Linux系统上验证Keystone收集器</block>
   <block id="35aa404988b4754613fc18c25cec1e7f" category="doc">自动验证软件完整性</block>
   <block id="cf28efdbdaf364aa104021336a5f5cf4" category="paragraph">可以通过一个重复过程来验证Keystone软件的完整性。</block>
@@ -937,7 +933,6 @@
   <block id="305955a2ac717f15ce5b0f0a3abc280a" category="paragraph"><block ref="305955a2ac717f15ce5b0f0a3abc280a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3a1e055c606dddb7ffa7ea4aa739f762" category="list-text">在_Step 6_上、选择虚拟机要使用的目标网络。</block>
   <block id="77c3a99746e93de71f55722d8f5802d8" category="paragraph">在VMware vSphere系统上执行以下步骤、以便对通过OVA部署的Keystone收集器服务器进行初始配置：</block>
-  <block id="02b9a7808a83ccb6ba15cb4854eba098" category="list-text">打开与Keystone收集器服务器的SSH会话。登录后、TUI将显示。或者、您也可以通过运行手动启动TUI<block ref="a38cb024a2fa677a71e9a8148df3dbeb" prefix=" " category="inline-code"></block> CLI命令。</block>
   <block id="79e0703c840b981be16f9e1a40c5a0b4" category="inline-image-macro">收集器架构</block>
   <block id="009d77d3b79ee4c7df16ef0658dd3bc3" category="paragraph"><block ref="009d77d3b79ee4c7df16ef0658dd3bc3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="25c10b524de794226cf520c9a3dacc83" category="list-text">访问标准Linux软件存储库</block>
@@ -1090,10 +1085,7 @@
   <block id="bcc16de506d1dbb7779a3062decf2fa6" category="paragraph">默认情况下、这些子系统包含在每周AutoSupport捆绑包中、其中包含<block ref="c2f7a910dac56891bdc98acd8bf80faa" prefix=" " category="inline-code"></block> 是_dot-regular、和<block ref="155fe96c8db8042fed76defa0f5b6d97" prefix=" " category="inline-code"></block> Is _HA Group Notification (Weekly_log) NOTICE_。但是、您需要将其添加到每日捆绑包中、以便检索和报告Keystone使用情况数据。</block>
   <block id="0615b5bfa7b669de144331b512440192" category="inline-link">使用SSH访问集群</block>
   <block id="75637cd8fe530b3ca0a91d01f7a154b3" category="list-text">以系统管理员用户身份、使用SSH登录到Keystone ONTAP集群。有关信息，请参见<block ref="72c78e462556b03d46e2f3029d4a0613" category="inline-link-rx"></block>。</block>
-  <block id="d4139f82ccaf32f8e108d4cd48dc0801" category="inline-link">system node AutoSupport manifest show</block>
-  <block id="fcd234d37052b608416125513e6350d6" category="paragraph">有关此命令的详细信息，请参见<block ref="ebf3b588f9456f5d9eb4379234927367" category="inline-link-rx"></block>。</block>
   <block id="b25e1baa640468dcaf7b5bcd975ace0a" category="list-text">运行以下命令以修改每日日志内容：</block>
-  <block id="a7b3681fbca584aa4e58ecc74f068237" category="paragraph"><block ref="1835384cfbb7a783927d2d026c6446bc" prefix="" category="inline-code"></block></block>
   <block id="20c41bcd9366cdbd961d6554489ea863" category="inline-link">系统节点AutoSupport 触发修改</block>
   <block id="5f6d98c1ed4256fab45f6c20e637744e" category="paragraph">有关此命令的详细信息，请参见<block ref="700e80291e0b2dbcd3452a610925a1ef" category="inline-link-rx"></block>。</block>
   <block id="766bf6a1b0285febc0d67565c929ccb2" category="paragraph">以下各节介绍了受支持的存储类型、文件、块、对象和云服务的基本服务级别：</block>
@@ -1173,7 +1165,6 @@
   <block id="087c9dc5266982ef54ba80f023cbd793" category="list-text">按 Enter 键。返回到*Advanced*屏幕。</block>
   <block id="03a891b6d33a248fa861083fe4247d1c" category="inline-image-macro">用于CA自定义的TUI屏幕</block>
   <block id="8763d534a475bad985b63c246739efb2" category="paragraph"><block ref="8763d534a475bad985b63c246739efb2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="42b719750bcc67ec4565e4a291dd81b0" category="list-text">使用*维护&gt;更新系统*选项更新Keystone收集器。某些选定镜像可能不可用、系统详细信息会在重试几次后更新。</block>
   <block id="62da9737386f7b0511bd36a15644e898" category="paragraph">Keystone高级数据保护服务可以将数据同步镜像到二级站点。如果主站点发生灾难、二级站点可以接管、而不会丢失任何数据。此功能可利用两个站点之间的MetroCluster配置来启用数据保护。您只能对文件和块存储服务使用高级数据保护附加服务。作为此附加服务的一部分、<block ref="fb78d2349716eae6da0fd092c4f02857" prefix=" " category="inline-code"></block> 服务级别已分配给您的订阅。
 有关ONTAP MetroCluster 的信息、请参见 <block ref="80871b8782cc051e20935ca40e2a0650" category="inline-link-macro-rx"></block>。</block>
   <block id="0315debcd2143476e3ac1f5e6124081b" category="paragraph">由Equynox提供支持的Keystone主机代管(Co-Lo)服务与标准Keystone服务产品保持不变。</block>
@@ -1417,8 +1408,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="694ddc221b1ba079b86890f70c44cb11" category="section-title">2024年2月13日的新增功能和增强功能</block>
   <block id="0031be5085bbcd93406b2aa424a49c42" category="section-title">能够查看与主订阅关联的订阅</block>
   <block id="7a76691411d2b3f52e0613b9090e3000" category="paragraph">您的某些主要订阅可以具有链接的二级订阅。在这种情况下，主订阅号将继续显示在*订阅号*列中，而链接的订阅号将在*订阅*选项卡上的新列*链接订阅*中列出。只有当您有链接订阅时，*链接的订阅*列才对您可用，并且您可以看到有关这些订阅的信息消息。</block>
-  <block id="75c6f7540c7b06e4afb66c0e49e2b6eb" category="list-text">运行以下命令并验证现有子系统的现有配置：</block>
-  <block id="3ae087a778fc31353925828cff4f6c5e" category="paragraph"><block ref="8c5d13e75d7b6fef515d481823c7b360" prefix="" category="inline-code"></block></block>
   <block id="6986ced354a8932900d97fca40ed0a5b" category="summary">volume-objects-tab</block>
   <block id="80a766e7eebce2ca48e414230534ddb7" category="doc">卷和对象选项卡</block>
   <block id="7f54c89739f450385c8dcecb323dd15f" category="list-text">单击*常规&gt; Keystone订阅&gt;对象*。</block>
@@ -1577,4 +1566,10 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="0c3292833800a62d7f718700dbce3a67" category="list-text">与NRVC相关的额外成本按订阅服务(包括标准服务、高级数据保护和数据分层)每月总费用的百分比收取。</block>
   <block id="e5a6cc7fd3fb0ce58296055c4fa99a5d" category="admonition">提供了适用于NetApp Keystone STaaS服务级别的详细服务问题描述<block ref="d71be405d81c1e2747195607ed9eca90" category="inline-link-rx"></block>。</block>
   <block id="087e52621b1299752b891e4115749950" category="sidebar">Keystone订阅服务版本1</block>
+  <block id="899a771b5dc110dfc5fafd791b598948" category="section-title">初始系统配置</block>
+  <block id="2cc31eb816941afbd27aaf7e157c893c" category="list-text">打开与Keystone收集器服务器的SSH会话。连接后、系统将提示您更新管理员密码。根据需要完成管理员密码更新。</block>
+  <block id="9b511d4b9fae2194e94ea56697f90270" category="list-text">使用新密码登录以访问TUI。  登录后、TUI将显示。</block>
+  <block id="76a9fcc99866cc713d361014e5f04c71" category="paragraph">或者、您也可以通过运行手动启动它<block ref="a38cb024a2fa677a71e9a8148df3dbeb" prefix=" " category="inline-code"></block> CLI命令。</block>
+  <block id="c74d63e364ced8b98060b508c4df9160" category="list-text">如果需要，请在TUI的*配置&gt;网络部分*中配置代理详细信息。</block>
+  <block id="3901dacdf71718d8755295861e5a2509" category="list-text">使用*维护&gt;更新收集器*选项更新Keystone收集器。更新后、重新启动Keystone收集器管理TUI实用程序以应用所做的更改。</block>
 </blocks>
