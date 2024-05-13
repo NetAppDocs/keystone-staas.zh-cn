@@ -28,7 +28,7 @@ image:all-subs.png["\"订阅\"选项卡的图像"]
 
 TIP: 如果您已订阅高级数据保护附加服务、则可以单击订阅编号对应的工具提示、在MetroCluster设置中查看合作伙伴订阅的跟踪ID。要了解如何在MetroCluster配置中查看合作伙伴订阅的详细使用情况、请参阅 link:../integrations/capacity-trend-tab.html#reference-charts-for-advanced-data-protection["高级数据保护参考图表"]。
 
-* *使用类型*：您可能订阅了多个Keystone (版本1)或Keystone STaaS (版本2)订阅。对于这两种订阅类型、服务级别的费率计划规则可能会有所不同。通过查看此列中的值、您可以了解使用类型是按任一的已配置使用量还是逻辑使用量计费 `v1` 或 `v2`。有关Keystone订阅版本1的详细信息、请参见 https://docs.netapp.com/us-en/keystone/index.html["NetApp Keystone 文档"^]。
+* *使用类型*：您可能订阅了多个Keystone (版本1)或Keystone STaaS (版本2)订阅。对于这两种订阅类型、服务级别的费率计划规则可能会有所不同。通过查看此列中的值、您可以了解使用类型是否按任一的已配置、物理或逻辑使用量计费 `v1` 或 `v2`。有关Keystone订阅版本1的详细信息、请参见 https://docs.netapp.com/us-en/keystone/index.html["NetApp Keystone 文档"^]。
 * *Billing Period *：订阅的计费期限，如每月、每季度或每年。
 * *开始日期*：订阅的开始日期。
 * *结束日期*：订阅的结束日期。如果您有每月自动续订的按月计费订阅、您会看到 `Month-on-month` 而不是结束日期。根据此日期、您可能会看到订阅即将结束或附加了自动续订策略的通知。

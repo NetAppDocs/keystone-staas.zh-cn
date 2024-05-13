@@ -39,8 +39,7 @@ image:old-db.png["旧信息板"]
 * *警报*：您可以看到适用于您的各种情形的警报。
 +
 ** *即将过期*：如果您的订阅在90天内过期。
-** *关键硬件升级*：如果任何关键硬件升级正在等待处理。
-** *AQoS警告*：您的卷未分配AQoS策略。
+** *QoS警告*：您的卷未分配AQoS策略。
 +
 
 TIP: 单击*订阅*链接可在*订阅*选项卡中查看过滤的订阅列表。
@@ -49,7 +48,7 @@ TIP: 单击*订阅*链接可在*订阅*选项卡中查看过滤的订阅列表�
 
 
 
-image:new-db.png["新信息板"]
+image:new-db-2.png["新信息板"]
 
 有关Keystone的Digital Advisor信息板小工具的详细信息、请参见 https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Digital Advisor文档"^]。
 

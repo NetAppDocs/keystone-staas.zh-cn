@@ -49,9 +49,14 @@ image:volume-summary-1.png["卷摘要选项卡"]
 
 NOTE: 对于高级数据保护附加服务、将显示一个附加列、指示此卷在MetroCluster配置中是主卷还是镜像卷。您可以单击*复制节点序列*按钮来复制单个节点序列号。
 
++
+
+NOTE: 对于涵盖文件和对象服务级别的订阅，您可以单击*对象存储详细信息*按钮来查看对象存储详细信息。
+
++
+image:volume-details-2.png["卷详细信息选项卡"]
 
 
-image:volume-details-1.png["卷详细信息选项卡"]
 
 --
 ====
