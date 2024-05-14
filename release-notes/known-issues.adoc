@@ -16,4 +16,18 @@ summary: Keystone STaaS中的已知问题
 [role="lead"]
 已知问题用于确定可能会妨碍您有效使用Keystone订阅服务的问题。
 
-未发现已知问题。
+NetApp Keystone STaaS中报告了以下已知问题。
+
+[cols="3*"]
+|===
+| 已知问题描述 | Description | 临时解决策 
+
+
+ a| 
+CSV报告中Keystone数据显示不正确。
+ a| 
+如果CSV报告中的*Account Name*列是从*Capacity Try*选项卡生成的，则该列包含一个帐户名和一个逗号 `(,)`、Keystone数据在CSV报告中显示为放错位置。
+ a| 
+无
+
+|===

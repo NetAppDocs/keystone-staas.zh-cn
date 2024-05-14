@@ -1307,7 +1307,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="c58866f1ef5f53d12f483be3139c8b21" category="paragraph">在Active IQ数字顾问的*Keystone订阅*屏幕的选项卡上返回的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。有关详细信息，请参见 <block ref="fd9d2abed6b27ddb199966f81ac84d0e" category="inline-link-macro-rx"></block>。</block>
   <block id="ba72cb24d1620c10dda9d29d238cd62f" category="summary">Keystone STaaS的不同版本中已修复的问题</block>
   <block id="69464e68a5cdd0b54694ac92276fa1a3" category="doc">已修复的问题</block>
-  <block id="3e6913b831218e5028d3a4532f801a65" category="cell">问题描述</block>
   <block id="ad7fffc52967fac2195a87d71ddfefed" category="cell">修复之后</block>
   <block id="daacdb57878cbe5d9fa64d7c020a2e9d" category="cell">已在版本中修复</block>
   <block id="ab8fe64a75f26e766fbdddeb24ad2b52" category="paragraph">突发消耗记录的使用情况指示符显示为琥珀色。</block>
@@ -1501,7 +1500,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="f9fb20285d9c1550cfd8af36cedeebff" category="list-text">*容量趋势*选项卡中的消耗量和累积突发使用量数据，</block>
   <block id="2edc64c57ca29e2f950fd753874bafbc" category="list-text">通过*性能*选项卡查看ONTAP卷的性能指标。</block>
   <block id="7a7b2bda8aa958fd2f922e2acb85ca1e" category="paragraph">所有这些内容均基于选定订阅日期显示数据。</block>
-  <block id="f37be92ace88534a02480f8f04d48882" category="paragraph">未发现已知问题。</block>
   <block id="5f2b8b9897b51974b3e829ddd4511e8e" category="paragraph">或者、也可以运行以下命令来升级版本：</block>
   <block id="014327995266184e82832bad8c943216" category="paragraph">对于CentOS：</block>
   <block id="21a26c88c032eccbe4aba03b7481511e" category="paragraph">对于Debian：</block>
@@ -1568,4 +1566,11 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="001d654c5d010b25a953ace0dce0f14d" category="list-text">修改日志内容。</block>
   <block id="a35e5b3497716ca18010e0be265afb3b" category="list-text">运行以下命令以修改每日日志内容：</block>
   <block id="9060a638913c522309cdbab6919eef2b" category="list-text">运行以下命令以修改每周日志内容：</block>
+  <block id="f7168a4acbbbaa603715b2a0aeb4cea5" category="paragraph">NetApp Keystone STaaS中报告了以下已知问题。</block>
+  <block id="e83464ce8bd634efb1f099c956ec64a8" category="cell">已知问题描述</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
+  <block id="7aebfa1e2291377e040de92d7f7f335f" category="cell">临时解决策</block>
+  <block id="05890055e47d7356b21b212f915e3d3b" category="paragraph">CSV报告中Keystone数据显示不正确。</block>
+  <block id="cf57a91fb76a6fe323d7bc94294753a2" category="paragraph">如果CSV报告中的*Account Name*列是从*Capacity Try*选项卡生成的，则该列包含一个帐户名和一个逗号<block ref="e1266d71c305ae3767d9d953acaf0aae" prefix=" " category="inline-code"></block>、Keystone数据在CSV报告中显示为放错位置。</block>
+  <block id="7186d4f0f71f9b706a05940b8abcacd0" category="cell">问题描述</block>
 </blocks>
