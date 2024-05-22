@@ -320,9 +320,6 @@
   <block id="eafe2da4c3641f4864397b0d97fff137" category="doc">Keystone文档</block>
   <block id="e5471403f1b2eefb0fe47b6193a72bbc" category="sidebar">Keystone文档</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
-  <block id="4c9a4fbc49b946c974f43f9b95467093" category="sidebar">了解Keystone</block>
-  <block id="8c2dbe4be9f9daf82f71c41e1cd8f1e1" category="sidebar">附加服务</block>
-  <block id="5acf3eaacab2f897759e5e1e27667847" category="sidebar">有关服务级别的更多信息</block>
   <block id="8bc14f0cb78851f59e85c1d447c2c99f" category="sidebar">Quality of service</block>
   <block id="780c462e85ba4399a5d42e88f69a15ca" category="sidebar">计费</block>
   <block id="c8c7fb7e022f78b915af0ad7300b7824" category="sidebar">合作伙伴和客户运营的环境</block>
@@ -640,9 +637,7 @@
   <block id="e1963f69cecc9ae42f0776dbde80b970" category="sidebar">VMware vSphere部署</block>
   <block id="1f331fee3a3f66a9a0cc8b4298329656" category="sidebar">Linux安装</block>
   <block id="5f263121a32bf1557841d7fe819ad1e8" category="sidebar">自动完整性验证</block>
-  <block id="7c4f193978ce4b287894738f7157bab0" category="sidebar">支持的存储容量</block>
   <block id="a84d47a9c10091a234dee7fdfbd4ae68" category="sidebar">指标和定义</block>
-  <block id="4e4be6640d3e6688fbc771ec3b218a39" category="sidebar">Keystone支持的存储</block>
   <block id="bf871fbeda66c457eaf1656d09ea34de" category="sidebar">Keystone中支持的服务</block>
   <block id="5b57c786a5a2f01f7f3d39a2f01fcd64" category="list-text"><block ref="5b57c786a5a2f01f7f3d39a2f01fcd64" category="inline-link-rx"></block></block>
   <block id="7653c2f7dacbc36a17ed707c1ae4abce" category="list-text"><block ref="7653c2f7dacbc36a17ed707c1ae4abce" category="inline-link-rx"></block></block>
@@ -1319,7 +1314,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="685a2d4e29e36911ce3e10342f33cd34" category="sidebar">Keystone STaaS的新增功能</block>
   <block id="95dc0391ce7b396d7dd5622284e8fc3e" category="sidebar">已知问题</block>
-  <block id="6a0617231ec31c63e7ed4938f21803d2" category="sidebar">查看消耗详细信息并生成报告</block>
   <block id="762ebffa1ca7f322e0038aec263c4c5e" category="sidebar">从BlueXP管理Keystone订阅</block>
   <block id="3269606fef80bba2d9e8f69108e0e4a6" category="sidebar">在Digital Advisor上查看您的使用情况</block>
   <block id="3149c3d9b5fcd4691d16b1b31ce2a5ed" category="sidebar">生成消耗报告</block>
@@ -1348,14 +1342,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="7141573db29c2af45d0b9d0159276c43" category="list-text"><block ref="7141573db29c2af45d0b9d0159276c43" category="inline-link-macro-rx"></block></block>
   <block id="d7e5ccf918d68bf60a6b52690444d5ea" category="list-text"><block ref="d7e5ccf918d68bf60a6b52690444d5ea" category="inline-link-macro-rx"></block></block>
   <block id="df7d31258a77cf6838aec404025cc8f0" category="list-text"><block ref="df7d31258a77cf6838aec404025cc8f0" category="inline-link-macro-rx"></block></block>
-  <block id="cb16f0d61d1b95d7ed2e3ddca87174cb" category="summary">Keystone中的附加服务</block>
-  <block id="a9d18fd494dd09ac109d0f41dd8200d6" category="paragraph">Keystone STaaS提供大量附加服务。您可以通过以下链接了解这些服务。您可以与KSM进行讨论、以评估和使用它们。</block>
-  <block id="a37b84ef7962958683b36fdd11870efe" category="list-text"><block ref="a37b84ef7962958683b36fdd11870efe" category="inline-link-macro-rx"></block></block>
-  <block id="a91680a6ffe7d115054b2a3a29590c88" category="list-text"><block ref="a91680a6ffe7d115054b2a3a29590c88" category="inline-link-macro-rx"></block></block>
-  <block id="507239d4f0e74cca132c8dcec4572685" category="inline-link-macro">U.S.公民支持</block>
-  <block id="bf1e0d5283510e73c95e48c522f105ac" category="list-text"><block ref="bf1e0d5283510e73c95e48c522f105ac" category="inline-link-macro-rx"></block></block>
-  <block id="15d6b82ce2a881c6c9b4c3896e1f4714" category="list-text"><block ref="15d6b82ce2a881c6c9b4c3896e1f4714" category="inline-link-macro-rx"></block></block>
-  <block id="caa6137168275fe348c2a04ff68b05bf" category="list-text"><block ref="caa6137168275fe348c2a04ff68b05bf" category="inline-link-macro-rx"></block></block>
   <block id="a2e2f97253342349ff9ef2b936b778d0" category="list-text"><block ref="a2e2f97253342349ff9ef2b936b778d0" category="inline-link-macro-rx"></block></block>
   <block id="9a951c3d80a9377bd47aaa657c36398a" category="list-text"><block ref="9a951c3d80a9377bd47aaa657c36398a" category="inline-link-macro-rx"></block></block>
   <block id="01d1ce60b1a3aef68f02db880ec50307" category="list-text"><block ref="01d1ce60b1a3aef68f02db880ec50307" category="inline-link-macro-rx"></block></block>
@@ -1372,7 +1358,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="038fa77b2d09a08187d251d11af66fec" category="section-title">特定费率计划的应计消费详细信息</block>
   <block id="e8eb002764288209a5c4ba14af40e3c1" category="paragraph">如果您的订阅包含已提交容量为_zero_的费率计划、则可以在*容量趋势*选项卡中查看累积消耗详细信息。选择“*开票应计消费*”选项后，您可以查看开票应计消费数据的月度图表。</block>
   <block id="c172354fb8ea09208116200c906a06f7" category="paragraph">Active IQ数字顾问(也称为数字顾问)中对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息、请参见 <block ref="b7d20955ed629544dc331da927df4d8e" category="inline-link-macro-rx"></block>。</block>
-  <block id="b35f87e6c022106392162120d7124d39" category="sidebar">查看Keystone信息板并管理订阅</block>
   <block id="58b8c716856200f705d08eebb54e18f2" category="paragraph">有关如何查看MetroCluster配置中的使用情况的信息、请参见 <block ref="dce2e2b996a813464c91ed5f90c2ee95" category="inline-link-macro-rx"></block>。</block>
   <block id="c85fec4626e8f76d3daa40fe4d78d085" category="paragraph">部署Keystone收集器和AIOPS解决方案 网关需要使用Storage Virtual Machine (Storage VM)。安装Keystone收集器的前提条件如下： <block ref="90d7b7caf953f72ddc1c63cc7891ca46" category="inline-link-macro-rx"></block>。其他要求将在部署期间共享。</block>
   <block id="694ddc221b1ba079b86890f70c44cb11" category="section-title">2024年2月13日的新增功能和增强功能</block>
@@ -1407,7 +1392,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e25aef7d73f188d691460fe7a81c1615" category="list-text">单击*常规&gt; Keystone订阅&gt;性能*。</block>
   <block id="b38469a0957abb9fcc179f471234aeb1" category="paragraph">以下链接提供了有关每个选项卡的详细信息：</block>
   <block id="0b580e09545eed5c13b43b700d66ec91" category="sidebar">NetApp Keystone是一项基于订阅的灵活按需购买服务、可为更喜欢运营支出而非資本支出或租赁的客户提供无缝的混合云体验。它可以减轻IT在管理资源和漫长采购周期方面的负担、从而加快实现价值的速度。浏览此库中的文档、详细了解ONTAP或StorageGRID环境中的NetApp Keystone STaaS产品。</block>
-  <block id="02444803498fb5ed3737e66f538618bf" category="sidebar">Keystone和Digital Advisor信息板</block>
   <block id="1c0f41481171759a2f8494a860a70f33" category="summary">Keystone STaaS中的已知问题</block>
   <block id="e3cdc936dac2c0ff066e39a4166c9208" category="doc">Keystone STaaS中的已知问题</block>
   <block id="b7539220d8497299938ec75ae391ea23" category="paragraph">已知问题用于确定可能会妨碍您有效使用Keystone订阅服务的问题。</block>
@@ -1457,7 +1441,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="2e39d86c2e5278dfaca0be9560d7f655" category="paragraph">要查看此选项卡，请从左侧导航窗格转到*常规&gt; Keystone订阅&gt;订阅*。您的所有订阅都会列出。</block>
   <block id="97825813aecf3fd0b76fd5af1d609182" category="inline-image-macro">一个很好的酒店</block>
   <block id="25dd6edff020c29e0a2583baf58ad0c8" category="paragraph">您可以通过单击"设置"图标来筛选所选内容 <block ref="c4c64623305772cdd7984286a7bda51b" category="inline-image-macro-rx" type="image"></block> 或单击*清除筛选器*按钮查看所有订阅。对于某些字段和列、您可能会看到追加信息有关数据的信息或警告图标以及工具提示。</block>
-  <block id="34df0a0c90fe719bb1d752f41652791b" category="paragraph">您可以通过输入客户或监视列表名称的前三个字符或Keystone订阅编号来搜索Keystone订阅。有关如何按监视列表搜索Keystone STaaS订阅的信息、请参见 <block ref="4cde7d0fd0a0facd634a3b8f00ac9a8e" category="inline-link-macro-rx"></block>。</block>
   <block id="8eed6aaca290f3e94450ad74ee4ec058" category="paragraph">您可以根据订阅的服务级别查看客户名称和订阅编号、帐户名称、订阅的开始和结束日期以及容量使用情况图。您可以查看消耗数据的收集时间戳(UTC时间)。</block>
   <block id="a9eee5d90e9374cafc7e77151fd75489" category="list-text">*容量使用情况*：使用情况数据、例如：</block>
   <block id="bdca3ca2afa1706094d192b0cd927373" category="list-text">*警报*：您可以看到适用于您的各种情形的警报。</block>
@@ -1573,4 +1556,36 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="05890055e47d7356b21b212f915e3d3b" category="paragraph">CSV报告中Keystone数据显示不正确。</block>
   <block id="cf57a91fb76a6fe323d7bc94294753a2" category="paragraph">如果CSV报告中的*Account Name*列是从*Capacity Try*选项卡生成的，则该列包含一个帐户名和一个逗号<block ref="e1266d71c305ae3767d9d953acaf0aae" prefix=" " category="inline-code"></block>、Keystone数据在CSV报告中显示为放错位置。</block>
   <block id="7186d4f0f71f9b706a05940b8abcacd0" category="cell">问题描述</block>
+  <block id="0242b80cbb6d235dc499fd8128673a7e" category="paragraph">您可以通过输入客户或监视列表名称的前三个字符或Keystone订阅编号来搜索Keystone订阅。有关如何按监视列表搜索Keystone STaaS订阅的信息、请参见 <block ref="2fe9d6682f1bd534173abd0da0d980f6" category="inline-link-macro-rx"></block>。</block>
+  <block id="c8cfdcd3f2e7ef01cbd8180e33c9bf8d" category="summary">Keystone收集器包括一些安全功能、用于监控Keystone系统的性能和使用情况指标、并将其配置为使用增强安全性的配置。</block>
+  <block id="e2fec427072f2bbc5fdc0cebd43b2b99" category="doc">Keystone收集器安全性</block>
+  <block id="15cfadbe8065734e9eb4ea47ca07ab83" category="paragraph">Keystone收集器包括一些安全功能、用于监控Keystone系统的性能和使用情况指标、而不会给客户数据的安全带来风险。</block>
+  <block id="68e9a2406a2232b94872e64f773ac3c5" category="paragraph">Keystone收集器的运行基于以下安全原则：</block>
+  <block id="f956bccb154816364b44be52379e1626" category="inline-link-macro">删除私有数据</block>
+  <block id="2616e5d3895322dd3346f34a17c9a1d8" category="list-text">*隐私*-Keystone收集器收集的数据数量有限，用于执行使用情况计量和性能监控。有关详细信息，请参见 <block ref="8a76728d85eff5a7f710d8dd59e08576" category="inline-link-macro-rx"></block>。。 <block ref="de6739393ca0d7e8d335fd50ddf9fd92" category="inline-link-macro-rx"></block> 默认情况下、选项处于启用状态、用于屏蔽和保护敏感信息。</block>
+  <block id="741e4b49f766c75061a9ccff5ec138c6" category="list-text">*Access*-Keystone收集器需要最低权限才能监控存储系统，从而最大限度地降低安全风险并防止意外修改数据。此方法符合最小特权原则、可增强受监控环境的整体安全防护。</block>
+  <block id="5db4b8ea4012f0bb3589acb4c751d5a7" category="list-text">*Framework *- Keystone在整个开发周期内使用安全的软件开发框架，可减少风险、减少漏洞并保护系统免受潜在威胁的影响。</block>
+  <block id="addb25ae677e0b8a55734ab57c09d585" category="section-title">加强安全性</block>
+  <block id="74be99a15297c53a45ed7f7c29f68de5" category="paragraph">默认情况下、Keystone收集器配置为使用增强安全性的配置。以下是建议的安全配置：</block>
+  <block id="200252c3ea347de4cac0f3c372a7da7f" category="list-text">Keystone收集器虚拟机的操作系统：</block>
+  <block id="bd0255a6a16effaf5439f1c91c74ef41" category="inline-link-macro">CIS基准测试指南</block>
+  <block id="651dcf96e1a04268c1afac19dadbb813" category="list-text">符合CIS Debian Linux 12基准测试标准。在Keystone收集器管理软件之外对操作系统配置进行任何更改可能会降低系统安全性。有关详细信息，请参见 <block ref="d167b32fa1f045a53a10171f183d8f49" category="inline-link-macro-rx"></block>。</block>
+  <block id="da745fe6c680201ce89eaa9b5117edac" category="list-text">自动接收并安装由Keystone收集器通过自动更新功能验证的安全修补程序。禁用此功能可能会导致软件漏洞。</block>
+  <block id="67427492d47dd85b25ea09183d2f56fc" category="list-text">对从Keystone收集器收到的更新进行身份验证。禁用APT存储库验证可能会导致自动安装未经授权的修补程序、从而可能引入漏洞。</block>
+  <block id="f4d2c82d15d6fc8d9cf411e5062de691" category="list-text">Keystone收集器会自动验证HTTPS证书以确保连接安全。禁用此功能可能会导致模拟外部端点和使用数据泄露。</block>
+  <block id="6f97d409f18fbb10e56aad800fa8f000" category="inline-link-macro">自定义可信CA</block>
+  <block id="495ae3f7931870e35eab3d7f70b370f6" category="inline-link-macro">Mozilla CA证书程序</block>
+  <block id="85717ece6d99586ad31e2263c45f0f95" category="list-text">Keystone收集器支持 <block ref="ae59e8e314bb3ce8c2aaccbf9f26c489" category="inline-link-macro-rx"></block> 认证。默认情况下、它信任由识别的公共根CA签名的证书 <block ref="bc7ae49cd96ed7595a0f92e1fe9ad9a2" category="inline-link-macro-rx"></block>。通过启用其他受信任的CA、Keystone收集器可以对提供这些证书的端点的连接进行HTTPS证书验证。</block>
+  <block id="c6be8447da6831aee9f8aeca8c0a8651" category="list-text">默认情况下，Keystone收集器启用“*删除私有数据”选项，该选项屏蔽并保护敏感信息。有关详细信息，请参见 <block ref="44bfa5963b761ae9d090eb3ec0204b9f" category="inline-link-macro-rx"></block>。禁用此选项会将其他数据传输到Keystone系统。例如、它可以包括用户输入的信息、例如卷名称、这些信息可能被视为敏感信息。</block>
+  <block id="115ceb474aac932219b8265f50f7455a" category="list-text"><block ref="115ceb474aac932219b8265f50f7455a" category="inline-link-macro-rx"></block></block>
+  <block id="005befdfb2d6724e6f5d61b4c885115b" category="list-text"><block ref="005befdfb2d6724e6f5d61b4c885115b" category="inline-link-macro-rx"></block></block>
+  <block id="14e6b60cfb93c92598e40786e00457b6" category="list-text"><block ref="14e6b60cfb93c92598e40786e00457b6" category="inline-link-macro-rx"></block></block>
+  <block id="c611d30bb877e2a53d2f8ee6c00ceb78" category="sidebar">查看Keystone信息板</block>
+  <block id="ba0b19b07df7a68a7c3cf9b1725f68c5" category="sidebar">查看使用情况详细信息并生成报告</block>
+  <block id="bff50f1947dbec1e11bc66d60ca0b1d9" category="sidebar">支持的存储</block>
+  <block id="7618f9f854f7d4bc7c7026ffaab24dae" category="sidebar">支持的容量</block>
+  <block id="c6f45ce2284ef7f44c38a58ebbd013e0" category="sidebar">服务级别</block>
+  <block id="0ef9feb54d3856bdf6e5a2f5a9007f98" category="sidebar">支持的服务级别容量</block>
+  <block id="ab556116f6e3e88a66d6fb6d623318fa" category="sidebar">附加服务</block>
+  <block id="2bd211076b668ce560dbd1fb33cce8cb" category="sidebar">Equin.提供支持的服务</block>
 </blocks>

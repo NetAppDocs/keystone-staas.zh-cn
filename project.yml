@@ -17,10 +17,10 @@ sidebar:
       url: "/release-notes/whats-new.html"
     - title: 已修复的问题
       url: "/release-notes/fixed-issues.html"
-    - title: 已知限制
-      url: "/release-notes/known-limitations.html"
     - title: 已知问题
       url: "/release-notes/known-issues.html"
+    - title: 已知限制
+      url: "/release-notes/known-limitations.html"
   - title: 欢迎使用Keystone
     url: "/concepts/overview.html"
   - title: 设置和配置Keystone
@@ -51,62 +51,58 @@ sidebar:
       url: "/installation/upgrade.html"
     - title: 为Keystone配置AutoSupport
       url: "/installation/asup-config.html"
+    - title: Keystone收集器安全性
+      url: "/installation/security.html"
     - title: 收集用于计费的数据
       url: "/installation/data-collection.html"
-  - title: 查看Keystone信息板并管理订阅
+  - title: Keystone信息板
     entries:
-    - title: 在Active IQ数字顾问上查看Keystone信息板
-      entries:
-      - title: Keystone和Digital Advisor信息板
-        url: "/integrations/keystone-aiq.html"
-      - title: 查看消耗详细信息并生成报告
-        url: "/integrations/aiq-keystone-details.html"
-      - title: 订阅选项卡
-        url: "/integrations/subscriptions-tab.html"
-      - title: 当前使用量选项卡
-        url: "/integrations/current-usage-tab.html"
-      - title: 容量趋势选项卡
-        url: "/integrations/capacity-trend-tab.html"
-      - title: 卷和对象选项卡
-        url: "/integrations/volumes-objects-tab.html"
-      - title: 性能选项卡
-        url: "/integrations/performance-tab.html"
-      - title: 资产选项卡
-        url: "/integrations/assets-tab.html"
+    - title: 查看Keystone信息板
+      url: "/integrations/keystone-aiq.html"
+    - title: 查看使用情况详细信息并生成报告
+      url: "/integrations/aiq-keystone-details.html"
+    - title: 订阅选项卡
+      url: "/integrations/subscriptions-tab.html"
+    - title: 当前使用量选项卡
+      url: "/integrations/current-usage-tab.html"
+    - title: 容量趋势选项卡
+      url: "/integrations/capacity-trend-tab.html"
+    - title: 卷和对象选项卡
+      url: "/integrations/volumes-objects-tab.html"
+    - title: 性能选项卡
+      url: "/integrations/performance-tab.html"
+    - title: 资产选项卡
+      url: "/integrations/assets-tab.html"
     - title: 从BlueXP管理Keystone订阅
       url: "/integrations/keystone-cm.html"
-  - title: 了解Keystone
+  - title: Keystone STaaS服务
     entries:
-    - title: 支持的存储容量
-      url: "/concepts/supported-storage-capacity.html"
     - title: 指标和定义
       url: "/concepts/metrics.html"
-    - title: Keystone支持的存储
-      url: "/concepts/supported-storage-services.html"
-    - title: Keystone中的服务级别
-      url: "/concepts/service-levels.html"
-    - title: 附加服务
-      entries:
-      - title: Keystone STaaS中的附加服务
-        url: "/concepts/add-on.html"
-      - title: 数据分层
-        url: "/concepts/data-tiering.html"
-      - title: 高级数据保护
-        url: "/concepts/adp.html"
-      - title: U.S.公民支持(USCS)
-        url: "/concepts/uscs.html"
-      - title: 不可退回的非易失性组件以及SnapLock 合规性
-        url: "/concepts/nrnvc.html"
-      - title: Keystone和Equinix
-        url: "/concepts/equinix.html"
-    - title: Keystone订阅服务版本1
-      url: "/subscription-services-v1.html"
-  - title: 有关服务级别的更多信息
-    entries:
     - title: Quality of service
       url: "/concepts/qos.html"
-    - title: 服务级别的容量要求
+    - title: 支持的存储
+      url: "/concepts/supported-storage-services.html"
+    - title: 支持的容量
+      url: "/concepts/supported-storage-capacity.html"
+    - title: 服务级别
+      url: "/concepts/service-levels.html"
+    - title: 支持的服务级别容量
       url: "/concepts/capacity-requirements.html"
+    - title: Keystone订阅服务版本1
+      url: "/subscription-services-v1.html"
+    - title: 附加服务
+      entries:
+      - title: 高级数据保护
+        url: "/concepts/adp.html"
+      - title: 数据分层
+        url: "/concepts/data-tiering.html"
+      - title: Equin.提供支持的服务
+        url: "/concepts/equinix.html"
+      - title: 不可退回的非易失性组件以及SnapLock 合规性
+        url: "/concepts/nrnvc.html"
+      - title: U.S.公民支持(USCS)
+        url: "/concepts/uscs.html"
   - title: 计费
     entries:
     - title: Keystone定价
