@@ -22,6 +22,24 @@ summary: Keystone STaaS的不同版本中已修复的问题
 
 
  a| 
+如果CSV报告中的*帐户名称*列(由*容量趋势*选项卡生成)包含带逗号的帐户名称，则Keystone数据在CSV报告中放置不当 `(,)`。
+ a| 
+在CSV报告中已正确对齐Keystone数据。
+ a| 
+2024年5月29日
+
+
+
+ a| 
+从*容量趋势*选项卡中显示累积的突发使用量，即使使用量低于已提交容量也是如此。
+ a| 
+已修复
+ a| 
+2024年5月29日
+
+
+
+ a| 
 *Capacity Try*选项卡中的*Current Burst索引图标的工具提示文本不正确。
  a| 
 显示正确的工具提示文本"_the ount of burst Capacity Currently Consumed.请注意、这适用于当前计费期间、而不是选定的日期范围。_"

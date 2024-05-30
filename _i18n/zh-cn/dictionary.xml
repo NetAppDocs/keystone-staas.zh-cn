@@ -980,7 +980,6 @@
   <block id="e6329950dc4e8e2123e22d6e9b5d6db8" category="inline-image-macro">管理堆栈</block>
   <block id="385cf44e2725480b6b1fff1e85799b05" category="paragraph"><block ref="385cf44e2725480b6b1fff1e85799b05" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">图标。</block>
-  <block id="c86f468c0d26a49f12de126ed6868cbe" category="paragraph"><block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block></block>
   <block id="afcefd303655b7f65e49ebd8be60e0e7" category="inline-image-macro">灰点图标</block>
   <block id="c0ffa381f5b727ea5de2afacc2018783" category="inline-image-macro">绿色圆点图标</block>
   <block id="f17cd43b9cda36a4b4fad09a0d2aab75" category="inline-image-macro">琥珀色圆点图标</block>
@@ -1084,7 +1083,6 @@
   <block id="9eb8ff0f43ab3ce564117624a689cfa3" category="paragraph">Digital Advisor提供了一个统一的信息板，可通过*切换到旧/新信息板*按钮深入了解不同级别的订阅数据和使用情况信息。</block>
   <block id="225101b6a3b9351114a047a3df14351f" category="paragraph-title">默认(旧)信息板</block>
   <block id="5ed038c610a4830d7271f424b6634183" category="inline-image-macro">旧信息板</block>
-  <block id="ced86f994324c697693baedc99b0e6f2" category="paragraph"><block ref="ced86f994324c697693baedc99b0e6f2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="13d14e18f44239917913d637c7256363" category="paragraph-title">备选(新)信息板</block>
   <block id="1a088874dce4d7e7d6594dc2f1a4f5dc" category="paragraph">您可以查看按订阅显示的容量使用情况的详细信息、以及需要立即引起关注或采取措施的警告和警报。根据您的订阅和使用状态、此信息会有选择地显示。您可以查看以下信息：</block>
   <block id="2fa390f38790bcacfa9ed28c16a417a5" category="list-text">不使用。</block>
@@ -1096,7 +1094,6 @@
   <block id="07dd553ab0687b884de52961e62afa71" category="inline-image-macro">新信息板</block>
   <block id="a77be9d41a8d417f9356cc422dd8538b" category="paragraph">您可以在*订阅*选项卡中查看所有订阅的列表。</block>
   <block id="48946b5a768605c40f4daddd2a8cd029" category="inline-image-macro">"订阅"选项卡的图像</block>
-  <block id="6579015c3a8a3c02633d70f057f33dc9" category="paragraph"><block ref="6579015c3a8a3c02633d70f057f33dc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bb458162772cabd155e3547ccca61540" category="list-text"><block ref="f5416884a5e4dfec0dfa2f3734568648" category="inline-image-macro-rx" type="image"></block>：单击此订阅图标将打开*当前使用情况*选项卡，其中包含该订阅的使用情况详细信息。</block>
   <block id="b05a4811235858c3eb84ea137166df64" category="list-text"><block ref="435e416487181a998706b8fd7ece7b01" category="inline-image-macro-rx" type="image"></block>：单击此图标将打开*Capacity Try*选项卡，您可以在其中查看此订阅中每个服务级别的历史使用数据。</block>
   <block id="9589f5efb3ba98ee4ca1d2943fd95176" category="inline-image-macro">当前使用量选项卡</block>
@@ -1295,8 +1292,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="04c326da7f80fc6ed0a878fa8e6cdb8f" category="summary">Keystone STaaS的新增功能和增强功能。</block>
   <block id="c39448c44492bce0f20d4135a111f379" category="doc">Keystone STaaS的新增功能</block>
   <block id="9489be5fe307489eb48f54e4d9e08b90" category="paragraph">NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能。</block>
-  <block id="e10851d151ada64fb52c2407a0767d85" category="section-title">2023年12月15日的新增功能和增强功能</block>
-  <block id="f1294b2cae09e66a510612046224408f" category="paragraph">了解此版本中的新增功能。</block>
   <block id="6fec807bd8a0e3b00b3818404fe99ffa" category="section-title">可以按监视列表进行搜索</block>
   <block id="e21135b6ab126eefb31b234c688584d2" category="section-title">转换为UTC时区的日期</block>
   <block id="c58866f1ef5f53d12f483be3139c8b21" category="paragraph">在Active IQ数字顾问的*Keystone订阅*屏幕的选项卡上返回的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。有关详细信息，请参见 <block ref="fd9d2abed6b27ddb199966f81ac84d0e" category="inline-link-macro-rx"></block>。</block>
@@ -1352,7 +1347,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e9fba53fca09f539e7c7027e5b60c861" category="list-text"><block ref="e9fba53fca09f539e7c7027e5b60c861" category="inline-link-macro-rx"></block></block>
   <block id="98bee96ae0c26b26f72606ccdc5c56ce" category="list-text"><block ref="98bee96ae0c26b26f72606ccdc5c56ce" category="inline-link-macro-rx"></block></block>
   <block id="a6bf70467fe9fc8375125070b0747a86" category="paragraph">通过Active IQ数字顾问(也称为数字顾问)、您可以登录并查看Keystone订阅的订阅和使用详细信息。有关Digital Advisor信息板上Keystone报告的详细信息、请参见 <block ref="b7b6a2338cb0518cc39a6d3713bb6e47" category="inline-link-macro-rx"></block>。</block>
-  <block id="e38cc358974de030fd1c567512210d8f" category="section-title">2024年1月11日的新增功能和增强功能</block>
   <block id="b08a55fcdae4be7efabe97ebd6da5f96" category="section-title">针对累积突发返回的发票数据</block>
   <block id="759e854fe7757cee8e9beb2f278e1082" category="paragraph">现在，*容量趋势*选项卡中的*应计突发*标签已修改为*已发票应计突发*。选择此选项可查看计费累积突发数据的月度图表。有关详细信息，请参见 <block ref="1de75f05c72d9ddec6f68e5103a83e4f" category="inline-link-macro-rx"></block>。</block>
   <block id="038fa77b2d09a08187d251d11af66fec" category="section-title">特定费率计划的应计消费详细信息</block>
@@ -1360,7 +1354,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="c172354fb8ea09208116200c906a06f7" category="paragraph">Active IQ数字顾问(也称为数字顾问)中对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息、请参见 <block ref="b7d20955ed629544dc331da927df4d8e" category="inline-link-macro-rx"></block>。</block>
   <block id="58b8c716856200f705d08eebb54e18f2" category="paragraph">有关如何查看MetroCluster配置中的使用情况的信息、请参见 <block ref="dce2e2b996a813464c91ed5f90c2ee95" category="inline-link-macro-rx"></block>。</block>
   <block id="c85fec4626e8f76d3daa40fe4d78d085" category="paragraph">部署Keystone收集器和AIOPS解决方案 网关需要使用Storage Virtual Machine (Storage VM)。安装Keystone收集器的前提条件如下： <block ref="90d7b7caf953f72ddc1c63cc7891ca46" category="inline-link-macro-rx"></block>。其他要求将在部署期间共享。</block>
-  <block id="694ddc221b1ba079b86890f70c44cb11" category="section-title">2024年2月13日的新增功能和增强功能</block>
   <block id="0031be5085bbcd93406b2aa424a49c42" category="section-title">能够查看与主订阅关联的订阅</block>
   <block id="7a76691411d2b3f52e0613b9090e3000" category="paragraph">您的某些主要订阅可以具有链接的二级订阅。在这种情况下，主订阅号将继续显示在*订阅号*列中，而链接的订阅号将在*订阅*选项卡上的新列*链接订阅*中列出。只有当您有链接订阅时，*链接的订阅*列才对您可用，并且您可以看到有关这些订阅的信息消息。</block>
   <block id="6986ced354a8932900d97fca40ed0a5b" category="summary">volume-objects-tab</block>
@@ -1406,8 +1399,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="319bd990fc36968d386d4c3f598a29fd" category="paragraph">现在，*Digital Advisor屏幕上的搜索参数包括Keystone订阅号码和为Keystone订阅创建的监视列表。您可以输入订阅编号或监视列表名称的前三个字符。有关详细信息，请参见 <block ref="c826e26c505d1b69fb1131472ac8bd8b" category="inline-link-macro-rx"></block>。</block>
   <block id="3b9d95910ae505ff384ac8c7f9b6dcc8" category="section-title">查看消耗数据的时间戳</block>
   <block id="c150a924cf5d23ea89fef0c5a97a423c" category="paragraph">您可以在*Keystone订阅*小工具的旧信息板上查看消耗数据的时间戳(UTC)。</block>
-  <block id="14af2a8d2fd01070474d8cfe70669766" category="paragraph">Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕进行了以下增强。</block>
-  <block id="07e143e539ff0018849ff87ab85236bd" category="paragraph">Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕具有以下增强功能。</block>
   <block id="e394ee258801db05ea5dc42ff4f50590" category="paragraph">在NetApp Keystone STaaS服务的先前版本中发现的问题已在后续版本中得到修复。以下是修复方法。</block>
   <block id="bb75ba9ba1a39640512ae927c3d1d555" category="paragraph">如果在分层和对象存储的速率计划均适用的环境中同时启用了MetroCluster和FabricPool、则可能会错误地为镜像卷(成分卷和FabricPool卷)派生服务级别。</block>
   <block id="a9e161efaf2a37583088db3194f9adfa" category="paragraph">已为镜像卷应用正确的服务级别。</block>
@@ -1470,7 +1461,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="8571dc50240f31e29f046ecc22dcc378" category="paragraph">2024年3月28日</block>
   <block id="75c4a8a90d6bd0a376bf988146f5e69c" category="paragraph">如果Keystone数据在24小时内不存在、则AutoSupport订阅无法获得有关AQoS不合规卷和MetroCluster合作伙伴的信息。</block>
   <block id="ea2bb51d2805204312e53c2b3d2a43e8" category="paragraph">如果为仅满足一个服务级别的AQoS合规性的卷分配了两个服务级别，则"*卷摘要*"和"*卷详细信息*"选项卡上列出的AQoS不符合要求的卷数偶尔会不匹配。</block>
-  <block id="d98c7c65f7e601be06e92d8d76d6ac00" category="section-title">2024年3月28日的新增功能和增强功能</block>
   <block id="150fc0186525a8fa887aecae2c275b5a" category="section-title">在"Volume Details"(卷详细信息)选项卡中显示对QoS策略合规性的改进</block>
   <block id="5de1e29c5f07ad0885be04bc6c52195e" category="paragraph">现在，可以通过*卷和对象*选项卡中的*卷详细信息*选项卡更好地了解服务质量(QoS)策略合规性。以前称为*AQOs*的列已重命名为*符合*，表示QoS策略是否符合。此外，还添加了一个新列*QoS策略类型*，用于指定策略是固定策略还是自适应策略。如果这两种情况都不适用、则该列将显示_not available _。有关详细信息，请参见 <block ref="0c9c36fd88d6d1691d6b8530f58f9df1" category="inline-link-macro-rx"></block>。</block>
   <block id="eeb525a9d00b69b55c1d9f44326df908" category="section-title">卷摘要选项卡中显示新列和简化的订阅</block>
@@ -1522,26 +1512,20 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="76a9fcc99866cc713d361014e5f04c71" category="paragraph">或者、您也可以通过运行手动启动它<block ref="a38cb024a2fa677a71e9a8148df3dbeb" prefix=" " category="inline-code"></block> CLI命令。</block>
   <block id="c74d63e364ced8b98060b508c4df9160" category="list-text">如果需要，请在TUI的*配置&gt;网络部分*中配置代理详细信息。</block>
   <block id="3901dacdf71718d8755295861e5a2509" category="list-text">使用*维护&gt;更新收集器*选项更新Keystone收集器。更新后、重新启动Keystone收集器管理TUI实用程序以应用所做的更改。</block>
-  <block id="67e6cf351de112c3031badd82d0f3f35" category="section-title">2024年5月9日的新增功能和增强功能</block>
-  <block id="9ed8163a1db94c2c8f76f0de99245d73" category="paragraph">Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕具有以下增强功能：</block>
   <block id="076f537e3d2e67aaab1a9b174efb492c" category="section-title">CSV报告中的新列</block>
   <block id="1a99820fcdf5bec9f65b98905896adbd" category="paragraph">现在，“*容量趋势*”选项卡中的CSV报告包括“*订阅号*”和“*帐户名称*”列，以改进详细信息。</block>
   <block id="b16e3aa89600afc2309042111403b504" category="section-title">增强型使用类型列</block>
   <block id="e95c375579d57291c75e74e27ea2e55b" category="paragraph">*订阅*选项卡中的*使用类型*列已得到增强，可将逻辑和物理使用显示为包含文件和对象服务级别的订阅的逗号分隔值。</block>
   <block id="555fdd5c5952939fd3a2e87f3c0202cc" category="section-title">从卷详细信息选项卡访问对象存储详细信息</block>
   <block id="29117909372d41a783c58a54504dc882" category="paragraph">现在，*卷和对象*选项卡中的*卷详细信息*选项卡可提供对象存储详细信息以及包含文件和对象服务级别的订阅的卷信息。您可以单击*卷详细信息*选项卡中的*对象存储详细信息*按钮来查看详细信息。</block>
-  <block id="d79ff1eb3f68820268668110a38dee3d" category="paragraph">Active IQ数字顾问的*Keystone订阅*屏幕进行了以下增强：</block>
   <block id="d1460394a13760c5650d62f6d4fd88e4" category="list-text">*QoS警告*：您的卷未分配AQoS策略。</block>
   <block id="85348b428bc0994aa230ffb67e5ed22d" category="paragraph"><block ref="85348b428bc0994aa230ffb67e5ed22d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7e3e3b43663c52e39fb7d06456bf12f1" category="admonition">对于涵盖文件和对象服务级别的订阅，您可以单击*对象存储详细信息*按钮来查看对象存储详细信息。</block>
   <block id="e222d228c550efa4a66f0f52f511aba2" category="paragraph"><block ref="e222d228c550efa4a66f0f52f511aba2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="947e56c3a77be1d8ba0f61c6763e7e52" category="paragraph"><block ref="947e56c3a77be1d8ba0f61c6763e7e52" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7802e47d1bfbdb5f220b072950676069" category="paragraph"><block ref="7802e47d1bfbdb5f220b072950676069" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3b1babefaddbc8aaa22a17b8869a426" category="list-text">在*Keystone订阅*小工具上，单击*查看所有订阅*，在*Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规&gt; Keystone订阅*。
 订阅详细信息、每个服务级别的使用情况图表以及卷详细信息将显示在* Keystone订阅*屏幕的不同选项卡中。</block>
   <block id="13e7adb1be14d277e7a4fb6ecf5d048c" category="paragraph"><block ref="13e7adb1be14d277e7a4fb6ecf5d048c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c8c05147b9091f33a6236ec48d92a582" category="paragraph">信息板提供了警报通知、可用于了解存储环境中发生的问题。这些通知可能会显示为信息性警报或警告。例如、如果受管集群中的卷未附加自适应QoS (AQoS)策略、您可以看到一条警告消息。您可以单击警告消息上的链接，在*卷和对象*选项卡中查看不合规卷的列表。</block>
-  <block id="9f957a69af39aa7db138045eec11ae05" category="paragraph"><block ref="9f957a69af39aa7db138045eec11ae05" category="inline-image-macro-rx" type="image"></block></block>
   <block id="264fb3d7b56249895b2f79c596d4c41d" category="paragraph">有关这些消息的详细信息、请联系NetApp支持部门。有关提出服务请求的信息、请参见 <block ref="1bf858345505311d2a0e9fcf6e1f42da" category="inline-link-macro-rx"></block>。</block>
   <block id="cc8108ce3a80352b2052988bdc13dc69" category="list-text">*使用类型*：您可能订阅了多个Keystone (版本1)或Keystone STaaS (版本2)订阅。对于这两种订阅类型、服务级别的费率计划规则可能会有所不同。通过查看此列中的值、您可以了解使用类型是否按任一的已配置、物理或逻辑使用量计费<block ref="6654c734ccab8f440ff0825eb443dc7f" prefix=" " category="inline-code"></block> 或<block ref="1b267619c4812cc46ee281747884ca50" prefix=" " category="inline-code"></block>。有关Keystone订阅版本1的详细信息、请参见<block ref="c1460ec66a3867842b79c2599263400e" category="inline-link-rx"></block>。</block>
   <block id="af17398e2b948fd6715e1bdf5857d48e" category="paragraph">TCP 7777</block>
@@ -1553,8 +1537,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e83464ce8bd634efb1f099c956ec64a8" category="cell">已知问题描述</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
   <block id="7aebfa1e2291377e040de92d7f7f335f" category="cell">临时解决策</block>
-  <block id="05890055e47d7356b21b212f915e3d3b" category="paragraph">CSV报告中Keystone数据显示不正确。</block>
-  <block id="cf57a91fb76a6fe323d7bc94294753a2" category="paragraph">如果CSV报告中的*Account Name*列是从*Capacity Try*选项卡生成的，则该列包含一个帐户名和一个逗号<block ref="e1266d71c305ae3767d9d953acaf0aae" prefix=" " category="inline-code"></block>、Keystone数据在CSV报告中显示为放错位置。</block>
   <block id="7186d4f0f71f9b706a05940b8abcacd0" category="cell">问题描述</block>
   <block id="0242b80cbb6d235dc499fd8128673a7e" category="paragraph">您可以通过输入客户或监视列表名称的前三个字符或Keystone订阅编号来搜索Keystone订阅。有关如何按监视列表搜索Keystone STaaS订阅的信息、请参见 <block ref="2fe9d6682f1bd534173abd0da0d980f6" category="inline-link-macro-rx"></block>。</block>
   <block id="c8cfdcd3f2e7ef01cbd8180e33c9bf8d" category="summary">Keystone收集器包括一些安全功能、用于监控Keystone系统的性能和使用情况指标、并将其配置为使用增强安全性的配置。</block>
@@ -1562,24 +1544,14 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="15cfadbe8065734e9eb4ea47ca07ab83" category="paragraph">Keystone收集器包括一些安全功能、用于监控Keystone系统的性能和使用情况指标、而不会给客户数据的安全带来风险。</block>
   <block id="68e9a2406a2232b94872e64f773ac3c5" category="paragraph">Keystone收集器的运行基于以下安全原则：</block>
   <block id="f956bccb154816364b44be52379e1626" category="inline-link-macro">删除私有数据</block>
-  <block id="2616e5d3895322dd3346f34a17c9a1d8" category="list-text">*隐私*-Keystone收集器收集的数据数量有限，用于执行使用情况计量和性能监控。有关详细信息，请参见 <block ref="8a76728d85eff5a7f710d8dd59e08576" category="inline-link-macro-rx"></block>。。 <block ref="de6739393ca0d7e8d335fd50ddf9fd92" category="inline-link-macro-rx"></block> 默认情况下、选项处于启用状态、用于屏蔽和保护敏感信息。</block>
-  <block id="741e4b49f766c75061a9ccff5ec138c6" category="list-text">*Access*-Keystone收集器需要最低权限才能监控存储系统，从而最大限度地降低安全风险并防止意外修改数据。此方法符合最小特权原则、可增强受监控环境的整体安全防护。</block>
-  <block id="5db4b8ea4012f0bb3589acb4c751d5a7" category="list-text">*Framework *- Keystone在整个开发周期内使用安全的软件开发框架，可减少风险、减少漏洞并保护系统免受潜在威胁的影响。</block>
   <block id="addb25ae677e0b8a55734ab57c09d585" category="section-title">加强安全性</block>
   <block id="74be99a15297c53a45ed7f7c29f68de5" category="paragraph">默认情况下、Keystone收集器配置为使用增强安全性的配置。以下是建议的安全配置：</block>
   <block id="200252c3ea347de4cac0f3c372a7da7f" category="list-text">Keystone收集器虚拟机的操作系统：</block>
   <block id="bd0255a6a16effaf5439f1c91c74ef41" category="inline-link-macro">CIS基准测试指南</block>
-  <block id="651dcf96e1a04268c1afac19dadbb813" category="list-text">符合CIS Debian Linux 12基准测试标准。在Keystone收集器管理软件之外对操作系统配置进行任何更改可能会降低系统安全性。有关详细信息，请参见 <block ref="d167b32fa1f045a53a10171f183d8f49" category="inline-link-macro-rx"></block>。</block>
-  <block id="da745fe6c680201ce89eaa9b5117edac" category="list-text">自动接收并安装由Keystone收集器通过自动更新功能验证的安全修补程序。禁用此功能可能会导致软件漏洞。</block>
   <block id="67427492d47dd85b25ea09183d2f56fc" category="list-text">对从Keystone收集器收到的更新进行身份验证。禁用APT存储库验证可能会导致自动安装未经授权的修补程序、从而可能引入漏洞。</block>
   <block id="f4d2c82d15d6fc8d9cf411e5062de691" category="list-text">Keystone收集器会自动验证HTTPS证书以确保连接安全。禁用此功能可能会导致模拟外部端点和使用数据泄露。</block>
   <block id="6f97d409f18fbb10e56aad800fa8f000" category="inline-link-macro">自定义可信CA</block>
   <block id="495ae3f7931870e35eab3d7f70b370f6" category="inline-link-macro">Mozilla CA证书程序</block>
-  <block id="85717ece6d99586ad31e2263c45f0f95" category="list-text">Keystone收集器支持 <block ref="ae59e8e314bb3ce8c2aaccbf9f26c489" category="inline-link-macro-rx"></block> 认证。默认情况下、它信任由识别的公共根CA签名的证书 <block ref="bc7ae49cd96ed7595a0f92e1fe9ad9a2" category="inline-link-macro-rx"></block>。通过启用其他受信任的CA、Keystone收集器可以对提供这些证书的端点的连接进行HTTPS证书验证。</block>
-  <block id="c6be8447da6831aee9f8aeca8c0a8651" category="list-text">默认情况下，Keystone收集器启用“*删除私有数据”选项，该选项屏蔽并保护敏感信息。有关详细信息，请参见 <block ref="44bfa5963b761ae9d090eb3ec0204b9f" category="inline-link-macro-rx"></block>。禁用此选项会将其他数据传输到Keystone系统。例如、它可以包括用户输入的信息、例如卷名称、这些信息可能被视为敏感信息。</block>
-  <block id="115ceb474aac932219b8265f50f7455a" category="list-text"><block ref="115ceb474aac932219b8265f50f7455a" category="inline-link-macro-rx"></block></block>
-  <block id="005befdfb2d6724e6f5d61b4c885115b" category="list-text"><block ref="005befdfb2d6724e6f5d61b4c885115b" category="inline-link-macro-rx"></block></block>
-  <block id="14e6b60cfb93c92598e40786e00457b6" category="list-text"><block ref="14e6b60cfb93c92598e40786e00457b6" category="inline-link-macro-rx"></block></block>
   <block id="c611d30bb877e2a53d2f8ee6c00ceb78" category="sidebar">查看Keystone信息板</block>
   <block id="ba0b19b07df7a68a7c3cf9b1725f68c5" category="sidebar">查看使用情况详细信息并生成报告</block>
   <block id="bff50f1947dbec1e11bc66d60ca0b1d9" category="sidebar">支持的存储</block>
@@ -1588,4 +1560,52 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="0ef9feb54d3856bdf6e5a2f5a9007f98" category="sidebar">支持的服务级别容量</block>
   <block id="ab556116f6e3e88a66d6fb6d623318fa" category="sidebar">附加服务</block>
   <block id="2bd211076b668ce560dbd1fb33cce8cb" category="sidebar">Equin.提供支持的服务</block>
+  <block id="2337b8c765d63e9ccd6f9eb7ad07891d" category="paragraph">在*Capacity Trending*选项卡中扩展了一天选择的数据显示。</block>
+  <block id="3f8088b031499170dddc356220872406" category="paragraph">当从*容量趋势*选项卡中的*容量趋势*选项中选择与今天对应的日期作为上个月的开始和结束日期时，使用情况图表将显示从选定开始日期到当前日期的一段时间的数据。 而不是显示指定单天时间段的数据。</block>
+  <block id="fb7b9e6e50bd264e776d0b1caa6af90d" category="paragraph">历史累积突发数据不适用于服务级别。</block>
+  <block id="26b15a8eb57981a03c906d7eb5cec496" category="paragraph">对于未配置MetroCluster配置的订阅、不能使用*容量趋势*选项卡中的*CVO主*和*CVO二级*服务级别的历史累积突发使用情况数据。</block>
+  <block id="a3f0020ae2cb5a737b51a50cba96826d" category="paragraph">AutoSupport订阅的对象存储消耗值显示不正确。</block>
+  <block id="028514d7275c99411cd420e63c9c854d" category="paragraph">如果使用AutoSupport遥测来收集Keystone数据，则对于文件、块和对象服务订阅，*卷详细信息*选项卡上列出的对象存储的已用值显示不正确。</block>
+  <block id="dc670c37e5244490935a00a361438120" category="paragraph">有关正确信息，请参阅“*当前使用情况*”选项卡中提到的对象存储的已用值。</block>
+  <block id="fd6413b61994c2cc7164098e551cf0b4" category="paragraph">无法在*Assets*选项卡中查看集群级别的信息。</block>
+  <block id="92933a108a11a5cb02b4f317258eb39b" category="paragraph">对于配置了MetroCluster配置的AutoSupport订阅、无法从*资产*选项卡获得集群级别详细信息。</block>
+  <block id="a896a08a07f491f10b65b593a6b1ecd6" category="paragraph">如果CSV报告中的*帐户名称*列(由*容量趋势*选项卡生成)包含带逗号的帐户名称，则Keystone数据在CSV报告中放置不当<block ref="e1266d71c305ae3767d9d953acaf0aae" prefix=" " category="inline-code"></block>。</block>
+  <block id="b424d6cf899d73ac410dfcf534d8fb4d" category="paragraph">在CSV报告中已正确对齐Keystone数据。</block>
+  <block id="f0ee2833137c8c18cdfab03dc246ee49" category="paragraph">2024年5月29日</block>
+  <block id="7ab6f311354d29c73a85f8a0cab35fc3" category="paragraph">从*容量趋势*选项卡中显示累积的突发使用量，即使使用量低于已提交容量也是如此。</block>
+  <block id="0515a197f35d92d8a4dad9980315fc81" category="paragraph">Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕中引入了以下增强功能：</block>
+  <block id="520d9a747e24e02fcc6b25d06b6811fc" category="section-title">增强型突发指示器</block>
+  <block id="163881302520a37b412ca22e4985cf9f" category="paragraph">使用情况图索引中的*突发*指示器已增强，可显示突发限制百分比值。此值会根据订阅的约定突发限制而变化。您还可以通过将鼠标悬停在*使用状态*列中的*突发使用情况*指示符上方，在*订阅*选项卡中查看突发限制值。</block>
+  <block id="09202d1f550debc90536918fe48073d2" category="section-title">添加服务级别</block>
+  <block id="698a24cda3201383036fa310a4f6dcdc" category="paragraph">包含服务级别*CVO主*和*CVO二级*，以支持Cloud Volumes ONTAP订阅，这些订阅的费率计划中的已承诺容量为零，或者配置了城域群集。</block>
+  <block id="b4a4e7fcb0047788c24de350740273e2" category="list-text">您可以从*Keystone订阅*小工具的旧信息板和*Capacity Try*选项卡查看这些服务级别的容量使用情况图，还可以从*Current Usage*选项卡查看详细的使用情况信息。</block>
+  <block id="5251b4cce995b7cfc60e125a003eb6c8" category="list-text">在*订阅*选项卡中，这些服务级别显示为<block ref="e0be4a7f641cfddc411a3d82a34fb211" prefix=" " category="inline-code"></block> 在*使用类型*列中，允许根据这些服务级别标识计费。</block>
+  <block id="997bfb6646529389b763e6cabd21c37a" category="section-title">放大功能、可提供微爆发洞察力</block>
+  <block id="c93882722f26936f556f483ae7c22259" category="paragraph">现在，*容量趋势*选项卡包含一个放大功能，可用于在使用情况图表中查看短期浪涌(称为微爆发)的详细信息。有关详细信息，请参见 <block ref="45b36c44a7c4fb4ef2168b619f60755c" category="inline-link-macro-rx"></block>。</block>
+  <block id="6c48d999111838f1ba95a5cf4091e681" category="section-title">增强了订阅显示功能</block>
+  <block id="090486f9919d4611241c968fbb7744a3" category="paragraph">订阅的默认显示已增强、可按跟踪ID排序。现在，*订阅*选项卡(包括*订阅*下拉列表和CSV报告)中的订阅将根据跟踪ID的字母顺序显示，顺序依次为a、a、b、B等。</block>
+  <block id="f5bd7be5a51d8e07eec34f2c9ddb662a" category="section-title">增强的累积突发显示</block>
+  <block id="f42805586acc16ac661193d0d72e676a" category="paragraph">现在，将鼠标悬停在“*容量趋势”选项卡中的容量使用情况条形图上时显示的工具提示将根据已提交容量显示应计突发的类型。它区分临时突发和开票突发、对于承诺容量为零的订阅、显示*临时应计量*和*开票应计量*；对于承诺容量不为零的订阅、显示*临时应计突发*和*开票应计突发*。</block>
+  <block id="c7f25f44be7b366785438d8acef9c492" category="section-title">2024年5月9日</block>
+  <block id="b45b03a249b5f6cfa9e1cc559ba79e40" category="section-title">2024年2月13日</block>
+  <block id="b06c73c3805ce52954e13f27b28cb072" category="section-title">2024年1月11日</block>
+  <block id="6171bdf5841e2bfa70f97036e02d1f44" category="section-title">2023年12月15日</block>
+  <block id="febd1cc73d8a67a28c5163cf578fe957" category="paragraph"><block ref="febd1cc73d8a67a28c5163cf578fe957" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c3d408e303aadca10fcde3732cec0448" category="paragraph">您可以使用放大功能查看使用情况图表中的短期激增、称为微爆发。如果存在微爆发、则会在相应条上通过蓝点指示、如果未使用任何数据、则直接在X轴上显示蓝点。要查看详细信息、请单击并按住蓝点所在的条形图或x轴、然后在图表上拖动光标以选择所需的时间间隔、然后松开以确认您的选择。此操作将放大数据、提供选定间隔内该服务级别已用容量的详细视图。您可以进一步放大以按2分钟间隔查看详细信息。您可以单击*重置缩放*按钮返回原始图表视图。</block>
+  <block id="4aa3a9e87ecd0337ebd742e0266238ca" category="paragraph"><block ref="4aa3a9e87ecd0337ebd742e0266238ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5da2a9a1bf8d06a10172d6cfb1f2ae63" category="paragraph"><block ref="5da2a9a1bf8d06a10172d6cfb1f2ae63" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="613e982a68ef102f1e7f23a3688769ee" category="paragraph"><block ref="613e982a68ef102f1e7f23a3688769ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5f39e9edc55a471e102196137229f5d6" category="paragraph"><block ref="5f39e9edc55a471e102196137229f5d6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e7fd5f205cedf275d46d90af646f278c" category="paragraph"><block ref="e7fd5f205cedf275d46d90af646f278c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8a19ac37aa90f4bbe7f16a2f7767bbcd" category="list-text">*隐私设计*-Keystone收集器收集最低限度的数据，以执行使用情况计量和性能监控。有关详细信息，请参见 <block ref="d45e4cc5f7d31c567a5a7e94087cf357" category="inline-link-macro-rx"></block>。。 <block ref="056e2bf20fc58bf3ad9e840fe1ebc39f" category="inline-link-macro-rx"></block> 默认情况下、选项处于启用状态、用于屏蔽和保护敏感信息。</block>
+  <block id="252857c59cbe54ddba7bda3d2d19b7a3" category="list-text">*最低权限访问*-Keystone收集器需要最低权限才能监控存储系统，从而最大限度地降低安全风险并防止意外修改数据。此方法符合最小特权原则、可增强受监控环境的整体安全防护。</block>
+  <block id="8f14f42f9cacaaf485cd3e478fca2ae7" category="list-text">*安全软件开发框架*- Keystone在整个开发周期内使用安全软件开发框架，可降低风险、减少漏洞并保护系统免遭潜在威胁。</block>
+  <block id="c5a85b2285577e8fa04dbfd9a0e8fce0" category="list-text">符合CIS Debian Linux 12基准测试标准。在Keystone收集器管理软件之外对操作系统配置进行任何更改可能会降低系统安全性。有关详细信息，请参见 <block ref="ebe0cef3d4ae2ec90b4b78a6435d8cfa" category="inline-link-macro-rx"></block>。</block>
+  <block id="ffc11c0af679af4c789adea3290aed82" category="list-text">自动接收并安装由Keystone收集器通过自动更新功能验证的安全修补程序。禁用此功能可能会导致未修补的容易受到攻击的软件。</block>
+  <block id="5aad5271aacff7d95476111a1661d80e" category="list-text">Keystone收集器支持 <block ref="507f8701fa209f17709c28f0f3a2df88" category="inline-link-macro-rx"></block> 认证。默认情况下、它信任由识别的公共根CA签名的证书 <block ref="85827de78b088c34473559150117a2c1" category="inline-link-macro-rx"></block>。通过启用其他受信任的CA、Keystone收集器可以对提供这些证书的端点的连接进行HTTPS证书验证。</block>
+  <block id="2d07543a4e5e4da4215622d94fc4b895" category="list-text">默认情况下，Keystone收集器启用“*删除私有数据”选项，该选项屏蔽并保护敏感信息。有关详细信息，请参见 <block ref="3c558a87c599af8b1d6d8232e85ed62a" category="inline-link-macro-rx"></block>。禁用此选项会将其他数据传输到Keystone系统。例如、它可以包括用户输入的信息、例如卷名称、这些信息可能被视为敏感信息。</block>
+  <block id="2ed86e262df79d2aceffc1458e6d49b9" category="list-text"><block ref="2ed86e262df79d2aceffc1458e6d49b9" category="inline-link-macro-rx"></block></block>
+  <block id="bd79126b847656ed7fae36b5cf2b2a67" category="list-text"><block ref="bd79126b847656ed7fae36b5cf2b2a67" category="inline-link-macro-rx"></block></block>
+  <block id="6b4c0e011e525c6bfef1c89d400050ea" category="list-text"><block ref="6b4c0e011e525c6bfef1c89d400050ea" category="inline-link-macro-rx"></block></block>
+  <block id="8e3557260fa2ecc062aeb9b921f99cce" category="summary">Keystone STaaS over Keystone Flex订阅服务</block>
 </blocks>

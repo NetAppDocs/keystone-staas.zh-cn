@@ -67,7 +67,7 @@ image:report_1.png["报告的CSV"]
 
 NOTE: 如果您订阅了单个服务级别或速率计划、则无法看到不合规卷的警报。
 
-image:alert-aiq-1.png["警报"]
+image:alert-aiq-2.png["警报"]
 
 有关AQO策略的信息、请参见 link:../concepts/qos.html["自适应 QoS"]。
 
