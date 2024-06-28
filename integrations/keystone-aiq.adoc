@@ -4,7 +4,7 @@ permalink: integrations/keystone-aiq.html
 keywords: Keystone, Digital Advisor, keystone-aiq, aiq 
 summary: Keystone和Digital Advisor 
 ---
-= 在Active IQ数字顾问上查看Keystone信息板
+= 在Digital Advisor上查看Keystone信息板
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -58,7 +58,7 @@ image:new-db-2.png["新信息板"]
 
 == 按Keystone监视列表搜索
 
-监视列表是Active IQ数字顾问(数字顾问)的一项功能。有关信息，请参见 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["了解监视列表"^]。有关创建监视列表的信息、请参见 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["创建监视列表"^]。
+监视列表是一项功能Digital Advisor。有关信息，请参见 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["了解监视列表"^]。有关创建监视列表的信息、请参见 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["创建监视列表"^]。
 
 对于Keystone STaaS、您可以为客户或订阅编号创建监视列表。您可以在Digital Advisor屏幕上按监视列表名称进行搜索。按监视列表搜索时，您可以在*Keystone订阅*小工具的*订阅*下拉列表中查看客户及其订阅。
 

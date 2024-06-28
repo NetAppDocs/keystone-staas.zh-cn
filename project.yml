@@ -21,40 +21,52 @@ sidebar:
       url: "/release-notes/known-issues.html"
     - title: 已知限制
       url: "/release-notes/known-limitations.html"
-  - title: 欢迎使用Keystone
-    url: "/concepts/overview.html"
+  - title: 了解Keystone
+    entries:
+    - title: 概述
+      url: "/concepts/overview.html"
+    - title: Keystone基础架构
+      url: "/concepts/infra.html"
+    - title: 组件
+      url: "/concepts/components.html"
+    - title: 数据流
+      url: "/concepts/data-flow.html"
+    - title: 操作模式
+      url: "/concepts/operational-models.html"
+    - title: Keystone收集器
+      url: "/installation/installation-overview.html"
   - title: 设置和配置Keystone
     entries:
-    - title: 什么是Keystone收集器
-      url: "/installation/installation-overview.html"
-    - title: 准备系统
+    - title: 要求
       entries:
-      - title: VMware vSphere 要求
+      - title: VMware vSphere
         url: "/installation/vapp-prereqs.html"
-      - title: Linux要求
+      - title: Linux
         url: "/installation/linux-prereqs.html"
-      - title: ONTAP和StorageGRID要求
+      - title: ONTAP和StorageGRID
         url: "/installation/addl-req.html"
     - title: 安装Keystone收集器
       entries:
-      - title: VMware vSphere部署
+      - title: 在VMware vSphere上部署
         url: "/installation/vapp-installation.html"
-      - title: Linux安装
+      - title: 在Linux上安装
         url: "/installation/linux-installation.html"
-      - title: 自动完整性验证
+      - title: 验证完整性
         url: "/installation/validation.html"
     - title: 配置Keystone收集器
       url: "/installation/configuration.html"
-    - title: 监控系统运行状况
-      url: "/installation/monitor-health.html"
-    - title: 升级Keystone收集器
-      url: "/installation/upgrade.html"
-    - title: 为Keystone配置AutoSupport
+    - title: 配置 AutoSupport
       url: "/installation/asup-config.html"
     - title: Keystone收集器安全性
       url: "/installation/security.html"
     - title: 收集用于计费的数据
       url: "/installation/data-collection.html"
+  - title: 监控和升级
+    entries:
+    - title: 监控系统运行状况
+      url: "/installation/monitor-health.html"
+    - title: 升级Keystone收集器
+      url: "/installation/upgrade.html"
   - title: Keystone信息板
     entries:
     - title: 查看Keystone信息板
@@ -117,16 +129,6 @@ sidebar:
       url: "/concepts/misc-volume-billing.html"
     - title: 计费计划
       url: "/concepts/billing-schedules.html"
-  - title: 合作伙伴和客户运营的环境
-    url: "/concepts/operational-models.html"
-  - title: Keystone基础架构
-    entries:
-    - title: 基础架构详细信息
-      url: "/concepts/infra.html"
-    - title: 组件
-      url: "/concepts/components.html"
-    - title: 数据流
-      url: "/concepts/data-flow.html"
   - title: NetApp全球服务支持中心
     url: "/concepts/gssc.html"
   - title: 法律声明

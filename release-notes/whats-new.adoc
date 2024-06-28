@@ -20,6 +20,20 @@ Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕中引入�
 
 
 
+== 2024年6月27日
+
+
+
+=== 一致的订阅显示
+
+Keystone订阅*屏幕已更新，可在所有选项卡中显示选定的订阅编号。
+
+* 刷新*Keystone订阅*屏幕中的任何选项卡后，屏幕将自动导航到*订 阅*选项卡，并将所有选项卡重置为*订 阅*下拉列表中列出的第一个订阅。
+* 如果选定订阅未订阅性能指标，*性能*选项卡将在导航时显示*订阅*下拉列表中列出的第一个订阅。
+
+
+
+
 == 2024年5月29日
 
 
@@ -48,7 +62,7 @@ Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕中引入�
 
 === 增强了订阅显示功能
 
-订阅的默认显示已增强、可按跟踪ID排序。现在，*订阅*选项卡(包括*订阅*下拉列表和CSV报告)中的订阅将根据跟踪ID的字母顺序显示，顺序依次为a、a、b、B等。
+订阅的默认显示已增强、可按跟踪ID排序。现在，*订阅*选项卡(包括*订阅*下拉列表和CSV报告)中的订阅将按跟踪ID的字母顺序显示，顺序依次为a、a、b、B等。
 
 
 
@@ -116,9 +130,7 @@ Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕中引入�
 
 
 
-== 2024年2月29日的新增功能和增强功能
-
-此版本的Active IQ数字顾问(也称为数字顾问)信息板和*Keystone订阅*屏幕上进行了多项增强：
+== 2024年2月29日
 
 
 
@@ -178,10 +190,10 @@ Keystone订阅*屏幕现在包括*Assets*选项卡。此新选项卡可根据您
 
 === 可以按监视列表进行搜索
 
-Active IQ数字顾问(也称为数字顾问)中对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息、请参见 link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["使用Keystone监视列表进行搜索"^]。
+Digital Advisor中对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息、请参见 link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["使用Keystone监视列表进行搜索"^]。
 
 
 
 === 转换为UTC时区的日期
 
-在Active IQ数字顾问的*Keystone订阅*屏幕的选项卡上返回的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。有关详细信息，请参见 link:../integrations/aiq-keystone-details.html["Keystone订阅信息板和报告"^]。
+在Digital Advisor的*Keystone订阅*屏幕的选项卡上返回的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。有关详细信息，请参见 link:../integrations/aiq-keystone-details.html["Keystone订阅信息板和报告"^]。
