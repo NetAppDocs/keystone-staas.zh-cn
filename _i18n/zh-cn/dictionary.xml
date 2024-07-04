@@ -1574,7 +1574,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="c14158742caa91eb4e1b6152329dc0fb" category="paragraph">Digital Advisor可提供全面的清单级部署信息。另一方面、Keystone信息板的*资产*选项卡会根据您的订阅累积集群级别的信息、并将其隔离并提供准确级别的详细信息。</block>
   <block id="d6807769eefb798524ae26e4e26e380c" category="paragraph"><block ref="d6807769eefb798524ae26e4e26e380c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="160de0b8ef29975a3bcc6e2e2b61c540" category="paragraph">您可以单击切换按钮*显示当前使用情况*来查看当前计费期间的使用量、突发使用量和累积突发数据。这些详细信息不基于查询的日期范围。</block>
-  <block id="2ace5c82683c2f75d293a1427df222e4" category="list-text">*累积突发*：当前计费期间每月计算的累积突发使用量或已消耗容量的指标。累积突发使用量是根据服务级别的已使用容量和已用容量计算得出的：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
   <block id="a49bc4f8e609a4d43e0d9598bebd4bb5" category="doc">在Digital Advisor上查看Keystone信息板</block>
   <block id="3249e310d1f377e16af196e978621a35" category="paragraph">监视列表是一项功能Digital Advisor。有关信息，请参见<block ref="5d023a7962c7eae7e0af56f6e7f92603" category="inline-link-rx"></block>。有关创建监视列表的信息、请参见<block ref="2539846485ed670b4851c404ba8cd9b6" category="inline-link-rx"></block>。</block>
   <block id="47f8ab1b56fa7a9acaabc7ce6e4ffaab" category="paragraph">如果在*Capacity Trending*选项卡中的*Capacity Trend*选项中选择了当前日期作为上个月的开始日期和结束日期，则使用情况图表将显示指定单天时间段之外的数据。</block>
@@ -1607,4 +1606,9 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="50b5338aa0479ca1598819ab1973293a" category="sidebar">验证完整性</block>
   <block id="44ab8d5e0ce2a670c121bda2763e8fc5" category="sidebar">配置 AutoSupport</block>
   <block id="a01e404d73fc592bf41bd7912d6ca64d" category="sidebar">监控和升级</block>
+  <block id="2f50257d0127547c73c769d876826d6e" category="list-text">*累积突发*：当前计费周期内一个月内每2分钟间隔内累积的总突发容量(以TiB为单位)的指示符。整个月的累积突发使用量计算如下：</block>
+  <block id="eee1e9815bd73636e7c7f4c13e558374" category="paragraph">[月中突发总数/((月中天数)x24 x 60)] x间隔持续时间</block>
+  <block id="1388fb0841924e24456f6e804391dd9d" category="paragraph">您可以使用以下方法计算短期内(例如每两分钟)的累积突发：</block>
+  <block id="c5463aa7dfcc807ab1935c21fb07d1c5" category="paragraph">[突发/(月中天数x 24 x 60)] x间隔持续时间</block>
+  <block id="d7b378f896f44381b7e64ff2e954c2d4" category="paragraph">突发值是已用容量与已提交容量之间的差值。例如、如果使用一个月中的30天、则在2分钟的间隔内、如果已用容量达到120 TiB且已提交容量为100 TiB、则会产生20 TiB的突发容量、相当于该间隔的累积突发使用量0.000925926 TiB。</block>
 </blocks>
