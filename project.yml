@@ -75,16 +75,16 @@ sidebar:
       url: "/integrations/aiq-keystone-details.html"
     - title: 订阅选项卡
       url: "/integrations/subscriptions-tab.html"
-    - title: 当前使用量选项卡
+    - title: 电流消耗选项卡
       url: "/integrations/current-usage-tab.html"
-    - title: 容量趋势选项卡
+    - title: 消耗趋势选项卡
       url: "/integrations/capacity-trend-tab.html"
     - title: 卷和对象选项卡
       url: "/integrations/volumes-objects-tab.html"
-    - title: 性能选项卡
-      url: "/integrations/performance-tab.html"
     - title: 资产选项卡
       url: "/integrations/assets-tab.html"
+    - title: 性能选项卡
+      url: "/integrations/performance-tab.html"
     - title: 从BlueXP管理Keystone订阅
       url: "/integrations/keystone-cm.html"
   - title: Keystone STaaS服务

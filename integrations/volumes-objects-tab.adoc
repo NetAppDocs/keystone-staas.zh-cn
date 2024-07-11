@@ -14,34 +14,39 @@ summary: volume-objects-tab
 
 
 [role="lead"]
-使用*卷和对象*选项卡可查看ONTAP卷的摘要信息和详细信息。对于StorageGRID、您可以使用此选项卡读取对象存储环境中各个节点的使用情况。
+使用*卷和对象*选项卡可查看ONTAP卷和对象存储的详细信息。对于StorageGRID、您可以使用此选项卡读取对象存储环境中各个节点的使用情况。
 
 
 NOTE: 此选项卡的标题因站点部署的性质而异。如果同时具有ONTAP和对象存储，则选项卡的标题将显示为*Volumes & Objects*。仅对于ONTAP，名称显示为*Volumes*。对于StorageGRID对象存储，可以看到*Objects*选项卡。
 
 
 
-== 查看ONTAP卷摘要和详细信息
+== 查看ONTAP卷和对象存储详细信息
 
-卷选项卡提供了有关ONTAP系统卷的不同级别的详细信息。有两个选项卡、每个选项卡用于显示ONTAP卷的摘要视图和详细信息视图。“*卷摘要*”选项卡提供映射到订阅服务级别的卷的总数。相应的卷将再次在*卷详细信息*选项卡中列出其详细信息。
+通过*卷和对象*选项卡，您可以深入了解不同详细级别的ONTAP系统卷和对象存储。对于ONTAP卷、有两个子选项卡：*卷摘要*、用于提供映射到已订阅服务级别的卷的总数；*卷详细信息*、用于再次列出这些卷及其特定详细信息。“*对象*”子选项卡提供有关订阅的对象存储的详细信息，其中包括文件和对象存储的服务级别。
+
+
+NOTE: *卷*选项卡下的*对象*子选项卡不可用，在*对象*选项卡中，*卷摘要*和*卷详细信息*子选项卡不包含任何数据。
 
 [role="tabbed-block"]
 ====
 .卷摘要
 --
 . 单击*常规> Keystone订阅>卷和对象>卷摘要*。
-. 选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。
-
-
+. 选择订阅编号。
++
 对于选定的Keystone STaaS订阅、您可以查看卷总数、其AQoS合规状态、受保护卷的数量以及所有这些卷中的已提交、已使用和可用总容量。如果单击非合规卷或受保护卷的数量，则会转到*卷详细信息*选项卡，在此可以根据您的选择查看显示不合规卷或受保护卷的经过筛选的列表。
 
-image:volume-summary-1.png["卷摘要选项卡"]
++
+image:volume-summary-2.png["卷摘要选项卡"]
+
+
 
 --
 .卷详细信息
 --
 . 单击*常规> Keystone订阅>卷>卷详细信息*。
-. 选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。
+. 选择订阅编号。
 +
 您可以查看卷的表格列表、例如容量使用情况、卷类型、集群、聚合以及分配的Keystone服务级别。您可以将鼠标悬停在列标题旁边的信息图标上、滚动浏览列并了解有关这些列的更多信息。您可以按列排序并筛选列表以查看特定信息。
 
@@ -50,40 +55,32 @@ image:volume-summary-1.png["卷摘要选项卡"]
 NOTE: 对于高级数据保护附加服务、将显示一个附加列、指示此卷在MetroCluster配置中是主卷还是镜像卷。您可以单击*复制节点序列*按钮来复制单个节点序列号。
 
 +
+image:volume-details-3.png["卷详细信息选项卡"]
 
-NOTE: 对于涵盖文件和对象服务级别的订阅，您可以单击*对象存储详细信息*按钮来查看对象存储详细信息。
+
+
+--
+.对象
+--
+. 单击*常规> Keystone订阅>对象*。
+. 选择订阅编号。默认情况下、如果先前选择的订阅不包括文件和对象存储的服务级别、则会选择第一个可用订阅编号。
++
+
+NOTE: 对于StorageGRID、此选项卡显示对象存储节点的物理使用情况。
 
 +
-image:volume-details-2.png["卷详细信息选项卡"]
+image:objects-details.png["对象选项卡"]
 
 
 
 --
 ====
-
-
-== 查看StorageGRID节点和使用情况
-
-对于StorageGRID、此选项卡显示对象存储节点的物理使用情况。
-
-.步骤
-. 单击*常规> Keystone订阅>对象*。
-. 选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。选择订阅编号后、将启用对象存储详细信息的链接。
-+
-image:sg-link.png["StorageGRID对话框"]
-
-. 单击此链接可查看每个节点的节点名称和物理使用情况详细信息。
-+
-image:sg-link-2.png["StorageGRID对话框"]
-
-
-
 * 相关信息 *
 
 * link:../integrations/aiq-keystone-details.html["使用Keystone信息板和报告"]
 * link:../integrations/subscriptions-tab.html["订阅"]
-* link:../integrations/current-usage-tab.html["当前使用情况"]
-* link:../integrations/capacity-trend-tab.html["容量趋势"]
-* link:../integrations/performance-tab.html["性能"]
+* link:../integrations/current-usage-tab.html["电流消耗"]
+* link:../integrations/capacity-trend-tab.html["消耗趋势"]
 * link:../integrations/assets-tab.html["资产"]
+* link:../integrations/performance-tab.html["性能"]
 

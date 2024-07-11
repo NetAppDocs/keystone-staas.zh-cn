@@ -21,18 +21,19 @@ Digital Advisor可提供全面的清单级部署信息。另一方面、Keystone
 .步骤
 . 单击*常规> Keystone订阅>资产*。
 . 选择要查看其集群的订阅编号。
-
-
++
 您将看到集群详细信息、并按存储效率设置、平台类型和容量详细信息进行细分。单击其中一个集群将转到"Digital Advisor "屏幕上的*集群*小工具、从中可以获取该集群的追加信息。
 
-image:assets-tab-2.png["资产选项卡"]
+
+
+image:assets-tab-3.png["资产选项卡"]
 
 * 相关信息 *
 
 * link:../integrations/aiq-keystone-details.html["使用Keystone信息板和报告"]
 * link:../integrations/subscriptions-tab.html["订阅"]
-* link:../integrations/current-usage-tab.html["当前使用情况"]
+* link:../integrations/current-usage-tab.html["电流消耗"]
 * link:../integrations/volumes-objects-tab.html["卷和对象()"]
-* link:../integrations/capacity-trend-tab.html["容量趋势"]
+* link:../integrations/capacity-trend-tab.html["消耗趋势"]
 * link:../integrations/performance-tab.html["性能"]
 

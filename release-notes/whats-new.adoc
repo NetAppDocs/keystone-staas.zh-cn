@@ -20,6 +20,22 @@ Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕中引入�
 
 
 
+== 2024年7月10日
+
+
+
+=== 标签修改
+
+标签*Current Usage*将更改为*Current功耗*，*Capacity Try*将更改为*功 耗趋势*。
+
+
+
+=== 订阅的搜索栏
+
+Keystone订阅*屏幕中所有选项卡上的*订阅*下拉菜单现在包含一个搜索栏。您可以搜索*订阅*下拉列表中列出的特定订阅。
+
+
+
 == 2024年6月27日
 
 
@@ -174,7 +190,7 @@ Keystone订阅*屏幕现在包括*Assets*选项卡。此新选项卡可根据您
 
 === 针对累积突发返回的发票数据
 
-现在，*容量趋势*选项卡中的*应计突发*标签已修改为*已发票应计突发*。选择此选项可查看计费累积突发数据的月度图表。有关详细信息，请参见 link:../integrations/aiq-keystone-details.html#view-invoiced-accrued-burst["查看已开票的应计突发量"^]。
+现在，*容量趋势*选项卡中的*应计突发*标签已修改为*已发票应计突发*。选择此选项可查看计费累积突发数据的月度图表。有关详细信息，请参见 link:../integrations/capacity-trend-tab.html#view-invoiced-accrued-burst["查看已开票的应计突发量"^]。
 
 
 
@@ -190,7 +206,7 @@ Keystone订阅*屏幕现在包括*Assets*选项卡。此新选项卡可根据您
 
 === 可以按监视列表进行搜索
 
-Digital Advisor中对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息、请参见 link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["使用Keystone监视列表进行搜索"^]。
+Digital Advisor中对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息，请参见 link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["按Keystone监视列表搜索"^]。
 
 
 
