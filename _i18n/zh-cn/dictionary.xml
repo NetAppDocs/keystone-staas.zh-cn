@@ -1452,7 +1452,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="555fdd5c5952939fd3a2e87f3c0202cc" category="section-title">从卷详细信息选项卡访问对象存储详细信息</block>
   <block id="29117909372d41a783c58a54504dc882" category="paragraph">现在，*卷和对象*选项卡中的*卷详细信息*选项卡可提供对象存储详细信息以及包含文件和对象服务级别的订阅的卷信息。您可以单击*卷详细信息*选项卡中的*对象存储详细信息*按钮来查看详细信息。</block>
   <block id="d1460394a13760c5650d62f6d4fd88e4" category="list-text">*QoS警告*：您的卷未分配AQoS策略。</block>
-  <block id="85348b428bc0994aa230ffb67e5ed22d" category="paragraph"><block ref="85348b428bc0994aa230ffb67e5ed22d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3b1babefaddbc8aaa22a17b8869a426" category="list-text">在*Keystone订阅*小工具上，单击*查看所有订阅*，在*Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规&gt; Keystone订阅*。
 订阅详细信息、每个服务级别的使用情况图表以及卷详细信息将显示在* Keystone订阅*屏幕的不同选项卡中。</block>
   <block id="13e7adb1be14d277e7a4fb6ecf5d048c" category="paragraph"><block ref="13e7adb1be14d277e7a4fb6ecf5d048c" category="inline-image-macro-rx" type="image"></block></block>
@@ -1520,7 +1519,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="a8242ba7a4a7f15ad320c0c336f0f541" category="paragraph">NetApp Keystone STaaS提供两种服务交付运营模式：合作伙伴运营模式和客户运营模式。</block>
   <block id="2fe25ef49287108f9097618ddff98a05" category="paragraph">您可以使用Digital Advisor信息板查看Keystone订阅的详细信息、监控容量使用情况并生成报告。</block>
   <block id="c14158742caa91eb4e1b6152329dc0fb" category="paragraph">Digital Advisor可提供全面的清单级部署信息。另一方面、Keystone信息板的*资产*选项卡会根据您的订阅累积集群级别的信息、并将其隔离并提供准确级别的详细信息。</block>
-  <block id="d6807769eefb798524ae26e4e26e380c" category="paragraph"><block ref="d6807769eefb798524ae26e4e26e380c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="160de0b8ef29975a3bcc6e2e2b61c540" category="paragraph">您可以单击切换按钮*显示当前使用情况*来查看当前计费期间的使用量、突发使用量和累积突发数据。这些详细信息不基于查询的日期范围。</block>
   <block id="a49bc4f8e609a4d43e0d9598bebd4bb5" category="doc">在Digital Advisor上查看Keystone信息板</block>
   <block id="3249e310d1f377e16af196e978621a35" category="paragraph">监视列表是一项功能Digital Advisor。有关信息，请参见<block ref="5d023a7962c7eae7e0af56f6e7f92603" category="inline-link-rx"></block>。有关创建监视列表的信息、请参见<block ref="2539846485ed670b4851c404ba8cd9b6" category="inline-link-rx"></block>。</block>
@@ -1588,7 +1586,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="113a7f7a3800ecc0ca2650ec55f2fc4d" category="doc">电流消耗选项卡</block>
   <block id="2e6c192f3d1b980937c51968eb5c620d" category="paragraph">“*当前使用量*”选项卡显示您的订阅的使用情况详细信息。</block>
   <block id="28f032b01b5c18fd69fa59635c9b79b2" category="paragraph">要查看此选项卡，请从左侧导航窗格中转到*常规&gt; Keystone订阅&gt;当前消费*，然后选择所需的订阅编号。</block>
-  <block id="e6e48947a0a84d4c75379d3ad849a802" category="paragraph"><block ref="e6e48947a0a84d4c75379d3ad849a802" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2f92de04a3d2869fe0cf56db40e54a0a" category="paragraph">与当前使用量相结合、您可能需要查看历史使用量数据以进行比较。单击*查看历史数据*按钮导航到*消费趋势*选项卡以查看同一订阅的历史数据。</block>
   <block id="c2d175fdd558b3470a3010058a7c94ab" category="paragraph"><block ref="c2d175fdd558b3470a3010058a7c94ab" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0f9ac035eb1ca017e76913bac1e0a516" category="paragraph"><block ref="0f9ac035eb1ca017e76913bac1e0a516" category="inline-image-macro-rx" type="image"></block></block>
@@ -1621,4 +1618,11 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="df56284dfb684f79b8cd68b6256e8808" category="paragraph">Keystone订阅*屏幕中所有选项卡上的*订阅*下拉菜单现在包含一个搜索栏。您可以搜索*订阅*下拉列表中列出的特定订阅。</block>
   <block id="1bb4f4215b4cfc16e3a95f61314a8ded" category="paragraph">现在，*容量趋势*选项卡中的*应计突发*标签已修改为*已发票应计突发*。选择此选项可查看计费累积突发数据的月度图表。有关详细信息，请参见 <block ref="b9f581509f4f5c092d1e1e258ec0cc04" category="inline-link-macro-rx"></block>。</block>
   <block id="322b7c203883b5f1e51c48d947e1cb4d" category="paragraph">Digital Advisor中对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息，请参见 <block ref="bd6c55fabca71f10e9c92f78aa84686b" category="inline-link-macro-rx"></block>。</block>
+  <block id="1b6bc3125f482fcbcf029c833aea1290" category="inline-link-macro">ONTAP 要求</block>
+  <block id="479449c6cb6b88b7c379b1672435686c" category="admonition">在全新安装Unified Manager期间、MySQL的默认端口3306仅限于本地主机、从而无法收集Keystone收集器的性能指标。有关详细信息，请参见 <block ref="997798a1af398517058dc0d935faaa2c" category="inline-link-macro-rx"></block>。</block>
+  <block id="1b1d9e9b28e55ae75dd476a860b48088" category="inline-link-macro">其他菜单选项</block>
+  <block id="915546b63309e4afc31cc6f77934d3f4" category="admonition">在全新安装Unified Manager期间、MySQL的默认端口3306仅限于本地主机、从而无法收集Keystone ONTAP的性能数据。可以修改此配置、并使用Unified Manager维护控制台上的选项使此连接可供其他主机使用<block ref="dd441ca9450a58c2c7b09ab86e8f7a28" prefix=" " category="inline-code"></block> 。有关信息，请参见 <block ref="df7524dc87f6643f2fa76eb53a86ec87" category="inline-link-macro-rx"></block>。</block>
+  <block id="f693bd6f9d65926fbf70950854618f50" category="paragraph"><block ref="f693bd6f9d65926fbf70950854618f50" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="82417085e656251b41cd76814fd5b48a" category="paragraph"><block ref="82417085e656251b41cd76814fd5b48a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f4927a3debc365e92273fa3de8985ec2" category="paragraph"><block ref="f4927a3debc365e92273fa3de8985ec2" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

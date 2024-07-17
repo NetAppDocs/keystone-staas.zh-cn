@@ -38,6 +38,10 @@ summary: Keystone Unified Manager的前提条件
 .. 使用安装期间生成的默认应用程序管理员用户凭据登录到Unified Manager Web UI。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["访问 Unified Manager Web UI"^]。
 .. 使用为Keystone收集器创建服务帐户 `Operator` 用户角色。Keystone收集器服务API使用此服务帐户与Unified Manager进行通信并收集使用情况数据。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_users.html["添加用户"^]。
 .. 创建 `Database` 用户帐户、使用 `Report Schema` 角色。收集性能数据时需要此用户。请参见 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_create_database_user.html["创建数据库用户"^]。
++
+
+NOTE: 在全新安装Unified Manager期间、MySQL的默认端口3306仅限于本地主机、从而无法收集Keystone ONTAP的性能数据。可以修改此配置、并使用Unified Manager维护控制台上的选项使此连接可供其他主机使用 `Control access to MySQL port 3306` 。有关信息，请参见 link:https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_additional_menu_options.html["其他菜单选项"^]。
+
 
 
 . 在Unified Manager中启用API网关。Keystone收集器可利用API网关功能与ONTAP 集群进行通信。您可以从Web UI启用API网关、也可以通过Unified Manager命令行界面运行几个命令来启用API网关。

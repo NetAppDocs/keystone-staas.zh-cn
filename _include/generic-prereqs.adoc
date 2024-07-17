@@ -173,6 +173,9 @@ TCP 8000、ICMP回显请求/回复
 
 |===
 
+NOTE: 在全新安装Unified Manager期间、MySQL的默认端口3306仅限于本地主机、从而无法收集Keystone收集器的性能指标。有关详细信息，请参见 link:addl-req.html["ONTAP 要求"]。
+
+
 
 === URL访问
 
