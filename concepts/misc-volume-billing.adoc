@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/misc-volume-billing.html 
 keywords: Billing and miscellaneous scenarios 
-summary: 根据其他卷类型计费 
+summary: '了解Keystone针对特定配置(包括克隆卷、高级数据保护等)的计费信息。' 
 ---
 = Keystone计费的其他方案
 :hardbreaks:
@@ -12,6 +12,9 @@ summary: 根据其他卷类型计费
 :linkattrs: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+了解特定配置的Keystone计费有助于优化服务使用并管理成本。这些方案包括克隆卷、高级数据保护、临时卷、QoS策略、SnapMirror目标、 LUN和系统/根卷。
 
 
 
@@ -30,7 +33,7 @@ summary: 根据其他卷类型计费
 
 == 高级数据保护计费
 
-高级数据保护使用 NetApp MetroCluster 在两个物理隔离的集群之间镜像数据。对于MetroCluster 镜像聚合、数据写入两次、每个集群一次。Keystone服务会单独为每一方的消费收取费用、从而产生两个相同的消费记录。附加费用将应用于订阅中的所有容量、而不管数据是位于源、还是镜像或未镜像数据。
+高级数据保护使用NetApp MetroCluster在两个物理隔离的集群之间镜像数据。对于MetroCluster 镜像聚合、数据写入两次、每个集群一次。Keystone服务会单独为每一方的消费收取费用、从而产生两个相同的消费记录。附加费用将应用于订阅中的所有容量、而不管数据是位于源、还是镜像或未镜像数据。
 
 如果您通过ONTAP System Manager (System Manager)或Active IQ Unified Manager (Unified Manager)监控集群、则可能会发现这些工具上报告的使用量与Keystone上报告的使用量之间存在差异。System Manager和Unified Manager不会报告镜像(远程)集群上的卷、在这样做时、会报告Keystone服务报告的一半使用指标。
 

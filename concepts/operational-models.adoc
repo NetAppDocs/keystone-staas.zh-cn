@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/operational-models.html 
 keywords: Operational models, partner operations, customer operations, roles and responsibilities, r&r 
-summary: Keystone中的操作模式 
+summary: NetApp Keystone STaaS提供两种服务交付运营模式。在开始使用Keystone之前、您应了解这些选项。 
 ---
 = Keystone中的操作模式
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Keystone中的操作模式
 
 
 [role="lead"]
-NetApp Keystone STaaS提供两种服务交付运营模式：合作伙伴运营模式和客户运营模式。
+NetApp Keystone STaaS提供两种服务交付运营模式：合作伙伴运营模式和客户运营模式。在开始使用Keystone之前、您应了解这些选项。
 
 * *合作伙伴运营模式*：合作伙伴或服务提供商为其最终客户运营服务。对于NetApp、合作伙伴是参考的合同方。租户是合作伙伴的客户、与NetApp没有任何计费关系。合作伙伴运营的模式具有多租户环境、租户和最终客户/子租户拥有自己的订阅、并由合作伙伴付费。配对管理员对所有租户执行管理任务。
 * *客户运营模式*：作为客户、您可以根据选定的服务级别和存储订阅Keystone服务。NetApp定义了架构和产品、并在您的内部部署Keystone。您需要通过存储和IT资源管理基础架构。作为客户、您是NetApp的租户或子租户或合作伙伴/服务提供商。根据您的合同、您可以提出由NetApp或您的服务提供商处理的服务请求。您的管理员可以从您的站点(环境)执行管理任务。这些任务与环境中的用户相关联。

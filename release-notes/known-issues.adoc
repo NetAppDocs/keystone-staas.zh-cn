@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: release-notes/known-issues.html 
 keywords: netapp, keystone, release notes, known issues 
-summary: Keystone STaaS中的已知问题 
+summary: 已知问题用于确定可能会妨碍您有效使用Keystone订阅服务的问题。 
 ---
 = 已知问题
 :hardbreaks:

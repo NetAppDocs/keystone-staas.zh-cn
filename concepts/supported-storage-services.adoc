@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/supported-storage-services.html 
 keywords: storage, service, service definition, keystone STaaS services, 
-summary: Keystone STaaS服务 
+summary: Keystone STaaS服务支持ONTAP和StorageGRID。 
 ---
-= Keystone STaaS服务支持的存储
+= Keystone支持的存储
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

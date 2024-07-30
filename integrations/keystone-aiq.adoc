@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/keystone-aiq.html 
 keywords: Keystone, Digital Advisor, keystone-aiq, aiq 
-summary: Keystone和Digital Advisor 
+summary: 作为NetApp Keystone STaaS订阅者、您可以从数字顾问信息板查看订阅概况。 
 ---
-= 在Digital Advisor上查看Keystone信息板
+= Keystone信息板概述
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Keystone和Digital Advisor
 
 
 [role="lead"]
-如果您订阅了NetApp Keystone STaaS服务、则可以在Active IQ数字顾问(也称为数字顾问)信息板的* Keystone订阅*小工具上大致了解您的订阅情况。
+作为NetApp Keystone STaaS订阅者、您可以在Active IQ数字顾问(也称为数字顾问)信息板的* Keystone订阅*小工具上简要了解您的订阅。
 
 您可以通过输入客户或监视列表名称的前三个字符或Keystone订阅编号来搜索Keystone订阅。有关如何按监视列表搜索Keystone STaaS订阅的信息、请参见 link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["使用Keystone监视列表进行搜索"]。
 

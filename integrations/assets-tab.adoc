@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/assets-tab.html 
 keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab 
-summary: Keystone订阅报告和图形 
+summary: '使用"资产"选项卡可查看有关Keystone订阅所管理的集群和节点的详细信息。' 
 ---
-= 资产选项卡
+= 查看Keystone管理的集群和节点详细信息
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Keystone订阅报告和图形
 
 
 [role="lead"]
-使用*资产*选项卡收集有关Keystone订阅所管理的集群和节点的观点。
+使用*资产*选项卡可查看有关Keystone订阅所管理的集群和节点的详细信息。
 
 Digital Advisor可提供全面的清单级部署信息。另一方面、Keystone信息板的*资产*选项卡会根据您的订阅累积集群级别的信息、并将其隔离并提供准确级别的详细信息。
 

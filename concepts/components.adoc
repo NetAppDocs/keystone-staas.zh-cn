@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/components.html 
 keywords: infrastructure component, deployment requirement, installation requirement 
-summary: 基础架构组件 
+summary: 了解在您的环境中启用NetApp Keystone STaaS服务所需的组件。 
 ---
-= 用于部署的组件
+= 部署所需的组件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 基础架构组件
 
 
 [role="lead"]
-本节列出了在您的环境中启用NetApp Keystone STaaS服务所需的组件。
+要在您的环境中启用NetApp Keystone STaaS服务、需要使用多个组件。开始之前、您应查看有关这些组件的详细信息。
 
 
 
@@ -56,13 +56,13 @@ NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU �
 
 === Storage Virtual Machine
 
-部署Keystone收集器和AIOPS解决方案 网关需要使用Storage Virtual Machine (Storage VM)。安装Keystone收集器的前提条件如下： link:../installation/installation-overview.html["Keystone收集器安装指南"]。其他要求将在部署期间共享。
+要部署Keystone收集器和AIOPS解决方案网关、需要Storage Virtual Machine (Storage VM)。有关安装Keystone收集器的前提条件，请参见： link:../installation/installation-overview.html["Keystone收集器安装指南"]。其他要求将在部署期间共享。
 
 
 
 === 部署选项
 
-可以通过以下方法部署Keystone收集器：
+Keystone收集器可通过以下方法部署：
 
 * VMware OVA模板(需要VMware vCenter Server 6.7或更高版本)
 * 客户提供Red Hat Enterprise Linux 7或8或CentOS 7 Linux服务器。Keystone软件通过安装 `.rpm` 安装过程。
@@ -84,7 +84,7 @@ AIOPS解决方案 网关部署在以下配置中：
 
 === 网络
 
-要运行和维护Keystone收集器和AIOPS解决方案 网关、需要对以下服务进行出站访问：
+要操作和维护Keystone收集器和AIOPS解决方案网关、需要对以下服务进行出站访问：
 
 * support.netapp.com (使用情况数据上传)
 * keystone.netapp.com (软件更新)

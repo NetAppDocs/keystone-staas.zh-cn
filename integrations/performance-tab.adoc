@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/performance-tab.html 
 keywords: keystone-aiq, digital advisor keystone, performance tab 
-summary: Keystone订阅AIQ DA信息板上的性能选项卡 
+summary: 要监控系统性能、您可以查看Keystone订阅管理的ONTAP卷的性能指标。 
 ---
-= 性能选项卡
+= 查看性能指标
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Keystone订阅AIQ DA信息板上的性能选项卡
 
 
 [role="lead"]
-通过*性能*选项卡、您可以查看Keystone订阅所管理的ONTAP卷的性能指标。
+要监控系统性能、您可以查看Keystone订阅管理的ONTAP卷的性能指标。
 
 
 TIP: 您可以选择使用此选项卡。要查看此选项卡、请联系支持部门。

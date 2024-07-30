@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/current-usage-tab.html 
 keywords: keystone-aiq, digital advisor keystone, current consumption tab 
-summary: AIQ DA Keystone信息板上的当前消耗选项卡 
+summary: 要了解您的订阅使用情况、您可以查看已使用容量、已使用容量、可用容量等。 
 ---
-= 电流消耗选项卡
+= 查看订阅的当前使用情况
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: AIQ DA Keystone信息板上的当前消耗选项卡
 
 
 [role="lead"]
-“*当前使用量*”选项卡显示您的订阅的使用情况详细信息。
+要了解您的订阅使用情况、您可以查看使用情况详细信息、例如已使用容量、已使用容量、可用容量等。
 
 要查看此选项卡，请从左侧导航窗格中转到*常规> Keystone订阅>当前消费*，然后选择所需的订阅编号。
 

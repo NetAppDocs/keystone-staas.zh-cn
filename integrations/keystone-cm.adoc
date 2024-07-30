@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: integrations/keystone-cm.html 
 keywords: Keystone-BlueXP 
-summary: Keystone和BlueXP 
+summary: 如果您随NetApp Keystone订阅一起购买了云服务、则可以通过BlueXP访问和管理这些服务。 
 ---
 = 了解Keystone和BlueXP
 :hardbreaks:

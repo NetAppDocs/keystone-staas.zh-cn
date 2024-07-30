@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/qos.html 
 keywords: PSL and QoS, service level quality of service 
-summary: Keystone的服务质量 
+summary: 'Keystone使用存储服务质量(QoS)来确保应用程序获得一致且可预测的性能。' 
 ---
-= Keystone中的服务质量(QoS)
+= Keystone中的存储服务质量(QoS)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,9 @@ summary: Keystone的服务质量
 
 
 [role="lead"]
-存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如用于启动多个系统的工作负载)可能会在一段时间内占用大部分或全部资源、并影响其他工作负载。有关QoS的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"^]。
+Keystone使用存储服务质量(QoS)来确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如用于启动多个系统的工作负载)可能会在一段时间内占用大部分或全部资源、并影响其他工作负载。
+
+有关QoS的信息，请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"^]。
 
 
 

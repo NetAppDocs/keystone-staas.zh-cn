@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/supported-storage-capacity.html 
 keywords: storage capacity, capacity definition, keystone STaaS storage capacity, 
-summary: 支持的存储容量 
+summary: 了解NetApp Keystone STaaS服务支持的存储容量类型。 
 ---
 = Keystone支持的存储容量
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 支持的存储容量
 
 
 [role="lead"]
-NetApp Keystone STaaS服务容量包括：
+NetApp Keystone STaaS服务支持多种类型的存储容量。了解这些不同的容量术语有助于您使用Keystone。
 
 
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/capacity-trend-tab.html 
 keywords: keystone-aiq, digital advisor keystone, consumption trend tab, historical usage, accrued burst, accrued, consumption 
-summary: Keystone订阅信息板上的消耗趋势选项卡 
+summary: 为了帮助您监控订阅使用情况、您可以查看特定时间段内Keystone订阅的历史数据。 
 ---
-= 消耗趋势选项卡
+= 查看消费趋势
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Keystone订阅信息板上的消耗趋势选项卡
 
 
 [role="lead"]
-*消费趋势*选项卡显示特定时间段内Keystone订阅的历史数据。
+为了帮助您监控订阅使用情况、您可以查看特定时间段内Keystone订阅的历史数据。
 
 垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。
 

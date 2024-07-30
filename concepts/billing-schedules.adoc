@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/billing-schedules.html 
 keywords: billing schedules, schedule for payment 
-summary: Keystone中的计费计划 
+summary: Keystone STaaS订阅按月和按年计费。 
 ---
 = 计费计划
 :hardbreaks:

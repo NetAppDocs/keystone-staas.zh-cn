@@ -4,7 +4,7 @@ permalink: concepts/equinix.html
 keywords: netapp, keystone, Equinix 
 summary: Keystone和Equinix 
 ---
-= 由Equinix提供支持的Keystone联合定位服务
+= 了解由Equin.提供支持的主机代管服务
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Keystone和Equinix
 
 
 [role="lead"]
-NetApp与Equinix合作、在Equinix数据中心托管NetApp Keystone STaaS服务、以确保为您提供统一的解决方案。
+为了提供全堆栈解决方案即服务、NetApp与Equinx建立了合作伙伴关系、在Equinx数据中心托管NetApp Keystone STaaS服务。
 
 由Equynox提供支持的Keystone主机代管(Co-Lo)服务与标准Keystone服务产品保持不变。
 
@@ -25,7 +25,7 @@ NetApp与Equinix合作、在Equinix数据中心托管NetApp Keystone STaaS服务
 * 这些服务在11个国家/地区的数据中心内均受支持。
 
 
-Equinix的数据中心位于以下位置：
+Equin.在以下位置设有数据中心：
 
 |===
 | 数据中心 | 国家 / 地区 

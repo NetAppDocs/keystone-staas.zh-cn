@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/data-tiering.html 
 keywords: add-on services, add-on, data tiering 
-summary: 附加、其他服务详细信息、数据分层 
+summary: 数据分层附加服务可识别不常用的数据并将其分层到受支持的存储。 
 ---
-= 数据分层
+= 了解数据层
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

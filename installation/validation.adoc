@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: installation/validation.html 
 keywords: validate, validation 
-summary: 在Linux系统上验证Keystone收集器 
+summary: Keystone存储库已配置为自动验证Keystone软件的完整性。 
 ---
-= 自动验证软件完整性
+= Keystone软件的自动验证
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,6 @@ summary: 在Linux系统上验证Keystone收集器
 
 
 [role="lead"]
-可以通过一个重复过程来验证Keystone软件的完整性。
+Keystone存储库已配置为自动验证Keystone软件的完整性、以便您的站点仅安装有效且真实的软件。
 
-中提供的Keystone YUM存储库客户端配置 `keystonerepo.rpm` 使用强制GPG检查 (`gpgcheck=1`)。如果通过Keystone存储库下载的任何RPM未通过签名验证、则无法安装。Keystone收集器的计划内自动更新功能会使用此功能、以确保您的站点仅安装有效且真实的软件。
+中提供的Keystone YUM存储库客户端配置 `keystonerepo.rpm` 会对通过此存储库下载的所有软件使用强制GPG检查 (`gpgcheck=1`。如果通过Keystone存储库下载的任何RPM未通过签名验证、则无法安装。在Keystone收集器的计划自动更新功能中使用此功能、以确保您的站点仅安装有效且正版的软件。

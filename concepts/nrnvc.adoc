@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/nrnvc.html 
 keywords: Non-returnable, non-volatile components, SnapLock compliance, add-on service 
-summary: 不可退回的非易失性组件以及SnapLock 合规性 
+summary: 作为NetApp Keystone订阅的一部分、NetApp扩展了NRVC为您的文件、块和对象服务提供的服务。 
 ---
-= 不可退回的非易失性组件以及SnapLock 合规性
+= 非可退还、非易失性组件、符合SnapLock标准
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,22 +14,21 @@ summary: 不可退回的非易失性组件以及SnapLock 合规性
 
 
 [role="lead"]
-作为NetApp Keystone 订阅的一部分、NetApp为您的文件、块和对象服务扩展了不可退回的非易失性组件(NRNVC)服务。
-
-您可以在订阅Keystone时订阅此附加服务。
-有关标准服务和云服务的信息、请参见 link:supported-storage-services.html["Keystone STaaS服务"]。
-
-有关服务级别的信息、请参见 link:../concepts/service-levels.html["Keystone中的服务级别"]。
+作为NetApp Keystone订阅的一部分、NetApp为您的文件、块和对象服务扩展了不可退还的非易失性组件(NRNVC)产品。
 
 如果NetApp以其他方式恢复其在交付服务时使用的所有物理资产、则NetApp不会恢复在整个服务期限内或服务终止时使用的物理存储介质。
 
-如果您已购买此服务，请注意以下事项：
+您可以在订阅Keystone时订阅此附加服务。如果您已购买此服务，请注意以下事项：
 
 * 在服务期限结束时、或者如果驱动器和非易失性内存在服务期限内出现故障或发现有缺陷、则无需退回这些驱动器和非易失性内存。
 * 但是、您需要为驱动器和/或非易失性内存生成销毁证书、不能用于任何其他目的。
 * 与NRVC相关的额外成本按订阅服务(包括标准服务、高级数据保护和数据分层)每月总费用的百分比收取。
 * 此服务仅适用于文件、块和对象服务。
 
+
+有关标准服务和云服务的信息，请参见 link:supported-storage-services.html["Keystone STaaS服务"]。
+
+有关服务级别的信息、请参见 link:../concepts/service-levels.html["Keystone中的服务级别"]。
 
 
 

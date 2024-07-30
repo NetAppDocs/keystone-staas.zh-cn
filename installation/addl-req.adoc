@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: installation/addl-req.html 
 keywords: keystone unified manager prerequisites, aiqum config keystone 
-summary: Keystone Unified Manager的前提条件 
+summary: 在开始使用Keystone之前、您需要确保ONTAP集群和StorageGRID系统满足一些要求。 
 ---
 = ONTAP和StorageGRID的要求
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Keystone Unified Manager的前提条件
 
 
 [role="lead"]
-您应完成ONTAP 和StorageGRID 的一些其他前提条件。除了Linux/VMware vSphere系统要求之外、请确保您已完成这些特定前提条件。单击所需选项卡以了解更多信息。
+在开始使用Keystone之前、您需要确保ONTAP集群和StorageGRID系统满足一些要求。
 
 [role="tabbed-block"]
 ====

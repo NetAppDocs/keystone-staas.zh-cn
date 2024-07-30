@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: installation/installation-overview.html 
 keywords: installation, Keystone Collector 
-summary: 什么是Keystone收集器 
+summary: Keystone收集器是安装在站点的VMware vSphere或Linux主机上的NetApp软件。它会收集Keystone系统的使用情况数据。 
 ---
-= Keystone收集器概述
+= 了解Keystone收集器
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,15 +14,11 @@ summary: 什么是Keystone收集器
 
 
 [role="lead"]
-要使用Keystone服务并查看使用情况数据、您应在站点的VMware vSphere或Linux系统上安装Keystone收集器。
+_Keystone收集器_是您在站点的VMware vSphere或Linux主机上安装的NetApp软件、用于访问Keystone服务。它会收集Keystone系统的使用情况数据。
 
+Keystone收集器是Keystone计费平台的使用情况采集组件。它可利用Active IQ Unified Manager和其他应用程序连接到ONTAP和StorageGRID系统、以收集对Keystone订阅进行使用和SLA性能计量所需的元数据。通过它、您可以监控系统运行状况、同时发送计费数据进行报告。
 
-NOTE: Keystone收集器代表收集Keystone系统使用情况数据的标准方法。如果您的环境不支持Keystone收集器、您可以向Keystone产品管理部门寻求授权、以使用AutoSupport遥测机制作为替代方案。有关AutoSupport的信息、请参见 https://docs.netapp.com/us-en/active-iq/concept_autosupport.html["AutoSupport"^]。有关为Keystone配置AutoSupport的信息、请参见 link:../installation/asup-config.html["为Keystone配置AutoSupport"]。
-
-Keystone收集器是Keystone计费平台的使用量采集组件、它利用Active IQ Unified Manager 和其他应用程序连接到ONTAP 和StorageGRID 系统、收集Keystone订阅的使用量和SLA性能计量所需的元数据。通过它、您可以监控系统运行状况、同时发送计费数据进行报告。
-
-
-NOTE: 此处提供的安装和配置信息适用于ONTAP 和StorageGRID。这些要求和过程适用于ONTAP 和StorageGRID 、但有一些例外。
+Keystone收集器代表收集Keystone系统使用情况数据的标准方法。如果您的环境不支持Keystone收集器、您可以向Keystone产品管理部门寻求授权、以使用AutoSupport遥测机制作为替代方案。有关AutoSupport的信息、请参见 https://docs.netapp.com/us-en/active-iq/concept_autosupport.html["AutoSupport"^]。有关为Keystone配置AutoSupport的信息、请参见 link:../installation/asup-config.html["为Keystone配置AutoSupport"]。
 
 此架构图概述了在典型Keystone环境中的成分组件及其连接。
 

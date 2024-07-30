@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/infra.html 
 keywords: keystone infrastructure, infra 
-summary: Keystone基础架构 
+summary: Keystone基础架构、设计、技术选择和组件产品仅由NetApp提供。 
 ---
 = Keystone基础架构
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Keystone基础架构
 
 
 [role="lead"]
-本节介绍适用于NetApp和客户操作环境的NetApp Keystone STaaS基础架构、架构和管理应用程序。
+NetApp全权负责Keystone的基础架构、设计、技术选择和组件、这些内容既适用于NetApp环境、也适用于客户运营的环境。
 
-Keystone基础架构、设计、技术选择和组件产品仅由NetApp提供。NetApp 保留采取以下操作的权利：
+NetApp 保留采取以下操作的权利：
 
 * 选择，替换或重新利用产品。
 * 如果认为合适，请使用新技术更新产品。
@@ -50,4 +50,4 @@ Keystone基础架构包括多个组件、例如以下组件：
 
 image:mgmt-stack.png["管理堆栈"]
 
- Digital Advisor enables you to log in and view the subscription and consumption details for your Keystone subscriptions. For more information about Keystone reporting on the Digital Advisor dashboard, see link:../integrations/keystone-aiq.html[Keystone and Digital Advisor].
+您可以通过Digital Advisor登录并查看Keystone订阅的订阅和使用详细信息。有关Digital Advisor信息板上Keystone报告的详细信息，请参见 link:../integrations/keystone-aiq.html["Keystone和Digital Advisor"]。

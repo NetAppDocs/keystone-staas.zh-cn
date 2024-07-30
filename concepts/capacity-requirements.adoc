@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/capacity-requirements.html 
 keywords: storage capacity requirement for service levels, capacity definition per PSL, 
-summary: 服务级别的容量要求 
+summary: 服务级别的容量要求因Keystone STaaS订阅支持的文件、块、对象或云存储而异。 
 ---
 = 服务级别的容量要求
 :hardbreaks:

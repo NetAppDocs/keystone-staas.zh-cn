@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/subscriptions-tab.html 
 keywords: keystone-aiq, digital advisor keystone, subscriptions-tab 
-summary: 'AIQ DA Keystone信息板上的"订阅"选项卡' 
+summary: '要了解有关Keystone订阅的详细信息、您可以从"订阅"选项卡查看所有订阅的列表。' 
 ---
-= 订阅选项卡
+= 查看有关订阅的详细信息
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'AIQ DA Keystone信息板上的"订阅"选项卡'
 
 
 [role="lead"]
-您可以在*订阅*选项卡中查看所有订阅的列表。
+要了解有关Keystone订阅的更多信息，您可以从*订阅*选项卡查看所有订阅的列表。
 
 要查看此选项卡，请从左侧导航窗格转到*常规> Keystone订阅>订阅*。您的所有订阅都会列出。
 

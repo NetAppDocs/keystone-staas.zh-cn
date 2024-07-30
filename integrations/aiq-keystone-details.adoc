@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/aiq-keystone-details.html 
 keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, iq, digital advisor, metrocluster, storagegrid, ontap, tracking id, burst usage, alerts, different tabs 
-summary: Keystone订阅报告和图形 
+summary: 通过Digital Advisor信息板、您可以查看Keystone订阅的详细信息、监控容量使用情况并生成报告。 
 ---
-= 使用Keystone信息板和报告
+= 查看使用情况详细信息并生成报告
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Keystone订阅报告和图形
 
 
 [role="lead"]
-您可以使用Digital Advisor信息板查看Keystone订阅的详细信息、监控容量使用情况并生成报告。
+通过Digital Advisor信息板、您可以查看Keystone订阅的详细信息、监控容量使用情况并生成报告。
 
 订阅Keystone服务时、您可以在Digital Advisor信息板上的* Keystone订阅*小工具中查看订阅和使用情况的详细信息。
 

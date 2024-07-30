@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: installation/vapp-prereqs.html 
 keywords: prerequisites, VMware vSphere, vApp 
-summary: 在VMware vSphere系统上安装Keystone收集器的前提条件 
+summary: 在安装Keystone收集器之前、VMware vSphere系统必须满足多项要求。 
 ---
 = 虚拟基础架构要求
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 在VMware vSphere系统上安装Keystone收集器的前提条件
 
 
 [role="lead"]
-在VMware vSphere系统上安装Keystone收集器需要一些虚拟基础架构配置。
+在安装Keystone收集器之前、VMware vSphere系统必须满足多项要求。
 
 .Keystone收集器服务器VM的前提条件：
 * 操作系统：VMware vCenter Server和ESXi 6.5或更高版本

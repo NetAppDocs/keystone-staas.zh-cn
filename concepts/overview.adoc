@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/overview.html 
 keywords: learn about keystone, keystone introduction, keystone, STaaS, service, offering, overview 
-summary: 欢迎使用Keystone 
+summary: Keystone是一种按需购买、基于订阅的服务模式、适用于更喜欢运营支出消费模式而非前期资本支出或租赁的企业。 
 ---
 = 了解NetApp Keystone
 :hardbreaks:

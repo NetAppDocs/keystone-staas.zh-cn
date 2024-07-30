@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: installation/upgrade.html 
 keywords: Keystone Collector upgrade 
-summary: 升级Keystone收集器 
+summary: 如果禁用了自动更新功能、请手动升级Keystone收集器。 
 ---
 = 手动升级Keystone收集器
 :hardbreaks:

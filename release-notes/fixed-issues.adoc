@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: release-notes/fixed-issues.html 
 keywords: fixed issues 
-summary: Keystone STaaS的不同版本中已修复的问题 
+summary: 在NetApp Keystone STaaS服务的先前版本中发现的问题已在后续版本中得到修复。 
 ---
 = 已修复的问题
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Keystone STaaS的不同版本中已修复的问题
 
 
 [role="lead"]
-在NetApp Keystone STaaS服务的先前版本中发现的问题已在后续版本中得到修复。以下是修复方法。
+在NetApp Keystone STaaS服务的先前版本中发现的问题已在后续版本中得到修复。
 
 [cols="3*"]
 |===

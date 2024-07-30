@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/committed-capacity-billing.html 
 keywords: Billing based on committed capacity, committed capacity billing 
-summary: 支持的存储容量 
+summary: 已提交容量是指在购买订阅时为特定服务级别提交的容量。 
 ---
 = 根据已提交容量计费
 :hardbreaks:
@@ -14,8 +14,8 @@ summary: 支持的存储容量
 
 
 [role="lead"]
-NetApp Keystone (Keystone)计费基于在Keystone订阅中为您承诺的容量。
+已提交容量是指在购买订阅时为特定服务级别提交的容量。
 
-已提交容量是指在购买订阅时为特定服务级别提交的容量。已提交容量可以是您和NetApp/合作伙伴接受的单个订阅中各种服务级别的总容量。此容量会在每个Keystone订单上进行说明、并进行计费、而不管实际容量消耗如何。
+已提交容量可以是您和NetApp/合作伙伴接受的单个订阅中各种服务级别的总容量。此容量会在每个Keystone订单上进行说明、并进行计费、而不管实际容量消耗如何。
 
 有关Keystone中支持的不同容量的信息、请参见 link:../concepts/supported-storage-capacity.html["Keystone支持的存储容量"]。

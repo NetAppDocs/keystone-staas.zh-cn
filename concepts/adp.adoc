@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/adp.html 
 keywords: data protection advanced 
-summary: 高级数据保护 
+summary: 使用高级数据保护附加服务可确保为任务关键型工作负载提供高效的数据保护。 
 ---
-= 高级数据保护
+= 了解高级数据保护
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 高级数据保护
 
 
 [role="lead"]
-您可以订阅Keystone STaaS订阅中的高级数据保护附加服务。此附加服务可利用NetApp MetroCluster 技术确保在0恢复点目标(RPO)时为任务关键型工作负载提供高效的数据保护。
+您可以在订阅Keystone STaaS的同时订阅高级数据保护附加服务。此附加服务利用NetApp MetroCluster技术、确保在恢复点目标(RPO)为0的情况下为任务关键型工作负载提供高效的数据保护。
 
 
 NOTE: 用于文件和块存储的Keystone STaaS标准服务可利用SnapMirror、SnapVault 和Snapshot等NetApp技术提供默认数据保护服务。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: installation/asup-config.html 
 keywords: ASUP, AutoSupport configuration 
-summary: 用于为Keystone配置AutoSupport的操作步骤 
+summary: 将AutoSupport配置为在ONTAP集群发送的每日支持包中加入Keystone数据。 
 ---
 = 为Keystone配置AutoSupport
 :hardbreaks:
