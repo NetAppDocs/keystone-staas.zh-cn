@@ -115,6 +115,16 @@ sidebar:
         url: "/concepts/nrnvc.html"
       - title: U.S.公民支持(USCS)
         url: "/concepts/uscs.html"
+  - title: Keystone STaaS SLA
+    entries:
+    - title: 可用性
+      url: "/concepts/sla-availability.html"
+    - title: 性能
+      url: "/concepts/sla-performance.html"
+    - title: 可持续性
+      url: "/concepts/sla-sustainability.html"
+    - title: 勒索软件恢复担保
+      url: "/concepts/sla-ransomware.html"
   - title: 计费
     entries:
     - title: Keystone定价

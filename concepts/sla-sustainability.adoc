@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-sustainability.html 
+keywords: sustainability, sla, service level agreement, 
+summary: 可持续性、SLA、服务级别协议 
+---
+= 可持续性SLA
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone根据具有可持续性SLA的ONTAP闪存存储阵列、为存储服务提供每TB实际瓦特数(W/TiB)的有保障测量。可持续性SLA定义了每个符合条件的服务级别的最大W/TiB消耗量、帮助企业实现可持续性目标。
+
+
+
+== 指标
+
+* *Watts*：每日AutoSupport报告的功耗，包括控制器和连接的磁盘架的使用情况。
+* *太字节*：最大值：
++
+** 服务级别的已提交容量+已分配突发容量、或
+** 有效部署容量(假设存储效率系数为 `2:1`)。
+
+
++
+要了解有关存储效率比率的详细信息，请参见 https://docs.netapp.com/us-en/active-iq/task_analyze_storage_efficiency.html["分析容量和存储效率节省情况"^]。
+
+
+
+
+
+== 服务级别
+
+可持续性SLA基于以下消费标准：
+
+|===
+
+
+| * 服务级别 * | *SLA标准* | *最小已提交容量* | * 平台 * 
+
+
+ a| 
+极高
+| <=8 W/TiB | 200 TiB | AFF A800和AFF A900 
+
+
+ a| 
+高级版
+| 小于4 W/TiB | 300 TiB | AFF A800和AFF A900 
+
+
+ a| 
+性能
+| 小于4 W/TiB | 300 TiB | AFF A800和AFF A900 
+|===
+要了解更多信息，请参阅 link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Keystone中的服务级别"]。
+
+
+
+== 服务抵免额
+
+如果计费期间的W/TiB消耗量不符合SLA标准、则NetApp将按如下方式发放服务抵免：
+
+|===
+| 计费期间SLA未达到的天数 | 服务抵免额 
+
+
+ a| 
+1 到 2
+ a| 
+3%
+
+
+
+ a| 
+3 到 7
+ a| 
+15%
+
+
+
+ a| 
+14
+ a| 
+50%
+
+|===
+
+
+== 服务信用请求
+
+如果检测到违反SLA、请向Keystone全球服务和支持中心(GSSC)开立优先级3 (P3)支持服务单、并按照Excel表格中的要求提供详细信息、如下所示：
+
+image:sla-breach.png["Excel工作表模板"]
+
+[NOTE]
+====
+* 服务信用申请应在GSSC确认违规后六周内发起。所有服务抵免额均应由NetApp确认和批准。
+* 服务抵免额可能会应用于未来发票。服务抵免额不适用于已过期的Keystone订阅。要了解更多信息，请参阅 link:../concepts/gssc.html["NetApp全球服务支持中心"]。
+
+
+====

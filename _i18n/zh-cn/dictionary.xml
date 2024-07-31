@@ -1098,7 +1098,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">从*自日期*和*至日期*字段中的日历图标中选择时间范围。选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。您不能选择未来日期。</block>
   <block id="9a1db55a20b384661303cf6789a6fed8" category="list-text">单击 * 查看详细信息 * 。系统将根据选定时间范围显示每个服务级别的订阅历史使用数据。</block>
   <block id="5c0d50dc2c715b658984931c688519eb" category="paragraph">条形图显示日期范围内服务级别名称以及该服务级别占用的容量。收集的日期和时间显示在图表底部。根据查询的日期范围、使用情况图表将显示在30个数据收集点范围内。您可以将鼠标悬停在图表上方、以查看该数据收集点的已提交、已使用、突发以及突发限制以上数据的使用情况细分。</block>
-  <block id="85c7c9dc88496ccb44926915d526201d" category="inline-image-macro">容量趋势选项卡、其中包含详细信息</block>
   <block id="f8eaf321d70fdf3e9d097bb407d56130" category="paragraph">条形图中的以下颜色表示服务级别中定义的已用容量。图表中的每月数据用一条竖线分隔。</block>
   <block id="952c204f277570032cf6454e003c63da" category="inline-image-macro">累积突发使用量图表</block>
   <block id="36234decc68306d26e71012f98474aa1" category="paragraph">此功能在仅预览模式下可用。请联系您的KSM以了解有关此功能的更多信息。</block>
@@ -1402,8 +1401,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="09202d1f550debc90536918fe48073d2" category="section-title">添加服务级别</block>
   <block id="698a24cda3201383036fa310a4f6dcdc" category="paragraph">包含服务级别*CVO主*和*CVO二级*，以支持Cloud Volumes ONTAP订阅，这些订阅的费率计划中的已承诺容量为零，或者配置了城域群集。</block>
   <block id="b4a4e7fcb0047788c24de350740273e2" category="list-text">您可以从*Keystone订阅*小工具的旧信息板和*Capacity Try*选项卡查看这些服务级别的容量使用情况图，还可以从*Current Usage*选项卡查看详细的使用情况信息。</block>
-  <block id="997bfb6646529389b763e6cabd21c37a" category="section-title">放大功能、可提供微爆发洞察力</block>
-  <block id="c93882722f26936f556f483ae7c22259" category="paragraph">现在，*容量趋势*选项卡包含一个放大功能，可用于在使用情况图表中查看短期浪涌(称为微爆发)的详细信息。有关详细信息，请参见 <block ref="45b36c44a7c4fb4ef2168b619f60755c" category="inline-link-macro-rx"></block>。</block>
   <block id="6c48d999111838f1ba95a5cf4091e681" category="section-title">增强了订阅显示功能</block>
   <block id="f5bd7be5a51d8e07eec34f2c9ddb662a" category="section-title">增强的累积突发显示</block>
   <block id="f42805586acc16ac661193d0d72e676a" category="paragraph">现在，将鼠标悬停在“*容量趋势”选项卡中的容量使用情况条形图上时显示的工具提示将根据已提交容量显示应计突发的类型。它区分临时突发和开票突发、对于承诺容量为零的订阅、显示*临时应计量*和*开票应计量*；对于承诺容量不为零的订阅、显示*临时应计突发*和*开票应计突发*。</block>
@@ -1411,7 +1408,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="b45b03a249b5f6cfa9e1cc559ba79e40" category="section-title">2024年2月13日</block>
   <block id="b06c73c3805ce52954e13f27b28cb072" category="section-title">2024年1月11日</block>
   <block id="6171bdf5841e2bfa70f97036e02d1f44" category="section-title">2023年12月15日</block>
-  <block id="c3d408e303aadca10fcde3732cec0448" category="paragraph">您可以使用放大功能查看使用情况图表中的短期激增、称为微爆发。如果存在微爆发、则会在相应条上通过蓝点指示、如果未使用任何数据、则直接在X轴上显示蓝点。要查看详细信息、请单击并按住蓝点所在的条形图或x轴、然后在图表上拖动光标以选择所需的时间间隔、然后松开以确认您的选择。此操作将放大数据、提供选定间隔内该服务级别已用容量的详细视图。您可以进一步放大以按2分钟间隔查看详细信息。您可以单击*重置缩放*按钮返回原始图表视图。</block>
   <block id="8a19ac37aa90f4bbe7f16a2f7767bbcd" category="list-text">*隐私设计*-Keystone收集器收集最低限度的数据，以执行使用情况计量和性能监控。有关详细信息，请参见 <block ref="d45e4cc5f7d31c567a5a7e94087cf357" category="inline-link-macro-rx"></block>。。 <block ref="056e2bf20fc58bf3ad9e840fe1ebc39f" category="inline-link-macro-rx"></block> 默认情况下、选项处于启用状态、用于屏蔽和保护敏感信息。</block>
   <block id="252857c59cbe54ddba7bda3d2d19b7a3" category="list-text">*最低权限访问*-Keystone收集器需要最低权限才能监控存储系统，从而最大限度地降低安全风险并防止意外修改数据。此方法符合最小特权原则、可增强受监控环境的整体安全防护。</block>
   <block id="8f14f42f9cacaaf485cd3e478fca2ae7" category="list-text">*安全软件开发框架*- Keystone在整个开发周期内使用安全软件开发框架，可降低风险、减少漏洞并保护系统免遭潜在威胁。</block>
@@ -1518,7 +1514,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="479449c6cb6b88b7c379b1672435686c" category="admonition">在全新安装Unified Manager期间、MySQL的默认端口3306仅限于本地主机、从而无法收集Keystone收集器的性能指标。有关详细信息，请参见 <block ref="997798a1af398517058dc0d935faaa2c" category="inline-link-macro-rx"></block>。</block>
   <block id="1b1d9e9b28e55ae75dd476a860b48088" category="inline-link-macro">其他菜单选项</block>
   <block id="915546b63309e4afc31cc6f77934d3f4" category="admonition">在全新安装Unified Manager期间、MySQL的默认端口3306仅限于本地主机、从而无法收集Keystone ONTAP的性能数据。可以修改此配置、并使用Unified Manager维护控制台上的选项使此连接可供其他主机使用<block ref="dd441ca9450a58c2c7b09ab86e8f7a28" prefix=" " category="inline-code"></block> 。有关信息，请参见 <block ref="df7524dc87f6643f2fa76eb53a86ec87" category="inline-link-macro-rx"></block>。</block>
-  <block id="f693bd6f9d65926fbf70950854618f50" category="paragraph"><block ref="f693bd6f9d65926fbf70950854618f50" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82417085e656251b41cd76814fd5b48a" category="paragraph"><block ref="82417085e656251b41cd76814fd5b48a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4927a3debc365e92273fa3de8985ec2" category="paragraph"><block ref="f4927a3debc365e92273fa3de8985ec2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3173b2ec37a82d2973529cd167d6287e" category="summary">使用高级数据保护附加服务可确保为任务关键型工作负载提供高效的数据保护。</block>
@@ -1639,4 +1634,140 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="d339106c5234c4fffed6b25356ff263d" category="sidebar">监控和升级</block>
   <block id="7b373ff6530e34788cfaf1ee2a5d46b5" category="sidebar">监控Keystone收集器运行状况</block>
   <block id="be373fb58d77d15be6b1ad3433c36936" category="sidebar">存储服务质量</block>
+  <block id="22b84f9f97a424698d7726d02f067c07" category="summary">可用性、SLA、服务级别协议</block>
+  <block id="b809b21522a310a2526e263d79f9259a" category="doc">可用性SLA</block>
+  <block id="a383f57fb1f133e23d708fa682c4de38" category="paragraph">可用性SLA的目标是、为交付Keystone订单而部署的所有NetApp ONTAP闪存存储阵列在计费期间的正常运行时间为99.999%。</block>
+  <block id="f32c3edaacea72c0ddb30ecf0135c4de" category="section-title">指标</block>
+  <block id="e67906640477f8681e506869bc6e612e" category="list-text">*每月正常运行时间百分比*=[(一个月中符合条件的秒数-为交付Keystone订单而部署的所有AFF存储阵列的平均停机秒数)/一个月中符合条件的秒数] x 100%</block>
+  <block id="53ca36728241336dcf15ee413e4d7946" category="list-text">*停机时间*：存储阵列中一对控制器中的两个控制器都不可用的时间段、由NetApp确定。</block>
+  <block id="e3af360bffb0ac501e3dff5765197e4e" category="list-text">*符合条件的秒数*：这是指一个月中计入正常运行时间计算的秒数。其中不包括因计划内维护、升级、与NetApp商定的支持活动或由于NetApp或Keystone服务无法控制或无法承担责任的情况而导致STaaS服务不可用的时间段。</block>
+  <block id="b8cbf0764e5d7f6f10308786d0f252b5" category="paragraph">ONTAP闪存存储阵列支持的所有服务级别均符合可用性SLA的条件。要了解更多信息，请参阅 <block ref="5ac7feee2bb1965f2cc5b973896ee439" category="inline-link-macro-rx"></block>。</block>
+  <block id="3b916544092c6bba180097d47f80505f" category="section-title">服务抵免额</block>
+  <block id="563fcbc0524e38c0a55e5aece4d67824" category="paragraph">如果符合条件的订阅可获得的ONTAP闪存存储阵列在计费期间内低于99.999%的每月正常运行时间目标、则NetApp将按如下方式发放服务抵免：</block>
+  <block id="e92fc6300f495b762ab94da55380457b" category="cell">*每月正常运行时间(小于)*</block>
+  <block id="5178c68cc936db933ad4703eeb49414c" category="cell">*服务抵免额*</block>
+  <block id="4976c7cf214ee731a167dd46c1579825" category="paragraph">99.999%</block>
+  <block id="159a57128f3918d387e13cc8a5a7f2f2" category="paragraph">5%</block>
+  <block id="19fb9916968211db983d13bffe0cc6af" category="paragraph">99.99%</block>
+  <block id="bb1a5a2b7eec4f940f8e78abe48d68bf" category="paragraph">10%</block>
+  <block id="ebb51b0b7e8f1fcf89ef483709bd61c6" category="paragraph">99.9%</block>
+  <block id="ae0ce64fc49cd0aa826b50099f869922" category="paragraph">25%</block>
+  <block id="35a2d0b107eb0fd223479b0ab02ffd0d" category="paragraph">99.0%</block>
+  <block id="2496af30b64c3a4ff21e8505ea439a73" category="paragraph">50%</block>
+  <block id="f086e6ea351565075aec266b27d7808a" category="section-title">服务抵免额计算</block>
+  <block id="b71fb0239a9f9bd482967a91eeab0936" category="paragraph">服务抵免额通过以下公式确定：</block>
+  <block id="25c407ad6633f6e284ed84bee3a409db" category="paragraph">服务抵免额=(受影响容量/承诺总容量) X容量费用X抵免百分比</block>
+  <block id="4cd361459ea2bb087ed6c989579796c7" category="paragraph">其中：</block>
+  <block id="b40f8895b827f227835eb3bc2f25b9e6" category="list-text">*受影响容量*：受影响的已存储容量。</block>
+  <block id="7dbf58090874a3542e3d87aa654d8cad" category="list-text">*已提交总容量*：Keystone订单服务级别的已提交容量。</block>
+  <block id="3d1f89c9f1a96ed5b2b2badbb5aa02dc" category="list-text">*容量费用*：当月受影响服务级别的费用。</block>
+  <block id="44582b33017b5fbb933f27e3c80d845a" category="list-text">*信用百分比*：服务信用的预定百分比。</block>
+  <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 示例 *</block>
+  <block id="1bddd707a0359d778b1d813a90c93052" category="paragraph">以下示例显示了计算服务抵免额的方法：</block>
+  <block id="8675aaab182cd1ede22d88336898c1ea" category="list-text">计算每月正常运行时间以确定服务信用百分比：</block>
+  <block id="fefccd3601226bfde489bb3cb07d859b" category="list-text">30天月份中符合条件的秒数：30 (天) X 24 (小时/天) X 60 (分钟/小时) X 60 (秒/分钟)= 2、592、000秒</block>
+  <block id="df212c5e5de67c296152f5d72add0126" category="list-text">停机时间(以秒为单位)：95秒</block>
+  <block id="b40d5e2f3db898060ede6a53207406c4" category="paragraph">使用公式：每月正常运行时间百分比=[(2,592,000 - 95)/(2,592,000 )] X 100</block>
+  <block id="d5a0ad93e7cae0cea5d2164c32e6c7bb" category="paragraph">根据计算、每月正常运行时间将为99.996%、服务信用百分比将为5%。</block>
+  <block id="b63c272bec6c081cf8f64799562fc87e" category="list-text">计算服务抵免额：</block>
+  <block id="57083671d3a4c5d078576f2774acaae3" category="cell">*受影响容量*</block>
+  <block id="6319b3ae1be9dc9c6905e608cb789a7a" category="cell">*已提交总容量*</block>
+  <block id="159b517c08e421584e24e48d485c1ccc" category="cell">*容量费用*</block>
+  <block id="4446d2e739a007870c02f013ca45ebde" category="cell">*信用百分比*</block>
+  <block id="b76181e0697998338d4a37bf656675c7" category="cell">10 Tib、持续95秒</block>
+  <block id="6855eef8daff30988247789b63790191" category="cell">100 Tib</block>
+  <block id="6ff79498e54770f62cf549ca824c38fc" category="cell">1,000</block>
+  <block id="9eae698db2f9979943823c8ee1440c7d" category="paragraph">使用公式：服务抵免额=(10/100) X 1000 x 0.05</block>
+  <block id="df3634b399ce52d35f1816fa036f42b4" category="paragraph">根据计算、服务抵免额将为5美元。</block>
+  <block id="182bf07a2845568515ca20b4e4654296" category="section-title">服务信用请求</block>
+  <block id="d914d7b4a96bed82ab1c41c97e6c5742" category="paragraph">如果检测到违反SLA、请向Keystone全球服务和支持中心(GSSC)开立优先级3 (P3)支持服务单。</block>
+  <block id="6d3089ef2f50007a659aa12b3a7415f8" category="list-text">需要提供以下详细信息：</block>
+  <block id="e3e23368bff57e5796042f5fba6c3fbd" category="list-text">Keystone订阅编号</block>
+  <block id="5e27e36d07d4a7286d88cd834cfbd611" category="list-text">卷和存储控制器详细信息</block>
+  <block id="3b6a4c4dee52c0519690b8a93c60159e" category="list-text">问题的站点、时间、日期和描述</block>
+  <block id="de0480c0f5c929948100ece899e9724e" category="list-text">延迟检测的计算持续时间</block>
+  <block id="f657fc20931370f67393f5612ec70ffe" category="list-text">测量工具和方法</block>
+  <block id="2ecd994c3d59e0ce0211ab40d4167837" category="list-text">任何其他适用文档</block>
+  <block id="dc33a5089714f6579a5ab21118922cef" category="list-text">在Excel工作表中提供通过Keystone GSSC开立的P3服务单的详细信息、如下所示。</block>
+  <block id="892db0165f2238f40c3370386d79cac7" category="inline-image-macro">Excel工作表模板</block>
+  <block id="f0fbc9cddebee973debd106e878bebdd" category="paragraph"><block ref="f0fbc9cddebee973debd106e878bebdd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eb0abc09e7b5678911ee2656102c8868" category="list-text">服务信用申请应在GSSC确认违规后六周内发起。所有服务抵免额均应由NetApp确认和批准。</block>
+  <block id="45a3835755fcd6b1bf728c884bcc8d34" category="list-text">服务抵免额可能会应用于未来发票。服务抵免额不适用于已过期的Keystone订阅。要了解更多信息，请参阅 <block ref="3dc9ad4ab1c3dcaa061c2b4df6782877" category="inline-link-macro-rx"></block>。</block>
+  <block id="1d864ae11e362329da4731cbf31eca7b" category="summary">可持续性、SLA、服务级别协议</block>
+  <block id="4bcbaed6ba1519c1f0036c82537ffc1f" category="doc">性能SLA</block>
+  <block id="8c9a4601149bbf6f607b6419227dc5e3" category="paragraph">根据以下列出的条款和条件、NetApp Keystone可按服务级别提供基于延迟的SLA、如Keystone订单中所述、针对已用容量、最高可达突发限制。</block>
+  <block id="23f04236d1f84e52d087f768059adbbe" category="list-text">*性能降级*：^未达到第90^百分位延迟目标的时间(以分钟为单位)。</block>
+  <block id="3fe43b4ffa54563c104bbdf1eeea2b59" category="list-text">Keystone顺序中^所有卷的每个卷、每个性能级别均会测量*第90^个延迟百分位值*。每五分钟对延迟进行一次采样、^考虑到以下几点、将在24小时内计算出的第90^个百分点值用作每日度量值：</block>
+  <block id="35254eb51c71659b3cf343855354b8b1" category="list-text">在收集指标时至少记录五个IOPS的卷会视为样本。</block>
+  <block id="0e0e9d5bae73de26860af74cb8fc6ac2" category="list-text">收集指标时写入操作超过30%的卷将从样本中排除。</block>
+  <block id="ab4c900b0e1430edc1bd09939be8859a" category="list-text">AQoS为大于目标IOS/TiB的请求IOS/TiB添加的延迟不在样本中。</block>
+  <block id="565d8433df6c6c23be6de8fd7871abae" category="list-text">样本中不包括由AQoS为保持每个卷的最小IOPS而添加的延迟。</block>
+  <block id="f901dbc53f8dea2d74e68635ec84a298" category="list-text">对于启用了FabricPool的卷、不会计入与目标(冷)存储之间的数据传输所导致的延迟。</block>
+  <block id="23ca5c8d56457bbd625ff236b3c706ef" category="list-text">由ONTAP集群外部的应用程序、主机或客户网络导致的延迟不会计入在内。</block>
+  <block id="57d56dc842f4da79392d5bc2178582dc" category="list-text">使用高级数据保护附加服务时、目标延迟仅包括与本地存储阵列之间的IO操作。</block>
+  <block id="efbd8d78a7008161e0e4f42c63d84ad6" category="list-text">在24小时内、至少应提供十个有效指标。否则、这些指标将被丢弃。</block>
+  <block id="5b8e1d393a8c6bf1b5c0be8eb268aba3" category="list-text">如果存储阵列上的一个或多个卷未应用有效的AQoS策略、则可用于其他卷的IOPS数量可能会受到影响、NetApp将不负责确定该存储阵列的目标或满足该存储阵列上的性能级别。</block>
+  <block id="d8ace9c4f3c105767c7ec01ce669eca3" category="list-text">在FabricPool配置中、如果请求的所有数据块都位于FabricPool源(热)存储上、而源存储不属于SnapMirror同步关系、则性能级别适用。</block>
+  <block id="711c8ebd035f0ec5d70c9afa8d3996ba" category="paragraph">ONTAP闪存存储阵列支持的所有服务级别均符合性能SLA要求、并保证满足以下目标延迟：</block>
+  <block id="ce8f4bd254d7fa591c64caccc3aa3eeb" category="cell">小于 1 毫秒</block>
+  <block id="101d21e523f12f01303be5acdf4141d9" category="cell">小于2毫秒</block>
+  <block id="65e7d97f5e59814284d01d2b0cd62581" category="cell">&lt;4毫秒</block>
+  <block id="898c79ff0b480671f7fa964d846a9316" category="paragraph">要详细了解服务级别的延迟要求，请参见 <block ref="7ea66a5a0ec24dd88c60fc26a094a732" category="inline-link-macro-rx"></block>。</block>
+  <block id="4528f5e882cc88c8842dcf9b1ac1b1bc" category="paragraph">NetApp会为性能降级发放服务抵免额：</block>
+  <block id="72c2dabc519f204563247ef9d2fd1c7a" category="cell">*性能阈值*</block>
+  <block id="133c2090971805c26a4b7780a43a4e1f" category="paragraph">90^第^个延迟百位值&gt;目标延迟</block>
+  <block id="1ec8365151cced34dc67c0dcce455e5e" category="cell">每个日历日为3%</block>
+  <block id="68bff7f600a4d4bddae207bf52b8dbdb" category="paragraph">服务抵免额=(受影响容量/承诺总容量) X容量费用X受影响天数X抵免百分比</block>
+  <block id="518fb0e9794f4b9e14b0dc061ac61fda" category="list-text">*容量费用*：Keystone订单中受影响性能级别的费用。</block>
+  <block id="9bd7cf79d77a54ab7c62e80f778e9d2a" category="list-text">*受影响天数*：受影响的日历天数。</block>
+  <block id="b452a2e7bf15034c9bd63c001b3e6e64" category="cell">*受影响的日历天数*</block>
+  <block id="a22d50cab82690cbdc8113c3ff9c2076" category="cell">10 Tib</block>
+  <block id="58f24a17f570c7949880710fdf616d32" category="cell">50 Tib.</block>
+  <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
+  <block id="dcfe0b3ef8eb8156a5e83949c2e2f7b6" category="cell">3%</block>
+  <block id="b9ad6821bc2a0e4300b5b91ca5245476" category="paragraph">使用公式：服务抵免额=(10/50) X 1000 x 2 x 0．3</block>
+  <block id="732192040cca36723308ae6b02982093" category="paragraph">根据计算、服务抵免额将为12美元。</block>
+  <block id="fed70707a2e768c22f4b0fc06a401786" category="summary">NetApp通过勒索软件恢复担保计划保证在发生勒索软件攻击时从SnapLock合规性卷中恢复Snapshot数据</block>
+  <block id="30a37a729e8d5bdf11c9e3c6965f6872" category="doc">勒索软件恢复担保</block>
+  <block id="c314df61fd93029a87d16eb15b842e7d" category="paragraph">NetApp通过勒索软件恢复担保计划保证在发生勒索软件攻击时从SnapLock合规性卷中恢复Snapshot数据。要支持防兰软件恢复担保计划、需要提供NetApp防兰软件恢复保证服务、该服务应与关联的Keystone订单分开购买。</block>
+  <block id="99b0e05699c63fe883231037a5d59d8c" category="paragraph">在适用的订阅期限内、支持Keystone订阅的所有硬件都需要勒索软件恢复保证服务。</block>
+  <block id="28a098f372ec3073fc5e647934157274" category="paragraph">如果根据最佳实践部署了SnapLock合规性、并且NetApp专业服务在购买了防兰软件恢复保证服务后对其进行配置或验证、则在受SnapLock保护的数据无法恢复时、NetApp会发出服务信用。这些抵免额的标准如下：</block>
+  <block id="7624fb3c672dd8786b7b17fae31c1f0c" category="list-text">服务抵免额可应用于未来发票。额度上限为承诺合同价值(CCV)的10%、并按每个订阅支付。</block>
+  <block id="edb32d0cffb273251a459f28452610a9" category="list-text">积分将在相关Keystone订单的有效订阅期限内提供。</block>
+  <block id="a5c0e3b5e544c9e98cfff04374762f87" category="list-text">对于按月计费的订阅、抵免额将在未来12个月内分配、并可用于未来的任何Keystone发票、直至订阅期限结束。如果订阅在12个月内结束、可以续订以继续使用抵免额、也可以将抵免额应用于其他NetApp发票。</block>
+  <block id="accb4d9ec21427fc3d795090c44c8639" category="list-text">对于年度订阅、积分将应用于下一张Keystone发票(如果有)。如果未来没有Keystone发票、则可以将款项应用于其他NetApp发票。</block>
+  <block id="c45f003136d304ebcf90c3d9ef36e2a5" category="doc">可持续性SLA</block>
+  <block id="8098263ee670c19264303ffd6cc934c8" category="paragraph">NetApp Keystone根据具有可持续性SLA的ONTAP闪存存储阵列、为存储服务提供每TB实际瓦特数(W/TiB)的有保障测量。可持续性SLA定义了每个符合条件的服务级别的最大W/TiB消耗量、帮助企业实现可持续性目标。</block>
+  <block id="864c642a56d20e6430164211b9f12588" category="list-text">*Watts*：每日AutoSupport报告的功耗，包括控制器和连接的磁盘架的使用情况。</block>
+  <block id="fbce2f0375e75ac94f7d2ed62924d9bc" category="list-text">*太字节*：最大值：</block>
+  <block id="4d3ea8c46694851a5676d28d94c2044b" category="list-text">服务级别的已提交容量+已分配突发容量、或</block>
+  <block id="359b2a968ad487e93ac13bd70001517c" category="list-text">有效部署容量(假设存储效率系数为<block ref="6af2d30e671ebc9deaa134b9f0a1e248" prefix=" " category="inline-code"></block>)。</block>
+  <block id="7c6137cde05014e7fab83f78a553dffa" category="inline-link">分析容量和存储效率节省情况</block>
+  <block id="f113a645920e8735b32ceb02f13e8f0e" category="paragraph">要了解有关存储效率比率的详细信息，请参见<block ref="0b320c60938d31987498bfd27213b133" category="inline-link-rx"></block>。</block>
+  <block id="7cb67ea6d99999bbcfd14f6aaa5c5f1c" category="paragraph">可持续性SLA基于以下消费标准：</block>
+  <block id="d2cd9e2adbaf4876955be264272e3e87" category="cell">*SLA标准*</block>
+  <block id="1319573781151fa1f86a29da308f602f" category="cell">*最小已提交容量*</block>
+  <block id="b86f7ac7010a768aee36fc0e592eceed" category="cell">* 平台 *</block>
+  <block id="3c541a9c0b82dd48b86975ee394b3ee3" category="cell">&lt;=8 W/TiB</block>
+  <block id="7d2e99b7f21ff40f996fbbab5c1d6feb" category="cell">200 TiB</block>
+  <block id="72c62eae5362784360f3e531446bec41" category="cell">AFF A800和AFF A900</block>
+  <block id="3291342846d33d69a17f1d4cdac855f0" category="cell">小于4 W/TiB</block>
+  <block id="4dd4655034851cefb46869bef690cc22" category="cell">300 TiB</block>
+  <block id="0d671512d24f669e4da894030bfdf975" category="paragraph">要了解更多信息，请参阅 <block ref="5ac7feee2bb1965f2cc5b973896ee439" category="inline-link-macro-rx"></block>。</block>
+  <block id="27bddf685047b887365f1db06595c078" category="paragraph">如果计费期间的W/TiB消耗量不符合SLA标准、则NetApp将按如下方式发放服务抵免：</block>
+  <block id="ecbb890e24d251759ba476b9c893862e" category="cell">计费期间SLA未达到的天数</block>
+  <block id="499023bc51a126935827ef29f6bd520b" category="cell">服务抵免额</block>
+  <block id="5aebd95c292f266eb59b8073d99a7699" category="paragraph">1 到 2</block>
+  <block id="1190761e382695cb9416b27ee7eed4d3" category="paragraph">3 到 7</block>
+  <block id="f5c2de6939fdeaa3904b08a1fad7a2d3" category="paragraph">15%</block>
+  <block id="aab3238922bcc25a6f606eb525ffdc56" category="paragraph">14</block>
+  <block id="87b656ee6c82131afa7ac0871d8168e8" category="paragraph">如果检测到违反SLA、请向Keystone全球服务和支持中心(GSSC)开立优先级3 (P3)支持服务单、并按照Excel表格中的要求提供详细信息、如下所示：</block>
+  <block id="b16f882170095725eb371909f87f469f" category="paragraph">条形图显示短期突发、您可以使用放大功能查看这些突发。如果存在短期突发、则通过相应条上的蓝点表示、如果未使用任何数据、则直接在X轴上表示。要查看详细信息、请单击并按住蓝点所在的条形图或x轴、然后在图表上拖动光标以选择所需的时间间隔、然后松开以确认您的选择。此操作将放大数据、从而提供有关选定间隔内该服务级别已用容量的更精细视图。您可以单击*重置缩放*按钮返回原始图表视图。</block>
+  <block id="78a0f8f91a436c9b95253697658f1b15" category="inline-image-macro">包含详细信息的"消耗趋势"选项卡</block>
+  <block id="0dd96295669c1478814661e7ab071d6e" category="paragraph"><block ref="0dd96295669c1478814661e7ab071d6e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a7d38300f41bba6c7ac41d2b9c6de4c3" category="section-title">用于短期突发的放大功能</block>
+  <block id="adc169249aa5bb5c38a27b4a1c617bcd" category="paragraph">现在，“*容量趋势*”选项卡包含一个放大功能，用于在使用情况图表中查看短期突发的详细信息。有关详细信息，请参见 <block ref="45b36c44a7c4fb4ef2168b619f60755c" category="inline-link-macro-rx"></block>。</block>
+  <block id="9cda68e54ae42ad7708b87ba7d09426f" category="sidebar">Keystone STaaS SLA</block>
+  <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="sidebar">可用性</block>
+  <block id="19bea5bec76c66ef8bd189aa23a4c860" category="sidebar">可持续性</block>
 </blocks>
