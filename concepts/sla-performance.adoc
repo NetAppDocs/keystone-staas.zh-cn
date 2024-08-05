@@ -17,6 +17,9 @@ summary: 可持续性、SLA、服务级别协议
 根据以下列出的条款和条件、NetApp Keystone可按服务级别提供基于延迟的SLA、如Keystone订单中所述、针对已用容量、最高可达突发限制。
 
 
+NOTE: SLA和保证按提名提供。
+
+
 
 == 指标
 

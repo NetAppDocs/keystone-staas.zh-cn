@@ -17,6 +17,9 @@ summary: 可用性、SLA、服务级别协议
 可用性SLA的目标是、为交付Keystone订单而部署的所有NetApp ONTAP闪存存储阵列在计费期间的正常运行时间为99.999%。
 
 
+NOTE: SLA和保证按提名提供。
+
+
 
 == 指标
 
