@@ -22,6 +22,15 @@ summary: 在NetApp Keystone STaaS服务的先前版本中发现的问题已在�
 
 
  a| 
+设置AQoS策略时、Keystone收集器管理TUI无响应。
+ a| 
+已修复
+ a| 
+2024年8月7日
+
+
+
+ a| 
 如果在*Capacity Trending*选项卡中的*Capacity Trend*选项中选择了当前日期作为上个月的开始日期和结束日期，则使用情况图表将显示指定单天时间段之外的数据。
  a| 
 现在、使用情况图表可以正确显示指定单天时间段的数据。

@@ -1496,13 +1496,7 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="dbc8f427883e788403672a61fd4a8b14" category="list-text">选择订阅编号。默认情况下、如果先前选择的订阅不包括文件和对象存储的服务级别、则会选择第一个可用订阅编号。</block>
   <block id="8f0fe81a9b7f4cb142f2a7084f33fd88" category="inline-image-macro">对象选项卡</block>
   <block id="ff86b04f28e9deb882d5f8b709958474" category="paragraph"><block ref="ff86b04f28e9deb882d5f8b709958474" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="965245bd249a1410397d5d87be0a0bd2" category="paragraph">报告了以下已知问题：</block>
-  <block id="e83464ce8bd634efb1f099c956ec64a8" category="cell">已知问题描述</block>
-  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">说明</block>
-  <block id="7aebfa1e2291377e040de92d7f7f335f" category="cell">临时解决策</block>
   <block id="d3be07034d0ea358558d4e2243a27e4a" category="paragraph">设置AQoS策略时、Keystone收集器管理TUI无响应。</block>
-  <block id="be4309ed72d89f7ccd2b196827e60e87" category="paragraph">尝试通过TUI创建AQoS策略时、TUI可能会遇到问题并停止响应。</block>
-  <block id="1952ddeca0b71a5d88548a44205f2c9f" category="paragraph">请联系NetApp支持部门。</block>
   <block id="e358ee99bcdc82fedabffa4fe9dda483" category="section-title">2024年7月10日</block>
   <block id="fff7af8a2fab8d84dd9f7858aff6d7d9" category="section-title">标签修改</block>
   <block id="6176afc8abbdfc6c0a7c0274a19d9ef8" category="paragraph">标签*Current Usage*将更改为*Current功耗*，*Capacity Try*将更改为*功 耗趋势*。</block>
@@ -1771,4 +1765,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="sidebar">可用性</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="sidebar">可持续性</block>
   <block id="0fa7096028e231171f86212b096254bd" category="admonition">SLA和保证按提名提供。</block>
+  <block id="90c1605e73fc10bc5c46dc4183664885" category="paragraph">2024年8月7日</block>
+  <block id="5b56041030df17cc6aeb8d87e04d16db" category="paragraph">目前没有已知问题。</block>
 </blocks>
