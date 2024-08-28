@@ -1767,4 +1767,31 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="0fa7096028e231171f86212b096254bd" category="admonition">SLA和保证按提名提供。</block>
   <block id="90c1605e73fc10bc5c46dc4183664885" category="paragraph">2024年8月7日</block>
   <block id="5b56041030df17cc6aeb8d87e04d16db" category="paragraph">目前没有已知问题。</block>
+  <block id="1e4eb13a6a1b07eeb2e7895fbc7a1bb1" category="section-title">创建性能服务级别</block>
+  <block id="5053594f32aa62a7113e670df7c0dcf6" category="paragraph">您可以使用Keystone收集器管理TUI实用程序创建性能服务级别(PSL)。通过TUI创建PSL会自动选择为每个服务级别设置的默认值、从而减少通过Active IQ Unified Manager创建PSL时手动设置这些值时可能出现错误的几率。</block>
+  <block id="9dc46e9b8e8e3325a5f950ba6b189e61" category="inline-link-macro">性能服务级别</block>
+  <block id="30b9ea415acabd68ca478ac9f480dcc4" category="paragraph">要了解有关PSL的详细信息，请参阅<block ref="618fbf54ef577c932e12b764c4672483" category="inline-link-macro-rx"></block>。</block>
+  <block id="3366047110e1d4df81bd4a3c7e56a81a" category="paragraph">要了解有关服务级别的更多信息，请参见<block ref="65aad034e764c488cc9555200d7886f8" category="inline-link-macro-rx"></block>。</block>
+  <block id="754f3f64186991aaafd04c50afc33fb9" category="list-text">转到*Config&gt;AIQUM*打开AIQUM屏幕。</block>
+  <block id="820f541e6131074b12653bbfb5e98b09" category="list-text">启用选项*创建AIQUM性能配置文件*。</block>
+  <block id="a7fedce0e566016c4bf5bca06e58e7e3" category="list-text">输入Active IQ Unified Manager服务器和用户帐户的详细信息。创建PSL需要这些详细信息、不会存储这些详细信息。</block>
+  <block id="0cae276070a3b9dc1d52e1054be203d8" category="inline-image-macro">TUI屏幕、用于输入AIQUM服务器和服务帐户的详细信息</block>
+  <block id="a340f4e56ce95ec64b455e8f0d0011b3" category="paragraph"><block ref="a340f4e56ce95ec64b455e8f0d0011b3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03336d42dcb5f12fad5c27a77d7fc3bb" category="list-text">对于*选择Keystone版本*，请选择<block ref="c26733d354ae6936934c7e8958092daa" prefix=" " category="inline-code"></block>。</block>
+  <block id="0e6957f023ba901638c8f4ab7d0fbcec" category="list-text">按Enter键。此时将显示一个对话框、用于选择Keystone版本。</block>
+  <block id="921dbe2a6293b980a37507e9b0ef99c9" category="list-text">突出显示*STaaS*以指定Keystone STaaS的Keystone版本，然后按Enter键。</block>
+  <block id="fcb2a80e16744614cdf6c2f2f82c4e2e" category="inline-image-macro">TUI屏幕以指定Keystone版本</block>
+  <block id="1e2d635219881df0b1d0ff05ce928dde" category="paragraph"><block ref="1e2d635219881df0b1d0ff05ce928dde" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0d93cccfc0748834998c1743a905f0d3" category="admonition">您可以突出显示Keystone订阅服务版本1的*KFS*选项。Keystone订阅服务在成分卷服务级别、服务项目和计费原则方面与Keystone STaaS不同。要了解更多信息，请参阅 <block ref="28860fa9118cfd783678772e54f9b578" category="inline-link-macro-rx"></block>。</block>
+  <block id="5a8df8e784147e10e20a7f96a1911ce8" category="list-text">指定Keystone版本的*选择Keystone服务级别*选项中将显示所有受支持的Keystone服务级别。从列表中启用所需的服务级别。</block>
+  <block id="6792bca92745749645838a609966a8c2" category="inline-image-macro">TUI屏幕以显示所有受支持的Keystone服务级别</block>
+  <block id="40107ce73af0b4c30bdedbdec9454440" category="paragraph"><block ref="40107ce73af0b4c30bdedbdec9454440" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="be76688bb0584656dac7cefe07517b47" category="admonition">您可以同时选择多个服务级别来创建PSL。</block>
+  <block id="18e5eacb4fdad1ff92aee1fb4f0f41cc" category="list-text">选择*Save*并按Enter键。此时将创建性能服务级别。</block>
+  <block id="0e0dd84db86e72ae77b4739377c3a4e1" category="inline-link-macro">创建和编辑性能服务级别</block>
+  <block id="be298fbf55a1c81157761b8b02a6d696" category="paragraph">您可以在Active IQ Unified Manager的*性能服务级别*页面上查看已创建的PSL、例如适用于STaaS的Premum-KS-STaaS或适用于KFS的Extreme KFS。如果创建的PSL不符合您的要求、您可以根据需要修改PSL。要了解更多信息，请参阅 <block ref="84f3a19cf4d829ad37ba5eddb2b177a0" category="inline-link-macro-rx"></block>。</block>
+  <block id="e481e00ab54faed62b9dea98ed860aea" category="inline-image-macro">用于显示已创建AQoS策略的UI屏幕截图</block>
+  <block id="43b019fa12d041b6c5cbfe89c5f52205" category="paragraph"><block ref="43b019fa12d041b6c5cbfe89c5f52205" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="86e86c82820734a68c07adc56b6390a2" category="inline-image-macro">TUI屏幕以显示策略创建错误消息</block>
+  <block id="224dfc2fadc284cf45249b5ddb7bc7cd" category="admonition">如果指定的Active IQ统一管理器服务器上已存在选定服务级别的PSL、则无法再次创建它。如果您尝试执行此操作、则会收到一条错误消息。 <block ref="b503f359d5754d7d4260112bc56a05d7" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
