@@ -17,7 +17,7 @@ summary: 在安装Keystone收集器之前、VMware vSphere系统必须满足多�
 在安装Keystone收集器之前、VMware vSphere系统必须满足多项要求。
 
 .Keystone收集器服务器VM的前提条件：
-* 操作系统：VMware vCenter Server和ESXi 6.5或更高版本
+* 操作系统：VMware vCenter Server和ESXi 6.7或更高版本
 * 核心：1个CPU
 * RAM：2 GB RAM
 * 磁盘空间：20 GB vDisk

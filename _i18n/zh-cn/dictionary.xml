@@ -550,7 +550,6 @@
   <block id="c52919f8e1a989864d933795a6103494" category="paragraph">Keystone收集器软件更新和使用情况报告</block>
   <block id="0dc1066c9360d7e2bbaf4bb6e9c5ebe1" category="paragraph">NetApp总部提供计费信息和AutoSupport 交付</block>
   <block id="2f0d22e6971fda1cbc3411961fec8360" category="doc">虚拟基础架构要求</block>
-  <block id="080838bb01c5d3b3c97a54a92d98023d" category="list-text">操作系统：VMware vCenter Server和ESXi 6.5或更高版本</block>
   <block id="a1c9c4a1979d4de63c959aa0eb8db228" category="doc">在VMware vSphere系统上部署Keystone收集器</block>
   <block id="5636c5e292ad15c979ccdf35d4ddd63f" category="paragraph">在VMware vSphere系统上部署Keystone收集器包括下载OVA模板、使用*部署OVF模板*向导部署此模板、验证证书的完整性以及验证虚拟机是否已准备就绪。</block>
   <block id="9f42f344107d0334c53b7214197ab946" category="section-title">部署OVA模板</block>
@@ -1794,4 +1793,5 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="43b019fa12d041b6c5cbfe89c5f52205" category="paragraph"><block ref="43b019fa12d041b6c5cbfe89c5f52205" category="inline-image-macro-rx" type="image"></block></block>
   <block id="86e86c82820734a68c07adc56b6390a2" category="inline-image-macro">TUI屏幕以显示策略创建错误消息</block>
   <block id="224dfc2fadc284cf45249b5ddb7bc7cd" category="admonition">如果指定的Active IQ统一管理器服务器上已存在选定服务级别的PSL、则无法再次创建它。如果您尝试执行此操作、则会收到一条错误消息。 <block ref="b503f359d5754d7d4260112bc56a05d7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b787eed58abedc58337d9fef037fb67" category="list-text">操作系统：VMware vCenter Server和ESXi 6.7或更高版本</block>
 </blocks>
