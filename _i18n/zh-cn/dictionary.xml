@@ -1794,4 +1794,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="86e86c82820734a68c07adc56b6390a2" category="inline-image-macro">TUI屏幕以显示策略创建错误消息</block>
   <block id="224dfc2fadc284cf45249b5ddb7bc7cd" category="admonition">如果指定的Active IQ统一管理器服务器上已存在选定服务级别的PSL、则无法再次创建它。如果您尝试执行此操作、则会收到一条错误消息。 <block ref="b503f359d5754d7d4260112bc56a05d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1b787eed58abedc58337d9fef037fb67" category="list-text">操作系统：VMware vCenter Server和ESXi 6.7或更高版本</block>
+  <block id="f7e13857abd03bc318b89fe886669d7d" category="paragraph">导航至*消耗趋势*选项卡时，用于选择日期范围的*起始日期*字段默认显示未来日期。</block>
+  <block id="443c63f2975d5902a80f1597e417d9f2" category="paragraph">2024年9月4日</block>
 </blocks>
