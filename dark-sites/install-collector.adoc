@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/install-collector.html 
+keywords: install, keystone, collector, private, mode, vmware vsphere, linux, deploy, debian, rpm file 
+summary: '完成几个步骤、在无法访问Internet的环境(也称为_dark site_or _private mode_）中安装Keystone收集器。' 
+---
+= 在私用模式下安装Keystone收集器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成几个步骤、在无法访问Internet的环境(也称为_dark site_or _private mode_）中安装Keystone收集器。此类安装非常适合您的安全站点。
+
+您可以根据需要在VMware vSphere系统上部署Keystone收集器、也可以在Linux系统上安装Keystone收集器。按照与所选选项对应的安装步骤进行操作。
+
+
+
+== 在VMware vSphere上部署
+
+请按照以下步骤操作：
+
+. 从下载OVA模板文件 https://keystone.netapp.com/downloads/KeystoneCollector-latest.ova["NetApp Keystone Web门户"]。
+. 有关使用OVA文件部署Keystone收集器的步骤，请参阅一节link:../installation/vapp-installation.html#deploying-the-ova-template["部署OVA模板"]。
+
+
+
+
+== 在Linux上安装
+
+Keystone收集器软件使用提供的.deb或.rpm文件安装在Linux服务器上、具体取决于Linux分发版本。
+
+按照以下步骤在Linux服务器上安装软件：
+
+. 将Keystone收集器安装文件下载或传输到Linux服务器：
++
+`keystone-collector-<version>.noarch.rpm`
+
+. 打开服务器上的终端并运行以下命令开始安装。
++
+** *正在使用Debian软件包*
++
+`dpkg -i keystone-collector_<version>_all.deb`
+
+** *正在使用RPM文件*
++
+`yum install keystone-collector-<version>.noarch.rpm`
+
++
+或
+
++
+`rpm -i keystone-collector-<version>.noarch.rpm`
+
+
+
+.  `y`当系统提示您安装软件包时、输入。
+

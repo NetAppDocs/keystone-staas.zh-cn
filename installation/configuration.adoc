@@ -16,9 +16,13 @@ summary: 完成配置以使Keystone收集器能够收集存储环境中的使用
 [role="lead"]
 要使Keystone收集器能够收集存储环境中的使用情况数据、您需要完成一些配置任务。这是一次性活动、用于激活所需组件并将其与存储环境关联起来。
 
+[NOTE]
+====
+* Keystone收集器提供了Keystone收集器管理终端用户界面(Terminal User Interface、TUI)实用程序、用于执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。
+* 可以为无法访问Internet的组织(也称为_dark site_or _private mode__)配置Keystone收集器。要了解有关的详细信息，请参阅link:../dark-sites/overview.html["Keystone处于专用模式"]。
 
-NOTE: Keystone收集器提供了Keystone收集器管理终端用户界面(Terminal User Interface、TUI)实用程序、用于执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。
 
+====
 .步骤
 . 启动Keystone收集器管理TUI实用程序：
 `$ keystone-collector-tui`

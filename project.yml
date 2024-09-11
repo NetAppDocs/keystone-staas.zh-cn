@@ -125,6 +125,18 @@ sidebar:
       url: "/concepts/sla-sustainability.html"
     - title: 勒索软件恢复担保
       url: "/concepts/sla-ransomware.html"
+  - title: Keystone处于专用模式
+    entries:
+    - title: 概述
+      url: "/dark-sites/overview.html"
+    - title: 准备安装
+      url: "/dark-sites/requirements.html"
+    - title: 安装Keystone收集器
+      url: "/dark-sites/install-collector.html"
+    - title: 配置Keystone收集器
+      url: "/dark-sites/configure-collector.html"
+    - title: 监控Keystone收集器运行状况
+      url: "/dark-sites/monitor.html"
   - title: 计费
     entries:
     - title: Keystone定价

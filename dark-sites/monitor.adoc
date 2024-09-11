@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/monitor.html 
+keywords: monitoring system health 
+summary: 为确保数据可用、您可以使用支持HTTP请求的任何监控系统来监控Keystone收集器的运行状况。 
+---
+= 在私用模式下监控Keystone收集器的运行状况
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用支持HTTP请求的任何监控系统来监控Keystone收集器的运行状况。
+
+默认情况下、Keystone运行状况服务不接受来自本地主机以外的任何IP的连接。Keystone运行状况端点为 `/uber/health`、并侦听端口上Keystone收集器服务器的所有接口 `7777`。查询时、端点将返回一个包含JSON输出的HTTP请求状态代码作为响应、用于描述Keystone收集器系统的状态。
+JSON正文提供的整体运行状况 `is_healthy` 属性、布尔值；以及的每个组件状态的详细列表 `component_details` 属性。
+以下是一个示例：
+
+[listing]
+----
+$ curl http://127.0.0.1:7777/uber/health
+{"is_healthy": true, "component_details": {"vicmet": "Running", "ks-collector": "Running", "ks-billing": "Running", "chronyd": "Running"}}
+----
+返回以下状态代码：
+
+* * 200 *：表示所有受监控组件运行状况良好
+* * 503 *：表示一个或多个组件运行状况不正常
+* * 403 *：表示查询运行状况的HTTP客户端不在_allow_列表中、该列表是一个允许的网络CIDR列表。对于此状态、不会返回任何运行状况信息。
++
+_allow_列表使用网络CIDR方法控制允许查询Keystone运行状况系统的网络设备。如果收到403错误，请通过*Keystone收集器管理TUI >配置>运行状况监控*将监控系统添加到_ALLOWE_列表中。
+
++
+image:cidr-list.png["允许的网络接口"]
+
+
+
+
+
+== 生成并收集支持包
+
+要对Keystone收集器的问题进行故障排除、您可以与NetApp支持人员联系、他们可能会要求提供_.tar_文件。您可以通过Keystone收集器管理TUI实用程序生成此文件。
+
+按照以下步骤生成_.tar_文件：
+
+. 转至*故障排除>生成支持包*。
+. 选择保存分发包的位置，然后单击*Generate Support Bundle*。
++
+image:dark-site-generate-support-bundle-1.png["生成支持包"]
+
++
+此过程会 `tar`在所述位置创建一个软件包、可与NetApp共享该软件包以解决问题。
+
+. 下载文件后、您可以将其附加到Keystone ServiceNow支持服务单中。有关提交服务单的信息、请参见 link:../concepts/gssc.html["正在生成服务请求"]。
+
