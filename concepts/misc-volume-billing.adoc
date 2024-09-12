@@ -52,22 +52,22 @@ summary: '了解Keystone针对特定配置(包括克隆卷、高级数据保护�
 
 == 计费和自适应 QoS 策略
 
-Keystone根据服务级别衡量使用情况。每个服务级别都与一个特定的自适应服务质量(QoS)策略相关联。在部署期间、您将了解所订阅的Keystone服务的每个QoS策略的详细信息。在存储管理操作期间、请确保您的卷已根据您订阅的服务级别分配适当的QoS策略、以避免意外计费。有关 ONTAP 中 QoS 策略的详细信息，请参见 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"^]。
+Keystone根据服务级别衡量使用情况。每个服务级别都与一个特定的自适应服务质量(QoS)策略相关联。在部署期间、您将收到有关订阅Keystone服务的每个自适应QoS策略的详细信息。在存储管理操作期间、请确保根据您订阅的服务级别为卷分配了相应的自适应QoS策略、以避免意外计费。有关ONTAP中自适应QoS策略的详细信息，请参见link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"^]。
 
 
 
 == 为 SnapMirror 目标计费
 
-SnapMirror目标卷的定价受源上分配的服务级别的QoS策略的制约。但是，如果源没有关联的 QoS 策略，则会根据最低可用服务级别对目标进行计费。
+SnapMirror目标卷的定价由源上分配的服务级别的自适应QoS策略控制。但是、如果源没有关联的自适应QoS策略、则会根据最低可用服务级别对目标计费。
 
 
 
 == LUN 计费
 
-对于LUN、遵循与受QoS策略管理的卷相同的计费模式。如果在 LUN 上设置了单独的 QoS 策略，则：
+对于LUN、采用与受自适应QoS策略控制的卷相同的计费模式。如果在LUN上设置了单独的自适应QoS策略、则：
 
 * LUN 的大小将根据该 LUN 的关联服务级别进行计数以供使用。
-* 卷中的剩余空间（如果有）将根据卷上设置的服务级别的 QoS 策略进行收费。
+* 卷中剩余的空间(如果有)将根据卷上设置的服务级别的自适应QoS策略进行计费。
 
 
 

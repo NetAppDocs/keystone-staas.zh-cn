@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: rest-api/retrieve-keystone-data-with-digital-advisor-rest-api.html 
+keywords: Keystone, ActiveIQ Digital Advisor, APIs, programmatic interface 
+summary: NetApp Keystone ActiveIQ数字顾问API提供了一个编程接口、用于提取Keystone服务详细信息和指标。 
+---
+= 开始使用Digital Advisor REST API检索Keystone数据
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Digital Advisor REST API提供了一个编程接口、用于检索Keystone订阅和使用详细信息。
+
+总体而言、与Digital Advisor REST API交互的工作流包括以下步骤：
+
+. 设置您的Digital Advisor帐户。您必须具有有效的NetApp支持站点凭据才能登录到数字顾问。要了解更多信息、请参见 https://docs.netapp.com/us-en/active-iq/task_login_activeiq.html["登录到Digital Advisor。"]
+. 了解两步身份验证过程。
++
+.. *生成刷新令牌*：使用NetApp凭据通过数字顾问控制台获取刷新令牌。此令牌用于确保持续访问、而无需重复登录。
+.. *生成访问令牌*：刷新令牌用于生成访问令牌。要授权对Keystone服务的API调用、需要使用访问令牌、此令牌的有效期为一小时。
+
+
+. 执行API调用以检索所需数据。您可以通过编程方式检索客户列表、客户订阅数据和客户使用情况详细信息。
+

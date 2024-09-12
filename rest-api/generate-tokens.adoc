@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: rest-api/generate-tokens.html 
+keywords: Refresh token, AIQ Digital Advisor portal,access 
+summary: 刷新令牌用于以编程方式获取一组新的访问令牌、此令牌有效期为一周、或者直到用于获取一组新令牌为止。 
+---
+= 生成刷新和访问令牌
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+刷新令牌用于以编程方式获取一组新的访问令牌、此令牌有效期为一周、或者直到用于获取一组新令牌为止。
+
+使用Digital Advisor门户生成刷新令牌的步骤如下：
+
+.  https://aiq.netapp.com/api["Digital Advisor门户"]使用NetApp凭据登录到、然后选择*生成令牌*。
++
+image:rest-api-aiq-portal.png["使用Digital Advisor门户生成刷新令牌的步骤"]
+
++
+
+NOTE: 对于首次使用的用户，如果*生成令牌*选项不可用，请选择*注册*以提交授权请求。填写注册表以启用此功能。
+
+. 系统将生成访问令牌和刷新令牌。将刷新令牌保存在可信平台上。
++
+
+NOTE: 通过此门户，您可以通过多种方式保存集中的一个或两个令牌。您可以将其复制到剪贴板，以文本文件的形式下载或以纯文本格式查看。
+
++
+image:rest-api-token-types.png["令牌类型"]
+
+
+
+
+
+== 使用Digital Advisor REST API生成访问令牌
+
+访问令牌用于对Digital Advisor API请求进行身份验证。它可以直接通过控制台和刷新令牌生成、也可以使用以下API调用生成：
+
+*请求：*
+
+[cols="41%,59%"]
+|===
+
+
+| * 方法 * | 发布 
+
+
+| *端点* | https://api.activeiq.netapp.com/v1/tokens/accessToken[] 
+
+
+| *标题*  a| 
+* 接受：application/json
+* 内容类型：application/json
+
+
+
+
+| *请求正文*  a| 
+{“refresh令牌”：“<refresh-token>”}
+
+|===
+
+NOTE: 要访问此端点、您需要具有管理Privileges for Digital Advisor。
+
+*答复:*
+
+API以JSON格式返回访问令牌和刷新令牌作为响应。
+
+[listing]
+----
+{
+"refresh_token": "string",
+"access_token": "string"
+}
+----
+*状态代码*：200—成功请求
+
+*卷示例*：
+
+[source, curl]
+----
+curl -X 'POST' \ 'https://api.activeiq.netapp.com/v1/tokens/accessToken' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d ' { "refresh_token": "<refresh-token>" }'
+----
+
+
+== 执行API调用
+
+成功生成访问令牌后、可以对所需信息执行授权的Digital Advisor API调用。
