@@ -65,7 +65,7 @@ NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU �
 Keystone收集器可通过以下方法部署：
 
 * VMware OVA模板(需要VMware vCenter Server 6.7或更高版本)
-* 客户提供Red Hat Enterprise Linux 7或8或CentOS 7 Linux服务器。Keystone软件通过安装 `.rpm` 安装过程。
+* 客户提供的Linux服务器运行在Red Hat Enterprise Linux 8.6或更高8.x版本或CentOS 7上。Keystone软件通过安装过程进行安装 `.rpm`。
 
 
 AIOPS解决方案 网关部署在以下配置中：
@@ -84,12 +84,7 @@ AIOPS解决方案 网关部署在以下配置中：
 
 === 网络
 
-要操作和维护Keystone收集器和AIOPS解决方案网关、需要对以下服务进行出站访问：
-
-* support.netapp.com (使用情况数据上传)
-* keystone.netapp.com (软件更新)
-* hub.docker.io (软件更新)
-
+软件更新和使用情况数据上传需要对_keystone.AIo.com_进行出站访问、这对于NetApp收集器和AIops解决方案网关的操作和维护至关重要。
 
 根据客户要求和使用的存储控制器、NetApp可以在客户站点提供10 GB、40 GB和100 GB连接。
 
