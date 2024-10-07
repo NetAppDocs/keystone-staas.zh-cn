@@ -10,7 +10,7 @@ summary: 已知问题用于确定可能会妨碍您有效使用Keystone订阅服
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

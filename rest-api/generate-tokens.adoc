@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest-api/generate-tokens.html 
-keywords: Refresh token, AIQ Digital Advisor portal,access 
-summary: 刷新令牌用于以编程方式获取一组新的访问令牌、此令牌有效期为一周、或者直到用于获取一组新令牌为止。 
+keywords: Refresh token, Digital Advisor portal,access 
+summary: 生成刷新令牌以获取新的访问令牌。它会对API请求进行身份验证、并在一周内或替换之前保持有效。您可以通过控制台或API调用获取访问令牌。 
 ---
 = 生成刷新和访问令牌
 :hardbreaks:
@@ -51,7 +51,7 @@ image:rest-api-token-types.png["令牌类型"]
 | * 方法 * | 发布 
 
 
-| *端点* | https://api.activeiq.netapp.com/v1/tokens/accessToken[] 
+| *端点* | `https://api.activeiq.netapp.com/v1/tokens/accessToken` 
 
 
 | *标题*  a| 
@@ -66,7 +66,7 @@ image:rest-api-token-types.png["令牌类型"]
 
 |===
 
-NOTE: 要访问此端点、您需要具有管理Privileges for Digital Advisor。
+NOTE: 要访问此端点、您应具有管理Privileges for Digital Advisor。
 
 *答复:*
 

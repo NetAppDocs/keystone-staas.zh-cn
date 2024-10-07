@@ -10,7 +10,7 @@ summary: NetApp在每个Keystone STaaS服务版本中都为您提供新增和增
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

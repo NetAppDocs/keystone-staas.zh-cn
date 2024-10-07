@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rest-api/get-customer-subscriptions.html 
 keywords: subscriptions, service levels, customer IDs, keystone, api 
-summary: 此API检索与给定CustomerID关联的所有订阅和服务级别的列表。 
+summary: Digital Advisor REST API检索与给定CustomerID关联的所有订阅和服务级别的列表。 
 ---
 = 使用Digital Advisor REST API获取客户订阅
 :hardbreaks:
@@ -25,7 +25,7 @@ summary: 此API检索与给定CustomerID关联的所有订阅和服务级别的�
 | * 方法 * | 获取 
 
 
-| *端点* | https://api.activeiq.netapp.com/v1/keystone/customer/subscriptions-info[] 
+| *端点* | `https://api.activeiq.netapp.com/v1/keystone/customer/subscriptions-info` 
 
 
 | * 参数 *  a| 

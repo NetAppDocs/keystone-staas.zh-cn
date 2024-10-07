@@ -97,7 +97,7 @@ Keystone收集器支持通过TUI升级ONTAP。
 +
 image:dark-site-start-webserver-1.png["启动Web服务器选项"]
 
-.  http://<collector-ip>:8000[]请转到使用Web浏览器获取升级帮助。
+.  `http://<collector-ip>:8000`请转到使用Web浏览器获取升级帮助。
 
 
 

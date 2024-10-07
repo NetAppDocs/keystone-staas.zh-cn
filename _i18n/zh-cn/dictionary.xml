@@ -856,20 +856,16 @@
   <block id="bc26ba2885b2bd7d8c41202e1d58b847" category="section-title">自适应QoS设置</block>
   <block id="d2c88ef05da757a3aeaaf8bc9fe70038" category="paragraph">自适应QoS (AQoS)设置因服务级别而异。</block>
   <block id="3e1621011a15ff9b858d144dd8b32184" category="cell">*策略名称*</block>
-  <block id="e61bad254169eaf696462c655e0bb47a" category="cell">*预期IOP*</block>
   <block id="911c903acff40c3f442bbae7f73ea081" category="cell">6,144</block>
   <block id="a980f22074119d4103953f70f2fd69ce" category="cell">1,024</block>
   <block id="f718499c1c8cef6730f9fd03c8125cab" category="cell">256</block>
   <block id="8dea0526cd966f1d2b8537ec99d156b6" category="cell">*预期IOPS分配*</block>
   <block id="d948b8bd026bed9e90e7989a41fdbb46" category="cell">已分配空间</block>
-  <block id="7954bc4f3c43f3e699c2169329a71b4b" category="cell">*峰值IOP*</block>
   <block id="13533e52f2c161b3cad8ec91b2a8bc26" category="cell">*峰值IOPS分配*</block>
   <block id="aa06850d5c9d77127d7340a724cb89be" category="cell">已用空间</block>
   <block id="fd5c2880a704553c642b2e60a6ff5cf2" category="cell">* 块大小 *</block>
   <block id="de66b0668daa0803e4322ddd80158d6c" category="cell">32 K</block>
   <block id="1485819d1bb1109d78f142c11b8e830d" category="paragraph">您可以配置自适应QoS (AQoS)策略、以便根据卷大小自动扩展吞吐量上限或下限。并非所有Keystone服务级别都与默认ONTAP QoS策略一致。您可以为其创建自定义QoS策略。要配置策略、您应注意以下事项：</block>
-  <block id="d87e8cd2516a937506841a2ee6710603" category="list-text">*预期IOP*：系统在有足够的可用系统IOPS时尝试提供的每个卷的每个已分配TiB的最小IOPS数。</block>
-  <block id="35c0bb4205f89d0eddba85d9bda132b6" category="list-text">*峰值IOP*：系统在通过延迟注入限制IOPS之前允许卷达到的每个卷的每个已用TiB的最大IOPS数。</block>
   <block id="be53c8157b32393bccd2e22d0b1536aa" category="list-text">*预期IOPS分配*：此参数用于控制卷可用的预期IOPS是基于卷的已分配大小还是已使用大小。在Keystone中、此值基于已分配的空间。</block>
   <block id="14d0dc302a669d6a99952e49afc7861a" category="list-text">*峰值IOPS分配*：此参数用于控制卷可用的峰值IOPS是基于卷的已分配大小还是已使用大小。在Keystone中、此值基于已用空间。</block>
   <block id="4d5ef2163c192509afec8de9ab79da82" category="paragraph">每个服务级别均由其I/O密度(即IOP/TiB/卷)定义。这是性能(每秒输入/输出操作数[IOS])与已用存储容量(TiB)的比率、即每个卷平均延迟时的IOS/TiB。</block>
@@ -1833,7 +1829,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="35f01f8a1c6a4619b0104f40d24a4086" category="list-text">将ONTAP升级映像文件复制到*/opt/web/web-upgrade /*，然后选择*Start ONTAP *以启动NetApp服务器。</block>
   <block id="fb123a7b444cd374b7ac10caba50e88b" category="inline-image-macro">启动Web服务器选项</block>
   <block id="cf04058d80eac818246874f910eb2ab2" category="paragraph"><block ref="cf04058d80eac818246874f910eb2ab2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a8044aea994fa3363bcd4c256ce5d88e" category="list-text"><block ref="1c23bf18bce0ce7f2bb813cdd6798bbd" category="inline-link-rx"></block>请转到使用Web浏览器获取升级帮助。</block>
   <block id="f650c6d8e69bf10094accbd07b391694" category="section-title">重新启动Keystone收集器</block>
   <block id="93317cb239ead322a8c1e1452ffcabe3" category="paragraph">您可以通过TUI重新启动Keystone收集器服务。转到TUI中的*维护&gt;重新启动收集器*服务。此操作将重新启动所有收集器服务、并且可以从TUI主屏幕监控其状态。</block>
   <block id="9bc0cd001c38d64376373002ab821fad" category="inline-image-macro">重新启动收集器服务选项</block>
@@ -1938,13 +1933,11 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="28ed9b5b5df5d633073f9cca1d10bee9" category="cell">* 方法 *</block>
   <block id="a02439ec229d8be0e74b0c1602392310" category="cell">发布</block>
   <block id="55322ba3b4cd3b7782949a6debd00e1c" category="cell">*端点*</block>
-  <block id="111ffa9d375a47f985e5a930df93acad" category="cell"><block ref="111ffa9d375a47f985e5a930df93acad" category="inline-link-rx"></block></block>
   <block id="904069365b298cc4d7103f93cb31dbfc" category="cell">*标题*</block>
   <block id="542ec3d8c98f371802d8fd77096ac7b2" category="list-text">接受：application/json</block>
   <block id="30de7c9b045a8fbe02ed2b9d4ffe4425" category="list-text">内容类型：application/json</block>
   <block id="b7fa10c6a4149a93a4eaaba61e0f23e1" category="cell">*请求正文*</block>
   <block id="13bdfec6f8b9e7cc7abb43fab0b6b384" category="paragraph">{“refresh令牌”：“&lt;refresh-token&gt;”}</block>
-  <block id="7893264e0d59291df9deafb0e9f1b841" category="admonition">要访问此端点、您需要具有管理Privileges for Digital Advisor。</block>
   <block id="49fdcb561eb10ce1bc7df051ca7f8d08" category="paragraph">*答复:*</block>
   <block id="746b4a10356112a607ace0b2038463aa" category="paragraph">API以JSON格式返回访问令牌和刷新令牌作为响应。</block>
   <block id="fb024c1026b3468fe6493e58895bb1d2" category="paragraph">*状态代码*：200—成功请求</block>
@@ -1955,7 +1948,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="8bc9e7b2eb702a14a34a24bcc32c172d" category="doc">使用Digital Advisor REST API获取客户使用情况详细信息</block>
   <block id="7528035a93ee69cedb1dbddb2f0bfcc8" category="cell">获取</block>
   <block id="41d2da547ce3e763f6eead2948c7bce6" category="cell">*端点*</block>
-  <block id="7390986cba8738a130d09a1ae8c7619d" category="cell"><block ref="7390986cba8738a130d09a1ae8c7619d" category="inline-link-rx"></block></block>
   <block id="ff42ec92d6bd64c6ab6d1f0800017eef" category="cell">* 参数 *</block>
   <block id="5ee9048a2df6bae318564eb60313820f" category="list-text">类型："客户"</block>
   <block id="b6fcb149db1c33db8b3446e2f7582d90" category="list-text">ID：&lt;customer-id&gt;</block>
@@ -1963,19 +1955,15 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="3d19254bb03e315d634fc0986c9eb4f0" category="paragraph">*响应：* API将使用一个JSON对象进行响应、该对象包含所有订阅的列表以及给定客户的当前服务使用情况指标。下面是一个示例响应：</block>
   <block id="d3f7bd75a02cbe1c2370c78a86417b77" category="section-title">获取客户的历史消耗详细信息</block>
   <block id="aa781d0910bba8a0c595fe9b0cd9d3b8" category="paragraph">此API将根据指定的时间范围检索与给定客户ID关联的所有订阅的历史消耗详细信息。</block>
-  <block id="1c706be136f0541b294fcc885fde1a63" category="cell"><block ref="1c706be136f0541b294fcc885fde1a63" category="inline-link-rx"></block></block>
   <block id="72ce780c61cc8fc26c3fc393d965f9b7" category="list-text">fon_date UTC：&lt;start date (以RFC3339格式)&gt;</block>
   <block id="d4232bc3d79f7c2651bc3b089aa822c1" category="list-text">tO_DATE_UTC：&lt;end date (RFC3339格式)&gt;</block>
   <block id="eb53e4bff92730b260ff2452a158fac7" category="paragraph">API将使用一个JSON对象进行响应、该对象包含所有订阅的列表、以及选定时间范围内给定客户的历史服务使用情况指标。下面是一个示例响应：</block>
   <block id="20fa5f9b2d4cd9672cce24531c8f1666" category="summary">此API检索与用户关联的所有客户ID的列表。</block>
   <block id="2a2abaabc17b5a91d82e82303642b09c" category="doc">使用Digital Advisor REST API获取所有客户的列表</block>
-  <block id="b6c5a11b232c98606fb9ada3ec62627d" category="cell"><block ref="b6c5a11b232c98606fb9ada3ec62627d" category="inline-link-rx"></block></block>
   <block id="5b7e7d763cd7702a1e75085674fe6768" category="paragraph">API将使用一个JSON对象进行响应、该对象包含客户名称和相应ID的列表。下面是一个示例响应：</block>
   <block id="796057698de87bb393ab8b61e5aff5f2" category="summary">此API检索与给定CustomerID关联的所有订阅和服务级别的列表。</block>
   <block id="9b6c21a9e3f04a27506fa4a5eb0cd41f" category="doc">使用Digital Advisor REST API获取客户订阅</block>
-  <block id="bb50b1b9a7f23ddec00f27c428c363f2" category="cell"><block ref="bb50b1b9a7f23ddec00f27c428c363f2" category="inline-link-rx"></block></block>
   <block id="7dad8be1becd1cd3fe4d2ec1306c3b82" category="paragraph">API将使用一个JSON对象进行响应、该对象包含给定客户的所有订阅和关联服务级别详细信息的列表。下面是一个示例响应：</block>
-  <block id="4add8177bc48d8ace8e3bcec902454ad" category="summary">NetApp Keystone ActiveIQ数字顾问API提供了一个编程接口、用于提取Keystone服务详细信息和指标。</block>
   <block id="0a076b1454da01faf38e4805c15570ee" category="doc">开始使用Digital Advisor REST API检索Keystone数据</block>
   <block id="e29debe73c0e9065a4267dfae6adefe9" category="paragraph">Digital Advisor REST API提供了一个编程接口、用于检索Keystone订阅和使用详细信息。</block>
   <block id="c3091c7f241015a003ff982080a072b0" category="paragraph">总体而言、与Digital Advisor REST API交互的工作流包括以下步骤：</block>
@@ -1990,4 +1978,25 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="4bfa7642bccc7e1047a0f5b699a01631" category="paragraph">软件更新和使用情况数据上传需要对_keystone.AIo.com_进行出站访问、这对于NetApp收集器和AIops解决方案网关的操作和维护至关重要。</block>
   <block id="f9d3d3159cdb3dcf297f1a90d133e474" category="list-text">操作系统：Debian v12、Red Hat Enterprise Linux (RHEL) 8.6或RHEL 8.x系列中的更高版本</block>
   <block id="2604f9447676294c730c1410115fcdc0" category="list-text">操作系统：CentOS 7或Red Hat Enterprise Linux (RHEL) 8.6、或RHEL 8.x系列中的更高版本</block>
+  <block id="04e5e9b2304d0098895d9985c9a8ea89" category="cell">*预期IOP/TiB*</block>
+  <block id="66add2975320c187fa0c68a862f9277b" category="cell">*峰值IOP/TiB*</block>
+  <block id="44c1604c68364a078a1faa312c3f1fca" category="list-text">*预期IOPs/TiB*：系统在具有足够可用的系统IOPS时尝试提供的每个卷的每个分配TiB的最小IOPS数。</block>
+  <block id="a7eb9e3e2db26f418ff1bd33758058b5" category="list-text">*峰值IOPs/TiB*：系统允许卷在通过延迟注入限制IOPS之前达到的每个卷的已用TiB的最大IOPS数。</block>
+  <block id="f661dc3165fc7dcc25ae3a0d950ce6ac" category="list-text"><block ref="3db77c7f8084c19af25e224539c526e1" prefix=" " category="inline-code"></block>请转到使用Web浏览器获取升级帮助。</block>
+  <block id="3e0da19ae0755de400b746f325485a60" category="section-title">在启用StorageGRID SSO的情况下、Keystone收集器身份验证失败</block>
+  <block id="19717f3367e97979df17a62a0de1d760" category="paragraph">如果StorageGRID系统启用了单点登录(SSO)、则Keystone收集器不支持计量。日志中会显示以下错误消息：</block>
+  <block id="0e690a868c62119e2856f2a1fe116b2c" category="paragraph"><block ref="61e95538e67afefe4554fdced79f1dc3" prefix="" category="inline-code"></block></block>
+  <block id="2885bdeaa1cab112dcc8c381c30f671f" category="inline-link-macro">Keystone收集器无法在SSO模式下向StorageGRID进行身份验证</block>
+  <block id="b2d1bca2132e220619802a2a119eaf61" category="paragraph">有关信息和解决方法、请参见知识库文章<block ref="81af88b2d9bce20dafc4743c5a7c77b4" category="inline-link-macro-rx"></block>。</block>
+  <block id="d5afb45b1c0b33a5b19d72191f0ca7ab" category="summary">生成刷新令牌以获取新的访问令牌。它会对API请求进行身份验证、并在一周内或替换之前保持有效。您可以通过控制台或API调用获取访问令牌。</block>
+  <block id="675e00b57381caeda6a7676bb22f6ad5" category="cell"><block ref="111ffa9d375a47f985e5a930df93acad" prefix="" category="inline-code"></block></block>
+  <block id="ef9242902d0aabcf93b46f524d5c682d" category="admonition">要访问此端点、您应具有管理Privileges for Digital Advisor。</block>
+  <block id="b5db1df1ea6118ca7ac1ab438161410f" category="summary">Digital Advisor REST API检索与给定CustomerID关联的所有订阅的当前使用情况详细信息。</block>
+  <block id="f6eaec28d0ffb80012d221c3532274f6" category="cell"><block ref="7390986cba8738a130d09a1ae8c7619d" prefix="" category="inline-code"></block></block>
+  <block id="9fefb0959caba046858531046deeebac" category="cell"><block ref="1c706be136f0541b294fcc885fde1a63" prefix="" category="inline-code"></block></block>
+  <block id="f9758d05812567489fe8755ed9e896cf" category="summary">Digital Advisor REST API检索与用户关联的所有客户ID的列表。</block>
+  <block id="beadb7936ab29d8bd492fb93114101f3" category="cell"><block ref="b6c5a11b232c98606fb9ada3ec62627d" prefix="" category="inline-code"></block></block>
+  <block id="b964b33b06c664e35c5f043238992fba" category="summary">Digital Advisor REST API检索与给定CustomerID关联的所有订阅和服务级别的列表。</block>
+  <block id="2c74d7df1fc4058a6a46b83d4b38bb2a" category="cell"><block ref="bb50b1b9a7f23ddec00f27c428c363f2" prefix="" category="inline-code"></block></block>
+  <block id="67b63898a05fe3ab08e6c0690cc73ca3" category="summary">Digital Advisor API提供了一个编程接口、用于提取Keystone服务详细信息和指标。</block>
 </blocks>

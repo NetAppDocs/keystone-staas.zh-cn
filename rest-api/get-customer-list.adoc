@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest-api/get-customer-list.html 
-keywords: customer, keystone, api, IDs 
-summary: 此API检索与用户关联的所有客户ID的列表。 
+keywords: customer, keystone, api, IDs,  Digital Advisor 
+summary: Digital Advisor REST API检索与用户关联的所有客户ID的列表。 
 ---
 = 使用Digital Advisor REST API获取所有客户的列表
 :hardbreaks:
@@ -25,7 +25,7 @@ summary: 此API检索与用户关联的所有客户ID的列表。
 | * 方法 * | 获取 
 
 
-| *端点* | https://api.activeiq.netapp.com/v1/keystone/customers[] 
+| *端点* | `https://api.activeiq.netapp.com/v1/keystone/customers` 
 
 
 | *标题*  a| 

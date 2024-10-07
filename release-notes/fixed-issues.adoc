@@ -10,7 +10,7 @@ summary: 在NetApp Keystone STaaS服务的先前版本中发现的问题已在�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
