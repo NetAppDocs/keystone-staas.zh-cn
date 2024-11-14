@@ -96,8 +96,8 @@ NOTE: 这不是IOPS密度(例如75 IOPS/TiB)、而是绝对最小IOPS数。
 ....
 qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 1000
 ....
-* 最小卷大小：100 GiB、0.1 TiB
-* 最大卷大小：10 TiB
+* 建议的最小卷大小：100 GiB、0.1 TiB
+* 建议的最大卷大小：10 TiB
 
 
 
@@ -112,8 +112,8 @@ qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_
 ....
 qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 500
 ....
-* 最小卷大小：500 GiB、0.5 TiB
-* 最大卷大小：50 TiB
+* 建议的最小卷大小：500 GiB、0.5TiB
+* 建议的最大卷大小：50 TiB
 
 
 
@@ -128,8 +128,8 @@ qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_
 ....
 qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 250
 ....
-* 最小卷大小：500 GiB、0.5 TiB
-* 最大卷大小：80 TiB
+* 建议的最小卷大小：500 GiB、0.5TiB
+* 建议的最大卷大小：80 TiB
 
 
 
@@ -144,8 +144,8 @@ qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <
 ....
 qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
-* 最小卷大小：1 TiB
-* 最大卷大小：100 TiB
+* 建议的最小卷大小：1 TiB
+* 建议的最大卷大小：100 TiB
 
 
 
@@ -160,8 +160,8 @@ qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM
 ....
 qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
-* 最小卷大小：1 TiB
-* 最大卷大小：100 TiB
+* 建议的最小卷大小：1 TiB
+* 建议的最大卷大小：100 TiB
 
 
 
