@@ -2019,4 +2019,7 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="8a1116f55c6659c55d506df698030041" category="section-title">2024年11月11日</block>
   <block id="1503d912784bec55335f32e3c747c9df" category="section-title">增强了报告生成功能</block>
   <block id="bab5e70b8fca6215bd90bf396708d647" category="paragraph">现在、您可以使用Digital Advisor中的"报告"功能生成整合报告以查看Keystone数据的详细信息。要了解更多信息，请参阅 <block ref="f3fd429c1c2a13f9f8f5c8d4ec2129e6" category="inline-link-macro-rx"></block>。</block>
+  <block id="70852ac05a65501c650a9135c4a2ab17" category="cell">*已提交和计量容量类型*</block>
+  <block id="e7a731a6342f126055b89b80d800a180" category="cell">逻辑</block>
+  <block id="ce898d62ed9ca7653a01fe0c781e97e9" category="cell">物理</block>
 </blocks>
