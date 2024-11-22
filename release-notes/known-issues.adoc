@@ -33,9 +33,9 @@ NetApp Keystone STaaS中报告了以下已知问题：
 
 
  a| 
-未加载StorageGRID订阅的*卷摘要*子选项卡
+无法为订阅生成报告
  a| 
-无法为StorageGRID订阅加载*卷和对象*选项卡中的*卷摘要*子选项卡。
+如果从*Keystone订阅*页面的*订阅*选项卡中选择的订阅超过了10对 等，则在单击带有*Include data for each service level *选项的*Download CSV-按钮 时，无法生成报告。
  a| 
 无
 

@@ -48,7 +48,7 @@ TIP: 单击*订阅*链接可在*订阅*选项卡中查看过滤的订阅列表�
 
 
 
-image:new-db-3.png["新信息板"]
+image:new-db-4.png["新信息板"]
 
 有关Keystone的Digital Advisor信息板小工具的详细信息、请参见 https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Digital Advisor文档"^]。
 

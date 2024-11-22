@@ -26,7 +26,7 @@ image:all-subs-3.png["\"订阅\"选项卡的图像"]
 * *跟踪ID*：激活订阅时分配的跟踪ID。这是每个订阅和站点的唯一ID、用于跟踪订阅。
 +
 
-TIP: 如果您已订阅高级数据保护附加服务、则可以单击订阅编号对应的工具提示、在MetroCluster设置中查看合作伙伴订阅的跟踪ID。要了解如何在MetroCluster配置中查看合作伙伴订阅的详细使用情况、请参阅 link:../integrations/capacity-trend-tab.html#reference-charts-for-advanced-data-protection["高级数据保护参考图表"]。
+TIP: 如果您已订阅高级数据保护附加服务、则可以单击订阅编号对应的工具提示、在MetroCluster设置中查看合作伙伴订阅的跟踪ID。要了解如何查看MetroCluster配置中合作伙伴订阅的详细使用情况，请参见link:../integrations/capacity-trend-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["高级数据保护参考图表"]。
 
 * *使用类型*：您可能订阅了多个Keystone (版本1)或Keystone STaaS (版本2)订阅。对于这两种订阅类型、服务级别的费率计划规则可能会有所不同。通过查看此列中的值，您可以知道使用类型是否按或的已配置、物理或逻辑使用量计费 `v1` `v2`。要了解有关Keystone订阅版本1的更多信息，请参阅 https://docs.netapp.com/us-en/keystone/index.html["NetApp Keystone 文档"^]。
 * *Billing Period *：订阅的计费期限，如每月、每季度或每年。
