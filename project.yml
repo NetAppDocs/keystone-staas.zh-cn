@@ -6,7 +6,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-  langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
+  langs: zh-cn,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-tw
 sidebar:
   entries:
   - title: Keystone文档
@@ -107,6 +107,8 @@ sidebar:
       entries:
       - title: 高级数据保护
         url: "/concepts/adp.html"
+      - title: 数据基础架构洞察力
+        url: "/concepts/data-infra-insights.html"
       - title: 数据分层
         url: "/concepts/data-tiering.html"
       - title: Equin.提供支持的服务

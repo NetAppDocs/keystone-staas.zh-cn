@@ -2036,4 +2036,49 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="ff33e32470641c161a9b0ae3c97385c3" category="list-text">*逻辑AFS*：显示卷的活动文件系统使用的逻辑容量。</block>
   <block id="4a1c882b0ab41fd998beccee85292567" category="list-text">*物理快照*：显示快照使用的物理空间。</block>
   <block id="ff17f3533de401f605df9cf9c2553b80" category="paragraph">这些列可以更清楚地显示*逻辑使用量*列、该列显示卷的活动文件系统使用的逻辑容量与快照使用的物理空间之和。</block>
+  <block id="28734ee482d13456cc49c54e4f4ae12f" category="summary">Data Infrastructure Insight通过监控、故障排除和优化公共云和私有数据中心中的存储、提高Keystone STaaS的效率。</block>
+  <block id="a66177733b1b85eabceb5f32ad65a8f2" category="doc">了解数据基础架构洞察力</block>
+  <block id="3b95e9802e539ed39990d7c53e7f63cc" category="paragraph">NetApp数据基础架构洞察(Data Infrastructure Insight、DII、以前称为Cloud Insights)是一款适用于Keystone STaaS的附加产品。此服务与Keystone STaaS的集成增强了Keystone跨公有云和私有数据中心提供的存储资源的监控、故障排除和优化功能。</block>
+  <block id="b4116a637c9ad7ac63e4694f7d72fe47" category="inline-link-macro">Data Infrastructure Insight文档</block>
+  <block id="791f81543da974a0b785676eb2cfa67d" category="paragraph">要了解有关数据基础架构洞察力的更多信息，请参见<block ref="d3b10d06b902e7a0afb7dc49b48a5ee1" category="inline-link-macro-rx"></block>。</block>
+  <block id="b737d9abc5c91defa3f06854c716ace3" category="paragraph">DII既适用于新订阅、也适用于现有订阅。它可以作为已提交容量的附加项集成到Keystone订阅中。当DII集成到Keystone订阅中时、它将为订阅中的每个基础服务级别提供相应的服务级别。例如、Extreme映射到DII Extreme、Premium映射到DII Premium、Performance映射到DII Performance。这些映射可确保DII服务级别与Keystone订阅的基本服务级别保持一致。</block>
+  <block id="011703c38a5e2cdda4be217889b6e270" category="paragraph">Digital Advisor信息板上的*Keystone订阅*小工具中的DII服务级别视图：</block>
+  <block id="8821a03fd087171377d0af609b3c7f94" category="inline-image-macro">显示DII服务级别的Keystone订阅小工具的屏幕截图</block>
+  <block id="62d433b3a1743ca27d23bb2bc966e462" category="paragraph"><block ref="62d433b3a1743ca27d23bb2bc966e462" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="35093b8f232384c1cc56aa0b089de156" category="section-title">部署适用于Keystone的DII</block>
+  <block id="af7685e284aa0e1b6d46a67961bbd7ea" category="inline-link-macro">NetApp 专业服务</block>
+  <block id="f7cbbc681ca27bebc7825144375b3923" category="paragraph">客户可以通过两种方式集成DII for Keystone：既可以作为监控其他非Keystone环境的现有实例的一部分、也可以作为新实例的一部分。客户负责设置DII。如果在复杂环境中设置DII需要帮助，客户团队可以参与<block ref="d0b2c9035727476f87ec5eb3369e77e6" category="inline-link-macro-rx"></block>。</block>
+  <block id="098aa3cf35fbf6dcd0f8bf264d8fbb02" category="inline-link-macro">数据基础架构洞察力入门</block>
+  <block id="5521be72a56c20199f2583f6122fb79e" category="paragraph">要设置DII，请参见<block ref="b97f1974c4920cfa5b0a8266cf2ad03c" category="inline-link-macro-rx"></block>。</block>
+  <block id="71ef8949a55d6b1791e3d610418ebf29" category="inline-link-macro">DII 免费试用</block>
+  <block id="5b425cd08035f29c3dad5d45f1d2ea6e" category="inline-link-macro">功能教程</block>
+  <block id="3b179eeaf9ac878bf9783e7b6444e172" category="list-text">如果客户要启动新的DII实例，建议以开头<block ref="9bb21587dbf1a819ba039401f4e5726c" category="inline-link-macro-rx"></block>。要了解此功能以及所需的启动检查清单，请参见<block ref="fa9eb45797f94a182876dd4cce75625a" category="inline-link-macro-rx"></block>。</block>
+  <block id="5774c882dad1ebd6e046b3a9fdfae618" category="inline-link-macro">安装采集单元</block>
+  <block id="b0a1bf81aa560384c37a6699221d9a92" category="list-text">对于每个站点、需要一个采集单元。要安装采集单元，请参见<block ref="42d868d67c77926a662ccf38524dc1ee" category="inline-link-macro-rx"></block>。如果客户已设置了DII实例和采集单元、则可以继续配置数据收集器。</block>
+  <block id="995baaed007a33dba572505ffd6d726b" category="inline-link-macro">配置数据收集器</block>
+  <block id="9e5f2c187562f849cb59c40da16c3df4" category="list-text">对于部署的每个存储硬件、客户必须在采集单元上配置一个数据收集器。要配置数据收集器，请参见<block ref="61f06ce17d28c7f0dc6700988d29795b" category="inline-link-macro-rx"></block>。Keystone存储所需的数据收集器基于底层硬件、如下所示：</block>
+  <block id="0cf4a786acebd750bbfdfc4416c89406" category="cell">存储硬件</block>
+  <block id="98ef2c7e04140188dc85ced94acd2b67" category="cell">数据收集器</block>
+  <block id="60753a586c03bf35ffaaa51dc78d0820" category="cell">ONTAP系统</block>
+  <block id="2303cf1ff6b7eaf72c629756eb1e13ee" category="cell">NetApp ONTAP 数据管理软件</block>
+  <block id="55cf1a0f0fce69fd543500e5761dd26d" category="cell">NetApp StorageGRID</block>
+  <block id="0f0b99ea2f70cd363c2c6a279f74e760" category="cell">NetApp Cloud Volumes ONTAP</block>
+  <block id="0cc60d42c8b08c19f6e0c7852cb1ba77" category="paragraph">配置后、DII实例将开始监控Keystone存储。</block>
+  <block id="9a46d798eebbf17a0a8de6e011f77e61" category="section-title">计费和计量</block>
+  <block id="906219bd5cad7b32c457e4301bb3dddb" category="paragraph">下面概述了DII附加服务的计费和计量详细信息：</block>
+  <block id="4845aab96333666b12d6803a4dfa7e2f" category="list-text">此服务的衡量方式与您的主订阅相同。例如、如果您的主订阅包括100 TiB的Extreme服务和100 TiB的Premium服务、这两项服务都是根据逻辑使用量来衡量的、则附加服务DII Extreme 100 TiB和DII Premium 100 TiB也是根据逻辑使用量来衡量的。如果您的主订阅是按配置的基础衡量的、则会以相同的方式衡量相同容量的附加服务。附加服务将采用与您的主订阅相同的衡量方法。</block>
+  <block id="c99e19e7853ccd0683be6a6018ad7741" category="inline-image-macro">显示服务级别计量的当前消耗选项卡的屏幕截图</block>
+  <block id="b0885a29b96393f9e5617fe484028b66" category="paragraph"><block ref="b0885a29b96393f9e5617fe484028b66" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8db98a7e401d579f2dabed9e0f2ae0e5" category="list-text">此服务将按计量、并与您的Keystone订阅一起在同一发票上开具发票。如果您在激活Keystone订阅之前为Keystone配置了DII、则计费仍将从Keystone订阅激活日期或现有订阅的修改日期开始。</block>
+  <block id="f4dea3e33f96c31e045bda2ca911e035" category="list-text">除了标准Keystone发票之外、此服务还会根据DII服务级别的承诺容量和突发使用量进行计量和开票。此附加服务的计量方法与底层Keystone订阅服务级别相同、可以是逻辑订阅、配置订阅或物理订阅服务级别。</block>
+  <block id="acc5c60ef02b38c0c3d244a1fce02d83" category="list-text">此服务将在链接到的Keystone订阅结束。续订时、您可以选择是否续订附加服务。如果您不续订Keystone订阅、则受监控的硬件将被停用、并且附加服务将自动终止。</block>
+  <block id="bfff02ceb19e1dc747612576a86266f9" category="section-title">支持和用户访问</block>
+  <block id="24f6f9b21fffd4d332fb35f3cdaede8f" category="paragraph">如果客户启用了*允许NetApp访问您的数据基础架构洞察力环境*选项，经批准的NetApp支持团队成员可以访问客户的DII实例。要执行此操作，请转到*help &gt; Support*并启用选项。</block>
+  <block id="c121e755910605fdcf74c06e7b48e698" category="inline-image-macro">显示客户如何启用选项的屏幕截图</block>
+  <block id="5a76214ad6c936837ffbc2b3519f66ce" category="paragraph"><block ref="5a76214ad6c936837ffbc2b3519f66ce" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="118e3f1f2af9e76988d5dd4464cde783" category="inline-image-macro">用户按钮</block>
+  <block id="0c9a1e230a4dff8b65df1622847f8d76" category="paragraph">客户可以使用选项从*用户管理*屏幕提供对内部或外部用户的访问<block ref="7583d99cfb8081c5535ddb803cd818d8" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="749c79ba020f9d0aaf1b465f6dd56db8" category="inline-image-macro">显示添加用户选项的屏幕截图</block>
+  <block id="c0a1f4b52f74dc2cd70fa3478d9d97ca" category="paragraph"><block ref="c0a1f4b52f74dc2cd70fa3478d9d97ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9406fb3af0e8e2bf8446823785c0e069" category="sidebar">数据基础架构洞察力</block>
 </blocks>
