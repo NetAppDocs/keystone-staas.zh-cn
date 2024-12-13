@@ -20,6 +20,28 @@ Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕中引入�
 
 
 
+== 2024年12月12日
+
+
+
+=== 已重命名逻辑使用量列
+
+现在，*卷和对象*中的*卷详细信息*选项卡中的*逻辑使用量*列已重命名为* Keystone逻辑使用量*。
+
+
+
+=== 增强型资产选项卡
+
+现在，*Keystone订阅*屏幕中的*Assets*选项卡有两个新的子选项卡：* ONTAP *和* StorageGRID *。这些子选项卡可根据您的订阅提供有关ONTAP的集群级详细见解以及有关StorageGRID的网格级信息。要了解更多信息，请参阅 link:../integrations/assets-tab.html["资产选项卡"^]。
+
+
+
+=== 新增隐藏/显示列选项
+
+现在，*Volumes & Objects*中的*Volume Details*选项卡包含*Hide/Show Column*选项。使用此选项可以选择或取消选择列、以便根据您的首选项自定义卷的表格列表。要了解更多信息，请参阅 link:../integrations/volumes-objects-tab.html["卷和对象选项卡()"^]。
+
+
+
 == 2024年11月21日
 
 

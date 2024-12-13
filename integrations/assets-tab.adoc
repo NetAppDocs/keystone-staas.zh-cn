@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: integrations/assets-tab.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab 
-summary: '使用"资产"选项卡可查看有关Keystone订阅所管理的集群和节点的详细信息。' 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID 
+summary: '使用"资产"选项卡可查看ONTAP集群和节点以及由Keystone订阅管理的StorageGRID网格、站点和节点的详细信息。' 
 ---
-= 查看Keystone管理的集群和节点详细信息
+= 查看Keystone管理的集群和网格详细信息
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,20 +14,41 @@ summary: '使用"资产"选项卡可查看有关Keystone订阅所管理的集群
 
 
 [role="lead"]
-使用*资产*选项卡可查看有关Keystone订阅所管理的集群和节点的详细信息。
+使用*资产*选项卡可查看ONTAP集群和节点以及由Keystone订阅管理的StorageGRID网格、站点和节点的详细信息。
 
-Digital Advisor可提供全面的清单级部署信息。另一方面、Keystone信息板的*资产*选项卡会根据您的订阅累积集群级别的信息、并将其隔离并提供准确级别的详细信息。
+Keystone信息板的*Assets*选项卡包括两个子选项卡：*Keystone* ONTAP和*Keystone* StorageGRID。此选项卡会根据您的订阅累积ONTAP的集群级别信息和StorageGRID的网格级别信息、并对数据进行隔离和提供准确的详细信息。您可以单击相应的子选项卡来查看此信息。
 
+[role="tabbed-block"]
+====
+.ONTAP
+--
 .步骤
-. 单击*常规> Keystone订阅>资产*。
+. 单击*常规> Keystone订阅>资产> ONTAP *。
 . 选择要查看其集群的订阅编号。
 +
-您将看到集群详细信息、并按存储效率设置、平台类型和容量详细信息进行细分。单击其中一个集群将转到"Digital Advisor "屏幕上的*集群*小工具、从中可以获取该集群的追加信息。
+您将看到集群详细信息、并按存储效率设置、平台类型和容量详细信息进行细分。单击其中一个集群将转到"Digital Advisor "屏幕上的*集群*小工具、从中可以获取该集群的追加信息。Digital Advisor可提供全面的清单级部署信息。
+
++
+image:assets-tab-3.png["显示ONTAP集群级别信息的屏幕截图"]
 
 
 
-image:assets-tab-3.png["资产选项卡"]
+--
+.StorageGRID
+--
+.步骤
+. 单击*常规> Keystone订阅>资产> StorageGRID *。
+. 选择订阅编号。
++
+您将看到按网格和节点标识符、站点信息、硬件规格和容量详细信息分类的网格详细信息、这些信息有助于监控和管理StorageGRID基础架构中的节点。
 
++
+image:assets-tab-storagegrid.png["显示StorageGRID网格级信息的屏幕截图"]
+
+
+
+--
+====
 * 相关信息 *
 
 * link:../integrations/aiq-keystone-details.html["使用Keystone信息板和报告"]

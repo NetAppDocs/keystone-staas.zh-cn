@@ -34,3 +34,7 @@ summary: 数据分层附加服务可识别不常用的数据并将其分层到�
 
 
 NOTE: NetApp不会在Keystone STaaS订阅中提供Cloud Volumes ONTAP 所需的基于超大规模扩展的计算、存储和网络服务；这些服务需要直接从超大规模云服务提供商处采购。
+
+* 相关信息 *
+
+link:https://kb.netapp.com/hybrid/Keystone/AIQ_Dashboard/How_to_approximate_Keystone_Consumption_with_Data_Tiering_(FabricPool)_through_the_ONTAP_cli["如何使用ONTAP命令行界面大致了解Keystone在数据分层(FabricPool)中的使用情况"^]
