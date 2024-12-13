@@ -54,9 +54,9 @@ NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU �
 
 
 
-=== Storage Virtual Machine
+=== 虚拟机
 
-要部署Keystone收集器和AIOPS解决方案网关、需要Storage Virtual Machine (Storage VM)。有关安装Keystone收集器的前提条件，请参见： link:../installation/installation-overview.html["Keystone收集器安装指南"]。其他要求将在部署期间共享。
+要部署Keystone收集器和ITOM收集器、需要使用虚拟机。有关安装前提条件，请参见link:../installation/installation-overview.html["Keystone收集器安装指南"]和link:../installation/itom-prereqs.html["ITOM收集器的安装要求"]。其他要求将在部署期间共享。
 
 
 
@@ -68,15 +68,13 @@ Keystone收集器可通过以下方法部署：
 * 客户提供的Linux服务器运行在Red Hat Enterprise Linux 8.6或更高8.x版本或CentOS 7上。Keystone软件通过安装过程进行安装 `.rpm`。
 
 
-AIOPS解决方案 网关部署在以下配置中：
+可以通过以下方法部署ITOM收集器：
 
-* VMware OVA模板(需要VMware vCenter Server 6.7或更高版本)
-* 可启动的.iso安装程序
+* 客户提供的Linux服务器运行Debian 12、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023或更高版本。
+* 客户提供了运行Windows Server 2016或更高版本的Windows服务器。
 +
-** Citrix XenServer
-** Microsoft Hyper-V
-** 基于内核的虚拟机(Linux KVM)
 
+TIP: 建议使用Debian 12、Windows Server 2016或更高版本的操作系统。
 
 
 
@@ -94,6 +92,6 @@ NetApp仅为NetApp提供的基础架构设备提供所需的收发器。您应�
 
 == 远程访问要求
 
-客户数据中心安装的存储基础架构或客户拥有的联合服务与Keystone运营中心之间需要网络连接。客户负责提供计算和虚拟机以及互联网服务。网络设计应采用安全协议、并且NetApp和客户都将批准防火墙策略。
+客户数据中心安装的存储基础架构或客户拥有的联合服务与Keystone运营中心之间需要网络连接。客户负责提供计算和虚拟机以及互联网服务。客户还负责操作系统修补(非基于OVA的部署)以及基于内部安全策略的安全强化。网络设计应采用安全协议、并且NetApp和客户都将批准防火墙策略。
 
-NetApp需要访问为监控和管理而安装的硬件和软件组件、以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络(VPN)连接并访问所需数据。为了克服客户认为因向新服务打开防火墙端口而导致的任何操作复杂性、监控工具会启动外部连接。NetApp云应用程序(例如AIOPS解决方案和XURA）使用此连接来执行其各自的服务。此方法可满足客户的要求、即不打开防火墙端口、但可以访问属于此服务一部分的监控组件。
+NetApp需要访问为监控和管理而安装的硬件和软件组件、以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络(VPN)连接并访问所需数据。为了克服客户认为因向新服务打开防火墙端口而导致的任何操作复杂性、监控工具会启动外部连接。NetApp云应用程序(例如ITOM监控解决方案和须罗)使用此连接来执行其各自的服务。此方法可满足客户的要求、即不打开防火墙端口、但可以访问属于此服务一部分的监控组件。

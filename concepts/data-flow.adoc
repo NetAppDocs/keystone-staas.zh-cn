@@ -14,7 +14,7 @@ summary: Keystone STaaS系统中的数据会流经Keystone收集器和AIOPS解�
 
 
 [role="lead"]
-Keystone STaaS系统中的数据会流经Keystone收集器和AIOPS解决方案工具、这是相关的监控系统。
+Keystone STaaS系统中的数据流经Keystone收集器和ITOM监控解决方案(即相关监控系统)。
 
 
 
@@ -22,7 +22,7 @@ Keystone STaaS系统中的数据会流经Keystone收集器和AIOPS解决方案�
 
 Keystone收集器会向存储控制器启动REST API调用、并定期获取控制器的使用情况详细信息、如本流程图所示：
 
-image:collector-data-flow.png["显示了收集器组件中的数据流"]
+image:collector-data-flow-2.png["显示了收集器组件中的数据流"]
 
 .图例
 . NetApp收集器启动与Active-IQ云门户的HTTPS会话。
@@ -35,15 +35,21 @@ image:collector-data-flow.png["显示了收集器组件中的数据流"]
 
 == 监控数据流
 
-持续监控存储基础架构的运行状况是Keystone服务最重要的功能之一。在监控和报告方面、Keystone使用的是AIOP解决方案 、它需要远程访问客户的网络。下图介绍了AIOP解决方案 工具如何保护对客户位置的远程访问。
+持续监控存储基础架构的运行状况是Keystone服务最重要的功能之一。Keystone使用ITOM监控解决方案进行监控和报告。下图说明了ITOM监控解决方案如何保护对客户位置的远程访问。客户可以选择启用远程会话功能、从而使Keystone支持团队能够连接到受监控的设备进行故障排除。
 
-image:monitoring-flow.png["数据流"]
+image:monitoring-flow-1.png["数据流"]
 
 .图例
-. AIOPS解决方案网关启动到云门户的TLS会话。
+. ITOM监控解决方案网关启动到云门户的TLS会话。
 . 客户操作的防火墙允许进行连接。
-. 云中的AIOP解决方案 服务器接受此连接。
-. 在云门户和本地网关之间建立TLS通道。
-. NetApp控制器使用SNMP协议发送警报或对API请求做出响应。
+. 云中的ITOM监控解决方案服务器接受此连接。
+. 在云门户和本地网关之间建立TLS会话。
+. NetApp控制器使用SNMP/Syslog协议发送警报或响应API请求到本地网关。
 . 本地网关使用之前建立的TLS会话将这些警报发送到其云门户。
 
+
+
+
+== 合规标准
+
+Keystone ITOM监控解决方案符合欧盟《一般数据保护条例》(GDPR)和《加州消费者隐私法案》(CCPA)的要求。它还提供了一个link:https://www.logicmonitor.com/legal/data-processing-addendum["数据保护附录(政治部)"^]以记录这些承诺。ITOM监控解决方案不会收集或存储任何个人数据。

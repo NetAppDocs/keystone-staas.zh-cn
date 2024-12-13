@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: installation/itom-prereqs.html 
+keywords: prerequisites, ITOM, 
+summary: 您的系统必须满足多项要求、才能安装ITOM收集器。 
+---
+= ITOM收集器的安装要求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装ITOM收集器之前、请确保系统已准备好所需的软件、并满足所有必要的前提条件。
+
+.ITOM收集器服务器VM的前提条件：
+* 支持的操作系统：Debian 12、Windows Server 2016、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023或这些操作系统的更高版本。
++
+
+NOTE: 建议使用Debian 12、Windows Server 2016或更高版本的操作系统。
+
+* 资源要求：根据所监控的NetApp节点数确定的VM资源要求如下：
++
+** 2-10个节点：4个CPU、8 GB RAM、40 GB磁盘
+** 12-20个节点：8个CPU、16 GB RAM、40 GB磁盘
+
+
+* 配置要求：确保在受监控设备上配置了只读帐户和SNMP。如果适用、还需要将ITOM收集器服务器VM配置为NetApp集群和集群交换机上的SNMP陷阱主机和系统日志服务器。
+
+
+
+
+== 网络要求
+
+下表列出了ITOM收集器的网络连接要求。
+
+|===
+
+
+| 源 | 目标 | 协议 | 端口 | 说明 
+
+
+| ITOM收集器 | NetApp ONTAP集群管理IP | HTTPS、SNMP | TCP 443、UDP 161 | 监控ONTAP控制器 
+
+
+| NetApp ONTAP集群和节点管理IP | ITOM收集器 | SNMP、系统日志 | UDP 162、UDP 514 | 控制器的SNMP陷阱和系统日志 
+
+
+| ITOM收集器 | 集群交换机 | SNMP | UDP 161 | 监控交换机 
+
+
+| 集群交换机 | ITOM收集器 | SNMP、系统日志 | UDP 162、UDP 514 | 来自交换机的SNMP陷阱和系统日志 
+
+
+| ITOM收集器 | StorageGRID节点IP | HTTPS、SNMP | TCP 443、UDP 161 | StorageGRID的SNMP监控 
+
+
+| StorageGRID节点IP | ITOM收集器 | SNMP、系统日志 | UDP 162、UDP 514 | 来自StorageGRID的SNMP陷阱 
+
+
+| ITOM收集器 | Keystone收集器 | SSH、HTTPS、SNMP | TCP 22、TCP 443、UDP 161 | Keystone收集器监控和远程管理 
+
+
+| ITOM收集器 | 本地 DNS | DNS | UDP 53 | 公共或私有DNS服务 
+
+
+| ITOM收集器 | 选择NTP服务器 | NTP | UDP 123 | 保持时间 
+|===

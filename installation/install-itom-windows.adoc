@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: installation/install-itom-windows.html 
+keywords: Windows installation Keystone, ITOM Collector installation 
+summary: 在基于Windows的系统上安装ITOM收集器。 
+---
+= 在Windows系统上安装ITOM收集器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过下载ITOM收集器安装文件、运行InstallShield向导并输入所需的监控凭据、在Windows系统上安装ITOM收集器。
+
+
+NOTE: Keystone支持团队提供了一个动态链接来下载ITOM收集器设置文件、该文件将在两小时后过期。
+
+您可以根据需要将其安装在Linux系统上。要在Linux系统上安装ITOM收集器，请参见link:../installation/install-itom-linux.html["在Linux系统上安装ITOM收集器"]。
+
+按照以下步骤在Windows服务器上安装ITOM收集器软件：
+
+.开始之前
+确保在Windows服务器的本地安全策略设置中的“本地策略/用户权限分配”下授予ITOM收集器服务*作为服务登录*。
+
+.步骤
+. 将ITOM收集器设置文件下载到Windows服务器。
+. 打开安装文件以启动InstallShield向导。
+. 接受最终用户许可协议(EULA)。InstallShield向导将提取所需的二进制文件并提示您输入凭据。
+. 输入ITOM收集器将在其下运行的帐户的凭据：
++
+** 如果ITOM收集器未监控其他Windows服务器、请使用本地系统。
+** 如果ITOM收集器正在监控同一域中的其他Windows服务器、请使用具有本地管理员权限的域帐户。
+** 如果ITOM收集器正在监控不属于同一域的其他Windows服务器、请使用本地管理员帐户并使用本地管理员凭据连接到每个资源。您可以选择设置密码，使其不会过期，以减少ITOM收集器与其受监控资源之间的身份验证问题。
+
+
+. 选择收集器大小。默认值为根据设置文件建议的大小。除非您有特定要求、否则请继续使用建议的大小。
+. 选择_Next_开始安装。您可以使用已填充的文件夹、也可以选择其他文件夹。状态框显示安装进度，然后显示InstallShield向导已完成对话框。
+
+
+.下一步是什么？
+成功安装后、请联系Keystone支持团队、通过ITOM支持门户验证ITOM收集器的安装是否成功。验证后、Keystone支持团队将远程配置ITOM收集器(包括进一步的设备发现和监控设置)、并在配置完成后发送确认消息。如有任何疑问或其他信息、请联系keystone.services@NetApp．com。

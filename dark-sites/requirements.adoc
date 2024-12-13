@@ -71,5 +71,5 @@ Keystone收集器的网络连接要求如下：
 * Keystone收集器服务器应可通过端口443 (HTTPS)访问Unified Manager服务器。
 * 应在Unified Manager服务器上为Keystone收集器设置具有应用程序用户权限的服务帐户。
 * 不需要外部Internet连接。
-* 每个月、从Keystone收集器中导出一个文件并通过电子邮件将其发送给NetApp支持团队。有关如何联系支持团队的详细信息，请参见link:../concepts/gssc.html#netapp-global-services-and-support-center["获取Keystone帮助"]。
+* 每个月、从Keystone收集器中导出一个文件并通过电子邮件将其发送给NetApp支持团队。有关如何联系支持团队的详细信息，请参见link:../concepts/gssc.html["获取Keystone帮助"]。
 

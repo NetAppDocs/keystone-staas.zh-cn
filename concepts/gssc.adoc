@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concepts/gssc.html 
-keywords: Global Services Support Center, GSSC, Keystone support, service request, support ticket 
+keywords: Keystone support, service request, support ticket 
 summary: 如果您需要帮助、请联系NetApp全球服务和支持中心。 
 ---
 = 获取Keystone帮助
@@ -14,28 +14,22 @@ summary: 如果您需要帮助、请联系NetApp全球服务和支持中心。
 
 
 [role="lead"]
-NetApp全球服务和支持中心(GSSC)和NetApp Keystone成功经理(KSM)负责为您的Keystone订阅提供服务。如果您需要帮助、可以联系支持团队。
+NetApp Keystone支持团队和Keystone成功经理(KSM)负责为您的Keystone订阅提供服务。如果您需要帮助、可以联系Keystone支持团队。
 
 
 
-== NetApp全球服务和支持中心
+== NetApp Keystone支持
 
 NetApp 为 NetApp Keystone 客户远程提供运营服务。这些服务涵盖存储管理活动中的一系列操作准则。这些服务包括资产和配置管理、容量和性能管理、变更管理、事件、意外事件和问题管理、服务请求履行和报告。NetApp会根据需要展示控制状态和支持证据。
 
 
 
-== 追加信息和支持联系人
+== 追加信息
 
-NetApp全球服务和支持中心团队主要为NetApp Keystone客户提供服务支持。您可以使用以下信息联系支持团队。
-
-* 全球服务联系人：
-https://www.netapp.com/company/contact-us/support/[]
-* 如果您有待处理案例/服务单需要上报、请发送电子邮件至以下地址之一：keystone.services@netapp.com keystone.escalations@netapp.com
-* NetApp使用AIOPS解决方案 主动监控和连接到NetApp Keystone 环境以进行故障排除。
+NetApp使用ITOM监控解决方案主动监控并连接到NetApp Keystone环境以进行故障排除。
 
 
-
-NOTE: 在合作伙伴运营的模式中、租户和子租户的服务请求将分配给合作伙伴的服务台。合作伙伴的支持工具可能已与AIOPS解决方案 和GSSC应用程序集成。只有 L3 问题才会通过 GSSC 上报给 NetApp 。
+NOTE: 在合作伙伴运营的模式中、租户和子租户的服务请求将分配给合作伙伴的服务台。合作伙伴的支持工具可能已与ITOM解决方案集成。
 
 有关Keystone服务的详细信息、请参见：
 
@@ -45,9 +39,9 @@ NOTE: 在合作伙伴运营的模式中、租户和子租户的服务请求将�
 
 
 
-== GSSC监控
+== Keystone支持监控
 
-NetApp全球服务和支持中心可监控您的产品和订阅服务的运行状况、提供远程支持并与Keystone成功经理协作。监控与相关Keystone订阅订单相关的产品的所有人员均为美国 在美国领土上作业的美国公民。
+NetApp Keystone支持可监控您的产品和订阅服务的运行状况、提供远程支持并与Keystone成功经理协作。
 
 .Keystone Success Manager
 Keystone成功管理器(KSM)将与您密切合作、为您提供Keystone服务、并向您提供每周或每月计费和运营报告的最新信息。这些职责在您的NetApp Keystone 协议中进行了说明。
@@ -60,6 +54,8 @@ Keystone成功管理器(KSM)将与您密切合作、为您提供Keystone服务�
 
 https://netappgssc.service-now.com/csm[]
 
-在提交服务请求之前、请确保已准备好系统详细信息、日志和相关信息。当您提出服务请求时、GSSC团队会收到支持服务单并访问相关信息以进行故障排除。您可以按照ServiceNow服务单了解状态和解决方案。
+在提交服务请求之前、请确保已准备好系统详细信息、日志和相关信息。当您提出服务请求时、Keystone支持团队将收到支持服务单并访问用于故障排除的信息。您可以按照ServiceNow服务单了解状态和解决方案。
 
 有关添加支持包的信息、请参见 link:../installation/monitor-health.html["生成并收集支持包"]。
+
+如果您有待处理案例/服务单需要上报、请发送电子邮件至以下地址之一：keystone.services@netapp.com keystone.escalations@netapp.com

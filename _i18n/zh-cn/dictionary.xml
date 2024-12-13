@@ -21,13 +21,8 @@
   <block id="39eeade2e73eb4823932331e5a459f8c" category="paragraph">您应提供所需的电源。NetApp 将根据 200V 额定电压（典型 A ，最大 A ，典型 W ，最大 W ，电源线类型， 和数量），具体取决于最终配置。所有组件都具有冗余电源。NetApp 将提供机柜内电源线。</block>
   <block id="8c880fe54cae171fa97132f8c5e82297" category="section-title">散热</block>
   <block id="e49c1cb86b679c35d94b37728ee6dfb6" category="paragraph">NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU ，最大 BTU ）。</block>
-  <block id="4d2caccc34711835f6ff99da411ac04e" category="section-title">Storage Virtual Machine</block>
   <block id="b81687f75b28f9a0cfb73649c9cca458" category="section-title">部署选项</block>
   <block id="a100eabbc0de64e817f5268550f98e40" category="list-text">VMware OVA模板(需要VMware vCenter Server 6.7或更高版本)</block>
-  <block id="982460f46a9c865b5659aba58b2214e3" category="list-text">可启动的.iso安装程序</block>
-  <block id="12d3f37fc10bb62fe3297b7457e90417" category="list-text">Citrix XenServer</block>
-  <block id="bbc2d665b02dc421c5c756db4b973610" category="list-text">Microsoft Hyper-V</block>
-  <block id="e05386baa04fdb8086234b221371bac1" category="list-text">基于内核的虚拟机(Linux KVM)</block>
   <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">网络</block>
   <block id="bc9ce1a2001f13d5a3489030a7b630e9" category="paragraph">NetApp仅为NetApp提供的基础架构设备提供所需的收发器。您应提供客户设备所需的收发器、并使用缆线连接到NetApp提供的Keystone基础架构设备。</block>
   <block id="d701dcea67fd884a29f39c9adfdeb8bf" category="section-title">远程访问要求</block>
@@ -110,10 +105,6 @@
   <block id="af2d21b994ceb580773abb07a8691b58" category="paragraph">华盛顿州</block>
   <block id="2b29c5739ec4158573c66d2124e2c7e9" category="paragraph">苏黎世</block>
   <block id="3ad08396dc5afa78f34f548eea3c1d64" category="cell">瑞士</block>
-  <block id="3b4d5a194534074e4e26b153c90a2ef6" category="doc">U.S.公民支持(USCS)</block>
-  <block id="90770185e7f0d93f4befd67871a81092" category="paragraph">美国公民支持(USCS)是NetApp Keystone 订阅的附加服务。您有权从美国获得持续Keystone服务的交付和支持美国公民土壤。</block>
-  <block id="616e342ef98270057c5d3a2f3e3e7338" category="section-title">NetApp全球服务支持中心监控</block>
-  <block id="c779911684ebe3ceed4035306e2997c3" category="paragraph">NetApp全球服务和支持中心(GSSC)可监控您的产品和订阅服务的运行状况、提供远程支持、并与您的Keystone Success Manager合作。监控与相关Keystone订阅订单相关的产品的所有人员均为在美国运营的美国公民土壤。</block>
   <block id="b47b3a710484adb2c8cfacd64043b550" category="section-title">Keystone Success Manager</block>
   <block id="e8483ac20b1990d2362dd45e18cfb1d2" category="section-title">部署活动</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="section-title">支持</block>
@@ -274,12 +265,10 @@
   <block id="39fd5e3ddc496ef780ff5e3fe13bb2d1" category="section-title">SnapLock 合规性</block>
   <block id="f14c7b4687be07acacb0f5aeed1474f5" category="inline-link">什么是 SnapLock</block>
   <block id="da0abce09003b51065ed5b06d06021f1" category="doc">根据已提交容量计费</block>
-  <block id="0a01a33e5f29d399207cdf2d0bedd8e4" category="section-title">追加信息和支持联系人</block>
   <block id="f0c94d09bc7d41e3ed09416fd1ed8a12" category="inline-link"><block ref="f0c94d09bc7d41e3ed09416fd1ed8a12" category="inline-link-rx"></block></block>
   <block id="1c6d9d150de7c9865ab3839ec9e99e4b" category="list-text">NetApp Keystone<block ref="4b675bc45aec5ce1523a19f69a2ff928" category="inline-link-rx"></block></block>
   <block id="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link"><block ref="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link-rx"></block></block>
   <block id="0f185ccd88416daec4eee0a846d110b8" category="list-text">NetApp 产品文档<block ref="2e85fc867cab94d246e0bf6043b361cd" category="inline-link-rx"></block></block>
-  <block id="8ed38172f401cd08c379f8397810fe02" category="section-title">GSSC监控</block>
   <block id="fc860be5f135f0d58f6a4cc1a552d57f" category="inline-link">Keystone订阅</block>
   <block id="ae45517d4d9ba30bece696a3b49d1b3f" category="inline-link">管理Keystone订阅</block>
   <block id="e5471403f1b2eefb0fe47b6193a72bbc" category="sidebar">Keystone文档</block>
@@ -334,7 +323,6 @@
   <block id="5e803820900b74b1d5d53cef450d8ad7" category="list-text">选择灵活的服务和付款期限：您可以选择每个站点12个月、25 TiB或更多。此后、您可以自动续订12个月。</block>
   <block id="72a2e26ee3dd7a4431c7b48558a4e647" category="paragraph">您应提供已连接到两个单独的受保护电路且具有足够C13插座的配电单元(PDU)。在客户运营的产品中，在某些情况下，需要 C19 网点。在NetApp运营的产品中、NetApp或客户均可根据要求提供PDU。</block>
   <block id="9696806b0bc121063e619b6f0922f330" category="paragraph">根据客户要求和使用的存储控制器、NetApp可以在客户站点提供10 GB、40 GB和100 GB连接。</block>
-  <block id="9e5608e7c0a5ea33b2dac7e4f4da76e0" category="paragraph">客户数据中心安装的存储基础架构或客户拥有的联合服务与Keystone运营中心之间需要网络连接。客户负责提供计算和虚拟机以及互联网服务。网络设计应采用安全协议、并且NetApp和客户都将批准防火墙策略。</block>
   <block id="580577f00c6e952d8dad642fa30380db" category="summary">Keystone和Digital Advisor</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisor文档</block>
   <block id="d98e1323795a96bdb4ab923442544f4f" category="summary">Keystone和BlueXP</block>
@@ -802,18 +790,9 @@
   <block id="9e2f9cd4a9ee8b88a18988f62eb67dd7" category="paragraph">Keystone收集器会向存储控制器启动REST API调用、并定期获取控制器的使用情况详细信息、如本流程图所示：</block>
   <block id="144be97e21d1c48cc88d9c1079fd7242" category="list-text">Active IQ 云门户接受此连接并与NetApp收集器建立通道。</block>
   <block id="eb1ece97f0d4f33c42fe8c1270d9f97f" category="list-text">NetApp收集器会建立一个与存储控制器的管理连接的REST API会话、获取环境数据并将其发送到Active IQ 门户。</block>
-  <block id="9bd6f9bd3f316579290de54613357644" category="paragraph">持续监控存储基础架构的运行状况是Keystone服务最重要的功能之一。在监控和报告方面、Keystone使用的是AIOP解决方案 、它需要远程访问客户的网络。下图介绍了AIOP解决方案 工具如何保护对客户位置的远程访问。</block>
-  <block id="243cf07b27b6811f47ef7011b0f2fcd7" category="list-text">云中的AIOP解决方案 服务器接受此连接。</block>
-  <block id="322f1e98181b58ca0f54061626b2d948" category="list-text">在云门户和本地网关之间建立TLS通道。</block>
-  <block id="450997fb0074b4d084ffcc7c81c8194e" category="list-text">NetApp控制器使用SNMP协议发送警报或对API请求做出响应。</block>
   <block id="67b0e91889520881c5ec5d57fab5f89c" category="list-text">本地网关使用之前建立的TLS会话将这些警报发送到其云门户。</block>
-  <block id="0f1b5cef30787606dcebbe2aad12f047" category="list-text">用于管理和运行服务的工具、例如AIOPS解决方案 、Active IQ 和Active IQ Unified Manager。</block>
-  <block id="fe69a54042d9eff356aefd4641754a9d" category="list-text">AIOP解决方案 本地网关：用于监控网络的基于云的应用程序。它内置了与NetApp存储平台的集成功能、可用于收集环境数据并监控网络。通过使用您站点上安装的本地网关与云门户进行通信、可以启用此服务。</block>
   <block id="370f5a2dcf3c761999eec9796ac7cb95" category="list-text">Keystone Data Collector：Keystone收集器为Keystone客户提供计费服务。此应用程序与Active IQ Unified Manager 捆绑在一起。它会每五分钟从ONTAP 和StorageGRID 控制器收集一次数据。处理数据、并通过用于生成计费数据的AutoSupport 机制将元数据发送到集中式Active IQ 数据湖。Active IQ 数据湖处理计费数据并将其发送给Zuora进行计费。</block>
   <block id="b061e71795ea0169fae5918033aa1426" category="inline-link-macro">Keystone收集器安装指南</block>
-  <block id="b264c507ce69115ec3b1ea258739f71a" category="paragraph">AIOPS解决方案 网关部署在以下配置中：</block>
-  <block id="3db5d9db3e9bbb96192cdbca3e683f2d" category="list-text">NetApp使用AIOPS解决方案 主动监控和连接到NetApp Keystone 环境以进行故障排除。</block>
-  <block id="f117a997c71ee803b4f42cc859317819" category="admonition">在合作伙伴运营的模式中、租户和子租户的服务请求将分配给合作伙伴的服务台。合作伙伴的支持工具可能已与AIOPS解决方案 和GSSC应用程序集成。只有 L3 问题才会通过 GSSC 上报给 NetApp 。</block>
   <block id="eca1859cccb72b784538dc03d0802c4d" category="paragraph">BlueXP Digital Advisor信息板为您提供了一个图形视图和详细功能、用于监控Keystone订阅使用情况并生成报告。有关Digital Advisor信息板和Keystone的详细信息、请参见 <block ref="e4a96850db17c7110d770223b8207b51" category="inline-link-macro-rx"></block>。</block>
   <block id="2951c1f61944250838607486af8b4ac0" category="sidebar">升级Keystone收集器</block>
   <block id="aabaac678332e131002e20e29c167e21" category="paragraph">确保满足以下通用要求：</block>
@@ -836,9 +815,7 @@
   <block id="09bf9d4349f1cb8b47852b136c5b73f7" category="list-text">这些服务在11个国家/地区的数据中心内均受支持。</block>
   <block id="d0aa2dffa0da83f1f34681308d04db5d" category="paragraph">洛杉矶</block>
   <block id="30b2358cb02ac28dab20e543f65090a3" category="inline-image-macro">显示了收集器组件中的数据流</block>
-  <block id="0eacfc824aac3b0caf281a91b0150a47" category="paragraph"><block ref="0eacfc824aac3b0caf281a91b0150a47" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd7ff698af2c2f69b7a1e0b0f9bd6fc0" category="inline-image-macro">数据流</block>
-  <block id="70d6d93b80cc0f0a782725d14559b395" category="paragraph"><block ref="70d6d93b80cc0f0a782725d14559b395" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b8e36d91b1526b0c712db2327c72889e" category="inline-image-macro">Keystone</block>
   <block id="e55277c0c3f0e910a9213c7bc485b55e" category="paragraph"><block ref="e55277c0c3f0e910a9213c7bc485b55e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="61d927a1aed666979cd431fa1e2acade" category="inline-image-macro">复选标记</block>
@@ -880,7 +857,6 @@
   <block id="d292740ed171285325a91f3bddbbc59d" category="list-text">只有当层策略设置为"无"且云中没有任何块时、_Expected IOPs_才会针对FabricPool。_expected IOPs_适用于不属于SnapMirror同步关系的卷。</block>
   <block id="acad586f6e3c240e49bc22095d3d4c92" category="list-text">工作负载IO操作需要在所有已部署的控制器之间保持平衡、具体取决于Keystone顺序。</block>
   <block id="e6329950dc4e8e2123e22d6e9b5d6db8" category="inline-image-macro">管理堆栈</block>
-  <block id="385cf44e2725480b6b1fff1e85799b05" category="paragraph"><block ref="385cf44e2725480b6b1fff1e85799b05" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">图标。</block>
   <block id="afcefd303655b7f65e49ebd8be60e0e7" category="inline-image-macro">灰点图标</block>
   <block id="c0ffa381f5b727ea5de2afacc2018783" category="inline-image-macro">绿色圆点图标</block>
@@ -1021,10 +997,8 @@
   <block id="3a4be28bbb64456f61b6d1a38574d0ac" category="paragraph">您的突发限制已在Keystone协议中确定和指定。通常、它比已提交容量高20%。</block>
   <block id="b178e2d86eb51156fb8d9a2bd509938c" category="list-text">计算、存储、网络等云原生服务由云提供商开具发票。</block>
   <block id="296ad65314dcbf027a7993304c7a165d" category="list-text">这些服务依赖于云存储和计算特性。</block>
-  <block id="250f7d64786be93dcfc476bdd51bca8f" category="list-text">AIOPS解决方案网关启动到云门户的TLS会话。</block>
   <block id="0c0de0453c5b0de437eb1976c3926361" category="paragraph">站点A和站点B在MetroCluster 配置中设置。当用户在站点 A 中创建一个 10 TB 的卷时，会在站点 B 中创建一个 10 TB 的相同卷Keystone可确定每个站点的10 TB使用量、总增加量为20 TB。System Manager和Unified Manager会报告在站点A中创建的10 TB卷、但不会在站点B中报告10 TB卷</block>
   <block id="da20082463112c8970df057a21a7f47d" category="list-text">Keystone基础架构、包括存储控制器。</block>
-  <block id="91aa968d50f3d2ecebe3ba524c542adc" category="paragraph">NetApp需要访问为监控和管理而安装的硬件和软件组件、以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络(VPN)连接并访问所需数据。为了克服客户认为因向新服务打开防火墙端口而导致的任何操作复杂性、监控工具会启动外部连接。NetApp云应用程序(例如AIOPS解决方案和XURA）使用此连接来执行其各自的服务。此方法可满足客户的要求、即不打开防火墙端口、但可以访问属于此服务一部分的监控组件。</block>
   <block id="5f961dc6311c34fa23cf40360afba9db" category="list-text">承诺容量不能在订阅到期前90天增加、除非订阅续订12个月。</block>
   <block id="783e590ecfbaebc7caa0409a8cae6926" category="paragraph">用于文件和块存储的Keystone STaaS标准服务包括分层功能、这些功能可识别不太常用的数据、并将其分层到支持Keystone STaaS的NetApp冷存储。如果要将冷数据分层到任何支持Keystone STaaS的非NetApp存储、您可以将数据分层作为附加服务使用。</block>
   <block id="29a37414986b666b1caba06ea110bc8c" category="paragraph">只有在将数据分层到任何非NetApp存储(例如Amazon Web Services (AWS) S3、Azure Blb、Google Cloud Platform (GCP)以及其他支持Keystone STaaS且与S3兼容的第三方对象存储)时、才需要分层附加服务。</block>
@@ -1034,7 +1008,6 @@
   <block id="0d57513becb1cbc7c0fb1c95b5596678" category="paragraph">Keystone可为块、文件和对象数据类型提供预定义服务级别的存储容量、这些数据类型可在内部部署并由NetApp、合作伙伴或客户操作。Keystone可以与NetApp云服务(例如Cloud Volumes ONTAP)结合使用、这些服务可以部署在您选择的超规模环境中。</block>
   <block id="8a559914d26628167b5f08a9373076e9" category="paragraph">NetApp 为 NetApp Keystone 客户远程提供运营服务。这些服务涵盖存储管理活动中的一系列操作准则。这些服务包括资产和配置管理、容量和性能管理、变更管理、事件、意外事件和问题管理、服务请求履行和报告。NetApp会根据需要展示控制状态和支持证据。</block>
   <block id="380091ff4f618bba4a7e7e4aa88a1ec1" category="paragraph">Keystone成功管理器(KSM)将与您密切合作、为您提供Keystone服务、并向您提供每周或每月计费和运营报告的最新信息。这些职责在您的NetApp Keystone 协议中进行了说明。</block>
-  <block id="215f812eba5abfc5c6f2c8dd59899a86" category="paragraph">在提交服务请求之前、请确保已准备好系统详细信息、日志和相关信息。当您提出服务请求时、GSSC团队会收到支持服务单并访问相关信息以进行故障排除。您可以按照ServiceNow服务单了解状态和解决方案。</block>
   <block id="e6493c4efe3fa5e48bce86284ff1aa5f" category="paragraph">计算服务级别的吞吐量、例如<block ref="ba1f6c59525d71aee4c027798d2470fd" prefix=" " category="inline-code"></block> 服务级别：</block>
   <block id="82ed1e96c97e812264424ac485673960" category="paragraph">如果适用、现场和远程部署和安装活动由美国执行美国公民土壤。脚注：免责声明[现场活动是否有合适的人员取决于Keystone系统部署的地理位置。]</block>
   <block id="9415cbbaeaf88bca0512bbfe3c3cb334" category="paragraph">默认情况下、Keystone运行状况服务不接受来自本地主机以外的任何IP的连接。Keystone运行状况端点为<block ref="b2445934e628b68d6950a1056d38299a" prefix=" " category="inline-code"></block>、并侦听端口上Keystone收集器服务器的所有接口<block ref="d79c8788088c2193f0244d8f1f36d2db" prefix=" " category="inline-code"></block>。查询时、端点将返回一个包含JSON输出的HTTP请求状态代码作为响应、用于描述Keystone收集器系统的状态。
@@ -1105,8 +1078,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="bad75a53f85a771cf752894cc064a3b7" category="admonition">完成安装后、您可以使用Keystone收集器管理终端用户界面(TUI)实用程序执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。请参见 <block ref="14e6b60cfb93c92598e40786e00457b6" category="inline-link-macro-rx"></block> 和 <block ref="81c399588663f35131a970a2d830c241" category="inline-link-macro-rx"></block> 以了解相关信息。</block>
   <block id="1ae3a07b6896d577a03f95172e8b37ab" category="paragraph">有关SnapLock 技术的信息、请参见<block ref="75641a5590d09822bddecb04bdc449c0" category="inline-link-rx"></block>。</block>
   <block id="12d485f3f9a8db1779ed73cf44c137be" category="paragraph">存储即服务(STaaS)产品旨在为存储基础架构的采购、部署和管理提供类似于公有云的模式。虽然大多数企业仍在制定混合云战略、但作为客户、您可以选择基于运营支出的"按使用付费"消费模式。您可能需要最终将所有工作负载迁移到云、但尚未制定明确的计划或计划将特定部分或所有工作负载迁移到云。Keystone STaaS让您可以灵活地从内部服务入手、稍后再决定迁移到云的正确工作负载和时间点。Keystone STaaS可跨部署模式提供承诺保护。作为内部客户、您无需再为云服务支付更多费用、而是可以重新分配内部支出以添加云服务、并且基本上可以支付与此重新分配之前承诺的每月账单。</block>
-  <block id="ff3ee75715261a301448444dad2f844d" category="list-text">全球服务联系人：
-<block ref="983f8b40dae4baa1de985ce6d2ebbb0c" category="inline-link-rx"></block></block>
   <block id="b2a258e6f0a0dc74fded47cb9cc5413c" category="paragraph"><block ref="b2a258e6f0a0dc74fded47cb9cc5413c" category="inline-link-rx"></block></block>
   <block id="de70c043bed2cffae85b828a6246d7e2" category="inline-image-macro">重新分配逻辑说明</block>
   <block id="2ac0f144048cf5fb3e17783ff993bfa0" category="paragraph"><block ref="2ac0f144048cf5fb3e17783ff993bfa0" category="inline-image-macro-rx" type="image"></block></block>
@@ -1498,7 +1469,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="7053560fccb48096070dc008e686cf8d" category="summary">了解在您的环境中启用NetApp Keystone STaaS服务所需的组件。</block>
   <block id="605e1ff8075e66e13ef5bc1257800be7" category="doc">部署所需的组件</block>
   <block id="1d338514e4b31738eb689c9e5bf1deca" category="paragraph">要在您的环境中启用NetApp Keystone STaaS服务、需要使用多个组件。开始之前、您应查看有关这些组件的详细信息。</block>
-  <block id="147c46cde84c281f55a6c47d275ff845" category="paragraph">要部署Keystone收集器和AIOPS解决方案网关、需要Storage Virtual Machine (Storage VM)。有关安装Keystone收集器的前提条件，请参见： <block ref="90d7b7caf953f72ddc1c63cc7891ca46" category="inline-link-macro-rx"></block>。其他要求将在部署期间共享。</block>
   <block id="d246f9b425c150eb3d6e174fbc2525d0" category="paragraph">Keystone收集器可通过以下方法部署：</block>
   <block id="3332bc574644f77a870b242a631af1e3" category="summary">已用容量是指工作负载在服务使用期间实际使用的容量。</block>
   <block id="7a6709ab5e3b396814fccf37c263ad1f" category="paragraph">Keystone STaaS可根据您在使用服务期间消耗的容量进行计量。已用容量是工作负载实际使用的容量。</block>
@@ -1511,10 +1481,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="a129a1a3a2b62ad0169083e37600a64e" category="paragraph">Equin.在以下位置设有数据中心：</block>
   <block id="baec7a90ff5a6d18f6dd7ef76c3e4998" category="summary">如果您需要帮助、请联系NetApp全球服务和支持中心。</block>
   <block id="9c749342ce1dc8c39f5e67d29a9500ac" category="doc">获取Keystone帮助</block>
-  <block id="4ddf6c6712971dd15c713fad57953735" category="paragraph">NetApp全球服务和支持中心(GSSC)和NetApp Keystone成功经理(KSM)负责为您的Keystone订阅提供服务。如果您需要帮助、可以联系支持团队。</block>
-  <block id="31ff08d41c8cc35bada27e791db4e753" category="section-title">NetApp全球服务和支持中心</block>
-  <block id="a38771031bc7d08419a9e331d277bafd" category="paragraph">NetApp全球服务和支持中心团队主要为NetApp Keystone客户提供服务支持。您可以使用以下信息联系支持团队。</block>
-  <block id="add73d271d7391eeb698cf556eed70ac" category="paragraph">NetApp全球服务和支持中心可监控您的产品和订阅服务的运行状况、提供远程支持并与Keystone成功经理协作。监控与相关Keystone订阅订单相关的产品的所有人员均为美国 在美国领土上作业的美国公民。</block>
   <block id="24acde87a618c9dc2d11377311afc495" category="summary">Keystone基础架构、设计、技术选择和组件产品仅由NetApp提供。</block>
   <block id="7954e225c8bd390ff2168144c5e393c1" category="paragraph">NetApp全权负责Keystone的基础架构、设计、技术选择和组件、这些内容既适用于NetApp环境、也适用于客户运营的环境。</block>
   <block id="adf9ce2fefed448c1faa955a05142679" category="paragraph">NetApp 保留采取以下操作的权利：</block>
@@ -1548,8 +1514,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e561d7dfcd6620325c8edbb7b2c1d749" category="paragraph">NetApp Keystone STaaS服务支持多种类型的存储容量。了解这些不同的容量术语有助于您使用Keystone。</block>
   <block id="db7ef8b55156f5b6fc1f3807d49d1119" category="summary">Keystone STaaS服务支持ONTAP和StorageGRID。</block>
   <block id="4e4be6640d3e6688fbc771ec3b218a39" category="doc">Keystone支持的存储</block>
-  <block id="b04b9612a34a45ebf4b2053eb712e1de" category="summary">美国公民支持是一项附加服务、可为美国公民在美国境内提供的持续Keystone服务提供交付和支持。</block>
-  <block id="efb798aa1e5f26018339774ed88a11c6" category="doc">了解USCS</block>
   <block id="9bb097552337391bef04a8384c5c2779" category="summary">在开始使用Keystone之前、您需要确保ONTAP集群和StorageGRID系统满足一些要求。</block>
   <block id="5a289dbd2bdf9da48705d83b541e6b93" category="summary">将AutoSupport配置为在ONTAP集群发送的每日支持包中加入Keystone数据。</block>
   <block id="eb592abffb734f57a7f3958cfe6176bd" category="summary">完成配置以使Keystone收集器能够收集存储环境中的使用情况数据。</block>
@@ -1894,7 +1858,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="f9017eb4d160c5625e2911de7136c2fe" category="list-text">Keystone收集器服务器应可通过端口443 (HTTPS)访问Unified Manager服务器。</block>
   <block id="c55d18e0937cb0a3844d2da3ecbc7e82" category="list-text">应在Unified Manager服务器上为Keystone收集器设置具有应用程序用户权限的服务帐户。</block>
   <block id="4be679fb0c05782454656e48556dab1d" category="list-text">不需要外部Internet连接。</block>
-  <block id="9fc9a5ce8278ada254052c62e048d22b" category="list-text">每个月、从Keystone收集器中导出一个文件并通过电子邮件将其发送给NetApp支持团队。有关如何联系支持团队的详细信息，请参见<block ref="77e2a4ca04ba16c3bb0a4c8df0385121" category="inline-link-macro-rx"></block>。</block>
   <block id="b7e3d459da53b2456951d0a5d3237300" category="inline-link-macro">Keystone处于专用模式</block>
   <block id="d94b27c65b00f48ddf2590d54d34311d" category="list-text">可以为无法访问Internet的组织(也称为_dark site_or _private mode__)配置Keystone收集器。要了解有关的详细信息，请参阅<block ref="a6faf1739dac35fa9b42259f2ec27ee2" category="inline-link-macro-rx"></block>。</block>
   <block id="70746148197a1842a9455cddc0c18adc" category="paragraph">Keystone收集器可以配置为_standard_模式(无连接限制)或_privic_模式(专为具有连接限制的组织而设计)。要在标准模式下安装Keystone收集器，请参见<block ref="a9306132ed6aac4cbc6f1e3f3feb8703" category="inline-link-macro-rx"></block>；对于私用模式，请参见<block ref="a6faf1739dac35fa9b42259f2ec27ee2" category="inline-link-macro-rx"></block>。</block>
@@ -2081,4 +2044,118 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="749c79ba020f9d0aaf1b465f6dd56db8" category="inline-image-macro">显示添加用户选项的屏幕截图</block>
   <block id="c0a1f4b52f74dc2cd70fa3478d9d97ca" category="paragraph"><block ref="c0a1f4b52f74dc2cd70fa3478d9d97ca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9406fb3af0e8e2bf8446823785c0e069" category="sidebar">数据基础架构洞察力</block>
+  <block id="137f19e6e2dc1219f33553b812627bc2" category="section-title">虚拟机</block>
+  <block id="7f76b7c3d58c94507679ec4e89236f5b" category="inline-link-macro">ITOM收集器的安装要求</block>
+  <block id="edf9f0e23de8308b9cbd2cee93fc5ce2" category="paragraph">要部署Keystone收集器和ITOM收集器、需要使用虚拟机。有关安装前提条件，请参见<block ref="90d7b7caf953f72ddc1c63cc7891ca46" category="inline-link-macro-rx"></block>和<block ref="9bc3880c82515bce110d54618fdd016a" category="inline-link-macro-rx"></block>。其他要求将在部署期间共享。</block>
+  <block id="e928ba962ab987ce8326c040dd6a7083" category="paragraph">可以通过以下方法部署ITOM收集器：</block>
+  <block id="96791c51d091db61be7d6912c6675765" category="list-text">客户提供的Linux服务器运行Debian 12、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023或更高版本。</block>
+  <block id="1c6db71abb5563b4658fbc63f51e8b24" category="list-text">客户提供了运行Windows Server 2016或更高版本的Windows服务器。</block>
+  <block id="1364c79d952bcd4745981c580d2edc5a" category="admonition">建议使用Debian 12、Windows Server 2016或更高版本的操作系统。</block>
+  <block id="43eefb573a809ff61e1c8d3d07813ee3" category="paragraph">客户数据中心安装的存储基础架构或客户拥有的联合服务与Keystone运营中心之间需要网络连接。客户负责提供计算和虚拟机以及互联网服务。客户还负责操作系统修补(非基于OVA的部署)以及基于内部安全策略的安全强化。网络设计应采用安全协议、并且NetApp和客户都将批准防火墙策略。</block>
+  <block id="3bd97f0b75ad0b75e89607ca3389444d" category="paragraph">NetApp需要访问为监控和管理而安装的硬件和软件组件、以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络(VPN)连接并访问所需数据。为了克服客户认为因向新服务打开防火墙端口而导致的任何操作复杂性、监控工具会启动外部连接。NetApp云应用程序(例如ITOM监控解决方案和须罗)使用此连接来执行其各自的服务。此方法可满足客户的要求、即不打开防火墙端口、但可以访问属于此服务一部分的监控组件。</block>
+  <block id="daaeac371cb5600a69ff928296058e7c" category="paragraph">Keystone STaaS系统中的数据流经Keystone收集器和ITOM监控解决方案(即相关监控系统)。</block>
+  <block id="137a100b0d612b21a3e5cf73f112b6ad" category="paragraph"><block ref="137a100b0d612b21a3e5cf73f112b6ad" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="179406659d7fde9a1cfbcd5d2e57830c" category="paragraph">持续监控存储基础架构的运行状况是Keystone服务最重要的功能之一。Keystone使用ITOM监控解决方案进行监控和报告。下图说明了ITOM监控解决方案如何保护对客户位置的远程访问。客户可以选择启用远程会话功能、从而使Keystone支持团队能够连接到受监控的设备进行故障排除。</block>
+  <block id="d28beba29b63444d6424d03c5390b388" category="paragraph"><block ref="d28beba29b63444d6424d03c5390b388" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="16866b1071bb4f12cb7915045075b519" category="list-text">ITOM监控解决方案网关启动到云门户的TLS会话。</block>
+  <block id="451930752182f50216eef4cb75f0d96e" category="list-text">云中的ITOM监控解决方案服务器接受此连接。</block>
+  <block id="66b4b72a98576d6a82927d721f9082ce" category="list-text">在云门户和本地网关之间建立TLS会话。</block>
+  <block id="6727d943adce470174c18dc949a30ae0" category="list-text">NetApp控制器使用SNMP/Syslog协议发送警报或响应API请求到本地网关。</block>
+  <block id="c41ce7fe395738925814b2d06467e3ec" category="section-title">合规标准</block>
+  <block id="03242372ae5b03ca7f547f3cb7dab64f" category="inline-link-macro">数据保护附录(政治部)</block>
+  <block id="a58e8ea096956351960d74a5b466e9e0" category="paragraph">Keystone ITOM监控解决方案符合欧盟《一般数据保护条例》(GDPR)和《加州消费者隐私法案》(CCPA)的要求。它还提供了一个<block ref="12861122e9a15898b646770ef3c2b260" category="inline-link-macro-rx"></block>以记录这些承诺。ITOM监控解决方案不会收集或存储任何个人数据。</block>
+  <block id="9271c91f15a89ae66145641e94752632" category="paragraph">NetApp Keystone支持团队和Keystone成功经理(KSM)负责为您的Keystone订阅提供服务。如果您需要帮助、可以联系Keystone支持团队。</block>
+  <block id="1d15537f2746347dfa1ac4acd53c9adb" category="section-title">NetApp Keystone支持</block>
+  <block id="0f68b904e33d9ac04605aecc958bcf52" category="section-title">追加信息</block>
+  <block id="49b12603d90b8d1e26781b4c49aa661a" category="paragraph">NetApp使用ITOM监控解决方案主动监控并连接到NetApp Keystone环境以进行故障排除。</block>
+  <block id="aee6a3bc19432c3c01a246f89d46a987" category="admonition">在合作伙伴运营的模式中、租户和子租户的服务请求将分配给合作伙伴的服务台。合作伙伴的支持工具可能已与ITOM解决方案集成。</block>
+  <block id="01a2b3dbd173b41f042686cdc48ed6d5" category="section-title">Keystone支持监控</block>
+  <block id="9c63af51824784bfae9cd146a00bdd21" category="paragraph">NetApp Keystone支持可监控您的产品和订阅服务的运行状况、提供远程支持并与Keystone成功经理协作。</block>
+  <block id="4bb1ec7470540bdb0d6aeee19ef42670" category="paragraph">在提交服务请求之前、请确保已准备好系统详细信息、日志和相关信息。当您提出服务请求时、Keystone支持团队将收到支持服务单并访问用于故障排除的信息。您可以按照ServiceNow服务单了解状态和解决方案。</block>
+  <block id="d0b8f9213f7c1943447dc74174b7005a" category="list-text">用于管理和操作此服务的工具、例如ITOM监控解决方案、Active IQ和Active IQ Unified Manager。</block>
+  <block id="8851c6fe19bf967cca1a7747c9a0b08e" category="list-text">Keystone IT运营管理(ITOM)监控解决方案：一款基于云的SaaS应用程序、用于监控Keystone环境。它内置了与NetApp存储平台的集成功能、可收集环境数据并监控Keystone基础架构的计算、网络和存储组件。这种监控功能可扩展到内部设置、数据中心、云环境或这些环境的任意组合。此服务可借助您的站点上安装的本地ITOM收集器来启用、该收集器可与云门户进行通信。</block>
+  <block id="1ff9ceb23d392b2e0eb7fcd6c3f61c34" category="paragraph"><block ref="1ff9ceb23d392b2e0eb7fcd6c3f61c34" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b9582a9d01a3bb00c5c7df318f3cd4ed" category="summary">美国受保护支持是一项附加服务、可为美国公民在美国境内提供的持续Keystone服务提供交付和支持。</block>
+  <block id="3ed89ff08462e73f47156395fd0c75ac" category="doc">了解USPS</block>
+  <block id="21fe13388dd575bae131356d62eb3d04" category="paragraph">美国受保护支持(USPS)是NetApp Keystone订阅的附加服务。您有权获得美国公民在美国领土上提供的Keystone服务的交付和支持。</block>
+  <block id="10d701676d6c78ebafad1c0adf816cc7" category="section-title">NetApp USPS监控</block>
+  <block id="75d0ff56559c8650dad12b15a71e6950" category="paragraph">NetApp USPS Keystone支持团队可监控您的产品和订阅服务的运行状况、提供远程支持并与Keystone成功经理协作。监控与相关Keystone订阅订单相关的产品的所有人员均为美国 在美国领土上作业的美国公民。</block>
+  <block id="70a7925bd880e8632a66c41a83d2a2e9" category="list-text">每个月、从Keystone收集器中导出一个文件并通过电子邮件将其发送给NetApp支持团队。有关如何联系支持团队的详细信息，请参见<block ref="2dd3cb549793fb90ba3abaee885c98ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="9c62788e882432afb4a67231a8793b98" category="summary">在基于Linux的系统上安装ITOM收集器软件。</block>
+  <block id="76c87a002b2f377e07b664132c3a197e" category="doc">在Linux系统上安装ITOM收集器</block>
+  <block id="473f0144f9eff452e654f0b15b23fab1" category="paragraph">完成几个步骤以安装ITOM收集器、此收集器将收集存储环境中的指标数据。您可以根据需要将其安装在Windows或Linux系统上。</block>
+  <block id="ed5f434c9fb860090390831cf62c2cda" category="admonition">Keystone支持团队提供了一个动态链接来下载ITOM收集器设置文件、该文件将在两小时后过期。</block>
+  <block id="15e54aabc31e95c20bd5b9e9534cb8f3" category="inline-link-macro">在Windows系统上安装ITOM收集器</block>
+  <block id="78c894c65eab257836a2fa2a880d28b4" category="paragraph">要在Windows系统上安装ITOM收集器，请参见<block ref="d04ab87c73184a2a7be46f1ebca8138a" category="inline-link-macro-rx"></block>。</block>
+  <block id="0469628de5f4d496f41adb03905fd222" category="paragraph">按照以下步骤在Linux服务器上安装软件：</block>
+  <block id="8dfe1a76c7708340f1a9c5c2da042672" category="list-text">验证Bourne shell是否可用于Linux安装脚本。</block>
+  <block id="21a7f021975f9926da34a1c18c2d1781" category="list-text">安装<block ref="a5b39ca919b44c4b20de11533d426fd3" prefix=" " category="inline-code"></block>软件包以获取ITOM收集器设置文件所需的*xxd*二进制文件。</block>
+  <block id="0ec0c41988a7979f58ae73234195ffed" category="list-text">如果计划以非root用户身份运行ITOM收集器、请确保<block ref="2974b76bb8b6b3ad0840b451721d13f3" prefix=" " category="inline-code"></block>已安装。</block>
+  <block id="1eab632bbcbedc9b6dd199a778338044" category="list-text">将ITOM收集器设置文件下载到Linux服务器。</block>
+  <block id="af81ca81473ba340a8e57bfa13f48e41" category="list-text">打开服务器上的终端并运行以下命令、以更改权限并使二进制文件可执行：<block ref="4c1bdb3b42b686e644525cc5ebc20903" prefix=" " category="inline-code"></block></block>
+  <block id="103a1b6f97b780d9d5d4e2dd5fd11876" category="list-text">运行命令以启动ITOM收集器设置文件：<block ref="48ccf91210e9cc3f76224127818295e1" prefix=" " category="inline-code"></block></block>
+  <block id="987f69a9c64fc75031a80018493523ee" category="list-text">运行安装文件会提示您：</block>
+  <block id="d287a2c00d5fc479ec02c44e15915feb" category="list-text">接受最终用户许可协议(EULA)。</block>
+  <block id="e4581ea781ff41558849658bc2396372" category="list-text">输入安装的用户详细信息。</block>
+  <block id="764b4dd654d82af9df435bc3342b38b3" category="list-text">指定安装父目录。</block>
+  <block id="a9f6d20bce0781102f878dc6d5929e12" category="list-text">选择收集器大小。</block>
+  <block id="e244fb07ad95ea6115c9f9fb0773e98b" category="list-text">提供代理详细信息(如果适用)。</block>
+  <block id="ef679c97f76c37ed8d59368b6f534a42" category="paragraph">对于每个提示符、都会显示一个默认选项。除非您有特定要求、否则建议选择默认选项。按*Enter*键选择默认选项。安装完成后、系统将显示一条消息、确认ITOM收集器已成功安装。</block>
+  <block id="e745f331db61ec53e80cf6dc50cce124" category="list-text">ITOM收集器设置文件对进行了添加<block ref="6c109d6e94c97fb519007c1f06880582" prefix=" " category="inline-code"></block>、以处理服务重新启动和内存转储。</block>
+  <block id="091667f5525be41b118e74bea7f11636" category="list-text">在Linux服务器上安装ITOM收集器会创建一个名为*ITOM*的默认用户，以便在没有根Privileges的情况下运行ITOM收集器。您可以选择其他用户或以root用户身份运行该用户、但建议使用Linux安装脚本创建的ITOM用户。</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">下一步是什么？</block>
+  <block id="6a2b2a3198f14986193621fc68f7d1b0" category="paragraph">成功安装后、请联系Keystone支持团队、通过ITOM支持门户验证ITOM收集器的安装是否成功。验证后、Keystone支持团队将远程配置ITOM收集器(包括进一步的设备发现和监控设置)、并在配置完成后发送确认消息。如有任何疑问或其他信息、请联系keystone.services@NetApp．com。</block>
+  <block id="c8c33002525e3af8118ac88b999e0a36" category="summary">在基于Windows的系统上安装ITOM收集器。</block>
+  <block id="9a1aca3d0a5022aa5c935121f269f5da" category="paragraph">通过下载ITOM收集器安装文件、运行InstallShield向导并输入所需的监控凭据、在Windows系统上安装ITOM收集器。</block>
+  <block id="cc466e787bcb3bcc61f4d18911009dd3" category="paragraph">您可以根据需要将其安装在Linux系统上。要在Linux系统上安装ITOM收集器，请参见<block ref="27b59bee15cd9541248108e38df9589e" category="inline-link-macro-rx"></block>。</block>
+  <block id="78b7c5e4378b650d67d668c8aae60c6d" category="paragraph">按照以下步骤在Windows服务器上安装ITOM收集器软件：</block>
+  <block id="a13a5fc563489a1109d5d87f428f77b9" category="paragraph">确保在Windows服务器的本地安全策略设置中的“本地策略/用户权限分配”下授予ITOM收集器服务*作为服务登录*。</block>
+  <block id="1778106db6e3aca4579c648608f40eb8" category="list-text">将ITOM收集器设置文件下载到Windows服务器。</block>
+  <block id="1ec09dc4e6db38b1f452962c210006b6" category="list-text">打开安装文件以启动InstallShield向导。</block>
+  <block id="5f9e970fd1f32ef2b46ec34c48880830" category="list-text">接受最终用户许可协议(EULA)。InstallShield向导将提取所需的二进制文件并提示您输入凭据。</block>
+  <block id="c03cade745ec5543fe1bd8588393bafd" category="list-text">输入ITOM收集器将在其下运行的帐户的凭据：</block>
+  <block id="8afb8b7b6e5ba46146a989919c02a849" category="list-text">如果ITOM收集器未监控其他Windows服务器、请使用本地系统。</block>
+  <block id="316b1f7d821d723eb574667b6cb9302b" category="list-text">如果ITOM收集器正在监控同一域中的其他Windows服务器、请使用具有本地管理员权限的域帐户。</block>
+  <block id="12b899c7f1e72badef82e030788edfc8" category="list-text">如果ITOM收集器正在监控不属于同一域的其他Windows服务器、请使用本地管理员帐户并使用本地管理员凭据连接到每个资源。您可以选择设置密码，使其不会过期，以减少ITOM收集器与其受监控资源之间的身份验证问题。</block>
+  <block id="004bff76ec6e0eda1b94e3ffc3ba1ad7" category="list-text">选择收集器大小。默认值为根据设置文件建议的大小。除非您有特定要求、否则请继续使用建议的大小。</block>
+  <block id="e97143745b175c3b72479889956c6a2b" category="list-text">选择_Next_开始安装。您可以使用已填充的文件夹、也可以选择其他文件夹。状态框显示安装进度，然后显示InstallShield向导已完成对话框。</block>
+  <block id="6cf5a787f8e9babecd7e3e62b472c0f1" category="summary">您的系统必须满足多项要求、才能安装ITOM收集器。</block>
+  <block id="067857c91d7e95767cebced037df51fc" category="paragraph">安装ITOM收集器之前、请确保系统已准备好所需的软件、并满足所有必要的前提条件。</block>
+  <block id="382c090cdf20988adebc3da3af734475" category="list-title">ITOM收集器服务器VM的前提条件：</block>
+  <block id="f086ae2281105a95b9f676071bb5da54" category="list-text">支持的操作系统：Debian 12、Windows Server 2016、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023或这些操作系统的更高版本。</block>
+  <block id="756e04f777f1ed6cee954325099dfc00" category="list-text">资源要求：根据所监控的NetApp节点数确定的VM资源要求如下：</block>
+  <block id="a008248e3966fc8b2c95be03552c4466" category="list-text">2-10个节点：4个CPU、8 GB RAM、40 GB磁盘</block>
+  <block id="ab3a29aba303bfd353ff5e6fb0b2db96" category="list-text">12-20个节点：8个CPU、16 GB RAM、40 GB磁盘</block>
+  <block id="a2257f11d613296885301983ffe6776d" category="list-text">配置要求：确保在受监控设备上配置了只读帐户和SNMP。如果适用、还需要将ITOM收集器服务器VM配置为NetApp集群和集群交换机上的SNMP陷阱主机和系统日志服务器。</block>
+  <block id="e4c91d77f6e08017c82c7fdd34476249" category="paragraph">下表列出了ITOM收集器的网络连接要求。</block>
+  <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">协议</block>
+  <block id="407c4e9fac86b98147da49acd4fa0d01" category="cell">端口</block>
+  <block id="859944346c3dd9a26e3d2b955b505719" category="cell">ITOM收集器</block>
+  <block id="ee5ece347c0f7881a3c0fc86f9fdcffa" category="cell">NetApp ONTAP集群管理IP</block>
+  <block id="3ac5095d5929679753e1ca6589d594ce" category="cell">HTTPS、SNMP</block>
+  <block id="008117d5243d637d0f718d44531d6195" category="cell">TCP 443、UDP 161</block>
+  <block id="401590a5f8ea5fcc8af254e7154db96a" category="cell">监控ONTAP控制器</block>
+  <block id="cfad39dcf092a0e70fbecdad147efce3" category="cell">NetApp ONTAP集群和节点管理IP</block>
+  <block id="ad064e6c7842af70fa17d071f3d73376" category="cell">SNMP、系统日志</block>
+  <block id="0631e975432229862b992ba6076ff584" category="cell">UDP 162、UDP 514</block>
+  <block id="3cb8f57e4b0f5634e015d61f58d5a285" category="cell">控制器的SNMP陷阱和系统日志</block>
+  <block id="f267a68fd1c8bddcc992701898021398" category="cell">集群交换机</block>
+  <block id="305af65222ed3fff91f5c8bcdfe17162" category="cell">SNMP</block>
+  <block id="d6bf88c792de5d84a555c4437037d09c" category="cell">UDP 161</block>
+  <block id="3e0245f7e867ca454b47cb5cebcebed8" category="cell">监控交换机</block>
+  <block id="101456c198283ec795d2c8241d55e9b7" category="cell">来自交换机的SNMP陷阱和系统日志</block>
+  <block id="791a8f03040c18a43dcbd68302786ae7" category="cell">StorageGRID节点IP</block>
+  <block id="e73f9940bf39eca2e6c94f83f892d044" category="cell">StorageGRID的SNMP监控</block>
+  <block id="0230fd83cc5847de0511e75c4a9bc734" category="cell">来自StorageGRID的SNMP陷阱</block>
+  <block id="3a7a184ceb1bfebf10c52fb898098871" category="cell">SSH、HTTPS、SNMP</block>
+  <block id="04bb5e2ca7fa6728ad7244e65be06704" category="cell">TCP 22、TCP 443、UDP 161</block>
+  <block id="979f40d640a4eef558bbb55c64add9a1" category="cell">Keystone收集器监控和远程管理</block>
+  <block id="2e9c43ef7b6bd474b0531e7ee01ed0da" category="cell">本地 DNS</block>
+  <block id="a9382e24532861463ad8c02646d03ec7" category="cell">UDP 53</block>
+  <block id="604e16aef35dcff33260b6091ac4de5b" category="cell">公共或私有DNS服务</block>
+  <block id="b8238d20e6d90959c58ff56a063bce2c" category="cell">选择NTP服务器</block>
+  <block id="e6b92e04e8bdad7c1346f8024d1fca8d" category="cell">保持时间</block>
+  <block id="fee7b996a8ab0bee47684563d23b4926" category="sidebar">安装ITOM收集器</block>
+  <block id="8869eeb557230a1ee1c042d1156e4eef" category="sidebar">在Windows上安装</block>
+  <block id="fbb165d9f99339f62e1190730a20d297" category="sidebar">美国受保护支持(USPS)</block>
 </blocks>

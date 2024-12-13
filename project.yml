@@ -55,6 +55,14 @@ sidebar:
         url: "/installation/validation.html"
     - title: 配置Keystone收集器
       url: "/installation/configuration.html"
+    - title: 安装ITOM收集器
+      entries:
+      - title: 准备安装
+        url: "/installation/itom-prereqs.html"
+      - title: 在Linux上安装
+        url: "/installation/install-itom-linux.html"
+      - title: 在Windows上安装
+        url: "/installation/install-itom-windows.html"
     - title: 配置 AutoSupport
       url: "/installation/asup-config.html"
     - title: Keystone收集器安全性
@@ -115,8 +123,8 @@ sidebar:
         url: "/concepts/equinix.html"
       - title: 非可退还、非易失性组件、符合SnapLock标准
         url: "/concepts/nrnvc.html"
-      - title: U.S.公民支持(USCS)
-        url: "/concepts/uscs.html"
+      - title: 美国受保护支持(USPS)
+        url: "/concepts/usps.html"
   - title: Keystone STaaS SLA
     entries:
     - title: 可用性

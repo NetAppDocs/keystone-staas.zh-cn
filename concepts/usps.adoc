@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: concepts/uscs.html 
-keywords: netapp, keystone, US citizen support, USCS GSSC, Keystone Success Manager, USCS support 
-summary: 美国公民支持是一项附加服务、可为美国公民在美国境内提供的持续Keystone服务提供交付和支持。 
+permalink: concepts/usps.html 
+keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
+summary: 美国受保护支持是一项附加服务、可为美国公民在美国境内提供的持续Keystone服务提供交付和支持。 
 ---
-= 了解USCS
+= 了解USPS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,15 +14,15 @@ summary: 美国公民支持是一项附加服务、可为美国公民在美国�
 
 
 [role="lead"]
-美国公民支持(USCS)是NetApp Keystone 订阅的附加服务。您有权从美国获得持续Keystone服务的交付和支持美国公民土壤。
+美国受保护支持(USPS)是NetApp Keystone订阅的附加服务。您有权获得美国公民在美国领土上提供的Keystone服务的交付和支持。
 
 阅读以下各节、了解您的订阅中哪些内容受此附加服务的约束、并根据NetApp Keystone 协议的条款提供。f脚 注：声明1[此处所述服务和服务受完全执行的Keystone协议的约束、限制和约束。]
 
 
 
-== NetApp全球服务支持中心监控
+== NetApp USPS监控
 
-NetApp全球服务和支持中心(GSSC)可监控您的产品和订阅服务的运行状况、提供远程支持、并与您的Keystone Success Manager合作。监控与相关Keystone订阅订单相关的产品的所有人员均为在美国运营的美国公民土壤。
+NetApp USPS Keystone支持团队可监控您的产品和订阅服务的运行状况、提供远程支持并与Keystone成功经理协作。监控与相关Keystone订阅订单相关的产品的所有人员均为美国 在美国领土上作业的美国公民。
 
 
 
