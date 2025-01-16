@@ -113,7 +113,7 @@ NetApp会为性能降级发放服务抵免额：
 
 == 服务信用请求
 
-如果检测到违反SLA、请向Keystone全球服务和支持中心(GSSC)开立优先级3 (P3)支持服务单。
+如果检测到违反SLA、请向NetApp Keystone支持部门开立优先级3 (P3)支持服务单。
 
 * 需要提供以下详细信息：
 +
@@ -125,7 +125,7 @@ NetApp会为性能降级发放服务抵免额：
 .. 任何其他适用文档
 
 
-* 在Excel工作表中提供通过Keystone GSSC开立的P3服务单的详细信息、如下所示。
+* 在Excel工作表中提供与NetApp Keystone支持人员一起开立的P3服务单的详细信息、如下所示。
 +
 image:sla-breach.png["Excel工作表模板"]
 
@@ -133,8 +133,8 @@ image:sla-breach.png["Excel工作表模板"]
 
 [NOTE]
 ====
-* 服务信用申请应在GSSC确认违规后六周内发起。所有服务抵免额均应由NetApp确认和批准。
-* 服务抵免额可能会应用于未来发票。服务抵免额不适用于已过期的Keystone订阅。要了解更多信息，请参阅 link:../concepts/gssc.html["NetApp全球服务支持中心"]。
+* 服务信用请求应在NetApp Keystone支持确认违规后六周内发起。所有服务抵免额均应由NetApp确认和批准。
+* 服务抵免额可能会应用于未来发票。服务抵免额不适用于已过期的Keystone订阅。要了解更多信息，请参阅 link:../concepts/gssc.html["NetApp Keystone支持"]。
 
 
 ====

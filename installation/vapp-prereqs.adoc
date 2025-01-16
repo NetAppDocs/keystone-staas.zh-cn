@@ -81,7 +81,7 @@ Internet (根据后面提供的URL要求)
  a| 
 HTTPS
  a| 
-TCP 80、TCP 443
+TCP 443
  a| 
 必填(Internet连接)
  a| 

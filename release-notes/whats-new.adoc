@@ -20,6 +20,16 @@ Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕中引入�
 
 
 
+== 2025年1月8日
+
+
+
+=== 增加了每日累积数据使用量查看选项
+
+现在、您可以通过单击显示发票数据的条形来以图形或表格形式查看每月或每季度计费期间的每日累积突发数据使用量。要了解更多信息，请参阅 link:../integrations/capacity-trend-tab.html#view-daily-accrued-burst-data-usage["查看每日累积突发数据使用量"]。
+
+
+
 == 2024年12月12日
 
 

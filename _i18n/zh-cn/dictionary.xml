@@ -118,7 +118,6 @@
   <block id="e80564e6a1386159e71203ed98662fc4" category="paragraph">在订阅期限内，您可以更改已提交的容量。但是，存在某些前提条件：</block>
   <block id="bd3fd623256db562bebda3e697d43452" category="inline-link-macro">容量减少</block>
   <block id="38ee5c58ab48cb8a1b633c2aea7a1e45" category="list-text">可根据特定条件减少已提交的容量。有关信息，请参见 <block ref="bce311488cda7b3fc83e86e7b3939fd8" category="inline-link-macro-rx"></block>。</block>
-  <block id="1df0745e84cded8b1998d4aaf3fce411" category="inline-link-macro">NetApp全球服务支持中心</block>
   <block id="dd83b22a815febb6c6547eab078bbf30" category="section-title">已用容量</block>
   <block id="08d63a30cdbc798edef3e21cacda1ac2" category="section-title">突发容量</block>
   <block id="b6e76ea727138e1a2c7199dd3f0874db" category="section-title">计费容量</block>
@@ -346,7 +345,6 @@
   <block id="c32944bc40d1accb43f1f8bfaf090dce" category="paragraph">附加分层服务的费用贯穿整个订阅期限。</block>
   <block id="e72611e56e05f623af5dc7011928a294" category="admonition">NetApp不会在Keystone STaaS订阅中提供Cloud Volumes ONTAP 所需的基于超大规模扩展的计算、存储和网络服务；这些服务需要直接从超大规模云服务提供商处采购。</block>
   <block id="e18765eb2b8dddd29b66918ffb976fcc" category="paragraph">Keystone STaaS订阅按月和按年计费。</block>
-  <block id="5979b85a79f05c1c731acd749343d5ff" category="list-text">您可以通过BlueXP界面或Keystone Success Manager (KSM)请求更改已提交容量。有关请求更改的信息，请参见 <block ref="3dc9ad4ab1c3dcaa061c2b4df6782877" category="inline-link-macro-rx"></block>。</block>
   <block id="9b25613e0d8ca22f20fe93edf63407f1" category="cell">*工作负载类型示例*</block>
   <block id="548dcac52aca7f6902fd2de4648c5e9e" category="cell">*每个卷存储的最大IOPS/逻辑Tib *</block>
   <block id="93ed1a757e360a886c7ba5a5d93ba089" category="cell">*每个卷存储的最大IOPS/逻辑TiB *</block>
@@ -486,7 +484,6 @@
   <block id="5f76d762520637f1eb1b8dd5e4b71129" category="paragraph">TCP 443</block>
   <block id="e89ab59baea830bd940c300886c50efe" category="paragraph">必填</block>
   <block id="8e77c75fd2b5c8f6c41f3c1b738d2a22" category="paragraph">Internet (根据后面提供的URL要求)</block>
-  <block id="77af2ba0b86f594a268203e05693cb8f" category="paragraph">TCP 80、TCP 443</block>
   <block id="882da07ddabac1aa28b5f358bcbeb2ce" category="paragraph">必填(Internet连接)</block>
   <block id="01633331ef3bca3e96b0dfd60ceb54bd" category="paragraph">Keystone收集器软件、操作系统更新和指标上传</block>
   <block id="18cc1486462950320ca2ccc7310af46b" category="paragraph">客户HTTP代理</block>
@@ -1143,8 +1140,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="b01022ea67a6b913d57f7194fcc72d9d" category="section-title">查看已开票的应计突发量</block>
   <block id="393673167b0e2f5fe79a42f45c884852" category="admonition">已开票的应计突发使用量是根据服务级别的已提交容量和已使用容量按计费期间计算的。</block>
   <block id="0cd22f9baa25202637cff789fe1dfe9f" category="list-text">Active IQ Unified Manager (Unified Manager) 9.10或更高版本</block>
-  <block id="81f184376266ed69a659d0030be070fc" category="list-text">通过检查RPM数据库中Keystone计费平台的指纹来确保导入的公共证书正确：<block ref="ea7401e26ed6546568cda192cd234905" prefix=" " category="inline-code"></block>
-正确的指纹如下所示：<block ref="821b59fa560f6b692841b490c9d51dfe" prefix=" " category="inline-code"></block></block>
   <block id="cbe21b6da30db10de9cd33de72b5dc48" category="paragraph">SnapLock 技术可在卷中设置的到期日期之后使驱动器不可用、从而启用NRNVC功能。要在卷上使用SnapLock 技术、您需要订阅NRNVC。这仅适用于文件和块服务。</block>
   <block id="25ee4dffb8ff9627245188cd5d5a88f9" category="paragraph">NetApp Keystone (Keystone)是一种按需购买、基于订阅的服务模式、可为更喜欢运营支出消费模式而不是前期资本支出或租赁模式的企业提供无缝的混合云体验。</block>
   <block id="14ef43baeaecb16eed97981bac41fa1a" category="paragraph">Keystone可帮助客户减少在管理不可预测的容量增长和复杂的采购周期方面的障碍、从而加快实现价值的速度。Keystone让客户可以根据业务优先级调整经济效益和运营。</block>
@@ -1470,7 +1465,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="db35003a371cb115e382b44e289c2eba" category="doc">了解由Equin.提供支持的主机代管服务</block>
   <block id="89cb717227b1e2f0129bc67abb7b696c" category="paragraph">为了提供全堆栈解决方案即服务、NetApp与Equinx建立了合作伙伴关系、在Equinx数据中心托管NetApp Keystone STaaS服务。</block>
   <block id="a129a1a3a2b62ad0169083e37600a64e" category="paragraph">Equin.在以下位置设有数据中心：</block>
-  <block id="baec7a90ff5a6d18f6dd7ef76c3e4998" category="summary">如果您需要帮助、请联系NetApp全球服务和支持中心。</block>
   <block id="9c749342ce1dc8c39f5e67d29a9500ac" category="doc">获取Keystone帮助</block>
   <block id="24acde87a618c9dc2d11377311afc495" category="summary">Keystone基础架构、设计、技术选择和组件产品仅由NetApp提供。</block>
   <block id="7954e225c8bd390ff2168144c5e393c1" category="paragraph">NetApp全权负责Keystone的基础架构、设计、技术选择和组件、这些内容既适用于NetApp环境、也适用于客户运营的环境。</block>
@@ -1600,7 +1594,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="9eae698db2f9979943823c8ee1440c7d" category="paragraph">使用公式：服务抵免额=(10/100) X 1000 x 0.05</block>
   <block id="df3634b399ce52d35f1816fa036f42b4" category="paragraph">根据计算、服务抵免额将为5美元。</block>
   <block id="182bf07a2845568515ca20b4e4654296" category="section-title">服务信用请求</block>
-  <block id="d914d7b4a96bed82ab1c41c97e6c5742" category="paragraph">如果检测到违反SLA、请向Keystone全球服务和支持中心(GSSC)开立优先级3 (P3)支持服务单。</block>
   <block id="6d3089ef2f50007a659aa12b3a7415f8" category="list-text">需要提供以下详细信息：</block>
   <block id="e3e23368bff57e5796042f5fba6c3fbd" category="list-text">Keystone订阅编号</block>
   <block id="5e27e36d07d4a7286d88cd834cfbd611" category="list-text">卷和存储控制器详细信息</block>
@@ -1608,11 +1601,8 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="de0480c0f5c929948100ece899e9724e" category="list-text">延迟检测的计算持续时间</block>
   <block id="f657fc20931370f67393f5612ec70ffe" category="list-text">测量工具和方法</block>
   <block id="2ecd994c3d59e0ce0211ab40d4167837" category="list-text">任何其他适用文档</block>
-  <block id="dc33a5089714f6579a5ab21118922cef" category="list-text">在Excel工作表中提供通过Keystone GSSC开立的P3服务单的详细信息、如下所示。</block>
   <block id="892db0165f2238f40c3370386d79cac7" category="inline-image-macro">Excel工作表模板</block>
   <block id="f0fbc9cddebee973debd106e878bebdd" category="paragraph"><block ref="f0fbc9cddebee973debd106e878bebdd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="eb0abc09e7b5678911ee2656102c8868" category="list-text">服务信用申请应在GSSC确认违规后六周内发起。所有服务抵免额均应由NetApp确认和批准。</block>
-  <block id="45a3835755fcd6b1bf728c884bcc8d34" category="list-text">服务抵免额可能会应用于未来发票。服务抵免额不适用于已过期的Keystone订阅。要了解更多信息，请参阅 <block ref="3dc9ad4ab1c3dcaa061c2b4df6782877" category="inline-link-macro-rx"></block>。</block>
   <block id="1d864ae11e362329da4731cbf31eca7b" category="summary">可持续性、SLA、服务级别协议</block>
   <block id="4bcbaed6ba1519c1f0036c82537ffc1f" category="doc">性能SLA</block>
   <block id="8c9a4601149bbf6f607b6419227dc5e3" category="paragraph">根据以下列出的条款和条件、NetApp Keystone可按服务级别提供基于延迟的SLA、如Keystone订单中所述、针对已用容量、最高可达突发限制。</block>
@@ -1681,7 +1671,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="1190761e382695cb9416b27ee7eed4d3" category="paragraph">3 到 7</block>
   <block id="f5c2de6939fdeaa3904b08a1fad7a2d3" category="paragraph">15%</block>
   <block id="aab3238922bcc25a6f606eb525ffdc56" category="paragraph">14</block>
-  <block id="87b656ee6c82131afa7ac0871d8168e8" category="paragraph">如果检测到违反SLA、请向Keystone全球服务和支持中心(GSSC)开立优先级3 (P3)支持服务单、并按照Excel表格中的要求提供详细信息、如下所示：</block>
   <block id="b16f882170095725eb371909f87f469f" category="paragraph">条形图显示短期突发、您可以使用放大功能查看这些突发。如果存在短期突发、则通过相应条上的蓝点表示、如果未使用任何数据、则直接在X轴上表示。要查看详细信息、请单击并按住蓝点所在的条形图或x轴、然后在图表上拖动光标以选择所需的时间间隔、然后松开以确认您的选择。此操作将放大数据、从而提供有关选定间隔内该服务级别已用容量的更精细视图。您可以单击*重置缩放*按钮返回原始图表视图。</block>
   <block id="78a0f8f91a436c9b95253697658f1b15" category="inline-image-macro">包含详细信息的"消耗趋势"选项卡</block>
   <block id="0dd96295669c1478814661e7ab071d6e" category="paragraph"><block ref="0dd96295669c1478814661e7ab071d6e" category="inline-image-macro-rx" type="image"></block></block>
@@ -1966,7 +1955,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e7a731a6342f126055b89b80d800a180" category="cell">逻辑</block>
   <block id="ce898d62ed9ca7653a01fe0c781e97e9" category="cell">物理</block>
   <block id="77755c419ef346c65225a7d2709520ab" category="paragraph">有关如何查看MetroCluster配置中的使用情况<block ref="4655b13baf4ca66eebf5b6765e4df9a4" category="inline-link-macro-rx"></block>的信息，请参见。</block>
-  <block id="138155ee615aaf4d4e698be7c61a12c0" category="paragraph">如果您选择了*开票累积突发*选项，则可以根据您选择的计费周期，按月或按季度查看累积突发使用量数据。此数据可用于已计费的过去12个月、您可以按过去30个月的日期范围进行查询。条形图显示发票数据、如果使用量尚未计费、则会在该时间段内标记为_Pending _。</block>
   <block id="df54e0aa337c00aed9738ce50d6f7d40" category="paragraph">对于季度计费期、如果订阅开始日期不是当月的第1^第1^个日期、则季度发票将涵盖后续的90天期。例如、如果您的订阅从8月15日开始、则会为8月15日至10月14日期间生成发票。</block>
   <block id="a15b1d5c20a80360a519fdba86f9d359" category="paragraph">如果您从按季度计费切换到按月计费、则季度发票仍会涵盖90天期间、其中在该季度的最后一个月生成两张发票：一张用于季度计费期间、另一张用于该月的剩余天数。此过渡允许每月计费期从下个月的1^st^开始。例如、如果您的订阅从10月15日开始、则在每月计费期从2月1日开始之前、您将在1月收到两张发票、一张是10月15日至1月14日的发票、另一张是1月15日至31日的发票。</block>
   <block id="19c39546a17d632b3f81a88517195dcb" category="inline-image-macro">每季度累积突发使用量</block>
@@ -1975,8 +1963,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="abdc803a1b380f3cb4c996e2b30a1820" category="paragraph"><block ref="abdc803a1b380f3cb4c996e2b30a1820" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0bf27b930a0841a9485431dd01de3f4" category="admonition">如果您已订阅高级数据保护附加服务、则可以单击订阅编号对应的工具提示、在MetroCluster设置中查看合作伙伴订阅的跟踪ID。要了解如何查看MetroCluster配置中合作伙伴订阅的详细使用情况，请参见<block ref="4655b13baf4ca66eebf5b6765e4df9a4" category="inline-link-macro-rx"></block>。</block>
   <block id="24685db79ee3df152404bc24333590fd" category="paragraph">2024年11月21日</block>
-  <block id="2531cde1a4803cc2a1ae862eb5d81705" category="paragraph">无法为订阅生成报告</block>
-  <block id="4b22f859addb0f523b4eb20c8a3de953" category="paragraph">如果从*Keystone订阅*页面的*订阅*选项卡中选择的订阅超过了10对 等，则在单击带有*Include data for each service level *选项的*Download CSV-按钮 时，无法生成报告。</block>
   <block id="01e50fa0cb5ca9093067bd7f7b5ce77d" category="section-title">增加了开票应计突发量</block>
   <block id="68282426b20517fa5a804475f31878a9" category="paragraph">现在，如果您选择了季度计费期，则可以通过*开票应计突发*选项按季度查看累积突发使用情况数据。要了解更多信息，请参阅 <block ref="b9f581509f4f5c092d1e1e258ec0cc04" category="inline-link-macro-rx"></block>。</block>
   <block id="f916fd7c91361d368cb72a24d8c89422" category="section-title">卷详细信息选项卡中的新列</block>
@@ -2182,4 +2168,29 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="653181dc830ebbf1153310c93a009c52" category="list-text">Debian 12</block>
   <block id="015c84a3348885955ce882f1beed478e" category="list-text">Red Hat Enterprise Linux 8.6或更高版本8.x</block>
   <block id="bcd6ed294af34e837c537b83a1a3de21" category="list-text">CentOS 7 (仅适用于现有环境)</block>
+  <block id="265561b81e51364d306e58144832b7a8" category="summary">如果需要帮助、请联系NetApp Keystone支持团队。</block>
+  <block id="9dc4e2b4f34e5f118e35019c46b06a4a" category="paragraph">如果检测到违反SLA、请向NetApp Keystone支持部门开立优先级3 (P3)支持服务单。</block>
+  <block id="5ece80a8e6fc51ca90ea8b795dbe7f83" category="list-text">在Excel工作表中提供与NetApp Keystone支持人员一起开立的P3服务单的详细信息、如下所示。</block>
+  <block id="cac189ace7fac11fbcff63b35adf8770" category="list-text">服务信用请求应在NetApp Keystone支持确认违规后六周内发起。所有服务抵免额均应由NetApp确认和批准。</block>
+  <block id="193dec405e65293a13ce97bb2c01440c" category="list-text">服务抵免额可能会应用于未来发票。服务抵免额不适用于已过期的Keystone订阅。要了解更多信息，请参阅 <block ref="063933bc4dc8a29247242b2012129da2" category="inline-link-macro-rx"></block>。</block>
+  <block id="3a36d2372ffa5421518253f5c68f7c51" category="paragraph">如果检测到违反SLA、请向NetApp Keystone支持部门开立优先级3 (P3)支持服务单、并按照Excel表格中的要求提供详细信息、如下所示：</block>
+  <block id="87b542a75a4c78cc8d36c595c7c05de1" category="list-text">您可以通过BlueXP界面或Keystone Success Manager (KSM)请求更改已提交容量。有关请求更改的信息，请参见<block ref="063933bc4dc8a29247242b2012129da2" category="inline-link-macro-rx"></block>。</block>
+  <block id="b22fed8db0bb580ac39be331b010b1cd" category="list-text">通过检查RPM数据库中Keystone计费平台的指纹来确保导入了正确的公共证书：正确的指纹如下所示<block ref="821b59fa560f6b692841b490c9d51dfe" prefix=" " category="inline-code"></block>：<block ref="46ce6ee7c7afe96ac26dd093842fe062" prefix=" " category="inline-code"></block></block>
+  <block id="46c3e6e27fbc70afa310c1553eb52893" category="paragraph">如果您选择了*开票累积突发*选项，则可以根据您选择的计费周期，按月或按季度查看累积突发数据使用量。此数据可用于已计费的过去12个月、您可以按过去30个月的日期范围进行查询。条形图显示发票数据、如果使用量尚未计费、则会在该时间段内标记为_Pending _。</block>
+  <block id="cb74be13d3a600957d1ee583265f537d" category="section-title">查看每日累积突发数据使用量</block>
+  <block id="5f79c46e242a47bee55e1f47143a24eb" category="paragraph">您可以查看按月或按季度计费期间的每日累积突发数据使用量。单击显示发票数据的条形时，条形图下方将显示“可计费配置容量”部分，为您提供了*Graph*和*Table*查看选项。默认图形视图以折线图格式显示每日累积突发数据使用量、并显示使用量随时间的变化。</block>
+  <block id="bc3f9a56f76203c42fc9f8ff6b19fe46" category="inline-image-macro">显示条形图的屏幕截图</block>
+  <block id="de75b30d787fc40e53cc46d0b5ab30cf" category="paragraph"><block ref="de75b30d787fc40e53cc46d0b5ab30cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eba7556a1fc4fd160e9d81ddb2112a3e" category="paragraph">以折线图显示每日累积突发数据使用量的示例图像：</block>
+  <block id="515f3b344653c49257ced259fb9261bd" category="inline-image-macro">以折线图格式显示突发使用情况数据的屏幕截图</block>
+  <block id="47fdc60b1d26d7e27d3b186be572a4d8" category="paragraph"><block ref="47fdc60b1d26d7e27d3b186be572a4d8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="afb651343eb4e95550b828492b0990bf" category="paragraph">您可以通过单击图形右上角的*Table*选项切换到表视图。此表视图提供了详细的每日使用情况指标、包括服务级别、时间戳、已提交容量、已用容量和可计账的已配置容量。您还可以生成CSV格式的这些详细信息报告、以供将来使用和比较。</block>
+  <block id="ef839937832da4065ea73d2af5bb0212" category="inline-image-macro">以表格格式显示突发使用情况数据的屏幕截图</block>
+  <block id="fd4179e96bb6b563483e2da193ee3515" category="paragraph"><block ref="fd4179e96bb6b563483e2da193ee3515" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c47baa61c22503bd11f03c33a6eb4733" category="paragraph">从*Keystone订阅*页面上的*订阅*选项卡选择超过10对 订阅时，无法生成订阅报告。</block>
+  <block id="823d73fac48b123a5c54fb36b35fa946" category="paragraph">2025年1月8日</block>
+  <block id="0210cb3765fda3047d9297b0f453ca44" category="paragraph">显示的QoS策略类型不正确</block>
+  <block id="2fd8a3db64e08617acb19923d6feb044" category="paragraph">在*卷详细信息*选项卡中，如果未应用QoS策略，*QoS策略类型*列将显示_QoS_，而符合列将显示_not set_，从而导致显示的QoS策略状态不一致。</block>
+  <block id="6fac87c4e304acd1c313d83787f9b7bd" category="section-title">增加了每日累积数据使用量查看选项</block>
+  <block id="bce353c38d140a9c3cfcff4f836af86f" category="paragraph">现在、您可以通过单击显示发票数据的条形来以图形或表格形式查看每月或每季度计费期间的每日累积突发数据使用量。要了解更多信息，请参阅 <block ref="2773c8880a0c489f5c889cad1b1aa49a" category="inline-link-macro-rx"></block>。</block>
 </blocks>
