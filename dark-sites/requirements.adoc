@@ -30,7 +30,7 @@ summary: '在无法访问Internet的环境(也称为_dark site_or _private mode_
 
 == Linux的要求
 
-* 操作系统：Debian v12、Red Hat Enterprise Linux (RHEL) 8.6或RHEL 8.x系列中的更高版本
+* 操作系统：Debian 12、Red Hat Enterprise Linux (RHEL) 8.6或RHEL 8.x系列中的更高版本
 * 核心：2个CPU
 * RAM ： 4 GB
 * 磁盘空间：50 GB vDisk

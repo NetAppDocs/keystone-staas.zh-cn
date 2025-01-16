@@ -542,7 +542,6 @@
   <block id="ea0dbfc6ab6c0af39db6e8b2db365d7f" category="list-text">在*配置&gt;系统*部分中配置系统主机名、位置和NTP服务器。</block>
   <block id="f5dfacf7a95f4945b3caa091e27ec747" category="doc">Keystone收集器概述</block>
   <block id="082821bd60f72deca861daa75a2c3020" category="paragraph">此架构图概述了在典型Keystone环境中的成分组件及其连接。</block>
-  <block id="1fb4cbb275f095e6c7e8f914d27ed735" category="paragraph">Keystone收集器软件由联机YUM软件存储库分发。您需要在Linux服务器上导入并安装文件。</block>
   <block id="ea74ae761acf4f1176f873f6437675f6" category="paragraph">按照以下步骤在Linux服务器上安装软件：</block>
   <block id="6b0c7fd3768c26e569ee5662bdcc2738" category="list-text">通过SSH连接到Keystone收集器服务器并升级到<block ref="63a9f0ea7bb98050796b649e85481845" prefix=" " category="inline-code"></block> 权限。</block>
   <block id="fafcabb6e961377fe2b62d0f1d2e62be" category="list-text">导入Keystone公共签名：<block ref="ccf45be91ebaeda977037b149762acbd" prefix=" " category="inline-code"></block></block>
@@ -1914,10 +1913,7 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="2242d62d3e8be601b23d94ea56e90d58" category="list-text">*生成访问令牌*：刷新令牌用于生成访问令牌。要授权对Keystone服务的API调用、需要使用访问令牌、此令牌的有效期为一小时。</block>
   <block id="f8f8242a29d5eb9256ae05747db07412" category="list-text">执行API调用以检索所需数据。您可以通过编程方式检索客户列表、客户订阅数据和客户使用情况详细信息。</block>
   <block id="fad1e832526fa7449bfff5b810826110" category="sidebar">从Digital Advisor REST API访问Keystone</block>
-  <block id="aef0601039f80516fbc2cefd134a7b42" category="list-text">客户提供的Linux服务器运行在Red Hat Enterprise Linux 8.6或更高8.x版本或CentOS 7上。Keystone软件通过安装过程进行安装<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block>。</block>
   <block id="4bfa7642bccc7e1047a0f5b699a01631" category="paragraph">软件更新和使用情况数据上传需要对_keystone.AIo.com_进行出站访问、这对于NetApp收集器和AIops解决方案网关的操作和维护至关重要。</block>
-  <block id="f9d3d3159cdb3dcf297f1a90d133e474" category="list-text">操作系统：Debian v12、Red Hat Enterprise Linux (RHEL) 8.6或RHEL 8.x系列中的更高版本</block>
-  <block id="2604f9447676294c730c1410115fcdc0" category="list-text">操作系统：CentOS 7或Red Hat Enterprise Linux (RHEL) 8.6、或RHEL 8.x系列中的更高版本</block>
   <block id="04e5e9b2304d0098895d9985c9a8ea89" category="cell">*预期IOP/TiB*</block>
   <block id="66add2975320c187fa0c68a862f9277b" category="cell">*峰值IOP/TiB*</block>
   <block id="44c1604c68364a078a1faa312c3f1fca" category="list-text">*预期IOPs/TiB*：系统在具有足够可用的系统IOPS时尝试提供的每个卷的每个分配TiB的最小IOPS数。</block>
@@ -2172,4 +2168,18 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="196d7c712c7c6a9911f2d9bbb5f61bf7" category="sidebar">利用Keystone服务完成更多工作</block>
   <block id="ff7a737bcab804124f1d48754e14170d" category="sidebar">了解您的支持团队</block>
   <block id="84b3e771654397ccc8ec23cf38bfc805" category="sidebar">监控、故障排除和增强存储</block>
+  <block id="7fe1234c016df317c9bb2796b94c80c3" category="list-text">客户提供的Linux服务器运行在以下操作系统之一上：Debian 12、Red Hat Enterprise Linux 8.6或更高版本8.x或CentOS 7 (仅适用于现有环境)。Keystone软件使用或<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block>软件包安装<block ref="27b0f8226ae1a7f1b973155b13221df6" prefix=" " category="inline-code"></block>、具体取决于Linux版本。</block>
+  <block id="af1726e663445fca1780939dd8437580" category="list-text">操作系统：Debian 12、Red Hat Enterprise Linux (RHEL) 8.6或RHEL 8.x系列中的更高版本</block>
+  <block id="4082fa09d81cb2bcef02087304b3c30e" category="paragraph">您可以使用RPM或Debian软件包在Linux服务器上安装Keystone收集器软件。根据您的Linux版本、按照安装步骤进行操作。</block>
+  <block id="3fc1f45d72a49b590c944fab8aac1e82" category="open-title">使用RPM</block>
+  <block id="162a9e33a865943694a11b0031d84b66" category="open-title">使用Debian</block>
+  <block id="a98e37707079fc949c91ca051e0dcead" category="list-text">通过SSH连接到Keystone收集器服务器并提升为<block ref="63a9f0ea7bb98050796b649e85481845" prefix=" " category="inline-code"></block>特权。<block ref="e73620038e8b54deb176b2581c7558a7" prefix=" " category="inline-code"></block></block>
+  <block id="5d4cb7a4cf862260849df5175a34c215" category="list-text">下载<block ref="f86119adbf6f60ddd66d8af50a026122" prefix=" " category="inline-code"></block>文件：<block ref="4228c57e26dcb7e788f67e6f9e02ceb5" prefix=" " category="inline-code"></block></block>
+  <block id="6ff4e4466ce735d11d88c1194817f0d7" category="list-text">安装Keystone软件存储库文件：<block ref="071fc003590c05068b84e2edffcea01e" prefix=" " category="inline-code"></block></block>
+  <block id="1f55f1a8efb6267e6c92c68a37d05869" category="list-text">更新软件包列表：<block ref="e4d1bfabfe93077d65c8642e0205cfbf" prefix=" " category="inline-code"></block></block>
+  <block id="f3c8438664647f9d220cbfd1625a0edd" category="list-text">安装Keystone repo后、安装keystone-Collector软件包：<block ref="29b04259d51ea73a795fc3c2452196f4" prefix=" " category="inline-code"></block></block>
+  <block id="d830024e9ce7615651460580909fdc44" category="list-text">操作系统：以下任一操作系统：</block>
+  <block id="653181dc830ebbf1153310c93a009c52" category="list-text">Debian 12</block>
+  <block id="015c84a3348885955ce882f1beed478e" category="list-text">Red Hat Enterprise Linux 8.6或更高版本8.x</block>
+  <block id="bcd6ed294af34e837c537b83a1a3de21" category="list-text">CentOS 7 (仅适用于现有环境)</block>
 </blocks>

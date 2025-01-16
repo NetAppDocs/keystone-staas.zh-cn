@@ -14,10 +14,12 @@ summary: 从YUM软件存储库安装Keystone收集器软件。
 
 
 [role="lead"]
-Keystone收集器软件由联机YUM软件存储库分发。您需要在Linux服务器上导入并安装文件。
+您可以使用RPM或Debian软件包在Linux服务器上安装Keystone收集器软件。根据您的Linux版本、按照安装步骤进行操作。
 
-按照以下步骤在Linux服务器上安装软件：
-
+[role="tabbed-block"]
+====
+.使用RPM
+--
 . 通过SSH连接到Keystone收集器服务器并升级到 `root` 权限。
 . 导入Keystone公共签名：
 `# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
@@ -36,5 +38,22 @@ Keystone收集器软件由联机YUM软件存储库分发。您需要在Linux服�
 `# yum install keystone-collector`
 
 
+--
+.使用Debian
+--
+. 通过SSH连接到Keystone收集器服务器并提升为 `root`特权。
+`sudo su`
+. 下载 `keystone-sw-repo.deb`文件：
+`curl -O https://keystone.netapp.com/downloads/keystone-sw-repo.deb`
+. 安装Keystone软件存储库文件：
+`# dpkg -i keystone-sw-repo.deb`
+. 更新软件包列表：
+`# apt-get update`
+. 安装Keystone repo后、安装keystone-Collector软件包：
+`# apt-get install keystone-collector`
+
+
+--
+====
 
 NOTE: 完成安装后、您可以使用Keystone收集器管理终端用户界面(TUI)实用程序执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。请参见 link:../installation/configuration.html["配置Keystone收集器"] 和 link:../installation/monitor-health.html["监控系统运行状况"] 以了解相关信息。

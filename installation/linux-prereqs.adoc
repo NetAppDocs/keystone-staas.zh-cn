@@ -19,7 +19,13 @@ summary: 安装Keystone收集器之前、请使用所需的软件准备Linux系�
 确保Linux和Keystone收集器服务器VM具有这些配置。
 
 .Linux服务器：
-* 操作系统：CentOS 7或Red Hat Enterprise Linux (RHEL) 8.6、或RHEL 8.x系列中的更高版本
+* 操作系统：以下任一操作系统：
++
+** Debian 12
+** Red Hat Enterprise Linux 8.6或更高版本8.x
+** CentOS 7 (仅适用于现有环境)
+
+
 * 首字母缩略语时间同步
 * 访问标准Linux软件存储库
 
