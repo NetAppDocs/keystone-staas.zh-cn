@@ -2193,4 +2193,9 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="2fd8a3db64e08617acb19923d6feb044" category="paragraph">在*卷详细信息*选项卡中，如果未应用QoS策略，*QoS策略类型*列将显示_QoS_，而符合列将显示_not set_，从而导致显示的QoS策略状态不一致。</block>
   <block id="6fac87c4e304acd1c313d83787f9b7bd" category="section-title">增加了每日累积数据使用量查看选项</block>
   <block id="bce353c38d140a9c3cfcff4f836af86f" category="paragraph">现在、您可以通过单击显示发票数据的条形来以图形或表格形式查看每月或每季度计费期间的每日累积突发数据使用量。要了解更多信息，请参阅 <block ref="2773c8880a0c489f5c889cad1b1aa49a" category="inline-link-macro-rx"></block>。</block>
+  <block id="0488df5729275bc610c775109a5e97ed" category="doc">Keystone STaaS中已修复的问题</block>
+  <block id="e3cdc936dac2c0ff066e39a4166c9208" category="doc">Keystone STaaS中的已知问题</block>
+  <block id="cf456956bf4b18082e3ed1243aff31f5" category="paragraph">无法查看历史数据</block>
+  <block id="7b19f6e9d0fb85adf96f95ba11a7325e" category="paragraph">在*消费趋势*选项卡中，一旦订阅到期并使用相同的跟踪ID但不同的服务级别进行续订，则不会显示与先前订阅关联的服务级别。这会导致无法访问历史使用数据。</block>
+  <block id="1dd6b840b80d1691b68b67682f45c121" category="doc">Keystone STaaS的已知限制</block>
 </blocks>

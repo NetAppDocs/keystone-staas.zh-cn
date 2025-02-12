@@ -4,7 +4,7 @@ permalink: release-notes/known-issues.html
 keywords: netapp, keystone, release notes, known issues 
 summary: 已知问题用于确定可能会妨碍您有效使用Keystone订阅服务的问题。 
 ---
-= 已知问题
+= Keystone STaaS中的已知问题
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -21,6 +21,15 @@ NetApp Keystone STaaS中报告了以下已知问题：
 [cols="3*"]
 |===
 | 已知问题描述 | 说明 | 临时解决策 
+
+
+ a| 
+无法查看历史数据
+ a| 
+在*消费趋势*选项卡中，一旦订阅到期并使用相同的跟踪ID但不同的服务级别进行续订，则不会显示与先前订阅关联的服务级别。这会导致无法访问历史使用数据。
+ a| 
+无
+
 
 
  a| 

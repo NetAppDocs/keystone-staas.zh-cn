@@ -4,7 +4,7 @@ permalink: release-notes/fixed-issues.html
 keywords: fixed issues 
 summary: 在NetApp Keystone STaaS服务的先前版本中发现的问题已在后续版本中得到修复。 
 ---
-= 已修复的问题
+= Keystone STaaS中已修复的问题
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
