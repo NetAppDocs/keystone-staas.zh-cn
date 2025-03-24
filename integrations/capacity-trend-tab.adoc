@@ -117,7 +117,7 @@ image:invoiced-daily-accr-burst-1.png["显示条形图的屏幕截图"]
 
 以折线图显示每日累积突发数据使用量的示例图像：
 
-image:invoiced-daily-accr-burst-2.png["以折线图格式显示突发使用情况数据的屏幕截图"]
+image:invoiced-daily-accr-burst-date.png["以折线图格式显示突发使用情况数据的屏幕截图"]
 
 您可以通过单击图形右上角的*Table*选项切换到表视图。此表视图提供了详细的每日使用情况指标、包括服务级别、时间戳、已提交容量、已用容量和可计账的已配置容量。您还可以生成CSV格式的这些详细信息报告、以供将来使用和比较。
 

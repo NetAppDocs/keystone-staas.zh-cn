@@ -2183,7 +2183,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="de75b30d787fc40e53cc46d0b5ab30cf" category="paragraph"><block ref="de75b30d787fc40e53cc46d0b5ab30cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eba7556a1fc4fd160e9d81ddb2112a3e" category="paragraph">以折线图显示每日累积突发数据使用量的示例图像：</block>
   <block id="515f3b344653c49257ced259fb9261bd" category="inline-image-macro">以折线图格式显示突发使用情况数据的屏幕截图</block>
-  <block id="47fdc60b1d26d7e27d3b186be572a4d8" category="paragraph"><block ref="47fdc60b1d26d7e27d3b186be572a4d8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="afb651343eb4e95550b828492b0990bf" category="paragraph">您可以通过单击图形右上角的*Table*选项切换到表视图。此表视图提供了详细的每日使用情况指标、包括服务级别、时间戳、已提交容量、已用容量和可计账的已配置容量。您还可以生成CSV格式的这些详细信息报告、以供将来使用和比较。</block>
   <block id="ef839937832da4065ea73d2af5bb0212" category="inline-image-macro">以表格格式显示突发使用情况数据的屏幕截图</block>
   <block id="fd4179e96bb6b563483e2da193ee3515" category="paragraph"><block ref="fd4179e96bb6b563483e2da193ee3515" category="inline-image-macro-rx" type="image"></block></block>
@@ -2195,7 +2194,10 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="bce353c38d140a9c3cfcff4f836af86f" category="paragraph">现在、您可以通过单击显示发票数据的条形来以图形或表格形式查看每月或每季度计费期间的每日累积突发数据使用量。要了解更多信息，请参阅 <block ref="2773c8880a0c489f5c889cad1b1aa49a" category="inline-link-macro-rx"></block>。</block>
   <block id="0488df5729275bc610c775109a5e97ed" category="doc">Keystone STaaS中已修复的问题</block>
   <block id="e3cdc936dac2c0ff066e39a4166c9208" category="doc">Keystone STaaS中的已知问题</block>
-  <block id="cf456956bf4b18082e3ed1243aff31f5" category="paragraph">无法查看历史数据</block>
-  <block id="7b19f6e9d0fb85adf96f95ba11a7325e" category="paragraph">在*消费趋势*选项卡中，一旦订阅到期并使用相同的跟踪ID但不同的服务级别进行续订，则不会显示与先前订阅关联的服务级别。这会导致无法访问历史使用数据。</block>
   <block id="1dd6b840b80d1691b68b67682f45c121" category="doc">Keystone STaaS的已知限制</block>
+  <block id="d84ae5b6becc67f38fe4f478e713f236" category="paragraph"><block ref="d84ae5b6becc67f38fe4f478e713f236" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="71246a468b7dd0ee3663403dfb3f159b" category="paragraph">Digital Advisor信息板上的*监视列表*中缺少*Keystone订阅*选项和*报告*中的*订阅号*选项。</block>
+  <block id="738bb3187467e21f957b2120a45e356a" category="paragraph">2025年3月19日</block>
+  <block id="f2c2ba26aedbdce8dba144e80789d0b1" category="paragraph">从Digital Advisor信息板创建或修改监视列表后、*监视列表*中缺少一些Keystone订阅。</block>
+  <block id="dd3b859a25ffcf974732975af6e5a4e9" category="paragraph">无法在*使用趋势*选项卡中查看与已过期并使用相同跟踪ID但不同服务级别续订的订阅相关的服务级别的历史数据。</block>
 </blocks>
