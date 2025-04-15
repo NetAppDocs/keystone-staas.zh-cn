@@ -2200,4 +2200,27 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="738bb3187467e21f957b2120a45e356a" category="paragraph">2025年3月19日</block>
   <block id="f2c2ba26aedbdce8dba144e80789d0b1" category="paragraph">从Digital Advisor信息板创建或修改监视列表后、*监视列表*中缺少一些Keystone订阅。</block>
   <block id="dd3b859a25ffcf974732975af6e5a4e9" category="paragraph">无法在*使用趋势*选项卡中查看与已过期并使用相同跟踪ID但不同服务级别续订的订阅相关的服务级别的历史数据。</block>
+  <block id="b2a3bf9896e977dfd8243da5ea25ed44" category="paragraph">如果您只想通过ONTAP收集使用情况数据、请满足以下要求：</block>
+  <block id="3e53b7d63056b7201f19b650655aad66" category="list-text">确保已配置ONTAP 9.8或更高版本。有关配置新集群的信息、请参见以下链接：</block>
+  <block id="16b35791c547ec7b12d2d1bc88d72f59" category="inline-link">使用System Manager在新集群上配置ONTAP</block>
+  <block id="8c6eef0a3d7e69df22688da3d1e6d26e" category="list-text"><block ref="8c6eef0a3d7e69df22688da3d1e6d26e" category="inline-link-rx"></block></block>
+  <block id="ec797c5e4fe95fdba62563dda4040b7c" category="inline-link">使用命令行界面设置集群</block>
+  <block id="bf1c2cef91760714f3d41ccff2cdf9bb" category="list-text"><block ref="bf1c2cef91760714f3d41ccff2cdf9bb" category="inline-link-rx"></block></block>
+  <block id="e8f64c2c9954152b2bdf07515fefcbf3" category="inline-link">了解如何创建ONTAP登录帐户</block>
+  <block id="38b5a2c7a8d52f27b8f9ac286e00f48d" category="list-text">创建具有特定角色的ONTAP登录帐户。要了解更多信息，请参阅<block ref="e69e255c042cc41ab7a6547befcd4b4a" category="inline-link-rx"></block>。</block>
+  <block id="d1d5b0ca67cfe96cd1bace50b8b15cbd" category="list-text">* Web UUI *</block>
+  <block id="53b500e941f815e0da37832bbbb3f265" category="inline-link">使用 System Manager 进行集群管理</block>
+  <block id="249c3b3c6a9f619b64fc657020594eb4" category="list-text">使用默认凭据登录到ONTAP系统管理器。要了解更多信息，请参阅<block ref="6093e0d65a9e5cab5ae1ba1e186de22d" category="inline-link-rx"></block>。</block>
+  <block id="d07c5d1cca8977c9165277aa366fcad7" category="list-text">创建一个具有"readOnly"角色和"http"应用程序类型的ONTAP用户，并通过导航到*Cluster &gt; Settings &gt; Security &gt; Users *来启用密码身份验证。</block>
+  <block id="1ad46d8f16866c3c58ccf12d81ea41ba" category="list-text">*CLI*</block>
+  <block id="0ac6939a607b25b41877b7739b73fac6" category="inline-link">使用CLI进行集群管理</block>
+  <block id="2aba549c4aa954187b9066ac9b8e6f24" category="list-text">使用默认凭据登录到ONTAP命令行界面。要了解更多信息，请参阅<block ref="80681c6be3483d3efa48f0733e30d252" category="inline-link-rx"></block>。</block>
+  <block id="da7599bcceca45d5f685a0c9ca169dd1" category="inline-link">启用ONTAP帐户密码访问</block>
+  <block id="ce5996c36dc9e027cc9e9e6ac10b3c9f" category="list-text">创建一个具有"readOnly"角色和"http"应用程序类型的ONTAP用户、并启用密码身份验证。要了解有关身份验证的更多信息，请参见<block ref="ff30655b37a4a92ad3dccbb4dd39b63c" category="inline-link-rx"></block>。</block>
+  <block id="6fccd3079eed02626646a383fcba9c32" category="paragraph">如果要通过Active IQ Unified Manager收集使用情况数据、请满足以下要求：</block>
+  <block id="ad822ed3350baf5e919fd093d9fce7c6" category="paragraph">链接订阅的使用量值显示的负数不正确、从而导致已提交的总使用量显示的值不准确。</block>
+  <block id="1570fe5c09c488b2521f2eadf2c94b4a" category="paragraph">2025年4月14日</block>
+  <block id="16fc27e61eb7cb21d80ac46bae8bf3c2" category="paragraph">无法在*使用趋势*选项卡中查看某些订阅的服务级别的历史数据。</block>
+  <block id="cb0b0f23652246b2cc88085920b86963" category="paragraph">由于数据不匹配、发票不正确</block>
+  <block id="5bf5a6c38d050a01f149d67dba290961" category="paragraph">AutoSupport订阅的使用数据不匹配会导致生成错误的发票、从而导致计费不准确。</block>
 </blocks>

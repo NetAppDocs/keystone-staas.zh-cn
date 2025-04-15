@@ -26,6 +26,34 @@ summary: 在开始使用Keystone之前、您需要确保ONTAP集群和StorageGRI
 
 
 .开始之前
+如果您只想通过ONTAP收集使用情况数据、请满足以下要求：
+
+. 确保已配置ONTAP 9.8或更高版本。有关配置新集群的信息、请参见以下链接：
++
+** https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["使用System Manager在新集群上配置ONTAP"]
+** https://docs.netapp.com/us-en/ontap/software_setup/task_create_the_cluster_on_the_first_node.html["使用命令行界面设置集群"]
+
+
+. 创建具有特定角色的ONTAP登录帐户。要了解更多信息，请参阅 https://docs.netapp.com/us-en/ontap/authentication/create-svm-user-accounts-task.html#cluster-and-svm-administrators["了解如何创建ONTAP登录帐户"]。
++
+** * Web UUI *
++
+... 使用默认凭据登录到ONTAP系统管理器。要了解更多信息，请参阅 https://docs.netapp.com/us-en/ontap/concept_administration_overview.html["使用 System Manager 进行集群管理"]。
+... 创建一个具有"readOnly"角色和"http"应用程序类型的ONTAP用户，并通过导航到*Cluster > Settings > Security > Users *来启用密码身份验证。
+
+
+** *CLI*
++
+... 使用默认凭据登录到ONTAP命令行界面。要了解更多信息，请参阅 https://docs.netapp.com/us-en/ontap/system-admin/index.html["使用CLI进行集群管理"]。
+... 创建一个具有"readOnly"角色和"http"应用程序类型的ONTAP用户、并启用密码身份验证。要了解有关身份验证的更多信息，请参见 https://docs.netapp.com/us-en/ontap/authentication/enable-password-account-access-task.html["启用ONTAP帐户密码访问"]。
+
+
+
+
+
+
+如果要通过Active IQ Unified Manager收集使用情况数据、请满足以下要求：
+
 . 确保已配置Unified Manager 9.10或更高版本。有关安装Unified Manager的信息、请参见以下链接：
 +
 ** https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["在VMware vSphere系统上安装Unified Manager"^]
