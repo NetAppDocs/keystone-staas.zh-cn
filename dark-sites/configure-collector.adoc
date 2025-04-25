@@ -34,9 +34,7 @@ image:dark-site-mode-1.png["Darksite模式"]
 . 切换*Start KS Collector with System*字段。
 . 切换*收集ONTAP使用情况*字段。添加Active IQ Unified Manager (Unified Manager)服务器和用户帐户的详细信息。
 . *可选*：如果订阅需要数据分层、请切换*使用分层速率计划*字段。
-+
-根据所购买的订阅类型，更新*使用类型*。
-
+. 根据所购买的订阅类型，更新*使用类型*。
 +
 
 NOTE: 在配置之前、请确认与NetApp订阅关联的使用类型。
