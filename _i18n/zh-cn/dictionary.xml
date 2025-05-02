@@ -2223,4 +2223,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="16fc27e61eb7cb21d80ac46bae8bf3c2" category="paragraph">无法在*使用趋势*选项卡中查看某些订阅的服务级别的历史数据。</block>
   <block id="cb0b0f23652246b2cc88085920b86963" category="paragraph">由于数据不匹配、发票不正确</block>
   <block id="5bf5a6c38d050a01f149d67dba290961" category="paragraph">AutoSupport订阅的使用数据不匹配会导致生成错误的发票、从而导致计费不准确。</block>
+  <block id="433d1a34b63c347d592c720846bb3834" category="paragraph">Keystone收集器无法收集运行低于9.11版本的ONTAP集群的使用情况数据。</block>
+  <block id="ddb5adb9194c71f7e22975533efa8326" category="paragraph">2025年4月30日</block>
 </blocks>
