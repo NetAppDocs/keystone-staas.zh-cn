@@ -2229,4 +2229,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="b2a0ad297e26236d750246160723aa4e" category="list-text">用于存储超过原始卷大小10%的克隆卷的逻辑容量。</block>
   <block id="93fcc6bc4dfbcffb60fef19d3e82a054" category="list-text">用于存储Snapshot副本中的差异数据的物理容量。</block>
   <block id="92103b58e95f2c7bb6f6903f55f4e0ca" category="list-text">已分配的物理容量。</block>
+  <block id="b972ea8fcf6c823010b9b37178b9d608" category="paragraph">由于缺少通用设置、Keystone收集器for StorageGRID无法正确配置。</block>
+  <block id="3af3083ee373e5ebbb20d7719411dd4c" category="paragraph">2025年5月12日</block>
 </blocks>
