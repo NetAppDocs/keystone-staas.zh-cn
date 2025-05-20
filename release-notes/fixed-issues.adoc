@@ -22,6 +22,15 @@ summary: 在NetApp Keystone STaaS服务的先前版本中发现的问题已在�
 
 
  a| 
+如果使用Debian软件包安装的现有Keystone收集器尝试通过Keystone收集器管理TUI配置HTTP代理或启用Unified Manager、TUI将无响应。
+ a| 
+已修复
+ a| 
+2025年5月19日
+
+
+
+ a| 
 由于缺少通用设置、Keystone收集器for StorageGRID无法正确配置。
  a| 
 已修复

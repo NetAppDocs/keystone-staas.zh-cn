@@ -2231,4 +2231,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="92103b58e95f2c7bb6f6903f55f4e0ca" category="list-text">已分配的物理容量。</block>
   <block id="b972ea8fcf6c823010b9b37178b9d608" category="paragraph">由于缺少通用设置、Keystone收集器for StorageGRID无法正确配置。</block>
   <block id="3af3083ee373e5ebbb20d7719411dd4c" category="paragraph">2025年5月12日</block>
+  <block id="e52daa0a0f5a4268d3b3cd4835eb59fa" category="paragraph">如果使用Debian软件包安装的现有Keystone收集器尝试通过Keystone收集器管理TUI配置HTTP代理或启用Unified Manager、TUI将无响应。</block>
+  <block id="2d8e5cb76ecb9ff05fdec5e05251eb14" category="paragraph">2025年5月19日</block>
 </blocks>
