@@ -14,7 +14,7 @@ summary: 可持续性、SLA、服务级别协议
 
 
 [role="lead"]
-NetApp Keystone根据具有可持续性SLA的ONTAP闪存存储阵列、为存储服务提供每TB实际瓦特数(W/TiB)的有保障测量。可持续性SLA定义了每个符合条件的服务级别的最大W/TiB消耗量、帮助企业实现可持续性目标。
+NetApp Keystone根据具有可持续性SLA的ONTAP闪存存储阵列、为存储服务提供每TB实际瓦特数(W/TiB)的有保障测量。可持续性 SLA 定义了每个合格性能服务级别的最大 W/TiB 消耗量，帮助组织实现其可持续性目标。
 
 
 NOTE: SLA和保证按提名提供。
@@ -26,7 +26,7 @@ NOTE: SLA和保证按提名提供。
 * *Watts*：每日AutoSupport报告的功耗，包括控制器和连接的磁盘架的使用情况。
 * *太字节*：最大值：
 +
-** 服务级别的已提交容量+已分配突发容量、或
+** 承诺容量 + 性能服务级别的分配突发容量，或
 ** 有效部署容量(假设存储效率系数为 `2:1`)。
 
 
@@ -37,7 +37,7 @@ NOTE: SLA和保证按提名提供。
 
 
 
-== 服务级别
+== 绩效服务水平
 
 可持续性SLA基于以下消费标准：
 
@@ -61,7 +61,7 @@ NOTE: SLA和保证按提名提供。
 性能
 | 小于4 W/TiB | 300 TiB | AFF A800和AFF A900 
 |===
-要了解更多信息，请参阅 link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Keystone中的服务级别"]。
+要了解更多信息，请参阅 link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Keystone 中的性能服务级别"]。
 
 
 

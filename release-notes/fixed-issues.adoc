@@ -22,6 +22,24 @@ summary: 在NetApp Keystone STaaS服务的先前版本中发现的问题已在�
 
 
  a| 
+在“*Assets*”选项卡中，StorageGRID 的资产不可见。
+ a| 
+已修复
+ a| 
+2025年6月19日
+
+
+
+ a| 
+对于高级数据保护服务级别，在“消费趋势”选项卡中，图表显示了主站点和镜像站点的分割。
+ a| 
+图表不再显示主站点和镜像站点的分割。
+ a| 
+2025年6月19日
+
+
+
+ a| 
 如果使用Debian软件包安装的现有Keystone收集器尝试通过Keystone收集器管理TUI配置HTTP代理或启用Unified Manager、TUI将无响应。
  a| 
 已修复

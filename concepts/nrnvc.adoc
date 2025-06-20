@@ -28,7 +28,7 @@ summary: 作为NetApp Keystone订阅的一部分、NetApp扩展了NRVC为您的�
 
 有关标准服务和云服务的信息，请参见 link:supported-storage-services.html["Keystone STaaS服务"]。
 
-有关服务级别的信息、请参见 link:../concepts/service-levels.html["Keystone中的服务级别"]。
+有关性能服务级别的信息，请参阅link:../concepts/service-levels.html["Keystone 中的性能服务级别"] 。
 
 
 

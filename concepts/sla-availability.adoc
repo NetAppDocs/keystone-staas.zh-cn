@@ -30,9 +30,9 @@ NOTE: SLA和保证按提名提供。
 
 
 
-== 服务级别
+== 绩效服务水平
 
-ONTAP闪存存储阵列支持的所有服务级别均符合可用性SLA的条件。要了解更多信息，请参阅 link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Keystone中的服务级别"]。
+ONTAP 闪存存储阵列支持的所有性能服务级别均符合可用性 SLA 的资格。要了解更多信息，请参阅 link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Keystone 中的性能服务级别"]。
 
 
 
@@ -82,8 +82,8 @@ ONTAP闪存存储阵列支持的所有服务级别均符合可用性SLA的条件
 其中：
 
 * *受影响容量*：受影响的已存储容量。
-* *已提交总容量*：Keystone订单服务级别的已提交容量。
-* *容量费用*：当月受影响服务级别的费用。
+* *总承诺容量*：Keystone 订单的性能服务级别的承诺容量。
+* *容量费用*：该月受影响性能服务级别的费用。
 * *信用百分比*：服务信用的预定百分比。
 
 

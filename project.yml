@@ -21,9 +21,9 @@ sidebar:
       url: "/release-notes/known-issues.html"
     - title: 已知限制
       url: "/release-notes/known-limitations.html"
-  - title: 了解Keystone
+  - title: 入门
     entries:
-    - title: 概述
+    - title: 了解 Keystone STaaS
       url: "/concepts/overview.html"
     - title: Keystone基础架构
       url: "/concepts/infra.html"
@@ -65,52 +65,82 @@ sidebar:
         url: "/installation/install-itom-windows.html"
     - title: 配置 AutoSupport
       url: "/installation/asup-config.html"
+    - title: 监控和升级
+      entries:
+      - title: 监控Keystone收集器运行状况
+        url: "/installation/monitor-health.html"
+      - title: 升级Keystone收集器
+        url: "/installation/upgrade.html"
     - title: Keystone收集器安全性
       url: "/installation/security.html"
     - title: 收集用于计费的数据
       url: "/installation/data-collection.html"
-  - title: 监控和升级
+    - title: Keystone处于专用模式
+      entries:
+      - title: 概述
+        url: "/dark-sites/overview.html"
+      - title: 准备安装
+        url: "/dark-sites/requirements.html"
+      - title: 安装Keystone收集器
+        url: "/dark-sites/install-collector.html"
+      - title: 配置Keystone收集器
+        url: "/dark-sites/configure-collector.html"
+      - title: 监控Keystone收集器运行状况
+        url: "/dark-sites/monitor.html"
+  - title: 管理和监控 Keystone 订阅
     entries:
-    - title: 监控Keystone收集器运行状况
-      url: "/installation/monitor-health.html"
-    - title: 升级Keystone收集器
-      url: "/installation/upgrade.html"
-  - title: Keystone信息板
-    entries:
-    - title: Keystone信息板概述
-      url: "/integrations/keystone-aiq.html"
-    - title: 查看使用情况详细信息并生成报告
-      url: "/integrations/aiq-keystone-details.html"
-    - title: 订阅选项卡
-      url: "/integrations/subscriptions-tab.html"
-    - title: 电流消耗选项卡
-      url: "/integrations/current-usage-tab.html"
-    - title: 消耗趋势选项卡
-      url: "/integrations/capacity-trend-tab.html"
-    - title: 卷和对象选项卡
+    - title: 了解 Keystone 仪表板
+      entries:
+      - title: 了解 Keystone 仪表板
+        url: "/integrations/dashboard-overview.html"
+      - title: 开始使用 Keystone 仪表板
+        url: "/integrations/dashboard-access.html"
+      - title: BlueXP 中的 Keystone 仪表板
+        url: "/integrations/keystone-bluexp.html"
+      - title: Digital Advisor 中的 Keystone 仪表板
+        url: "/integrations/keystone-aiq.html"
+      - title: 搜索数据、生成报告和查看警报
+        url: "/integrations/options.html"
+    - title: 查看订阅洞察
+      entries:
+      - title: 查看您的订阅详情
+        url: "/integrations/subscriptions-tab.html"
+      - title: 查看您当前的消费详情
+        url: "/integrations/current-usage-tab.html"
+      - title: 查看消费趋势
+        url: "/integrations/consumption-tab.html"
+      - title: 查看您的订阅时间表
+        url: "/integrations/subscription-timeline.html"
+    - title: 查看资产
+      entries:
+      - title: 查看与订阅相关的资产
+        url: "/integrations/assets-tab.html"
+      - title: 查看多个订阅中的资产
+        url: "/integrations/assets.html"
+    - title: 修改您的订阅
+      url: "/integrations/modify-subscription.html"
+    - title: 查看您的服务请求
+      url: "/integrations/administration-tab.html"
+    - title: 查看卷和对象存储详细信息
       url: "/integrations/volumes-objects-tab.html"
-    - title: 资产选项卡
-      url: "/integrations/assets-tab.html"
-    - title: 性能选项卡
+    - title: 查看性能指标
       url: "/integrations/performance-tab.html"
-    - title: 了解Keystone和BlueXP
-      url: "/integrations/keystone-cm.html"
-  - title: Keystone STaaS服务
+  - title: 概念
     entries:
-    - title: 指标和定义
-      url: "/concepts/metrics.html"
-    - title: 存储服务质量
-      url: "/concepts/qos.html"
-    - title: 支持的存储
-      url: "/concepts/supported-storage-services.html"
-    - title: 支持的容量
-      url: "/concepts/supported-storage-capacity.html"
-    - title: 服务级别
-      url: "/concepts/service-levels.html"
-    - title: 服务级别的容量要求
-      url: "/concepts/capacity-requirements.html"
-    - title: Keystone订阅服务版本1
-      url: "/subscription-services-v1.html"
+    - title: Keystone STaaS服务
+      entries:
+      - title: 指标和定义
+        url: "/concepts/metrics.html"
+      - title: 存储服务质量
+        url: "/concepts/qos.html"
+      - title: 支持的存储
+        url: "/concepts/supported-storage-services.html"
+      - title: 支持的容量
+        url: "/concepts/supported-storage-capacity.html"
+      - title: 绩效服务水平
+        url: "/concepts/service-levels.html"
+      - title: 性能服务级别的容量要求
+        url: "/concepts/capacity-requirements.html"
     - title: 附加服务
       entries:
       - title: 高级数据保护
@@ -125,28 +155,30 @@ sidebar:
         url: "/concepts/nrnvc.html"
       - title: 美国受保护支持(USPS)
         url: "/concepts/usps.html"
-  - title: Keystone STaaS SLA
-    entries:
-    - title: 可用性
-      url: "/concepts/sla-availability.html"
-    - title: 性能
-      url: "/concepts/sla-performance.html"
-    - title: 可持续性
-      url: "/concepts/sla-sustainability.html"
-    - title: 勒索软件恢复担保
-      url: "/concepts/sla-ransomware.html"
-  - title: Keystone处于专用模式
-    entries:
-    - title: 概述
-      url: "/dark-sites/overview.html"
-    - title: 准备安装
-      url: "/dark-sites/requirements.html"
-    - title: 安装Keystone收集器
-      url: "/dark-sites/install-collector.html"
-    - title: 配置Keystone收集器
-      url: "/dark-sites/configure-collector.html"
-    - title: 监控Keystone收集器运行状况
-      url: "/dark-sites/monitor.html"
+    - title: Keystone STaaS SLA
+      entries:
+      - title: 可用性
+        url: "/concepts/sla-availability.html"
+      - title: 性能
+        url: "/concepts/sla-performance.html"
+      - title: 可持续性
+        url: "/concepts/sla-sustainability.html"
+      - title: 勒索软件恢复担保
+        url: "/concepts/sla-ransomware.html"
+    - title: 计费
+      entries:
+      - title: Keystone定价
+        url: "/concepts/pricing.html"
+      - title: 根据已提交容量计费
+        url: "/concepts/committed-capacity-billing.html"
+      - title: 根据已用容量进行计量
+        url: "/concepts/consumed-capacity-billing.html"
+      - title: 按突发消耗计费
+        url: "/concepts/burst-consumption-billing.html"
+      - title: Keystone计费的其他方案
+        url: "/concepts/misc-volume-billing.html"
+      - title: 计费计划
+        url: "/concepts/billing-schedules.html"
   - title: 从Digital Advisor REST API访问Keystone
     entries:
     - title: 开始使用Digital Advisor REST API检索Keystone数据
@@ -159,20 +191,8 @@ sidebar:
       url: "/rest-api/get-customer-subscriptions.html"
     - title: 使用Digital Advisor REST API获取客户使用情况详细信息
       url: "/rest-api/get-customer-consumption.html"
-  - title: 计费
-    entries:
-    - title: Keystone定价
-      url: "/concepts/pricing.html"
-    - title: 根据已提交容量计费
-      url: "/concepts/committed-capacity-billing.html"
-    - title: 根据已用容量进行计量
-      url: "/concepts/consumed-capacity-billing.html"
-    - title: 按突发消耗计费
-      url: "/concepts/burst-consumption-billing.html"
-    - title: Keystone计费的其他方案
-      url: "/concepts/misc-volume-billing.html"
-    - title: 计费计划
-      url: "/concepts/billing-schedules.html"
+  - title: Keystone订阅服务版本1
+    url: "/subscription-services-v1.html"
   - title: 获取Keystone帮助
     url: "/concepts/gssc.html"
   - title: 法律声明

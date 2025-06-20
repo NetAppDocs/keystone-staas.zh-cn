@@ -16,7 +16,24 @@ summary: NetApp在每个Keystone STaaS服务版本中都为您提供新增和增
 [role="lead"]
 NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能。
 
-Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕中引入了以下增强功能：
+
+
+== 2025年6月19日
+
+
+
+=== BlueXP 中的 Keystone 仪表板
+
+您现在可以直接从 BlueXP 访问 Keystone 仪表板。此集成让您可以在一个位置监控、管理和跟踪所有 Keystone 订阅以及其他 NetApp 服务。
+
+使用 BlueXP 中的 Keystone 仪表板，您可以：
+
+* 在一个地方查看所有订阅详细信息、容量使用情况和资产。
+* 轻松管理订阅并随着需求的变化请求更改。
+* 随时了解有关您的存储环境的最新信息。
+
+
+首先，转到 BlueXP 左侧导航菜单中的 *存储 > Keystone*。要了解更多信息，请参阅 link:../integrations/dashboard-overview.html["Keystone信息板概述"^]。
 
 
 
@@ -26,7 +43,7 @@ Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕中引入�
 
 === 增加了每日累积数据使用量查看选项
 
-现在、您可以通过单击显示发票数据的条形来以图形或表格形式查看每月或每季度计费期间的每日累积突发数据使用量。要了解更多信息，请参阅 link:../integrations/capacity-trend-tab.html#view-daily-accrued-burst-data-usage["查看每日累积突发数据使用量"]。
+现在、您可以通过单击显示发票数据的条形来以图形或表格形式查看每月或每季度计费期间的每日累积突发数据使用量。要了解更多信息，请参阅 link:../integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["查看每日累积突发数据使用量"]。
 
 
 
@@ -58,7 +75,7 @@ Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕中引入�
 
 === 增加了开票应计突发量
 
-现在，如果您选择了季度计费期，则可以通过*开票应计突发*选项按季度查看累积突发使用情况数据。要了解更多信息，请参阅 link:../integrations/capacity-trend-tab.html#view-invoiced-accrued-burst["查看已开票的应计突发量"^]。
+现在，如果您选择了季度计费期，则可以通过*开票应计突发*选项按季度查看累积突发使用情况数据。要了解更多信息，请参阅 link:../integrations/consumption-tab.html#view-accrued-burst["查看已开票的应计突发量"^]。
 
 
 
@@ -80,7 +97,7 @@ Active IQ数字顾问(也称为数字顾问)的*Keystone订阅*屏幕中引入�
 
 === 增强了报告生成功能
 
-现在、您可以使用Digital Advisor中的"报告"功能生成整合报告以查看Keystone数据的详细信息。要了解更多信息，请参阅 link:../integrations/aiq-keystone-details.html#generate-consolidated-report["生成整合报告"^]。
+现在、您可以使用Digital Advisor中的"报告"功能生成整合报告以查看Keystone数据的详细信息。要了解更多信息，请参阅link:../integrations/options.html#generate-consolidated-report-from-digital-advisor["生成整合报告"^] 。
 
 
 
@@ -136,7 +153,7 @@ Keystone订阅*屏幕已更新，可在所有选项卡中显示选定的订阅�
 
 === 用于短期突发的放大功能
 
-现在，“*容量趋势*”选项卡包含一个放大功能，用于在使用情况图表中查看短期突发的详细信息。有关详细信息，请参见 link:../integrations/capacity-trend-tab.html["容量趋势选项卡"^]。
+现在，“*容量趋势*”选项卡包含一个放大功能，用于在使用情况图表中查看短期突发的详细信息。有关详细信息，请参见 link:../integrations/consumption-tab.html["容量趋势选项卡"^]。
 
 
 
@@ -254,7 +271,7 @@ Keystone订阅*屏幕现在包括*Assets*选项卡。此新选项卡可根据您
 
 === 针对累积突发返回的发票数据
 
-现在，*容量趋势*选项卡中的*应计突发*标签已修改为*已发票应计突发*。选择此选项可查看计费累积突发数据的月度图表。有关详细信息，请参见 link:../integrations/capacity-trend-tab.html#view-invoiced-accrued-burst["查看已开票的应计突发量"^]。
+现在，*容量趋势*选项卡中的*应计突发*标签已修改为*已发票应计突发*。选择此选项可查看计费累积突发数据的月度图表。有关详细信息，请参见 link:../integrations/consumption-tab.html#view-accrued-burst["查看已开票的应计突发量"^]。
 
 
 
@@ -276,4 +293,4 @@ Digital Advisor中对监视列表的支持已扩展到包括Keystone系统。现
 
 === 转换为UTC时区的日期
 
-在Digital Advisor的*Keystone订阅*屏幕的选项卡上返回的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。有关详细信息，请参见 link:../integrations/aiq-keystone-details.html["Keystone订阅信息板和报告"^]。
+Digital Advisor 的 *Keystone Subscriptions* 屏幕选项卡上返回的数据以 UTC 时间（服务器时区）显示。输入查询日期时、系统会自动将其视为UTC时间。有关详细信息，请参见 link:../integrations/keystone-aiq.html["Keystone订阅信息板和报告"^]。

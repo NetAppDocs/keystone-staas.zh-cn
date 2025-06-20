@@ -16,13 +16,21 @@ indexpage:
       url: "/installation/itom-prereqs.html"
     - title: 在私用模式下安装Keystone收集器
       url: "/dark-sites/overview.html"
-    - title: 在Digital Advisor上查看您的使用情况
-      url: "/integrations/keystone-aiq.html"
-    - title: 生成消耗报告
-      url: "/integrations/aiq-keystone-details.html"
+  - title: BlueXP 和 Digital Advisor 中的 Keystone 仪表板
+    links:
+    - title: 了解 Keystone 仪表板
+      url: "/integrations/dashboard-overview.html"
+    - title: 访问 Keystone 仪表板
+      url: "/integrations/dashboard-access.html"
+    - title: 查看订阅洞察
+      url: "/integrations/subscriptions-tab.html"
+    - title: 查看资产
+      url: "/integrations/assets-tab.html"
+    - title: 搜索数据并生成报告
+      url: "/integrations/options.html"
   - title: Keystone中支持的服务
     links:
-    - title: Keystone服务级别
+    - title: Keystone 绩效服务水平
       url: "/concepts/service-levels.html"
     - title: 服务质量(QoS)
       url: "/concepts/qos.html"
@@ -54,8 +62,6 @@ indexpage:
       url: "/concepts/adp.html"
     - title: 监控、故障排除和增强存储
       url: "/concepts/data-infra-insights.html"
-    - title: Keystone和BlueXP
-      url: "/integrations/keystone-cm.html"
     - title: 美国公民支持
       url: "/concepts/usps.html"
   - title: 了解更多信息

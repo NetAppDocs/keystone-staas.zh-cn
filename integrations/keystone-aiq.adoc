@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: integrations/keystone-aiq.html 
-keywords: Keystone, Digital Advisor, keystone-aiq, aiq 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, dashboard overview, manage subscriptions, monitor 
 summary: 作为NetApp Keystone STaaS订阅者、您可以从数字顾问信息板查看订阅概况。 
 ---
-= Keystone信息板概述
+= Digital Advisor 中的 Keystone 仪表板
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,28 +14,21 @@ summary: 作为NetApp Keystone STaaS订阅者、您可以从数字顾问信息�
 
 
 [role="lead"]
-作为NetApp Keystone STaaS订阅者、您可以在Active IQ数字顾问(也称为数字顾问)信息板的* Keystone订阅*小工具上简要了解您的订阅。
+作为 NetApp Keystone STaaS 订阅者，您可以在 Digital Advisor 仪表板的 *Keystone 订阅* 小部件上查看您的订阅概览。
 
-您可以通过输入客户或监视列表名称的前三个字符或Keystone订阅编号来搜索Keystone订阅。有关如何按监视列表搜索Keystone STaaS订阅的信息、请参见 link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["使用Keystone监视列表进行搜索"]。
+您可以通过输入客户或关注列表名称的前三个字符，或者 Keystone 订阅编号来搜索特定的 Keystone 订阅。有关如何按关注列表搜索 Keystone STaaS 订阅的信息，请参阅link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["使用Keystone监视列表进行搜索"] 。
 
 Digital Advisor提供了一个统一的信息板，可通过*切换到旧/新信息板*按钮深入了解不同级别的订阅数据和使用情况信息。
 
 .默认(旧)信息板
-您可以根据订阅的服务级别查看客户名称和订阅编号、帐户名称、订阅的开始和结束日期以及容量使用情况图。您可以查看消耗数据的收集时间戳(UTC时间)。
+您可以查看您的客户名称和订阅号、帐户名称、订阅的开始和结束日期以及按照您订阅的性能服务级别的容量使用情况图表。您可以查看消耗数据的收集时间戳(UTC时间)。
 
 image:old-db-2.png["旧信息板"]
 
 .备选(新)信息板
 您可以查看按订阅显示的容量使用情况的详细信息、以及需要立即引起关注或采取措施的警告和警报。根据您的订阅和使用状态、此信息会有选择地显示。您可以查看以下信息：
 
-* *容量使用情况*：使用情况数据、例如：
-+
-** 不使用。
-** 消耗量超过承诺容量的80%。
-** 突发使用量。
-** 消耗量超过突发容量。
-
-
+* *容量使用情况*：无使用、消耗量超过承诺容量的 80%、突发使用量、超出突发容量的消耗量等消耗数据。
 * *警报*：您可以看到适用于您的各种情形的警报。
 +
 ** *即将过期*：如果您的订阅在90天内过期。
@@ -50,19 +43,31 @@ TIP: 单击*订阅*链接可在*订阅*选项卡中查看过滤的订阅列表�
 
 image:new-db-4.png["新信息板"]
 
-有关Keystone的Digital Advisor信息板小工具的详细信息、请参见 https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Digital Advisor文档"^]。
+您可以单击“查看所有订阅”以在“Keystone 订阅”页面上查看卷的使用详情和警报。
 
-有关Keystone信息板和报告的详细信息、请参见 link:../integrations/aiq-keystone-details.html["Keystone订阅信息板和报告"]。
+订阅的详细信息、每个性能服务级别的使用情况图表以及卷详细信息显示在 *Keystone 订阅* 屏幕上的不同选项卡中。
+
+
+NOTE: Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位显示、并四舍五入为小数点后两位。如果使用量少于 0.01 TiB，则值显示为 0 或无使用量。这些屏幕上的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。要了解有关使用情况指标的更多信息，请参见 link:../concepts/metrics.html#metrics-measurement["衡量指标"]。有关Keystone中使用的不同容量的信息，请参见 link:../concepts/supported-storage-capacity.html["支持的存储容量"]。
 
 
 
 == 按Keystone监视列表搜索
 
-监视列表是一项功能Digital Advisor。有关信息，请参见 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["了解监视列表"^]。有关创建监视列表的信息、请参见 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["创建监视列表"^]。
+关注列表是 Digital Advisor 的一项功能。有关信息，请参见 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["了解监视列表"^]。有关创建关注列表的信息，请参阅 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["创建监视列表"^] 。
 
-对于Keystone STaaS、您可以为客户或订阅编号创建监视列表。您可以在Digital Advisor屏幕上按监视列表名称进行搜索。按监视列表搜索时，您可以在*Keystone订阅*小工具的*订阅*下拉列表中查看客户及其订阅。
+您可以为客户或订阅号创建关注列表，并在 Digital Advisor 屏幕上使用订阅号或关注列表名称的前三个字符搜索 Keystone 订阅。按关注列表名称搜索时，您可以在 *Keystone 订阅* 小部件的 *订阅* 下拉列表中查看客户及其订阅。
 
 
 NOTE: 按监视列表搜索将检索旧信息板上的订阅列表。如果监视列表包含订阅编号、则Digital Advisor信息板上仅会显示* Keystone订阅*小工具。
 
 image:watchlist.png["监视列表屏幕"]
+
+* 相关信息 *
+
+* link:../integrations/dashboard-access.html["开始使用 Keystone 仪表板"]
+* link:../integrations/keystone-bluexp.html["BlueXP 中的 Keystone 仪表板"]
+* link:../integrations/subscriptions-tab.html["查看您的订阅详情"]
+* link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
+* link:../integrations/consumption-tab.html["查看消费趋势"]
+

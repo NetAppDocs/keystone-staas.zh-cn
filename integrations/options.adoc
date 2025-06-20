@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: integrations/options.html 
+keywords: Keystone, BlueXP, Keystone dashboard, search and filter, Keystone data, generate reports, view alerts, digital advisor 
+summary: 作为 NetApp Keystone STaaS 订阅者，您可以搜索和过滤数据、生成订阅和使用情况报告、检查时间戳以及查看警报。 
+---
+= 搜索 Keystone 数据、生成报告并查看警报
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以搜索和过滤数据、生成订阅和使用情况报告以及查看警报以随时了解存储环境。
+
+
+
+== 从 BlueXP 搜索和过滤数据
+
+在 BlueXP 中，您可以根据选项卡中表格中提供的列参数搜索和筛选 Keystone 数据。例如，在“*订阅*”选项卡下的“订阅*”子选项卡中，您可以在搜索框中输入 Keystone 版本来筛选数据。同样，在“资产*”选项卡下的“集群中的卷*”选项卡中，您可以在搜索框中输入卷名称来筛选卷。
+
+您可以使用高级筛选选项（如果可用）来优化搜索。例如，在“订阅”子选项卡中，您可以按 Keystone 版本、计费周期、最大容量和订阅到期天数筛选数据；在“集群中的卷”选项卡中，您可以按卷名称、集群名称、QoS 合规性、卷类型等进行筛选。您可以同时应用多个筛选条件，以精确缩小搜索结果范围。 image:bxp-filter-search.png["高级过滤选项"]
+
+
+
+== 从 BlueXP 或 Digital Advisor 生成报告
+
+您可以使用 BlueXP 或 Digital Advisor 中选项卡中的下载按钮生成并查看 Keystone 数据报告。这些选项卡允许您生成订阅、历史使用情况、突发使用情况、性能、资产、卷和对象的报告。
+
+[cols="1,1"]
+|===
+| BlueXP 中的下载按钮 | Digital Advisor 中的下载按钮 
+
+
+| image:bluexp-download-report-1.png["BlueXP 中的报告下载图标 1"]或image:bluexp-download-report-2.png["BlueXP 中的报告下载图标 2"] | image:download-report-da.png["报告下载图标"] 
+|===
+这些详细信息以CSV格式生成、您可以保存这些信息以供将来使用和比较。
+
+
+
+== 从数字顾问生成综合报告
+
+在 Digital Advisor 中，您可以生成并查看您的订阅、历史使用情况、突发使用情况、性能、资产以及卷和对象的综合报告。要执行此操作，请从Digital Advisor的“报告”功能中选择*Keystone订阅*作为报告类型。您可以在客户、集群、监视列表或订阅级别生成这些报告。
+
+image:report-generation.png["创建报告"]
+
+报告以Excel格式生成、每种类型的信息(例如订阅详细信息或使用情况历史记录)显示在单独的工作表中。这些工作表根据*Keystone订阅*页上的选项卡进行命名，以便于查看。您可以保存此报告以供将来使用。
+
+要了解有关生成报告的更多信息，请参见link:https://docs.netapp.com/us-en/active-iq/task_generate_reports.html["生成自定义报告"^]。
+
+
+
+== 查看来自数字顾问的警报
+
+在 Digital Advisor 中，Keystone 仪表板提供警报通知，让您了解存储环境中出现的问题。这些通知可能会显示为信息性警报或警告。例如、如果受管集群中的卷未附加自适应QoS (AQoS)策略、您可以看到一条警告消息。选择警告消息即可在“卷和对象”选项卡中查看不合规卷的列表。
+
+
+NOTE: 如果您订阅了单一性能服务级别或费率计划，您将无法看到不合规卷的警报。
+
+image:alert-aiq-3.png["警报"]
+
+有关AQO策略的信息、请参见 link:../concepts/qos.html["自适应 QoS"]。
+
+有关这些消息的更多信息，请联系 NetApp Keystone 支持。有关提出服务请求的信息，请参阅link:../concepts/gssc.html#generating-service-requests["正在生成服务请求"] 。

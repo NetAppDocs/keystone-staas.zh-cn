@@ -14,7 +14,9 @@ summary: 查看卷或对象存储级别的容量详细信息。
 
 
 [role="lead"]
-如果要在卷或对象存储级别查看容量详细信息，可以导航到*卷和对象*。对于StorageGRID、您可以使用此选项卡读取对象存储环境中各个节点的使用情况。
+如果您想查看卷或对象存储级别的容量详细信息，您可以导航到 Digital Advisor 中的“卷和对象”选项卡。对于StorageGRID、您可以使用此选项卡读取对象存储环境中各个节点的使用情况。
+
+您可以参考 BlueXP 中的“资产”选项卡来查看这些详细信息。要查看特定 Keystone STaaS 订阅的详细信息，请参阅link:../integrations/assets-tab.html["查看与 Keystone 订阅相关的资产"] 。如果您想查看多个 Keystone 订阅的详细信息，请参阅link:../integrations/assets.html["查看 Keystone 订阅中的资产"] 。
 
 
 NOTE: 此选项卡的标题因站点部署的性质而异。如果同时具有ONTAP和对象存储，则选项卡的标题将显示为*Volumes & Objects*。仅对于ONTAP，名称显示为*Volumes*。对于StorageGRID对象存储，可以看到*Objects*选项卡。
@@ -23,16 +25,13 @@ NOTE: 此选项卡的标题因站点部署的性质而异。如果同时具有ON
 
 == 查看ONTAP卷和对象存储详细信息
 
-通过*卷和对象*选项卡，您可以深入了解不同详细级别的ONTAP系统卷和对象存储。对于ONTAP卷、有两个子选项卡：*卷摘要*、用于提供映射到已订阅服务级别的卷的总数；*卷详细信息*、用于再次列出这些卷及其特定详细信息。“*对象*”子选项卡提供有关订阅的对象存储的详细信息，其中包括文件和对象存储的服务级别。
-
-
-NOTE: *卷*选项卡下的*对象*子选项卡不可用，在*对象*选项卡中，*卷摘要*和*卷详细信息*子选项卡不包含任何数据。
+通过*卷和对象*选项卡，您可以深入了解不同详细级别的ONTAP系统卷和对象存储。对于 ONTAP 卷，有两个子选项卡：*卷摘要*，显示映射到已订阅性能服务级别的卷的总数；*卷详细信息*，再次列出这些卷及其具体信息。*对象*子选项卡提供包含文件和对象存储性能服务级别的订阅的对象存储详细信息。
 
 [role="tabbed-block"]
 ====
 .卷摘要
 --
-. 单击*常规> Keystone订阅>卷和对象>卷摘要*。
+. 从 Digital Advisor 左侧导航窗格中，转到 *常规 > Keystone 订阅 > 卷和对象 > 卷摘要*。
 . 选择订阅编号。
 +
 对于选定的Keystone STaaS订阅、您可以查看卷总数、其QoS合规性状态、受保护卷的数量以及所有这些卷中的已提交、已使用和可用总容量。如果单击非合规卷或受保护卷的数量，则会转到*卷详细信息*选项卡，在此可以根据您的选择查看显示不合规卷或受保护卷的经过筛选的列表。
@@ -45,10 +44,10 @@ image:volume-summary-2.png["卷摘要选项卡"]
 --
 .卷详细信息
 --
-. 单击*常规> Keystone订阅>卷>卷详细信息*。
+. 从 Digital Advisor 左侧导航窗格中，转到 *常规 > Keystone 订阅 > 卷 > 卷详细信息*。
 . 选择订阅编号。
 +
-您可以查看卷的表格列表、例如容量使用情况、卷类型、集群、聚合以及分配的Keystone服务级别。您可以将鼠标悬停在列标题旁边的信息图标上、滚动浏览列并了解有关这些列的更多信息。您可以按列排序并筛选列表以查看特定信息。
+您可以看到卷的表格列表，例如容量使用情况、卷类型、集群、聚合和分配的 Keystone 性能服务级别。您可以将鼠标悬停在列标题旁边的信息图标上、滚动浏览列并了解有关这些列的更多信息。您可以按列排序并筛选列表以查看特定信息。
 
 +
 可以使用*隐藏/显示列*来添加或删除表中显示的列。默认情况下，除*Department*列外，所有列都处于选中状态。您可以选择或取消选择任何列，包括*Department*列，您的首选项将被保存供以后使用。下载CSV报告时，如果选中，将包括*部门*列详细信息，而其他列将显示，而不管其在表中的选择状态如何。
@@ -65,8 +64,8 @@ image:volume-details-3.png["卷详细信息选项卡"]
 --
 .对象
 --
-. 单击*常规> Keystone订阅>对象*。
-. 选择订阅编号。默认情况下、如果先前选择的订阅不包括文件和对象存储的服务级别、则会选择第一个可用订阅编号。
+. 从 Digital Advisor 左侧导航窗格中，转到 *常规 > Keystone 订阅 > 对象*。
+. 选择订阅编号。默认情况下，如果先前选择的订阅不包含文件和对象存储的性能服务级别，则选择第一个可用的订阅号。
 +
 
 NOTE: 对于StorageGRID、此选项卡显示对象存储节点的物理使用情况。
@@ -80,10 +79,12 @@ image:objects-details.png["对象选项卡"]
 ====
 * 相关信息 *
 
-* link:../integrations/aiq-keystone-details.html["使用Keystone信息板和报告"]
-* link:../integrations/subscriptions-tab.html["订阅"]
-* link:../integrations/current-usage-tab.html["电流消耗"]
-* link:../integrations/capacity-trend-tab.html["消耗趋势"]
-* link:../integrations/assets-tab.html["资产"]
-* link:../integrations/performance-tab.html["性能"]
+* link:../integrations/dashboard-overview.html["了解 Keystone 仪表板"]
+* link:../integrations/subscriptions-tab.html["查看您的订阅详情"]
+* link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
+* link:../integrations/consumption-tab.html["查看消费趋势"]
+* link:../integrations/subscription-timeline.html["查看您的订阅时间表"]
+* link:../integrations/assets-tab.html["查看您的 Keystone 订阅资产"]
+* link:../integrations/assets.html["查看 Keystone 订阅中的资产"]
+* link:../integrations/performance-tab.html["查看性能指标"]
 

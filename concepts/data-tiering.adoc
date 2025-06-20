@@ -16,7 +16,7 @@ summary: 数据分层附加服务可识别不常用的数据并将其分层到�
 [role="lead"]
 用于文件和块存储的Keystone STaaS标准服务包括分层功能、这些功能可识别不太常用的数据、并将其分层到支持Keystone STaaS的NetApp冷存储。如果要将冷数据分层到任何支持Keystone STaaS的非NetApp存储、您可以将数据分层作为附加服务使用。
 
-有关标准服务和附加服务的信息、请参见 link:../concepts/supported-storage-services.html["Keystone STaaS服务"]。有关服务级别的信息、请参见 link:../concepts/service-levels.html["Keystone中的服务级别"]。
+有关标准和附加服务的信息，请参阅link:../concepts/supported-storage-services.html["Keystone STaaS服务"] .有关性能服务级别的信息，请参阅link:../concepts/service-levels.html["Keystone 中的性能服务级别"] 。
 
 只有在将数据分层到任何非NetApp存储(例如Amazon Web Services (AWS) S3、Azure Blb、Google Cloud Platform (GCP)以及其他支持Keystone STaaS且与S3兼容的第三方对象存储)时、才需要分层附加服务。
 

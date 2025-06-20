@@ -20,7 +20,7 @@ Keystone可帮助客户减少在管理不可预测的容量增长和复杂的采
 
 image:nkfsosm_image2.png["Keystone"]
 
-Keystone可为块、文件和对象数据类型提供预定义服务级别的存储容量、这些数据类型可在内部部署并由NetApp、合作伙伴或客户操作。Keystone可以与NetApp云服务(例如Cloud Volumes ONTAP)结合使用、这些服务可以部署在您选择的超规模环境中。
+Keystone 为块、文件和对象数据类型提供预定义性能服务级别的存储容量，这些数据类型可以在本地部署并由 NetApp、合作伙伴或客户操作。Keystone可以与NetApp云服务(例如Cloud Volumes ONTAP)结合使用、这些服务可以部署在您选择的超规模环境中。
 
 Keystone订阅与速率计划相关联。一个订阅可以附加多个速率计划。
 
@@ -34,7 +34,7 @@ Keystone订阅与速率计划相关联。一个订阅可以附加多个速率计
 
 * link:../concepts/pricing.html["Keystone定价"]
 * link:../concepts/add-on.html["Keystone STaaS中的附加服务"]
-* link:../concepts/service-levels.html["Keystone中的服务级别"]
+* link:../concepts/service-levels.html["Keystone 中的性能服务级别"]
 * link:../concepts/infra.html["Keystone基础架构"]
 * link:../concepts/operational-models.html["Keystone中的操作模式"]
 

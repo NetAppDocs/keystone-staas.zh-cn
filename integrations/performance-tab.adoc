@@ -17,10 +17,12 @@ summary: 要监控系统性能、您可以查看Keystone订阅管理的ONTAP卷�
 要监控系统性能、您可以查看Keystone订阅管理的ONTAP卷的性能指标。
 
 
-TIP: 您可以选择使用此选项卡。要查看此选项卡、请联系支持部门。
+TIP: 此选项卡在 Digital Advisor 中可选用。要查看此选项卡、请联系支持部门。在 BlueXP 中不可用。
+
+要在 Digital Advisor 中查看此选项卡，请按照以下步骤操作：
 
 .步骤
-. 单击*常规> Keystone订阅>性能*。
+. 单击“*常规>Keystone 订阅>性能*”。
 . 选择订阅编号。默认情况下、将选择第一个订阅编号。
 . 从列表中选择所需的卷名称。
 +
@@ -29,20 +31,20 @@ TIP: 您可以选择使用此选项卡。要查看此选项卡、请联系支持
 . 选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。您不能选择未来日期。
 
 
-检索到的详细信息基于每个服务级别的服务级别目标。例如、峰值IOPS、最大吞吐量、目标延迟和其他指标由服务级别的各个设置决定。有关设置的详细信息、请参见 link:../concepts/service-levels.html["Keystone中的服务级别"]。
+检索到的详细信息基于每个性能服务级别的性能服务级别目标。例如，峰值 IOPS、最大吞吐量、目标延迟和其他指标由性能服务级别的各项设置决定。有关这些设置的更多信息，请参阅link:../concepts/service-levels.html["Keystone 中的性能服务级别"] 。
 
 
-NOTE: 如果选中*SLO参考行*复选框，则IOPS、吞吐量和延迟图将根据服务级别的服务级别目标呈现。否则、它们将以实际数字显示。
+NOTE: 如果选中“*SLO 参考线*”复选框，则会根据性能服务级别的性能服务级别目标呈现 IOPS、吞吐量和延迟图表。否则、它们将以实际数字显示。
 
 水平图上显示的性能数据是每五分钟显示一次的平均值、并按照查询的日期范围进行排列。您可以滚动浏览图形并将鼠标悬停在特定数据点上、以进一步深入查看收集的数据。
 
-您可以根据订阅编号、卷名称和选定日期范围的组合在以下部分中查看和比较性能指标。系统将根据分配给卷的服务级别显示详细信息。您可以查看集群名称和卷类型、即分配给卷的读取和写入权限。此外、还会显示与此卷关联的任何警告消息。
+您可以根据订阅编号、卷名称和选定日期范围的组合在以下部分中查看和比较性能指标。详细信息按照分配给卷的性能服务级别显示。您可以查看集群名称和卷类型、即分配给卷的读取和写入权限。此外、还会显示与此卷关联的任何警告消息。
 
 
 
 == IOS/TiB
 
-此部分将根据查询的日期范围显示卷中工作负载的输入-输出图形。此时将显示服务级别的峰值IOPS和当前IOPS (在过去五分钟内、不基于查询的日期范围)、以及时间范围内的最小、最大和平均IOPS (以IOS/TiB为单位)。
+此部分将根据查询的日期范围显示卷中工作负载的输入-输出图形。显示性能服务级别的峰值 IOPS 和当前 IOPS（过去五分钟内，不基于查询的日期范围），以及该时间范围内的最小、最大和平均 IOPS（以 IOPS/TiB 为单位）。
 
 image:perf-iops.png["IOPS部分"]
 
@@ -50,7 +52,7 @@ image:perf-iops.png["IOPS部分"]
 
 == 吞吐量(MBps/TiB)
 
-此部分将根据查询的日期范围显示卷中工作负载的吞吐量图形。此时将显示服务级别的最大吞吐量(SLO最大值)和当前吞吐量(在过去五分钟内、不基于查询的日期范围)、以及时间范围的最小、最大和平均吞吐量(以MBps/TiB为单位)。
+此部分将根据查询的日期范围显示卷中工作负载的吞吐量图形。显示性能服务级别的最大吞吐量（SLO Max）和当前吞吐量（过去五分钟内，不基于查询的日期范围），以及时间范围内的最小、最大和平均吞吐量（以 MBps/TiB 为单位）。
 
 image:perf-thr.png["吞吐量图"]
 
@@ -58,7 +60,7 @@ image:perf-thr.png["吞吐量图"]
 
 == 延迟(毫秒)
 
-此部分将根据查询的日期范围显示卷中工作负载的延迟图。此时将显示服务级别(SLO目标)的最大延迟和当前延迟(过去五分钟内的延迟、而不是基于查询的日期范围)、以及时间范围内的最小、最大和平均延迟(以毫秒为单位)。
+此部分将根据查询的日期范围显示卷中工作负载的延迟图。显示性能服务级别（SLO 目标）的最大延迟和当前延迟（在过去五分钟内，不基于查询的日期范围），以及时间范围内的最小、最大和平均延迟（以毫秒为单位）。
 
 此图具有以下颜色：
 
@@ -78,10 +80,12 @@ image:perf-log-usd.png["逻辑已用容量图"]
 
 * 相关信息 *
 
-* link:../integrations/aiq-keystone-details.html["使用Keystone信息板和报告"]
-* link:../integrations/subscriptions-tab.html["订阅"]
-* link:../integrations/current-usage-tab.html["电流消耗"]
-* link:../integrations/capacity-trend-tab.html["消耗趋势"]
-* link:../integrations/volumes-objects-tab.html["卷和对象()"]
-* link:../integrations/assets-tab.html["资产"]
+* link:../integrations/dashboard-overview.html["了解 Keystone 仪表板"]
+* link:../integrations/subscriptions-tab.html["查看您的订阅详情"]
+* link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
+* link:../integrations/consumption-tab.html["查看消费趋势"]
+* link:../integrations/subscription-timeline.html["查看您的订阅时间表"]
+* link:../integrations/assets-tab.html["查看您的 Keystone 订阅资产"]
+* link:../integrations/assets.html["查看 Keystone 订阅中的资产"]
+* link:../integrations/volumes-objects-tab.html["查看卷和对象的详细信息"]
 

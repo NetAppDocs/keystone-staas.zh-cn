@@ -18,9 +18,9 @@ NetApp数据基础架构洞察(Data Infrastructure Insight、DII、以前称为C
 
 要了解有关数据基础架构洞察力的更多信息，请参见link:https://docs.netapp.com/us-en/data-infrastructure-insights/["Data Infrastructure Insight文档"^]。
 
-DII既适用于新订阅、也适用于现有订阅。它可以作为已提交容量的附加项集成到Keystone订阅中。当DII集成到Keystone订阅中时、它将为订阅中的每个基础服务级别提供相应的服务级别。例如、Extreme映射到DII Extreme、Premium映射到DII Premium、Performance映射到DII Performance。这些映射可确保DII服务级别与Keystone订阅的基本服务级别保持一致。
+DII既适用于新订阅、也适用于现有订阅。它可以作为已提交容量的附加项集成到Keystone订阅中。当 DII 集成到 Keystone 订阅中时，它将为订阅中的每个基础性能服务级别提供对应的性能服务级别。例如、Extreme映射到DII Extreme、Premium映射到DII Premium、Performance映射到DII Performance。这些映射可确保 DII 性能服务级别与 Keystone 订阅的基础性能服务级别保持一致。
 
-Digital Advisor信息板上的*Keystone订阅*小工具中的DII服务级别视图：
+Digital Advisor 仪表板上的 *Keystone Subscriptions* 小部件内 DII 性能服务级别视图：
 
 image:keystone-widget-dii.png["显示DII服务级别的Keystone订阅小工具的屏幕截图"]
 
@@ -51,9 +51,12 @@ image:keystone-widget-dii.png["显示DII服务级别的Keystone订阅小工具�
 | Cloud Volumes ONTAP | NetApp Cloud Volumes ONTAP 
 |===
 +
-配置后、DII实例将开始监控Keystone存储。
+配置完成后，DII 实例将开始监控作为 Keystone 一部分部署的 NetApp 存储资源。
 
 
+
+
+NOTE: 虽然 DII 为已部署的硬件提供了广泛的监控功能，但它无法提供 Keystone 订阅的洞察信息，例如订阅使用情况或性能服务级别详情。如需订阅洞察信息，请参阅link:../integrations/keystone-aiq.html["Keystone 仪表板和报告"] 。
 
 
 
@@ -66,7 +69,7 @@ image:keystone-widget-dii.png["显示DII服务级别的Keystone订阅小工具�
 image:current-consumption-dii.png["显示服务级别计量的当前消耗选项卡的屏幕截图"]
 
 * 此服务将按计量、并与您的Keystone订阅一起在同一发票上开具发票。如果您在激活Keystone订阅之前为Keystone配置了DII、则计费仍将从Keystone订阅激活日期或现有订阅的修改日期开始。
-* 除了标准Keystone发票之外、此服务还会根据DII服务级别的承诺容量和突发使用量进行计量和开票。此附加服务的计量方法与底层Keystone订阅服务级别相同、可以是逻辑订阅、配置订阅或物理订阅服务级别。
+* 此服务除了标准 Keystone 账单外，还根据 DII 性能服务级别的承诺容量和突发使用量进行计量和计费。此附加服务的计量方法与基础 Keystone 订阅性能服务级别相同，可以是逻辑计费、预配置计费或物理计费。
 * 此服务将在链接到的Keystone订阅结束。续订时、您可以选择是否续订附加服务。如果您不续订Keystone订阅、则受监控的硬件将被停用、并且附加服务将自动终止。
 
 
