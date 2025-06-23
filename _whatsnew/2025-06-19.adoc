@@ -15,4 +15,4 @@
 * 随时了解有关您的存储环境的最新信息。
 
 
-首先，转到 BlueXP 左侧导航菜单中的 *存储 > Keystone*。要了解更多信息，请参阅 link:../integrations/dashboard-overview.html["Keystone信息板概述"^]。
+首先，转到 BlueXP 左侧导航菜单中的 *存储 > Keystone*。要了解更多信息，请参阅 link:../integrations/dashboard-overview.html["Keystone信息板概述"]。

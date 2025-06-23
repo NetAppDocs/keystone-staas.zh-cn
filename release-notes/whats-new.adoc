@@ -33,7 +33,7 @@ NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能
 * 随时了解有关您的存储环境的最新信息。
 
 
-首先，转到 BlueXP 左侧导航菜单中的 *存储 > Keystone*。要了解更多信息，请参阅 link:../integrations/dashboard-overview.html["Keystone信息板概述"^]。
+首先，转到 BlueXP 左侧导航菜单中的 *存储 > Keystone*。要了解更多信息，请参阅 link:../integrations/dashboard-overview.html["Keystone信息板概述"]。
 
 
 
@@ -245,7 +245,7 @@ Keystone订阅*屏幕现在包括*Assets*选项卡。此新选项卡可根据您
 
 === 增强了Digital Advisor的搜索体验
 
-现在，*Digital Advisor屏幕上的搜索参数包括Keystone订阅号码和为Keystone订阅创建的监视列表。您可以输入订阅编号或监视列表名称的前三个字符。有关详细信息，请参见 link:../integrations/keystone-aiq.html["在Active IQ数字顾问上查看Keystone信息板"^]。
+现在，*Digital Advisor屏幕上的搜索参数包括Keystone订阅号码和为Keystone订阅创建的监视列表。您可以输入订阅编号或监视列表名称的前三个字符。有关详细信息，请参见 link:../integrations/keystone-aiq.html["在 Active IQ Digital Advisor 上查看 Keystone 仪表板"^]。
 
 
 
