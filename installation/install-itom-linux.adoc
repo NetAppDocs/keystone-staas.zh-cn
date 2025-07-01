@@ -14,7 +14,7 @@ summary: 在基于Linux的系统上安装ITOM收集器软件。
 
 
 [role="lead"]
-完成几个步骤以安装ITOM收集器、此收集器将收集存储环境中的指标数据。您可以根据需要将其安装在Windows或Linux系统上。
+完成几个步骤来安装 ITOM Collector，它会收集您的存储环境中的指标数据。您可以根据需要将其安装在Windows或Linux系统上。
 
 
 NOTE: Keystone支持团队提供了一个动态链接来下载ITOM收集器设置文件、该文件将在两小时后过期。

@@ -26,15 +26,15 @@ NetApp 保留采取以下操作的权利：
 
 Keystone基础架构包括多个组件、例如以下组件：
 
-* Keystone基础架构、包括存储控制器。
-* 用于管理和操作此服务的工具、例如ITOM监控解决方案、Active IQ和Active IQ Unified Manager。
+* Keystone 基础设施，包括 NetApp 存储系统。
+* 用于管理和操作服务的工具，例如 ITOM 监控解决方案、BlueXP、Active IQ 和 Active IQ Unified Manager。
 
 
 
 
 == 存储平台
 
-企业级应用程序需要存储平台来支持快速配置工作流、保持持续可用性、以低延迟持续运行高工作负载、提供更高的性能、并支持与主要云提供商的集成。NetApp提供了多种产品和技术来满足这些要求。对于Keystone服务、NetApp使用AFF 和StorageGRID 平台。
+企业应用程序需要存储平台来支持快速配置工作流程、保持持续可用性、以低延迟承受高工作负载、提供更高性能，并支持与主要云提供商的集成。NetApp提供了多种产品和技术来满足这些要求。对于 Keystone 服务，NetApp 使用 AFF、ASA、FAS 和 StorageGRID 系统。
 
 
 
@@ -45,9 +45,9 @@ Keystone基础架构包括多个组件、例如以下组件：
 除了存储设备之外、还配置了两个监控工具来监控存储和使用情况。
 
 * Keystone IT运营管理(ITOM)监控解决方案：一款基于云的SaaS应用程序、用于监控Keystone环境。它内置了与NetApp存储平台的集成功能、可收集环境数据并监控Keystone基础架构的计算、网络和存储组件。这种监控功能可扩展到内部设置、数据中心、云环境或这些环境的任意组合。此服务可借助您的站点上安装的本地ITOM收集器来启用、该收集器可与云门户进行通信。
-* Keystone Data Collector：Keystone收集器为Keystone客户提供计费服务。此应用程序与Active IQ Unified Manager 捆绑在一起。它会每五分钟从ONTAP 和StorageGRID 控制器收集一次数据。处理数据、并通过用于生成计费数据的AutoSupport 机制将元数据发送到集中式Active IQ 数据湖。Active IQ 数据湖处理计费数据并将其发送给Zuora进行计费。
+* Keystone 数据收集器：Keystone 数据收集器收集数据并将其提供给 Keystone 计费平台进行进一步处理。Active此应用程序与Active IQ Unified Manager 捆绑在一起。它会每五分钟从ONTAP 和StorageGRID 控制器收集一次数据。处理数据、并通过用于生成计费数据的AutoSupport 机制将元数据发送到集中式Active IQ 数据湖。IQ 数据湖处理计费数据并将其发送给 Zuora 进行计费。
 
 
-image:mgmt-stack-2.png["管理堆栈"]
+image:data-collector-flow.png["收集器数据流"]
 
-您可以通过Digital Advisor登录并查看Keystone订阅的订阅和使用详细信息。有关Digital Advisor信息板上Keystone报告的详细信息，请参见 link:../integrations/keystone-aiq.html["Keystone和Digital Advisor"]。
+您可以通过 BlueXP 或 Digital Advisor 查看 Keystone 订阅的订阅和消费详情。要详细了解 Keystone 报告，请参阅link:../integrations/dashboard-overview.html["Keystone信息板概述"] 。

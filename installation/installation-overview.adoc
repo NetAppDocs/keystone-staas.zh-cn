@@ -16,12 +16,12 @@ summary: Keystone收集器是安装在站点的VMware vSphere或Linux主机上�
 [role="lead"]
 _Keystone收集器_是您在站点的VMware vSphere或Linux主机上安装的NetApp软件、用于访问Keystone服务。它会收集Keystone系统的使用情况数据。
 
-Keystone收集器是Keystone计费平台的使用情况采集组件。它可利用Active IQ Unified Manager和其他应用程序连接到ONTAP和StorageGRID系统、以收集对Keystone订阅进行使用和SLA性能计量所需的元数据。通过它、您可以监控系统运行状况、同时发送计费数据进行报告。
+Keystone收集器是Keystone计费平台的使用情况采集组件。它利用 Active IQ Unified Manager 和其他应用程序连接到 ONTAP 和 StorageGRID 系统，以收集 Keystone 订阅的使用和性能计量所需的元数据。通过它、您可以监控系统运行状况、同时发送计费数据进行报告。
 
 Keystone收集器可以配置为_standard_模式(无连接限制)或_privic_模式(专为具有连接限制的组织而设计)。要在标准模式下安装Keystone收集器，请参见link:../installation/vapp-prereqs.html["设置和配置Keystone"]；对于私用模式，请参见link:../dark-sites/overview.html["Keystone处于专用模式"]。
 
-Keystone收集器代表收集Keystone系统使用情况数据的标准方法。如果您的环境不支持Keystone收集器、您可以向Keystone产品管理部门寻求授权、以使用AutoSupport遥测机制作为替代方案。有关AutoSupport的信息、请参见 https://docs.netapp.com/us-en/active-iq/concept_autosupport.html["AutoSupport"^]。有关为Keystone配置AutoSupport的信息、请参见 link:../installation/asup-config.html["为Keystone配置AutoSupport"]。
+Keystone收集器代表收集Keystone系统使用情况数据的标准方法。如果您的环境无法支持 Keystone Collector，您可以向 Keystone 支持部门申请授权，使用 AutoSupport 遥测机制作为替代方案。有关 AutoSupport 的信息，请参阅 https://docs.netapp.com/us-en/active-iq/concept_autosupport.html["AutoSupport"^] 。有关为 Keystone 配置 AutoSupport 的信息，请参阅link:../installation/asup-config.html["为Keystone配置AutoSupport"] 。
 
 此架构图概述了在典型Keystone环境中的成分组件及其连接。
 
-image:collector-arch.png["收集器架构"]
+image:collector-arch-1.png["收集器架构"]

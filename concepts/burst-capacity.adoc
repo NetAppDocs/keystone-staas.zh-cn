@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: concepts/burst-capacity.html 
+keywords: burst consumption, add-on service, burst capacity, burst limit, NetApp Keystone 
+summary: 使客户能够使用超出其承诺容量的额外存储容量。 
+---
+= 突发容量选项
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以选择将突发容量附加服务添加到 NetApp Keystone 订阅中。此服务允许您将突发容量限制提升至承诺容量的 40% 或 60%，从而灵活地应对工作负载需求的意外激增。
+
+突发容量是指在订阅承诺容量之外，可额外使用的存储容量。它按性能服务等级进行计量和计费。默认情况下，突发容量上限设置为承诺容量的 20%。但是，使用此附加服务，您可以将上限提高到 40% 或 60%。
+
+要将突发限制更改为 40% 或 60%，请联系 NetApp Keystone 支持团队。
+
+要了解有关突发容量计费的更多信息，请参阅link:../concepts/burst-consumption-billing.html["按突发消耗计费"] 。

@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-infra-insights-v2.html 
+keywords: add-on services, add-on, data infrastructure insights, DII, deployment of DII 
+summary: Data Infrastructure Insight通过监控、故障排除和优化公共云和私有数据中心中的存储、提高Keystone STaaS的效率。 
+---
+= 了解数据基础架构洞察力
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp数据基础架构洞察(Data Infrastructure Insight、DII、以前称为Cloud Insights)是一款适用于Keystone STaaS的附加产品。此服务与Keystone STaaS的集成增强了Keystone跨公有云和私有数据中心提供的存储资源的监控、故障排除和优化功能。
+
+要了解有关数据基础架构洞察力的更多信息，请参见link:https://docs.netapp.com/us-en/data-infrastructure-insights/["Data Infrastructure Insight文档"^]。
+
+DII既适用于新订阅、也适用于现有订阅。它可以作为已提交容量的附加项集成到Keystone订阅中。当 DII 集成到 Keystone 订阅中时，它将为订阅中的每个基础性能服务级别提供对应的性能服务级别。例如、Extreme映射到DII Extreme、Premium映射到DII Premium、Performance映射到DII Performance。这些映射可确保 DII 性能服务级别与 Keystone 订阅的基础性能服务级别保持一致。
+
+Digital Advisor 仪表板上的 *Keystone Subscriptions* 小部件内 DII 性能服务级别视图：
+
+image:keystone-widget-dii.png["显示DII服务级别的Keystone订阅小工具的屏幕截图"]
+
+
+
+== 部署适用于Keystone的DII
+
+客户可以通过两种方式集成DII for Keystone：既可以作为监控其他非Keystone环境的现有实例的一部分、也可以作为新实例的一部分。客户负责设置DII。如果在复杂环境中设置DII需要帮助，客户团队可以参与link:https://www.netapp.com/services/["NetApp 专业服务"^]。
+
+要设置DII，请参见link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_cloud_insights_onboarding_1.html["数据基础架构洞察力入门"^]。
+
+请注意以下事项：
+
+* 如果客户要启动新的DII实例，建议以开头link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_cloud_insights_onboarding_1.html#starting-your-data-infrastructure-insights-free-trial["DII 免费试用"^]。要了解此功能以及所需的启动检查清单，请参见link:https://docs.netapp.com/us-en/data-infrastructure-insights/concept_feature_tutorials.html["功能教程"^]。
+* 对于每个站点、需要一个采集单元。要安装采集单元，请参见link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_getting_started_with_cloud_insights.html#install-an-acquisition-unit["安装采集单元"^]。如果客户已设置了DII实例和采集单元、则可以继续配置数据收集器。
+* 对于部署的每个存储硬件、客户必须在采集单元上配置一个数据收集器。要配置数据收集器，请参见link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_configure_data_collectors.html["配置数据收集器"^]。Keystone存储所需的数据收集器基于底层硬件、如下所示：
++
+|===
+| 存储硬件 | 数据收集器 
+
+
+| ONTAP系统 | NetApp ONTAP 数据管理软件 
+
+
+| StorageGRID | NetApp StorageGRID 
+
+
+| Cloud Volumes ONTAP | NetApp Cloud Volumes ONTAP 
+|===
++
+配置完成后，DII 实例将开始监控作为 Keystone 一部分部署的 NetApp 存储资源。
+
+
+
+
+NOTE: 虽然 DII 为已部署的硬件提供了广泛的监控功能，但它无法提供 Keystone 订阅的洞察信息，例如订阅使用情况或性能服务级别详情。如需订阅洞察信息，请参阅link:../integrations/keystone-aiq.html["Keystone 仪表板和报告"] 。
+
+
+
+== 计费和计量
+
+下面概述了DII附加服务的计费和计量详细信息：
+
+* 此服务的衡量方式与您的主订阅相同。例如、如果您的主订阅包括100 TiB的Extreme服务和100 TiB的Premium服务、这两项服务都是根据逻辑使用量来衡量的、则附加服务DII Extreme 100 TiB和DII Premium 100 TiB也是根据逻辑使用量来衡量的。如果您的主订阅是按配置的基础衡量的、则会以相同的方式衡量相同容量的附加服务。附加服务将采用与您的主订阅相同的衡量方法。
++
+image:current-consumption-dii.png["显示服务级别计量的当前消耗选项卡的屏幕截图"]
+
+* 此服务将按计量、并与您的Keystone订阅一起在同一发票上开具发票。如果您在激活Keystone订阅之前为Keystone配置了DII、则计费仍将从Keystone订阅激活日期或现有订阅的修改日期开始。
+* 此服务除了标准 Keystone 账单外，还根据 DII 性能服务级别的承诺容量和突发使用量进行计量和计费。此附加服务的计量方法与基础 Keystone 订阅性能服务级别相同，可以是逻辑计费、预配置计费或物理计费。
+* 此服务将在链接到的Keystone订阅结束。续订时、您可以选择是否续订附加服务。如果您不续订Keystone订阅、则受监控的硬件将被停用、并且附加服务将自动终止。
+
+
+
+
+== 支持和用户访问
+
+如果客户启用了*允许NetApp访问您的数据基础架构洞察力环境*选项，经批准的NetApp支持团队成员可以访问客户的DII实例。要执行此操作，请转到*help > Support*并启用选项。
+
+image:dii-support-permission.png["显示客户如何启用选项的屏幕截图"]
+
+客户可以使用选项从*用户管理*屏幕提供对内部或外部用户的访问image:dii-user-option.png["用户按钮"]。
+
+image:dii-user-access.png["显示添加用户选项的屏幕截图"]

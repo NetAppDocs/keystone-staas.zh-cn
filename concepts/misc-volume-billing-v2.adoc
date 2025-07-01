@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concepts/misc-volume-billing.html 
+permalink: concepts/misc-volume-billing-v2.html 
 keywords: Billing and miscellaneous scenarios 
 summary: '了解Keystone针对特定配置(包括克隆卷、高级数据保护等)的计费信息。' 
 ---
@@ -14,7 +14,7 @@ summary: '了解Keystone针对特定配置(包括克隆卷、高级数据保护�
 
 
 [role="lead"]
-了解 Keystone 版本 3 (v3) 中特定配置的计费方式，可以帮助您优化服务使用情况并管理成本。这些配置包括克隆卷、高级数据保护、临时卷、SnapMirror 目标、LUN 以及系统/根卷。
+了解 Keystone 版本 2 (v2) 中特定配置的计费方式，可以帮助您优化服务使用情况并管理成本。这些配置包括克隆卷、高级数据保护、临时卷、QoS 策略、SnapMirror 目标、LUN 以及系统/根卷。
 
 
 
@@ -50,21 +50,9 @@ summary: '了解Keystone针对特定配置(包括克隆卷、高级数据保护�
 
 
 
-== 为 SnapMirror 目标计费
+== 计费和自适应 QoS 策略
 
-SnapMirror 目标卷的定价（无论用于灾难恢复还是长期保留）均基于分配给目标卷的性能服务级别。数据保护无需额外付费。
-
-
-
-== LUN 计费
-
-对于 LUN，计费基于卷的性能服务级别。
-
-
-
-== 系统卷和根卷
-
-系统卷和根卷会作为Keystone服务整体监控的一部分进行监控、但不会计入或计费。这些卷上的消费免除计费。
+Keystone根据服务级别衡量使用情况。每个服务级别都与一个特定的自适应服务质量(QoS)策略相关联。在部署期间、您将收到有关订阅Keystone服务的每个自适应QoS策略的详细信息。在存储管理操作期间、请确保根据您订阅的服务级别为卷分配了相应的自适应QoS策略、以避免意外计费。有关ONTAP中自适应QoS策略的详细信息，请参见link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"^]。
 
 
 

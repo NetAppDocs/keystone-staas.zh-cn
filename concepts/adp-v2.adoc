@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concepts/adp.html 
+permalink: concepts/adp-v2.html 
 keywords: data protection advanced 
 summary: 使用高级数据保护附加服务可确保为任务关键型工作负载提供高效的数据保护。 
 ---

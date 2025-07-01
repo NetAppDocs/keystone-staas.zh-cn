@@ -1,10 +1,10 @@
 ---
 indexpage:
   title: Keystone文档
-  summary: NetApp Keystone 是一款按需购买、按需购买的存储即服务产品、可在一个订阅下同时提供内部和云数据存储服务、并能够跨云重新分配存储支出。
+  summary: NetApp Keystone 是一种按需付费的存储即服务产品，只需一次订阅即可提供本地和云数据存储服务，并能够在云之间重新分配存储支出。
   keywords: Keystone STaaS
-  lead: NetApp Keystone是一项基于订阅的灵活按需购买服务、可为更喜欢运营支出而非資本支出或租赁的客户提供无缝的混合云体验。它可以减轻IT在管理资源和漫长采购周期方面的负担、从而加快实现价值的速度。浏览此库中的文档、详细了解ONTAP或StorageGRID环境中的NetApp
-    Keystone STaaS产品。
+  lead: NetApp Keystone 是一项灵活的按需付费订阅服务，可为那些更倾向于运营支出而非资本支出或租赁的客户带来无缝的混合云体验。它可以减轻IT在管理资源和漫长采购周期方面的负担、从而加快实现价值的速度。浏览此库中的文档，了解有关
+    ONTAP 或 StorageGRID 环境中 NetApp Keystone 存储即服务 (STaaS) 产品的更多信息。
   tiles:
   - title: 入门
     links:
@@ -56,6 +56,8 @@ indexpage:
     links:
     - title: 了解您的支持团队
       url: "/concepts/gssc.html"
+    - title: 增加突发容量
+      url: "/concepts/burst-capacity.html"
     - title: 如何处理冷数据或使用率较低的数据？
       url: "/concepts/data-tiering.html"
     - title: 如何保护Keystone数据？

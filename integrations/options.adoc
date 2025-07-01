@@ -28,15 +28,8 @@ summary: 作为 NetApp Keystone STaaS 订阅者，您可以搜索和过滤数据
 
 == 从 BlueXP 或 Digital Advisor 生成报告
 
-您可以使用 BlueXP 或 Digital Advisor 中选项卡中的下载按钮生成并查看 Keystone 数据报告。这些选项卡允许您生成订阅、历史使用情况、突发使用情况、性能、资产、卷和对象的报告。
+您可以使用下载按钮生成并查看 Keystone 数据报告image:bluexp-download-report-2.png["BlueXP 中的报告下载图标 2"]可在 BlueXP 或 Digital Advisor 内的选项卡中使用。这些选项卡允许您生成订阅、历史使用情况、突发使用情况、性能、资产、卷和对象的报告。
 
-[cols="1,1"]
-|===
-| BlueXP 中的下载按钮 | Digital Advisor 中的下载按钮 
-
-
-| image:bluexp-download-report-1.png["BlueXP 中的报告下载图标 1"]或image:bluexp-download-report-2.png["BlueXP 中的报告下载图标 2"] | image:download-report-da.png["报告下载图标"] 
-|===
 这些详细信息以CSV格式生成、您可以保存这些信息以供将来使用和比较。
 
 
@@ -55,7 +48,7 @@ image:report-generation.png["创建报告"]
 
 == 查看来自数字顾问的警报
 
-在 Digital Advisor 中，Keystone 仪表板提供警报通知，让您了解存储环境中出现的问题。这些通知可能会显示为信息性警报或警告。例如、如果受管集群中的卷未附加自适应QoS (AQoS)策略、您可以看到一条警告消息。选择警告消息即可在“卷和对象”选项卡中查看不合规卷的列表。
+在 Digital Advisor 中，Keystone 仪表板提供警报通知，让您了解存储环境中出现的问题。这些通知可能会显示为信息性警报或警告。例如，使用 Keystone 版本 2 (v2)，如果您管理的集群中的卷没有附加自适应 QoS (AQoS) 策略，您会看到一条警告消息。选择警告消息即可在“卷和对象”选项卡中查看不合规卷的列表。
 
 
 NOTE: 如果您订阅了单一性能服务级别或费率计划，您将无法看到不合规卷的警报。
