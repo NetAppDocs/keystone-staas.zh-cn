@@ -1131,10 +1131,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="6c48d999111838f1ba95a5cf4091e681" category="section-title">增强了订阅显示功能</block>
   <block id="f5bd7be5a51d8e07eec34f2c9ddb662a" category="section-title">增强的累积突发显示</block>
   <block id="f42805586acc16ac661193d0d72e676a" category="paragraph">现在，将鼠标悬停在“*容量趋势”选项卡中的容量使用情况条形图上时显示的工具提示将根据已提交容量显示应计突发的类型。它区分临时突发和开票突发、对于承诺容量为零的订阅、显示*临时应计量*和*开票应计量*；对于承诺容量不为零的订阅、显示*临时应计突发*和*开票应计突发*。</block>
-  <block id="c7f25f44be7b366785438d8acef9c492" category="section-title">2024年5月9日</block>
-  <block id="b45b03a249b5f6cfa9e1cc559ba79e40" category="section-title">2024年2月13日</block>
-  <block id="b06c73c3805ce52954e13f27b28cb072" category="section-title">2024年1月11日</block>
-  <block id="6171bdf5841e2bfa70f97036e02d1f44" category="section-title">2023年12月15日</block>
   <block id="8a19ac37aa90f4bbe7f16a2f7767bbcd" category="list-text">*隐私设计*-Keystone收集器收集最低限度的数据，以执行使用情况计量和性能监控。有关详细信息，请参见 <block ref="d45e4cc5f7d31c567a5a7e94087cf357" category="inline-link-macro-rx"></block>。。 <block ref="056e2bf20fc58bf3ad9e840fe1ebc39f" category="inline-link-macro-rx"></block> 默认情况下、选项处于启用状态、用于屏蔽和保护敏感信息。</block>
   <block id="252857c59cbe54ddba7bda3d2d19b7a3" category="list-text">*最低权限访问*-Keystone收集器需要最低权限才能监控存储系统，从而最大限度地降低安全风险并防止意外修改数据。此方法符合最小特权原则、可增强受监控环境的整体安全防护。</block>
   <block id="8f14f42f9cacaaf485cd3e478fca2ae7" category="list-text">*安全软件开发框架*- Keystone在整个开发周期内使用安全软件开发框架，可降低风险、减少漏洞并保护系统免遭潜在威胁。</block>
@@ -1192,7 +1188,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="8f0fe81a9b7f4cb142f2a7084f33fd88" category="inline-image-macro">对象选项卡</block>
   <block id="ff86b04f28e9deb882d5f8b709958474" category="paragraph"><block ref="ff86b04f28e9deb882d5f8b709958474" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3be07034d0ea358558d4e2243a27e4a" category="paragraph">设置AQoS策略时、Keystone收集器管理TUI无响应。</block>
-  <block id="e358ee99bcdc82fedabffa4fe9dda483" category="section-title">2024年7月10日</block>
   <block id="fff7af8a2fab8d84dd9f7858aff6d7d9" category="section-title">标签修改</block>
   <block id="6176afc8abbdfc6c0a7c0274a19d9ef8" category="paragraph">标签*Current Usage*将更改为*Current功耗*，*Capacity Try*将更改为*功 耗趋势*。</block>
   <block id="b7e76ab52f2e3b0375203a91e2e782c6" category="section-title">订阅的搜索栏</block>
@@ -1659,7 +1654,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="f1ac17aa812b21fe2bbdc58cbe5d6efa" category="paragraph">报告以Excel格式生成、每种类型的信息(例如订阅详细信息或使用情况历史记录)显示在单独的工作表中。这些工作表根据*Keystone订阅*页上的选项卡进行命名，以便于查看。您可以保存此报告以供将来使用。</block>
   <block id="8b00815fc5298212e3dc28a279ed4a10" category="inline-link-macro">生成自定义报告</block>
   <block id="05ae21f139b4223ee2536ce651cf54b9" category="paragraph">要了解有关生成报告的更多信息，请参见<block ref="5ee515b7098121299290c8d9ddbc9e18" category="inline-link-macro-rx"></block>。</block>
-  <block id="8a1116f55c6659c55d506df698030041" category="section-title">2024年11月11日</block>
   <block id="1503d912784bec55335f32e3c747c9df" category="section-title">增强了报告生成功能</block>
   <block id="70852ac05a65501c650a9135c4a2ab17" category="cell">*已提交和计量容量类型*</block>
   <block id="e7a731a6342f126055b89b80d800a180" category="cell">逻辑</block>
@@ -1837,7 +1831,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="a5c5b30c416c34eb8d2fb09f3946721b" category="inline-image-macro">显示StorageGRID网格级信息的屏幕截图</block>
   <block id="dcaaab8361575caaad35a500d6864bd1" category="paragraph"><block ref="dcaaab8361575caaad35a500d6864bd1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1cedef25ccb6885eb8bfdc7660435962" category="paragraph">可以使用*隐藏/显示列*来添加或删除表中显示的列。默认情况下，除*Department*列外，所有列都处于选中状态。您可以选择或取消选择任何列，包括*Department*列，您的首选项将被保存供以后使用。下载CSV报告时，如果选中，将包括*部门*列详细信息，而其他列将显示，而不管其在表中的选择状态如何。</block>
-  <block id="bc6d0fec5ccd5f580ac081a7231e72de" category="section-title">2024年12月12日</block>
   <block id="4e80b9aaf481494b7698c02bcd4558ab" category="section-title">已重命名逻辑使用量列</block>
   <block id="4067362b8a27e9feb45b3dad3b225588" category="paragraph">现在，*卷和对象*中的*卷详细信息*选项卡中的*逻辑使用量*列已重命名为* Keystone逻辑使用量*。</block>
   <block id="5676116bf1b268637a4e6fe8dd1485ca" category="section-title">增强型资产选项卡</block>
@@ -2294,7 +2287,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="5b7c6725d8b710448bbafba8cd2d8b2d" category="sidebar">查看多个订阅中的资产</block>
   <block id="2be8bdf6afad72e1374d8e9f15f013b7" category="sidebar">查看您的服务请求</block>
   <block id="3f775298ba0cfa10a0ca4aa35ffb3451" category="sidebar">查看卷和对象存储详细信息</block>
-  <block id="4898fd0a5ee16e30d54e5fbe3aa21539" category="paragraph">首先，转到 BlueXP 左侧导航菜单中的 *存储 &gt; Keystone*。要了解更多信息，请参阅 <block ref="5a609c392d8730053e3d7fc9f1d0ffab" category="inline-link-macro-rx"></block>。</block>
   <block id="1ed44c5a16415a7d9d45f3042a5ab4d6" category="inline-link-macro">了解 Keystone 仪表板</block>
   <block id="d8bb10358d95aee9ba36f75f10ee0402" category="list-text"><block ref="d8bb10358d95aee9ba36f75f10ee0402" category="inline-link-macro-rx"></block></block>
   <block id="f9aa2dce9983bf50b4dea33bd009613c" category="doc">开始使用 Keystone 仪表板</block>
@@ -2524,7 +2516,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="4b74c9be479e8905d4e8f29ad9f1af7c" category="paragraph"><block ref="52273d64c65862ef424a47885fe81b01" category="inline-image-macro-rx" type="image"></block> *无消耗*：没有记录性能服务级别的承诺容量的容量使用情况。<block ref="d72ea1f055275eb6c806c044808270ee" category="inline-image-macro-rx" type="image"></block> *正常*：消耗正常。<block ref="26b60b3bc680636be1bff71d9158314a" category="inline-image-macro-rx" type="image"></block> *高*：最大消耗，即使用量即将达到承诺容量的 100％ 或更多。<block ref="25206057152159ddc0d0e53262070870" category="inline-image-macro-rx" type="image"></block> *突发*：用量在突发限制范围内。突发用量是指超出性能服务等级 100% 承诺容量的用量，且在约定的突发用量限制范围内。<block ref="49884f5051327fb7a920e2ee64178452" category="inline-image-macro-rx" type="image"></block> *超过突发限制*：表示消耗量超过约定的突发限制。</block>
   <block id="b4bfc97b4a6664c07d3cb265b1f77f66" category="admonition">QoS 策略不适用于 Keystone 版本 3 (v3)。</block>
   <block id="288b4e42b32faccce4a2d55e94593bd9" category="admonition">QoS 策略不适用于 Keystone 版本 3。</block>
-  <block id="456bce9e2eb71173431186ef514e346e" category="section-title">2025年6月30日</block>
   <block id="b0ff511b21770d18a844437708e370f3" category="inline-link-macro">v3 的 Keystone STaaS 服务</block>
   <block id="cbe56bacc5be238a1afeadbbf1210e9d" category="paragraph">您现在可以订阅 Keystone 版本 3 (v3)，这是 NetApp Keystone STaaS 产品的最新版本。此版本引入了多项增强功能，包括简化的性能服务级别、额外的突发容量选项以及灵活的计费频率。这些改进简化了存储解决方案的管理、优化和扩展。要了解更多信息，请参阅 <block ref="b4f947544b8e7d98521ee012686e2640" category="inline-link-macro-rx"></block>。</block>
   <block id="ee326973c25ecfa958c9bcb665f7c905" category="list-text">来自“容量趋势”选项卡的消耗和累计突发使用数据。</block>
@@ -2537,4 +2528,20 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="66fb046e2c5f18ee0925adc05ac14d1f" category="sidebar">Keystone STaaS SLO</block>
   <block id="af7cd0085fe6b7c0200fe4c5a018cbdc" category="sidebar">Keystone STaaS v2 概念</block>
   <block id="cfa9db7c89ff68cb147c3dad7e8b0b59" category="section-title">Keystone 版本 3 (v3) 发布</block>
+  <block id="e4662d7ea2c66dc53eb2e68d2bceffac" category="paragraph">首先，转到 BlueXP 左侧导航菜单中的 *存储 &gt; Keystone*。要了解更多信息，请参阅 <block ref="d1eddf69542d0beadf02459455377203" category="inline-link-macro-rx"></block>。</block>
+  <block id="b77e8ec0a3425747f32b3dbc303adecb" category="section-title">2025年6月30日</block>
+  <block id="273397c35cb726b0eb4cc33e4cf912da" category="section-title">2025年6月19日</block>
+  <block id="71eeb52ffaba4c6613b9365a34bd8e71" category="section-title">2025年1月8日</block>
+  <block id="e3f867c1e04dce86520c139a0ae60b18" category="section-title">2024年12月12日</block>
+  <block id="47ce8cbac679bab0474690083f967486" category="section-title">2024年11月21日</block>
+  <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024年11月11日</block>
+  <block id="ea20f074fbafdf3f3dab344dbef51b10" category="section-title">2024年7月10日</block>
+  <block id="032f76ed9b6cf8701fd026535eb70ffc" category="section-title">2024年6月27日</block>
+  <block id="a0fddfafeaadc4d32eb33ea13f162dd4" category="section-title">2024年5月29日</block>
+  <block id="55dbbb1b9d8c3fb56ba5e847c7dd506c" category="section-title">2024年5月9日</block>
+  <block id="83c0915932deaf70b0873b6eb47c3a28" category="section-title">2024年3月28日</block>
+  <block id="ee994369582acbd0aa1a2c594329160a" category="section-title">2024年2月29日</block>
+  <block id="96e33a5d1e2356ba12a5de62a859d567" category="section-title">2024年2月13日</block>
+  <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">2024年1月11日</block>
+  <block id="8017dc46d55f13a6a86439ecb091248d" category="section-title">2023年12月15日</block>
 </blocks>
