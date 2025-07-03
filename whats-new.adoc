@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: release-notes/whats-new.html 
+permalink: whats-new.html 
 keywords: 'new features, release notes, enhancements, what"s new' 
 summary: NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能。 
 ---
@@ -10,7 +10,7 @@ summary: NetApp在每个Keystone STaaS服务版本中都为您提供新增和增
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -24,7 +24,7 @@ NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能
 
 === Keystone 版本 3 (v3) 发布
 
-您现在可以订阅 Keystone 版本 3 (v3)，这是 NetApp Keystone STaaS 产品的最新版本。此版本引入了多项增强功能，包括简化的性能服务级别、额外的突发容量选项以及灵活的计费频率。这些改进简化了存储解决方案的管理、优化和扩展。要了解更多信息，请参阅 link:../concepts/metrics.html["v3 的 Keystone STaaS 服务"]。
+您现在可以订阅 Keystone 版本 3 (v3)，这是 NetApp Keystone STaaS 产品的最新版本。此版本引入了多项增强功能，包括简化的性能服务级别、额外的突发容量选项以及灵活的计费频率。这些改进简化了存储解决方案的管理、优化和扩展。要了解更多信息，请参阅 link:./concepts/metrics.html["v3 的 Keystone STaaS 服务"]。
 
 
 
@@ -53,7 +53,7 @@ NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能
 
 === 增加了每日累积数据使用量查看选项
 
-现在、您可以通过单击显示发票数据的条形来以图形或表格形式查看每月或每季度计费期间的每日累积突发数据使用量。要了解更多信息，请参阅 link:../integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["查看每日累积突发数据使用量"]。
+现在、您可以通过单击显示发票数据的条形来以图形或表格形式查看每月或每季度计费期间的每日累积突发数据使用量。要了解更多信息，请参阅 link:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["查看每日累积突发数据使用量"]。
 
 
 
@@ -69,13 +69,13 @@ NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能
 
 === 增强型资产选项卡
 
-现在，*Keystone订阅*屏幕中的*Assets*选项卡有两个新的子选项卡：* ONTAP *和* StorageGRID *。这些子选项卡可根据您的订阅提供有关ONTAP的集群级详细见解以及有关StorageGRID的网格级信息。要了解更多信息，请参阅 link:../integrations/assets-tab.html["资产选项卡"^]。
+现在，*Keystone订阅*屏幕中的*Assets*选项卡有两个新的子选项卡：* ONTAP *和* StorageGRID *。这些子选项卡可根据您的订阅提供有关ONTAP的集群级详细见解以及有关StorageGRID的网格级信息。要了解更多信息，请参阅 link:./integrations/assets-tab.html["资产选项卡"^]。
 
 
 
 === 新增隐藏/显示列选项
 
-现在，*Volumes & Objects*中的*Volume Details*选项卡包含*Hide/Show Column*选项。使用此选项可以选择或取消选择列、以便根据您的首选项自定义卷的表格列表。要了解更多信息，请参阅 link:../integrations/volumes-objects-tab.html["卷和对象选项卡()"^]。
+现在，*Volumes & Objects*中的*Volume Details*选项卡包含*Hide/Show Column*选项。使用此选项可以选择或取消选择列、以便根据您的首选项自定义卷的表格列表。要了解更多信息，请参阅 link:./integrations/volumes-objects-tab.html["卷和对象选项卡()"^]。
 
 
 
@@ -85,7 +85,7 @@ NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能
 
 === 增加了开票应计突发量
 
-现在，如果您选择了季度计费期，则可以通过*开票应计突发*选项按季度查看累积突发使用情况数据。要了解更多信息，请参阅 link:../integrations/consumption-tab.html#view-accrued-burst["查看已开票的应计突发量"^]。
+现在，如果您选择了季度计费期，则可以通过*开票应计突发*选项按季度查看累积突发使用情况数据。要了解更多信息，请参阅 link:./integrations/consumption-tab.html#view-accrued-burst["查看已开票的应计突发量"^]。
 
 
 
@@ -107,7 +107,7 @@ NetApp在每个Keystone STaaS服务版本中都为您提供新增和增强功能
 
 === 增强了报告生成功能
 
-现在、您可以使用Digital Advisor中的"报告"功能生成整合报告以查看Keystone数据的详细信息。要了解更多信息，请参阅link:../integrations/options.html#generate-consolidated-report-from-digital-advisor["生成整合报告"^] 。
+现在、您可以使用Digital Advisor中的"报告"功能生成整合报告以查看Keystone数据的详细信息。要了解更多信息，请参阅link:./integrations/options.html#generate-consolidated-report-from-digital-advisor["生成整合报告"^] 。
 
 
 
@@ -163,7 +163,7 @@ Keystone订阅*屏幕已更新，可在所有选项卡中显示选定的订阅�
 
 === 用于短期突发的放大功能
 
-现在，“*容量趋势*”选项卡包含一个放大功能，用于在使用情况图表中查看短期突发的详细信息。有关详细信息，请参见 link:../integrations/consumption-tab.html["容量趋势选项卡"^]。
+现在，“*容量趋势*”选项卡包含一个放大功能，用于在使用情况图表中查看短期突发的详细信息。有关详细信息，请参见 link:./integrations/consumption-tab.html["容量趋势选项卡"^]。
 
 
 
@@ -207,14 +207,14 @@ Keystone订阅*屏幕已更新，可在所有选项卡中显示选定的订阅�
 
 === 在"Volume Details"(卷详细信息)选项卡中显示对QoS策略合规性的改进
 
-现在，可以通过*卷和对象*选项卡中的*卷详细信息*选项卡更好地了解服务质量(QoS)策略合规性。以前称为*AQOs*的列已重命名为*符合*，表示QoS策略是否符合。此外，还添加了一个新列*QoS策略类型*，用于指定策略是固定策略还是自适应策略。如果这两种情况都不适用、则该列将显示_not available _。有关详细信息，请参见 link:../integrations/volumes-objects-tab.html["卷和对象选项卡()"^]。
+现在，可以通过*卷和对象*选项卡中的*卷详细信息*选项卡更好地了解服务质量(QoS)策略合规性。以前称为*AQOs*的列已重命名为*符合*，表示QoS策略是否符合。此外，还添加了一个新列*QoS策略类型*，用于指定策略是固定策略还是自适应策略。如果这两种情况都不适用、则该列将显示_not available _。有关详细信息，请参见 link:./integrations/volumes-objects-tab.html["卷和对象选项卡()"^]。
 
 
 
 === 卷摘要选项卡中显示新列和简化的订阅
 
 * 现在，“*卷和对象*”选项卡中的“*卷摘要*”选项卡包含一个标题为“*受保护*”的新列。此列提供与您订阅的服务级别关联的受保护卷的计数。如果单击受保护卷的数量，则会转到*卷详细信息*选项卡，在此可以查看经过筛选的受保护卷列表。
-* *卷摘要*选项卡已更新，仅显示基础订阅，不包括附加服务。有关详细信息，请参见 link:../integrations/volumes-objects-tab.html["卷和对象选项卡()"^]。
+* *卷摘要*选项卡已更新，仅显示基础订阅，不包括附加服务。有关详细信息，请参见 link:./integrations/volumes-objects-tab.html["卷和对象选项卡()"^]。
 
 
 
@@ -243,19 +243,19 @@ Keystone订阅*屏幕已更新，可在所有选项卡中显示选定的订阅�
 
 === 新增了"Assets"(资产)选项卡
 
-Keystone订阅*屏幕现在包括*Assets*选项卡。此新选项卡可根据您的订阅提供集群级别的信息。有关详细信息，请参见 link:../integrations/assets-tab.html["资产选项卡"^]。
+Keystone订阅*屏幕现在包括*Assets*选项卡。此新选项卡可根据您的订阅提供集群级别的信息。有关详细信息，请参见 link:./integrations/assets-tab.html["资产选项卡"^]。
 
 
 
 === 改进了卷和对象选项卡
 
-为使ONTAP系统卷更加清晰，在*Volumes*选项卡中添加了两个新的选项卡按钮：*卷摘要*和*卷详细信息*。"*卷摘要*"选项卡提供与您订阅的服务级别关联的卷的总数，包括其AQoS合规状态和容量信息。“*卷详细信息*”选项卡列出了所有卷及其具体信息。有关详细信息，请参见 link:../integrations/volumes-objects-tab.html["卷和对象选项卡()"^]。
+为使ONTAP系统卷更加清晰，在*Volumes*选项卡中添加了两个新的选项卡按钮：*卷摘要*和*卷详细信息*。"*卷摘要*"选项卡提供与您订阅的服务级别关联的卷的总数，包括其AQoS合规状态和容量信息。“*卷详细信息*”选项卡列出了所有卷及其具体信息。有关详细信息，请参见 link:./integrations/volumes-objects-tab.html["卷和对象选项卡()"^]。
 
 
 
 === 增强了Digital Advisor的搜索体验
 
-现在，*Digital Advisor屏幕上的搜索参数包括Keystone订阅号码和为Keystone订阅创建的监视列表。您可以输入订阅编号或监视列表名称的前三个字符。有关详细信息，请参见 link:../integrations/keystone-aiq.html["在 Active IQ Digital Advisor 上查看 Keystone 仪表板"^]。
+现在，*Digital Advisor屏幕上的搜索参数包括Keystone订阅号码和为Keystone订阅创建的监视列表。您可以输入订阅编号或监视列表名称的前三个字符。有关详细信息，请参见 link:./integrations/keystone-aiq.html["在 Active IQ Digital Advisor 上查看 Keystone 仪表板"^]。
 
 
 
@@ -281,7 +281,7 @@ Keystone订阅*屏幕现在包括*Assets*选项卡。此新选项卡可根据您
 
 === 针对累积突发返回的发票数据
 
-现在，*容量趋势*选项卡中的*应计突发*标签已修改为*已发票应计突发*。选择此选项可查看计费累积突发数据的月度图表。有关详细信息，请参见 link:../integrations/consumption-tab.html#view-accrued-burst["查看已开票的应计突发量"^]。
+现在，*容量趋势*选项卡中的*应计突发*标签已修改为*已发票应计突发*。选择此选项可查看计费累积突发数据的月度图表。有关详细信息，请参见 link:./integrations/consumption-tab.html#view-accrued-burst["查看已开票的应计突发量"^]。
 
 
 
@@ -297,10 +297,10 @@ Keystone订阅*屏幕现在包括*Assets*选项卡。此新选项卡可根据您
 
 === 可以按监视列表进行搜索
 
-Digital Advisor中对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息，请参见 link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["按Keystone监视列表搜索"^]。
+Digital Advisor中对监视列表的支持已扩展到包括Keystone系统。现在、您可以通过使用监视列表进行搜索来查看多个客户的订阅详细信息。有关在Keystone STaaS中使用监视列表的详细信息，请参见 link:./integrations/keystone-aiq.html#search-by-keystone-watchlists["按Keystone监视列表搜索"^]。
 
 
 
 === 转换为UTC时区的日期
 
-Digital Advisor 的 *Keystone Subscriptions* 屏幕选项卡上返回的数据以 UTC 时间（服务器时区）显示。输入查询日期时、系统会自动将其视为UTC时间。有关详细信息，请参见 link:../integrations/keystone-aiq.html["Keystone订阅信息板和报告"^]。
+Digital Advisor 的 *Keystone Subscriptions* 屏幕选项卡上返回的数据以 UTC 时间（服务器时区）显示。输入查询日期时、系统会自动将其视为UTC时间。有关详细信息，请参见 link:./integrations/keystone-aiq.html["Keystone订阅信息板和报告"^]。
