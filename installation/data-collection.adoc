@@ -14,7 +14,7 @@ summary: Keystone收集ONTAP和StorageGRID订阅的配置、状态和使用情�
 
 
 [role="lead"]
-Keystone收集您的Keystone ONTAP和Keystone StorageGRID订阅的配置、状态和使用情况信息。如果在Keystone收集器中启用了此选项、则它也只能收集ONTAP 的性能数据。
+Keystone会从Keystone ONTAP和Keystone StorageGRID订阅中收集配置、状态和使用情况信息，以及从托管Keystone Collector 的虚拟机 (VM) 中收集遥测数据。如果在Keystone Collector 中启用了此选项，则它只能收集ONTAP的性能数据。
 
 
 
@@ -310,6 +310,56 @@ Keystone收集您的Keystone ONTAP和Keystone StorageGRID订阅的配置、状�
 * BucketName
 * 站点名称
 * 实例/NodeName
+
+
+====
+
+
+== 遥测数据收集
+
+.<strong>从Keystone Collector VM 收集的遥测数据：了解详情</strong>
+[%collapsible]
+====
+以下列表是针对Keystone系统收集的遥测数据的代表性样本：
+
+* 系统信息
++
+** 操作系统名称
+** 操作系统版本
+** 操作系统 ID
+** 系统主机名
+** 系统默认IP地址
+
+
+* 系统资源使用情况
++
+** 系统正常运行时间
+** CPU 核心数
+** 系统负载（1分钟、5分钟、15分钟）
+** 总内存
+** 释放内存
+** 可用内存
+** 共享内存
+** 缓冲存储器
+** 缓存内存
+** 总掉期
+** 免费掉期
+** 缓存交换
+** 磁盘文件系统名称
+** 磁盘大小
+** 使用的磁盘
+** 磁盘可用
+** 磁盘使用率
+** 磁盘挂载点
+
+
+* 已安装的软件包
+* 收集器配置
+* 服务日志
++
+** 来自Keystone服务的服务日志
+
+
 
 
 ====
