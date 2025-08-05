@@ -54,14 +54,14 @@ image:dark-site-generate-collector-keypair-1.png["生成收集器密件压缩选
 
 . 返回TUI的主屏幕并验证*服务状态*信息、以确保Keystone收集器运行状况良好。系统应显示这些服务处于*整体：运行状况良好*状态。等待10分钟、如果在此期间后整体状态仍然不正常、请查看先前的配置步骤并联系NetApp支持团队。
 +
-image:dark-site-overall-healthy-1.png["服务状态"]
+image:dark-site-overall-healthy-2.png["服务状态"]
 
 . 通过在主屏幕上选择*退出到Shell*选项退出Keystone收集器管理TUI。
 . 检索生成的公共密钥：
 +
 `~/collector-public.pem`
 
-. 将包含此文件的电子邮件发送到keystone.services@NetApp．com。
+. 将此文件通过电子邮件发送至 ng-keystone-secure-site-upload@netapp.com（用于安全的非 USPS 站点）或 ng-keystone-secure-site-usps-upload@netapp.com（用于安全的 USPS 站点）。
 
 
 
@@ -73,7 +73,7 @@ image:dark-site-overall-healthy-1.png["服务状态"]
 按照以下步骤生成使用情况报告：
 
 . 转到Keystone收集器TUI主屏幕上的*导出使用情况*。
-. 收集文件并将其发送到keystone.services@NetApp．com。
+. 收集文件并将其发送至 ng-keystone-secure-site-upload@netapp.com（用于安全的非 USPS 站点）或发送至 ng-keystone-secure-site-usps-upload@netapp.com（用于安全的 USPS 站点）。
 +
 Keystone收集器会生成一个清除文件和一个加密文件、这些文件应手动发送到NetApp。清除文件报告包含以下详细信息、可由客户验证。
 

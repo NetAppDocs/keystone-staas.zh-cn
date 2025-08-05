@@ -36,7 +36,7 @@ summary: 修改您的 Keystone 订阅以通过 BlueXP 更改相关性能服务�
 NOTE: 或者，您可以通过单击订阅详细信息部分中的“*管理订阅*”，然后选择“*修改*”来访问“*修改订阅*”页面。
 
 +
-image:bxp-modify-subscription.png["显示订阅列表中修改选项的屏幕截图"]
+image:bxp-modify-subscription-1.png["显示订阅列表中修改选项的屏幕截图"]
 
 . 单击“编辑容量”以修改性能服务级别的承诺容量，提供必要的详细信息，然后单击“提交”。
 +

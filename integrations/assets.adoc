@@ -50,7 +50,7 @@ TIP: 您可以使用列选择器自定义表格image:column-selector.png["列选
 . 从 BlueXP 左侧导航菜单中，选择 *存储 > Keystone > 资产*。
 . 选择“*集群中的卷*”选项卡。
 +
-image:bxp-volumes-clusters-multiple-sub.png["多个订阅的集群中的卷的屏幕截图"]
+image:bxp-volumes-clusters-multiple-sub-1.png["多个订阅的集群中的卷的屏幕截图"]
 
 +
 您可以查看 Keystone 订阅中集群中所有卷的详细信息，包括卷名称、订阅号、节点序列号、QoS 策略合规性、集群名称、主机名和性能服务级别。您可以监控已配置容量、逻辑和物理利用率以及冷数据。您还可以概览以下内容：

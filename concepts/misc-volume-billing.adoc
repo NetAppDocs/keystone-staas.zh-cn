@@ -14,7 +14,7 @@ summary: '了解Keystone针对特定配置(包括克隆卷、高级数据保护�
 
 
 [role="lead"]
-了解 Keystone 版本 3 (v3) 中特定配置的计费方式，可以帮助您优化服务使用情况并管理成本。这些配置包括克隆卷、高级数据保护、临时卷、SnapMirror 目标、LUN 以及系统/根卷。
+了解版本 3 (v3) 中特定配置的Keystone计费可以帮助您优化服务使用情况并管理成本。配置包括克隆卷、临时卷、 SnapMirror目标、LUN 和系统/根卷。
 
 
 
@@ -28,19 +28,6 @@ summary: '了解Keystone针对特定配置(包括克隆卷、高级数据保护�
 * 克隆卷没有 24 小时的宽限期。仅考虑克隆卷的大小。
 * 一旦克隆卷超过父卷物理大小的10%、克隆将作为标准卷(逻辑使用容量)计费。
 
-
-
-
-== 高级数据保护计费
-
-高级数据保护使用NetApp MetroCluster在两个物理隔离的集群之间镜像数据。对于MetroCluster 镜像聚合、数据写入两次、每个集群一次。Keystone服务会单独为每一方的消费收取费用、从而产生两个相同的消费记录。附加费用将应用于订阅中的所有容量、而不管数据是位于源、还是镜像或未镜像数据。
-
-如果您通过ONTAP System Manager (System Manager)或Active IQ Unified Manager (Unified Manager)监控集群、则可能会发现这些工具上报告的使用量与Keystone上报告的使用量之间存在差异。System Manager和Unified Manager不会报告镜像(远程)集群上的卷、在这样做时、会报告Keystone服务报告的一半使用指标。
-
-.示例
-站点A和站点B在MetroCluster 配置中设置。当用户在站点 A 中创建一个 10 TB 的卷时，会在站点 B 中创建一个 10 TB 的相同卷Keystone可确定每个站点的10 TB使用量、总增加量为20 TB。System Manager和Unified Manager会报告在站点A中创建的10 TB卷、但不会在站点B中报告10 TB卷
-
-此外、在具有高级数据保护的Keystone系统上创建的所有卷都将计入高级数据保护的使用量、而不管这些卷是否已镜像。
 
 
 

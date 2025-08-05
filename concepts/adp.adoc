@@ -14,10 +14,10 @@ summary: 使用高级数据保护附加服务可确保为任务关键型工作�
 
 
 [role="lead"]
-您可以在订阅Keystone STaaS的同时订阅高级数据保护附加服务。此附加服务利用NetApp MetroCluster技术、确保在恢复点目标(RPO)为0的情况下为任务关键型工作负载提供高效的数据保护。
+您可以通过Keystone STaaS 订阅来订阅高级数据保护附加服务。此附加服务使用NetApp MetroCluster技术来确保对您的关键任务工作负载进行有效的数据保护，恢复点目标 (RPO) 为 0。
 
 
-NOTE: 用于文件和块存储的Keystone STaaS标准服务可利用SnapMirror、SnapVault 和Snapshot等NetApp技术提供默认数据保护服务。
+NOTE: Keystone STaaS 文件和块存储标准服务利用NetApp技术（例如SnapMirror、 SnapVault和 Snapshot）提供默认数据保护服务。
 
 有关标准服务和云服务的信息、请参见 link:../concepts/supported-storage-services.html["Keystone STaaS服务"]。
 
