@@ -36,6 +36,8 @@ summary: NetApp在每个Keystone STaaS服务版本中都为您提供新增和增
 
 您现在可以订阅Keystone版本 3 (v3)，这是NetApp Keystone STaaS 产品的最新版本。此版本引入了多项增强功能，包括简化的性能服务级别、额外的突发容量选项和灵活的计费频率。这些改进简化了存储解决方案的管理、优化和扩展。要了解更多信息，请参阅link:https://docs.netapp.com/us-en/keystone-staas/concepts/metrics.html["v3 的 Keystone STaaS 服务"]。
 
+您可以联系Keystone支持团队订阅Keystone版本 3 (v3)。有关详细信息，请参阅link:https://docs.netapp.com/us-en/keystone-staas/concepts/gssc.html["获取Keystone帮助"]。
+
 
 
 == 2025年6月19日

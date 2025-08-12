@@ -14,7 +14,7 @@ summary: 服务级别的容量要求因Keystone STaaS订阅支持的文件、块
 
 
 [role="lead"]
-Keystone STaaS 性能服务级别的版本 3 (v3) 的容量要求在 Keystone STaaS 订阅支持的统一、块优化、对象或云存储产品之间有所不同。
+Keystone STaaS 性能服务级别的容量要求在Keystone STaaS 订阅支持的统一、块优化、对象或云存储产品之间有所不同。
 
 
 
