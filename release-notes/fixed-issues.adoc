@@ -22,6 +22,15 @@ summary: 在NetApp Keystone STaaS服务的先前版本中发现的问题已在�
 
 
  a| 
+Digital Advisor仪表板中配置了MetroCluster配置的订阅的消费趋势图中缺少突发阈值线，显示不正确的 *超出突发限制* 状态。
+ a| 
+已修复
+ a| 
+2025年8月28日
+
+
+
+ a| 
 在“*Assets*”选项卡中，StorageGRID 的资产不可见。
  a| 
 已修复

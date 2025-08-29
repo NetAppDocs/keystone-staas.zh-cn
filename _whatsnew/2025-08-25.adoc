@@ -1,0 +1,15 @@
+= 使用新列增强逻辑使用情况跟踪
+:allow-uri-read: 
+
+
+
+
+=== 使用新列增强逻辑使用情况跟踪
+
+添加了新列“总占用空间”，以增强对FabricPool卷的Keystone消耗跟踪：
+
+* * BlueXP中的Keystone仪表板 *：您可以在 *Assets* 选项卡中的 *Volumes in clusters* 选项卡中看到 *Total footprint* 列。
+* *Digital Advisor*：您可以在 *卷和对象* 选项卡中的 *卷详细信息* 选项卡中看到 *总足迹* 列。
+
+
+此列显示使用FabricPool分层的卷的总逻辑占用空间，包括性能层和冷层的数据，因此您可以准确计算Keystone消耗。

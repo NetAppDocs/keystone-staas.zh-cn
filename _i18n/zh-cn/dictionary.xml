@@ -919,7 +919,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="af17398e2b948fd6715e1bdf5857d48e" category="paragraph">TCP 7777</block>
   <block id="6178fec7016b28af42fcd47c64d4da81" category="list-text">您可以将子系统包含在每日和每周AutoSupport包中、以确保为Keystone精确收集数据。有关AutoSupport子系统的信息、请参见<block ref="5cc209367930dbf9b2a8c95126c2b0b9" category="inline-link-rx"></block>。</block>
   <block id="001d654c5d010b25a953ace0dce0f14d" category="list-text">修改日志内容。</block>
-  <block id="a35e5b3497716ca18010e0be265afb3b" category="list-text">运行以下命令以修改每日日志内容：</block>
   <block id="9060a638913c522309cdbab6919eef2b" category="list-text">运行以下命令以修改每周日志内容：</block>
   <block id="7186d4f0f71f9b706a05940b8abcacd0" category="cell">问题描述</block>
   <block id="c8cfdcd3f2e7ef01cbd8180e33c9bf8d" category="summary">Keystone收集器包括一些安全功能、用于监控Keystone系统的性能和使用情况指标、并将其配置为使用增强安全性的配置。</block>
@@ -1608,7 +1607,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="3b70df30112e474cb2dcc361a3e3f76f" category="paragraph">您将看到按网格和节点标识符、站点信息、硬件规格和容量详细信息分类的网格详细信息、这些信息有助于监控和管理StorageGRID基础架构中的节点。</block>
   <block id="a5c5b30c416c34eb8d2fb09f3946721b" category="inline-image-macro">显示StorageGRID网格级信息的屏幕截图</block>
   <block id="dcaaab8361575caaad35a500d6864bd1" category="paragraph"><block ref="dcaaab8361575caaad35a500d6864bd1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1cedef25ccb6885eb8bfdc7660435962" category="paragraph">可以使用*隐藏/显示列*来添加或删除表中显示的列。默认情况下，除*Department*列外，所有列都处于选中状态。您可以选择或取消选择任何列，包括*Department*列，您的首选项将被保存供以后使用。下载CSV报告时，如果选中，将包括*部门*列详细信息，而其他列将显示，而不管其在表中的选择状态如何。</block>
   <block id="4e80b9aaf481494b7698c02bcd4558ab" category="section-title">已重命名逻辑使用量列</block>
   <block id="4067362b8a27e9feb45b3dad3b225588" category="paragraph">现在，*卷和对象*中的*卷详细信息*选项卡中的*逻辑使用量*列已重命名为* Keystone逻辑使用量*。</block>
   <block id="5676116bf1b268637a4e6fe8dd1485ca" category="section-title">增强型资产选项卡</block>
@@ -2325,4 +2323,15 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="845131517a9dd7f41b73102338bac133" category="list-text">*逻辑容量*：它是以下内容的总和：</block>
   <block id="0649df2b2e490a85273ef7528dbeb91a" category="list-text">*身体能力*：它是以下各项的总和：</block>
   <block id="eb80e5c63a486d3698858f87d747e461" category="paragraph">您可以联系Keystone支持团队订阅Keystone版本 3 (v3)。有关详细信息，请参阅<block ref="ba5860e7066469b734064f44e703aa5c" category="inline-link-macro-rx"></block>。</block>
+  <block id="7e8fe67b005603b496012796735f2d36" category="doc">使用新列增强逻辑使用情况跟踪</block>
+  <block id="b79d3069a7b9ca9140a5c9b1bf2f8d81" category="paragraph">添加了新列“总占用空间”，以增强对FabricPool卷的Keystone消耗跟踪：</block>
+  <block id="729a65ff91860ad65935d125d788f643" category="list-text">* BlueXP中的Keystone仪表板 *：您可以在 *Assets* 选项卡中的 *Volumes in clusters* 选项卡中看到 *Total footprint* 列。</block>
+  <block id="61f4e69294ec080e5cb7bce32f2f8b99" category="list-text">*Digital Advisor*：您可以在 *卷和对象* 选项卡中的 *卷详细信息* 选项卡中看到 *总足迹* 列。</block>
+  <block id="610355e82f0e7cf01bdfa1df13985f3f" category="paragraph">此列显示使用FabricPool分层的卷的总逻辑占用空间，包括性能层和冷层的数据，因此您可以准确计算Keystone消耗。</block>
+  <block id="bff820430728f0b409c26641dc8ddd41" category="list-text">对于ONTAP 9.16.1 及更高版本，运行以下命令修改每日日志内容：</block>
+  <block id="63af57ffe551ed93c0576ba741b36e47" category="list-text">对于早期版本的ONTAP ，运行以下命令来修改每日日志内容：</block>
+  <block id="8e65b1fa60d467c8850acfb3f1d1b8b9" category="paragraph">您可以使用*隐藏/显示列*来添加或删除表中显示的列。默认情况下，表格显示您之前保存的列首选项。新添加的列（例如“*部门*”或“*总足迹*”列）默认是隐藏的，应手动选择才能显示在表格中。您可以选择或取消选择任何列，并且您的偏好设置将被保存以供日后使用。下载 CSV 报告时，无论您的显示偏好如何，所有可用列都会包含在导出中。</block>
+  <block id="56a9fe5a3d171069cb125956f6186c86" category="paragraph">Digital Advisor仪表板中配置了MetroCluster配置的订阅的消费趋势图中缺少突发阈值线，显示不正确的 *超出突发限制* 状态。</block>
+  <block id="8d317448388884cae15b07e53f9c9fbc" category="paragraph">2025年8月28日</block>
+  <block id="b8d454c9414aa4b52ad019b0311711b5" category="section-title">2025年8月28日</block>
 </blocks>
