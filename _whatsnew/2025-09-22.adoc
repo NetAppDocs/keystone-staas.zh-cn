@@ -1,0 +1,21 @@
+= 增加警报监控
+:allow-uri-read: 
+
+
+
+
+=== 增加警报监控
+
+BlueXP中的Keystone仪表板现在包括一个“监控”选项卡，用于管理您订阅中的警报和监控器。此新选项卡使您能够：
+
+* 查看和解决活动警报，包括系统生成的和用户定义的容量使用情况和订阅到期警报。
+* 创建警报监视器来跟踪容量使用情况和订阅到期事件。
+
+
+要了解更多信息，请参阅link:https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alerts.html["查看和管理警报和监视器"]。
+
+
+
+=== 简化的性能服务级别查看
+
+您可以在“*订阅*”选项卡中查看性能服务级别信息，现在该信息已从单独的选项卡移至可扩展视图。单击“到期日期”列旁边的向下箭头可查看每个订阅的到期日期。要了解更多信息，请参阅link:https://docs.netapp.com/us-en/keystone-staas/integrations/subscriptions-tab.html["查看您的 Keystone 订阅的详细信息"]。

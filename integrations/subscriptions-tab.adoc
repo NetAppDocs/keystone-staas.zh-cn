@@ -20,18 +20,15 @@ summary: '要了解有关Keystone订阅的详细信息、您可以从"订阅"选
 ====
 .BlueXP
 --
-BlueXP 中的“订阅”选项卡分为两个部分：“订阅”和“性能服务级别”。每个部分都提供具体的洞察信息，帮助您管理和监控 Keystone 订阅。要查看订阅的详细信息，请按以下步骤操作：
+要查看订阅的详细信息，请按照以下步骤操作：
 
 .步骤
 . 从 BlueXP 左侧导航菜单中，转到 *存储 > Keystone > 订阅*。
 +
-image:bxp-subscription-list-1.png["查看订阅标签详情"]
+image:bxp-subscription-list-2.png["查看订阅标签详情"]
 
 +
-您可以看到容量使用情况、订阅到期状态以及各个订阅的Keystone版本等关键指标。要了解更多信息，请参阅link:../integrations/keystone-bluexp.html["BlueXP 中的 Keystone 仪表板"]。
-
-+
-您可以从表中看到以下详细信息：
+您会看到容量使用情况、订阅到期状态和未解决的警报等关键指标。您可以从表中看到以下详细信息：
 
 +
 ** *订阅编号*：NetApp 分配的 Keystone 订阅的订阅编号。
@@ -45,19 +42,11 @@ image:bxp-subscription-list-1.png["查看订阅标签详情"]
 ** *订阅到期天数*：订阅到期前剩余的天数。
 +
 
+NOTE: 您可以单击“到期日期”列旁边的向下箭头来查看每个订阅的性能服务级别信息。这显示了详细的容量信息，包括当前使用情况、承诺容量、预配置容量、突发容量和可用容量。
+
++
+
 TIP: 您可以使用列选择器自定义表中显示的列image:column-selector.png["列选择器图标"]图标。对于某些字段和列、您可能会看到追加信息有关数据的信息或警告图标以及工具提示。
-
-
-
-. 您可以选择“性能服务级别”子选项卡来查看所有订阅的性能服务级别。
-+
-image:bxp-performance-levels.png["查看所有订阅的性能服务级别"]
-
-+
-** *跨订阅的性能服务级别*：显示跨订阅的性能服务级别的数量。
-** *跨订阅的配置一致性*：显示过度配置和配置不足的性能服务级别的计数。
-+
-您可以看到性能服务级别的列表，包括客户姓名、订阅号、性能服务级别类型和卷总数等关键详细信息。该表还显示受保护卷的数量、总已提交容量、已消耗容量、已配置容量、可用容量（有和无突发容量）以及累计突发容量。
 
 
 
@@ -110,5 +99,6 @@ image:icon-grey.png["灰点图标"] *无消耗*：没有记录性能服务级别
 * link:../integrations/subscription-timeline.html["查看您的订阅时间表"]
 * link:../integrations/assets-tab.html["查看您的 Keystone 订阅资产"]
 * link:../integrations/assets.html["查看 Keystone 订阅中的资产"]
+* link:../integrations/monitoring-alerts.html["查看和管理警报和监视器"]
 * link:../integrations/volumes-objects-tab.html["查看卷和对象的详细信息"]
 

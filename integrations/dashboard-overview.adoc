@@ -76,6 +76,11 @@ link:../integrations/assets-tab.html["查看与 Keystone 订阅相关的资产"]
 
 
  a| 
+link:../integrations/monitoring-alerts.html["查看和管理警报和监视器"]
+| 是 | 否 
+
+
+ a| 
 link:../integrations/modify-subscription.html["修改您的订阅"] （仅限 Keystone 管理员）
 | 是 | 否 
 

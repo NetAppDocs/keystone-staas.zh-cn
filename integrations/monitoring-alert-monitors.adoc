@@ -1,0 +1,138 @@
+---
+sidebar: sidebar 
+permalink: integrations/monitoring-alert-monitors.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp. console 
+summary: 使用“监控”选项卡查看并创建Keystone订阅的警报监控器。 
+---
+= 查看并创建Keystone订阅的警报监视器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从BlueXP中的Keystone仪表板查看和创建Keystone订阅的警报监视器。仪表板显示系统生成和用户定义的容量使用情况和订阅到期监视器。您可以创建监视器来设置阈值、选择警报严重性以及添加通知的电子邮件收件人。  Digital Advisor不提供此功能。
+
+
+
+== 查看警报监视器
+
+要查看警报监视器，请按照以下步骤操作：
+
+.步骤
+. 从BlueXP左侧导航菜单中，选择 *存储 > Keystone > 监控 > 警报监控器*。
++
+image:monitoring-alert-monitors-default-view.png["Keystone订阅警报监视器的屏幕截图"]
+
++
+您可以查看Keystone订阅中的警报监视器列表，包括监视器名称、触发通知的警报条件、严重性级别、订阅编号、性能服务级别和状态。您可以检查“创建者”列来确定警报监视器是系统生成的还是用户定义的。
+
+
+
+
+
+== 创建和管理警报监视器
+
+从*警报监视器*选项卡中，您可以创建监视器来跟踪容量使用情况和订阅到期情况。您还可以根据需要编辑、复制或删除现有监视器。
+
+[role="tabbed-block"]
+====
+.创建监视器
+--
+要创建警报监视器，请按照以下步骤操作：
+
+.步骤
+. 单击*创建监视器*按钮。
++
+出现“创建警报监视器”页面。
+
++
+image:create-alert-monitor.png["为Keystone订阅创建警报监视器的屏幕截图"]
+
+. 选择*容量使用情况*或*订阅到期*来定义监控类型。根据您的选择，请提供以下详细信息：
++
+** *一般详情*：提供警报名称并选择严重性级别。
+** *资源选择*：选择为特定订阅创建监视器。根据您选择的监控类型，填写出现的必填字段，例如容量使用情况监控器的订阅号和性能服务级别，或者订阅到期监控器的订阅号。
++
+image:resource-selection.png["容量使用情况监视器的资源选择屏幕截图"]
+
+** *条件*：设置触发警报的阈值条件。例如，当容量使用率超过指定百分比时触发警报。
+** *通知*：选择接收警报通知的用户。
+
+
+. 单击“*创建*”。
++
+创建监视器后，系统将返回到*警报监视器*页面，并在列表中以活动状态显示新的警报监视器。
+
+
+
+--
+.编辑监视器
+--
+.步骤
+. 选择要更改的警报监视器的省略号图标。
++
+image:edit-alert-monitor.png["编辑Keystone订阅警报监视器的屏幕截图"]
+
+. 选择*编辑*。
++
+出现“编辑警报监视器”页面，其中包含当前监视器配置。
+
+. 更改所需的字段。有关字段说明，请参阅link:../integrations/monitoring-alert-monitors.html#create-and-manage-alert-monitors["创建监视器"]。
++
+
+NOTE: 对于系统生成的警报监视器，您只能修改容量使用情况监视器的订阅号和性能服务级别，以及订阅到期监视器的订阅号。
+
+. 选择“保存更改”。
++
+系统将返回到*警报监视器*页面，更新后的监视器将出现在列表中。
+
+
+
+--
+.重复监视器
+--
+.步骤
+. 选择要复制的监视器的省略号图标。
+. 选择*复制*。
++
+出现“创建警报监视器”页面，其中已填写现有字段值。
+
+. 根据需要修改字段，然后单击“*创建*”。
++
+使用更新的配置创建新的警报监视器，并将其显示在“*警报监视器*”列表中。
+
+
+
+--
+.删除监视器
+--
+.步骤
+. 选择要删除的监视器的省略号图标。
+. 选择*删除*并确认删除。
++
+删除后，连接到监视器的订阅将停止接收通知。
+
++
+
+NOTE: 系统生成的监视器不能被用户删除。
+
+
+
+--
+====
+* 相关信息 *
+
+* link:../integrations/dashboard-overview.html["了解 Keystone 仪表板"]
+* link:../integrations/subscriptions-tab.html["查看您的订阅详情"]
+* link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
+* link:../integrations/consumption-tab.html["查看消费趋势"]
+* link:../integrations/subscription-timeline.html["查看您的订阅时间表"]
+* link:../integrations/assets-tab.html["查看您的 Keystone 订阅资产"]
+* link:../integrations/monitoring-alerts.html["查看和管理警报"]
+* link:../integrations/volumes-objects-tab.html["查看卷和对象的详细信息"]
+* link:../integrations/monitoring-alerts.html["查看和管理Keystone订阅的提醒"]
+
