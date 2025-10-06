@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/current-usage-tab.html 
-keywords: keystone-aiq, digital advisor keystone, current consumption tab, performance service levels, subscriptions 
+keywords: keystone-aiq, digital advisor keystone, current consumption tab, performance service levels, subscriptions, NetApp Console, Console 
 summary: 要了解您的订阅使用情况、您可以查看已使用容量、已使用容量、可用容量等。 
 ---
 = 查看 Keystone 订阅的当前消耗情况
@@ -16,14 +16,14 @@ summary: 要了解您的订阅使用情况、您可以查看已使用容量、�
 [role="lead"]
 您可以通过查看承诺容量、已消耗容量和可用容量等详细信息来深入了解订阅使用情况，并显示当前消耗状态并按性能服务级别分类。
 
-要通过 BlueXP 或 Digital Advisor 查看订阅的当前消费状态，请按照以下步骤操作：
+要通过NetApp控制台或Digital Advisor查看订阅的当前消费状态，请按照以下步骤操作：
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.NetApp控制台
 --
 .步骤
-. 从 BlueXP 左侧导航菜单中，选择 *存储 > Keystone > 订阅*。
+. 从控制台左侧导航菜单中，选择*存储> Keystone >订阅*。
 . 在表格的*订阅号*列中选择订阅号，查看当前消费情况。
 +
 您将被重定向到“*当前消耗*”选项卡。

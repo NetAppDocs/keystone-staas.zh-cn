@@ -100,8 +100,8 @@ sidebar:
         url: "/integrations/dashboard-overview.html"
       - title: 开始使用 Keystone 仪表板
         url: "/integrations/dashboard-access.html"
-      - title: BlueXP 中的 Keystone 仪表板
-        url: "/integrations/keystone-bluexp.html"
+      - title: NetApp控制台中的Keystone仪表板
+        url: "/integrations/keystone-console.html"
       - title: Digital Advisor 中的 Keystone 仪表板
         url: "/integrations/keystone-aiq.html"
       - title: 搜索数据、生成报告和查看警报

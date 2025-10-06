@@ -16,7 +16,7 @@ summary: 查看卷或对象存储级别的容量详细信息。
 [role="lead"]
 如果您想查看卷或对象存储级别的容量详细信息，您可以导航到 Digital Advisor 中的“卷和对象”选项卡。对于StorageGRID、您可以使用此选项卡读取对象存储环境中各个节点的使用情况。
 
-您可以参考 BlueXP 中的“资产”选项卡来查看这些详细信息。要查看特定 Keystone STaaS 订阅的详细信息，请参阅link:../integrations/assets-tab.html["查看与 Keystone 订阅相关的资产"] 。如果您想查看多个 Keystone 订阅的详细信息，请参阅link:../integrations/assets.html["查看 Keystone 订阅中的资产"] 。
+您可以参考NetApp控制台中的“*资产*”页面来查看这些详细信息。要查看特定Keystone STaaS 订阅的详细信息，请参阅link:../integrations/assets-tab.html["查看与 Keystone 订阅相关的资产"]。如果您想查看多个Keystone订阅的详细信息，请参阅link:../integrations/assets.html["查看 Keystone 订阅中的资产"]。
 
 
 NOTE: 此选项卡的标题因站点部署的性质而异。如果同时具有ONTAP和对象存储，则选项卡的标题将显示为*Volumes & Objects*。仅对于ONTAP，名称显示为*Volumes*。对于StorageGRID对象存储，可以看到*Objects*选项卡。

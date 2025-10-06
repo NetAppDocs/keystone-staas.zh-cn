@@ -48,7 +48,6 @@
   <block id="2dd5f36775604dad2303abf8267a2c4a" category="summary">支持的存储容量</block>
   <block id="5233633b9faaa681d96ef5c43e30bea2" category="section-title">逻辑容量</block>
   <block id="4ac938291a74f21a35352afb886d2d88" category="section-title">已提交容量</block>
-  <block id="5e4631059cd88370a28a74ba7f45c7b3" category="list-text">容量用于每个服务级别。</block>
   <block id="326cde132ee3d2c6dbda5e81887d37fd" category="section-title">已提交容量的更改</block>
   <block id="e80564e6a1386159e71203ed98662fc4" category="paragraph">在订阅期限内，您可以更改已提交的容量。但是，存在某些前提条件：</block>
   <block id="bd3fd623256db562bebda3e697d43452" category="inline-link-macro">容量减少</block>
@@ -181,7 +180,6 @@
   <block id="72a2e26ee3dd7a4431c7b48558a4e647" category="paragraph">您应提供已连接到两个单独的受保护电路且具有足够C13插座的配电单元(PDU)。在客户运营的产品中，在某些情况下，需要 C19 网点。在NetApp运营的产品中、NetApp或客户均可根据要求提供PDU。</block>
   <block id="9696806b0bc121063e619b6f0922f330" category="paragraph">根据客户要求和使用的存储控制器、NetApp可以在客户站点提供10 GB、40 GB和100 GB连接。</block>
   <block id="f208065131ee7ec38a881083b91c06e2" category="cell">FC和iSCSI</block>
-  <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="sidebar">BlueXP</block>
   <block id="2d0539451bff9f553647efc300f001de" category="section-title">正在生成服务请求</block>
   <block id="ec48441169568deaa659297bc5ea9f6c" category="paragraph">在入职期间、如果您获得了用于访问和使用NetApp Keystone ServiceNow的凭据、则可以使用此门户为您的Keystone订阅相关的问题生成服务请求：</block>
   <block id="ce79b37185c18b2eba95931a0b15de7a" category="inline-link-macro">生成并收集支持包</block>
@@ -827,7 +825,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="0031be5085bbcd93406b2aa424a49c42" category="section-title">能够查看与主订阅关联的订阅</block>
   <block id="7a76691411d2b3f52e0613b9090e3000" category="paragraph">您的某些主要订阅可以具有链接的二级订阅。在这种情况下，主订阅号将继续显示在*订阅号*列中，而链接的订阅号将在*订阅*选项卡上的新列*链接订阅*中列出。只有当您有链接订阅时，*链接的订阅*列才对您可用，并且您可以看到有关这些订阅的信息消息。</block>
   <block id="239e6e2df7e739023e0acbac63d63a5f" category="doc">容量趋势选项卡</block>
-  <block id="b7539220d8497299938ec75ae391ea23" category="paragraph">已知问题用于确定可能会妨碍您有效使用Keystone订阅服务的问题。</block>
   <block id="2fbeaae6d4bb6e4bbb8d27338873ec72" category="section-title">新增了"Assets"(资产)选项卡</block>
   <block id="2c2277efed09502321b33f1286580b04" category="inline-link-macro">资产选项卡</block>
   <block id="ea3ad566bfcd2ac55a05e379fea714ae" category="section-title">改进了卷和对象选项卡</block>
@@ -1188,7 +1185,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="0fa7096028e231171f86212b096254bd" category="admonition">SLA和保证按提名提供。</block>
   <block id="90c1605e73fc10bc5c46dc4183664885" category="paragraph">2024年8月7日</block>
   <block id="1e4eb13a6a1b07eeb2e7895fbc7a1bb1" category="section-title">创建性能服务级别</block>
-  <block id="5053594f32aa62a7113e670df7c0dcf6" category="paragraph">您可以使用Keystone收集器管理TUI实用程序创建性能服务级别(PSL)。通过TUI创建PSL会自动选择为每个服务级别设置的默认值、从而减少通过Active IQ Unified Manager创建PSL时手动设置这些值时可能出现错误的几率。</block>
   <block id="9dc46e9b8e8e3325a5f950ba6b189e61" category="inline-link-macro">性能服务级别</block>
   <block id="30b9ea415acabd68ca478ac9f480dcc4" category="paragraph">要了解有关PSL的详细信息，请参阅<block ref="618fbf54ef577c932e12b764c4672483" category="inline-link-macro-rx"></block>。</block>
   <block id="3366047110e1d4df81bd4a3c7e56a81a" category="paragraph">要了解有关服务级别的更多信息，请参见<block ref="65aad034e764c488cc9555200d7886f8" category="inline-link-macro-rx"></block>。</block>
@@ -1202,18 +1198,14 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="921dbe2a6293b980a37507e9b0ef99c9" category="list-text">突出显示*STaaS*以指定Keystone STaaS的Keystone版本，然后按Enter键。</block>
   <block id="fcb2a80e16744614cdf6c2f2f82c4e2e" category="inline-image-macro">TUI屏幕以指定Keystone版本</block>
   <block id="1e2d635219881df0b1d0ff05ce928dde" category="paragraph"><block ref="1e2d635219881df0b1d0ff05ce928dde" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0d93cccfc0748834998c1743a905f0d3" category="admonition">您可以突出显示Keystone订阅服务版本1的*KFS*选项。Keystone订阅服务在成分卷服务级别、服务项目和计费原则方面与Keystone STaaS不同。要了解更多信息，请参阅 <block ref="28860fa9118cfd783678772e54f9b578" category="inline-link-macro-rx"></block>。</block>
-  <block id="5a8df8e784147e10e20a7f96a1911ce8" category="list-text">指定Keystone版本的*选择Keystone服务级别*选项中将显示所有受支持的Keystone服务级别。从列表中启用所需的服务级别。</block>
   <block id="6792bca92745749645838a609966a8c2" category="inline-image-macro">TUI屏幕以显示所有受支持的Keystone服务级别</block>
   <block id="40107ce73af0b4c30bdedbdec9454440" category="paragraph"><block ref="40107ce73af0b4c30bdedbdec9454440" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="be76688bb0584656dac7cefe07517b47" category="admonition">您可以同时选择多个服务级别来创建PSL。</block>
   <block id="18e5eacb4fdad1ff92aee1fb4f0f41cc" category="list-text">选择*Save*并按Enter键。此时将创建性能服务级别。</block>
   <block id="0e0dd84db86e72ae77b4739377c3a4e1" category="inline-link-macro">创建和编辑性能服务级别</block>
   <block id="be298fbf55a1c81157761b8b02a6d696" category="paragraph">您可以在Active IQ Unified Manager的*性能服务级别*页面上查看已创建的PSL、例如适用于STaaS的Premum-KS-STaaS或适用于KFS的Extreme KFS。如果创建的PSL不符合您的要求、您可以根据需要修改PSL。要了解更多信息，请参阅 <block ref="84f3a19cf4d829ad37ba5eddb2b177a0" category="inline-link-macro-rx"></block>。</block>
   <block id="e481e00ab54faed62b9dea98ed860aea" category="inline-image-macro">用于显示已创建AQoS策略的UI屏幕截图</block>
   <block id="43b019fa12d041b6c5cbfe89c5f52205" category="paragraph"><block ref="43b019fa12d041b6c5cbfe89c5f52205" category="inline-image-macro-rx" type="image"></block></block>
   <block id="86e86c82820734a68c07adc56b6390a2" category="inline-image-macro">TUI屏幕以显示策略创建错误消息</block>
-  <block id="224dfc2fadc284cf45249b5ddb7bc7cd" category="admonition">如果指定的Active IQ统一管理器服务器上已存在选定服务级别的PSL、则无法再次创建它。如果您尝试执行此操作、则会收到一条错误消息。 <block ref="b503f359d5754d7d4260112bc56a05d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1b787eed58abedc58337d9fef037fb67" category="list-text">操作系统：VMware vCenter Server和ESXi 6.7或更高版本</block>
   <block id="f7e13857abd03bc318b89fe886669d7d" category="paragraph">导航至*消耗趋势*选项卡时，用于选择日期范围的*起始日期*字段默认显示未来日期。</block>
   <block id="443c63f2975d5902a80f1597e417d9f2" category="paragraph">2024年9月4日</block>
@@ -1388,16 +1380,13 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="20fa5f9b2d4cd9672cce24531c8f1666" category="summary">此API检索与用户关联的所有客户ID的列表。</block>
   <block id="2a2abaabc17b5a91d82e82303642b09c" category="doc">使用Digital Advisor REST API获取所有客户的列表</block>
   <block id="5b7e7d763cd7702a1e75085674fe6768" category="paragraph">API将使用一个JSON对象进行响应、该对象包含客户名称和相应ID的列表。下面是一个示例响应：</block>
-  <block id="796057698de87bb393ab8b61e5aff5f2" category="summary">此API检索与给定CustomerID关联的所有订阅和服务级别的列表。</block>
   <block id="9b6c21a9e3f04a27506fa4a5eb0cd41f" category="doc">使用Digital Advisor REST API获取客户订阅</block>
-  <block id="7dad8be1becd1cd3fe4d2ec1306c3b82" category="paragraph">API将使用一个JSON对象进行响应、该对象包含给定客户的所有订阅和关联服务级别详细信息的列表。下面是一个示例响应：</block>
   <block id="0a076b1454da01faf38e4805c15570ee" category="doc">开始使用Digital Advisor REST API检索Keystone数据</block>
   <block id="e29debe73c0e9065a4267dfae6adefe9" category="paragraph">Digital Advisor REST API提供了一个编程接口、用于检索Keystone订阅和使用详细信息。</block>
   <block id="c3091c7f241015a003ff982080a072b0" category="paragraph">总体而言、与Digital Advisor REST API交互的工作流包括以下步骤：</block>
   <block id="6c0397360aa8b37bbbe1fa3a38744674" category="inline-link">登录到Digital Advisor。</block>
   <block id="cb2ea5f9df257b4df0243d4cf9e535bf" category="list-text">设置您的Digital Advisor帐户。您必须具有有效的NetApp支持站点凭据才能登录到数字顾问。要了解更多信息、请参见<block ref="f7709f12f686047b8295b5977c1d6d33" category="inline-link-rx"></block></block>
   <block id="d99ad2d9a576f68ae4b88fb369c0150d" category="list-text">了解两步身份验证过程。</block>
-  <block id="10a330e0acf4a6c5af02e22d7528123d" category="list-text">*生成刷新令牌*：使用NetApp凭据通过数字顾问控制台获取刷新令牌。此令牌用于确保持续访问、而无需重复登录。</block>
   <block id="2242d62d3e8be601b23d94ea56e90d58" category="list-text">*生成访问令牌*：刷新令牌用于生成访问令牌。要授权对Keystone服务的API调用、需要使用访问令牌、此令牌的有效期为一小时。</block>
   <block id="f8f8242a29d5eb9256ae05747db07412" category="list-text">执行API调用以检索所需数据。您可以通过编程方式检索客户列表、客户订阅数据和客户使用情况详细信息。</block>
   <block id="fad1e832526fa7449bfff5b810826110" category="sidebar">从Digital Advisor REST API访问Keystone</block>
@@ -1721,26 +1710,18 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="1ef86c84141cbf98bc2a59eeffa9afd3" category="paragraph">要了解更多信息，请参阅 <block ref="b7d94ab5747cf2f7821847d435faf714" category="inline-link-macro-rx"></block>。</block>
   <block id="33a7d9c43d0ae3063679287913d61f25" category="summary">查看或取消 Keystone 订阅服务请求。</block>
   <block id="d1852e78062b5753f2098c5dc933a1cb" category="doc">查看 Keystone 订阅的服务请求</block>
-  <block id="af612b58d0f74038ba35647dbf74d7b6" category="paragraph">您可以通过 BlueXP 查看和跟踪修改 Keystone 订阅的服务请求，提供快速摘要并监控进度。</block>
   <block id="50d5a25394fedc4774cab128322dbb14" category="paragraph">要查看进度或取消请求，请按照以下步骤操作：</block>
-  <block id="49388dccd36c2bbe75e1150d12810960" category="list-text">从 BlueXP 左侧导航菜单中，选择 *存储 &gt; Keystone &gt; 管理*。</block>
   <block id="98d28e0357b1d103f21ba89dd0d19e08" category="paragraph">您会看到所有服务请求的列表，包括请求编号、请求类型和当前状态。</block>
   <block id="d47cec4b54da960eb97da1285dba00bf" category="inline-image-macro">向下箭头图标</block>
   <block id="b8915f85e20c41695f7695ce198af59a" category="list-text">您可以点击<block ref="97aa861acb085111dcd2b43caf6c79a2" category="inline-image-macro-rx" type="image"></block>点击“提交日期”列旁边的图标，展开请求编号并查看详细信息。您可以看到提出请求的性能服务级别。</block>
   <block id="de30be97e27dee0a131478825b7f19bd" category="inline-image-macro">屏幕截图显示了针对哪些性能服务级别提出了修改请求</block>
-  <block id="00a6d19d3a5ab40ac6fa5bcf1ac3ba89" category="paragraph"><block ref="00a6d19d3a5ab40ac6fa5bcf1ac3ba89" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f611e4ccc824406e0de3f7a09110159" category="list-text">选择请求编号可查看详细信息，包括所请求订阅的修改详细信息和当前进度状态。</block>
   <block id="a92c0535191745976db8964221708fe4" category="inline-image-macro">显示当前进度状态的屏幕截图</block>
   <block id="fc1597aa65903b595ab66b315f8b1878" category="paragraph"><block ref="fc1597aa65903b595ab66b315f8b1878" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c270abc6d843162d4ce7721540f24540" category="doc">查看与 Keystone 订阅相关的资产</block>
-  <block id="d25641fac9b18bcc4b03cf68488e6fd7" category="paragraph">您可以查看由单个 Keystone 订阅管理的 ONTAP 集群和节点以及 StorageGRID 网格、站点和节点的详细信息。BlueXP和 Digital Advisor 的 Keystone 信息中心视图中均提供了此订阅资产视图。</block>
-  <block id="cb6f5260e1e71608d0e3136ef129348d" category="section-title">从 BlueXP 查看 Keystone 订阅资产</block>
-  <block id="5be68248081b9a1a9b4ca58d0ed839b1" category="paragraph">BlueXP 中 *Subscriptions* 选项卡内的 *Assets* 选项卡提供有关与订阅相关的集群、StorageGRID 节点和 ONTAP 节点中的卷的详细信息，包括各种详细信息和容量状态。</block>
   <block id="56ba911e47b6675e519daaae8a0c4ab8" category="inline-link-macro">查看 Keystone 订阅中的资产</block>
-  <block id="2654165bb7d80fa3a0f5b7b4d9ef9112" category="admonition">此视图每次仅限查看一个 Keystone 订阅。您还可以通过选择“跟踪 ID”下拉列表来查看其他订阅的资产。BlueXP中的 Keystone 仪表板允许您查看多个 Keystone 订阅的资产。要了解更多信息，请参阅 <block ref="5fe743b586c50b2c4c63c54967e2b587" category="inline-link-macro-rx"></block>。</block>
   <block id="43b9ba2efffe3f9921d126f67c28b2d3" category="paragraph">您可以按照以下步骤查看此信息：</block>
   <block id="5ddb5594c26d44b0ec718a53cac4970a" category="open-title">集群中的卷</block>
-  <block id="48e600d02a0e1876998fd2268ea33a4a" category="list-text">从 BlueXP 左侧导航菜单中，选择 *存储 &gt; Keystone &gt; 订阅*。</block>
   <block id="a9b15ae6dc597be8c67ef37fcdff860e" category="list-text">在表格的*订阅号*列中选择订阅号。</block>
   <block id="7b0a8b9f33001080c9b0510f87e68dd9" category="paragraph">您将被重定向到“*当前消耗*”选项卡。</block>
   <block id="3610c4351229db10744b51bac557a915" category="list-text">选择“*资产*”选项卡。</block>
@@ -1749,7 +1730,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="081ceda2f79c0faf6fe05d511f52c3be" category="inline-image-macro">列选择器图标</block>
   <block id="363a64ab1176a4ec2912bb476eaca7c4" category="admonition">您可以使用列选择器自定义表格<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block>图标并使用顶部的搜索栏根据列参数搜索和过滤表格数据。</block>
   <block id="c8dad022332943c24f5c1ee6ac971a4d" category="open-title">集群中的节点</block>
-  <block id="f0872e1f12428b67bd457f818a49d3c4" category="paragraph">默认情况下，“*订阅*”选项卡显示“*订阅*”子选项卡。</block>
   <block id="b6c513b750c95a3328624c3df8417e83" category="list-text">从“*查看*”下拉菜单中选择“*集群中的节点*”。</block>
   <block id="f5e6672e84e78b7f4e9eb0d8920d8c44" category="inline-image-macro">订阅集群中的节点的屏幕截图</block>
   <block id="1d04201901765810dbf31b4aec4142b3" category="paragraph"><block ref="1d04201901765810dbf31b4aec4142b3" category="inline-image-macro-rx" type="image"></block></block>
@@ -1761,8 +1741,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="6307cd913d5f1e504ab4fd374fbb1530" category="paragraph">您可以查看网格中节点的详细信息，包括节点名称、节点状态、网格名称、节点类型和客户。您还可以监控已消耗和可用的数据容量、CPU 使用率以及可用的数据容量。</block>
   <block id="286e9528eaf916295887846dd58b4320" category="section-title">从 Digital Advisor 查看 Keystone 订阅资产</block>
   <block id="78f16df6a5b0438594a4fa4f37d98a5c" category="paragraph">Digital Advisor 中 Keystone 信息中心的“资产”选项卡包含两个子选项卡：“ONTAP”和“StorageGRID”。此选项卡会根据您的订阅累积ONTAP的集群级别信息和StorageGRID的网格级别信息、并对数据进行隔离和提供准确的详细信息。您可以点击相应的子选项卡查看这些信息。</block>
-  <block id="1791af906b11350f983a0d6f4a05b003" category="list-text">单击“*常规&gt;Keystone 订阅&gt;资产&gt; ONTAP*”。</block>
-  <block id="2e0c1e32a689de05dc5b6936554aa208" category="list-text">单击“*常规&gt;Keystone 订阅&gt;资产&gt;StorageGRID*”。</block>
   <block id="89187807f1d3a38ba47c39436238568b" category="inline-link-macro">查看您的订阅详情</block>
   <block id="d089d9324be75f27b66b73791a761d09" category="list-text"><block ref="d089d9324be75f27b66b73791a761d09" category="inline-link-macro-rx"></block></block>
   <block id="08e53dd6141c0dabc389bde84c2d53cc" category="inline-link-macro">查看您当前的消费详情</block>
@@ -1774,11 +1752,7 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e0df93529472fb0a2a5afd2c2acf0c44" category="inline-link-macro">查看卷和对象的详细信息</block>
   <block id="f15f9d706bc263d45465ce6b768b9def" category="list-text"><block ref="38b2f80965278701fdba64f24fca3826" category="inline-link-macro-rx"></block></block>
   <block id="40076857ca476d1b533ee4be1058ec27" category="doc">查看多个 Keystone 订阅中的资产</block>
-  <block id="6ad7d86c87d55f40e523315096f1e1f4" category="paragraph">BlueXP 中的 Keystone 仪表板允许您根据访问权限查看跨多个 Keystone 订阅的集群节点、已配置卷和 StorageGRID 节点的详细信息。此视图在 Digital Advisor 中不可用。</block>
-  <block id="0fcbdfd936ae20afe43c90b99f5fec52" category="list-text">从 BlueXP 左侧导航菜单中，选择 *存储 &gt; Keystone &gt; 资产*。</block>
-  <block id="1f1a1bf247780389a79927a48cea5f53" category="paragraph">*资产*选项卡显示*集群中的节点*子选项卡。</block>
   <block id="c1b2532b1ff5a51535b054d070cb5804" category="inline-image-macro">多个订阅的集群中的节点的屏幕截图</block>
-  <block id="803f62054d86f464fc863c83bd8b4dc7" category="paragraph"><block ref="803f62054d86f464fc863c83bd8b4dc7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e61469f49c9578ba1ae58d795074e51" category="paragraph">您可以查看 Keystone 订阅中集群中所有节点的详细信息，包括节点序列号、状态、存储效率设置、平台类型和容量详情。您还可以概览以下内容：</block>
   <block id="b04c539b04de9ca1fe453dda9e1b61ca" category="list-text">订阅和 ONTAP 节点的总数。</block>
   <block id="42c7b47791cbf953c4f7964a8e7583bb" category="list-text">节点容量消耗，带有可点击的*查看*按钮来过滤表格并显示符合特定条件的资产（消耗量&gt; 90% 或消耗量&lt; 50%）。</block>
@@ -1792,12 +1766,10 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="f6eb16e137bdab399dbb70e386762544" category="paragraph">点击“订阅号”列中的订阅号，即可进入“订阅”页签，查看订阅消费详情、时间线及相关资产信息。要了解更多信息，请参阅 <block ref="fdad9ab5c825af5756df523fe50d05f9" category="inline-link-macro-rx"></block>。</block>
   <block id="da1115a9f69794002ce78073bd65e81d" category="list-text">选择*网格中的节点*选项卡。</block>
   <block id="5ee36f1a73f54a490256d184bf832f75" category="inline-image-macro">多个订阅的网格节点的屏幕截图</block>
-  <block id="31c573c7ddb02be8abec3ae35005e058" category="paragraph"><block ref="31c573c7ddb02be8abec3ae35005e058" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b3fed7e8a829afa56c001ed6bba360b" category="paragraph">您可以查看 Keystone 订阅中网格中所有节点的详细信息，包括节点名称、节点 ID、订阅编号、网格名称、节点类型和客户。您可以监控已消耗和可用的数据容量、CPU 使用率以及可用数据容量。</block>
   <block id="66587979f81ccfd028a141fd5be0176b" category="inline-link-macro">查看您的 Keystone 订阅资产</block>
   <block id="8c1b12d5b70d8c2c59f84cab30681d5d" category="list-text"><block ref="8c1b12d5b70d8c2c59f84cab30681d5d" category="inline-link-macro-rx"></block></block>
   <block id="4547cca6c2767ce64f994ab3b984deb1" category="paragraph">您可以通过查看特定时间段内的 Keystone 订阅历史数据来监控订阅使用情况。这可以让您深入了解自己的使用模式。</block>
-  <block id="b12fa279afb0911f09ad7487f6d57b74" category="paragraph">您可以通过 BlueXP 或 Digital Advisor 查看 Keystone 订阅的历史数据：</block>
   <block id="a2d82bfae4a6bb07ee9998c93a16870b" category="list-text">在*订阅号*栏中选择订阅号。</block>
   <block id="b3622e97032fbaf5c45471e9056cfa2a" category="list-text">选择*消费趋势*选项卡。</block>
   <block id="58eb77e186ebbaf3af405a5c39204491" category="list-text">从*查看*下拉菜单中选择*历史消耗*，然后使用*期间*字段中的日历图标选择时间范围来分析容量使用趋势。</block>
@@ -1816,16 +1788,13 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="94c4e136db27edd2e00c5c316a21d46e" category="list-text">*累积突发*：当前计费周期内一个月内每2分钟间隔内累积的总突发容量(以TiB为单位)的指示符。</block>
   <block id="1eea9b9945d3fe4b68b63945e862af02" category="section-title">累计突发计算</block>
   <block id="2b67a16f12da342bb3cbca5216d7c796" category="paragraph">整个月的累积突发使用量计算如下：</block>
-  <block id="1f108037829c6230f2f9864789e24e58" category="paragraph">您可以通过 BlueXP 或 Digital Advisor 查看累计突发流量使用情况。如果您在 BlueXP 的“消费趋势”选项卡的“查看”下拉菜单中选择了“累计突发流量”，或在 Digital Advisor 的“消费趋势”选项卡中选择了“已开票累计突发流量”选项，则可以按月或按季度查看累计突发流量使用情况，具体取决于您选择的计费周期。此数据可用于已计费的过去12个月、您可以按过去30个月的日期范围进行查询。条形图显示发票数据、如果使用量尚未计费、则会在该时间段内标记为_Pending _。</block>
   <block id="546fa809ba406006a24d7ed5fae64eb8" category="admonition">发票累计突发使用量是按计费周期计算的，基于性能服务级别的承诺和消耗容量。</block>
-  <block id="51553f48d801016ad3d4a1e22685ac22" category="paragraph">您可以通过 BlueXP 或 Digital Advisor 查看每月或每季度计费周期的每日累计突发流量使用量。在 BlueXP 中，如果您在“消耗趋势”选项卡的“查看”下拉菜单中选择“累计突发流量”，则“按天累计突发流量”表将提供详细数据，包括时间戳、已承诺容量、已使用容量和累计突发流量。</block>
   <block id="dfdee986152ec4047af664495ba755cd" category="inline-image-macro">显示按天累计突发量的屏幕截图</block>
   <block id="5ebd05a1b0a3fae552005acfec4e3c45" category="paragraph"><block ref="5ebd05a1b0a3fae552005acfec4e3c45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d0baf3847f6e93ee353d71b13ee7d980" category="paragraph">在 Digital Advisor 中，当您单击显示“*Invoiced Accrued Burst*”选项的发票数据的栏时，您会看到条形图下方的“可计费预配置容量”部分，其中提供图形和表格查看选项。默认图形视图以折线图格式显示每日累积突发数据使用量、并显示使用量随时间的变化。</block>
   <block id="c349aee97f052361891132091b4ab93a" category="paragraph">您可以通过单击图形右上角的*Table*选项切换到表视图。表格视图提供详细的每日使用情况指标，包括性能服务级别、时间戳、承诺容量、消耗容量和可计费配置容量。您还可以生成CSV格式的这些详细信息报告、以供将来使用和比较。</block>
   <block id="eccd215d2aef918d99c7ac04567a0cdc" category="doc">查看 Keystone 订阅的当前消耗情况</block>
   <block id="ef06226e0a70f0b27bda10913e0d2622" category="paragraph">您可以通过查看承诺容量、已消耗容量和可用容量等详细信息来深入了解订阅使用情况，并显示当前消耗状态并按性能服务级别分类。</block>
-  <block id="a1b69ea5f6e5ee30c195bf008e9fa903" category="paragraph">要通过 BlueXP 或 Digital Advisor 查看订阅的当前消费状态，请按照以下步骤操作：</block>
   <block id="d74dcd27166505385c38faabf0aa85e8" category="list-text">在表格的*订阅号*列中选择订阅号，查看当前消费情况。</block>
   <block id="53a763ce4287b06d38f889380a89f60e" category="inline-image-macro">图形格式的电流消耗详情</block>
   <block id="f2f90873373e8bda06d2b4b7f736c646" category="paragraph">对于所选订阅，您可以使用“查看方式”下拉菜单中的“表格”或“图形”选项，以表格或图形格式查看消耗详情。在图形视图中，您可以查看每个性能服务级别的当前消耗情况，包括已用容量、预置容量、已承诺容量限制和突发容量限制。</block>
@@ -1835,24 +1804,15 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="f4dd6979877f030ad7dafa413c0d90c7" category="list-text">从*订阅*下拉列表中选择或搜索所需的订阅号。</block>
   <block id="331c11b73c128b4850cdd7086b4a560e" category="paragraph">对于选定订阅、您可以查看详细信息、例如订阅的开始和结束日期、以及计费期限、例如每月或每年。作为订阅使用情况的一部分，您可以查看性能服务级别名称、已提交容量、已消耗容量、可用容量以及当前和累计的突发使用量（以 TiB 为单位）。记录较高消耗量的特定性能服务级别会突出显示。您还可以查看为卷生成的警告和警报。</block>
   <block id="a12c5209e0b6f159824dc99eb2aa1fae" category="paragraph">有关 Keystone 存储服务和相关性能服务级别的信息，请参阅<block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block> 。</block>
-  <block id="650aabb15f65ca532cbe5cd72295c5b4" category="summary">作为 NetApp Keystone STaaS 订阅者，您可以通过 NetApp BlueXP 或 Digital Advisor 访问 Keystone 仪表板</block>
-  <block id="a398ed77d3e75fe470592e5292f470df" category="paragraph">订阅 NetApp Keystone 服务后，您可以通过 NetApp BlueXP 或 Digital Advisor 访问 Keystone 仪表板。</block>
-  <block id="69613a6744dc452d818ae93a3ca6e67e" category="inline-link-macro">登录到BlueXP</block>
-  <block id="537b2a09c10fe6380b0b9b2e62813916" category="paragraph">要登录 BlueXP，您可以使用您的 NetApp 支持站点凭证，也可以使用您的电子邮件和密码注册 BlueXP。详细了解 <block ref="f004bb99255f2fe182e7d54b421131c5" category="inline-link-macro-rx"></block>。</block>
-  <block id="ad84736d27b7f84414783598f4ffd0d9" category="list-text">登录到BlueXP。</block>
-  <block id="d2f2e77e0264c0281147afc4e4d26bb4" category="list-text">从 BlueXP 左侧导航菜单中，选择 *存储 &gt; Keystone*。</block>
   <block id="ddb922ba3f224bb1ae3de82c9777b690" category="paragraph">Keystone 仪表板出现。</block>
   <block id="a7af71fbb3a9d0d3eac840e2ad3fcfca" category="inline-image-macro">Keystone 仪表板页面</block>
-  <block id="d661391466fed7a1409959b7d59a82d4" category="paragraph"><block ref="d661391466fed7a1409959b7d59a82d4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b2bdd6898e743eb456ca2d732991330b" category="admonition">如果您的登录凭据未链接到任何 Keystone 订阅，请联系 NetApp Keystone 支持。</block>
   <block id="4c1b34501fb9dfc72ff5f16b30f61cf5" category="paragraph">通过数字顾问仪表板，您可以查看 Keystone 订阅的详细信息。要登录到Digital Advisor、您可以使用NetApp 支持站点 凭据。</block>
   <block id="4bb15befe9c2065f8ab552b64e5143be" category="list-text">打开 Web 浏览器，然后转到<block ref="6ea90873ff127896ae7a3eaf21cda455" category="inline-link-macro-rx"></block>登录页面。</block>
   <block id="1dce4feb01121addbdaf71931c469035" category="list-text">请提供您的用户名和密码，然后单击 * 登录 * 。</block>
   <block id="2eab75de75a2b7be0b7fb0c59c81c527" category="inline-link-macro">Digital Advisor 中的 Keystone 仪表板</block>
   <block id="060031875f3f915385690798ab0a3740" category="paragraph">您可以在 Digital Advisor 仪表板上的“Keystone 订阅”小部件中查看订阅和使用情况详情，以及已购买 Keystone 服务的容量使用情况摘要。要了解更多关于“Keystone 订阅”小部件的信息，请参阅<block ref="00ed8f21a4cef28d7d8aa80cda364760" category="inline-link-macro-rx"></block> 。</block>
-  <block id="993666c3d95ac6fd97ba90eab93b4de7" category="list-text"><block ref="993666c3d95ac6fd97ba90eab93b4de7" category="inline-link-macro-rx"></block></block>
   <block id="2d6e1b228a12f4c76c76939e28065d07" category="list-text"><block ref="2d6e1b228a12f4c76c76939e28065d07" category="inline-link-macro-rx"></block></block>
-  <block id="0d6763bb3d700853734d496f9813b0a3" category="summary">作为 NetApp Keystone STaaS 订阅者，您可以从 NetApp BlueXP 或 Digital Advisor 获取订阅概览。</block>
   <block id="85d148be40895e3d0f9c047d8b0e01b1" category="paragraph">Keystone 仪表板是您高效监控、分析和管理 Keystone 订阅的首选解决方案。通过 Keystone 仪表板，您可以实现以下目标：</block>
   <block id="2bf64d92e1a315894ffc10df4f760430" category="list-text">*监控订阅详情*：查看有关您的 Keystone 订阅的详细信息，包括性能服务级别、容量使用情况、资产和警报。</block>
   <block id="80e1eadef41b346546973348e209664d" category="list-text">*跟踪容量使用情况并生成报告*：跟踪当前和历史容量使用情况，并生成报告以分析订阅数据并做出明智的决策。</block>
@@ -1861,17 +1821,8 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="57407a490c41c094171e1c7c24422653" category="list-text">*分析卷和对象*：深入了解订阅的卷和对象，包括其卷和对象级别的容量。</block>
   <block id="43e0c1e3b18700eba47a8317207bd980" category="section-title">访问 Keystone 仪表板</block>
   <block id="ae7d8267370bd7b37f12238abacf4958" category="paragraph">您可以通过以下方式访问 Keystone 仪表板：</block>
-  <block id="78b831f616acc962bf512a5fafb6abd0" category="list-text">*BlueXP*：从 BlueXP 中的 *Storage &gt; Keystone &gt; Overview* 访问仪表板。要了解更多信息，请参阅 <block ref="163397a7037ebbf6aea482c8b96a8e39" category="inline-link-macro-rx"></block>。</block>
   <block id="b6a4e54ce6286820a4059affb5b0c3db" category="list-text">*Active IQ Digital Advisor*（也称为 Digital Advisor）：从 Digital Advisor 中的 *General &gt; Keystone Subscriptions* 访问仪表板。要了解更多信息，请参阅 <block ref="847132cf2ba0790855449a8a37c3f21f" category="inline-link-macro-rx"></block>。</block>
-  <block id="1a51f7569ff8bd9742346e991c74ad7e" category="list-text">虽然 BlueXP 和 Digital Advisor 提供了一些独有功能，但 BlueXP 为 Keystone 提供了管理功能，允许您管理订阅并进行必要的调整。</block>
-  <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="inline-link-macro">了解BlueXP  访问角色</block>
-  <block id="258046efc520b3935e3b824f9d358065" category="list-text">您必须被分配 *Keystone admin* 角色才能修改订阅。要了解更多信息，请参阅 <block ref="5eaffd1258ac7421c1b4cee6b8232d9d" category="inline-link-macro-rx"></block>。</block>
-  <block id="460143bcf999273db551806a244f984a" category="inline-link-macro">Digital Advisor与BlueXP集成</block>
-  <block id="b66034b1cec8769fca41f0b0a87dc156" category="list-text">Digital Advisor 与 BlueXP 集成，允许您直接从 BlueXP 访问所有 Digital Advisor 功能，包括 Keystone 仪表板。要了解更多信息，请参阅 <block ref="4554811269d341542df26cf0a6634047" category="inline-link-macro-rx"></block>。</block>
-  <block id="84b61b46b4438063eaf2cf058c4e6425" category="section-title">BlueXP 和 Digital Advisor 中的 Keystone 功能</block>
-  <block id="f3f87d06564ee727e8a782bda3025b5c" category="paragraph">下表显示了 BlueXP 和 Digital Advisor 中功能的可用性，帮助您快速确定适合您需求的平台：</block>
   <block id="5fa0ef8fc40e60003288942e2da3e300" category="cell">* 功能 *</block>
-  <block id="9bc73c54d75bf72f80b25dd41d1d34de" category="cell">*蓝色XP*</block>
   <block id="58d123e7789da5493701ca60c42e2b8a" category="cell">*数字顾问*</block>
   <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">是</block>
   <block id="fb43b6ea8217f28ab8d960248f882ebb" category="inline-link-macro">监控当前和历史容量使用情况</block>
@@ -1883,7 +1834,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="57d8e28284aecaa3906b97f010612fcd" category="cell"><block ref="57d8e28284aecaa3906b97f010612fcd" category="inline-link-macro-rx"></block></block>
   <block id="b938e197dfa8dadbdec004a37e0ef3af" category="inline-link-macro">修改您的订阅</block>
   <block id="a7629efe0e47f4108406da4590b98b87" category="paragraph"><block ref="761270557fec89f94924233c726d0e8a" category="inline-link-macro-rx"></block> （仅限 Keystone 管理员）</block>
-  <block id="099b34499f8abb79c3407e947274fe54" category="paragraph"><block ref="099b34499f8abb79c3407e947274fe54" category="inline-link-macro-rx"></block></block>
   <block id="f9eade15df63147aad555cc771e3c457" category="inline-link-macro">查看卷和对象详细信息</block>
   <block id="0fbbeb712322bc30085f9aee131d6509" category="paragraph"><block ref="0fbbeb712322bc30085f9aee131d6509" category="inline-link-macro-rx"></block></block>
   <block id="73be3087ebbe8024dbe143136c7e4de9" category="paragraph"><block ref="73be3087ebbe8024dbe143136c7e4de9" category="inline-link-macro-rx"></block></block>
@@ -1896,22 +1846,12 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="020f370908e2e8464da46c9ec5591933" category="admonition">Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位显示、并四舍五入为小数点后两位。如果使用量少于 0.01 TiB，则值显示为 0 或无使用量。这些屏幕上的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。要了解有关使用情况指标的更多信息，请参见 <block ref="c526a2ccdbb16224fb861d4fec1eb67c" category="inline-link-macro-rx"></block>。有关Keystone中使用的不同容量的信息，请参见 <block ref="a2e2f97253342349ff9ef2b936b778d0" category="inline-link-macro-rx"></block>。</block>
   <block id="6d1a758f446f1f9fd581fcc90feed806" category="paragraph">关注列表是 Digital Advisor 的一项功能。有关信息，请参见<block ref="5d023a7962c7eae7e0af56f6e7f92603" category="inline-link-rx"></block>。有关创建关注列表的信息，请参阅<block ref="2539846485ed670b4851c404ba8cd9b6" category="inline-link-rx"></block> 。</block>
   <block id="0d795ac2b71a9eb357ea37a87aee3d75" category="paragraph">您可以为客户或订阅号创建关注列表，并在 Digital Advisor 屏幕上使用订阅号或关注列表名称的前三个字符搜索 Keystone 订阅。按关注列表名称搜索时，您可以在 *Keystone 订阅* 小部件的 *订阅* 下拉列表中查看客户及其订阅。</block>
-  <block id="4577f1fcff69e43cb42826319c0ae7cc" category="summary">作为 NetApp Keystone STaaS 订阅者，您可以从 NetApp BlueXP 获取订阅概览。</block>
-  <block id="b765b9fa2b328a037f9230a9731313e1" category="paragraph">您可以使用“概览”选项卡快速确定存在风险的工作负载，查看订阅的容量和到期状态，识别未解决的警报，并查看容量利用率最高的订阅。您还可以查看不同 Keystone 版本中的订阅状态，突出显示任何需要注意的问题。</block>
-  <block id="69c256f24be6d7d65006f9cabf1af28b" category="paragraph">要查看“*概览*”选项卡，请从 BlueXP 左侧导航菜单中转到“*存储 &gt; Keystone &gt; 概览*”。</block>
-  <block id="191a397fd7f3af011ab96788c6a64400" category="inline-image-macro">概览选项卡的屏幕截图</block>
-  <block id="7160cc45d78b33c1028e96d51d6d07b7" category="paragraph">“概览”选项卡提供以下见解：</block>
   <block id="eb8b05f2c3cb48609e4fe07ccdcb9e3e" category="list-text">*摘要*：显示订阅、ONTAP 集群、StorageGRID 节点和 ONTAP 节点的总数。每个类别都有一个 *查看* 按钮，可轻松导航至 *订阅* 或 *资产* 选项卡上的详细部分。</block>
   <block id="92b787d913c7ad5afc095b2bdf953c66" category="list-text">*未解决的请求*：未解决的服务请求总数。</block>
   <block id="010423df1000a45a1a63fdd5f480f566" category="inline-link">Keystone 订阅服务 | 版本 1 文档</block>
   <block id="a8ce21fd73a6b04f851be6e1d6d0da63" category="list-text">*容量利用率最高的 5 个订阅*：以表格形式显示容量利用率最高的 5 个 Keystone 订阅。您可以点击“订阅*”列中的订阅编号来获取详细信息。</block>
-  <block id="18524115bd307002c1e1529c109b8ffa" category="summary">修改您的 Keystone 订阅以通过 BlueXP 更改相关性能服务级别的承诺容量。</block>
-  <block id="bc7859d006be0123d59cb9e40c9f05c2" category="doc">从 BlueXP 修改您的 Keystone 订阅</block>
-  <block id="d573755317d28a3a78295193d08481f4" category="paragraph">您可以通过 BlueXP 修改 Keystone 订阅的相关性能服务级别的承诺容量。</block>
   <block id="2527930ed946837db80b382551b3e30f" category="list-text">如果订阅到期前剩余 90 多天，您可以修改承诺容量。</block>
-  <block id="f9ec590654a944849e5500005d5ef09c" category="list-text">您必须被分配至 *Keystone admin* 角色才能修改已提交的容量。要了解更多信息，请参阅 <block ref="5eaffd1258ac7421c1b4cee6b8232d9d" category="inline-link-macro-rx"></block>。</block>
   <block id="36b20c02b50b952932585493baf0578c" category="paragraph">要更改承诺容量，请按照以下步骤操作：</block>
-  <block id="2af81af9d3c190165a024bd572138bc8" category="list-text">从 BlueXP 菜单中，选择 *存储 &gt; Keystone &gt; 订阅*。</block>
   <block id="0777df37fb2d784be7418d104f1b48c3" category="list-text">单击表中要修改的订阅的省略号图标，然后选择*修改*。</block>
   <block id="7368a9d71827e42ec6d0e30872f2ade8" category="paragraph">*修改订阅*页面显示与所选订阅号相关的订阅性能服务级别的详细信息。</block>
   <block id="91122b642327c299496bd2cc715f61db" category="admonition">或者，您可以通过单击订阅详细信息部分中的“*管理订阅*”，然后选择“*修改*”来访问“*修改订阅*”页面。</block>
@@ -1923,35 +1863,24 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="4e45fcbdeb65b88a1abb90ed1fe072a6" category="summary">作为 NetApp Keystone STaaS 订阅者，您可以搜索和过滤数据、生成订阅和使用情况报告、检查时间戳以及查看警报。</block>
   <block id="20124e162ad63d60b063ff80ef10f3c9" category="doc">搜索 Keystone 数据、生成报告并查看警报</block>
   <block id="3c8389d9d758198177b96da335f3ac07" category="paragraph">您可以搜索和过滤数据、生成订阅和使用情况报告以及查看警报以随时了解存储环境。</block>
-  <block id="420037edfc562a3cab0d69942792c02f" category="section-title">从 BlueXP 搜索和过滤数据</block>
-  <block id="e012018c98b92f9352da0f4425ac486d" category="paragraph">在 BlueXP 中，您可以根据选项卡中表格中提供的列参数搜索和筛选 Keystone 数据。例如，在“*订阅*”选项卡下的“订阅*”子选项卡中，您可以在搜索框中输入 Keystone 版本来筛选数据。同样，在“资产*”选项卡下的“集群中的卷*”选项卡中，您可以在搜索框中输入卷名称来筛选卷。</block>
   <block id="3cee6bca91f027ee394211756dc833f4" category="inline-image-macro">高级过滤选项</block>
-  <block id="e1e69bf873dd9761998d1a096d39951a" category="section-title">从 BlueXP 或 Digital Advisor 生成报告</block>
-  <block id="d0c322fc884a1966308c94c8f8ea7989" category="inline-image-macro">BlueXP 中的报告下载图标 2</block>
   <block id="c0966097b6e3bcb3af49a46a84c76250" category="section-title">从数字顾问生成综合报告</block>
   <block id="c9b179ad408758a592f1e7e3637faa7f" category="paragraph">在 Digital Advisor 中，您可以生成并查看您的订阅、历史使用情况、突发使用情况、性能、资产以及卷和对象的综合报告。要执行此操作，请从Digital Advisor的“报告”功能中选择*Keystone订阅*作为报告类型。您可以在客户、集群、监视列表或订阅级别生成这些报告。</block>
-  <block id="20198235825fb8adf4086bd1ca3ba286" category="admonition">此选项卡在 Digital Advisor 中可选用。要查看此选项卡、请联系支持部门。在 BlueXP 中不可用。</block>
   <block id="71470a3714862a9c1c398e48dfec41a7" category="paragraph">要在 Digital Advisor 中查看此选项卡，请按照以下步骤操作：</block>
-  <block id="d83ac6ac0c6b80d1d5c748c0365ce923" category="list-text">单击“*常规&gt;Keystone 订阅&gt;性能*”。</block>
   <block id="cfb3f4a830d3a583df968447fd533c11" category="paragraph">检索到的详细信息基于每个性能服务级别的性能服务级别目标。例如，峰值 IOPS、最大吞吐量、目标延迟和其他指标由性能服务级别的各项设置决定。有关这些设置的更多信息，请参阅<block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block> 。</block>
   <block id="7896581df9b0f8b9035b760a6264a43b" category="admonition">如果选中“*SLO 参考线*”复选框，则会根据性能服务级别的性能服务级别目标呈现 IOPS、吞吐量和延迟图表。否则、它们将以实际数字显示。</block>
   <block id="3bcfbc966b0ff6d83311d6a943c7fd41" category="paragraph">您可以根据订阅编号、卷名称和选定日期范围的组合在以下部分中查看和比较性能指标。详细信息按照分配给卷的性能服务级别显示。您可以查看集群名称和卷类型、即分配给卷的读取和写入权限。此外、还会显示与此卷关联的任何警告消息。</block>
   <block id="19f70e225e29d628affd908d8b5c4867" category="paragraph">此部分将根据查询的日期范围显示卷中工作负载的吞吐量图形。显示性能服务级别的最大吞吐量（SLO Max）和当前吞吐量（过去五分钟内，不基于查询的日期范围），以及时间范围内的最小、最大和平均吞吐量（以 MBps/TiB 为单位）。</block>
   <block id="7e045db5b09abb3d2b436787aa318f59" category="paragraph">此部分将根据查询的日期范围显示卷中工作负载的延迟图。显示性能服务级别（SLO 目标）的最大延迟和当前延迟（在过去五分钟内，不基于查询的日期范围），以及时间范围内的最小、最大和平均延迟（以毫秒为单位）。</block>
-  <block id="29037aca8f881ca5103dbdf425853f76" category="summary">查看 BlueXP 的订阅时间表，其中包括激活、修改和续订日期等事件。</block>
   <block id="9d9d2c4a682ab1170a2378566a9e0af1" category="doc">查看 Keystone 订阅的时间线</block>
-  <block id="2d7ccfc8b06a85c2975a9bee7dadf9da" category="paragraph">BlueXP 中的 Keystone 仪表板提供 Keystone 订阅的时间线视图，显示激活、修改和续订日期等事件。DigitalAdvisor 不提供此时间线视图。</block>
   <block id="8f544b2dee67e556387019e97bf89bff" category="paragraph">要查看订阅时间表，请按照以下步骤操作：</block>
   <block id="b714a345064d1fee61d1cc1281a6fefe" category="list-text">在*订阅号*栏中选择订阅号，查看订阅时间线。</block>
   <block id="378f1892574980608cc14d0505dc8302" category="list-text">选择“*订阅时间表*”选项卡。</block>
   <block id="33a1adebde8a441b691ab5ca91c43f67" category="inline-image-macro">屏幕截图以折线图形式显示订阅时间线以及重要事件</block>
   <block id="da68a8f816866d6c67389e49539cc5e4" category="paragraph"><block ref="da68a8f816866d6c67389e49539cc5e4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="87f19b0cdaa4943b18fa0473df1aee51" category="paragraph">订阅时间线默认以折线图显示，并带有标记重要事件的图标。将鼠标悬停在某个事件上即可查看详细信息，例如日期以及修改期间对已提交容量所做的更改。要以表格形式查看这些事件，请从“查看方式”下拉菜单中选择“表格”选项。您还可以通过从“跟踪 ID”下拉列表中选择或搜索来查看其他订阅的时间线。</block>
   <block id="20647cff2639f24d1690fa3e3247672e" category="inline-image-macro">以表格图表形式显示订阅时间线以及重要事件的屏幕截图</block>
   <block id="e656406ec3f71a6faf961120d8791fe6" category="paragraph"><block ref="e656406ec3f71a6faf961120d8791fe6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6e665113a95f128bda94a45125d034c0" category="doc">查看您的 Keystone 订阅的详细信息</block>
-  <block id="1809602b585b3ac8e4023ba17752a0ea" category="paragraph">您可以在 BlueXP 和 Digital Advisor 的“订阅”选项卡中查看所有订阅列表。此选项卡根据您的订阅状态和使用情况提供易于理解的洞察信息，帮助您随时了解情况并在需要时采取行动。</block>
-  <block id="1c497c059f638e9ed17590e5317d525b" category="list-text">从 BlueXP 左侧导航菜单中，转到 *存储 &gt; Keystone &gt; 订阅*。</block>
   <block id="da165360e20e2139a72fd6fadd1175f3" category="inline-image-macro">查看订阅标签详情</block>
   <block id="777a92dd9a9405f5a8f4c89917427c35" category="list-text">*订阅编号*：NetApp 分配的 Keystone 订阅的订阅编号。</block>
   <block id="e6cb8545fbd488c01d2779c3cf2fe308" category="list-text">*客户名称*：与 Keystone 订阅相关的客户的名称。</block>
@@ -1970,7 +1899,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="8a3b6107c8628879030ac592d36c112f" category="list-text">*计费周期*：订阅的发票周期。</block>
   <block id="55edd89d2feaee597a2b149b857d78ec" category="list-text"><block ref="435e416487181a998706b8fd7ece7b01" category="inline-image-macro-rx" type="image"></block> ：单击此图标将打开“消费趋势”选项卡，您可以在其中查看此订阅中包含的每个性能服务级别的历史使用情况数据。</block>
   <block id="f93c226f4ef038f9642234474d73b11a" category="paragraph">如果您想查看卷或对象存储级别的容量详细信息，您可以导航到 Digital Advisor 中的“卷和对象”选项卡。对于StorageGRID、您可以使用此选项卡读取对象存储环境中各个节点的使用情况。</block>
-  <block id="e33166fca120e46d343d7bfb03834eaf" category="paragraph">您可以参考 BlueXP 中的“资产”选项卡来查看这些详细信息。要查看特定 Keystone STaaS 订阅的详细信息，请参阅<block ref="33df2a894b84cf92bf7b059b0628f59d" category="inline-link-macro-rx"></block> 。如果您想查看多个 Keystone 订阅的详细信息，请参阅<block ref="5fe743b586c50b2c4c63c54967e2b587" category="inline-link-macro-rx"></block> 。</block>
   <block id="a1a94eb88cf3bab17f1cdd5820b53167" category="paragraph">通过*卷和对象*选项卡，您可以深入了解不同详细级别的ONTAP系统卷和对象存储。对于 ONTAP 卷，有两个子选项卡：*卷摘要*，显示映射到已订阅性能服务级别的卷的总数；*卷详细信息*，再次列出这些卷及其具体信息。*对象*子选项卡提供包含文件和对象存储性能服务级别的订阅的对象存储详细信息。</block>
   <block id="75405ccbbd606394978cb919854eeacf" category="list-text">从 Digital Advisor 左侧导航窗格中，转到 *常规 &gt; Keystone 订阅 &gt; 卷和对象 &gt; 卷摘要*。</block>
   <block id="4d14bebdede2f7719e5f532aa0038aae" category="list-text">从 Digital Advisor 左侧导航窗格中，转到 *常规 &gt; Keystone 订阅 &gt; 卷 &gt; 卷详细信息*。</block>
@@ -1981,8 +1909,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e81998590c25872457befb4c184d65ca" category="paragraph">2025年6月19日</block>
   <block id="3f02a37520c925a38cca9df11f1de9a0" category="paragraph">对于高级数据保护服务级别，在“消费趋势”选项卡中，图表显示了主站点和镜像站点的分割。</block>
   <block id="2837e6fa0daf151f4342b7c3c95bb022" category="paragraph">图表不再显示主站点和镜像站点的分割。</block>
-  <block id="373770d35b9d5cd8cd24a486a52b706b" category="paragraph">虽然两款产品的导航功能在<block ref="b4a433674f6f10655ea1ce8bae52a1b9" category="inline-link-macro-rx"></block> ，Keystone 订阅服务与 Keystone STaaS 在组成性能服务级别、服务提供和计费原则方面有所不同。自2024年4月起、NetApp仅维护和发布Keystone STaaS的文档。如果您仍在使用Keystone订阅服务、请联系您的KSM以获得迁移到Keystone STaaS的支持。如果需要、您可以在此处访问Keystone订阅服务文档的PDF版本：</block>
-  <block id="10ad7de63c9f85cf78150d6f5eaa55cc" category="sidebar">BlueXP 和 Digital Advisor 中的 Keystone 仪表板</block>
   <block id="e52a62b3d3e55847cd42b248736bba1b" category="sidebar">查看订阅洞察</block>
   <block id="7c38a1a6d325208696c25a2b660d7c45" category="sidebar">查看资产</block>
   <block id="90b170feab9928831461b78974ca9730" category="sidebar">搜索数据并生成报告</block>
@@ -2032,11 +1958,9 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="18a4b8b499c2fe442ce137abf1dbc32c" category="list-text">这些数据通过 HTTPS 安全地发送到 Keystone 云组件。</block>
   <block id="2a61bef0a823576de7a3c47f8c61627f" category="paragraph"><block ref="2a61bef0a823576de7a3c47f8c61627f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2caa7b87874706ca177e508b178a1948" category="list-text">Keystone 基础设施，包括 NetApp 存储系统。</block>
-  <block id="cbe7ac9d8bb66b75b66d937ef153b137" category="list-text">用于管理和操作服务的工具，例如 ITOM 监控解决方案、BlueXP、Active IQ 和 Active IQ Unified Manager。</block>
   <block id="de0189fb2d8a23d211a49728ea826dc1" category="list-text">Keystone 数据收集器：Keystone 数据收集器收集数据并将其提供给 Keystone 计费平台进行进一步处理。Active此应用程序与Active IQ Unified Manager 捆绑在一起。它会每五分钟从ONTAP 和StorageGRID 控制器收集一次数据。处理数据、并通过用于生成计费数据的AutoSupport 机制将元数据发送到集中式Active IQ 数据湖。IQ 数据湖处理计费数据并将其发送给 Zuora 进行计费。</block>
   <block id="c072efe8294d1003e257c7dd4fe0687d" category="inline-image-macro">收集器数据流</block>
   <block id="92c812556434526899af3c97a106a849" category="paragraph"><block ref="92c812556434526899af3c97a106a849" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a4daf62661f9278775d1e8692f4fb7df" category="paragraph">您可以通过 BlueXP 或 Digital Advisor 查看 Keystone 订阅的订阅和消费详情。要详细了解 Keystone 报告，请参阅<block ref="5a609c392d8730053e3d7fc9f1d0ffab" category="inline-link-macro-rx"></block> 。</block>
   <block id="6f93f55b981dd0322ebbd8e3f04d4db1" category="summary">NetApp Keystone STaaS服务使用多个术语来衡量指标。在使用 Keystone 服务第 3 版时，您可能希望了解有关这些术语的更多信息。</block>
   <block id="947a74aac556a4978330239679ebabf1" category="list-text">IOPS：每秒处理的输入/输出操作数。</block>
   <block id="06270a3cff387fa75ec0294b7ef6f62c" category="list-text">*IOPS 中的操作计数器图表*：应用程序请求的每秒协议操作数。</block>
@@ -2069,7 +1993,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e6e41564c0eb58e7df450956b2e9d7ef" category="section-title">Keystone 存储即服务 (STaaS)</block>
   <block id="db1293ec8548c413e40861e5a81d1401" category="paragraph">存储即服务(STaaS)产品旨在为存储基础架构的采购、部署和管理提供类似于公有云的模式。尽管许多企业仍在制定混合云战略，但 Keystone STaaS 提供了灵活性，让您可以先从本地服务入手，然后在合适的时机过渡到云端。这可确保您能够在不同的部署模型中保障您的承诺，并根据需要重新分配支出，而不会增加每月账单。</block>
   <block id="b7d43ae1979d8e64c664de0e3d94f3c9" category="paragraph">NetApp Keystone STaaS 按使用量付费订阅服务提供灵活且可扩展的消费，并为您的存储需求提供可预测的预付定价。</block>
-  <block id="52773f9acaafea047b32251f660d25e2" category="list-text">您可以根据已提交的 IOPS 和延迟容量付费，以满足各种工作负载需求。不同的性能服务层级 - Extreme、Premium、Standard、Value、Object 和 Cloud Volumes ONTAP 使您能够根据购买的服务级别管理存储。</block>
   <block id="50e0459d44500ff84b442895fa1a64f1" category="list-text">您可以为硬件，核心操作系统选择捆绑包价格，并以每 TiB 价格获得支持。对于每种存储类型、统一存储、块存储、优化存储、对象存储或云存储服务，您都有一张发票。</block>
   <block id="6770f961b4c4aaa762fb284da8cafd6f" category="list-text">您可以选择灵活的服务期限和付款方式，例如按月、按季度、按半年或按年。</block>
   <block id="65f13786054dfad371efd46410aaee0a" category="summary">Keystone STaaS 版本 3 提供预定义服务级别的存储容量。Keystone管理的每个卷都与一个服务级别相关联。</block>
@@ -2130,7 +2053,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="7649a9c2aa81e74af3af6ce5c9dcb1f7" category="cell">*SLO标准*</block>
   <block id="05a7c939901eab929ebc44c3b2bea033" category="cell">≤8瓦/TiB</block>
   <block id="a219a5819e6733ccfc6f4bfd2c2de9c4" category="cell">≤4W/TiB</block>
-  <block id="7317b3beebf79ce6d9067b02a860be6b" category="list-text">您可以通过 BlueXP 界面或 Keystone Success Manager (KSM) 请求更改承诺容量。有关请求更改的信息，请参见<block ref="063933bc4dc8a29247242b2012129da2" category="inline-link-macro-rx"></block>。</block>
   <block id="8bf4a89637b88a17fe1be4dad5d23488" category="paragraph">请注意以下几点：</block>
   <block id="aa26b728d618a456dca6365c13707f90" category="summary">了解 NetApp Keystone STaaS 服务版本 3 支持的存储容量类型。</block>
   <block id="d0178ba7ef0d480555c11a8e0e008358" category="paragraph">这是在应用存储阵列提供的任何数据效率之前存储用户数据所需的存储容量。</block>
@@ -2170,7 +2092,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="a5295d30cda2860412d8b6bef5ab5b8a" category="paragraph"><block ref="a5295d30cda2860412d8b6bef5ab5b8a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8215bcb478e68aed5d5b6ae1aaf7d85c" category="inline-link-macro">开始使用 Keystone 仪表板</block>
   <block id="a30438022816f4866ad2630868499b34" category="list-text"><block ref="a30438022816f4866ad2630868499b34" category="inline-link-macro-rx"></block></block>
-  <block id="ffb1a3b812d409c688b237660355d989" category="paragraph">您可以使用下载按钮生成并查看 Keystone 数据报告<block ref="5875c8338d2998bbff533ca0f83e1168" category="inline-image-macro-rx" type="image"></block>可在 BlueXP 或 Digital Advisor 内的选项卡中使用。这些选项卡允许您生成订阅、历史使用情况、突发使用情况、性能、资产、卷和对象的报告。</block>
   <block id="ba14ade4eddc6f656eb0b7e0f297c28b" category="paragraph">此部分将根据查询的日期范围显示卷中工作负载的输入-输出图形。显示性能服务级别的峰值 IOPS 和当前 IOPS（过去五分钟内，不基于查询的日期范围），以及时间范围内的最小、最大和平均 IOPS（以 IOPS/Tib 为单位）。</block>
   <block id="0b85467ebafa7ca3c47e82dc38184484" category="section-title">吞吐量</block>
   <block id="e71af0b604b9c4925cf64f4a5d32c687" category="paragraph">您可以参考使用情况指标来查看每个订阅的使用情况：</block>
@@ -2260,7 +2181,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="f554b3f79210a232f43aa1148b762978" category="list-text">收集文件并将其发送至 ng-keystone-secure-site-upload@netapp.com（用于安全的非 USPS 站点）或发送至 ng-keystone-secure-site-usps-upload@netapp.com（用于安全的 USPS 站点）。</block>
   <block id="2dfe1e4bd705394ed47b37168da7e39d" category="paragraph"><block ref="2dfe1e4bd705394ed47b37168da7e39d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1b3427c4c890671eb0520ac0d4affa3" category="paragraph">您可以看到有关集群中卷的详细信息，包括卷名称、节点序列号、集群名称、主机名和性能服务级别。您还可以监控已配置的容量、逻辑和物理利用率以及冷数据。</block>
-  <block id="d989db649afc27b39b5e6bcc878623cb" category="paragraph"><block ref="d989db649afc27b39b5e6bcc878623cb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5c5e806c3574f28d7ccf6a897c034d18" category="paragraph"><block ref="5c5e806c3574f28d7ccf6a897c034d18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="21c9d68b030c5bf0ddbda9a170d32552" category="paragraph">折线图显示历史消费数据并允许用户分析选定日期范围内的趋势。该图显示了已用容量（总存储容量，包括数据和快照数据）、数据（用户数据使用的存储容量）和快照（快照数据使用的存储容量）等指标，以及已提交容量和突发容量。每个数据点的日期和时间显示在图表的底部。根据查询的日期范围，使用情况图表最多显示 30 个数据收集点。您可以将鼠标光标悬停在图表上，以查看每个数据收集点的使用情况细目。</block>
   <block id="1b137f241f929a351e941ba96f7347a8" category="admonition">如果性能服务级别有多个实例，您可以按实例进行过滤，以分别查看每个实例的历史数据。</block>
@@ -2268,11 +2188,8 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="c790cd64cc9ce087b29b63d208671f07" category="admonition">如果性能服务级别有多个实例，您可以在任一视图中展开*按实例查看*以分别查看每个实例的当前消耗详细信息。例如，如果您在订阅中有两个极限性能服务级别的实例，则每个实例将分别显示其自己的已提交、已消耗和可用容量。</block>
   <block id="1d33ed42565e60483002000b7dcb22c3" category="paragraph"><block ref="1d33ed42565e60483002000b7dcb22c3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d302dcc8fc5540b6e87e54f3d0753c8" category="admonition">如果性能服务级别有多个实例，您可以选择“实例”选项卡来查看每个实例的当前消耗详情。例如，如果您在订阅中有两个极限性能服务级别的实例，则每个实例将分别显示其自己的已提交、已消耗和可用容量。要了解有关性能服务级别的更多信息，请参阅<block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block>。</block>
-  <block id="59830f78e0d47985667f7cf21bc3414e" category="paragraph"><block ref="59830f78e0d47985667f7cf21bc3414e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f888b3b7cb5daf8fc505a9054b74b03d" category="list-text">*即将到期*：6 个月内到期的订阅数量。单击“*查看*”可在“*订阅*”选项卡中查看这些订阅。</block>
   <block id="e7a862d1277ff52d64b2b8419fe26d69" category="list-text">*容量使用情况*：超出突发容量、使用突发容量和未充分利用的订阅的容量消耗状态。每个类别都包含一个“查看”按钮，用于导航到应用了相关过滤器的“订阅”选项卡。</block>
-  <block id="2241cb4debecdc9d4b9f4ec012449ef9" category="paragraph"><block ref="2241cb4debecdc9d4b9f4ec012449ef9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8f6704f67b358f07487daa3b4147d780" category="paragraph">您可以使用可用的高级过滤选项来优化搜索。例如，在“*订阅*”子选项卡中，您可以按Keystone版本、计费周期、最高容量和订阅到期天数过滤数据；在“集群中的卷*”选项卡中，您可以按卷名称、集群名称、卷类型等进行过滤。可以同时应用多个过滤器来精确缩小搜索结果。<block ref="f163c2c9209b92ad140bb233f78e91e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="12e1b3132ab24ad467a7db5c6d50da11" category="list-text">* Keystone版本*：用于订阅的Keystone服务的版本。不同订阅版本的性能服务级别的费率计划规则可能有所不同。要了解有关版本 v1 的更多信息，请参阅<block ref="d7848503560f6eda6c1c5b670f722092" category="inline-link-rx"></block>。</block>
   <block id="2011f3283ff705ca06648130cb758700" category="paragraph"><block ref="2011f3283ff705ca06648130cb758700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e3db4ac6b95d51ce2a9fc54f2ebc8f17" category="list-text">*链接订阅*：此列可供您选择使用。如果您有任何与主订阅相链接的次要订阅，则此列会列出主订阅的链接订阅号。此订阅号可以是您的主要订阅号，也可以是次要（链接）订阅号。</block>
@@ -2335,12 +2252,9 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="f1725014f45852c6d29865ed1732954a" category="paragraph">每个性能服务级别的历史消耗数据根据所选的时间范围以折线图显示。如果修改或续订了Keystone订阅，您可以将开始日期设置为之前的日期以查看过去的消费数据。</block>
   <block id="59bf2678f53f6a44de56bb54540c62f2" category="summary">使用“监控”选项卡查看并创建Keystone订阅的警报监控器。</block>
   <block id="06dace1d8d4bcbb149776f29c2ecb1c6" category="doc">查看并创建Keystone订阅的警报监视器</block>
-  <block id="503deffca9ee5758ad0987665bae2c9b" category="paragraph">您可以从BlueXP中的Keystone仪表板查看和创建Keystone订阅的警报监视器。仪表板显示系统生成和用户定义的容量使用情况和订阅到期监视器。您可以创建监视器来设置阈值、选择警报严重性以及添加通知的电子邮件收件人。  Digital Advisor不提供此功能。</block>
   <block id="0189c782e04bc566597908eddaee3dd5" category="section-title">查看警报监视器</block>
   <block id="d8d1f09f12d3047d0b1d5264e0fbb3d4" category="paragraph">要查看警报监视器，请按照以下步骤操作：</block>
-  <block id="ad041e960bec5dc5229fc16df370faba" category="list-text">从BlueXP左侧导航菜单中，选择 *存储 &gt; Keystone &gt; 监控 &gt; 警报监控器*。</block>
   <block id="8891b6740bffe77b967f8fe0f2bb0320" category="inline-image-macro">Keystone订阅警报监视器的屏幕截图</block>
-  <block id="3d0fb75de7ebb0236cb8ae8d3c066ab9" category="paragraph"><block ref="3d0fb75de7ebb0236cb8ae8d3c066ab9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ae75ac6ecba83cd82e353c5c2dddf9ca" category="paragraph">您可以查看Keystone订阅中的警报监视器列表，包括监视器名称、触发通知的警报条件、严重性级别、订阅编号、性能服务级别和状态。您可以检查“创建者”列来确定警报监视器是系统生成的还是用户定义的。</block>
   <block id="6b29e04f1a3d7126b32fea3e35336be6" category="section-title">创建和管理警报监视器</block>
   <block id="c52ec421c31615867815fd4658197c12" category="paragraph">从*警报监视器*选项卡中，您可以创建监视器来跟踪容量使用情况和订阅到期情况。您还可以根据需要编辑、复制或删除现有监视器。</block>
@@ -2385,13 +2299,10 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="0ebc03672fcf3b001eb123454c829481" category="inline-link-macro">查看和管理Keystone订阅的提醒</block>
   <block id="45b1b24d622565a139eb50e1cef4cd1b" category="list-text"><block ref="45b1b24d622565a139eb50e1cef4cd1b" category="inline-link-macro-rx"></block></block>
   <block id="1853b61f9b6b779d424aeae83667bdd2" category="summary">使用“监控”选项卡来查看和管理Keystone订阅的警报。</block>
-  <block id="84d89a0580920cca786f8f2e2e9ea5e7" category="paragraph">BlueXP中的Keystone仪表板允许您查看和管理Keystone存储环境中的活动警报。您可以看到系统生成的警报和用户定义的容量使用情况和订阅到期警报。从此视图，您可以快速评估警报严重性、识别存储问题并采取纠正措施。此视图在Digital Advisor中不可用。</block>
   <block id="7945624e1cf116b23d8e231fa6ab8d6d" category="paragraph">要配置用户定义的警报，请参阅<block ref="78059b8e17cadd39b328bdc0fd7cd2de" category="inline-link-macro-rx"></block>。</block>
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">查看警报</block>
   <block id="17ec1dd00ee2fa8e3a2bea341f3176eb" category="paragraph">要查看活动警报，请按照以下步骤操作：</block>
-  <block id="a880a650e117aeb93dc97bdeaf243435" category="list-text">从BlueXP左侧导航菜单中，选择 *存储 &gt; Keystone &gt; 监控 &gt; 警报*。</block>
   <block id="c1c3f4de38096a880721ae1b1aac2343" category="inline-image-macro">Keystone订阅的有效警报屏幕截图</block>
-  <block id="4898a5ef7f9f2f68000a751495cca177" category="paragraph"><block ref="4898a5ef7f9f2f68000a751495cca177" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3c879b0c34417e803eaa2f50299c117" category="paragraph">您可以查看警报的详细信息，例如严重性、ID、描述、触发时间、订阅号、跟踪ID、性能服务级别和状态。该页面还按严重程度和类型显示未解决警报的总数。</block>
   <block id="685b0f2db45e4fc09a06ccb4695806de" category="section-title">管理警报</block>
   <block id="e947bf3957a95267ebbec2757a9931af" category="paragraph">从“*警报*”选项卡中，您可以执行以下操作：</block>
@@ -2403,8 +2314,108 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="f4a4fc70d768b745e8b5b57c259ad569" category="inline-link-macro">查看和创建警报监视器</block>
   <block id="a2adacdfb688f8f57f2b03920c9e2a80" category="list-text"><block ref="a2adacdfb688f8f57f2b03920c9e2a80" category="inline-link-macro-rx"></block></block>
   <block id="5e8ec25578a50b65b6a5cd50c3407574" category="paragraph">要查看订阅的详细信息，请按照以下步骤操作：</block>
-  <block id="7833eab52cb0dde2b2475b6de3bac658" category="paragraph"><block ref="7833eab52cb0dde2b2475b6de3bac658" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="18d49dfd26fc514adaab2c9799dd5201" category="paragraph">您会看到容量使用情况、订阅到期状态和未解决的警报等关键指标。您可以从表中看到以下详细信息：</block>
   <block id="49ee8cd124ac86a74b0e8df79ea84356" category="admonition">您可以单击“到期日期”列旁边的向下箭头来查看每个订阅的性能服务级别信息。这显示了详细的容量信息，包括当前使用情况、承诺容量、预配置容量、突发容量和可用容量。</block>
   <block id="7438fabae28e88c43c70139fd85c992a" category="section-title">2025年9月22日</block>
+  <block id="bc2fe31b1e2682a9a79513d792e9c721" category="doc">BlueXP现在是NetApp控制台</block>
+  <block id="995c8f79a8e07fbd8d519e45d03d6004" category="paragraph">NetApp控制台建立在增强和重组的BlueXP基础之上，可在企业级内部和云环境中集中管理NetApp存储和NetApp数据服务，提供实时洞察、更快的工作流程和简化的管理，并且高度安全且合规。</block>
+  <block id="2ef9d641d45afe99b74ad6f9a9f797ad" category="inline-link-macro">NetApp控制台发行说明</block>
+  <block id="2ef72cc8a56fc5999e258b450b9fca24" category="paragraph">有关更改的详细信息，请参阅<block ref="06d876b9fcdfcba8772d93beac1ca38b" category="inline-link-macro-rx"></block>。</block>
+  <block id="468705a461bd39c3c6cc91cf30d78d23" category="list-text">用于管理和操作服务的工具，例如 ITOM 监控解决方案、 NetApp Console、 Active IQ和Active IQ Unified Manager。</block>
+  <block id="8a982cf9d4fce545e4c4210341623864" category="paragraph">您可以通过NetApp控制台或Digital Advisor查看Keystone订阅的订阅和消费详情。要了解有关Keystone报告的更多信息，请参阅<block ref="5a609c392d8730053e3d7fc9f1d0ffab" category="inline-link-macro-rx"></block>。</block>
+  <block id="c3d65a3c50cdc5589b31f6ea38479a67" category="list-text">您可以根据 IOPS 和延迟承诺容量付费，以满足各种工作负载需求。不同的性能服务层级 - Extreme、Premium、Standard、Value、Object 和Cloud Volumes ONTAP使您能够根据购买的性能服务级别管理存储。</block>
+  <block id="ba17302e854fad784b3a0f21ef030b25" category="list-text">容量致力于每个性能服务级别。</block>
+  <block id="04b0e8727ad816eafd0891457121d0a1" category="list-text">您可以通过控制台或Keystone Success Manager (KSM) 请求更改已承诺容量。有关请求更改的信息，请参阅<block ref="063933bc4dc8a29247242b2012129da2" category="inline-link-macro-rx"></block>。</block>
+  <block id="876a76983fba3da801a1f6d2d41a5db3" category="paragraph">您可以使用Keystone Collector 管理 TUI 实用程序创建性能服务级别 (PSL)。通过 TUI 创建 PSL 会自动选择为每个性能服务级别设置的默认值，从而减少通过Active IQ Unified Manager创建 PSL 时手动设置这些值时可能发生的错误的可能性。</block>
+  <block id="084a50394b54545f96247d840d02d0cf" category="admonition">您可以突出显示Keystone订阅服务版本 1 的 *KFS* 选项。Keystone订阅服务与Keystone STaaS 在组成性能服务级别、服务产品和计费原则方面有所不同。要了解更多信息，请参阅<block ref="28860fa9118cfd783678772e54f9b578" category="inline-link-macro-rx"></block>。</block>
+  <block id="8b8e55daf5c09f217fffc6d663a276de" category="list-text">所有受支持的Keystone性能服务级别将显示在指定Keystone版本的 *选择Keystone服务级别* 选项中。从列表中启用所需的性能服务级别。</block>
+  <block id="ca0d168dfc9d3eec3e502042fa77ec2f" category="admonition">您可以同时选择多个性能服务级别来创建 PSL。</block>
+  <block id="b3eed4304ada05a16ec5ec8b501efe72" category="admonition">如果所选性能服务级别的 PSL 已存在于指定的Active IQ Unified Manger 服务器上，则无法再次创建它。如果您尝试这样做，您将收到一条错误消息。<block ref="b503f359d5754d7d4260112bc56a05d7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea25018c2d045851b6c9e6567fb76051" category="paragraph">您可以通过NetApp控制台查看和跟踪修改Keystone订阅的服务请求，提供快速摘要并监控进度。</block>
+  <block id="2fbcdf41574fdac1e466d4dad9bb3a55" category="list-text">从控制台左侧导航菜单中，选择*存储&gt; Keystone &gt; 管理*。</block>
+  <block id="26a02c6592f7d54ca37b8c1a48780136" category="paragraph"><block ref="26a02c6592f7d54ca37b8c1a48780136" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="aaaea723208b33ae079e357878d9a9cb" category="paragraph">您可以查看由单个Keystone订阅管理的ONTAP集群和节点以及StorageGRID网格、站点和节点的详细信息。您可以从NetApp控制台或Digital Advisor在Keystone仪表板中访问这些订阅资产。</block>
+  <block id="d1c3a83a967f6dcdc9a6ad9e94a8bbed" category="section-title">从NetApp控制台查看Keystone订阅资产</block>
+  <block id="d79f885d7740bdd0320f954c06a36686" category="paragraph">*订阅*页面中的*资产*选项卡显示与订阅相关的集群、 StorageGRID节点和ONTAP节点中的卷的详细信息，包括各种详细信息和容量状态。</block>
+  <block id="0f05cad44de93b9ae51d0faab82ddf96" category="admonition">此视图每次仅限一个Keystone订阅。您还可以通过从*跟踪 ID* 下拉列表中选择来查看其他订阅的资产。NetApp控制台中的Keystone仪表板允许您查看跨多个Keystone订阅的资产。要了解更多信息，请参阅<block ref="5fe743b586c50b2c4c63c54967e2b587" category="inline-link-macro-rx"></block>。</block>
+  <block id="6ad1754a0bf091736b7eaeb7b3f62c28" category="list-text">从控制台左侧导航菜单中，选择*存储&gt; Keystone &gt;订阅*。</block>
+  <block id="faf81a172b05b574a00b455b36f81124" category="paragraph">系统打开*当前消耗*选项卡。</block>
+  <block id="5521c544829f1dc100d359936dfe7589" category="list-text">选择 *常规 &gt; Keystone订阅 &gt; 资产 &gt; ONTAP*。</block>
+  <block id="2e74dd182df85e5efdcab206a5bb39aa" category="list-text">选择*常规&gt; Keystone订阅&gt; 资产&gt; StorageGRID*。</block>
+  <block id="722a86c8a2d2a94e76387a8dfcb77c75" category="paragraph">NetApp控制台中的Keystone仪表板允许您根据您的访问权限查看有关跨多个Keystone订阅的集群、配置卷和StorageGRID节点中的节点的详细信息。此视图在Digital Advisor中不可用。</block>
+  <block id="5280fdba34096a28b0a045aa4d088574" category="list-text">从控制台左侧导航菜单中，选择*存储&gt; Keystone &gt;资产*。</block>
+  <block id="168a7f531362f0071a0d1ecd8963c4fa" category="paragraph">*资产*页面显示*集群中的节点*选项卡。</block>
+  <block id="8942b04e12a7cd6446730a97caf54479" category="paragraph"><block ref="8942b04e12a7cd6446730a97caf54479" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="26b4005051a18ffb2e580913d3f58f45" category="paragraph"><block ref="26b4005051a18ffb2e580913d3f58f45" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4fef845c9e01e08990307334e4eea678" category="paragraph"><block ref="4fef845c9e01e08990307334e4eea678" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="86065a45dab20475bb9368ffbd10fe62" category="paragraph">您可以通过NetApp控制台或Digital Advisor查看Keystone订阅的历史数据：</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="open-title">NetApp控制台</block>
+  <block id="bbd84f060e2b584367bb75302c5f5b07" category="paragraph">您可以通过控制台或Digital Advisor查看累计的突发数据使用情况。如果您从控制台中 *消费趋势* 选项卡的 *查看* 下拉菜单中选择了 *累计突发*，或者从Digital Advisor中 *消费趋势* 选项卡中选择了 *已开票累计突发* 选项，则您可以根据所选的计费周期按月或按季度查看累计突发数据使用情况。该数据适用于已计费的过去 12 个月，您可以按日期范围查询最多过去 30 个月的数据。条形图显示已开票数据，如果尚未对使用情况进行计费，则该期间将被标记为“待处理”。</block>
+  <block id="e833a568221431c19dcca95c850ae159" category="paragraph">您可以通过控制台或Digital Advisor查看每月或每季度计费期间的每日累计突发数据使用量。在控制台中，如果您从 *消费趋势* 选项卡中的 *查看* 下拉菜单中选择 *累计突发*，则 *按天累计突发* 表将提供详细数据，包括时间戳、已提交、已消耗和累计突发容量。</block>
+  <block id="dfa8d7fe27ec169b0ef41ef00fee0ae8" category="paragraph">要通过NetApp控制台或Digital Advisor查看订阅的当前消费状态，请按照以下步骤操作：</block>
+  <block id="10cb2c81585ad95f970824cfe6301506" category="summary">作为NetApp Keystone STaaS 订阅者，您可以通过NetApp Console 或Digital Advisor访问Keystone仪表板</block>
+  <block id="c3cfe25887e605c51c4e6e8d2d976921" category="paragraph">订阅NetApp Keystone服务后，您可以通过NetApp Console 或Digital Advisor访问Keystone仪表板。</block>
+  <block id="f5d302c73eacff7b76d482bf489706b0" category="inline-link-macro">登录控制台</block>
+  <block id="635729a4f0a6dc6d9b4d20446b497c80" category="paragraph">使用您的NetApp支持站点凭据登录控制台，或使用您的电子邮件和密码注册NetApp云登录。有关详细信息，请参阅<block ref="7dcc8a9f27b5ee3278b228b8863caa51" category="inline-link-macro-rx"></block> 。</block>
+  <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">登录控制台。</block>
+  <block id="9468bc9d4455dd0f4c2b5b47f4d4fa7a" category="list-text">从控制台左侧导航菜单中，选择*存储&gt; Keystone*。</block>
+  <block id="444ff26ba7d7734c69a4ef9ad0f3288e" category="paragraph"><block ref="444ff26ba7d7734c69a4ef9ad0f3288e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ccb709a27cabd8f47e223efe2e7e0976" category="inline-link-macro">NetApp控制台中的Keystone仪表板</block>
+  <block id="c2ada1bb7e81854dc20dc863c0626d40" category="list-text"><block ref="c2ada1bb7e81854dc20dc863c0626d40" category="inline-link-macro-rx"></block></block>
+  <block id="1e8e11a2e28362cb179e8a5acc62e9a1" category="summary">作为NetApp Keystone STaaS 订阅者，您可以从NetApp Console 或Digital Advisor获取订阅概览。</block>
+  <block id="ca17ff394820ffc1dc179f8c49be2df0" category="list-text">* NetApp控制台*：从控制台中的 *存储 &gt; Keystone &gt; 概览* 访问仪表板。要了解更多信息，请参阅<block ref="b91ce16ea34e848048af8bd4f38e22c2" category="inline-link-macro-rx"></block>。</block>
+  <block id="a14ae3cf1f820878c7ed263939aa338a" category="section-title">关于NetApp控制台</block>
+  <block id="829813f9a1fdca3dcf82b2855c04662b" category="paragraph">可通过NetApp控制台访问Keystone 。</block>
+  <block id="d07b485359c52169277c3ff7aaed95d4" category="paragraph">NetApp控制台可在企业范围内跨本地和云环境集中管理NetApp存储和数据服务。需要控制台才能访问和使用NetApp数据服务。作为管理界面，它使您能够从一个界面管理许多存储资源。控制台管理员可以控制企业内所有系统的存储和服务的访问。</block>
+  <block id="25873f208d2ff2745f96d86d5a87d7e7" category="paragraph">您不需要许可证或订阅即可开始使用控制台，并且只有当您需要在云中部署控制台代理以确保与存储系统或NetApp数据服务的连接时才需要付费。但是，一些可从控制台访问的NetApp数据服务是需要许可或基于订阅的。</block>
+  <block id="e955295a860e893d00951c8233972d56" category="paragraph">详细了解<block ref="2f3134b8970d60226f00e362a8c05c8c" category="inline-link-macro-rx"></block>。</block>
+  <block id="e1a2098926fff2b44e76595b2fab04b4" category="list-text">虽然控制台和Digital Advisor提供了一些独有的功能，但控制台为Keystone提供了管理功能，允许您管理订阅并进行必要的调整。</block>
+  <block id="5ed613d5969e54b01e0691f040afb027" category="inline-link-macro">了解NetApp控制台访问角色</block>
+  <block id="ff366c40543fbef7804957d52fabf2a0" category="list-text">您必须被分配 * Keystone admin* 角色才能修改订阅。要了解更多信息，请参阅<block ref="22d60f99a4ac0841de53b7fa8c3f1253" category="inline-link-macro-rx"></block>。</block>
+  <block id="7d0366e10bff9b03e7d1ebe083232ad0" category="inline-link-macro">Digital Advisor与NetApp Console 集成</block>
+  <block id="19f702ba317875d05972d4dc2df1d379" category="list-text">Digital Advisor与控制台集成，允许您直接从控制台访问所有Digital Advisor功能，包括Keystone仪表板。要了解更多信息，请参阅<block ref="5983da9102c6398c455221dbbeef93c0" category="inline-link-macro-rx"></block>。</block>
+  <block id="754a3a5b6d930270b1fbfb641c89b440" category="section-title">NetApp Console 和Digital Advisor中的Keystone功能</block>
+  <block id="fbe45a39864c469e12feb1cb9128ed44" category="paragraph">下表显示了NetApp控制台和Digital Advisor中可用的功能，帮助您快速确定适合您需求的平台：</block>
+  <block id="14b33e994477a76e918b15271e482d20" category="cell">* NetApp控制台*</block>
+  <block id="e35a8b08a1eced21ae0e1445810e0ff0" category="paragraph"><block ref="e35a8b08a1eced21ae0e1445810e0ff0" category="inline-link-macro-rx"></block></block>
+  <block id="2e8b12135324e72007b3768ea8e3b475" category="summary">作为NetApp Keystone STaaS 订阅者，您可以从NetApp Console 获取订阅概览。</block>
+  <block id="a8b926e7f40ce1b8a36a0d50c4412766" category="paragraph">您可以使用“概览”页面快速确定存在风险的工作负载、查看订阅的容量和到期状态、识别未解决的警报以及查看容量利用率最高的订阅。您还可以查看不同版本Keystone的订阅状态，突出显示需要您注意的任何问题。</block>
+  <block id="859167398832678cbae2e0062c6a5136" category="paragraph">要查看*概览*页面，请从控制台左侧导航菜单转到*存储&gt; Keystone &gt; 概览*。</block>
+  <block id="e9803f7c01419ecddf878fe4fd33bc47" category="inline-image-macro">概览页面的屏幕截图</block>
+  <block id="4e1db70e55c012f3d68da057084056e2" category="paragraph"><block ref="4e1db70e55c012f3d68da057084056e2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e8325080ad6eca6e402bccdbbcccd2b3" category="paragraph">*概述*页面提供以下见解：</block>
+  <block id="b6a17a16f2925f240966aa803c2d67ff" category="summary">通过NetApp控制台修改您的Keystone订阅以更改相关性能服务级别的承诺容量。</block>
+  <block id="2227728e15b4a8b218a3533e278cf342" category="doc">从NetApp控制台修改您的Keystone订阅</block>
+  <block id="84b1a13bc7964ae4f7768e4f9c3c8756" category="paragraph">您可以通过NetApp控制台修改Keystone订阅的相关性能服务级别的承诺容量。</block>
+  <block id="9313fbe04542c1ff2b3e92ade6375732" category="list-text">您必须被分配至 * Keystone admin* 角色才能修改已提交的容量。要了解更多信息，请参阅<block ref="22d60f99a4ac0841de53b7fa8c3f1253" category="inline-link-macro-rx"></block>。</block>
+  <block id="7a91109a620e891743c65eea451a0cf2" category="paragraph"><block ref="7a91109a620e891743c65eea451a0cf2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb873e65402011d905122364da690822" category="paragraph">您可以从NetApp控制台中的Keystone仪表板查看和创建Keystone订阅的警报监视器。仪表板显示系统生成和用户定义的容量使用情况和订阅到期监视器。您可以创建监视器来设置阈值、选择警报严重性以及添加通知的电子邮件收件人。Digital Advisor不提供此功能。</block>
+  <block id="b5c32e6c2b4476154d229af70df8cf7a" category="list-text">从控制台左侧导航菜单中，选择*存储&gt; Keystone &gt;监控&gt;警报监控器*。</block>
+  <block id="187aba3af65d3bb1230dc8604f0acb91" category="paragraph"><block ref="187aba3af65d3bb1230dc8604f0acb91" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="293028e42f8edb8a2749fa8fca8130fa" category="paragraph">NetApp控制台中的Keystone仪表板允许您查看和管理Keystone存储环境中的活动警报。您可以看到系统生成的警报和用户定义的容量使用情况和订阅到期警报。从此视图，您可以快速评估警报严重性、识别存储问题并采取纠正措施。此视图在Digital Advisor中不可用。</block>
+  <block id="743c58da8a9fadd274f3f9b5676e7a58" category="list-text">从控制台左侧导航菜单中，选择*存储&gt; Keystone &gt;监控&gt;警报*。</block>
+  <block id="63fb46a4add2145056e9aea0b921bc56" category="paragraph"><block ref="63fb46a4add2145056e9aea0b921bc56" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ebc3d49271bd7e13ad66606299b721ea" category="section-title">从NetApp控制台搜索和过滤数据</block>
+  <block id="35716f4fafb244c80a13dc4d6f0b0da8" category="paragraph">在控制台中，您可以根据选项卡内表中可用的列参数搜索和过滤Keystone数据。例如，在*Subscriptions*页面下的*Subscriptions*选项卡中，您可以通过在搜索框中输入Keystone版本来过滤数据。同样，在“资产”页面下的“集群中的卷”选项卡中，您可以通过在搜索框中输入卷名称来过滤卷。</block>
+  <block id="4d3b4ab28c7beb3d285ae63a4b48dc5b" category="paragraph">您可以使用可用的高级过滤选项来优化搜索。例如，在“*订阅*”选项卡中，您可以按Keystone版本、计费周期、最高容量和订阅到期天数过滤数据；在“集群中的卷*”选项卡中，您可以按卷名称、集群名称、卷类型等进行过滤。可以同时应用多个过滤器来精确缩小搜索结果。<block ref="f163c2c9209b92ad140bb233f78e91e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1418ec6536f32435fe4b47c5a602af2d" category="section-title">从NetApp Console 或Digital Advisor生成报告</block>
+  <block id="d02a7046e40b8e75255587f466fba43d" category="inline-image-macro">控制台中的报告下载图标 2</block>
+  <block id="fc19c977e7a8a103b711cdbd09268f08" category="paragraph">您可以使用下载按钮生成并查看Keystone数据报告<block ref="e9d46812a54c7d719e025941df7bf76b" category="inline-image-macro-rx" type="image"></block>可在控制台或Digital Advisor内的选项卡中使用。这些选项卡允许您为订阅、历史使用情况、突发使用情况、性能、资产、卷和对象生成报告。</block>
+  <block id="106fec2e24576e5836ac1a7bd3770ec8" category="admonition">您可以选择在Digital Advisor中使用此选项卡。联系支持人员查看此选项卡。它在NetApp控制台中不可用。</block>
+  <block id="2cffc1f33b9b6ccb45614d69036254d2" category="list-text">选择*常规&gt; Keystone订阅&gt; 性能*。</block>
+  <block id="cf965a30eec7fe8ec42e2f3f520205a4" category="summary">从NetApp控制台查看订阅时间表，其中包括激活、修改和续订日期等事件。</block>
+  <block id="ea0ce0391196099aab618a4b710b5332" category="paragraph">NetApp控制台中的Keystone仪表板提供了Keystone订阅的时间线视图，显示激活、修改和续订日期等事件。此时间线视图在Digital Advisor中不可用。</block>
+  <block id="51a66b760aa1870a147d6acc0e6c8efd" category="paragraph">订阅时间线默认以折线图显示，并带有标记重要事件的图标。将鼠标悬停在事件上即可查看详细信息，包括日期和已提交的容量变化。要在表中查看这些事件，请从*查看方式*下拉菜单中选择*表格*选项。要查看其他订阅时间表，请从*跟踪 ID* 下拉菜单中选择或搜索。</block>
+  <block id="fd4257d1ebe74f01a9d3b5236f722a08" category="paragraph">您可以从NetApp控制台和Digital Advisor中的 *订阅* 查看所有订阅的列表。此视图根据您的订阅状态和使用情况提供易于理解的见解，帮助您随时了解情况并在需要时采取行动。</block>
+  <block id="5e6ce2a236a2d35561ce83721f8bb7e4" category="paragraph"><block ref="5e6ce2a236a2d35561ce83721f8bb7e4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="579139f19217a677980dce581b098367" category="paragraph">您会看到容量使用情况、订阅到期状态和未解决的警报等关键指标。</block>
+  <block id="09253a17dd3290d17d3baeba1a85ec41" category="paragraph">您可以从表中看到以下详细信息：</block>
+  <block id="a79d6591df4c712ce010c266887785cb" category="paragraph">您可以参考NetApp控制台中的“*资产*”页面来查看这些详细信息。要查看特定Keystone STaaS 订阅的详细信息，请参阅<block ref="33df2a894b84cf92bf7b059b0628f59d" category="inline-link-macro-rx"></block>。如果您想查看多个Keystone订阅的详细信息，请参阅<block ref="5fe743b586c50b2c4c63c54967e2b587" category="inline-link-macro-rx"></block>。</block>
+  <block id="a117e95e0e717db586ac46cfe455c16c" category="summary">已知问题指出了可能会阻止您有效使用Keystone 的问题。</block>
+  <block id="56c7b419b1c28b2e596114d1fcf4fd33" category="paragraph">已知问题确定了可能阻止您有效使用Keystone STaaS 的问题。</block>
+  <block id="ebc614947502c956dd0fcafc02067f05" category="paragraph">此 API 检索与给定 customerID 关联的所有订阅和性能服务级别的列表。</block>
+  <block id="af84df9dc62db50a848fb88711a5b185" category="paragraph">API 将以 JSON 对象进行响应，其中包含给定客户的所有订阅和相关性能服务级别详细信息的列表。以下是一个示例响应：</block>
+  <block id="820418944be1b89bbfbf293ebae84a9a" category="list-text">*生成刷新令牌*：使用NetApp凭证通过Digital Advisor控制台获取刷新令牌。此令牌用于确保持续访问，而无需重复登录。</block>
+  <block id="827607b42918efbeec5d1431418ad729" category="paragraph">虽然两款产品的导航功能在<block ref="07f7314e0fdd92e843ce6bfcd1f08066" category="inline-link-macro-rx"></block>， Keystone订阅服务与Keystone STaaS 在组成性能服务级别、服务提供和计费原则方面有所不同。截至 2024 年 4 月， NetApp仅维护和发布Keystone STaaS 的文档。如果您仍在使用Keystone订阅服务，请联系您的 KSM 以获得迁移到Keystone STaaS 的支持。如果需要，您可以在此处访问Keystone订阅服务文档的 PDF 版本：</block>
+  <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025年10月6日</block>
+  <block id="03e4603e7e1d94d1d2afa097ed77bcc4" category="sidebar">NetApp控制台和Digital Advisor中的Keystone仪表板</block>
 </blocks>

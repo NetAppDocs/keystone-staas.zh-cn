@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/consumption-tab.html 
-keywords: keystone-aiq, digital advisor keystone, consumption trends, subscriptions, historical data, bluexp 
+keywords: keystone-aiq, digital advisor keystone, consumption trends, subscriptions, historical data, bluexp, NetApp Console, Console 
 summary: 要了解您的订阅使用情况、您可以查看已使用容量、已使用容量、可用容量等。 
 ---
 = 查看 Keystone 订阅的消费趋势
@@ -16,14 +16,14 @@ summary: 要了解您的订阅使用情况、您可以查看已使用容量、�
 [role="lead"]
 您可以通过查看特定时间段内的 Keystone 订阅历史数据来监控订阅使用情况。这可以让您深入了解自己的使用模式。
 
-您可以通过 BlueXP 或 Digital Advisor 查看 Keystone 订阅的历史数据：
+您可以通过NetApp控制台或Digital Advisor查看Keystone订阅的历史数据：
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.NetApp控制台
 --
 .步骤
-. 从 BlueXP 左侧导航菜单中，选择 *存储 > Keystone > 订阅*。
+. 从控制台左侧导航菜单中，选择*存储> Keystone >订阅*。
 . 在*订阅号*栏中选择订阅号。
 +
 您将被重定向到“*当前消耗*”选项卡。
@@ -129,7 +129,7 @@ NOTE: 空白图表表示您的环境中在该数据收集点没有可用数据�
 
 == 查看累计突发事件
 
-您可以通过 BlueXP 或 Digital Advisor 查看累计突发流量使用情况。如果您在 BlueXP 的“消费趋势”选项卡的“查看”下拉菜单中选择了“累计突发流量”，或在 Digital Advisor 的“消费趋势”选项卡中选择了“已开票累计突发流量”选项，则可以按月或按季度查看累计突发流量使用情况，具体取决于您选择的计费周期。此数据可用于已计费的过去12个月、您可以按过去30个月的日期范围进行查询。条形图显示发票数据、如果使用量尚未计费、则会在该时间段内标记为_Pending _。
+您可以通过控制台或Digital Advisor查看累计的突发数据使用情况。如果您从控制台中 *消费趋势* 选项卡的 *查看* 下拉菜单中选择了 *累计突发*，或者从Digital Advisor中 *消费趋势* 选项卡中选择了 *已开票累计突发* 选项，则您可以根据所选的计费周期按月或按季度查看累计突发数据使用情况。该数据适用于已计费的过去 12 个月，您可以按日期范围查询最多过去 30 个月的数据。条形图显示已开票数据，如果尚未对使用情况进行计费，则该期间将被标记为“待处理”。
 
 
 TIP: 发票累计突发使用量是按计费周期计算的，基于性能服务级别的承诺和消耗容量。
@@ -146,7 +146,7 @@ image:accr-burst-2.png["每季度累积突发使用量"]
 
 == 查看每日累积突发数据使用量
 
-您可以通过 BlueXP 或 Digital Advisor 查看每月或每季度计费周期的每日累计突发流量使用量。在 BlueXP 中，如果您在“消耗趋势”选项卡的“查看”下拉菜单中选择“累计突发流量”，则“按天累计突发流量”表将提供详细数据，包括时间戳、已承诺容量、已使用容量和累计突发流量。
+您可以通过控制台或Digital Advisor查看每月或每季度计费期间的每日累计突发数据使用量。在控制台中，如果您从 *消费趋势* 选项卡中的 *查看* 下拉菜单中选择 *累计突发*，则 *按天累计突发* 表将提供详细数据，包括时间戳、已提交、已消耗和累计突发容量。
 
 image:bxp-accrued-burst-days.png["显示按天累计突发量的屏幕截图"]
 

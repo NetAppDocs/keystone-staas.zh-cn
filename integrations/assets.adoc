@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/assets.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID, NetApp Console, Console 
 summary: '使用"资产"选项卡可查看ONTAP集群和节点以及由Keystone订阅管理的StorageGRID网格、站点和节点的详细信息。' 
 ---
 = 查看多个 Keystone 订阅中的资产
@@ -14,19 +14,19 @@ summary: '使用"资产"选项卡可查看ONTAP集群和节点以及由Keystone�
 
 
 [role="lead"]
-BlueXP 中的 Keystone 仪表板允许您根据访问权限查看跨多个 Keystone 订阅的集群节点、已配置卷和 StorageGRID 节点的详细信息。此视图在 Digital Advisor 中不可用。
+NetApp控制台中的Keystone仪表板允许您根据您的访问权限查看有关跨多个Keystone订阅的集群、配置卷和StorageGRID节点中的节点的详细信息。此视图在Digital Advisor中不可用。
 
 [role="tabbed-block"]
 ====
 .集群中的节点
 --
 .步骤
-. 从 BlueXP 左侧导航菜单中，选择 *存储 > Keystone > 资产*。
+. 从控制台左侧导航菜单中，选择*存储> Keystone >资产*。
 +
-*资产*选项卡显示*集群中的节点*子选项卡。
+*资产*页面显示*集群中的节点*选项卡。
 
 +
-image:bxp-nodes-clusters-multiple-subscription.png["多个订阅的集群中的节点的屏幕截图"]
+image:console-nodes-clusters-multiple-subscription.png["多个订阅的集群中的节点的屏幕截图"]
 
 +
 您可以查看 Keystone 订阅中集群中所有节点的详细信息，包括节点序列号、状态、存储效率设置、平台类型和容量详情。您还可以概览以下内容：
@@ -47,10 +47,10 @@ TIP: 您可以使用列选择器自定义表格image:column-selector.png["列选
 .集群中的卷
 --
 .步骤
-. 从 BlueXP 左侧导航菜单中，选择 *存储 > Keystone > 资产*。
+. 从控制台左侧导航菜单中，选择*存储> Keystone >资产*。
 . 选择“*集群中的卷*”选项卡。
 +
-image:bxp-volumes-clusters-multiple-sub-1.png["多个订阅的集群中的卷的屏幕截图"]
+image:console-volumes-clusters-multiple-sub.png["多个订阅的集群中的卷的屏幕截图"]
 
 +
 您可以查看 Keystone 订阅中集群中所有卷的详细信息，包括卷名称、订阅号、节点序列号、QoS 策略合规性、集群名称、主机名和性能服务级别。您可以监控已配置容量、逻辑和物理利用率以及冷数据。您还可以概览以下内容：
@@ -73,10 +73,10 @@ TIP: 您可以使用列选择器自定义表格image:column-selector.png["列选
 .网格中的节点
 --
 .步骤
-. 从 BlueXP 左侧导航菜单中，选择 *存储 > Keystone > 资产*。
+. 从控制台左侧导航菜单中，选择*存储> Keystone >资产*。
 . 选择*网格中的节点*选项卡。
 +
-image:bxp-nodes-grids-multiple-sub.png["多个订阅的网格节点的屏幕截图"]
+image:console-nodes-grids-multiple-sub.png["多个订阅的网格节点的屏幕截图"]
 
 +
 您可以查看 Keystone 订阅中网格中所有节点的详细信息，包括节点名称、节点 ID、订阅编号、网格名称、节点类型和客户。您可以监控已消耗和可用的数据容量、CPU 使用率以及可用数据容量。

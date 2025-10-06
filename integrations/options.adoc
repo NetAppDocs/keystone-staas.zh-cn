@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/options.html 
-keywords: Keystone, BlueXP, Keystone dashboard, search and filter, Keystone data, generate reports, view alerts, digital advisor 
+keywords: Keystone, BlueXP, Keystone dashboard, search and filter, Keystone data, generate reports, view alerts, digital advisor, NetApp Console, Console 
 summary: 作为 NetApp Keystone STaaS 订阅者，您可以搜索和过滤数据、生成订阅和使用情况报告、检查时间戳以及查看警报。 
 ---
 = 搜索 Keystone 数据、生成报告并查看警报
@@ -18,17 +18,17 @@ summary: 作为 NetApp Keystone STaaS 订阅者，您可以搜索和过滤数据
 
 
 
-== 从 BlueXP 搜索和过滤数据
+== 从NetApp控制台搜索和过滤数据
 
-在 BlueXP 中，您可以根据选项卡中表格中提供的列参数搜索和筛选 Keystone 数据。例如，在“*订阅*”选项卡下的“订阅*”子选项卡中，您可以在搜索框中输入 Keystone 版本来筛选数据。同样，在“资产*”选项卡下的“集群中的卷*”选项卡中，您可以在搜索框中输入卷名称来筛选卷。
+在控制台中，您可以根据选项卡内表中可用的列参数搜索和过滤Keystone数据。例如，在*Subscriptions*页面下的*Subscriptions*选项卡中，您可以通过在搜索框中输入Keystone版本来过滤数据。同样，在“资产”页面下的“集群中的卷”选项卡中，您可以通过在搜索框中输入卷名称来过滤卷。
 
-您可以使用可用的高级过滤选项来优化搜索。例如，在“*订阅*”子选项卡中，您可以按Keystone版本、计费周期、最高容量和订阅到期天数过滤数据；在“集群中的卷*”选项卡中，您可以按卷名称、集群名称、卷类型等进行过滤。可以同时应用多个过滤器来精确缩小搜索结果。image:bxp-filter-search.png["高级过滤选项"]
+您可以使用可用的高级过滤选项来优化搜索。例如，在“*订阅*”选项卡中，您可以按Keystone版本、计费周期、最高容量和订阅到期天数过滤数据；在“集群中的卷*”选项卡中，您可以按卷名称、集群名称、卷类型等进行过滤。可以同时应用多个过滤器来精确缩小搜索结果。image:bxp-filter-search.png["高级过滤选项"]
 
 
 
-== 从 BlueXP 或 Digital Advisor 生成报告
+== 从NetApp Console 或Digital Advisor生成报告
 
-您可以使用下载按钮生成并查看 Keystone 数据报告image:bluexp-download-report-2.png["BlueXP 中的报告下载图标 2"]可在 BlueXP 或 Digital Advisor 内的选项卡中使用。这些选项卡允许您生成订阅、历史使用情况、突发使用情况、性能、资产、卷和对象的报告。
+您可以使用下载按钮生成并查看Keystone数据报告image:bluexp-download-report-2.png["控制台中的报告下载图标 2"]可在控制台或Digital Advisor内的选项卡中使用。这些选项卡允许您为订阅、历史使用情况、突发使用情况、性能、资产、卷和对象生成报告。
 
 这些详细信息以CSV格式生成、您可以保存这些信息以供将来使用和比较。
 

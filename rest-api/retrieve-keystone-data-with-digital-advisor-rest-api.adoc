@@ -21,7 +21,7 @@ Digital Advisor REST API提供了一个编程接口、用于检索Keystone订阅
 . 设置您的Digital Advisor帐户。您必须具有有效的NetApp支持站点凭据才能登录到数字顾问。要了解更多信息、请参见 https://docs.netapp.com/us-en/active-iq/task_login_activeiq.html["登录到Digital Advisor。"]
 . 了解两步身份验证过程。
 +
-.. *生成刷新令牌*：使用NetApp凭据通过数字顾问控制台获取刷新令牌。此令牌用于确保持续访问、而无需重复登录。
+.. *生成刷新令牌*：使用NetApp凭证通过Digital Advisor控制台获取刷新令牌。此令牌用于确保持续访问，而无需重复登录。
 .. *生成访问令牌*：刷新令牌用于生成访问令牌。要授权对Keystone服务的API调用、需要使用访问令牌、此令牌的有效期为一小时。
 
 

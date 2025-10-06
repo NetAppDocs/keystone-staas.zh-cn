@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/administration-tab.html 
-keywords: performance service levels, keystone-bluexp, modify subscription, edit capacity, manage subscription 
+keywords: performance service levels, keystone-bluexp, modify subscription, edit capacity, manage subscription, NetApp Console, Console 
 summary: 查看或取消 Keystone 订阅服务请求。 
 ---
 = 查看 Keystone 订阅的服务请求
@@ -14,18 +14,18 @@ summary: 查看或取消 Keystone 订阅服务请求。
 
 
 [role="lead"]
-您可以通过 BlueXP 查看和跟踪修改 Keystone 订阅的服务请求，提供快速摘要并监控进度。
+您可以通过NetApp控制台查看和跟踪修改Keystone订阅的服务请求，提供快速摘要并监控进度。
 
 要查看进度或取消请求，请按照以下步骤操作：
 
 .步骤
-. 从 BlueXP 左侧导航菜单中，选择 *存储 > Keystone > 管理*。
+. 从控制台左侧导航菜单中，选择*存储> Keystone > 管理*。
 +
 您会看到所有服务请求的列表，包括请求编号、请求类型和当前状态。
 
 . 您可以点击image:down-arrow.png["向下箭头图标"]点击“提交日期”列旁边的图标，展开请求编号并查看详细信息。您可以看到提出请求的性能服务级别。
 +
-image:bxp-service-request-list.png["屏幕截图显示了针对哪些性能服务级别提出了修改请求"]
+image:console-service-request-list.png["屏幕截图显示了针对哪些性能服务级别提出了修改请求"]
 
 . 选择请求编号可查看详细信息，包括所请求订阅的修改详细信息和当前进度状态。
 +

@@ -17,12 +17,12 @@ summary: 要监控系统性能、您可以查看Keystone订阅管理的ONTAP卷�
 要监控系统性能、您可以查看Keystone订阅管理的ONTAP卷的性能指标。
 
 
-TIP: 此选项卡在 Digital Advisor 中可选用。要查看此选项卡、请联系支持部门。在 BlueXP 中不可用。
+TIP: 您可以选择在Digital Advisor中使用此选项卡。联系支持人员查看此选项卡。它在NetApp控制台中不可用。
 
 要在 Digital Advisor 中查看此选项卡，请按照以下步骤操作：
 
 .步骤
-. 单击“*常规>Keystone 订阅>性能*”。
+. 选择*常规> Keystone订阅> 性能*。
 . 选择订阅编号。默认情况下、将选择第一个订阅编号。
 . 从列表中选择所需的卷名称。
 +

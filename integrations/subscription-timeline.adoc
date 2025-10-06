@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: integrations/subscription-timeline.html 
-keywords: keystone, BlueXP, subscriptions, timeline, lifecycle, activation, modification, renewal 
-summary: 查看 BlueXP 的订阅时间表，其中包括激活、修改和续订日期等事件。 
+keywords: keystone, BlueXP, subscriptions, timeline, lifecycle, activation, modification, renewal, NetApp Console, Console 
+summary: 从NetApp控制台查看订阅时间表，其中包括激活、修改和续订日期等事件。 
 ---
 = 查看 Keystone 订阅的时间线
 :hardbreaks:
@@ -14,12 +14,12 @@ summary: 查看 BlueXP 的订阅时间表，其中包括激活、修改和续订
 
 
 [role="lead"]
-BlueXP 中的 Keystone 仪表板提供 Keystone 订阅的时间线视图，显示激活、修改和续订日期等事件。DigitalAdvisor 不提供此时间线视图。
+NetApp控制台中的Keystone仪表板提供了Keystone订阅的时间线视图，显示激活、修改和续订日期等事件。此时间线视图在Digital Advisor中不可用。
 
 要查看订阅时间表，请按照以下步骤操作：
 
 .步骤
-. 从 BlueXP 左侧导航菜单中，选择 *存储 > Keystone > 订阅*。
+. 从控制台左侧导航菜单中，选择*存储> Keystone >订阅*。
 . 在*订阅号*栏中选择订阅号，查看订阅时间线。
 +
 您将被重定向到“*当前消耗*”选项卡。
@@ -29,7 +29,7 @@ BlueXP 中的 Keystone 仪表板提供 Keystone 订阅的时间线视图，显�
 image:bxp-subscription-timeline-graph.png["屏幕截图以折线图形式显示订阅时间线以及重要事件"]
 
 +
-订阅时间线默认以折线图显示，并带有标记重要事件的图标。将鼠标悬停在某个事件上即可查看详细信息，例如日期以及修改期间对已提交容量所做的更改。要以表格形式查看这些事件，请从“查看方式”下拉菜单中选择“表格”选项。您还可以通过从“跟踪 ID”下拉列表中选择或搜索来查看其他订阅的时间线。
+订阅时间线默认以折线图显示，并带有标记重要事件的图标。将鼠标悬停在事件上即可查看详细信息，包括日期和已提交的容量变化。要在表中查看这些事件，请从*查看方式*下拉菜单中选择*表格*选项。要查看其他订阅时间表，请从*跟踪 ID* 下拉菜单中选择或搜索。
 
 +
 image:bxp-subscription-timeline.png["以表格图表形式显示订阅时间线以及重要事件的屏幕截图"]

@@ -14,7 +14,7 @@ summary: Digital Advisor REST API检索与给定CustomerID关联的所有订阅�
 
 
 [role="lead"]
-此API检索与给定CustomerID关联的所有订阅和服务级别的列表。
+此 API 检索与给定 customerID 关联的所有订阅和性能服务级别的列表。
 
 *请求：*
 
@@ -43,7 +43,7 @@ summary: Digital Advisor REST API检索与给定CustomerID关联的所有订阅�
 |===
 *答复:*
 
-API将使用一个JSON对象进行响应、该对象包含给定客户的所有订阅和关联服务级别详细信息的列表。下面是一个示例响应：
+API 将以 JSON 对象进行响应，其中包含给定客户的所有订阅和相关性能服务级别详细信息的列表。以下是一个示例响应：
 
 [listing]
 ----

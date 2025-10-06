@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: integrations/keystone-bluexp.html 
-keywords: Keystone, BlueXP, Keystone dashboard, overview, subscription manage, monitor 
-summary: 作为 NetApp Keystone STaaS 订阅者，您可以从 NetApp BlueXP 获取订阅概览。 
+permalink: integrations/keystone-console.html 
+keywords: Keystone, BlueXP, Keystone dashboard, overview, subscription manage, monitor, NetApp Console, Console 
+summary: 作为NetApp Keystone STaaS 订阅者，您可以从NetApp Console 获取订阅概览。 
 ---
-= BlueXP 中的 Keystone 仪表板
+= NetApp控制台中的Keystone仪表板
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 作为 NetApp Keystone STaaS 订阅者，您可以从 NetApp BlueXP 获
 
 
 [role="lead"]
-您可以使用“概览”选项卡快速确定存在风险的工作负载，查看订阅的容量和到期状态，识别未解决的警报，并查看容量利用率最高的订阅。您还可以查看不同 Keystone 版本中的订阅状态，突出显示任何需要注意的问题。
+您可以使用“概览”页面快速确定存在风险的工作负载、查看订阅的容量和到期状态、识别未解决的警报以及查看容量利用率最高的订阅。您还可以查看不同版本Keystone的订阅状态，突出显示需要您注意的任何问题。
 
-要查看“*概览*”选项卡，请从 BlueXP 左侧导航菜单中转到“*存储 > Keystone > 概览*”。
+要查看*概览*页面，请从控制台左侧导航菜单转到*存储> Keystone > 概览*。
 
-image:bxp-dashboard-overview-1.png["概览选项卡的屏幕截图"]
+image:bxp-dashboard-overview-2.png["概览页面的屏幕截图"]
 
-“概览”选项卡提供以下见解：
+*概述*页面提供以下见解：
 
 * *摘要*：显示订阅、ONTAP 集群、StorageGRID 节点和 ONTAP 节点的总数。每个类别都有一个 *查看* 按钮，可轻松导航至 *订阅* 或 *资产* 选项卡上的详细部分。
 * *即将到期*：6 个月内到期的订阅数量。单击“*查看*”可在“*订阅*”选项卡中查看这些订阅。
@@ -36,6 +36,5 @@ image:bxp-dashboard-overview-1.png["概览选项卡的屏幕截图"]
 * link:..//integrations/keystone-aiq.html["Digital Advisor 中的 Keystone 仪表板"]
 * link:../integrations/subscriptions-tab.html["查看您的订阅详情"]
 * link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
-* link:../integrations/monitoring-alerts.html["查看和管理警报和监视器"]
 * link:../integrations/consumption-tab.html["查看消费趋势"]
 

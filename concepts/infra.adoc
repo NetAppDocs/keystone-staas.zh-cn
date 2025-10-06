@@ -27,7 +27,7 @@ NetApp 保留采取以下操作的权利：
 Keystone基础架构包括多个组件、例如以下组件：
 
 * Keystone 基础设施，包括 NetApp 存储系统。
-* 用于管理和操作服务的工具，例如 ITOM 监控解决方案、BlueXP、Active IQ 和 Active IQ Unified Manager。
+* 用于管理和操作服务的工具，例如 ITOM 监控解决方案、 NetApp Console、 Active IQ和Active IQ Unified Manager。
 
 
 
@@ -50,4 +50,4 @@ Keystone基础架构包括多个组件、例如以下组件：
 
 image:data-collector-flow.png["收集器数据流"]
 
-您可以通过 BlueXP 或 Digital Advisor 查看 Keystone 订阅的订阅和消费详情。要详细了解 Keystone 报告，请参阅link:../integrations/dashboard-overview.html["Keystone信息板概述"] 。
+您可以通过NetApp控制台或Digital Advisor查看Keystone订阅的订阅和消费详情。要了解有关Keystone报告的更多信息，请参阅link:../integrations/dashboard-overview.html["Keystone信息板概述"]。
