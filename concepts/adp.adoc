@@ -1,39 +1,8 @@
 ---
-sidebar: sidebar 
 permalink: concepts/adp.html 
-keywords: data protection advanced 
-summary: 使用高级数据保护附加服务可确保为任务关键型工作负载提供高效的数据保护。 
+redirect: keystone-staas/concepts/metrics.html 
 ---
-= 了解高级数据保护
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ../media/
 
 
-[role="lead"]
-您可以通过Keystone STaaS 订阅来订阅高级数据保护附加服务。此附加服务使用NetApp MetroCluster技术来确保对您的关键任务工作负载进行有效的数据保护，恢复点目标 (RPO) 为 0。
-
-
-NOTE: Keystone STaaS 文件和块存储标准服务利用NetApp技术（例如SnapMirror、 SnapVault和 Snapshot）提供默认数据保护服务。
-
-有关标准服务和云服务的信息、请参见 link:../concepts/supported-storage-services.html["Keystone STaaS服务"]。
-
-Keystone高级数据保护服务可以将数据同步镜像到二级站点。如果主站点发生灾难、二级站点可以接管、而不会丢失任何数据。此功能利用link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"]两个站点之间的配置以实现数据保护。您只能对文件和块存储服务使用高级数据保护附加服务。作为此附加服务的一部分，  `Advanced Data-Protect`性能服务级别已分配给您的订阅。
-
-有关如何查看MetroCluster配置中的使用情况link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["高级数据保护参考图表"]的信息，请参见。
-
-附加费用适用于订阅中的所有容量：源数据、镜像副本数据和未镜像数据。
-
-请注意以下事项：
-
-* 对于此服务、关联存储上已承诺的容量的100%配置为已承诺容量。
-* 源集群和目标集群的存储均需付费。此附加服务还会对主卷和二级(镜像)卷进行收费。
-* 此费用仅适用于您的文件和块存储。
-
-
-支持以下MetroCluster 方案：
-
-image:mcc.png["Keystone支持的MetroCluster 配置"]
