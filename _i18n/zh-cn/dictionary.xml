@@ -2445,4 +2445,5 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="8dd9e9a8650be62b5350b1743ec0c25a" category="list-text">使用 OpenSSL 验证 OVA 签名证书与公钥证书的真伪：<block ref="f41dec976ad8e65c3e38fceba0104101" prefix=" " category="inline-code"></block></block>
   <block id="b96ad4ab266c25b5492620bb2563d5d0" category="list-text">从 Sectigo 下载代码签名 CA 证书<block ref="7342f89b7e38eb427d641531b8da4ba6" category="inline-link-rx"></block>。</block>
   <block id="5107c2f981fc9d221af2aedb4d9c3f10" category="paragraph">当Keystone Collector OVA 的完整性和真实性得到验证后，您就可以看到文本了。<block ref="2e5f0dac7b8d485649c8f829e8ba09da" prefix=" " category="inline-code"></block> 与出版商合作。 <block ref="4bb910ce06804868c88e19dd6ff9e83c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f4d3f733b36c05e3bcdf4287f293b20f" category="paragraph">如果集群采用MetroCluster配置，请运行以下命令：</block>
 </blocks>

@@ -33,11 +33,27 @@ summary: 将AutoSupport配置为在ONTAP集群发送的每日支持包中加入K
 ----
 autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
 ----
++
+如果集群采用MetroCluster配置，请运行以下命令：
+
++
+[source]
+----
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,object_store_server,san,raid,snapmirror,metrocluster -troubleshooting-additional wafl
+----
 ** 对于早期版本的ONTAP ，运行以下命令来修改每日日志内容：
 +
 [source]
 ----
 autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,platform,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
+----
++
+如果集群采用MetroCluster配置，请运行以下命令：
+
++
+[source]
+----
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,platform,object_store_server,san,raid,snapmirror,metrocluster -troubleshooting-additional wafl
 ----
 ** 运行以下命令以修改每周日志内容：
 +
