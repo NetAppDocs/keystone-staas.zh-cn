@@ -2228,12 +2228,10 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="0189c782e04bc566597908eddaee3dd5" category="section-title">查看警报监视器</block>
   <block id="d8d1f09f12d3047d0b1d5264e0fbb3d4" category="paragraph">要查看警报监视器，请按照以下步骤操作：</block>
   <block id="8891b6740bffe77b967f8fe0f2bb0320" category="inline-image-macro">Keystone订阅警报监视器的屏幕截图</block>
-  <block id="ae75ac6ecba83cd82e353c5c2dddf9ca" category="paragraph">您可以查看Keystone订阅中的警报监视器列表，包括监视器名称、触发通知的警报条件、严重性级别、订阅编号、性能服务级别和状态。您可以检查“创建者”列来确定警报监视器是系统生成的还是用户定义的。</block>
   <block id="6b29e04f1a3d7126b32fea3e35336be6" category="section-title">创建和管理警报监视器</block>
   <block id="c52ec421c31615867815fd4658197c12" category="paragraph">从*警报监视器*选项卡中，您可以创建监视器来跟踪容量使用情况和订阅到期情况。您还可以根据需要编辑、复制或删除现有监视器。</block>
   <block id="57ff1be6332a578fa82ccb64d9259d54" category="open-title">创建监视器</block>
   <block id="64c64a9516f4ac5c0006a03c872e7317" category="paragraph">要创建警报监视器，请按照以下步骤操作：</block>
-  <block id="a3513012c18df0c1a7b8764f4e9f1ff9" category="list-text">单击*创建监视器*按钮。</block>
   <block id="f4743dcb07fb533885399ef1728ce857" category="paragraph">出现“创建警报监视器”页面。</block>
   <block id="704b16afc2be166a3265886d6a494bb5" category="inline-image-macro">为Keystone订阅创建警报监视器的屏幕截图</block>
   <block id="b2aa832e4d8d1fd7361158475afea146" category="paragraph"><block ref="b2aa832e4d8d1fd7361158475afea146" category="inline-image-macro-rx" type="image"></block></block>
@@ -2258,7 +2256,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="37436487b6f97021df7ee2c4adbdfa45" category="list-text">选择要复制的监视器的省略号图标。</block>
   <block id="3cf3a984f792c68d00d0ddbaa1549d75" category="list-text">选择*复制*。</block>
   <block id="1c9486cebc61c5048cf6288719fae578" category="paragraph">出现“创建警报监视器”页面，其中已填写现有字段值。</block>
-  <block id="7a170bf7d609f40a91657be5b2c92dc3" category="list-text">根据需要修改字段，然后单击“*创建*”。</block>
   <block id="59c8147f6a6c89c779cc9c0e0d31057d" category="paragraph">使用更新的配置创建新的警报监视器，并将其显示在“*警报监视器*”列表中。</block>
   <block id="f9fcefd0027bc07ce00160c69b1e0c90" category="open-title">删除监视器</block>
   <block id="85fc8a3c54b846eae784ce216c74002f" category="list-text">选择要删除的监视器的省略号图标。</block>
@@ -2355,7 +2352,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="2227728e15b4a8b218a3533e278cf342" category="doc">从NetApp控制台修改您的Keystone订阅</block>
   <block id="84b1a13bc7964ae4f7768e4f9c3c8756" category="paragraph">您可以通过NetApp控制台修改Keystone订阅的相关性能服务级别的承诺容量。</block>
   <block id="7a91109a620e891743c65eea451a0cf2" category="paragraph"><block ref="7a91109a620e891743c65eea451a0cf2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cb873e65402011d905122364da690822" category="paragraph">您可以从NetApp控制台中的Keystone仪表板查看和创建Keystone订阅的警报监视器。仪表板显示系统生成和用户定义的容量使用情况和订阅到期监视器。您可以创建监视器来设置阈值、选择警报严重性以及添加通知的电子邮件收件人。Digital Advisor不提供此功能。</block>
   <block id="b5c32e6c2b4476154d229af70df8cf7a" category="list-text">从控制台左侧导航菜单中，选择*存储&gt; Keystone &gt;监控&gt;警报监控器*。</block>
   <block id="187aba3af65d3bb1230dc8604f0acb91" category="paragraph"><block ref="187aba3af65d3bb1230dc8604f0acb91" category="inline-image-macro-rx" type="image"></block></block>
   <block id="293028e42f8edb8a2749fa8fca8130fa" category="paragraph">NetApp控制台中的Keystone仪表板允许您查看和管理Keystone存储环境中的活动警报。您可以看到系统生成的警报和用户定义的容量使用情况和订阅到期警报。从此视图，您可以快速评估警报严重性、识别存储问题并采取纠正措施。此视图在Digital Advisor中不可用。</block>
@@ -2446,4 +2442,32 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="b96ad4ab266c25b5492620bb2563d5d0" category="list-text">从 Sectigo 下载代码签名 CA 证书<block ref="7342f89b7e38eb427d641531b8da4ba6" category="inline-link-rx"></block>。</block>
   <block id="5107c2f981fc9d221af2aedb4d9c3f10" category="paragraph">当Keystone Collector OVA 的完整性和真实性得到验证后，您就可以看到文本了。<block ref="2e5f0dac7b8d485649c8f829e8ba09da" prefix=" " category="inline-code"></block> 与出版商合作。 <block ref="4bb910ce06804868c88e19dd6ff9e83c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4d3f733b36c05e3bcdf4287f293b20f" category="paragraph">如果集群采用MetroCluster配置，请运行以下命令：</block>
+  <block id="6df7635d9934b92e0bdbe5e5a544fccb" category="doc">填写您的保险覆盖范围通知框</block>
+  <block id="8583cba6ee38a66f6e19ca7c15a5c1ed" category="inline-link-macro">管理警报监控器的覆盖范围缺口</block>
+  <block id="a60761706ec1d12934bfc1dd049da2df" category="paragraph">“监控”页面上的“警报监控”选项卡包含一个“完善您的覆盖范围”通知框，当存在覆盖范围缺口时，该通知框就会出现。此框列出了缺少容量或到期监控器的订阅，以及没有订阅的监控器。您可以通过向现有监视器添加订阅、创建新监视器或删除未使用的监视器来弥补差距。欲了解更多信息，请参阅 <block ref="1ef75ae1f09bcc7a95c6bbe07a54229c" category="inline-link-macro-rx"></block>。</block>
+  <block id="39fb73624dac610b8274b1bd6e2c1193" category="paragraph">您可以从NetApp Console中的Keystone控制面板查看和创建Keystone订阅的警报监视器。仪表盘显示了系统生成的和用户定义的容量使用情况和订阅到期情况的监控器。您可以创建监视器来设置阈值、选择警报严重性以及添加通知的电子邮件收件人。您可以通过向未覆盖的订阅添加监视器或解决未使用的监视器问题来解决覆盖范围不足的问题。Digital Advisor不提供此功能。</block>
+  <block id="60adeaffad8e127352095573a6e3157f" category="paragraph">您可以查看Keystone订阅中的警报监视器列表，包括监视器名称、触发通知的警报条件、严重性级别、订阅编号、性能服务级别和状态。您可以查看“创建者”列，以了解警报监视器是系统生成的还是用户定义的。</block>
+  <block id="ac092a2bcbdb5857ae37a4756db46a49" category="list-text">选择“创建监视器”按钮。</block>
+  <block id="cb5198d92b18cf007a9117aa50f90c3e" category="list-text">更改所需字段，然后单击“创建”。</block>
+  <block id="2fd74b6a7fe875798408a25e1558c434" category="section-title">管理覆盖缺口</block>
+  <block id="27693e14a82cbe43a67100eb4538ddd9" category="paragraph">当需要采取行动时，警报监控列表上方会出现一个可折叠的“完成您的覆盖范围”通知框。它对你有帮助：</block>
+  <block id="15412d2b0949c1eabadcefaed9f6f8d0" category="list-text">识别并处理没有容量使用情况或订阅到期监控的订阅。</block>
+  <block id="72cf9e6c56443b9eb5c5d28a0a693ac1" category="list-text">查看并管理当前未与任何订阅关联的监视器。</block>
+  <block id="4606189d5b77f103c0e503d8048ad8f7" category="inline-image-macro">Keystone订阅警报监控覆盖范围缺口的屏幕截图</block>
+  <block id="db3c34c51d992294e98f857c62b4cf47" category="paragraph"><block ref="db3c34c51d992294e98f857c62b4cf47" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c84c1a10e1c87172a9fadb894dd8445" category="paragraph">要解决没有显示器或未使用显示器的订阅问题，请按照以下步骤操作：</block>
+  <block id="ac81eda7e7da15651a4c3d6a60e8f290" category="open-title">没有显示器的订阅服务</block>
+  <block id="f9fc4f7dade8ed75242e3918921812c2" category="list-text">选择“订阅到期”或“容量使用情况”选项卡。</block>
+  <block id="226f73c9504a7560a9a6543e7686879d" category="list-text">在“解决”列中，选择要处理的订阅对应的省略号图标。</block>
+  <block id="4c0349a30e44fe2e3989a278d0a1f1e1" category="list-text">请选择一项：</block>
+  <block id="55075c37621639cb4058160f8872944a" category="list-text">*添加到现有显示器*：弹出窗口出现。选择显示器并确认。</block>
+  <block id="8f9840a1a3c6e0d946a2c7230f2cc4a8" category="list-text">*创建新监控器*：系统显示*创建警报监控器*页面。按照以下步骤操作<block ref="f5b0d13ec8e410cddd0c73aae96856f8" category="inline-link-macro-rx"></block>创建一个新的显示器。</block>
+  <block id="c63b72e256a63e39fd4833b7a7c43f16" category="paragraph">添加保险后，订阅信息将从标签页中消失。</block>
+  <block id="7652a06e5287973e36402a720937090f" category="open-title">未使用的显示器</block>
+  <block id="599e408ddca0ab40965afad26b9dd5ed" category="list-text">选择“未使用”选项卡。</block>
+  <block id="11ea68b14110fa7cbc61ea38b5a4fcec" category="list-text">在“解决”列中，选择要处理的监视器的省略号图标。</block>
+  <block id="41825a04a8338881f026e0e8b933fd54" category="list-text">*编辑*：系统显示*编辑警报监控*页面。修改所需字段并保存。欲了解更多信息，请参阅……<block ref="b047d326fc106faf3f12ef4efac0005e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="0cfa773235daafece9ec96fac7a4ae83" category="list-text">*删除*：确认删除以移除显示器。</block>
+  <block id="9516b8db60240fe5a0c189f3a9d20181" category="paragraph">添加或删除订阅后，该监控器将从选项卡中移除。</block>
+  <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
 </blocks>

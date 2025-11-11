@@ -1,0 +1,11 @@
+= 填写您的保险覆盖范围通知框
+:allow-uri-read: 
+
+
+NetApp Console中Keystone仪表板的新增强功能：
+
+
+
+=== 填写您的保险覆盖范围通知框
+
+“监控”页面上的“警报监控”选项卡包含一个“完善您的覆盖范围”通知框，当存在覆盖范围缺口时，该通知框就会出现。此框列出了缺少容量或到期监控器的订阅，以及没有订阅的监控器。您可以通过向现有监视器添加订阅、创建新监视器或删除未使用的监视器来弥补差距。欲了解更多信息，请参阅 link:https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alert-monitors.html#manage-coverage-gaps["管理警报监控器的覆盖范围缺口"]。
