@@ -54,5 +54,5 @@ image:dark-site-generate-support-bundle-1.png["生成支持包"]
 +
 此过程会 `tar`在所述位置创建一个软件包、可与NetApp共享该软件包以解决问题。
 
-. 下载文件后、您可以将其附加到Keystone ServiceNow支持服务单中。有关提交服务单的信息、请参见 link:../concepts/gssc.html["正在生成服务请求"]。
+. 下载文件后，您可以将其附加到Keystone ServiceNow 支持票证。有关提高票数的信息，请参阅 link:../concepts/support-services.html["正在生成服务请求"]。
 

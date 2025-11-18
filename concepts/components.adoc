@@ -65,12 +65,12 @@ NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU �
 Keystone收集器可通过以下方法部署：
 
 * VMware OVA模板(需要VMware vCenter Server 6.7或更高版本)
-* 客户提供的Linux服务器运行在以下操作系统之一上：Debian 12、Red Hat Enterprise Linux 8.6或更高版本8.x或CentOS 7 (仅适用于现有环境)。Keystone软件使用或 `.rpm`软件包安装 `.deb`、具体取决于Linux版本。
+* 客户需提供一台运行以下操作系统之一的 Linux 服务器：Debian 12、Red Hat Enterprise Linux 8.6 或更高版本的 8.x 版本、Red Hat Enterprise Linux 9.0 或更高版本，或 CentOS 7（仅限现有环境）。Keystone软件使用以下方式安装： `.deb` 或者 `.rpm` 软件包取决于 Linux 发行版。
 
 
 可以通过以下方法部署ITOM收集器：
 
-* 客户提供的Linux服务器运行Debian 12、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023或更高版本。
+* 客户提供运行 Debian 12、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Red Hat Enterprise Linux 9.0、Amazon Linux 2023 或更高版本的 Linux 服务器。
 * 客户提供了运行Windows Server 2016或更高版本的Windows服务器。
 +
 

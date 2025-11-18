@@ -8,8 +8,6 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-    release_notes_autogen:
-      release_notes_repo: console-relnotes
   versions:
   - version-number: '3.0'
     url: "/keystone-staas"
@@ -205,6 +203,6 @@ sidebar:
   - title: Keystone订阅服务版本1
     url: "/subscription-services-v1.html"
   - title: 获取Keystone帮助
-    url: "/concepts/gssc.html"
+    url: "/concepts/support-services.html"
   - title: 法律声明
     url: "/legal-notices.html"

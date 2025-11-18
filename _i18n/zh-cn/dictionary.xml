@@ -541,7 +541,6 @@
   <block id="1d31884d14bc3c8944a94ba146af781a" category="list-text">指标查询</block>
   <block id="1b4fcfaacbd0ae3e24bc82f8d7a82211" category="inline-link">管理用户</block>
   <block id="8439ccf1446c67100be4a3a73c3d339f" category="list-text">创建Keystone服务帐户用户并将其与管理组关联。请参见<block ref="3f81d882f8eb86176175a8f2f30c48b0" category="inline-link-rx"></block>。</block>
-  <block id="82690bb37c8fd3910939c0d1c07adbfb" category="list-text">下载文件后、您可以将其附加到Keystone ServiceNow支持服务单中。有关提交服务单的信息、请参见 <block ref="a7ae718de79af41225531b7d4972e1ef" category="inline-link-macro-rx"></block>。</block>
   <block id="39c85d7f0eb110cd413fc170604d8bc6" category="list-text">转至"**配置"&gt;"KS-Collector"*以打开Keystone收集器配置屏幕、查看可用的更新选项。</block>
   <block id="dc6558c87d9624db4f0f78e602308c49" category="list-text">更新所需选项。</block>
   <block id="14a76c71ca702ae118d765e420178711" category="example-title">&lt;strong&gt; 协议&lt;/strong&gt;</block>
@@ -726,7 +725,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="eb0a564f9b59329f26be908a369dcafd" category="paragraph"><block ref="eb0a564f9b59329f26be908a369dcafd" category="inline-link-rx"></block></block>
   <block id="bad75a53f85a771cf752894cc064a3b7" category="admonition">完成安装后、您可以使用Keystone收集器管理终端用户界面(TUI)实用程序执行配置和监控活动。您可以使用各种键盘控件(例如Enter键和箭头键)来选择选项并在此TUI中导航。请参见 <block ref="14e6b60cfb93c92598e40786e00457b6" category="inline-link-macro-rx"></block> 和 <block ref="81c399588663f35131a970a2d830c241" category="inline-link-macro-rx"></block> 以了解相关信息。</block>
   <block id="1ae3a07b6896d577a03f95172e8b37ab" category="paragraph">有关SnapLock 技术的信息、请参见<block ref="75641a5590d09822bddecb04bdc449c0" category="inline-link-rx"></block>。</block>
-  <block id="b2a258e6f0a0dc74fded47cb9cc5413c" category="paragraph"><block ref="b2a258e6f0a0dc74fded47cb9cc5413c" category="inline-link-rx"></block></block>
   <block id="de70c043bed2cffae85b828a6246d7e2" category="inline-image-macro">重新分配逻辑说明</block>
   <block id="2ac0f144048cf5fb3e17783ff993bfa0" category="paragraph"><block ref="2ac0f144048cf5fb3e17783ff993bfa0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7ad0cea6a0945e671f7a5229da06e38d" category="paragraph">Keystone STaaS为您提供了将内部服务支出重新分配到Cloud Volumes ONTAP支出的选项。</block>
@@ -1297,7 +1295,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="52bef7e9917e522c1436572ddc5a3a3f" category="list-text">至少2 GB空闲空间<block ref="9854ed422bddbda845d9be18e5812dbc" prefix=" " category="inline-code"></block></block>
   <block id="3db3f2076eb3e58b05c6ae1e6accb36e" category="list-text">至少48 GB空闲空间<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block></block>
   <block id="574288454beb0127b5c5892882343abf" category="paragraph">同一服务器还应安装以下第三方软件包。如果可通过存储库获得这些软件包、则这些软件包将作为前提条件自动安装：</block>
-  <block id="131e01e2ecbd7de2f9b3f16afa129bcd" category="list-text">RHEL8</block>
   <block id="9a1a91cd8e61e7975513444f1156020d" category="list-text">python3 &gt;=v3.5.8、python3 \&lt;=v3.9.13</block>
   <block id="abe31bcfb59f2265c2fb97dde407366c" category="list-text">podman</block>
   <block id="964ff658eeb150fa1ca6d823c1c0c1a7" category="list-text">yum-utils</block>
@@ -1463,7 +1460,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="7f76b7c3d58c94507679ec4e89236f5b" category="inline-link-macro">ITOM收集器的安装要求</block>
   <block id="edf9f0e23de8308b9cbd2cee93fc5ce2" category="paragraph">要部署Keystone收集器和ITOM收集器、需要使用虚拟机。有关安装前提条件，请参见<block ref="90d7b7caf953f72ddc1c63cc7891ca46" category="inline-link-macro-rx"></block>和<block ref="9bc3880c82515bce110d54618fdd016a" category="inline-link-macro-rx"></block>。其他要求将在部署期间共享。</block>
   <block id="e928ba962ab987ce8326c040dd6a7083" category="paragraph">可以通过以下方法部署ITOM收集器：</block>
-  <block id="96791c51d091db61be7d6912c6675765" category="list-text">客户提供的Linux服务器运行Debian 12、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023或更高版本。</block>
   <block id="1c6db71abb5563b4658fbc63f51e8b24" category="list-text">客户提供了运行Windows Server 2016或更高版本的Windows服务器。</block>
   <block id="1364c79d952bcd4745981c580d2edc5a" category="admonition">建议使用Debian 12、Windows Server 2016或更高版本的操作系统。</block>
   <block id="43eefb573a809ff61e1c8d3d07813ee3" category="paragraph">客户数据中心安装的存储基础架构或客户拥有的联合服务与Keystone运营中心之间需要网络连接。客户负责提供计算和虚拟机以及互联网服务。客户还负责操作系统修补(非基于OVA的部署)以及基于内部安全策略的安全强化。网络设计应采用安全协议、并且NetApp和客户都将批准防火墙策略。</block>
@@ -1491,7 +1487,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="21fe13388dd575bae131356d62eb3d04" category="paragraph">美国受保护支持(USPS)是NetApp Keystone订阅的附加服务。您有权获得美国公民在美国领土上提供的Keystone服务的交付和支持。</block>
   <block id="10d701676d6c78ebafad1c0adf816cc7" category="section-title">NetApp USPS监控</block>
   <block id="75d0ff56559c8650dad12b15a71e6950" category="paragraph">NetApp USPS Keystone支持团队可监控您的产品和订阅服务的运行状况、提供远程支持并与Keystone成功经理协作。监控与相关Keystone订阅订单相关的产品的所有人员均为美国 在美国领土上作业的美国公民。</block>
-  <block id="70a7925bd880e8632a66c41a83d2a2e9" category="list-text">每个月、从Keystone收集器中导出一个文件并通过电子邮件将其发送给NetApp支持团队。有关如何联系支持团队的详细信息，请参见<block ref="2dd3cb549793fb90ba3abaee885c98ff" category="inline-link-macro-rx"></block>。</block>
   <block id="9c62788e882432afb4a67231a8793b98" category="summary">在基于Linux的系统上安装ITOM收集器软件。</block>
   <block id="76c87a002b2f377e07b664132c3a197e" category="doc">在Linux系统上安装ITOM收集器</block>
   <block id="ed5f434c9fb860090390831cf62c2cda" category="admonition">Keystone支持团队提供了一个动态链接来下载ITOM收集器设置文件、该文件将在两小时后过期。</block>
@@ -1532,7 +1527,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="6cf5a787f8e9babecd7e3e62b472c0f1" category="summary">您的系统必须满足多项要求、才能安装ITOM收集器。</block>
   <block id="067857c91d7e95767cebced037df51fc" category="paragraph">安装ITOM收集器之前、请确保系统已准备好所需的软件、并满足所有必要的前提条件。</block>
   <block id="382c090cdf20988adebc3da3af734475" category="list-title">ITOM收集器服务器VM的前提条件：</block>
-  <block id="f086ae2281105a95b9f676071bb5da54" category="list-text">支持的操作系统：Debian 12、Windows Server 2016、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023或这些操作系统的更高版本。</block>
   <block id="756e04f777f1ed6cee954325099dfc00" category="list-text">资源要求：根据所监控的NetApp节点数确定的VM资源要求如下：</block>
   <block id="a008248e3966fc8b2c95be03552c4466" category="list-text">2-10个节点：4个CPU、8 GB RAM、40 GB磁盘</block>
   <block id="ab3a29aba303bfd353ff5e6fb0b2db96" category="list-text">12-20个节点：8个CPU、16 GB RAM、40 GB磁盘</block>
@@ -1583,8 +1577,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="d7dc6f5447fca23324df2672bac7c802" category="section-title">新增隐藏/显示列选项</block>
   <block id="196d7c712c7c6a9911f2d9bbb5f61bf7" category="sidebar">利用Keystone服务完成更多工作</block>
   <block id="84b3e771654397ccc8ec23cf38bfc805" category="sidebar">监控、故障排除和增强存储</block>
-  <block id="7fe1234c016df317c9bb2796b94c80c3" category="list-text">客户提供的Linux服务器运行在以下操作系统之一上：Debian 12、Red Hat Enterprise Linux 8.6或更高版本8.x或CentOS 7 (仅适用于现有环境)。Keystone软件使用或<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block>软件包安装<block ref="27b0f8226ae1a7f1b973155b13221df6" prefix=" " category="inline-code"></block>、具体取决于Linux版本。</block>
-  <block id="af1726e663445fca1780939dd8437580" category="list-text">操作系统：Debian 12、Red Hat Enterprise Linux (RHEL) 8.6或RHEL 8.x系列中的更高版本</block>
   <block id="4082fa09d81cb2bcef02087304b3c30e" category="paragraph">您可以使用RPM或Debian软件包在Linux服务器上安装Keystone收集器软件。根据您的Linux版本、按照安装步骤进行操作。</block>
   <block id="3fc1f45d72a49b590c944fab8aac1e82" category="open-title">使用RPM</block>
   <block id="162a9e33a865943694a11b0031d84b66" category="open-title">使用Debian</block>
@@ -1601,7 +1593,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="9dc4e2b4f34e5f118e35019c46b06a4a" category="paragraph">如果检测到违反SLA、请向NetApp Keystone支持部门开立优先级3 (P3)支持服务单。</block>
   <block id="5ece80a8e6fc51ca90ea8b795dbe7f83" category="list-text">在Excel工作表中提供与NetApp Keystone支持人员一起开立的P3服务单的详细信息、如下所示。</block>
   <block id="cac189ace7fac11fbcff63b35adf8770" category="list-text">服务信用请求应在NetApp Keystone支持确认违规后六周内发起。所有服务抵免额均应由NetApp确认和批准。</block>
-  <block id="193dec405e65293a13ce97bb2c01440c" category="list-text">服务抵免额可能会应用于未来发票。服务抵免额不适用于已过期的Keystone订阅。要了解更多信息，请参阅 <block ref="063933bc4dc8a29247242b2012129da2" category="inline-link-macro-rx"></block>。</block>
   <block id="3a36d2372ffa5421518253f5c68f7c51" category="paragraph">如果检测到违反SLA、请向NetApp Keystone支持部门开立优先级3 (P3)支持服务单、并按照Excel表格中的要求提供详细信息、如下所示：</block>
   <block id="cb74be13d3a600957d1ee583265f537d" category="section-title">查看每日累积突发数据使用量</block>
   <block id="bc3f9a56f76203c42fc9f8ff6b19fe46" category="inline-image-macro">显示条形图的屏幕截图</block>
@@ -2201,7 +2192,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="52bde02f3e1edb6d6e28dca0d312445a" category="list-text">*统一或块优化存储*：消耗的容量是根据订购过程中选择的容量类型（逻辑或物理）计算的。计算是按性能服务级别实例执行的。</block>
   <block id="845131517a9dd7f41b73102338bac133" category="list-text">*逻辑容量*：它是以下内容的总和：</block>
   <block id="0649df2b2e490a85273ef7528dbeb91a" category="list-text">*身体能力*：它是以下各项的总和：</block>
-  <block id="eb80e5c63a486d3698858f87d747e461" category="paragraph">您可以联系Keystone支持团队订阅Keystone版本 3 (v3)。有关详细信息，请参阅<block ref="ba5860e7066469b734064f44e703aa5c" category="inline-link-macro-rx"></block>。</block>
   <block id="7e8fe67b005603b496012796735f2d36" category="doc">使用新列增强逻辑使用情况跟踪</block>
   <block id="b79d3069a7b9ca9140a5c9b1bf2f8d81" category="paragraph">添加了新列“总占用空间”，以增强对FabricPool卷的Keystone消耗跟踪：</block>
   <block id="729a65ff91860ad65935d125d788f643" category="list-text">* BlueXP中的Keystone仪表板 *：您可以在 *Assets* 选项卡中的 *Volumes in clusters* 选项卡中看到 *Total footprint* 列。</block>
@@ -2292,7 +2282,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="8a982cf9d4fce545e4c4210341623864" category="paragraph">您可以通过NetApp控制台或Digital Advisor查看Keystone订阅的订阅和消费详情。要了解有关Keystone报告的更多信息，请参阅<block ref="5a609c392d8730053e3d7fc9f1d0ffab" category="inline-link-macro-rx"></block>。</block>
   <block id="c3d65a3c50cdc5589b31f6ea38479a67" category="list-text">您可以根据 IOPS 和延迟承诺容量付费，以满足各种工作负载需求。不同的性能服务层级 - Extreme、Premium、Standard、Value、Object 和Cloud Volumes ONTAP使您能够根据购买的性能服务级别管理存储。</block>
   <block id="ba17302e854fad784b3a0f21ef030b25" category="list-text">容量致力于每个性能服务级别。</block>
-  <block id="04b0e8727ad816eafd0891457121d0a1" category="list-text">您可以通过控制台或Keystone Success Manager (KSM) 请求更改已承诺容量。有关请求更改的信息，请参阅<block ref="063933bc4dc8a29247242b2012129da2" category="inline-link-macro-rx"></block>。</block>
   <block id="876a76983fba3da801a1f6d2d41a5db3" category="paragraph">您可以使用Keystone Collector 管理 TUI 实用程序创建性能服务级别 (PSL)。通过 TUI 创建 PSL 会自动选择为每个性能服务级别设置的默认值，从而减少通过Active IQ Unified Manager创建 PSL 时手动设置这些值时可能发生的错误的可能性。</block>
   <block id="084a50394b54545f96247d840d02d0cf" category="admonition">您可以突出显示Keystone订阅服务版本 1 的 *KFS* 选项。Keystone订阅服务与Keystone STaaS 在组成性能服务级别、服务产品和计费原则方面有所不同。要了解更多信息，请参阅<block ref="28860fa9118cfd783678772e54f9b578" category="inline-link-macro-rx"></block>。</block>
   <block id="8b8e55daf5c09f217fffc6d663a276de" category="list-text">所有受支持的Keystone性能服务级别将显示在指定Keystone版本的 *选择Keystone服务级别* 选项中。从列表中启用所需的性能服务级别。</block>
@@ -2470,4 +2459,25 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="0cfa773235daafece9ec96fac7a4ae83" category="list-text">*删除*：确认删除以移除显示器。</block>
   <block id="9516b8db60240fe5a0c189f3a9d20181" category="paragraph">添加或删除订阅后，该监控器将从选项卡中移除。</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
+  <block id="0c359189f8e07afc4bf0a432b108a2f7" category="list-text">客户需提供一台运行以下操作系统之一的 Linux 服务器：Debian 12、Red Hat Enterprise Linux 8.6 或更高版本的 8.x 版本、Red Hat Enterprise Linux 9.0 或更高版本，或 CentOS 7（仅限现有环境）。Keystone软件使用以下方式安装：<block ref="27b0f8226ae1a7f1b973155b13221df6" prefix=" " category="inline-code"></block> 或者<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block> 软件包取决于 Linux 发行版。</block>
+  <block id="188a74af3438876c97ac7877f4af6cc9" category="list-text">客户提供运行 Debian 12、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Red Hat Enterprise Linux 9.0、Amazon Linux 2023 或更高版本的 Linux 服务器。</block>
+  <block id="079d46d4e807d9ca797d92cd97e9c5ea" category="list-text">服务信用额度可用于未来的发票。服务积分不适用于已过期的Keystone订阅。欲了解更多信息，请参阅 <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>。</block>
+  <block id="75269ad6e7abe01d12768761ab748b48" category="paragraph"><block ref="75269ad6e7abe01d12768761ab748b48" category="inline-link-rx"></block></block>
+  <block id="8e3e0d66dd46c331ec4b3a698a38a9e7" category="list-text">您可以通过控制台或向您的Keystone Success Manager (KSM) 请求更改已承诺的容量。有关申请更改的信息，请参阅 <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>。</block>
+  <block id="17766f6125f71fd7cf26ceef70d4e504" category="list-text">下载文件后，您可以将其附加到Keystone ServiceNow 支持票证。有关提高票数的信息，请参阅 <block ref="fa4c1fe482109028db7ac27dab34833d" category="inline-link-macro-rx"></block>。</block>
+  <block id="fd9138bbd3a6e55b24c6c044d67e4bc1" category="list-text">操作系统（选择一项）：</block>
+  <block id="39132259812eb62420e77e39bfa951b1" category="list-text">Red Hat Enterprise Linux (RHEL) 8.6 或任何更高版本的 8.x 系列</block>
+  <block id="190f66f3a69d63ab64b7d9cda457f436" category="list-text">Red Hat Enterprise Linux 9.0 或更高版本</block>
+  <block id="d45f88dc67b3cefcfdd3a81030e2cbf1" category="list-text">RHEL 8.6+ (8.x)</block>
+  <block id="44af4ad3d3f80bafed789646fe5c626a" category="list-text">RHEL 9.0+</block>
+  <block id="a850306268da0ed5c6fe745ee51da519" category="list-text">python3 &gt;= v3.9.0, python3 \&lt;= v3.9.13</block>
+  <block id="115934cba510421d56a3dd602516354d" category="list-text">每个月从Keystone Collector 导出一个文件并通过电子邮件发送给NetApp支持团队。如需了解如何联系支持团队的更多信息，请参阅 <block ref="da15ada5eca0cf6d8fba09a6cd49576b" category="inline-link-macro-rx"></block>。</block>
+  <block id="f12fc49b59dac87ec27be3c3468ee3e0" category="list-text">支持的操作系统：</block>
+  <block id="da18611ad540d93735421e810a550f76" category="list-text">Debian 12 或更高版本</block>
+  <block id="fa110b4c2ed42b9cbf528246b7eaa1aa" category="list-text">Windows Server 2016 或更高版本</block>
+  <block id="dba0efd3e66cff7ee87b2d0939257d1b" category="list-text">Ubuntu 20.04 LTS 或更高版本</block>
+  <block id="e38897ec357371b4429540873d7073e1" category="list-text">红帽企业 Linux (RHEL) 8.x</block>
+  <block id="45d6736fdd879f91b2a538e05e0a3b12" category="list-text">Red Hat Enterprise Linux 9.0 或更高版本</block>
+  <block id="cc20f1cec12842b9bed0a2fb4b579509" category="list-text">Amazon Linux 2023 或更高版本</block>
+  <block id="f0fc80440f66cd06e8621cfb9578824b" category="paragraph">您可以联系Keystone支持团队订阅Keystone版本 3 (v3)。更多详情请参阅 <block ref="90d872d2a90e66f6330f06f20805c0ef" category="inline-link-macro-rx"></block>。</block>
 </blocks>

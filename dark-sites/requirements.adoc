@@ -30,7 +30,13 @@ summary: '在无法访问Internet的环境(也称为_dark site_or _private mode_
 
 == Linux的要求
 
-* 操作系统：Debian 12、Red Hat Enterprise Linux (RHEL) 8.6或RHEL 8.x系列中的更高版本
+* 操作系统（选择一项）：
++
+** Red Hat Enterprise Linux (RHEL) 8.6 或任何更高版本的 8.x 系列
+** Red Hat Enterprise Linux 9.0 或更高版本
+** Debian 12
+
+
 * 核心：2个CPU
 * RAM ： 4 GB
 * 磁盘空间：50 GB vDisk
@@ -43,9 +49,18 @@ summary: '在无法访问Internet的环境(也称为_dark site_or _private mode_
 
 同一服务器还应安装以下第三方软件包。如果可通过存储库获得这些软件包、则这些软件包将作为前提条件自动安装：
 
-* RHEL8
+* RHEL 8.6+ (8.x)
 +
 ** python3 >=v3.5.8、python3 \<=v3.9.13
+** podman
+** SOS
+** yum-utils
+** python3-dnf-plugin-vervonlock
+
+
+* RHEL 9.0+
++
+** python3 >= v3.9.0, python3 \<= v3.9.13
 ** podman
 ** SOS
 ** yum-utils
@@ -71,5 +86,5 @@ Keystone收集器的网络连接要求如下：
 * Keystone收集器服务器应可通过端口443 (HTTPS)访问Unified Manager服务器。
 * 应在Unified Manager服务器上为Keystone收集器设置具有应用程序用户权限的服务帐户。
 * 不需要外部Internet连接。
-* 每个月、从Keystone收集器中导出一个文件并通过电子邮件将其发送给NetApp支持团队。有关如何联系支持团队的详细信息，请参见link:../concepts/gssc.html["获取Keystone帮助"]。
+* 每个月从Keystone Collector 导出一个文件并通过电子邮件发送给NetApp支持团队。如需了解如何联系支持团队的更多信息，请参阅 link:../concepts/support-services.html["获取Keystone帮助"]。
 

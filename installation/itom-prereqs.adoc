@@ -17,10 +17,19 @@ summary: 您的系统必须满足多项要求、才能安装ITOM收集器。
 安装ITOM收集器之前、请确保系统已准备好所需的软件、并满足所有必要的前提条件。
 
 .ITOM收集器服务器VM的前提条件：
-* 支持的操作系统：Debian 12、Windows Server 2016、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023或这些操作系统的更高版本。
+* 支持的操作系统：
++
+** Debian 12 或更高版本
+** Windows Server 2016 或更高版本
+** Ubuntu 20.04 LTS 或更高版本
+** 红帽企业 Linux (RHEL) 8.x
+** Red Hat Enterprise Linux 9.0 或更高版本
+** Amazon Linux 2023 或更高版本
 +
 
 NOTE: 建议使用Debian 12、Windows Server 2016或更高版本的操作系统。
+
+
 
 * 资源要求：根据所监控的NetApp节点数确定的VM资源要求如下：
 +
