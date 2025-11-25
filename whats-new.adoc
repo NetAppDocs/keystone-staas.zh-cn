@@ -18,6 +18,18 @@ summary: NetApp在每个Keystone STaaS服务版本中都为您提供新增和增
 
 
 
+== 2025年11月24日
+
+NetApp Console中Keystone仪表板的新增强功能：
+
+
+
+=== 用于跟踪保障缺口订阅的 ID
+
+在“监控 > 警报监控”上的“完成您的保障”通知框中，每个订阅现在都会在订阅编号旁边显示其跟踪 ID。
+
+
+
 == 2025年11月10日
 
 NetApp Console中Keystone仪表板的新增强功能：

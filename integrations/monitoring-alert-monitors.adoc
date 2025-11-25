@@ -30,6 +30,10 @@ image:monitoring-alert-monitors-default-view-1.png["Keystone订阅警报监视�
 +
 您可以查看Keystone订阅中的警报监视器列表，包括监视器名称、触发通知的警报条件、严重性级别、订阅编号、性能服务级别和状态。您可以查看“创建者”列，以了解警报监视器是系统生成的还是用户定义的。
 
++
+
+NOTE: Keystone订阅用户目前无法使用“报告”选项卡。
+
 
 
 
@@ -133,7 +137,7 @@ NOTE: 系统生成的监视器不能被用户删除。
 * 识别并处理没有容量使用情况或订阅到期监控的订阅。
 * 查看并管理当前未与任何订阅关联的监视器。
 +
-image:coverage-gaps.png["Keystone订阅警报监控覆盖范围缺口的屏幕截图"]
+image:coverage-gaps-1.png["Keystone订阅警报监控覆盖范围缺口的屏幕截图"]
 
 
 

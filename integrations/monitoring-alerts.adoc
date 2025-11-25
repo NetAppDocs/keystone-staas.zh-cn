@@ -32,6 +32,10 @@ image:monitoring-alerts-default-view-1.png["Keystone订阅的有效警报屏幕�
 +
 您可以查看警报的详细信息，例如严重性、ID、描述、触发时间、订阅号、跟踪ID、性能服务级别和状态。该页面还按严重程度和类型显示未解决警报的总数。
 
++
+
+NOTE: Keystone订阅用户目前无法使用“报告”选项卡。
+
 
 
 
