@@ -16,6 +16,9 @@ summary: '使用"资产"选项卡可查看ONTAP集群和节点以及由Keystone�
 [role="lead"]
 NetApp控制台中的Keystone仪表板允许您根据您的访问权限查看有关跨多个Keystone订阅的集群、配置卷和StorageGRID节点中的节点的详细信息。此视图在Digital Advisor中不可用。
 
+
+NOTE: “资产”页面会根据您的Keystone订阅关联的平台显示选项卡。对于ONTAP，同时提供“集群中的节点”和“集群中的卷”选项卡。对于StorageGRID，无需选择选项卡即可直接显示“网格中的节点”表。如果订阅包含这两个平台，则所有三个标签页都可用。
+
 [role="tabbed-block"]
 ====
 .集群中的节点

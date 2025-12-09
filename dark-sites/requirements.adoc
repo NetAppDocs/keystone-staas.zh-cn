@@ -20,7 +20,7 @@ summary: '在无法访问Internet的环境(也称为_dark site_or _private mode_
 
 == VMware vSphere的要求
 
-* 操作系统：VMware vCenter Server和ESXi 6.7或更高版本
+* 操作系统：VMware vCenter 服务器和 ESXi 8.0 或更高版本
 * 核心：1个CPU
 * RAM ： 2 GB
 * 磁盘空间：20 GB vDisk

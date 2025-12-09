@@ -29,34 +29,21 @@ summary: 通过下载OVA模板、部署此模板等操作、在VMware vSphere系
 . 在*部署OVF模板*向导的_Step 1_上、单击*选择和OVF模板*以选择已下载的 `KeystoneCollector-latest.ova` 文件
 . 在_Step 2_上、指定VM名称并选择VM文件夹。
 . 在_Step 3_上、指定运行虚拟机所需的计算资源。
-. 在_Step 4：Review详细信息_上、验证OVA文件的正确性和真实性。
-7.0u2之前的vCenter版本无法自动验证代码签名证书的真实性。vCenter 7.0u2及更高版本可以执行验证、但为此、应将签名证书颁发机构添加到vCenter中。请按照适用于您的vCenter版本的以下说明进行操作：
+. 在步骤 4：检查细节中，验证 OVA 文件的正确性和真实性。
 +
-.vCenter 7.0u1及更早版本：了解更多信息
-[%collapsible]
-====
-vCenter会验证OVA文件内容的完整性、并验证是否为OVA文件中包含的文件提供了有效的代码签名摘要。但是、它不会验证代码签名证书的真实性。要验证完整性、您应下载完整的签名摘要证书、并根据Keystone发布的公共证书对其进行验证。
+vCenter 根信任库仅包含 VMware 证书。NetApp使用 Entrust 作为认证机构，这些证书需要添加到 vCenter 信任库中。
 
-.. 单击*发布者*链接以下载完整签名摘要证书。
-.. 从此处下载 Keystone Billing 公共证书 https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20251020.pem["此链接。"^]。
-.. 使用 OpenSSL 验证 OVA 签名证书与公钥证书的真伪：
-`openssl verify -CAfile OVA-SSL-NetApp-Keystone-20251020.pem keystone-collector.cert`
-
-
-====
 +
-.vCenter 7.0u2及更高版本：了解更多信息
-[%collapsible]
-====
-如果提供了有效的代码签名摘要、则7.0u2及更高版本的vCenter能够验证OVA文件内容的完整性以及代码签名证书的真实性。vCenter根信任存储仅包含VMware证书。NetApp使用Entrust作为认证机构、需要将这些证书添加到vCenter信任存储库中。
-
 .. 从 Sectigo 下载代码签名 CA 证书 https://comodoca.my.salesforce.com/sfc/p/1N000002Ljih/a/3l000000oAhy/QCCby12C7cYo50nNyic6AuG1KFcwe1rDn1EknfTaUzY["此处"^]。
 .. 按照中的步骤进行操作 `Resolution` 部分： https://kb.vmware.com/s/article/84240[]。
++
 
+NOTE: 对于 vCenter 7.x 及更早版本，您必须将 vCenter 和 ESXi 更新到 8.0 或更高版本。早期版本已不再受支持。
 
-====
 +
 当Keystone Collector OVA 的完整性和真实性得到验证后，您就可以看到文本了。 `(Trusted certificate)` 与出版商合作。 image:ova-deploy-1.png["显示已验证证书的OVA UI"]
+
+
 
 . 在*部署OVF模板*向导的_Step 5_上、指定用于存储VM的位置。
 . 在_Step 6_上、选择虚拟机要使用的目标网络。

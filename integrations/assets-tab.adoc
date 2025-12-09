@@ -22,9 +22,13 @@ summary: '使用"资产"选项卡可查看ONTAP集群和节点以及由Keystone�
 
 *订阅*页面中的*资产*选项卡显示与订阅相关的集群、 StorageGRID节点和ONTAP节点中的卷的详细信息，包括各种详细信息和容量状态。
 
+[NOTE]
+====
+* 此视图每次仅限一个Keystone订阅。您还可以通过从*跟踪 ID* 下拉列表中选择来查看其他订阅的资产。NetApp控制台中的Keystone仪表板允许您查看跨多个Keystone订阅的资产。要了解更多信息，请参阅link:../integrations/assets.html["查看 Keystone 订阅中的资产"]。
+* “查看”下拉菜单选项取决于您的Keystone订阅平台。ONTAP支持集群中的卷和集群中的节点。对于StorageGRID，*视图*下拉菜单不可用，*网格中的节点*表格会自动显示。如果您的订阅包含这两个平台，则所有三种选项均可使用。
 
-NOTE: 此视图每次仅限一个Keystone订阅。您还可以通过从*跟踪 ID* 下拉列表中选择来查看其他订阅的资产。NetApp控制台中的Keystone仪表板允许您查看跨多个Keystone订阅的资产。要了解更多信息，请参阅link:../integrations/assets.html["查看 Keystone 订阅中的资产"]。
 
+====
 您可以按照以下步骤查看此信息：
 
 [role="tabbed-block"]
@@ -34,9 +38,6 @@ NOTE: 此视图每次仅限一个Keystone订阅。您还可以通过从*跟踪 I
 .步骤
 . 从控制台左侧导航菜单中，选择*存储> Keystone >订阅*。
 . 在表格的*订阅号*列中选择订阅号。
-+
-系统打开*当前消耗*选项卡。
-
 . 选择“*资产*”选项卡。
 . 从“*查看*”下拉菜单中选择“*集群中的卷*”。
 +

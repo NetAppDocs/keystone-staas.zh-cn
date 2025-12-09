@@ -22,6 +22,15 @@ summary: 在NetApp Keystone STaaS服务的先前版本中发现的问题已在�
 
 
  a| 
+尽管实际使用量在允许的突发流量限制之内，Digital Advisor控制面板中订阅的显示状态错误地显示为“超出突发流量限制”。
+ a| 
+已修复
+ a| 
+2025年12月8日
+
+
+
+ a| 
 Digital Advisor仪表板中配置了MetroCluster配置的订阅的消费趋势图中缺少突发阈值线，显示不正确的 *超出突发限制* 状态。
  a| 
 已修复
