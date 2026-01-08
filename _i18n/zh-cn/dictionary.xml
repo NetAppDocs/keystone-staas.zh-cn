@@ -286,7 +286,6 @@
   <block id="8a43eb05c3b74f093be84dcedec105e4" category="list-text">podman (POD管理器)</block>
   <block id="431e077067178a6dd061f1e2ab20209d" category="list-text">SOS</block>
   <block id="e284374909d82a81c5150b7908e00147" category="list-text">按时间顺序执行</block>
-  <block id="3c048c264642c17c1d0bbd50b9e23bfe" category="list-text">Python 3 (3.6.8到3.9.13)</block>
   <block id="8293f6bcd4201a597ff59371ddd65240" category="section-title">其他要求</block>
   <block id="ddd31bebd407467c40be40bf75366dbd" category="section-title">网络要求</block>
   <block id="7ff386c96ae027b0684c69f8088eaa2b" category="admonition">Keystone收集器需要Internet连接。您可以通过默认网关(通过NAT)或HTTP代理直接路由来提供Internet连接。此处介绍了这两种变体。</block>
@@ -2486,4 +2485,5 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="7a29351a5aff62fec009044b13aad77f" category="paragraph">尽管实际使用量在允许的突发流量限制之内，Digital Advisor控制面板中订阅的显示状态错误地显示为“超出突发流量限制”。</block>
   <block id="81899b5a6230dd4cf7e0bff4dbc71dfb" category="paragraph">2025年12月8日</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
+  <block id="ee53a2d144b153a8ad44855abe0429a8" category="list-text">Python 3（3.9.14 至 3.11.8）</block>
 </blocks>

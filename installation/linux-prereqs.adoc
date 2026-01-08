@@ -36,7 +36,7 @@ summary: 安装Keystone收集器之前、请使用所需的软件准备Linux系�
 * podman (POD管理器)
 * SOS
 * 按时间顺序执行
-* Python 3 (3.6.8到3.9.13)
+* Python 3（3.9.14 至 3.11.8）
 
 
 .Keystone收集器服务器VM：
