@@ -4,7 +4,7 @@ permalink: concepts/pricing.html
 keywords: pricing, billing introduction, Keystone billing 
 summary: Keystone提供按需购买模式、可满足您灵活且可扩展的消费需求。 
 ---
-= Keystone定价
+= 了解Keystone定价
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

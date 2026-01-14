@@ -4,7 +4,7 @@ permalink: dark-sites/requirements.html
 keywords: installation, private mode, requirement, vmware vsphere, linux, networking,disk, space 
 summary: '在无法访问Internet的环境(也称为_dark site_or _private mode__)中安装Keystone收集器之前、请确保您的系统已准备好必要的软件并满足所有必需的前提条件。' 
 ---
-= 准备在专用模式下安装
+= 准备以私有模式安装Keystone Collector
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: installation/linux-prereqs.html
 keywords: prerequisites, Linux 
 summary: 安装Keystone收集器之前、请使用所需的软件准备Linux系统。 
 ---
-= Linux系统要求
+= Keystone Collector 的 Linux 系统要求
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

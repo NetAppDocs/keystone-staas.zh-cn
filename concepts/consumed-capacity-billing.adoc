@@ -4,7 +4,7 @@ permalink: concepts/consumed-capacity-billing.html
 keywords: consumed capacity billing, billing and consumed capacity 
 summary: 已用容量是指工作负载在服务使用期间实际使用的容量。 
 ---
-= 根据已用容量进行计量
+= 了解Keystone消耗容量计量
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

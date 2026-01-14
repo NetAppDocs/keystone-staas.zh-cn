@@ -4,7 +4,7 @@ permalink: concepts/data-infra-insights.html
 keywords: add-on services, add-on, data infrastructure insights, DII, deployment of DII 
 summary: Data Infrastructure Insight通过监控、故障排除和优化公共云和私有数据中心中的存储、提高Keystone STaaS的效率。 
 ---
-= 了解数据基础架构洞察力
+= Keystone的Data Infrastructure Insights插件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

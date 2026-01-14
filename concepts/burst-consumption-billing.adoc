@@ -4,7 +4,7 @@ permalink: concepts/burst-consumption-billing.html
 keywords: burst consumption billing 
 summary: Keystone STaaS计费基于突发容量、即您在订阅的已承诺容量之外使用的容量。 
 ---
-= 按突发消耗计费
+= 了解Keystone突发流量计费方式
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

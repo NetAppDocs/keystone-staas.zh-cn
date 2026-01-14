@@ -4,7 +4,7 @@ permalink: concepts/committed-capacity-billing.html
 keywords: Billing based on committed capacity, committed capacity billing 
 summary: 已提交容量是指在购买订阅时为特定服务级别提交的容量。 
 ---
-= 根据已提交容量计费
+= 了解Keystone承诺容量计费方式
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

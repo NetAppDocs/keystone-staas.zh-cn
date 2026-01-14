@@ -4,7 +4,7 @@ permalink: rest-api/get-customer-subscriptions.html
 keywords: subscriptions, service levels, customer IDs, keystone, api 
 summary: Digital Advisor REST API检索与给定CustomerID关联的所有订阅和服务级别的列表。 
 ---
-= 使用Digital Advisor REST API获取客户订阅
+= 使用Digital Advisor REST API 获取Keystone客户订阅
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: integrations/volumes-objects-tab.html
 keywords: keystone-aiq, digital advisor keystone, volumes-objects-tab, StorageGRID objects details, ONTAP volumes 
 summary: 查看卷或对象存储级别的容量详细信息。 
 ---
-= 查看有关ONTAP卷和对象存储的详细信息
+= 查看Keystone订阅的ONTAP卷和对象存储详细信息
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

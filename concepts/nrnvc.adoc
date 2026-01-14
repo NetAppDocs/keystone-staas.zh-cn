@@ -4,7 +4,7 @@ permalink: concepts/nrnvc.html
 keywords: Non-returnable, non-volatile components, SnapLock compliance, add-on service 
 summary: 作为NetApp Keystone订阅的一部分、NetApp扩展了NRVC为您的文件、块和对象服务提供的服务。 
 ---
-= 非可退还、非易失性组件、符合SnapLock标准
+= Keystone的不可退货、非易失性组件以及SnapLock合规性附加服务
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

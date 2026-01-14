@@ -4,7 +4,7 @@ permalink: rest-api/get-customer-list.html
 keywords: customer, keystone, api, IDs,  Digital Advisor 
 summary: Digital Advisor REST API检索与用户关联的所有客户ID的列表。 
 ---
-= 使用Digital Advisor REST API获取所有客户的列表
+= 使用Digital Advisor REST API 获取所有Keystone客户的列表
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

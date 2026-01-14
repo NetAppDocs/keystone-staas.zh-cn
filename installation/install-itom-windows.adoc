@@ -4,7 +4,7 @@ permalink: installation/install-itom-windows.html
 keywords: Windows installation Keystone, ITOM Collector installation 
 summary: 在基于Windows的系统上安装ITOM收集器。 
 ---
-= 在Windows系统上安装ITOM收集器
+= 在 Windows 系统上安装Keystone ITOM Collector
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

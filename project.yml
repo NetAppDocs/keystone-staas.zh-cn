@@ -152,7 +152,7 @@ sidebar:
         url: "/concepts/service-levels.html"
       - title: 性能服务级别的容量要求
         url: "/concepts/capacity-requirements.html"
-    - title: 附加服务
+    - title: 了解附加服务
       entries:
       - title: 突发容量选项
         url: "/concepts/burst-capacity.html"
@@ -164,7 +164,7 @@ sidebar:
         url: "/concepts/nrnvc.html"
       - title: 美国受保护支持(USPS)
         url: "/concepts/usps.html"
-    - title: Keystone STaaS SLO
+    - title: 了解Keystone STaaS SLO
       entries:
       - title: 可用性
         url: "/concepts/sla-availability.html"
@@ -174,7 +174,7 @@ sidebar:
         url: "/concepts/sla-sustainability.html"
       - title: 勒索软件恢复担保
         url: "/concepts/sla-ransomware.html"
-    - title: 计费
+    - title: 了解计费方式
       entries:
       - title: Keystone定价
         url: "/concepts/pricing.html"
@@ -184,7 +184,7 @@ sidebar:
         url: "/concepts/consumed-capacity-billing.html"
       - title: 按突发消耗计费
         url: "/concepts/burst-consumption-billing.html"
-      - title: Keystone计费的其他方案
+      - title: 针对特定容量配置的计费
         url: "/concepts/misc-volume-billing.html"
       - title: 计费计划
         url: "/concepts/billing-schedules.html"

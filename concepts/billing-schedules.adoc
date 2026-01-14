@@ -4,7 +4,7 @@ permalink: concepts/billing-schedules.html
 keywords: billing schedules, schedule for payment 
 summary: Keystone STaaS 订阅按月、按季度、按半年或按年计费。 
 ---
-= 计费计划
+= 了解Keystone 的计费时间表
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
