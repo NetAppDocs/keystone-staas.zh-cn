@@ -47,8 +47,7 @@ NetApp控制台可在企业范围内跨本地和云环境集中管理NetApp存�
 
 请注意以下事项：
 
-* 虽然控制台和Digital Advisor提供了一些独有的功能，但控制台为Keystone提供了管理功能，允许您管理订阅并进行必要的调整。
-* 您必须被分配 * Keystone admin* 角色才能修改订阅。要了解更多信息，请参阅link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解NetApp控制台访问角色"^]。
+* 虽然 Console 和Digital Advisor提供了一些独家功能，但 Console 为Keystone提供了管理功能，允许您管理订阅并进行必要的调整。欲了解更多信息，请参阅 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-keystone-roles.html["NetApp Console中的Keystone访问角色"^]。
 * Digital Advisor与控制台集成，允许您直接从控制台访问所有Digital Advisor功能，包括Keystone仪表板。要了解更多信息，请参阅link:https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-console.html#netapp-console["Digital Advisor与NetApp Console 集成"^]。
 
 
@@ -89,11 +88,6 @@ link:../integrations/assets-tab.html["查看与 Keystone 订阅相关的资产"]
 
  a| 
 link:../integrations/monitoring-alerts.html["查看和管理警报和监视器"]
-| 是 | 否 
-
-
- a| 
-link:../integrations/modify-subscription.html["修改您的订阅"] （仅限 Keystone 管理员）
 | 是 | 否 
 
 

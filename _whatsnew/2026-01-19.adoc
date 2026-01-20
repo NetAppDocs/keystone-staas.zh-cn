@@ -1,0 +1,11 @@
+= 订阅修改功能不可用
+:allow-uri-read: 
+
+
+NetApp Console中Keystone控制面板的更新：
+
+
+
+=== 订阅修改功能不可用
+
+目前无法修改Keystone订阅的承诺容量。此功能将在未来的版本中重新推出。

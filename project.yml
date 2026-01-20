@@ -130,8 +130,6 @@ sidebar:
         url: "/integrations/monitoring-alerts.html"
       - title: 查看和创建警报监视器
         url: "/integrations/monitoring-alert-monitors.html"
-    - title: 修改您的订阅
-      url: "/integrations/modify-subscription.html"
     - title: 查看您的服务请求
       url: "/integrations/administration-tab.html"
     - title: 查看卷和对象存储详细信息
