@@ -24,6 +24,15 @@ NetApp Keystone STaaS中报告了以下已知问题：
 
 
  a| 
+订阅修改功能不可用
+ a| 
+在 NetApp Console 中修改 Keystone 订阅的承诺容量的选项目前不可用。此功能将在未来版本中重新引入。
+ a| 
+无
+
+
+
+ a| 
 由于数据不匹配、发票不正确
  a| 
 AutoSupport订阅的使用数据不匹配会导致生成错误的发票、从而导致计费不准确。

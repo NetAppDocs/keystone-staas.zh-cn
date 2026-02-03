@@ -697,7 +697,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="308838aa7669887098042a1899ce59bc" category="list-text">只要克隆卷的大小小于父卷的10%(克隆卷中使用的物理容量与父卷中使用的物理容量之比)、克隆卷就不会收取任何费用。</block>
   <block id="5e46e614581cd458f9521294062d3783" category="list-text">一旦克隆卷超过父卷物理大小的10%、克隆将作为标准卷(逻辑使用容量)计费。</block>
   <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">从*自日期*和*至日期*字段中的日历图标中选择时间范围。选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。您不能选择未来日期。</block>
-  <block id="36234decc68306d26e71012f98474aa1" category="paragraph">此功能在仅预览模式下可用。请联系您的KSM以了解有关此功能的更多信息。</block>
   <block id="efca37f4dc4125775aa5043cc3e4ba6c" category="list-text">选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。您不能选择未来日期。</block>
   <block id="f9e4dd599c840788d289af630bc65cdb" category="list-text">*当前突发*：指示已用容量是否在定义的突发限制内或以上。如果任何使用量在您的订阅的突发限制范围内、例如、超出已提交容量20%、则属于突发限制范围。如果使用量超过突发限制、则进一步使用量将被视为超过突发限制。此字段显示特定颜色：</block>
   <block id="c3ce6809be6bdc67ae978395484d0585" category="list-text">ONTAP 9.8或更高版本</block>
@@ -1405,10 +1404,8 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="af7685e284aa0e1b6d46a67961bbd7ea" category="inline-link-macro">NetApp 专业服务</block>
   <block id="f7cbbc681ca27bebc7825144375b3923" category="paragraph">客户可以通过两种方式集成DII for Keystone：既可以作为监控其他非Keystone环境的现有实例的一部分、也可以作为新实例的一部分。客户负责设置DII。如果在复杂环境中设置DII需要帮助，客户团队可以参与<block ref="d0b2c9035727476f87ec5eb3369e77e6" category="inline-link-macro-rx"></block>。</block>
   <block id="098aa3cf35fbf6dcd0f8bf264d8fbb02" category="inline-link-macro">数据基础架构洞察力入门</block>
-  <block id="5521be72a56c20199f2583f6122fb79e" category="paragraph">要设置DII，请参见<block ref="b97f1974c4920cfa5b0a8266cf2ad03c" category="inline-link-macro-rx"></block>。</block>
   <block id="71ef8949a55d6b1791e3d610418ebf29" category="inline-link-macro">DII 免费试用</block>
   <block id="5b425cd08035f29c3dad5d45f1d2ea6e" category="inline-link-macro">功能教程</block>
-  <block id="3b179eeaf9ac878bf9783e7b6444e172" category="list-text">如果客户要启动新的DII实例，建议以开头<block ref="9bb21587dbf1a819ba039401f4e5726c" category="inline-link-macro-rx"></block>。要了解此功能以及所需的启动检查清单，请参见<block ref="fa9eb45797f94a182876dd4cce75625a" category="inline-link-macro-rx"></block>。</block>
   <block id="5774c882dad1ebd6e046b3a9fdfae618" category="inline-link-macro">安装采集单元</block>
   <block id="b0a1bf81aa560384c37a6699221d9a92" category="list-text">对于每个站点、需要一个采集单元。要安装采集单元，请参见<block ref="42d868d67c77926a662ccf38524dc1ee" category="inline-link-macro-rx"></block>。如果客户已设置了DII实例和采集单元、则可以继续配置数据收集器。</block>
   <block id="995baaed007a33dba572505ffd6d726b" category="inline-link-macro">配置数据收集器</block>
@@ -1737,7 +1734,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="2b67a16f12da342bb3cbca5216d7c796" category="paragraph">整个月的累积突发使用量计算如下：</block>
   <block id="546fa809ba406006a24d7ed5fae64eb8" category="admonition">发票累计突发使用量是按计费周期计算的，基于性能服务级别的承诺和消耗容量。</block>
   <block id="dfdee986152ec4047af664495ba755cd" category="inline-image-macro">显示按天累计突发量的屏幕截图</block>
-  <block id="5ebd05a1b0a3fae552005acfec4e3c45" category="paragraph"><block ref="5ebd05a1b0a3fae552005acfec4e3c45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d0baf3847f6e93ee353d71b13ee7d980" category="paragraph">在 Digital Advisor 中，当您单击显示“*Invoiced Accrued Burst*”选项的发票数据的栏时，您会看到条形图下方的“可计费预配置容量”部分，其中提供图形和表格查看选项。默认图形视图以折线图格式显示每日累积突发数据使用量、并显示使用量随时间的变化。</block>
   <block id="c349aee97f052361891132091b4ab93a" category="paragraph">您可以通过单击图形右上角的*Table*选项切换到表视图。表格视图提供详细的每日使用情况指标，包括性能服务级别、时间戳、承诺容量、消耗容量和可计费配置容量。您还可以生成CSV格式的这些详细信息报告、以供将来使用和比较。</block>
   <block id="eccd215d2aef918d99c7ac04567a0cdc" category="doc">查看 Keystone 订阅的当前消耗情况</block>
@@ -2233,7 +2229,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="f4a4fc70d768b745e8b5b57c259ad569" category="inline-link-macro">查看和创建警报监视器</block>
   <block id="a2adacdfb688f8f57f2b03920c9e2a80" category="list-text"><block ref="a2adacdfb688f8f57f2b03920c9e2a80" category="inline-link-macro-rx"></block></block>
   <block id="5e8ec25578a50b65b6a5cd50c3407574" category="paragraph">要查看订阅的详细信息，请按照以下步骤操作：</block>
-  <block id="49ee8cd124ac86a74b0e8df79ea84356" category="admonition">您可以单击“到期日期”列旁边的向下箭头来查看每个订阅的性能服务级别信息。这显示了详细的容量信息，包括当前使用情况、承诺容量、预配置容量、突发容量和可用容量。</block>
   <block id="7438fabae28e88c43c70139fd85c992a" category="section-title">2025年9月22日</block>
   <block id="bc2fe31b1e2682a9a79513d792e9c721" category="doc">BlueXP现在是NetApp控制台</block>
   <block id="995c8f79a8e07fbd8d519e45d03d6004" category="paragraph">NetApp控制台建立在增强和重组的BlueXP基础之上，可在企业级内部和云环境中集中管理NetApp存储和NetApp数据服务，提供实时洞察、更快的工作流程和简化的管理，并且高度安全且合规。</block>
@@ -2265,7 +2260,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="4fef845c9e01e08990307334e4eea678" category="paragraph"><block ref="4fef845c9e01e08990307334e4eea678" category="inline-image-macro-rx" type="image"></block></block>
   <block id="86065a45dab20475bb9368ffbd10fe62" category="paragraph">您可以通过NetApp控制台或Digital Advisor查看Keystone订阅的历史数据：</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="open-title">NetApp控制台</block>
-  <block id="bbd84f060e2b584367bb75302c5f5b07" category="paragraph">您可以通过控制台或Digital Advisor查看累计的突发数据使用情况。如果您从控制台中 *消费趋势* 选项卡的 *查看* 下拉菜单中选择了 *累计突发*，或者从Digital Advisor中 *消费趋势* 选项卡中选择了 *已开票累计突发* 选项，则您可以根据所选的计费周期按月或按季度查看累计突发数据使用情况。该数据适用于已计费的过去 12 个月，您可以按日期范围查询最多过去 30 个月的数据。条形图显示已开票数据，如果尚未对使用情况进行计费，则该期间将被标记为“待处理”。</block>
   <block id="e833a568221431c19dcca95c850ae159" category="paragraph">您可以通过控制台或Digital Advisor查看每月或每季度计费期间的每日累计突发数据使用量。在控制台中，如果您从 *消费趋势* 选项卡中的 *查看* 下拉菜单中选择 *累计突发*，则 *按天累计突发* 表将提供详细数据，包括时间戳、已提交、已消耗和累计突发容量。</block>
   <block id="dfa8d7fe27ec169b0ef41ef00fee0ae8" category="paragraph">要通过NetApp控制台或Digital Advisor查看订阅的当前消费状态，请按照以下步骤操作：</block>
   <block id="10cb2c81585ad95f970824cfe6301506" category="summary">作为NetApp Keystone STaaS 订阅者，您可以通过NetApp Console 或Digital Advisor访问Keystone仪表板</block>
@@ -2311,7 +2305,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="ea0ce0391196099aab618a4b710b5332" category="paragraph">NetApp控制台中的Keystone仪表板提供了Keystone订阅的时间线视图，显示激活、修改和续订日期等事件。此时间线视图在Digital Advisor中不可用。</block>
   <block id="51a66b760aa1870a147d6acc0e6c8efd" category="paragraph">订阅时间线默认以折线图显示，并带有标记重要事件的图标。将鼠标悬停在事件上即可查看详细信息，包括日期和已提交的容量变化。要在表中查看这些事件，请从*查看方式*下拉菜单中选择*表格*选项。要查看其他订阅时间表，请从*跟踪 ID* 下拉菜单中选择或搜索。</block>
   <block id="fd4257d1ebe74f01a9d3b5236f722a08" category="paragraph">您可以从NetApp控制台和Digital Advisor中的 *订阅* 查看所有订阅的列表。此视图根据您的订阅状态和使用情况提供易于理解的见解，帮助您随时了解情况并在需要时采取行动。</block>
-  <block id="5e6ce2a236a2d35561ce83721f8bb7e4" category="paragraph"><block ref="5e6ce2a236a2d35561ce83721f8bb7e4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="579139f19217a677980dce581b098367" category="paragraph">您会看到容量使用情况、订阅到期状态和未解决的警报等关键指标。</block>
   <block id="09253a17dd3290d17d3baeba1a85ec41" category="paragraph">您可以从表中看到以下详细信息：</block>
   <block id="a79d6591df4c712ce010c266887785cb" category="paragraph">您可以参考NetApp控制台中的“*资产*”页面来查看这些详细信息。要查看特定Keystone STaaS 订阅的详细信息，请参阅<block ref="33df2a894b84cf92bf7b059b0628f59d" category="inline-link-macro-rx"></block>。如果您想查看多个Keystone订阅的详细信息，请参阅<block ref="5fe743b586c50b2c4c63c54967e2b587" category="inline-link-macro-rx"></block>。</block>
@@ -2486,11 +2479,28 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="4996475aff4a957b37439e45da70e7da" category="sidebar">了解计费方式</block>
   <block id="d7343c0d20dd2babfa5f38e0b87a6939" category="sidebar">针对特定容量配置的计费</block>
   <block id="0fa78e8d7c7b076da1f9e1d3fa517845" category="doc">订阅修改功能不可用</block>
-  <block id="6c8dd41ea59e163d8fa923e1f93882e6" category="paragraph">NetApp Console中Keystone控制面板的更新：</block>
-  <block id="ccaf34b2cf2472652ed113639a7f687c" category="paragraph">目前无法修改Keystone订阅的承诺容量。此功能将在未来的版本中重新推出。</block>
   <block id="252561ea020b2dfb8598526a78a88036" category="inline-link-macro">NetApp Console中的Keystone访问角色</block>
   <block id="cecfedde5e4474302df84ae302547216" category="list-text">虽然 Console 和Digital Advisor提供了一些独家功能，但 Console 为Keystone提供了管理功能，允许您管理订阅并进行必要的调整。欲了解更多信息，请参阅 <block ref="c1ba7ab85116b0653b4bddd0a4c0ce29" category="inline-link-macro-rx"></block>。</block>
   <block id="99a171058669ac189901e0c53c44ed13" category="admonition">您必须被分配到 * Keystone管理员 * 角色才能创建和管理警报监控器。欲了解更多信息，请参阅 <block ref="c1ba7ab85116b0653b4bddd0a4c0ce29" category="inline-link-macro-rx"></block>。</block>
   <block id="53a22728b83fc16fec4e96baf9b85af7" category="admonition">编辑警报需要 * Keystone管理员 * 角色。* Keystone查看器 * 角色只能查看警报详情。欲了解更多信息，请参阅 <block ref="c1ba7ab85116b0653b4bddd0a4c0ce29" category="inline-link-macro-rx"></block>。</block>
-  <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026年1月19日</block>
+  <block id="990e7c9325408b6d830d12ba4c1afe88" category="doc">每日应计突发数据的交互式过滤</block>
+  <block id="4b808a5ae06687042695057904b0b6bb" category="paragraph">*消费趋势*选项卡中的*累计突发天数*表现在支持交互式过滤。选择应计突发计费图表中的任意条形图，仅查看该计费周期内的天数。要了解更多信息，请参阅<block ref="9340f3a90809d3af703998e25844252d" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3b5a92602c2684cdca8198a8cfe1818" category="section-title">增强了应计突发图中的日期范围显示</block>
+  <block id="1c9a58169acbfe805f644273387c3b52" category="paragraph">*消费趋势* 选项卡中的应计突发计费图现在显示每个计费周期的完整日期范围，例如 2025 年 10 月 1 日至 2025 年 10 月 31 日，而不仅仅是月份和年份。</block>
+  <block id="46b1adc980362ab6f320e3cdb4a469c1" category="section-title">可扩展的订阅详细信息视图</block>
+  <block id="f40d8051a9fd8153ddf9a5541a863887" category="paragraph">*Subscriptions* 选项卡包含一个选项，可以同时展开所有订阅和查看每个订阅的性能服务级别信息。要了解更多信息，请参阅 <block ref="61d5e61d482be5b378176189e19c50df" category="inline-link-macro-rx"></block>。</block>
+  <block id="f6c0ac19eddb9409767c72354ec3684d" category="section-title">新用法类型列</block>
+  <block id="7d6ad97dce95d7baa137f0f095070eb3" category="paragraph">*Subscriptions* 选项卡包括一个 *Usage type* 列，显示订阅是根据预配、物理还是逻辑使用情况收费。要了解更多信息，请参阅 <block ref="61d5e61d482be5b378176189e19c50df" category="inline-link-macro-rx"></block>。</block>
+  <block id="77f26dcf71ccd46a1988ad176507362f" category="paragraph">要设置 DII，请参阅 <block ref="9c96a8ce2c2de39e18e71cf6b16e737c" category="inline-link-macro-rx"></block>。</block>
+  <block id="46258461c8dd073deb37f9c53353b64e" category="list-text">如果客户要启动新的 DII 实例，建议从<block ref="6d36cc4d8aae109cb667709b36f129f9" category="inline-link-macro-rx"></block>开始。要了解此功能和所需的启动清单，请参阅<block ref="fa9eb45797f94a182876dd4cce75625a" category="inline-link-macro-rx"></block>。</block>
+  <block id="511d6a0f4f5ad7c5f79e56d010b571b0" category="paragraph">您可以通过 Console 或 Digital Advisor 查看累计突发数据使用情况。如果您在 Console 的*消费趋势*选项卡的*视图*下拉列表中选择了*累计突发*，或者在 Digital Advisor 的*消费趋势*选项卡中选择了*已开票累计突发*选项，则可以根据所选的计费周期，按月或按季度查看累计突发数据使用情况。此数据适用于已结算的过去 12 个月，您可以按过去 30 个月的日期范围查询。</block>
+  <block id="1e007e954fdd7587bcd939b10c21e650" category="list-text">在 Console 中，您可以与应计突发计费图进行交互，以过滤每日数据使用情况。要了解更多信息，请参阅 <block ref="0cc16f2bbc32fd70c68f98b9b0b4296a" category="inline-link-macro-rx"></block>。</block>
+  <block id="1b342e2d578a51d6b3d947da95fe0f10" category="paragraph">在 Console 中，您可以通过选择代表应计突发计费图中的计费周期的任何条形图来筛选表。筛选后，该表仅显示选定计费周期内的天数。要再次查看完整数据集，请使用 *Clear filters* 选项。如果选定期间没有可用数据，则会显示一条消息，指示没有可用数据。</block>
+  <block id="e6f9cff2e05b0c21bfa8eacbea1108b9" category="paragraph"><block ref="e6f9cff2e05b0c21bfa8eacbea1108b9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c4eab7429b9b42ab319272d31567f10b" category="paragraph"><block ref="c4eab7429b9b42ab319272d31567f10b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6331e16cef510e2a7170f77ace7d4d3c" category="list-text">*使用类型*：您可能已经订阅了多个 Keystone 版本。性能服务级别的费率计划规则可能因订阅版本而异。通过查看此列中的值，您可以知道使用类型是按预配、物理还是逻辑使用计费。要了解有关版本 1 的更多信息，请参阅<block ref="d7848503560f6eda6c1c5b670f722092" category="inline-link-rx"></block>。</block>
+  <block id="8c4ee08746e9d4d8b64596c87ac3fab1" category="inline-image-macro">展开图标</block>
+  <block id="b3aabf2706f0dd29444a14f90b5b670f" category="admonition">您可以单击表标题中的向下箭头 <block ref="f41a012a2c49083e45aae37ff23f77bc" category="inline-image-macro-rx" type="image"></block> 以展开所有订阅，并同时查看每个订阅的性能服务级别信息。这显示了详细的容量信息，包括当前使用量、承诺容量、配置容量、突发容量和所有订阅的可用容量。或者，您可以单击单个订阅行中 *Expiration date* 列旁边的向下箭头，一次展开一个。</block>
+  <block id="ce767e3edd2ea431ac6813a73951729f" category="paragraph">在 NetApp Console 中修改 Keystone 订阅的承诺容量的选项目前不可用。此功能将在未来版本中重新引入。</block>
+  <block id="e6437d0fab94a9cc41e9fc0354b23716" category="section-title">2026 年 2 月 02 日</block>
 </blocks>

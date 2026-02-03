@@ -1,0 +1,29 @@
+= 每日应计突发数据的交互式过滤
+:allow-uri-read: 
+
+
+NetApp Console中Keystone仪表板的新增强功能：
+
+
+
+=== 每日应计突发数据的交互式过滤
+
+*消费趋势*选项卡中的*累计突发天数*表现在支持交互式过滤。选择应计突发计费图表中的任意条形图，仅查看该计费周期内的天数。要了解更多信息，请参阅link:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["查看每日累积突发数据使用量"]。
+
+
+
+=== 增强了应计突发图中的日期范围显示
+
+*消费趋势* 选项卡中的应计突发计费图现在显示每个计费周期的完整日期范围，例如 2025 年 10 月 1 日至 2025 年 10 月 31 日，而不仅仅是月份和年份。
+
+
+
+=== 可扩展的订阅详细信息视图
+
+*Subscriptions* 选项卡包含一个选项，可以同时展开所有订阅和查看每个订阅的性能服务级别信息。要了解更多信息，请参阅 link:./integrations/subscriptions-tab.html["查看您的 Keystone 订阅的详细信息"]。
+
+
+
+=== 新用法类型列
+
+*Subscriptions* 选项卡包括一个 *Usage type* 列，显示订阅是根据预配、物理还是逻辑使用情况收费。要了解更多信息，请参阅 link:./integrations/subscriptions-tab.html["查看您的 Keystone 订阅的详细信息"]。
