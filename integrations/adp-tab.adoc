@@ -1,0 +1,171 @@
+---
+sidebar: sidebar 
+permalink: integrations/adp-tab.html 
+keywords: keystone-aiq, digital advisor keystone, advanced data protection, ADP, MetroCluster, consumption data, health status, primary site, mirror site, sync status, ONTAP Mediator, capacity utilization, consumption trends, bluexp, NetApp Console, Console 
+summary: 当您订阅 Keystone 中的高级数据保护附加服务时，可以查看 MetroCluster 合作伙伴站点的消费数据并监控其运行状况。 
+---
+= 查看 Keystone MetroCluster 订阅的消耗量和运行状况
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+当你订阅高级数据保护附加服务时，你可以在 NetApp Console 或 Digital Advisor 中查看你的 MetroCluster 伙伴站点的消耗数据。在 NetApp Console 中，你还可以监控你的 MetroCluster 配置的复制状态和健康状况。
+
+
+
+== 查看 MetroCluster 订阅消费和运行状况状态
+
+请按照以下步骤操作：
+
+[role="tabbed-block"]
+====
+.NetApp控制台
+--
+.步骤
+. 从控制台左侧导航菜单中，选择*存储> Keystone >订阅*。
+. 在*订阅号*列中选择 MetroCluster 订阅。
++
+
+TIP: MetroCluster 订阅由 image:metrocluster-icon.png["MetroCluster 订阅符号"] 图标标识。
+
++
+*当前消耗*选项卡打开并显示您订阅的基本性能服务级别及其相应的高级数据保护性能服务级别的消耗洞察。您可以以表格或图形格式查看此信息。要了解更多信息，请参阅 link:../integrations/current-usage-tab.html["查看 Keystone 订阅的当前消耗情况"]。
+
+. 选择 *Advanced data protection (ADP)* 选项卡。
++
+在此选项卡上，您可以查看主站点和镜像站点上基本性能服务级别的消耗数据，监视 MetroCluster 设置的运行状况，并跟踪其同步状态。
+
++
+** 查看所选时间段的消耗分布图。
++
+该图表显示了主站点和镜像站点的消耗量。将鼠标悬停在图表上可查看每个站点的消耗量明细，单位为 tebibytes (TiB)。
+
++
+
+NOTE: 对于基本性能服务级别，每个卷都按主站点和镜像站点上的设置收费。因此，该图表被分割以反映每个站点的消耗量。
+
++
+*示例：*工具提示显示消耗值，例如主站点为 1.15 TiB，镜像站点为 4.22 TiB。
+
++
+image:adp-consumption-chart.png["显示 MetroCluster 消耗分布的折线图，主站点为 1.15 TiB，镜像站点为 4.22 TiB，显示在工具提示中"]
+
+** 在 *ADP 拓扑* 视图中监控 MetroCluster 设置的运行状况。
++
+拓扑显示主站点和镜像站点之间的连接状态（正常、降级、断开连接或初始化）、数据同步状态（同步或不同步）以及 ONTAP Mediator 状态（如果已配置）。要了解有关 ONTAP Mediator 的更多信息，请参阅 link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["了解 ONTAP Mediator"^]。
+
++
+image:adp-topology.png["显示主站点（群集 A）、镜像站点（群集 B）、连接状态指示器、同步状态和 ONTAP Mediator 的 ADP 拓扑图像"]
+
++
+
+TIP: 您可以从 ADP 拓扑中选择 Cluster B 订阅（镜像），将其视为主站点。
+
++
+
+TIP: 如果同步状态显示不同步或连接状态显示降级，请参阅 link:../concepts/support-services.html["获取Keystone帮助"] 以解决此问题。
+
+** 查看主站点或镜像站点的历史消费趋势。
++
+在 *容量利用率* 下，选择 Cluster A（主要）或 Cluster B（镜像）旁边的 *查看*。
+
++
+*Consumption trend* 选项卡打开并显示选定集群在指定日期范围内的历史消费数据。您可以分析基本和高级数据保护性能服务级别的容量使用趋势。要了解更多信息，请参阅 link:../integrations/consumption-tab.html["查看您的 Keystone 订阅的消费趋势"]。
+
++
+*示例：* 下图显示了主站点（Cluster A）的 _Premium_ 性能服务级别（基础）的消耗情况：
+
++
+image:adp-base-consumption.png["主站点的高级性能服务级别消耗图"]
+
++
+对于 _Advanced Data-Protect premium_ 性能服务级别，主站点（Cluster A）的图表如下所示：
+
++
+image:adp-consumption.png["主站点的 Advanced Data Protection Premium 使用量图表"]
+
++
+对于 _Advanced Data-Protect_ 性能服务级别，总使用量在主站点和镜像站点之间分配，每个站点的使用量在单独的订阅中反映和计费；一个订阅用于主站点，另一个用于镜像站点。这就是为什么当您在 *Consumption trend* 选项卡上选择主站点的订阅号时，高级数据保护附加服务的消费图表仅显示主站点的离散消费详细信息。由于 MetroCluster 配置中的每个合作伙伴站点都充当源和镜像，因此每个站点的总消耗量包括在该站点创建的源和镜像卷。有关详细信息，请参阅link:../concepts/adp.html["Keystone 高级数据保护附加组件"]。
+
+
+
+
+
+有关 MetroCluster 如何保护数据的信息，请参见 https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["了解 MetroCluster 数据保护和灾难恢复"^]。
+
+--
+.Digital Advisor
+--
+.步骤
+. 选择 *General > Keystone Subscriptions > Consumption Trend*。
+. 选择 MetroCluster 订阅。
++
+如果在 MetroCluster 设置中配置了 ONTAP 存储环境中的群集，则 Keystone 订阅的消费数据将在相同的历史数据图表中拆分，以显示基本性能服务级别的主站点和镜像站点的消费情况。
+
++
+
+NOTE: 消耗量条形图仅针对基本性能服务级别进行拆分。对于高级数据保护附加服务，即 _Advanced Data-Protect_ 性能服务级别，此划分不会出现。
+
++
+
+TIP: *当前消费* 选项卡中订阅跟踪 ID 旁边的工具提示可帮助您在 MetroCluster 设置中识别合作伙伴订阅。
+
++
+*高级数据保护性能服务级别* 对于高级数据保护性能服务级别，总使用量在合作伙伴站点之间分配，每个合作伙伴站点的使用量在单独的订阅中反映和计费；一个订阅用于主站点，另一个用于镜像站点。这就是为什么当您在消费趋势选项卡上选择主站点的订阅号时，高级数据保护附加服务的消费图表仅显示主站点的离散消费详细信息的原因。由于 MetroCluster 配置中的每个合作伙伴站点都充当源和镜像，因此每个站点的总消耗量包括在该站点创建的源和镜像卷。
+
++
+*基本性能服务级别* 对于基本性能服务级别，每个卷按主站点和镜像站点上的调配计费，因此根据主站点和镜像站点的使用情况划分相同的条形图。
+
++
+*主要订阅视图*
+
++
+下图显示 _Performance_ 服务级别（基本性能服务级别）的图表。相同的历史数据图表还以较浅的阴影表示镜像站点消耗量，颜色代码与主站点使用的颜色相同。将鼠标悬停在图表上可查看每个站点的 TiB 消耗明细。在此示例中，主站点的值为 95.04 TiB，镜像站点的值为 93.38 TiB。
+
++
+image:mcc-chart-2.png["mcc 主站"]
+
++
+对于 _Advanced Data-Protect_ 性能服务级别，图表如下所示：
+
++
+image:adp-src-2.png["mcc 主基地"]
+
++
+显示的消耗量为 94.21 TiB，表示主订阅的使用量。鉴于高级数据保护在具有单独订阅的合作伙伴站点之间拆分消费，此图表仅显示主要站点使用情况。要了解高级数据保护附加服务的定价，请参阅link:../concepts/adp.html#understand-pricing["了解定价"]。
+
++
+*镜像订阅视图*
+
++
+当您检查镜像订阅时，可以看到与合作伙伴站点相同的数据收集点处的 _Performance_ 服务级别（基本性能服务级别）的条形图被颠倒，主站点和镜像站点的消耗分解分别为 93.38 TiB 和 95.04 TiB。
+
++
+image:mcc-chart-mirror-2.png["mcc 镜像"]
+
++
+对于 _Advanced Data-Protect_ 性能服务级别，对于与合作伙伴站点相同的收集点，图表如下所示：
+
++
+image:adp-mir-2.png["mcc 镜像基础"]
+
+
+
+有关 MetroCluster 如何保护数据的信息，请参见 https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["了解 MetroCluster 数据保护和灾难恢复"^]。
+
+--
+====
+* 相关信息 *
+
+* link:../integrations/dashboard-overview.html["了解 Keystone 仪表板"]
+* link:../integrations/subscriptions-tab.html["查看您的订阅详情"]
+* link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
+* link:../integrations/consumption-tab.html["查看消费趋势"]
+* link:../integrations/subscription-timeline.html["查看您的订阅时间表"]
+* link:../integrations/assets-tab.html["查看您的 Keystone 订阅资产"]
+

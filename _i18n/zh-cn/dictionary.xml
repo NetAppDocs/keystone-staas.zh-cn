@@ -1812,7 +1812,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e656406ec3f71a6faf961120d8791fe6" category="paragraph"><block ref="e656406ec3f71a6faf961120d8791fe6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6e665113a95f128bda94a45125d034c0" category="doc">查看您的 Keystone 订阅的详细信息</block>
   <block id="da165360e20e2139a72fd6fadd1175f3" category="inline-image-macro">查看订阅标签详情</block>
-  <block id="777a92dd9a9405f5a8f4c89917427c35" category="list-text">*订阅编号*：NetApp 分配的 Keystone 订阅的订阅编号。</block>
   <block id="e6cb8545fbd488c01d2779c3cf2fe308" category="list-text">*客户名称*：与 Keystone 订阅相关的客户的名称。</block>
   <block id="1785b788275c7de318abca94e5882fe1" category="list-text">*关联订阅*：如果您有任何与主订阅关联的次要订阅，此列会列出主订阅的关联订阅编号。此订阅编号可以是主订阅的编号，也可以是次要（关联）订阅的编号。</block>
   <block id="7e147d47de92c4a609c07c4bb5e40f29" category="list-text">*计费周期*：订阅的发票周期。</block>
@@ -2474,7 +2473,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="bac9b6c348c931a976006431b4b392d7" category="doc">使用Digital Advisor REST API 获取Keystone客户的消费详情</block>
   <block id="70233a54c59d50201e00e568353b8e42" category="doc">使用Digital Advisor REST API 获取所有Keystone客户的列表</block>
   <block id="bb9f69edc6b159c2172c134f7b8ec8d9" category="doc">使用Digital Advisor REST API 获取Keystone客户订阅</block>
-  <block id="ec3c5dc2acc96dd435267e93ff378ceb" category="sidebar">了解附加服务</block>
   <block id="1c0706b323b25df07171d935dadca63d" category="sidebar">了解Keystone STaaS SLO</block>
   <block id="4996475aff4a957b37439e45da70e7da" category="sidebar">了解计费方式</block>
   <block id="d7343c0d20dd2babfa5f38e0b87a6939" category="sidebar">针对特定容量配置的计费</block>
@@ -2503,4 +2501,98 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="b3aabf2706f0dd29444a14f90b5b670f" category="admonition">您可以单击表标题中的向下箭头 <block ref="f41a012a2c49083e45aae37ff23f77bc" category="inline-image-macro-rx" type="image"></block> 以展开所有订阅，并同时查看每个订阅的性能服务级别信息。这显示了详细的容量信息，包括当前使用量、承诺容量、配置容量、突发容量和所有订阅的可用容量。或者，您可以单击单个订阅行中 *Expiration date* 列旁边的向下箭头，一次展开一个。</block>
   <block id="ce767e3edd2ea431ac6813a73951729f" category="paragraph">在 NetApp Console 中修改 Keystone 订阅的承诺容量的选项目前不可用。此功能将在未来版本中重新引入。</block>
   <block id="e6437d0fab94a9cc41e9fc0354b23716" category="section-title">2026 年 2 月 02 日</block>
+  <block id="3173b2ec37a82d2973529cd167d6287e" category="summary">使用高级数据保护附加服务，确保为任务关键型工作负载提供高效的数据保护。</block>
+  <block id="642f94d714f235631bdda58a0641ee29" category="doc">Keystone 高级数据保护附加组件</block>
+  <block id="13c48d4700ad4af5c8fd956e1cfe906e" category="paragraph">您可以通过 Keystone STaaS 订阅订阅高级数据保护 (ADP) 附加服务。虽然标准 Keystone 服务包括使用 SnapMirror、SnapVault 和 Snapshot 的默认数据保护，但此附加服务使用 NetApp MetroCluster 技术来确保您的关键任务工作负载的有效数据保护，恢复点目标 (RPO) 为 0。</block>
+  <block id="71d3312e0355ab7d413073f4793122fc" category="paragraph">Keystone 高级数据保护服务可以将数据同步镜像到辅助站点。如果主站点发生灾难，辅助站点可以接管，而不会丢失任何数据。此功能使用两个站点之间的 <block ref="64ff7fce7f50f4f1d4bf30022fac8148" category="inline-link-macro-rx"></block> 配置来启用数据保护。您可以仅对文件和块存储服务使用高级数据保护加载项服务。作为此附加服务的一部分，<block ref="fb78d2349716eae6da0fd092c4f02857" prefix=" " category="inline-code"></block> 性能服务级别将分配给您的订阅。</block>
+  <block id="88447a30bf60d09ff5ebf0642e6380e8" category="inline-link-macro">查看 MetroCluster 订阅的消费量和运行状况</block>
+  <block id="e799b5eff99a155a4912e68e26db204f" category="paragraph">您可以监控 MetroCluster 配置的消耗量和运行状况指标。有关详细信息，请参见<block ref="0b2e2940da985e8c5260b9ec964b2073" category="inline-link-macro-rx"></block>。</block>
+  <block id="738272188927126099f39cbe7024dbf9" category="section-title">了解定价</block>
+  <block id="a9defa509a6012981ff7f002dd53d0e6" category="paragraph">高级数据保护附加服务的定价基于每个站点的承诺容量。这有助于确定高级数据保护服务的实际成本，单位为 $/TiB。附加费用适用于订阅中的所有容量，包括源数据、镜像副本和未镜像数据。</block>
+  <block id="880dc4bb6f99da8936686e254cb50669" category="paragraph">对于 MetroCluster 配置，每个站点都需要自己的订阅，并且您需要单独支付每个站点的承诺容量。</block>
+  <block id="07a4905cb08550d85832c59c39e6d61c" category="list-text">该服务将相关存储上 100% 的承诺容量用作承诺容量。</block>
+  <block id="35837aec92cf4ad38b86eaea542a0d30" category="list-text">收费适用于主站点和二级站点，包括源集群和目标集群。</block>
+  <block id="02ebdf7c9de6e8483fc7db75a00034e7" category="list-text">费用仅适用于您的文件和块存储服务。</block>
+  <block id="0b17361973d6dd62103a27ad522a1b4a" category="section-title">支持的 MetroCluster 配置</block>
+  <block id="757a9b494786f22b7b66a8cb11d77505" category="paragraph">Keystone 支持以下 MetroCluster 部署方案：</block>
+  <block id="a12f0bc36306f109786a32dcba12cb16" category="list-text">主动/被动配置</block>
+  <block id="6a1b5dfc7ed806f74f0a51d8e7fe82bf" category="list-text">在此配置中，一个站点的主数据会镜像到辅助站点。例如，如果站点 A 消耗了 100 TiB 的逻辑数据，则会将其复制到站点 B。两个站点都需要相同的订阅：</block>
+  <block id="d7941f7e86a71e117ffab47d0f606396" category="list-text">*订阅 1（站点 A）：* 100 TiB 存储服务 + 100 TiB ADP</block>
+  <block id="483262bd936bc7befb9af3dee5e82599" category="list-text">*订阅 2（站点 B）：* 100 TiB 存储服务 + 100 TiB ADP</block>
+  <block id="6eb23ae1a2ca85e0ec0e596d79022274" category="list-text">具有完全镜像的主动/主动配置</block>
+  <block id="86b67c27aa3a547ae444c6fd52081d2a" category="list-text">在此配置中，两个站点都托管双向镜像的主数据。例如，站点 A 的 100 TiB 主数据被镜像到站点 B，站点 B 的 100 TiB 主数据被镜像到站点 A。两个站点都需要订阅合并容量：</block>
+  <block id="18134e5504718f75aade7e9e5e41220c" category="list-text">*订阅 1（站点 A）：* 200 TiB 存储服务 + 200 TiB ADP</block>
+  <block id="06e569558b9aa9e52d6ea3b626499fa8" category="list-text">*订阅 2（站点 B）：* 200 TiB 存储服务 + 200 TiB ADP</block>
+  <block id="49a70182977d0efde0901be0cf3f7101" category="list-text">具有部分镜像的主动/主动配置</block>
+  <block id="6cffd5c40a8669b47c08c961f08738d7" category="list-text">在此配置中，一个站点托管镜像数据，而另一个站点托管镜像和未镜像数据。例如，站点 A 的 100 TiB 主数据被镜像到站点 B，而站点 B 还托管了另外 100 TiB 的未镜像数据。订阅根据每个站点的容量而有所不同：</block>
+  <block id="dfde62f4169c1a6e0ed4f38055fa2774" category="paragraph">下图显示了这些受支持的 MetroCluster 配置：</block>
+  <block id="c0ba0a76f531a20bbda6af3c55a46aac" category="inline-image-macro">显示三种 MetroCluster 配置的图表：具有对称镜像的主动/被动，具有全双向镜像的主动/主动，以及具有部分镜像的主动/主动</block>
+  <block id="9675e25ec9f821651df1c740fe778f97" category="paragraph"><block ref="9675e25ec9f821651df1c740fe778f97" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dcf5106043aa7bde76b50aee99982689" category="summary">当您订阅 Keystone 中的高级数据保护附加服务时，可以查看 MetroCluster 合作伙伴站点的消费数据并监控其运行状况。</block>
+  <block id="511c40cd8a486a0e8aa1251baf8515ee" category="doc">查看 Keystone MetroCluster 订阅的消耗量和运行状况</block>
+  <block id="54cce4aba23f46d3958d61fbb2b10e3a" category="paragraph">当你订阅高级数据保护附加服务时，你可以在 NetApp Console 或 Digital Advisor 中查看你的 MetroCluster 伙伴站点的消耗数据。在 NetApp Console 中，你还可以监控你的 MetroCluster 配置的复制状态和健康状况。</block>
+  <block id="f74fc96e874e659d41c34561f30f3fee" category="section-title">查看 MetroCluster 订阅消费和运行状况状态</block>
+  <block id="b49647b9b1e8bc3c8d8768be0c33c9b2" category="paragraph">请按照以下步骤操作：</block>
+  <block id="1a94b13632bb1f29b09280731ca462ed" category="list-text">在*订阅号*列中选择 MetroCluster 订阅。</block>
+  <block id="58d25047c56c5383b6e5607bddacebca" category="inline-image-macro">MetroCluster 订阅符号</block>
+  <block id="26546fe0e238d82fb8663584226d1478" category="admonition">MetroCluster 订阅由 <block ref="a865e8e7573241a1da9d2c81b0ca0ac4" category="inline-image-macro-rx" type="image"></block> 图标标识。</block>
+  <block id="18c635825cb497bac7e5931ccc134aa0" category="paragraph">*当前消耗*选项卡打开并显示您订阅的基本性能服务级别及其相应的高级数据保护性能服务级别的消耗洞察。您可以以表格或图形格式查看此信息。要了解更多信息，请参阅 <block ref="fad18dbea5fe4d53670ce8b5f31e4228" category="inline-link-macro-rx"></block>。</block>
+  <block id="86c03d482bf25fa66342ff23f81a8b8b" category="list-text">选择 *Advanced data protection (ADP)* 选项卡。</block>
+  <block id="45251127b3bb3ae466aebfd15071b035" category="paragraph">在此选项卡上，您可以查看主站点和镜像站点上基本性能服务级别的消耗数据，监视 MetroCluster 设置的运行状况，并跟踪其同步状态。</block>
+  <block id="1c1a142854f6ec09d46068011af3620f" category="list-text">查看所选时间段的消耗分布图。</block>
+  <block id="c5b9cac50bff77d9caef636546a52cc3" category="paragraph">该图表显示了主站点和镜像站点的消耗量。将鼠标悬停在图表上可查看每个站点的消耗量明细，单位为 tebibytes (TiB)。</block>
+  <block id="5e3aabd541f9a8089c9a46b80f9c78e3" category="admonition">对于基本性能服务级别，每个卷都按主站点和镜像站点上的设置收费。因此，该图表被分割以反映每个站点的消耗量。</block>
+  <block id="886bb30f5882831107de008efbb56e4c" category="paragraph">*示例：*工具提示显示消耗值，例如主站点为 1.15 TiB，镜像站点为 4.22 TiB。</block>
+  <block id="7d46ce3951e18767710379cf79e92352" category="inline-image-macro">显示 MetroCluster 消耗分布的折线图，主站点为 1.15 TiB，镜像站点为 4.22 TiB，显示在工具提示中</block>
+  <block id="1581159ff20524ddc181e539ca73cec9" category="paragraph"><block ref="1581159ff20524ddc181e539ca73cec9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="069a24e74f6fefe228c9ce5d28b7e67b" category="list-text">在 *ADP 拓扑* 视图中监控 MetroCluster 设置的运行状况。</block>
+  <block id="92d375ae13aef349145e8dc2877f3c76" category="inline-link-macro">了解 ONTAP Mediator</block>
+  <block id="22273e2e3da5fac4fab6a5af929487f6" category="paragraph">拓扑显示主站点和镜像站点之间的连接状态（正常、降级、断开连接或初始化）、数据同步状态（同步或不同步）以及 ONTAP Mediator 状态（如果已配置）。要了解有关 ONTAP Mediator 的更多信息，请参阅 <block ref="fa6b7569dc18495dda4bcaf9e0e6d31d" category="inline-link-macro-rx"></block>。</block>
+  <block id="c7ce58326ff0d43313f58438432618e4" category="inline-image-macro">显示主站点（群集 A）、镜像站点（群集 B）、连接状态指示器、同步状态和 ONTAP Mediator 的 ADP 拓扑图像</block>
+  <block id="485a60e9684d6db386d471e94d4f8e6e" category="paragraph"><block ref="485a60e9684d6db386d471e94d4f8e6e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f7cf2a22df63f7c801c01cfb4ed82fab" category="admonition">您可以从 ADP 拓扑中选择 Cluster B 订阅（镜像），将其视为主站点。</block>
+  <block id="ea463c160b93aefec442f24e23176210" category="admonition">如果同步状态显示不同步或连接状态显示降级，请参阅 <block ref="da15ada5eca0cf6d8fba09a6cd49576b" category="inline-link-macro-rx"></block> 以解决此问题。</block>
+  <block id="8f2ab845f0c2b21de9dce9bacddaabcb" category="list-text">查看主站点或镜像站点的历史消费趋势。</block>
+  <block id="3427110bee6003dd0893bac8f65d3026" category="paragraph">在 *容量利用率* 下，选择 Cluster A（主要）或 Cluster B（镜像）旁边的 *查看*。</block>
+  <block id="d9e6be64cc5e0800433f8124d52098c6" category="inline-link-macro">查看您的 Keystone 订阅的消费趋势</block>
+  <block id="9f7f2df13fda4f0939a1226559ef20a2" category="paragraph">*Consumption trend* 选项卡打开并显示选定集群在指定日期范围内的历史消费数据。您可以分析基本和高级数据保护性能服务级别的容量使用趋势。要了解更多信息，请参阅 <block ref="13e6bd514849d88572a566ee4b9ddd86" category="inline-link-macro-rx"></block>。</block>
+  <block id="eb4d686858db5ecb37a6bcd33f15cecf" category="paragraph">*示例：* 下图显示了主站点（Cluster A）的 _Premium_ 性能服务级别（基础）的消耗情况：</block>
+  <block id="2828144b465892c01c607f91dadeed2e" category="inline-image-macro">主站点的高级性能服务级别消耗图</block>
+  <block id="07c6bfc4b60aa098788912c943a00662" category="paragraph"><block ref="07c6bfc4b60aa098788912c943a00662" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9370e72ca2e46a103958448e1d9f3ee1" category="paragraph">对于 _Advanced Data-Protect premium_ 性能服务级别，主站点（Cluster A）的图表如下所示：</block>
+  <block id="7a68e24df64b887455f230838ea7fff3" category="inline-image-macro">主站点的 Advanced Data Protection Premium 使用量图表</block>
+  <block id="4fa7bd48201c6971cbee583844674499" category="paragraph"><block ref="4fa7bd48201c6971cbee583844674499" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ae2e8d7d9bc83c06878ce05d51920b3e" category="paragraph">对于 _Advanced Data-Protect_ 性能服务级别，总使用量在主站点和镜像站点之间分配，每个站点的使用量在单独的订阅中反映和计费；一个订阅用于主站点，另一个用于镜像站点。这就是为什么当您在 *Consumption trend* 选项卡上选择主站点的订阅号时，高级数据保护附加服务的消费图表仅显示主站点的离散消费详细信息。由于 MetroCluster 配置中的每个合作伙伴站点都充当源和镜像，因此每个站点的总消耗量包括在该站点创建的源和镜像卷。有关详细信息，请参阅<block ref="37286cb86a09a4920520b9288f4ef230" category="inline-link-macro-rx"></block>。</block>
+  <block id="48d59ef93e565c1c62d4604f7ddf6561" category="inline-link">了解 MetroCluster 数据保护和灾难恢复</block>
+  <block id="11faa60292999fe44e704021ce9a5657" category="paragraph">有关 MetroCluster 如何保护数据的信息，请参见<block ref="f22c59fda71318ed939c4a5a7c90b447" category="inline-link-rx"></block>。</block>
+  <block id="c1fd96e1a86ead5d1ebbf6b0c8bbf088" category="list-text">选择 *General &gt; Keystone Subscriptions &gt; Consumption Trend*。</block>
+  <block id="9e2d1ddd4dcf430ef709f3cef91bdcb4" category="list-text">选择 MetroCluster 订阅。</block>
+  <block id="6d2267f5875d98e045ec56c36925fe8c" category="paragraph">如果在 MetroCluster 设置中配置了 ONTAP 存储环境中的群集，则 Keystone 订阅的消费数据将在相同的历史数据图表中拆分，以显示基本性能服务级别的主站点和镜像站点的消费情况。</block>
+  <block id="9fb2ff331e9a4f6de17ec429db9059a4" category="admonition">消耗量条形图仅针对基本性能服务级别进行拆分。对于高级数据保护附加服务，即 _Advanced Data-Protect_ 性能服务级别，此划分不会出现。</block>
+  <block id="75e0534d6922c86860faff1d9500a18b" category="admonition">*当前消费* 选项卡中订阅跟踪 ID 旁边的工具提示可帮助您在 MetroCluster 设置中识别合作伙伴订阅。</block>
+  <block id="2f2646f9b1b507627f86513279abf2b8" category="paragraph">*高级数据保护性能服务级别* 对于高级数据保护性能服务级别，总使用量在合作伙伴站点之间分配，每个合作伙伴站点的使用量在单独的订阅中反映和计费；一个订阅用于主站点，另一个用于镜像站点。这就是为什么当您在消费趋势选项卡上选择主站点的订阅号时，高级数据保护附加服务的消费图表仅显示主站点的离散消费详细信息的原因。由于 MetroCluster 配置中的每个合作伙伴站点都充当源和镜像，因此每个站点的总消耗量包括在该站点创建的源和镜像卷。</block>
+  <block id="528ecb800a438dba65f32a6bb9c3e89d" category="paragraph">*基本性能服务级别* 对于基本性能服务级别，每个卷按主站点和镜像站点上的调配计费，因此根据主站点和镜像站点的使用情况划分相同的条形图。</block>
+  <block id="71315586cba8c8949f99a7a1df55dc0a" category="paragraph">*主要订阅视图*</block>
+  <block id="2493a5abd7630f0ba79229ca96082697" category="paragraph">下图显示 _Performance_ 服务级别（基本性能服务级别）的图表。相同的历史数据图表还以较浅的阴影表示镜像站点消耗量，颜色代码与主站点使用的颜色相同。将鼠标悬停在图表上可查看每个站点的 TiB 消耗明细。在此示例中，主站点的值为 95.04 TiB，镜像站点的值为 93.38 TiB。</block>
+  <block id="7cbd40b0470c3f0ea1063db9202530ff" category="inline-image-macro">mcc 主站</block>
+  <block id="b148b095b9eb2b66c9d82b9f31f5f48a" category="paragraph"><block ref="b148b095b9eb2b66c9d82b9f31f5f48a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8ddab06811a09aa84844d9013c618f1c" category="paragraph">对于 _Advanced Data-Protect_ 性能服务级别，图表如下所示：</block>
+  <block id="4bb0adac0644b7c8396196d410d47909" category="inline-image-macro">mcc 主基地</block>
+  <block id="f4badb1f4371f9080a169022107c32a4" category="paragraph"><block ref="f4badb1f4371f9080a169022107c32a4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="079da252ccc5dbccc8de73980b3d636d" category="paragraph">显示的消耗量为 94.21 TiB，表示主订阅的使用量。鉴于高级数据保护在具有单独订阅的合作伙伴站点之间拆分消费，此图表仅显示主要站点使用情况。要了解高级数据保护附加服务的定价，请参阅<block ref="e4b4611bcff3f9744cb4aede487c4fc5" category="inline-link-macro-rx"></block>。</block>
+  <block id="ba0d35d2434b8356c9c24f1ebc67f3e3" category="paragraph">*镜像订阅视图*</block>
+  <block id="972278bcfbe3ce9d52d685be911a305c" category="paragraph">当您检查镜像订阅时，可以看到与合作伙伴站点相同的数据收集点处的 _Performance_ 服务级别（基本性能服务级别）的条形图被颠倒，主站点和镜像站点的消耗分解分别为 93.38 TiB 和 95.04 TiB。</block>
+  <block id="ff58d4e2d2a69e5e91f9509907ba3bd1" category="inline-image-macro">mcc 镜像</block>
+  <block id="e3da9701f96b1d8b1f5544caeddc8585" category="paragraph"><block ref="e3da9701f96b1d8b1f5544caeddc8585" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eb558bf0915ebb2e189ec8a1ab2f0494" category="paragraph">对于 _Advanced Data-Protect_ 性能服务级别，对于与合作伙伴站点相同的收集点，图表如下所示：</block>
+  <block id="ab682f0abbe8b97aaec76b435ca52575" category="inline-image-macro">mcc 镜像基础</block>
+  <block id="b922b03e3dcfae7088adb392f0767e0b" category="paragraph"><block ref="b922b03e3dcfae7088adb392f0767e0b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="65a2a677ad699a266987a973a6da5af2" category="inline-link-macro">查看 MetroCluster 消费和健康状况</block>
+  <block id="132051ceb3854fb60e3d9c0fef6e399c" category="paragraph"><block ref="132051ceb3854fb60e3d9c0fef6e399c" category="inline-link-macro-rx"></block></block>
+  <block id="bf93ffdb682e2db2c7c1fde328e362e5" category="cell">是（包括运行状况状态、拓扑视图和同步监控）</block>
+  <block id="97e3a227dc9559ee612b1a162bda9b44" category="cell">是（仅限消费数据）</block>
+  <block id="83a7d79d2446fe66f125a9ccf9a54e8d" category="list-text">*订阅号*：由 NetApp 分配的 Keystone 订阅的订阅号。带有 <block ref="a865e8e7573241a1da9d2c81b0ca0ac4" category="inline-image-macro-rx" type="image"></block> 图标的订阅是 MetroCluster 订阅。要了解有关 MetroCluster 订阅的更多信息，请参阅 <block ref="660e84029d4c47136198fc3e50dbcb48" category="inline-link-macro-rx"></block>。</block>
+  <block id="ac2952bbdeeadb1f8bfdc6205fabd389" category="sidebar">查看 MetroCluster 订阅消费和运行状况</block>
+  <block id="ab556116f6e3e88a66d6fb6d623318fa" category="sidebar">附加服务</block>
+  <block id="3f20b3134627198be1e0ff879a88cd8f" category="sidebar">高级数据保护</block>
 </blocks>

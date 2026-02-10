@@ -102,6 +102,11 @@ link:../integrations/volumes-objects-tab.html["查看卷和对象详细信息"]
 
 
  a| 
+link:../integrations/adp-tab.html["查看 MetroCluster 消费和健康状况"]
+| 是（包括运行状况状态、拓扑视图和同步监控） | 是（仅限消费数据） 
+
+
+ a| 
 link:../integrations/performance-tab.html["查看性能指标"]
 | 否 | 是 
 |===

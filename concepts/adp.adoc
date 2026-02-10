@@ -1,8 +1,72 @@
 ---
+sidebar: sidebar 
 permalink: concepts/adp.html 
-redirect: keystone-staas/concepts/metrics.html 
+keywords: data protection advanced 
+summary: 使用高级数据保护附加服务，确保为任务关键型工作负载提供高效的数据保护。 
 ---
-= 
+= Keystone 高级数据保护附加组件
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
+[role="lead"]
+您可以通过 Keystone STaaS 订阅订阅高级数据保护 (ADP) 附加服务。虽然标准 Keystone 服务包括使用 SnapMirror、SnapVault 和 Snapshot 的默认数据保护，但此附加服务使用 NetApp MetroCluster 技术来确保您的关键任务工作负载的有效数据保护，恢复点目标 (RPO) 为 0。
+
+Keystone 高级数据保护服务可以将数据同步镜像到辅助站点。如果主站点发生灾难，辅助站点可以接管，而不会丢失任何数据。此功能使用两个站点之间的 link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"^] 配置来启用数据保护。您可以仅对文件和块存储服务使用高级数据保护加载项服务。作为此附加服务的一部分， `Advanced Data-Protect` 性能服务级别将分配给您的订阅。
+
+您可以监控 MetroCluster 配置的消耗量和运行状况指标。有关详细信息，请参见link:../integrations/adp-tab.html["查看 MetroCluster 订阅的消费量和运行状况"]。
+
+
+
+== 了解定价
+
+高级数据保护附加服务的定价基于每个站点的承诺容量。这有助于确定高级数据保护服务的实际成本，单位为 $/TiB。附加费用适用于订阅中的所有容量，包括源数据、镜像副本和未镜像数据。
+
+对于 MetroCluster 配置，每个站点都需要自己的订阅，并且您需要单独支付每个站点的承诺容量。
+
+请注意以下事项：
+
+* 该服务将相关存储上 100% 的承诺容量用作承诺容量。
+* 收费适用于主站点和二级站点，包括源集群和目标集群。
+* 费用仅适用于您的文件和块存储服务。
+
+
+
+
+== 支持的 MetroCluster 配置
+
+Keystone 支持以下 MetroCluster 部署方案：
+
+主动/被动配置:: 在此配置中，一个站点的主数据会镜像到辅助站点。例如，如果站点 A 消耗了 100 TiB 的逻辑数据，则会将其复制到站点 B。两个站点都需要相同的订阅：
++
+--
+* *订阅 1（站点 A）：* 100 TiB 存储服务 + 100 TiB ADP
+* *订阅 2（站点 B）：* 100 TiB 存储服务 + 100 TiB ADP
+
+
+--
+具有完全镜像的主动/主动配置:: 在此配置中，两个站点都托管双向镜像的主数据。例如，站点 A 的 100 TiB 主数据被镜像到站点 B，站点 B 的 100 TiB 主数据被镜像到站点 A。两个站点都需要订阅合并容量：
++
+--
+* *订阅 1（站点 A）：* 200 TiB 存储服务 + 200 TiB ADP
+* *订阅 2（站点 B）：* 200 TiB 存储服务 + 200 TiB ADP
+
+
+--
+具有部分镜像的主动/主动配置:: 在此配置中，一个站点托管镜像数据，而另一个站点托管镜像和未镜像数据。例如，站点 A 的 100 TiB 主数据被镜像到站点 B，而站点 B 还托管了另外 100 TiB 的未镜像数据。订阅根据每个站点的容量而有所不同：
++
+--
+* *订阅 1（站点 A）：* 100 TiB 存储服务 + 100 TiB ADP
+* *订阅 2（站点 B）：* 200 TiB 存储服务 + 200 TiB ADP
+
+
+--
+
+
+下图显示了这些受支持的 MetroCluster 配置：
+
+image:mcc-1.png["显示三种 MetroCluster 配置的图表：具有对称镜像的主动/被动，具有全双向镜像的主动/主动，以及具有部分镜像的主动/主动"]
