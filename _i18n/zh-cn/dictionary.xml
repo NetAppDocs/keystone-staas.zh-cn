@@ -1398,8 +1398,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="3b95e9802e539ed39990d7c53e7f63cc" category="paragraph">NetApp数据基础架构洞察(Data Infrastructure Insight、DII、以前称为Cloud Insights)是一款适用于Keystone STaaS的附加产品。此服务与Keystone STaaS的集成增强了Keystone跨公有云和私有数据中心提供的存储资源的监控、故障排除和优化功能。</block>
   <block id="b4116a637c9ad7ac63e4694f7d72fe47" category="inline-link-macro">Data Infrastructure Insight文档</block>
   <block id="791f81543da974a0b785676eb2cfa67d" category="paragraph">要了解有关数据基础架构洞察力的更多信息，请参见<block ref="d3b10d06b902e7a0afb7dc49b48a5ee1" category="inline-link-macro-rx"></block>。</block>
-  <block id="8821a03fd087171377d0af609b3c7f94" category="inline-image-macro">显示DII服务级别的Keystone订阅小工具的屏幕截图</block>
-  <block id="62d433b3a1743ca27d23bb2bc966e462" category="paragraph"><block ref="62d433b3a1743ca27d23bb2bc966e462" category="inline-image-macro-rx" type="image"></block></block>
   <block id="35093b8f232384c1cc56aa0b089de156" category="section-title">部署适用于Keystone的DII</block>
   <block id="af7685e284aa0e1b6d46a67961bbd7ea" category="inline-link-macro">NetApp 专业服务</block>
   <block id="f7cbbc681ca27bebc7825144375b3923" category="paragraph">客户可以通过两种方式集成DII for Keystone：既可以作为监控其他非Keystone环境的现有实例的一部分、也可以作为新实例的一部分。客户负责设置DII。如果在复杂环境中设置DII需要帮助，客户团队可以参与<block ref="d0b2c9035727476f87ec5eb3369e77e6" category="inline-link-macro-rx"></block>。</block>
@@ -1419,8 +1417,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="9a46d798eebbf17a0a8de6e011f77e61" category="section-title">计费和计量</block>
   <block id="906219bd5cad7b32c457e4301bb3dddb" category="paragraph">下面概述了DII附加服务的计费和计量详细信息：</block>
   <block id="4845aab96333666b12d6803a4dfa7e2f" category="list-text">此服务的衡量方式与您的主订阅相同。例如、如果您的主订阅包括100 TiB的Extreme服务和100 TiB的Premium服务、这两项服务都是根据逻辑使用量来衡量的、则附加服务DII Extreme 100 TiB和DII Premium 100 TiB也是根据逻辑使用量来衡量的。如果您的主订阅是按配置的基础衡量的、则会以相同的方式衡量相同容量的附加服务。附加服务将采用与您的主订阅相同的衡量方法。</block>
-  <block id="c99e19e7853ccd0683be6a6018ad7741" category="inline-image-macro">显示服务级别计量的当前消耗选项卡的屏幕截图</block>
-  <block id="b0885a29b96393f9e5617fe484028b66" category="paragraph"><block ref="b0885a29b96393f9e5617fe484028b66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8db98a7e401d579f2dabed9e0f2ae0e5" category="list-text">此服务将按计量、并与您的Keystone订阅一起在同一发票上开具发票。如果您在激活Keystone订阅之前为Keystone配置了DII、则计费仍将从Keystone订阅激活日期或现有订阅的修改日期开始。</block>
   <block id="acc5c60ef02b38c0c3d244a1fce02d83" category="list-text">此服务将在链接到的Keystone订阅结束。续订时、您可以选择是否续订附加服务。如果您不续订Keystone订阅、则受监控的硬件将被停用、并且附加服务将自动终止。</block>
   <block id="bfff02ceb19e1dc747612576a86266f9" category="section-title">支持和用户访问</block>
@@ -1631,8 +1627,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="42c6fcaab380d23adc4355ae6bb2df0b" category="paragraph">为 Extreme 性能服务级别分配的容量减少了 (125-108) = 17 TiB。在支出重新分配方面、分配的混合云存储不是17 TiB、而是相当于5000美元可以购买的容量。在此示例中，花费 5000 美元，您可以获得 Extreme 性能服务级别的 17 TiB 本地存储容量，以及 Cloud Volumes ONTAP 性能服务级别的 47 TiB 混合云容量。因此、重新分配与支出相关、而不是与容量相关。</block>
   <block id="5f238d7b669564c4a06db9820b17a9c3" category="paragraph">承诺容量是购买订阅时为特定性能服务级别承诺的容量。</block>
   <block id="a5e80c8c714cefa82d0f175e2ea8eae1" category="paragraph">承诺容量可以是您和 NetApp/合作伙伴接受的单个订阅中各种性能服务级别的总容量。此容量会在每个Keystone订单上进行说明、并进行计费、而不管实际容量消耗如何。</block>
-  <block id="c3f0cd4e0817ed6ccaf89e89dc466a7b" category="paragraph">DII既适用于新订阅、也适用于现有订阅。它可以作为已提交容量的附加项集成到Keystone订阅中。当 DII 集成到 Keystone 订阅中时，它将为订阅中的每个基础性能服务级别提供对应的性能服务级别。例如、Extreme映射到DII Extreme、Premium映射到DII Premium、Performance映射到DII Performance。这些映射可确保 DII 性能服务级别与 Keystone 订阅的基础性能服务级别保持一致。</block>
-  <block id="c2ad6efc2c70a7ddf3129813b4086d9d" category="paragraph">Digital Advisor 仪表板上的 *Keystone Subscriptions* 小部件内 DII 性能服务级别视图：</block>
   <block id="a7e6ac4ae7947619253439c265eec249" category="paragraph">配置完成后，DII 实例将开始监控作为 Keystone 一部分部署的 NetApp 存储资源。</block>
   <block id="abc501d7e199ea4ea077a268557f07c6" category="inline-link-macro">Keystone 仪表板和报告</block>
   <block id="5179c99cf35cfc837a65bf568160b173" category="admonition">虽然 DII 为已部署的硬件提供了广泛的监控功能，但它无法提供 Keystone 订阅的洞察信息，例如订阅使用情况或性能服务级别详情。如需订阅洞察信息，请参阅<block ref="0c9f3efee4ad3aaa79c65e2bbafc9a0a" category="inline-link-macro-rx"></block> 。</block>
@@ -1756,7 +1750,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="060031875f3f915385690798ab0a3740" category="paragraph">您可以在 Digital Advisor 仪表板上的“Keystone 订阅”小部件中查看订阅和使用情况详情，以及已购买 Keystone 服务的容量使用情况摘要。要了解更多关于“Keystone 订阅”小部件的信息，请参阅<block ref="00ed8f21a4cef28d7d8aa80cda364760" category="inline-link-macro-rx"></block> 。</block>
   <block id="2d6e1b228a12f4c76c76939e28065d07" category="list-text"><block ref="2d6e1b228a12f4c76c76939e28065d07" category="inline-link-macro-rx"></block></block>
   <block id="85d148be40895e3d0f9c047d8b0e01b1" category="paragraph">Keystone 仪表板是您高效监控、分析和管理 Keystone 订阅的首选解决方案。通过 Keystone 仪表板，您可以实现以下目标：</block>
-  <block id="2bf64d92e1a315894ffc10df4f760430" category="list-text">*监控订阅详情*：查看有关您的 Keystone 订阅的详细信息，包括性能服务级别、容量使用情况、资产和警报。</block>
   <block id="80e1eadef41b346546973348e209664d" category="list-text">*跟踪容量使用情况并生成报告*：跟踪当前和历史容量使用情况，并生成报告以分析订阅数据并做出明智的决策。</block>
   <block id="00a41eeac0923d207b9573b66eb56d6e" category="list-text">*查看订阅时间表*：通过监控订阅时间表，随时了解关键日期和事件。</block>
   <block id="5da0271ff0556b615a698484060fe793" category="list-text">*管理订阅*：根据您的需求变化提交修改性能服务级别或其他订阅参数的请求。</block>
@@ -1813,7 +1806,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="6e665113a95f128bda94a45125d034c0" category="doc">查看您的 Keystone 订阅的详细信息</block>
   <block id="da165360e20e2139a72fd6fadd1175f3" category="inline-image-macro">查看订阅标签详情</block>
   <block id="e6cb8545fbd488c01d2779c3cf2fe308" category="list-text">*客户名称*：与 Keystone 订阅相关的客户的名称。</block>
-  <block id="1785b788275c7de318abca94e5882fe1" category="list-text">*关联订阅*：如果您有任何与主订阅关联的次要订阅，此列会列出主订阅的关联订阅编号。此订阅编号可以是主订阅的编号，也可以是次要（关联）订阅的编号。</block>
   <block id="7e147d47de92c4a609c07c4bb5e40f29" category="list-text">*计费周期*：订阅的发票周期。</block>
   <block id="15d3201050b72761174ef874891c70c2" category="list-text">*性能服务级别*：与订阅相关的费率计划数量，每个费率计划对应特定的性能服务级别和承诺容量。</block>
   <block id="7977aee626f33c6d577f1efc799f2747" category="list-text">*最高容量*：订阅内消耗的最大容量。</block>
@@ -2112,7 +2104,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e7a862d1277ff52d64b2b8419fe26d69" category="list-text">*容量使用情况*：超出突发容量、使用突发容量和未充分利用的订阅的容量消耗状态。每个类别都包含一个“查看”按钮，用于导航到应用了相关过滤器的“订阅”选项卡。</block>
   <block id="12e1b3132ab24ad467a7db5c6d50da11" category="list-text">* Keystone版本*：用于订阅的Keystone服务的版本。不同订阅版本的性能服务级别的费率计划规则可能有所不同。要了解有关版本 v1 的更多信息，请参阅<block ref="d7848503560f6eda6c1c5b670f722092" category="inline-link-rx"></block>。</block>
   <block id="2011f3283ff705ca06648130cb758700" category="paragraph"><block ref="2011f3283ff705ca06648130cb758700" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e3db4ac6b95d51ce2a9fc54f2ebc8f17" category="list-text">*链接订阅*：此列可供您选择使用。如果您有任何与主订阅相链接的次要订阅，则此列会列出主订阅的链接订阅号。此订阅号可以是您的主要订阅号，也可以是次要（链接）订阅号。</block>
   <block id="afb3d054878af254ad9d657e9c39d6be" category="paragraph">对于选定的Keystone STaaS 订阅，您可以查看卷的总数、受保护卷的数量、反勒索软件保护状态以及所有这些卷中的总提交容量、已消耗容量和可用容量。如果您单击受保护卷的数量，它将带您进入“卷详细信息”选项卡，您可以在其中根据您的选择查看显示受保护卷的过滤列表。</block>
   <block id="c7409eaa8633fe96cf75ec03a907af58" category="paragraph"><block ref="c7409eaa8633fe96cf75ec03a907af58" category="inline-image-macro-rx" type="image"></block></block>
   <block id="964c0373b6e90b739308a155629631d1" category="paragraph"><block ref="964c0373b6e90b739308a155629631d1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2593,6 +2584,30 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="97e3a227dc9559ee612b1a162bda9b44" category="cell">是（仅限消费数据）</block>
   <block id="83a7d79d2446fe66f125a9ccf9a54e8d" category="list-text">*订阅号*：由 NetApp 分配的 Keystone 订阅的订阅号。带有 <block ref="a865e8e7573241a1da9d2c81b0ca0ac4" category="inline-image-macro-rx" type="image"></block> 图标的订阅是 MetroCluster 订阅。要了解有关 MetroCluster 订阅的更多信息，请参阅 <block ref="660e84029d4c47136198fc3e50dbcb48" category="inline-link-macro-rx"></block>。</block>
   <block id="ac2952bbdeeadb1f8bfdc6205fabd389" category="sidebar">查看 MetroCluster 订阅消费和运行状况</block>
-  <block id="ab556116f6e3e88a66d6fb6d623318fa" category="sidebar">附加服务</block>
   <block id="3f20b3134627198be1e0ff879a88cd8f" category="sidebar">高级数据保护</block>
+  <block id="ca1d1a0086fee239544c6e4e89b5f8f8" category="doc">Data Infrastructure Insights 附加项消耗显示</block>
+  <block id="4d0aa03b8805975279d25e57b83cad25" category="inline-link-macro">查看 DII 消耗量</block>
+  <block id="903f10a385ab3936430e26fbc1b90d88" category="paragraph">Data Infrastructure Insights (DII) 附加组件消耗现在显示在*当前消耗*和*消耗趋势*选项卡中。要了解更多信息，请参阅 <block ref="e1ed0a5aaa8506a20b57415cc0717b20" category="inline-link-macro-rx"></block>。</block>
+  <block id="ade2f26a9f9c3f533ed70befc7417b6b" category="section-title">关于 Keystone 订阅的 DII</block>
+  <block id="9843f64ed3799d5bdb14dda01a9b5a37" category="paragraph">DII 适用于新订阅和现有订阅。它可以集成到 Keystone 订阅中，作为承诺容量的附加组件。</block>
+  <block id="28ee0e8daa391f128672facc133e687f" category="paragraph">当 DII 集成到 Keystone 订阅中时，它将为订阅中的每个基本性能服务级别提供相应的性能服务级别。例如，Extreme 映射到 DII Extreme，Premium 映射到 DII Premium，以及 Performance 映射到 DII Performance。这些映射可确保 DII 性能服务级别与 Keystone 订阅的基本性能服务级别保持一致。</block>
+  <block id="0ff7208ef5e37de33ec837dee18cbdc1" category="paragraph">您可以通过 NetApp Console 或 Digital Advisor 查看 DII 附加服务的消耗情况。DII 性能服务级别（例如 DII Extreme、DII Premium 和 DII Performance）的消耗数据与您的基本性能服务级别一起显示在当前消耗和消耗趋势视图中。</block>
+  <block id="be42f3858da5f1cd379afec5cbef2b6c" category="paragraph">以下示例显示了 Console 中 *Current consumption* 选项卡中的 DII 性能服务级别：</block>
+  <block id="ab206be215309dfd48d917f39a386bc6" category="inline-image-macro">显示 DII 服务级别的当前消耗选项卡的屏幕截图</block>
+  <block id="6fb64940a1e6a241679a7f0c8fda8824" category="paragraph"><block ref="6fb64940a1e6a241679a7f0c8fda8824" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c3ef5e8e1cbfd217063168e43da5eee8" category="paragraph">以下示例显示了 Digital Advisor 中 *Keystone Subscriptions* 小组件内的 DII 性能服务级别：</block>
+  <block id="53e2dacb590ff4008c16b7f5067d048b" category="inline-image-macro">显示 DII 服务级别的 Keystone 订阅小部件的屏幕截图</block>
+  <block id="1a319c77796208929656fe0e744e4694" category="paragraph"><block ref="1a319c77796208929656fe0e744e4694" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d2e0a33a4ecfd25ee5df1b85c1d29c5c" category="paragraph">有关查看消费的详细信息，请参见：</block>
+  <block id="fad18dbea5fe4d53670ce8b5f31e4228" category="list-text"><block ref="fad18dbea5fe4d53670ce8b5f31e4228" category="inline-link-macro-rx"></block></block>
+  <block id="d40818e721dbdfb8ef017a3c524d1def" category="list-text"><block ref="d40818e721dbdfb8ef017a3c524d1def" category="inline-link-macro-rx"></block></block>
+  <block id="ec3c5dc2acc96dd435267e93ff378ceb" category="inline-link-macro">了解附加服务</block>
+  <block id="85a900a56892dba4e86c93a2ca9a49c9" category="admonition">如果您已订阅高级数据保护 (ADP) 或 Data Infrastructure Insights (DII) 等附加服务，这些服务的消费数据将与您的基本性能服务级别一起显示在历史消耗和应计突发视图中。要了解有关附加服务的更多信息，请参阅<block ref="a9f54665bc3ae1390a16fe76b63295f2" category="inline-link-macro-rx"></block>。</block>
+  <block id="f8ca7590fc27a84df2479575446a86d2" category="list-text"><block ref="f8ca7590fc27a84df2479575446a86d2" category="inline-link-macro-rx"></block></block>
+  <block id="2cf57deab11a97384e65ae3b18f8e059" category="list-text"><block ref="2cf57deab11a97384e65ae3b18f8e059" category="inline-link-macro-rx"></block></block>
+  <block id="102319efa425f0a1168cb455080902ee" category="admonition">如果您已订阅高级数据保护 (ADP) 或 Data Infrastructure Insights (DII) 等附加服务，这些服务的当前消耗量将与您的基本性能服务级别一起显示在图形和表格视图中。要了解有关附加服务的更多信息，请参阅<block ref="a9f54665bc3ae1390a16fe76b63295f2" category="inline-link-macro-rx"></block>。</block>
+  <block id="dd22742edaecc726c34a5b11cbaa62a9" category="list-text">*监控订阅详细信息*：查看有关 Keystone 订阅的详细信息，包括性能服务级别（基本和附加服务，如高级数据保护和 Data Infrastructure Insights）、容量使用情况、资产和警报。</block>
+  <block id="3a0ac91f607c4908d1e3d47d382884f8" category="list-text">*链接订阅*：如果您有任何辅助订阅链接到您的主要订阅，此列将列出主要订阅的链接订阅编号。</block>
+  <block id="b3f613e3d8f464b4f2aaf03e58cd7343" category="list-text">*Linked Subscriptions*：如果您有任何辅助订阅链接到您的主要订阅，此列将列出主要订阅的链接订阅编号。</block>
+  <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026 年 2 月 16 日</block>
 </blocks>

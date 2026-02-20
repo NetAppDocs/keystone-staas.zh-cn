@@ -18,11 +18,13 @@ NetApp数据基础架构洞察(Data Infrastructure Insight、DII、以前称为C
 
 要了解有关数据基础架构洞察力的更多信息，请参见link:https://docs.netapp.com/us-en/data-infrastructure-insights/["Data Infrastructure Insight文档"^]。
 
-DII既适用于新订阅、也适用于现有订阅。它可以作为已提交容量的附加项集成到Keystone订阅中。当 DII 集成到 Keystone 订阅中时，它将为订阅中的每个基础性能服务级别提供对应的性能服务级别。例如、Extreme映射到DII Extreme、Premium映射到DII Premium、Performance映射到DII Performance。这些映射可确保 DII 性能服务级别与 Keystone 订阅的基础性能服务级别保持一致。
 
-Digital Advisor 仪表板上的 *Keystone Subscriptions* 小部件内 DII 性能服务级别视图：
 
-image:keystone-widget-dii.png["显示DII服务级别的Keystone订阅小工具的屏幕截图"]
+== 关于 Keystone 订阅的 DII
+
+DII 适用于新订阅和现有订阅。它可以集成到 Keystone 订阅中，作为承诺容量的附加组件。
+
+当 DII 集成到 Keystone 订阅中时，它将为订阅中的每个基本性能服务级别提供相应的性能服务级别。例如，Extreme 映射到 DII Extreme，Premium 映射到 DII Premium，以及 Performance 映射到 DII Performance。这些映射可确保 DII 性能服务级别与 Keystone 订阅的基本性能服务级别保持一致。
 
 
 
@@ -60,14 +62,31 @@ NOTE: 虽然 DII 为已部署的硬件提供了广泛的监控功能，但它无
 
 
 
+== 查看 DII 消耗量
+
+您可以通过 NetApp Console 或 Digital Advisor 查看 DII 附加服务的消耗情况。DII 性能服务级别（例如 DII Extreme、DII Premium 和 DII Performance）的消耗数据与您的基本性能服务级别一起显示在当前消耗和消耗趋势视图中。
+
+以下示例显示了 Console 中 *Current consumption* 选项卡中的 DII 性能服务级别：
+
+image:console-current-consumption-dii.png["显示 DII 服务级别的当前消耗选项卡的屏幕截图"]
+
+以下示例显示了 Digital Advisor 中 *Keystone Subscriptions* 小组件内的 DII 性能服务级别：
+
+image:keystone-widget-dii.png["显示 DII 服务级别的 Keystone 订阅小部件的屏幕截图"]
+
+有关查看消费的详细信息，请参见：
+
+* link:../integrations/current-usage-tab.html["查看 Keystone 订阅的当前消耗情况"]
+* link:../integrations/consumption-tab.html["查看 Keystone 订阅的消费趋势"]
+
+
+
+
 == 计费和计量
 
 下面概述了DII附加服务的计费和计量详细信息：
 
 * 此服务的衡量方式与您的主订阅相同。例如、如果您的主订阅包括100 TiB的Extreme服务和100 TiB的Premium服务、这两项服务都是根据逻辑使用量来衡量的、则附加服务DII Extreme 100 TiB和DII Premium 100 TiB也是根据逻辑使用量来衡量的。如果您的主订阅是按配置的基础衡量的、则会以相同的方式衡量相同容量的附加服务。附加服务将采用与您的主订阅相同的衡量方法。
-+
-image:current-consumption-dii.png["显示服务级别计量的当前消耗选项卡的屏幕截图"]
-
 * 此服务将按计量、并与您的Keystone订阅一起在同一发票上开具发票。如果您在激活Keystone订阅之前为Keystone配置了DII、则计费仍将从Keystone订阅激活日期或现有订阅的修改日期开始。
 * 此服务除了标准 Keystone 账单外，还根据 DII 性能服务级别的承诺容量和突发使用量进行计量和计费。此附加服务的计量方法与基础 Keystone 订阅性能服务级别相同，可以是逻辑计费、预配置计费或物理计费。
 * 此服务将在链接到的Keystone订阅结束。续订时、您可以选择是否续订附加服务。如果您不续订Keystone订阅、则受监控的硬件将被停用、并且附加服务将自动终止。

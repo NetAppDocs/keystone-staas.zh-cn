@@ -44,6 +44,10 @@ NOTE: 如果性能服务级别有多个实例，您可以在任一视图中展�
 +
 image:console-current-consumption-table.png["表格形式的电流消耗详情"]
 
++
+
+NOTE: 如果您已订阅高级数据保护 (ADP) 或 Data Infrastructure Insights (DII) 等附加服务，这些服务的当前消耗量将与您的基本性能服务级别一起显示在图形和表格视图中。要了解有关附加服务的更多信息，请参阅link:../concepts/adp.html["了解附加服务"]。
+
 
 
 --
