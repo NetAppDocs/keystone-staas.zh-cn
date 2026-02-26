@@ -1085,19 +1085,11 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="892db0165f2238f40c3370386d79cac7" category="inline-image-macro">Excel工作表模板</block>
   <block id="f0fbc9cddebee973debd106e878bebdd" category="paragraph"><block ref="f0fbc9cddebee973debd106e878bebdd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="23f04236d1f84e52d087f768059adbbe" category="list-text">*性能降级*：^未达到第90^百分位延迟目标的时间(以分钟为单位)。</block>
-  <block id="3fe43b4ffa54563c104bbdf1eeea2b59" category="list-text">Keystone顺序中^所有卷的每个卷、每个性能级别均会测量*第90^个延迟百分位值*。每五分钟对延迟进行一次采样、^考虑到以下几点、将在24小时内计算出的第90^个百分点值用作每日度量值：</block>
   <block id="35254eb51c71659b3cf343855354b8b1" category="list-text">在收集指标时至少记录五个IOPS的卷会视为样本。</block>
   <block id="0e0e9d5bae73de26860af74cb8fc6ac2" category="list-text">收集指标时写入操作超过30%的卷将从样本中排除。</block>
-  <block id="ab4c900b0e1430edc1bd09939be8859a" category="list-text">AQoS为大于目标IOS/TiB的请求IOS/TiB添加的延迟不在样本中。</block>
-  <block id="565d8433df6c6c23be6de8fd7871abae" category="list-text">样本中不包括由AQoS为保持每个卷的最小IOPS而添加的延迟。</block>
   <block id="f901dbc53f8dea2d74e68635ec84a298" category="list-text">对于启用了FabricPool的卷、不会计入与目标(冷)存储之间的数据传输所导致的延迟。</block>
   <block id="23ca5c8d56457bbd625ff236b3c706ef" category="list-text">由ONTAP集群外部的应用程序、主机或客户网络导致的延迟不会计入在内。</block>
-  <block id="efbd8d78a7008161e0e4f42c63d84ad6" category="list-text">在24小时内、至少应提供十个有效指标。否则、这些指标将被丢弃。</block>
-  <block id="5b8e1d393a8c6bf1b5c0be8eb268aba3" category="list-text">如果存储阵列上的一个或多个卷未应用有效的AQoS策略、则可用于其他卷的IOPS数量可能会受到影响、NetApp将不负责确定该存储阵列的目标或满足该存储阵列上的性能级别。</block>
   <block id="d8ace9c4f3c105767c7ec01ce669eca3" category="list-text">在FabricPool配置中、如果请求的所有数据块都位于FabricPool源(热)存储上、而源存储不属于SnapMirror同步关系、则性能级别适用。</block>
-  <block id="ce8f4bd254d7fa591c64caccc3aa3eeb" category="cell">小于 1 毫秒</block>
-  <block id="101d21e523f12f01303be5acdf4141d9" category="cell">小于2毫秒</block>
-  <block id="65e7d97f5e59814284d01d2b0cd62581" category="cell">&lt;4毫秒</block>
   <block id="4528f5e882cc88c8842dcf9b1ac1b1bc" category="paragraph">NetApp会为性能降级发放服务抵免额：</block>
   <block id="72c2dabc519f204563247ef9d2fd1c7a" category="cell">*性能阈值*</block>
   <block id="133c2090971805c26a4b7780a43a4e1f" category="paragraph">90^第^个延迟百位值&gt;目标延迟</block>
@@ -1105,13 +1097,11 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="68bff7f600a4d4bddae207bf52b8dbdb" category="paragraph">服务抵免额=(受影响容量/承诺总容量) X容量费用X受影响天数X抵免百分比</block>
   <block id="518fb0e9794f4b9e14b0dc061ac61fda" category="list-text">*容量费用*：Keystone订单中受影响性能级别的费用。</block>
   <block id="9bd7cf79d77a54ab7c62e80f778e9d2a" category="list-text">*受影响天数*：受影响的日历天数。</block>
-  <block id="b452a2e7bf15034c9bd63c001b3e6e64" category="cell">*受影响的日历天数*</block>
   <block id="a22d50cab82690cbdc8113c3ff9c2076" category="cell">10 Tib</block>
   <block id="58f24a17f570c7949880710fdf616d32" category="cell">50 Tib.</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
   <block id="dcfe0b3ef8eb8156a5e83949c2e2f7b6" category="cell">3%</block>
   <block id="b9ad6821bc2a0e4300b5b91ca5245476" category="paragraph">使用公式：服务抵免额=(10/50) X 1000 x 2 x 0．3</block>
-  <block id="732192040cca36723308ae6b02982093" category="paragraph">根据计算、服务抵免额将为12美元。</block>
   <block id="fed70707a2e768c22f4b0fc06a401786" category="summary">NetApp通过勒索软件恢复担保计划保证在发生勒索软件攻击时从SnapLock合规性卷中恢复Snapshot数据</block>
   <block id="30a37a729e8d5bdf11c9e3c6965f6872" category="doc">勒索软件恢复担保</block>
   <block id="c314df61fd93029a87d16eb15b842e7d" category="paragraph">NetApp通过勒索软件恢复担保计划保证在发生勒索软件攻击时从SnapLock合规性卷中恢复Snapshot数据。要支持防兰软件恢复担保计划、需要提供NetApp防兰软件恢复保证服务、该服务应与关联的Keystone订单分开购买。</block>
@@ -1562,7 +1552,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="bcd6ed294af34e837c537b83a1a3de21" category="list-text">CentOS 7 (仅适用于现有环境)</block>
   <block id="265561b81e51364d306e58144832b7a8" category="summary">如果需要帮助、请联系NetApp Keystone支持团队。</block>
   <block id="9dc4e2b4f34e5f118e35019c46b06a4a" category="paragraph">如果检测到违反SLA、请向NetApp Keystone支持部门开立优先级3 (P3)支持服务单。</block>
-  <block id="5ece80a8e6fc51ca90ea8b795dbe7f83" category="list-text">在Excel工作表中提供与NetApp Keystone支持人员一起开立的P3服务单的详细信息、如下所示。</block>
   <block id="cac189ace7fac11fbcff63b35adf8770" category="list-text">服务信用请求应在NetApp Keystone支持确认违规后六周内发起。所有服务抵免额均应由NetApp确认和批准。</block>
   <block id="3a36d2372ffa5421518253f5c68f7c51" category="paragraph">如果检测到违反SLA、请向NetApp Keystone支持部门开立优先级3 (P3)支持服务单、并按照Excel表格中的要求提供详细信息、如下所示：</block>
   <block id="cb74be13d3a600957d1ee583265f537d" category="section-title">查看每日累积突发数据使用量</block>
@@ -1643,8 +1632,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="5f351af05581a0eadaf1177970b72a10" category="section-title">绩效服务水平</block>
   <block id="e1a2df339e5e1d4b2b6d447c58823500" category="list-text">*总承诺容量*：Keystone 订单的性能服务级别的承诺容量。</block>
   <block id="651923524521408d98ff12d09f60af11" category="list-text">*容量费用*：该月受影响性能服务级别的费用。</block>
-  <block id="b4b730f8748f9304cf03a7bd9ca06fbf" category="inline-link-macro">Keystone 的绩效服务水平</block>
-  <block id="256f997b6fa99f6bde704d4194be3d6c" category="paragraph">要了解有关性能服务级别的延迟要求的更多信息，请参阅<block ref="d8f18ae99fd2b456a3470321b1aded8e" category="inline-link-macro-rx"></block> 。</block>
   <block id="edab02bbfaf3788182e3fa77788a9e44" category="list-text">承诺容量 + 性能服务级别的分配突发容量，或</block>
   <block id="1ef86c84141cbf98bc2a59eeffa9afd3" category="paragraph">要了解更多信息，请参阅 <block ref="b7d94ab5747cf2f7821847d435faf714" category="inline-link-macro-rx"></block>。</block>
   <block id="33a7d9c43d0ae3063679287913d61f25" category="summary">查看或取消 Keystone 订阅服务请求。</block>
@@ -2392,7 +2379,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
   <block id="0c359189f8e07afc4bf0a432b108a2f7" category="list-text">客户需提供一台运行以下操作系统之一的 Linux 服务器：Debian 12、Red Hat Enterprise Linux 8.6 或更高版本的 8.x 版本、Red Hat Enterprise Linux 9.0 或更高版本，或 CentOS 7（仅限现有环境）。Keystone软件使用以下方式安装：<block ref="27b0f8226ae1a7f1b973155b13221df6" prefix=" " category="inline-code"></block> 或者<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block> 软件包取决于 Linux 发行版。</block>
   <block id="188a74af3438876c97ac7877f4af6cc9" category="list-text">客户提供运行 Debian 12、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Red Hat Enterprise Linux 9.0、Amazon Linux 2023 或更高版本的 Linux 服务器。</block>
-  <block id="079d46d4e807d9ca797d92cd97e9c5ea" category="list-text">服务信用额度可用于未来的发票。服务积分不适用于已过期的Keystone订阅。欲了解更多信息，请参阅 <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>。</block>
   <block id="75269ad6e7abe01d12768761ab748b48" category="paragraph"><block ref="75269ad6e7abe01d12768761ab748b48" category="inline-link-rx"></block></block>
   <block id="8e3e0d66dd46c331ec4b3a698a38a9e7" category="list-text">您可以通过控制台或向您的Keystone Success Manager (KSM) 请求更改已承诺的容量。有关申请更改的信息，请参阅 <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>。</block>
   <block id="17766f6125f71fd7cf26ceef70d4e504" category="list-text">下载文件后，您可以将其附加到Keystone ServiceNow 支持票证。有关提高票数的信息，请参阅 <block ref="fa4c1fe482109028db7ac27dab34833d" category="inline-link-macro-rx"></block>。</block>
@@ -2610,4 +2596,14 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="3a0ac91f607c4908d1e3d47d382884f8" category="list-text">*链接订阅*：如果您有任何辅助订阅链接到您的主要订阅，此列将列出主要订阅的链接订阅编号。</block>
   <block id="b3f613e3d8f464b4f2aaf03e58cd7343" category="list-text">*Linked Subscriptions*：如果您有任何辅助订阅链接到您的主要订阅，此列将列出主要订阅的链接订阅编号。</block>
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026 年 2 月 16 日</block>
+  <block id="5232623a9d0949665269220e42d1050b" category="list-text">请在 Excel 表格中提供使用 NetApp Keystone 支持打开的 P3 工单的详细信息，如下所示。</block>
+  <block id="13505dac4434596c4a796389e650eb08" category="list-text">服务积分可能会应用于未来的发票。服务积分不适用于过期的 Keystone 订阅。要了解更多信息，请参阅<block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>。</block>
+  <block id="1f5595c5befe745db8dadf46b35fce52" category="list-text">*第 90^th^ 百分位延迟*是针对 Keystone 订单中的所有卷按卷、按性能服务级别实例测量的。延迟每五分钟采样一次，24 小时内计算的第 90^th^ 百分位数值用作每日测量值，考虑以下几点：</block>
+  <block id="40f098b2e9bcd6666815272fd1d0b84e" category="list-text">在 24 小时内，至少应有 10 个有效的指标可用。如果不满足条件，指标将被丢弃。</block>
+  <block id="0e20d6162625fb8fb8b7b598f96e52da" category="cell">&amp;lt;=1毫秒</block>
+  <block id="692ed37295bb7f348009da0eb9d9f9ba" category="cell">&amp;lt;=4毫秒</block>
+  <block id="6efe08597c08ab2309936c3460daafb5" category="cell">&amp;gt;=4毫秒</block>
+  <block id="da4bea38cc1244c367fa4751943a1de3" category="paragraph">要了解有关性能服务级别的延迟要求的详细信息，请参阅 <block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block>。</block>
+  <block id="b4508efb1fe09000c916385cb19795aa" category="cell">*受影响的日历天数*</block>
+  <block id="2f8ed0b357b613711aa9e5d215bc6566" category="paragraph">根据计算，服务消费金将为 $12。</block>
 </blocks>

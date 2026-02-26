@@ -139,7 +139,7 @@ NOTE: SLA和保证按提名提供。
 .. 任何其他适用文档
 
 
-* 在Excel工作表中提供与NetApp Keystone支持人员一起开立的P3服务单的详细信息、如下所示。
+* 请在 Excel 表格中提供使用 NetApp Keystone 支持打开的 P3 工单的详细信息，如下所示。
 +
 image:sla-breach.png["Excel工作表模板"]
 
@@ -148,7 +148,7 @@ image:sla-breach.png["Excel工作表模板"]
 [NOTE]
 ====
 * 服务信用请求应在NetApp Keystone支持确认违规后六周内发起。所有服务抵免额均应由NetApp确认和批准。
-* 服务信用额度可用于未来的发票。服务积分不适用于已过期的Keystone订阅。欲了解更多信息，请参阅 link:../concepts/support-services.html["NetApp Keystone支持"]。
+* 服务积分可能会应用于未来的发票。服务积分不适用于过期的 Keystone 订阅。要了解更多信息，请参阅link:../concepts/support-services.html["NetApp Keystone支持"]。
 
 
 ====
