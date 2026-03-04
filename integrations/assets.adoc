@@ -56,11 +56,15 @@ TIP: 您可以使用列选择器自定义表格image:column-selector.png["列选
 image:console-volumes-clusters-multiple-sub.png["多个订阅的集群中的卷的屏幕截图"]
 
 +
-您可以查看 Keystone 订阅中集群中所有卷的详细信息，包括卷名称、订阅号、节点序列号、QoS 策略合规性、集群名称、主机名和性能服务级别。您可以监控已配置容量、逻辑和物理利用率以及冷数据。您还可以概览以下内容：
+您可以查看跨 Keystone 订阅的群集中所有卷的详细信息，包括卷名、订阅号、节点序列号、QoS 策略合规性、群集名称、主机名和性能服务级别。您可以监控调配的容量、逻辑和物理利用率、冷数据和热数据。您还可以了解以下内容：
 
 +
 ** 订阅、集群和卷的总数。
 ** 卷合规性和保护状态，带有*查看*按钮，用于过滤表格并根据合规、不合规或不受保护等标准显示资产。
++
+
+NOTE: *Cold tier %* 和 *Hot tier %* 列显示每个层的数据百分比，分别计算为（Cold data / Total footprint）× 100 和（Hot data / Total footprint）× 100。
+
 +
 
 TIP: 您可以使用列选择器自定义表格image:column-selector.png["列选择器图标"]图标并使用顶部的搜索栏根据列参数搜索和过滤 Keystone 数据。

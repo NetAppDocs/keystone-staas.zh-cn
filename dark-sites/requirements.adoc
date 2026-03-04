@@ -77,6 +77,9 @@ summary: '在无法访问Internet的环境(也称为_dark site_or _private mode_
 
 
 
+NOTE: Keystone Collector 仅支持上述第三方软件包。不支持安装其他软件，这可能会影响收集器性能、数据收集和计费准确性。
+
+
 
 == 网络要求
 

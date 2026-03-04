@@ -1685,7 +1685,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="a6d14f938372e9370efce69c777dcc25" category="admonition">您可以使用列选择器自定义表格<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block>图标并使用顶部的搜索栏根据列参数搜索和过滤 Keystone 数据。</block>
   <block id="724db714685a078e3188da156c5e09ff" category="list-text">选择“*集群中的卷*”选项卡。</block>
   <block id="7eaaba921c5d6990f4eb7b440707d8bf" category="inline-image-macro">多个订阅的集群中的卷的屏幕截图</block>
-  <block id="2c7173774c9df82165dfee33d6fceb13" category="paragraph">您可以查看 Keystone 订阅中集群中所有卷的详细信息，包括卷名称、订阅号、节点序列号、QoS 策略合规性、集群名称、主机名和性能服务级别。您可以监控已配置容量、逻辑和物理利用率以及冷数据。您还可以概览以下内容：</block>
   <block id="c35efb62586ff05c5d6f57e4b0350323" category="list-text">订阅、集群和卷的总数。</block>
   <block id="14ef4df445c232cff9b58a77d20a81f1" category="list-text">卷合规性和保护状态，带有*查看*按钮，用于过滤表格并根据合规、不合规或不受保护等标准显示资产。</block>
   <block id="f6eb16e137bdab399dbb70e386762544" category="paragraph">点击“订阅号”列中的订阅号，即可进入“订阅”页签，查看订阅消费详情、时间线及相关资产信息。要了解更多信息，请参阅 <block ref="fdad9ab5c825af5756df523fe50d05f9" category="inline-link-macro-rx"></block>。</block>
@@ -2081,9 +2080,7 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="c1602534a88a762a1ce3972cdede18e6" category="list-text">将此文件通过电子邮件发送至 ng-keystone-secure-site-upload@netapp.com（用于安全的非 USPS 站点）或 ng-keystone-secure-site-usps-upload@netapp.com（用于安全的 USPS 站点）。</block>
   <block id="f554b3f79210a232f43aa1148b762978" category="list-text">收集文件并将其发送至 ng-keystone-secure-site-upload@netapp.com（用于安全的非 USPS 站点）或发送至 ng-keystone-secure-site-usps-upload@netapp.com（用于安全的 USPS 站点）。</block>
   <block id="2dfe1e4bd705394ed47b37168da7e39d" category="paragraph"><block ref="2dfe1e4bd705394ed47b37168da7e39d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d1b3427c4c890671eb0520ac0d4affa3" category="paragraph">您可以看到有关集群中卷的详细信息，包括卷名称、节点序列号、集群名称、主机名和性能服务级别。您还可以监控已配置的容量、逻辑和物理利用率以及冷数据。</block>
   <block id="5c5e806c3574f28d7ccf6a897c034d18" category="paragraph"><block ref="5c5e806c3574f28d7ccf6a897c034d18" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="21c9d68b030c5bf0ddbda9a170d32552" category="paragraph">折线图显示历史消费数据并允许用户分析选定日期范围内的趋势。该图显示了已用容量（总存储容量，包括数据和快照数据）、数据（用户数据使用的存储容量）和快照（快照数据使用的存储容量）等指标，以及已提交容量和突发容量。每个数据点的日期和时间显示在图表的底部。根据查询的日期范围，使用情况图表最多显示 30 个数据收集点。您可以将鼠标光标悬停在图表上，以查看每个数据收集点的使用情况细目。</block>
   <block id="1b137f241f929a351e941ba96f7347a8" category="admonition">如果性能服务级别有多个实例，您可以按实例进行过滤，以分别查看每个实例的历史数据。</block>
   <block id="c790cd64cc9ce087b29b63d208671f07" category="admonition">如果性能服务级别有多个实例，您可以在任一视图中展开*按实例查看*以分别查看每个实例的当前消耗详细信息。例如，如果您在订阅中有两个极限性能服务级别的实例，则每个实例将分别显示其自己的已提交、已消耗和可用容量。</block>
   <block id="1d302dcc8fc5540b6e87e54f3d0753c8" category="admonition">如果性能服务级别有多个实例，您可以选择“实例”选项卡来查看每个实例的当前消耗详情。例如，如果您在订阅中有两个极限性能服务级别的实例，则每个实例将分别显示其自己的已提交、已消耗和可用容量。要了解有关性能服务级别的更多信息，请参阅<block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block>。</block>
@@ -2133,7 +2130,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="610355e82f0e7cf01bdfa1df13985f3f" category="paragraph">此列显示使用FabricPool分层的卷的总逻辑占用空间，包括性能层和冷层的数据，因此您可以准确计算Keystone消耗。</block>
   <block id="bff820430728f0b409c26641dc8ddd41" category="list-text">对于ONTAP 9.16.1 及更高版本，运行以下命令修改每日日志内容：</block>
   <block id="63af57ffe551ed93c0576ba741b36e47" category="list-text">对于早期版本的ONTAP ，运行以下命令来修改每日日志内容：</block>
-  <block id="8e65b1fa60d467c8850acfb3f1d1b8b9" category="paragraph">您可以使用*隐藏/显示列*来添加或删除表中显示的列。默认情况下，表格显示您之前保存的列首选项。新添加的列（例如“*部门*”或“*总足迹*”列）默认是隐藏的，应手动选择才能显示在表格中。您可以选择或取消选择任何列，并且您的偏好设置将被保存以供日后使用。下载 CSV 报告时，无论您的显示偏好如何，所有可用列都会包含在导出中。</block>
   <block id="56a9fe5a3d171069cb125956f6186c86" category="paragraph">Digital Advisor仪表板中配置了MetroCluster配置的订阅的消费趋势图中缺少突发阈值线，显示不正确的 *超出突发限制* 状态。</block>
   <block id="8d317448388884cae15b07e53f9c9fbc" category="paragraph">2025年8月28日</block>
   <block id="b8d454c9414aa4b52ad019b0311711b5" category="section-title">2025年8月28日</block>
@@ -2185,7 +2181,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="85fc8a3c54b846eae784ce216c74002f" category="list-text">选择要删除的监视器的省略号图标。</block>
   <block id="78d022431bdaa899926744aad15d4c0d" category="list-text">选择*删除*并确认删除。</block>
   <block id="e33238cb2adeeccce9f9b9d4a8b9bb1c" category="paragraph">删除后，连接到监视器的订阅将停止接收通知。</block>
-  <block id="0c3bfbd743380880bf374b2cdc5d53ec" category="admonition">系统生成的监视器不能被用户删除。</block>
   <block id="1d02064d5ee1a5a4a8455f06dacb6b1f" category="inline-link-macro">查看和管理警报</block>
   <block id="b3f8c20435f04a33e07ab53c0c9f7689" category="list-text"><block ref="b3f8c20435f04a33e07ab53c0c9f7689" category="inline-link-macro-rx"></block></block>
   <block id="0ebc03672fcf3b001eb123454c829481" category="inline-link-macro">查看和管理Keystone订阅的提醒</block>
@@ -2195,12 +2190,8 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">查看警报</block>
   <block id="17ec1dd00ee2fa8e3a2bea341f3176eb" category="paragraph">要查看活动警报，请按照以下步骤操作：</block>
   <block id="c1c3f4de38096a880721ae1b1aac2343" category="inline-image-macro">Keystone订阅的有效警报屏幕截图</block>
-  <block id="d3c879b0c34417e803eaa2f50299c117" category="paragraph">您可以查看警报的详细信息，例如严重性、ID、描述、触发时间、订阅号、跟踪ID、性能服务级别和状态。该页面还按严重程度和类型显示未解决警报的总数。</block>
   <block id="685b0f2db45e4fc09a06ccb4695806de" category="section-title">管理警报</block>
   <block id="e947bf3957a95267ebbec2757a9931af" category="paragraph">从“*警报*”选项卡中，您可以执行以下操作：</block>
-  <block id="e6c2b8324e72d373fd318067fad63e39" category="list-text">*查看并解决警报*：选择警报 ID 号以打开警报的详细视图。此视图显示警报描述和建议的解决步骤。从此详细视图中，您可以：</block>
-  <block id="99091d9847708ade0e5c12b824b530ec" category="list-text">解决问题后，选择“*编辑*”按钮将警报标记为已解决。</block>
-  <block id="d97dee7ef47cec6420fa02b3c5776dde" category="list-text">如果需要，请选择“添加注释”按钮添加支持注释。</block>
   <block id="e814402d8806e7855f5c97156e88da0c" category="list-text">*过滤警报*：使用*状态*列中的过滤器图标仅查看活动警报、已解决的警报或两者。</block>
   <block id="66c71aff4423b3f2e50ac2dfa8ccf4c9" category="list-text">*查看订阅详情*：从*订阅*列中选择订阅号，即可访问订阅详情、消费趋势和资产信息，帮助您了解和处理警报。有关详细信息，请参阅<block ref="fdad9ab5c825af5756df523fe50d05f9" category="inline-link-macro-rx"></block> 。</block>
   <block id="f4a4fc70d768b745e8b5b57c259ad569" category="inline-link-macro">查看和创建警报监视器</block>
@@ -2269,7 +2260,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="187aba3af65d3bb1230dc8604f0acb91" category="paragraph"><block ref="187aba3af65d3bb1230dc8604f0acb91" category="inline-image-macro-rx" type="image"></block></block>
   <block id="293028e42f8edb8a2749fa8fca8130fa" category="paragraph">NetApp控制台中的Keystone仪表板允许您查看和管理Keystone存储环境中的活动警报。您可以看到系统生成的警报和用户定义的容量使用情况和订阅到期警报。从此视图，您可以快速评估警报严重性、识别存储问题并采取纠正措施。此视图在Digital Advisor中不可用。</block>
   <block id="743c58da8a9fadd274f3f9b5676e7a58" category="list-text">从控制台左侧导航菜单中，选择*存储&gt; Keystone &gt;监控&gt;警报*。</block>
-  <block id="63fb46a4add2145056e9aea0b921bc56" category="paragraph"><block ref="63fb46a4add2145056e9aea0b921bc56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ebc3d49271bd7e13ad66606299b721ea" category="section-title">从NetApp控制台搜索和过滤数据</block>
   <block id="35716f4fafb244c80a13dc4d6f0b0da8" category="paragraph">在控制台中，您可以根据选项卡内表中可用的列参数搜索和过滤Keystone数据。例如，在*Subscriptions*页面下的*Subscriptions*选项卡中，您可以通过在搜索框中输入Keystone版本来过滤数据。同样，在“资产”页面下的“集群中的卷”选项卡中，您可以通过在搜索框中输入卷名称来过滤卷。</block>
   <block id="4d3b4ab28c7beb3d285ae63a4b48dc5b" category="paragraph">您可以使用可用的高级过滤选项来优化搜索。例如，在“*订阅*”选项卡中，您可以按Keystone版本、计费周期、最高容量和订阅到期天数过滤数据；在“集群中的卷*”选项卡中，您可以按卷名称、集群名称、卷类型等进行过滤。可以同时应用多个过滤器来精确缩小搜索结果。<block ref="f163c2c9209b92ad140bb233f78e91e3" category="inline-image-macro-rx" type="image"></block></block>
@@ -2354,7 +2344,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="8583cba6ee38a66f6e19ca7c15a5c1ed" category="inline-link-macro">管理警报监控器的覆盖范围缺口</block>
   <block id="a60761706ec1d12934bfc1dd049da2df" category="paragraph">“监控”页面上的“警报监控”选项卡包含一个“完善您的覆盖范围”通知框，当存在覆盖范围缺口时，该通知框就会出现。此框列出了缺少容量或到期监控器的订阅，以及没有订阅的监控器。您可以通过向现有监视器添加订阅、创建新监视器或删除未使用的监视器来弥补差距。欲了解更多信息，请参阅 <block ref="1ef75ae1f09bcc7a95c6bbe07a54229c" category="inline-link-macro-rx"></block>。</block>
   <block id="39fb73624dac610b8274b1bd6e2c1193" category="paragraph">您可以从NetApp Console中的Keystone控制面板查看和创建Keystone订阅的警报监视器。仪表盘显示了系统生成的和用户定义的容量使用情况和订阅到期情况的监控器。您可以创建监视器来设置阈值、选择警报严重性以及添加通知的电子邮件收件人。您可以通过向未覆盖的订阅添加监视器或解决未使用的监视器问题来解决覆盖范围不足的问题。Digital Advisor不提供此功能。</block>
-  <block id="60adeaffad8e127352095573a6e3157f" category="paragraph">您可以查看Keystone订阅中的警报监视器列表，包括监视器名称、触发通知的警报条件、严重性级别、订阅编号、性能服务级别和状态。您可以查看“创建者”列，以了解警报监视器是系统生成的还是用户定义的。</block>
   <block id="ac092a2bcbdb5857ae37a4756db46a49" category="list-text">选择“创建监视器”按钮。</block>
   <block id="cb5198d92b18cf007a9117aa50f90c3e" category="list-text">更改所需字段，然后单击“创建”。</block>
   <block id="2fd74b6a7fe875798408a25e1558c434" category="section-title">管理覆盖缺口</block>
@@ -2606,4 +2595,36 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="da4bea38cc1244c367fa4751943a1de3" category="paragraph">要了解有关性能服务级别的延迟要求的详细信息，请参阅 <block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block>。</block>
   <block id="b4508efb1fe09000c916385cb19795aa" category="cell">*受影响的日历天数*</block>
   <block id="2f8ed0b357b613711aa9e5d215bc6566" category="paragraph">根据计算，服务消费金将为 $12。</block>
+  <block id="3006a02699b8df924e1d005be208a0d9" category="doc">集群中的卷选项卡中的新列</block>
+  <block id="0d7094993a6b3f640bb98a53fea4c3fe" category="paragraph">在 *Assets* 中的 *Volumes in clusters* 选项卡中添加了三个新列：*Hot data*、*Cold tier (%)* 和 *Hot tier (%)*。如需了解更多信息，请参阅 <block ref="7a83cbc726dfc64910620370804f995c" category="inline-link-macro-rx"></block> 和 <block ref="4baf769758bbb5f82afb8a6245e88ae4" category="inline-link-macro-rx"></block>。</block>
+  <block id="c9a8bf8065acc2e0c13bda0c7508bd25" category="section-title">消费趋势中的已开票、未开票和临时突发用量</block>
+  <block id="d2de7b158906998c4520b48e1e885356" category="paragraph">*消费趋势*选项卡中的应计突发计费图现在显示已开票、未开票和临时突发使用情况。要了解更多信息，请参阅 <block ref="ac1214b73681d020aa16f3f415bc4e23" category="inline-link-macro-rx"></block>。</block>
+  <block id="96d0cd446eb21b1af6c182f7aae637fc" category="section-title">监控视图的增强功能</block>
+  <block id="4195f4a8e15a8ca8892e6bf2c9328dfc" category="paragraph">*Monitoring* 视图包含以下更新：</block>
+  <block id="fdfe720b9ab3394f0dd5d8f33c28b35e" category="list-text">*Alerts 选项卡*：*Alert* 列重命名为 *Alert type &amp; condition*。您现在还可以使用 *Status* 列旁边的省略号图标来编辑 alert、添加备注或查看 alert 详细信息。</block>
+  <block id="358e8af2cd36faf26c9af8949d13a966" category="list-text">*Alert monitors 选项卡*：*Condition* 列重命名为 *Monitor type &amp; condition*。</block>
+  <block id="b9744367609c907fb529ab20aba9b41b" category="paragraph">要了解更多信息，请参阅 <block ref="537df2748cf4cb2e4b656209c1a786f9" category="inline-link-macro-rx"></block> 和 <block ref="cbab6f28009066f6897c1b7fa4cf2447" category="inline-link-macro-rx"></block>。</block>
+  <block id="699549a6c51c3112d231898402b61156" category="admonition">Keystone Collector 仅支持上述第三方软件包。不支持安装其他软件，这可能会影响收集器性能、数据收集和计费准确性。</block>
+  <block id="9fc675b55df5c666e277ff0ddb9918bc" category="paragraph">您可以看到关于群集中的卷的详细信息，包括卷名、节点序列号、群集名称、主机名和性能服务级别。您还可以监控调配的容量、逻辑和物理利用率、冷数据和热数据。</block>
+  <block id="951a19f47f142d3bea8b273df96be4b3" category="admonition">*Cold tier %* 和 *Hot tier %* 列显示每个层的数据百分比，分别计算为（Cold data / Total footprint）× 100 和（Hot data / Total footprint）× 100。</block>
+  <block id="a7a1db0a49d5a7e9bf844061304b61fc" category="paragraph">您可以查看跨 Keystone 订阅的群集中所有卷的详细信息，包括卷名、订阅号、节点序列号、QoS 策略合规性、群集名称、主机名和性能服务级别。您可以监控调配的容量、逻辑和物理利用率、冷数据和热数据。您还可以了解以下内容：</block>
+  <block id="ac46686450b6c96a64532dec01703b45" category="paragraph">折线图显示历史消费数据，并允许用户分析选定日期范围内的趋势。该图表显示了已用容量（总存储容量，包括数据和快照数据）、数据（用户数据使用的存储容量）和快照（快照数据使用的存储容量）等指标，以及承诺容量和突发容量。根据查询的日期范围，使用情况图表最多显示 30 个数据收集点。您可以将鼠标光标悬停在图形上，以查看每个数据收集点的使用情况明细。</block>
+  <block id="34968986368de263575ec0925e1060e6" category="admonition">您选择的日期范围决定了图表底部显示的详细信息级别。对于 30 天或更短的时间段，每个数据点都会显示日期和时间。对于大于 30 天的期间，仅显示日期。</block>
+  <block id="570959fa3089c0814520564f59d8cd93" category="paragraph">在 Console 中，除了已开具发票的突发使用量外，您还可以查看未开具发票的突发使用量（已累计但尚未计费）和临时突发使用量（在当前计费周期内累计且尚未开具发票）。</block>
+  <block id="89558667b836c228a8a40c0b9646c294" category="inline-image-macro">显示 Console 中应计突发使用情况的屏幕截图</block>
+  <block id="f263a9088dc54ae9648c1dae3fe993d3" category="paragraph"><block ref="f263a9088dc54ae9648c1dae3fe993d3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9e85accc113cf94c2f026e5ffe3421be" category="paragraph">您还可以下载 Excel 格式的数据，包括突发状态（已开票、未开票或临时）和计费周期。</block>
+  <block id="9781ed71d59e0117b4c9dc5a901b029a" category="paragraph">您可以查看跨 Keystone 订阅的警报监视器列表，包括监视器名称、触发通知的监视器条件、严重性级别、订阅号、性能服务级别和状态。您可以检查*创建者*列，以查看警报监视器是系统生成的还是用户定义的。</block>
+  <block id="5389584b1bf548949de8edaecabfc485" category="admonition">无法编辑系统生成的监视器。</block>
+  <block id="acfccb7b9983c50ac70ead28a6be20cb" category="admonition">无法删除系统生成的监视器。</block>
+  <block id="ecc78b5c7a63bc05169745e40042420d" category="paragraph"><block ref="ecc78b5c7a63bc05169745e40042420d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="abb4f787da4156315d2c05514952debe" category="paragraph">您可以查看警报详细信息，例如严重性、ID、类型和条件、描述、触发时间、订阅号、跟踪 ID、性能服务级别和状态。该页面还按严重程度和类型显示未解决的警报总数。</block>
+  <block id="08bb039c9e1d5f888e40163d67ac6f4a" category="admonition">您可以使用列选择器 <block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block> 图标自定义表。</block>
+  <block id="a1cea21b853e465b55b0dcbdad0f5084" category="list-text">*查看和解决警报*：选择警报 ID 以打开警报的详细视图。此视图显示警报描述和建议的解决步骤。在此详细视图中，您可以使用 *Edit* 按钮将警报标记为已解决，或使用 *Add note* 按钮添加支持备注。</block>
+  <block id="3d3fbc307b81c272b054f7c2b7473ca7" category="paragraph">您还可以使用 *Status* 列旁边的省略号图标执行以下操作：</block>
+  <block id="d2f643d03cc707eb27302765d368c0bb" category="list-text">*Edit*：打开弹出窗口以更改警报状态并添加解决方案详细信息。</block>
+  <block id="f069bdb9199fd723b309497a4681eaa7" category="list-text">*Add note*：打开弹出窗口以向警报添加备注。</block>
+  <block id="70d995c2419f7d9aa988641d4312954f" category="list-text">*View*：打开与选择警报 ID 相同的详细视图。</block>
+  <block id="e0ceac7aa49cf625120dd2a395d6b528" category="paragraph">您可以使用 *Hide/Show Columns* 来添加或删除表格中显示的列。默认情况下，该表显示您以前保存的列首选项。新添加的列，如 *Department* 或 *Total Footprint* 列，默认情况下是隐藏的，应手动选择以显示在表中。您可以选择或取消选择任何列，您的首选项将被保存以供以后使用。下载 CSV 报告时，无论您的显示首选项如何，所有可用列都将包含在导出中。</block>
+  <block id="8b06cde2817c964f7431fdcb3ffcf3f2" category="section-title">2026 年 3 月 2 日</block>
 </blocks>

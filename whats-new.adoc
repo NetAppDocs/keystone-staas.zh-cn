@@ -18,6 +18,36 @@ summary: NetApp在每个Keystone STaaS服务版本中都为您提供新增和增
 
 
 
+== 2026 年 3 月 2 日
+
+NetApp Console中Keystone仪表板的新增强功能：
+
+
+
+=== 集群中的卷选项卡中的新列
+
+在 *Assets* 中的 *Volumes in clusters* 选项卡中添加了三个新列：*Hot data*、*Cold tier (%)* 和 *Hot tier (%)*。如需了解更多信息，请参阅 link:./integrations/assets-tab.html["查看与 Keystone 订阅相关的资产"] 和 link:./integrations/assets.html["查看 Keystone 订阅中的资产"]。
+
+
+
+=== 消费趋势中的已开票、未开票和临时突发用量
+
+*消费趋势*选项卡中的应计突发计费图现在显示已开票、未开票和临时突发使用情况。要了解更多信息，请参阅 link:./integrations/consumption-tab.html#view-accrued-burst["查看累计突发事件"]。
+
+
+
+=== 监控视图的增强功能
+
+*Monitoring* 视图包含以下更新：
+
+* *Alerts 选项卡*：*Alert* 列重命名为 *Alert type & condition*。您现在还可以使用 *Status* 列旁边的省略号图标来编辑 alert、添加备注或查看 alert 详细信息。
+* *Alert monitors 选项卡*：*Condition* 列重命名为 *Monitor type & condition*。
+
+
+要了解更多信息，请参阅 link:./integrations/monitoring-alerts.html["查看和管理Keystone订阅的提醒"] 和 link:./integrations/monitoring-alert-monitors.html["查看并创建Keystone订阅的警报监视器"]。
+
+
+
 == 2026 年 2 月 16 日
 
 NetApp Console中Keystone仪表板的新增强功能：
