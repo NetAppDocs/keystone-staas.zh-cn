@@ -696,7 +696,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="0e3a3dc0c3eeb16df240b7eafc4a840c" category="paragraph">如果在 ONTAP 中克隆了卷，而您使用这些卷来备份和还原数据，则可以继续使用这些克隆，而无需支付任何额外费用。但是，在您的业务中用于任何其他目的的克隆卷会收取很长时间的费用。</block>
   <block id="308838aa7669887098042a1899ce59bc" category="list-text">只要克隆卷的大小小于父卷的10%(克隆卷中使用的物理容量与父卷中使用的物理容量之比)、克隆卷就不会收取任何费用。</block>
   <block id="5e46e614581cd458f9521294062d3783" category="list-text">一旦克隆卷超过父卷物理大小的10%、克隆将作为标准卷(逻辑使用容量)计费。</block>
-  <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">从*自日期*和*至日期*字段中的日历图标中选择时间范围。选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。您不能选择未来日期。</block>
   <block id="efca37f4dc4125775aa5043cc3e4ba6c" category="list-text">选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。您不能选择未来日期。</block>
   <block id="f9e4dd599c840788d289af630bc65cdb" category="list-text">*当前突发*：指示已用容量是否在定义的突发限制内或以上。如果任何使用量在您的订阅的突发限制范围内、例如、超出已提交容量20%、则属于突发限制范围。如果使用量超过突发限制、则进一步使用量将被视为超过突发限制。此字段显示特定颜色：</block>
   <block id="c3ce6809be6bdc67ae978395484d0585" category="list-text">ONTAP 9.8或更高版本</block>
@@ -2627,4 +2626,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="70d995c2419f7d9aa988641d4312954f" category="list-text">*View*：打开与选择警报 ID 相同的详细视图。</block>
   <block id="e0ceac7aa49cf625120dd2a395d6b528" category="paragraph">您可以使用 *Hide/Show Columns* 来添加或删除表格中显示的列。默认情况下，该表显示您以前保存的列首选项。新添加的列，如 *Department* 或 *Total Footprint* 列，默认情况下是隐藏的，应手动选择以显示在表中。您可以选择或取消选择任何列，您的首选项将被保存以供以后使用。下载 CSV 报告时，无论您的显示首选项如何，所有可用列都将包含在导出中。</block>
   <block id="8b06cde2817c964f7431fdcb3ffcf3f2" category="section-title">2026 年 3 月 2 日</block>
+  <block id="c4a7223f29b332fc54d3573ee04a51a1" category="list-text">从 *From Date* 和 *To Date* 字段中的日历图标选择时间范围。默认情况下，日期范围是从今天开始的最近 30 天。您可以更改此范围，但不能选择未来日期。</block>
+  <block id="9b6f9894a20aba8f70839ec910a9bee6" category="admonition">如果选择的日期范围小于 30 天，则图表仅显示所选日期每天的一个数据收集点。例如，4 天的范围显示 4 个数据收集点，而不是 30 个。对于任何选定的范围，只有日期显示在图表的底部。只有当您使用下面描述的放大功能放大图表时，才能看到时间戳。</block>
 </blocks>
