@@ -37,8 +37,8 @@ image:bxp-subscription-list-4.png["查看订阅标签详情"]
 ** *订阅号*：由 NetApp 分配的 Keystone 订阅的订阅号。带有 image:metrocluster-icon.png["MetroCluster 订阅符号"] 图标的订阅是 MetroCluster 订阅。要了解有关 MetroCluster 订阅的更多信息，请参阅 link:../integrations/adp-tab.html["查看 Keystone MetroCluster 订阅的消耗量和运行状况"]。
 ** *跟踪ID*：激活订阅时分配的跟踪ID。这是每个订阅和站点的唯一ID、用于跟踪订阅。
 ** *客户名称*：与 Keystone 订阅相关的客户的名称。
-** *链接订阅*：如果您有任何辅助订阅链接到您的主要订阅，此列将列出主要订阅的链接订阅编号。
-** * Keystone版本*：用于订阅的Keystone服务的版本。不同订阅版本的性能服务级别的费率计划规则可能有所不同。要了解有关版本 v1 的更多信息，请参阅 https://docs.netapp.com/us-en/keystone/index.html["Keystone 订阅服务 | 版本 1 文档"^]。
+** *链接订阅*：如果您有任何辅助订阅链接到您的主要订阅，此列将列出主要订阅的链接订阅编号。默认情况下，此列是隐藏的，仅当链接的订阅可用时才可见。
+** *Keystone 版本*：用于订阅的 Keystone 服务版本。性能服务级别的费率计划规则可能因订阅版本而异。要了解有关版本 v1 的更多信息，请参阅 https://docs.netapp.com/us-en/keystone/index.html["Keystone 订阅服务 | 版本 1 文档"^]。默认情况下，此列是隐藏的，可以使用列选择器image:column-selector.png["列选择器图标"]图标启用。
 ** *使用类型*：您可能已经订阅了多个 Keystone 版本。性能服务级别的费率计划规则可能因订阅版本而异。通过查看此列中的值，您可以知道使用类型是按预配、物理还是逻辑使用计费。要了解有关版本 1 的更多信息，请参阅 https://docs.netapp.com/us-en/keystone/index.html["Keystone 订阅服务 | 版本 1 文档"^]。
 ** *计费周期*：订阅的发票周期。
 ** *性能服务级别*：与订阅相关的费率计划数量，每个费率计划对应特定的性能服务级别和承诺容量。

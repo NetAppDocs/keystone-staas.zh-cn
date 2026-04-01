@@ -1,0 +1,29 @@
+= 历史消费图表上突发容量以上
+:allow-uri-read: 
+
+
+NetApp Console中Keystone仪表板的新增强功能：
+
+
+
+=== 历史消费图表上突发容量以上
+
+*消费趋势*选项卡中的历史消费图表现在突出显示超出突发限制的使用情况。要了解更多信息，请参阅 link:./integrations/consumption-tab.html["查看 Keystone 订阅的消费趋势"]。
+
+
+
+=== 容量使用预测
+
+您可以在 *消耗趋势* 选项卡的 *历史消耗* 视图中使用 *Forecast* 切换来预测当前日期后 120 天的容量使用情况。要了解更多信息，请参阅 link:./integrations/consumption-tab.html#view-forecast-data["查看预测数据"]。
+
+
+
+=== 订阅导出中的跟踪 ID
+
+现在，从*订阅*页面下载的订阅报告在 Excel 和 CSV 格式的性能服务级别数据中都包含*跟踪 ID*。
+
+
+
+=== 订阅页面列可见性更新
+
+在 *Subscriptions* 页面上，*Keystone version* 列现在默认隐藏，只有当链接的订阅可用时，才会显示 *Linked subscriptions* 列。
