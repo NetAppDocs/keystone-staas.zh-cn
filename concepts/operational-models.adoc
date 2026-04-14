@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concepts/operational-models.html 
-keywords: Operational models, partner operations, customer operations, roles and responsibilities, r&r 
+keywords: Operational models, partner operations, customer operations, roles and responsibilities, 
 summary: NetApp Keystone STaaS提供两种服务交付运营模式。在开始使用Keystone之前、您应了解这些选项。 
 ---
 = Keystone中的操作模式
