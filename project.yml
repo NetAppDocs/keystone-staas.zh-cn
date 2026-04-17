@@ -146,7 +146,7 @@ sidebar:
         url: "/concepts/metrics.html"
       - title: 支持的存储
         url: "/concepts/supported-storage-services.html"
-      - title: 支持的容量
+      - title: 存储容量类型
         url: "/concepts/supported-storage-capacity.html"
       - title: 绩效服务水平
         url: "/concepts/service-levels.html"

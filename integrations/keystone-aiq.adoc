@@ -43,7 +43,7 @@ image:new-db-4.png["新信息板"]
 订阅的详细信息、每个性能服务级别的使用情况图表以及卷详细信息显示在 *Keystone 订阅* 屏幕上的不同选项卡中。
 
 
-NOTE: Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位显示、并四舍五入为小数点后两位。如果使用量少于 0.01 TiB，则值显示为 0 或无使用量。这些屏幕上的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。要了解有关使用情况指标的更多信息，请参见 link:../concepts/metrics.html#metrics-measurement["衡量指标"]。有关Keystone中使用的不同容量的信息，请参见 link:../concepts/supported-storage-capacity.html["支持的存储容量"]。
+NOTE: Keystone 订阅中的容量消耗在仪表板和报告中以 TiBs 显示，并四舍五入到小数点后两位。如果使用量小于 0.01 TiB，则该值显示为 0 或 No Usage。这些屏幕上的数据以 UTC 时间（服务器时区）显示。当您输入查询日期时，它将自动被视为 UTC 时间。要了解有关使用情况指标的更多信息，请参阅 link:../concepts/metrics.html#metrics-measurement["衡量指标"]。有关 Keystone 中使用的不同容量的信息，请参阅 link:../concepts/supported-storage-capacity.html["Keystone 中的存储容量类型"]。
 
 
 

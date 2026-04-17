@@ -14,14 +14,11 @@ summary: Keystone STaaS服务支持ONTAP和StorageGRID。
 
 
 [role="lead"]
-Keystone STaaS 服务支持NetApp和Cloud Volumes ONTAP的统一存储、块优化存储和对象存储。
+Keystone STaaS 支持 NetApp 平台上的统一、块优化、AFX 和对象存储，以及 Cloud Volumes ONTAP。每种存储类型都定义为数据存储类型 (DST)，可与基本订阅中包含的标准服务以及可选的附加服务一起使用。
 
-支持的存储选项有：
 
-* *统一存储*：包括文件、块和 S3 对象存储，可在 NetApp ONTAP AFF 和 FAS 系统上使用。
-* *块优化存储*：包括NetApp ONTAP ASA系统上可用的块存储。
-* *对象存储*：包括 NetApp StorageGRID 系统上可用的对象存储。
 
+== Keystone STaaS 标准和附加服务
 
 Keystone STaaS可为您的存储提供标准和可选服务。
 
@@ -29,48 +26,70 @@ Keystone STaaS可为您的存储提供标准和可选服务。
 
 * Keystone STaaS附加服务*：这些服务是可选的付费服务、可在标准Keystone STaaS订阅服务基础上提供额外的实用程序和优势。
 
-Keystone STaaS 服务可以同时使用。例如，云存储订阅的期限可以与统一存储、块优化存储和对象存储订阅的期限相同。在现有存储订阅的服务期限内、可以随时包括云服务。但是，如果您不打算续订现有的统一存储、块优化存储或对象存储订阅，则在订阅的最后 90 天内无法添加云存储订阅。
+您可以同时订阅多个 Keystone STaaS 服务。将云服务添加到订阅时，它们与统一、块优化和/或对象存储共享相同的术语。在活动存储订阅期间，可以随时添加云服务。但是，如果您不打算续订现有的统一、块优化或对象存储订阅，则无法在该订阅的最后 90 天内添加云服务。
+
+
+NOTE: AFX 订阅是独立的，不能与同一订阅中的统一、块优化或对象存储相结合。如果您需要与其他存储类型一起使用 AFX，则必须将它们作为单独的订阅进行订购。
 
 
 
-== 统一、块优化和对象存储服务
+== 支持的数据存储类型
 
-Keystone STaaS 服务适用于统一存储、块优化存储和对象存储，支持多种功能和协议，如下表所述：
+用于统一、块优化、对象和 AFX 存储的 Keystone STaaS 服务支持多种功能和协议，如下表所述：
 
 |===
-| 存储 | 平台 | 协议 | 支持的功能 
+| 数据存储类型 | 说明 | 平台 | 协议 | 支持的功能 
 
 
  a| 
-统一存储
+统一
  a| 
-ONTAP
+包括文件、块和 S3 对象存储
  a| 
-NFS和CIFS
+AFF 和 FAS 系统上的 ONTAP
+ a| 
+FC、iSCSI、NFS、NFSv4/RDMA、NVMe/FC、NVMe/TCP、SMB、S3
  a| 
 支持所有 ONTAP One 功能
 
 
 
  a| 
-块优化存储
+块优化
  a| 
-ONTAP
+包括块存储
+ a| 
+NVMe/TCP、NVMe/FC、FC、iSCSI
  a| 
 FC和iSCSI
  a| 
+支持所有 ONTAP One for SAN 功能
+
+
+
+ a| 
+AFX
+ a| 
+包括分解存储平台上的文件和对象存储
+ a| 
+AFX 系统上的 ONTAP
+ a| 
+NFSv3、NFSv4/RDMA、pNFS、SMB、S3
+ a| 
 支持所有 ONTAP One 功能
 
 
 
  a| 
-对象存储
+对象
+ a| 
+包括对象存储
  a| 
 StorageGRID
  a| 
 S3
  a| 
-支持所有 ONTAP One 功能
+支持所有 StorageGRID 功能
 
 |===
 要了解有关 ONTAP One 的更多信息，请参阅link:https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one["ONTAP许可概述"^]和link:https://www.netapp.com/blog/ontap-one/["ONTAP One：集 ONTAP 全部功能于一身"^] 。
@@ -82,4 +101,4 @@ S3
 Keystone STaaS可提供云存储服务。Keystone STaaS支持Amazon Web Services (AWS)、Microsoft Azure和Google云平台上的Cloud Volumes ONTAP 数据管理功能。
 
 
-NOTE: NetApp不会在Keystone STaaS订阅中提供Cloud Volumes ONTAP 所需的基于超大规模扩展的计算、存储和网络服务；这些订阅需要直接从超大规模云服务提供商处购买。
+NOTE: Cloud Volumes ONTAP 所需的基于超大规模的计算、存储和网络服务不是由 NetApp 作为 Keystone STaaS 订阅的一部分提供的；这些订阅需要直接从超大规模云服务提供商处采购。
