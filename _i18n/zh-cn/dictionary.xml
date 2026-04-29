@@ -2331,7 +2331,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="7d6ad97dce95d7baa137f0f095070eb3" category="paragraph">*Subscriptions* 选项卡包括一个 *Usage type* 列，显示订阅是根据预配、物理还是逻辑使用情况收费。要了解更多信息，请参阅 <block ref="61d5e61d482be5b378176189e19c50df" category="inline-link-macro-rx"></block>。</block>
   <block id="77f26dcf71ccd46a1988ad176507362f" category="paragraph">要设置 DII，请参阅 <block ref="9c96a8ce2c2de39e18e71cf6b16e737c" category="inline-link-macro-rx"></block>。</block>
   <block id="46258461c8dd073deb37f9c53353b64e" category="list-text">如果客户要启动新的 DII 实例，建议从<block ref="6d36cc4d8aae109cb667709b36f129f9" category="inline-link-macro-rx"></block>开始。要了解此功能和所需的启动清单，请参阅<block ref="fa9eb45797f94a182876dd4cce75625a" category="inline-link-macro-rx"></block>。</block>
-  <block id="511d6a0f4f5ad7c5f79e56d010b571b0" category="paragraph">您可以通过 Console 或 Digital Advisor 查看累计突发数据使用情况。如果您在 Console 的*消费趋势*选项卡的*视图*下拉列表中选择了*累计突发*，或者在 Digital Advisor 的*消费趋势*选项卡中选择了*已开票累计突发*选项，则可以根据所选的计费周期，按月或按季度查看累计突发数据使用情况。此数据适用于已结算的过去 12 个月，您可以按过去 30 个月的日期范围查询。</block>
   <block id="1e007e954fdd7587bcd939b10c21e650" category="list-text">在 Console 中，您可以与应计突发计费图进行交互，以过滤每日数据使用情况。要了解更多信息，请参阅 <block ref="0cc16f2bbc32fd70c68f98b9b0b4296a" category="inline-link-macro-rx"></block>。</block>
   <block id="1b342e2d578a51d6b3d947da95fe0f10" category="paragraph">在 Console 中，您可以通过选择代表应计突发计费图中的计费周期的任何条形图来筛选表。筛选后，该表仅显示选定计费周期内的天数。要再次查看完整数据集，请使用 *Clear filters* 选项。如果选定期间没有可用数据，则会显示一条消息，指示没有可用数据。</block>
   <block id="e6f9cff2e05b0c21bfa8eacbea1108b9" category="paragraph"><block ref="e6f9cff2e05b0c21bfa8eacbea1108b9" category="inline-image-macro-rx" type="image"></block></block>
@@ -2474,10 +2473,8 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="951a19f47f142d3bea8b273df96be4b3" category="admonition">*Cold tier %* 和 *Hot tier %* 列显示每个层的数据百分比，分别计算为（Cold data / Total footprint）× 100 和（Hot data / Total footprint）× 100。</block>
   <block id="a7a1db0a49d5a7e9bf844061304b61fc" category="paragraph">您可以查看跨 Keystone 订阅的群集中所有卷的详细信息，包括卷名、订阅号、节点序列号、QoS 策略合规性、群集名称、主机名和性能服务级别。您可以监控调配的容量、逻辑和物理利用率、冷数据和热数据。您还可以了解以下内容：</block>
   <block id="34968986368de263575ec0925e1060e6" category="admonition">您选择的日期范围决定了图表底部显示的详细信息级别。对于 30 天或更短的时间段，每个数据点都会显示日期和时间。对于大于 30 天的期间，仅显示日期。</block>
-  <block id="570959fa3089c0814520564f59d8cd93" category="paragraph">在 Console 中，除了已开具发票的突发使用量外，您还可以查看未开具发票的突发使用量（已累计但尚未计费）和临时突发使用量（在当前计费周期内累计且尚未开具发票）。</block>
   <block id="89558667b836c228a8a40c0b9646c294" category="inline-image-macro">显示 Console 中应计突发使用情况的屏幕截图</block>
   <block id="f263a9088dc54ae9648c1dae3fe993d3" category="paragraph"><block ref="f263a9088dc54ae9648c1dae3fe993d3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9e85accc113cf94c2f026e5ffe3421be" category="paragraph">您还可以下载 Excel 格式的数据，包括突发状态（已开票、未开票或临时）和计费周期。</block>
   <block id="9781ed71d59e0117b4c9dc5a901b029a" category="paragraph">您可以查看跨 Keystone 订阅的警报监视器列表，包括监视器名称、触发通知的监视器条件、严重性级别、订阅号、性能服务级别和状态。您可以检查*创建者*列，以查看警报监视器是系统生成的还是用户定义的。</block>
   <block id="5389584b1bf548949de8edaecabfc485" category="admonition">无法编辑系统生成的监视器。</block>
   <block id="acfccb7b9983c50ac70ead28a6be20cb" category="admonition">无法删除系统生成的监视器。</block>
@@ -2511,12 +2508,8 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="d1d79a1d3945e37b66a6707cd87b9ed0" category="list-text">*突发容量*：您的订阅允许的最大突发限制。</block>
   <block id="39d85a9f5c080a0273cd8ef8892c32b8" category="list-text">*超出突发容量*：超出突发限制的存储消耗。仅当超出突发限制时，才会显示此指标。</block>
   <block id="c09e069ede7bdb06ea3b9e7615be21b1" category="paragraph">根据查询的日期范围，使用情况图表最多显示 30 个数据收集点。您可以将鼠标光标悬停在图形上，以查看每个数据收集点的使用情况明细。</block>
-  <block id="dee9a22d9bea2517a6ba3ada8d2b1d61" category="paragraph">您可以通过 Console 中*消耗趋势*选项卡的*历史消耗*视图中提供的*预测*开关，查看从当前日期起接下来 120 天的预计容量使用情况。该开关默认启用。</block>
-  <block id="d895d782266d449ca70ee01f77ce836f" category="paragraph">默认情况下，该图表将在同一图表上显示过去 30 天的历史消费量和当前日期的 120 天预测。总共绘制了多达 30 个数据点（20 个用于历史数据，10 个用于预测数据），垂直线将两个段分开。</block>
   <block id="98e9fc7499f5ec07bce7ba0ae4c459ea" category="inline-image-macro">显示预测数据的屏幕截图</block>
   <block id="aec1b050350c808c951dd08448b9c9ad" category="paragraph"><block ref="aec1b050350c808c951dd08448b9c9ad" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="41ba25ff2c151db2eb81aa97afa993b7" category="paragraph">如果选择的日期范围不以当前日期结束，则会自动禁用预测。要重新启用此功能，一个确认对话框会通知您，只有当所选时间线以当前日期结束时，预测数据才可用。确认会将视图重置为过去 30 天历史数据加上未来 120 天预测的默认范围。</block>
-  <block id="449cacbccdea6e91ca0e477aed1e6767" category="paragraph">如果预计消耗量将超过突发容量，则图表上会显示警报指示器，建议进行容量升级。</block>
   <block id="096ba8f18f440795ebc161dce2259d12" category="list-text">*链接订阅*：如果您有任何辅助订阅链接到您的主要订阅，此列将列出主要订阅的链接订阅编号。默认情况下，此列是隐藏的，仅当链接的订阅可用时才可见。</block>
   <block id="ed7ea238eb12e525c819f7503ae42929" category="list-text">*Keystone 版本*：用于订阅的 Keystone 服务版本。性能服务级别的费率计划规则可能因订阅版本而异。要了解有关版本 v1 的更多信息，请参阅<block ref="d7848503560f6eda6c1c5b670f722092" category="inline-link-rx"></block>。默认情况下，此列是隐藏的，可以使用列选择器<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block>图标启用。</block>
   <block id="a317125c258dec2606079ff63caaadb2" category="paragraph">2026-03-30</block>
@@ -2706,4 +2699,23 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="6d1270d83b59c4d34695059058ba3873" category="admonition">Cloud Volumes ONTAP 所需的基于超大规模的计算、存储和网络服务不是由 NetApp 作为 Keystone STaaS 订阅的一部分提供的；这些订阅需要直接从超大规模云服务提供商处采购。</block>
   <block id="c148f39d208183361daf2e5ab75c9a60" category="admonition">Keystone 订阅中的容量消耗在仪表板和报告中以 TiBs 显示，并四舍五入到小数点后两位。如果使用量小于 0.01 TiB，则该值显示为 0 或 No Usage。这些屏幕上的数据以 UTC 时间（服务器时区）显示。当您输入查询日期时，它将自动被视为 UTC 时间。要了解有关使用情况指标的更多信息，请参阅 <block ref="c526a2ccdbb16224fb861d4fec1eb67c" category="inline-link-macro-rx"></block>。有关 Keystone 中使用的不同容量的信息，请参阅 <block ref="0ea2e5735a73cb1292027bc1604190c4" category="inline-link-macro-rx"></block>。</block>
   <block id="e6664e13d8023d762b4d6f2f644a6287" category="sidebar">存储容量类型</block>
+  <block id="bbb8f007e34c0752a6b247756b53fab3" category="doc">已重命名预配容量标签</block>
+  <block id="d174bb4b9301e712299bb2a97af43ea4" category="paragraph">标签 *Provisioned capacity* 已重命名为 *Provisioned volume capacity*。更新后的标签也会反映在相关的 CSV 和 Excel 报告中。</block>
+  <block id="c959d5af4f5382807b954dd4e30cb885" category="section-title">应计突发的预测切换</block>
+  <block id="a210e1436e5783be9e7a1e80f658f571" category="paragraph">现在，您可以使用 *消费趋势* 选项卡的 *累计突发* 视图中的 *预测* 切换来预测当前日期后 120 天的累计突发使用情况。要了解更多信息，请参阅 <block ref="9484ad044036df23422b98e69c766760" category="inline-link-macro-rx"></block>。</block>
+  <block id="b833fc063470eb72aa05a5570f243c7b" category="admonition">您可以使用 *Forecast* 切换在 *Historical consumption* 视图中查看预计容量使用情况，并在 *Accrued burst* 视图中查看预计应计突发。如需了解更多信息，请参阅 <block ref="c3e0115050031e1e905cbb5a43dfe637" category="inline-link-macro-rx"></block>。</block>
+  <block id="f0966c8c81211afb8b1cacba8a9fa525" category="paragraph">您可以通过 Console 或 Digital Advisor 查看累计突发数据使用情况。如果您在 Console 的*消费趋势*选项卡的*视图*下拉列表中选择了*累计突发*，或者在 Digital Advisor 的*消费趋势*选项卡中选择了*已开票累计突发*选项，则可以根据所选的计费周期，按月或按季度查看累计突发数据使用情况。</block>
+  <block id="30403a0435001d542a0a621f63da7853" category="paragraph">在控制台中，当 *Forecast* 切换被禁用时，您可以查看已开具发票的突发使用情况以及未开具发票的突发使用情况（已累计但尚未计费）和临时突发使用情况（在当前计费周期内累计且尚未开具发票）。启用 *Forecast* 切换时，图表还显示从当前日期起接下来 120 天的预计应计突发使用量。要了解有关 *Forecast* 切换的更多信息，请参阅 <block ref="c3e0115050031e1e905cbb5a43dfe637" category="inline-link-macro-rx"></block>。</block>
+  <block id="4951b01aa4815e91bf5e5e1d2f14728e" category="paragraph">在控制台中，您可以使用*消耗趋势*选项卡中的*预测*切换，在*历史消耗*视图中查看预计产能使用情况，在*累计突发*视图中查看预计累计突发。默认情况下，切换在两个视图中都处于启用状态。</block>
+  <block id="30581acd054ace99b93673d52e83f48b" category="paragraph">在 *Historical consumption* 视图中，图表在同一图表上显示过去 30 天的历史消费和从当前日期开始的 120 天预测。总共绘制多达 30 个数据点（20 个用于历史数据，10 个用于预测数据），垂直线将两个段分开。</block>
+  <block id="c3150ed0c9263aebf6fad206d2bbfa0f" category="paragraph">在 *Accrued burst* 视图中，图表显示了最近 6 个月的累计突发历史记录和当前日期的 120 天预测，并用一条垂直线分隔历史和预测数据。当前计费期间栏显示剩余天数的临时突发使用和预测数据。您可以单击任意条形图，在 *Accrued burst by days* 表中查看每日明细。要了解有关 *Accrued burst by days* 表的更多信息，请参阅<block ref="0cc16f2bbc32fd70c68f98b9b0b4296a" category="inline-link-macro-rx"></block>。</block>
+  <block id="2c1588a23b3ae26913ca97110590c261" category="inline-image-macro">显示应计突发预测的屏幕截图</block>
+  <block id="fa251514521b15877d660478b5f146da" category="paragraph"><block ref="fa251514521b15877d660478b5f146da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7fea2236eaf015429aa1139544fbef4b" category="paragraph">如果您选择的日期范围不以当前日期结束，则会自动禁用预测。要重新启用它，确认对话框会通知您，只有当所选时间轴以当前日期结束时，预测数据才可用。如果您确认对话框，视图将重置为所选视图的默认范围：*Historical consumption* 视图中过去 30 天的历史数据加上未来 120 天的预测，或 *Accrued burst* 视图中过去 6 个月的应计突发历史加上未来 120 天的预测。</block>
+  <block id="4aadf88f31f4e4fb67909d4a1f8d6fa5" category="paragraph">如果预计消耗量将超过承诺容量，图表上将显示橙色警报指示器，建议进行容量升级。如果预计会超过突发容量，还会出现红色警报指示器，建议进行容量升级。</block>
+  <block id="20eac3e5793b6f7331d6d7f608939431" category="admonition">图表中显示的数据取决于 *Forecast* 切换是启用还是禁用。</block>
+  <block id="42fda15e65e4afa2339de7eff6850159" category="paragraph">您还可以下载 Excel 格式的可用数据，包括突发状态（已开票、未开票、临时或预测，如适用）和计费期。</block>
+  <block id="f649abbfb1fbdf6d16ef1e522e9f0b3f" category="paragraph">预测消费数据中的下降趋势不准确</block>
+  <block id="af9ef0b1942bfef1a3c549bcd43ad2d0" category="paragraph">在 *Consumption trend* 选项卡中，当在 *Historical consumption* 视图中启用 *Forecast* 切换时，预计容量使用情况显示显著且不准确的下降趋势。</block>
+  <block id="9e011831a807911dc5fe5c1f934f6d23" category="section-title">2026 年 4 月 27 日</block>
 </blocks>

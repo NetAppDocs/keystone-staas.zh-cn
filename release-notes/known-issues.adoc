@@ -24,6 +24,15 @@ NetApp Keystone STaaS中报告了以下已知问题：
 
 
  a| 
+预测消费数据中的下降趋势不准确
+ a| 
+在 *Consumption trend* 选项卡中，当在 *Historical consumption* 视图中启用 *Forecast* 切换时，预计容量使用情况显示显著且不准确的下降趋势。
+ a| 
+无
+
+
+
+ a| 
 订阅修改功能不可用
  a| 
 在 NetApp Console 中修改 Keystone 订阅的承诺容量的选项目前不可用。此功能将在未来版本中重新引入。

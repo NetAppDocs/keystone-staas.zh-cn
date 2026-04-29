@@ -1,0 +1,17 @@
+= 已重命名预配容量标签
+:allow-uri-read: 
+
+
+NetApp Console中Keystone仪表板的新增强功能：
+
+
+
+=== 已重命名预配容量标签
+
+标签 *Provisioned capacity* 已重命名为 *Provisioned volume capacity*。更新后的标签也会反映在相关的 CSV 和 Excel 报告中。
+
+
+
+=== 应计突发的预测切换
+
+现在，您可以使用 *消费趋势* 选项卡的 *累计突发* 视图中的 *预测* 切换来预测当前日期后 120 天的累计突发使用情况。要了解更多信息，请参阅 link:./integrations/consumption-tab.html#view-forecast-data["查看预测数据"]。
