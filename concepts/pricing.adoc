@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concepts/pricing.html 
-keywords: pricing, billing introduction, Keystone billing 
-summary: Keystone提供按需购买模式、可满足您灵活且可扩展的消费需求。 
+keywords: pricing, Keystone billing, committed capacity, consumed capacity, burst consumption, billing schedules 
+summary: 使用 NetApp Keystone STaaS，您只需为承诺的容量付费，超出部分仅需支付额外费用。此页面解释了按增长付费模式的工作原理——从存储承诺的定价方式、容量的计量和计费方式，到生成发票的时间。 
 ---
-= 了解Keystone定价
+= 了解 Keystone 账单功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,13 @@ summary: Keystone提供按需购买模式、可满足您灵活且可扩展的消
 
 
 [role="lead"]
-NetApp Keystone STaaS 按使用量付费订阅服务提供灵活且可扩展的消费，并为您的存储需求提供可预测的预付定价。
+使用 NetApp Keystone STaaS，您只需为承诺的容量付费，超出部分按实际使用量额外付费。此页面介绍了现收现付模式的工作原理，包括存储承诺的定价方式、容量的计量和计费方式以及生成发票的时间。
+
+
+
+== Keystone 定价模型
+
+通过 Keystone 订阅，您可以灵活地在工作负载需要时进行扩展，从而获得可预测的成本。Keystone 费用基于您选择的性能服务级别和您承诺的容量。
 
 Keystone为您提供以下计费功能：
 
@@ -28,11 +34,77 @@ Keystone计费基于已提交容量和可变突发消耗量。
 
 有关 Keystone 中支持的不同容量的信息，请参见 link:../concepts/supported-storage-capacity.html["Keystone 中的存储容量类型"]。
 
-* 相关信息 *
 
-* link:../concepts/committed-capacity-billing.html["根据已提交容量计费"]
-* link:../concepts/consumed-capacity-billing.html["根据已用容量进行计量"]
-* link:../concepts/burst-consumption-billing.html["按突发消耗计费"]
-* link:../concepts/misc-volume-billing.html["根据其他卷类型计费"]
-* link:../concepts/billing-schedules.html["计费计划"]
+
+== Keystone 如何衡量容量
+
+Keystone 使用三个容量概念来计算您的账单。了解每个概念有助于您避免意外收费。
+
+
+
+=== 已提交容量
+
+承诺容量是指您在签署 Keystone 订阅时同意为特定性能服务级别购买的容量。此金额固定在 Keystone 订单上，无论您的工作负载实际使用多少容量，每个计费周期都会全额计费。
+
+例如，如果您在 Premium 服务级别承诺 100 TiB，则即使当月的实际使用量为 80 TiB，也会收取 100 TiB 的费用。
+
+根据您和 NetApp 或您的合作伙伴达成的协议，承诺的容量可以跨越单个订阅中的多个性能服务级别。
+
+要查看您的承诺容量并跟踪其实际使用情况，请参见 link:../integrations/current-usage-tab.html["查看您当前的消费详情"]。
+
+
+
+=== 已用容量
+
+消耗的容量是您的工作负载在任何时间点实际使用的容量。Keystone 持续监控和衡量您在整个计费周期内的消费情况。至少每五分钟生成一个消费记录，该记录捕获您的订阅的当前消费容量。这些记录在计费周期内汇总，以生成发票和使用情况报告。
+
+五分钟的监控间隔确保了精确的跟踪，因此可以检测到突发使用情况并准确计费——而不是在周期结束时进行估计。
+
+当消耗的容量保持在或低于您的承诺容量时，仅适用承诺容量率。当消耗的容量超过您的承诺容量时，将应用突发计费。
+
+
+
+=== 突发消费
+
+突发消耗是指您超出承诺容量使用的容量。您的突发限制在您的 Keystone 协议中确定和指定。默认情况下，它设置为高于承诺容量的 20%。您还可以选择承诺容量的 40% 或 60% 的突发容量限制。要了解更多信息，请参阅 link:../concepts/burst-capacity.html["突发容量选项"]。
+
+例如，如果您的承诺容量为 100 TiB，而您使用了 115 TiB，则额外的 15 TiB 将按突发速率收费。
+
+当消耗的容量大于性能服务级别的承诺容量时，将记录突发消耗并相应收费。超出突发容量限制的使用被标记为"超出突发限制"。
+
+突发消耗是针对整个计费期间生成的每个消耗记录进行计算的。它反映了您在承诺容量之上过度消耗容量的数量和持续时间。要查看订阅的突发消费趋势，请参见 link:../integrations/consumption-tab.html["查看 Keystone 订阅的消费趋势"]。
+
+
+
+== 计费计划
+
+您的账单频率在 Keystone 协议中设置。下表显示了每个选项下的承诺产能和突发使用情况的预计发票时间。
+
+[cols="1,2,2"]
+|===
+| 计费频率 | 已承诺产能的发票 | 突发使用发票 
+
+
+| 每月 | 下个月发送 | 包含在同一张发票中 
+
+
+| 季度 | 在每个季度开始时发送 | 在每个季度末发送 
+
+
+| 每半年一次 | 在每 6 个月周期开始时发送 | 在每个季度末发送 
+
+
+| 每年 | 在每个订阅年度开始时发送 | 在每个季度末发送 
+|===
+
+NOTE: 对于季度、半年和年度账单，如果您的承诺容量在订阅期间发生变化，则会在同一天发送发票，收取该订阅年度剩余时间按比例分配的最低付款额。计费从承诺容量变更生效之日起计算。
+
+
+
+== 相关信息
+
+* link:../concepts/supported-storage-capacity.html["Keystone 中的存储容量类型"]
+* link:../concepts/burst-capacity.html["突发容量选项"]
+* link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
+* link:../integrations/consumption-tab.html["查看 Keystone 订阅的消费趋势"]
 

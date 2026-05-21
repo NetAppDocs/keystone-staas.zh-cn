@@ -20,4 +20,4 @@ summary: 使客户能够使用超出其承诺容量的额外存储容量。
 
 要将突发限制更改为 40% 或 60%，请联系 NetApp Keystone 支持团队。
 
-要了解有关突发容量计费的更多信息，请参阅link:../concepts/burst-consumption-billing.html["按突发消耗计费"] 。
+要了解有关突发容量计费方式的更多信息，请参阅 link:../concepts/pricing.html["了解 Keystone 账单功能"]。
