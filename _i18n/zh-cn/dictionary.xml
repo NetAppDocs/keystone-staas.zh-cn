@@ -1689,9 +1689,7 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="b714a345064d1fee61d1cc1281a6fefe" category="list-text">在*订阅号*栏中选择订阅号，查看订阅时间线。</block>
   <block id="378f1892574980608cc14d0505dc8302" category="list-text">选择“*订阅时间表*”选项卡。</block>
   <block id="33a1adebde8a441b691ab5ca91c43f67" category="inline-image-macro">屏幕截图以折线图形式显示订阅时间线以及重要事件</block>
-  <block id="da68a8f816866d6c67389e49539cc5e4" category="paragraph"><block ref="da68a8f816866d6c67389e49539cc5e4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="20647cff2639f24d1690fa3e3247672e" category="inline-image-macro">以表格图表形式显示订阅时间线以及重要事件的屏幕截图</block>
-  <block id="e656406ec3f71a6faf961120d8791fe6" category="paragraph"><block ref="e656406ec3f71a6faf961120d8791fe6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6e665113a95f128bda94a45125d034c0" category="doc">查看您的 Keystone 订阅的详细信息</block>
   <block id="da165360e20e2139a72fd6fadd1175f3" category="inline-image-macro">查看订阅标签详情</block>
   <block id="e6cb8545fbd488c01d2779c3cf2fe308" category="list-text">*客户名称*：与 Keystone 订阅相关的客户的名称。</block>
@@ -2104,7 +2102,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="2cffc1f33b9b6ccb45614d69036254d2" category="list-text">选择*常规&gt; Keystone订阅&gt; 性能*。</block>
   <block id="cf965a30eec7fe8ec42e2f3f520205a4" category="summary">从NetApp控制台查看订阅时间表，其中包括激活、修改和续订日期等事件。</block>
   <block id="ea0ce0391196099aab618a4b710b5332" category="paragraph">NetApp控制台中的Keystone仪表板提供了Keystone订阅的时间线视图，显示激活、修改和续订日期等事件。此时间线视图在Digital Advisor中不可用。</block>
-  <block id="51a66b760aa1870a147d6acc0e6c8efd" category="paragraph">订阅时间线默认以折线图显示，并带有标记重要事件的图标。将鼠标悬停在事件上即可查看详细信息，包括日期和已提交的容量变化。要在表中查看这些事件，请从*查看方式*下拉菜单中选择*表格*选项。要查看其他订阅时间表，请从*跟踪 ID* 下拉菜单中选择或搜索。</block>
   <block id="fd4257d1ebe74f01a9d3b5236f722a08" category="paragraph">您可以从NetApp控制台和Digital Advisor中的 *订阅* 查看所有订阅的列表。此视图根据您的订阅状态和使用情况提供易于理解的见解，帮助您随时了解情况并在需要时采取行动。</block>
   <block id="579139f19217a677980dce581b098367" category="paragraph">您会看到容量使用情况、订阅到期状态和未解决的警报等关键指标。</block>
   <block id="09253a17dd3290d17d3baeba1a85ec41" category="paragraph">您可以从表中看到以下详细信息：</block>
@@ -2726,4 +2723,12 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="e6ff8f3b83ecc7de79998d1038e44b10" category="sidebar">当我超出我的承诺产能时会发生什么？</block>
   <block id="8c4d76fa92f09a8376865002414752f9" category="sidebar">何时生成发票？</block>
   <block id="58738d2f8ee7ea1370382ef241eb44f2" category="sidebar">了解 Keystone 账单</block>
+  <block id="4f4e942fb2a8e3cbbc7009bb9e99d967" category="doc">改进了订阅时间线中同一天多个更新的显示</block>
+  <block id="fad09c803865d7a730faa5e2a3f20dc6" category="paragraph">订阅时间表图表现在会显示在同一天发生多个不同类型的订阅更新时的数字，而不是单独的图标。将鼠标悬停在数字上可查看当天的所有更新类型。下载的报告包括每个更新的单独一行，为您提供所有更改的完整记录。要了解更多信息，请参阅 <block ref="6bdc06544a2a6817dc4209abc6ea98ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="0e3e57bffd0893b655bd0cbbfa13b3f1" category="paragraph"><block ref="0e3e57bffd0893b655bd0cbbfa13b3f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb648f8805fc9b54e9ef8edf7809ab97" category="paragraph">默认情况下，订阅时间轴显示为折线图，图标标记重要事件。当同一天发生多个不同类型的订阅更新时，图表将显示一个数字而不是单独的图标。将鼠标悬停在数字上可查看当天发生的所有更新类型，或将鼠标悬停在任何事件图标上可查看日期和承诺容量更改等详细信息。要在表格中查看这些事件，请从 *View as* 下拉列表中选择 *Table* 选项。要查看其他订阅时间表，请从 *Tracking ID* 下拉列表中选择或搜索。</block>
+  <block id="08e7a28380a64fb6e2353778c694c0a9" category="paragraph"><block ref="08e7a28380a64fb6e2353778c694c0a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="96eda23bc910b422399a3d3faca263de" category="paragraph">过期订阅的到期日期不正确</block>
+  <block id="bab3c4cbe1382c763eff57041def5e4a" category="paragraph">在 *Subscriptions* 选项卡中，过期的订阅会将昨天的日期显示为到期日期，而不是实际的订阅结束日期。</block>
+  <block id="81d0f400f0bffbb1e2341f849b8278b7" category="section-title">2026 年 5 月 25 日</block>
 </blocks>
