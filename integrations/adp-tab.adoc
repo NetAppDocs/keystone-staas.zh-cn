@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: integrations/adp-tab.html 
-keywords: keystone-aiq, digital advisor keystone, advanced data protection, ADP, MetroCluster, consumption data, health status, primary site, mirror site, sync status, ONTAP Mediator, capacity utilization, consumption trends, bluexp, NetApp Console, Console 
-summary: 当您订阅 Keystone 中的高级数据保护附加服务时，可以查看 MetroCluster 合作伙伴站点的消费数据并监控其运行状况。 
+keywords: keystone-aiq, digital advisor keystone, advanced data protection, ADP, MetroCluster, consumption data, health status, primary site, mirror site, sync status, ONTAP Mediator, capacity utilization, consumption trends, license distribution, usage insights, license types, v1, v2, v3, bluexp, NetApp Console, Console 
+summary: 当您在 Keystone 中订阅高级数据保护附加服务时，可查看消耗数据、监控运行状况，并跟踪 MetroCluster 合作伙伴站点的 ADP 许可证分发情况。 
 ---
 = 查看 Keystone MetroCluster 订阅的消耗量和运行状况
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 当您订阅 Keystone 中的高级数据保护附加服务时，可以�
 
 
 [role="lead"]
-当你订阅高级数据保护附加服务时，你可以在 NetApp Console 或 Digital Advisor 中查看你的 MetroCluster 伙伴站点的消耗数据。在 NetApp Console 中，你还可以监控你的 MetroCluster 配置的复制状态和健康状况。
+当您订阅高级数据保护附加服务时，可以在 NetApp Console 或 Digital Advisor 中查看您的 MetroCluster 合作伙伴站点的消费数据。在 NetApp Console 中，您还可以监控 MetroCluster 配置的健康状况，并跟踪高级数据保护许可证的分配情况。
 
 
 
@@ -38,7 +38,7 @@ TIP: MetroCluster 订阅由 image:metrocluster-icon.png["MetroCluster 订阅符�
 
 . 选择 *Advanced data protection (ADP)* 选项卡。
 +
-在此选项卡上，您可以查看主站点和镜像站点上基本性能服务级别的消耗数据，监视 MetroCluster 设置的运行状况，并跟踪其同步状态。
+在此选项卡上，您可以查看主站点和镜像站点上基本性能服务级别的消耗数据，监控 MetroCluster 设置的运行状况和同步状态，并查看两个集群中的 ADP 许可证利用率和分发情况。
 
 +
 ** 查看所选时间段的消耗分布图。
@@ -50,10 +50,20 @@ TIP: MetroCluster 订阅由 image:metrocluster-icon.png["MetroCluster 订阅符�
 NOTE: 对于基本性能服务级别，每个卷都按主站点和镜像站点上的设置收费。因此，该图表被分割以反映每个站点的消耗量。
 
 +
-*示例：*工具提示显示消耗值，例如主站点为 1.15 TiB，镜像站点为 4.22 TiB。
+*示例：*工具提示显示消耗值，例如主站点为 109.29 TiB，镜像站点为 111.97 TiB。
 
 +
-image:adp-consumption-chart.png["显示 MetroCluster 消耗分布的折线图，主站点为 1.15 TiB，镜像站点为 4.22 TiB，显示在工具提示中"]
+image:adp-consumption-chart-1.png["显示 MetroCluster 消耗分布的折线图，主站点为 1.15 TiB，镜像站点为 4.22 TiB，显示在工具提示中"]
+
+** 查看所选时间段的许可证分布图。
++
+该图表显示了群集 A（主要）和群集 B（镜像）的 ADP 许可证使用情况。根据与订阅关联的许可证版本，图表显示每个站点上每个 ADP 附加组件性能服务级别（如 _Advanced data-protect premium tiering_ 和 Data-protect premium tiering）的消耗量。
+
++
+image:adp-license-distribution.png["堆叠条形图显示不同许可证版本在 Cluster A 和 Cluster B 中的 ADP 许可证分配"]
+
++
+您可以使用此数据验证给定日期的计费是否正确，并交叉检查订阅的使用借方值。
 
 ** 在 *ADP 拓扑* 视图中监控 MetroCluster 设置的运行状况。
 +

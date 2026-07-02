@@ -2312,9 +2312,7 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="dfde62f4169c1a6e0ed4f38055fa2774" category="paragraph">下图显示了这些受支持的 MetroCluster 配置：</block>
   <block id="c0ba0a76f531a20bbda6af3c55a46aac" category="inline-image-macro">显示三种 MetroCluster 配置的图表：具有对称镜像的主动/被动，具有全双向镜像的主动/主动，以及具有部分镜像的主动/主动</block>
   <block id="9675e25ec9f821651df1c740fe778f97" category="paragraph"><block ref="9675e25ec9f821651df1c740fe778f97" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dcf5106043aa7bde76b50aee99982689" category="summary">当您订阅 Keystone 中的高级数据保护附加服务时，可以查看 MetroCluster 合作伙伴站点的消费数据并监控其运行状况。</block>
   <block id="511c40cd8a486a0e8aa1251baf8515ee" category="doc">查看 Keystone MetroCluster 订阅的消耗量和运行状况</block>
-  <block id="54cce4aba23f46d3958d61fbb2b10e3a" category="paragraph">当你订阅高级数据保护附加服务时，你可以在 NetApp Console 或 Digital Advisor 中查看你的 MetroCluster 伙伴站点的消耗数据。在 NetApp Console 中，你还可以监控你的 MetroCluster 配置的复制状态和健康状况。</block>
   <block id="f74fc96e874e659d41c34561f30f3fee" category="section-title">查看 MetroCluster 订阅消费和运行状况状态</block>
   <block id="b49647b9b1e8bc3c8d8768be0c33c9b2" category="paragraph">请按照以下步骤操作：</block>
   <block id="1a94b13632bb1f29b09280731ca462ed" category="list-text">在*订阅号*列中选择 MetroCluster 订阅。</block>
@@ -2322,13 +2320,10 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="26546fe0e238d82fb8663584226d1478" category="admonition">MetroCluster 订阅由 <block ref="a865e8e7573241a1da9d2c81b0ca0ac4" category="inline-image-macro-rx" type="image"></block> 图标标识。</block>
   <block id="18c635825cb497bac7e5931ccc134aa0" category="paragraph">*当前消耗*选项卡打开并显示您订阅的基本性能服务级别及其相应的高级数据保护性能服务级别的消耗洞察。您可以以表格或图形格式查看此信息。要了解更多信息，请参阅 <block ref="fad18dbea5fe4d53670ce8b5f31e4228" category="inline-link-macro-rx"></block>。</block>
   <block id="86c03d482bf25fa66342ff23f81a8b8b" category="list-text">选择 *Advanced data protection (ADP)* 选项卡。</block>
-  <block id="45251127b3bb3ae466aebfd15071b035" category="paragraph">在此选项卡上，您可以查看主站点和镜像站点上基本性能服务级别的消耗数据，监视 MetroCluster 设置的运行状况，并跟踪其同步状态。</block>
   <block id="1c1a142854f6ec09d46068011af3620f" category="list-text">查看所选时间段的消耗分布图。</block>
   <block id="c5b9cac50bff77d9caef636546a52cc3" category="paragraph">该图表显示了主站点和镜像站点的消耗量。将鼠标悬停在图表上可查看每个站点的消耗量明细，单位为 tebibytes (TiB)。</block>
   <block id="5e3aabd541f9a8089c9a46b80f9c78e3" category="admonition">对于基本性能服务级别，每个卷都按主站点和镜像站点上的设置收费。因此，该图表被分割以反映每个站点的消耗量。</block>
-  <block id="886bb30f5882831107de008efbb56e4c" category="paragraph">*示例：*工具提示显示消耗值，例如主站点为 1.15 TiB，镜像站点为 4.22 TiB。</block>
   <block id="7d46ce3951e18767710379cf79e92352" category="inline-image-macro">显示 MetroCluster 消耗分布的折线图，主站点为 1.15 TiB，镜像站点为 4.22 TiB，显示在工具提示中</block>
-  <block id="1581159ff20524ddc181e539ca73cec9" category="paragraph"><block ref="1581159ff20524ddc181e539ca73cec9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="069a24e74f6fefe228c9ce5d28b7e67b" category="list-text">在 *ADP 拓扑* 视图中监控 MetroCluster 设置的运行状况。</block>
   <block id="92d375ae13aef349145e8dc2877f3c76" category="inline-link-macro">了解 ONTAP Mediator</block>
   <block id="22273e2e3da5fac4fab6a5af929487f6" category="paragraph">拓扑显示主站点和镜像站点之间的连接状态（正常、降级、断开连接或初始化）、数据同步状态（同步或不同步）以及 ONTAP Mediator 状态（如果已配置）。要了解有关 ONTAP Mediator 的更多信息，请参阅 <block ref="fa6b7569dc18495dda4bcaf9e0e6d31d" category="inline-link-macro-rx"></block>。</block>
@@ -2539,7 +2534,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="75e68181255b1c90bd260488cd15b20b" category="admonition">仅当数据分层到任何非 NetApp 存储（如 Amazon Web Services (AWS) S3、Azure Blob、Google Cloud Platform (GCP) 和其他 Keystone STaaS 支持的、S3 兼容的第三方对象存储）时，才需要分层附加服务。此服务仅适用于统一数据存储类型。</block>
   <block id="e4939875bf7b1945d089de8588791605" category="doc">了解 Keystone 中的存储指标和定义</block>
   <block id="ab111be95a3b1e0a20af6d3cc9835537" category="paragraph">了解 Keystone STaaS 用于衡量和报告存储订阅的关键术语，包括容量单位、性能指标和可用性定义。</block>
-  <block id="b5481634031c8db3579143636cc56f56" category="paragraph">Keystone STaaS 为每种存储类型提供预定义的性能服务级别 (PSL)。每个 PSL 都指定了性能目标（IOPS、吞吐量和延迟）、支持的协议、平台和最小容量要求。查看可用的 PSL，为您的工作负载选择合适的服务级别，并规划您的订阅。</block>
   <block id="b0dc64ee46414f1cba4fa86cb3cecb46" category="paragraph">Keystone 订阅可以包括一个或多个存储类型的多个 PSL。每个 PSL 都有一个承诺容量，这是在订阅期限内为该服务级别计费的最低容量。</block>
   <block id="61d50a4de5460f878250bbbb0807eaa0" category="admonition">AFX 订阅仅限于 AFX 存储类型，目前仅提供一个 PSL Extreme。</block>
   <block id="4e4e6e5b08219061956b8d07df28d2e9" category="section-title">性能服务级别实例</block>
@@ -2731,4 +2725,28 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="96eda23bc910b422399a3d3faca263de" category="paragraph">过期订阅的到期日期不正确</block>
   <block id="bab3c4cbe1382c763eff57041def5e4a" category="paragraph">在 *Subscriptions* 选项卡中，过期的订阅会将昨天的日期显示为到期日期，而不是实际的订阅结束日期。</block>
   <block id="81d0f400f0bffbb1e2341f849b8278b7" category="section-title">2026 年 5 月 25 日</block>
+  <block id="14bea224c3ef88c765b41449933ebeb8" category="doc">查看 MetroCluster 订阅的 ADP 许可证分发</block>
+  <block id="3ad62afeef69f8bc4e30a8bf1cd4ed24" category="paragraph">*高级数据保护 (ADP)* 选项卡上现在有一个新的*许可证分发*子选项卡，让您可以查看 MetroCluster 合作伙伴集群中的 ADP 许可证使用情况。要了解更多信息，请参阅 <block ref="1c707f11dcf40c95719514b3f1835196" category="inline-link-macro-rx"></block>。</block>
+  <block id="82ee282c36e597ba42bea56f0d029b9e" category="section-title">查看卷的勒索软件防护状态</block>
+  <block id="959a686de018aa5e6a4a2b33d83ab22b" category="inline-link-macro">ONTAP 中的自主勒索软件保护 (ARP)</block>
+  <block id="1c18f5a662955e3a23a23d54aca043b6" category="paragraph">*资产*中的*集群中的卷*选项卡现在包含一个 *ARP 状态*列，显示每个卷是启用还是禁用自主勒索软件防护 (ARP)，让您可以查看托管资产中的勒索软件防护状态。要了解有关 ARP 的更多信息，请参阅 <block ref="b12af018ff0eb76de3921de73532693b" category="inline-link-macro-rx"></block>。</block>
+  <block id="aa2298f4012d00689c6db262f51b627f" category="section-title">使用"反馈"选项卡分享反馈</block>
+  <block id="6938bc958f8539e0bb0d56145bf54011" category="paragraph">现在，您可以使用锚定在屏幕右下角的新*反馈*选项卡，从 Keystone 控制面板中的任何屏幕提供反馈。点击它将打开一个面板，您可以在其中分享您的体验并直接向 NetApp 提交评论。</block>
+  <block id="03c47a6c52980a6f54e9df7f4c59cb77" category="section-title">改进容量使用和订阅到期的警报</block>
+  <block id="00d1cd9fd062313d8bbfe761883837c6" category="paragraph">系统生成的监控器现在为容量使用情况和订阅到期提供更精细的告警。</block>
+  <block id="ba9431d5ada7b4b6e05b421ef88f8c24" category="paragraph">对于订阅到期，警报现在在五个阈值处触发：到期前 180、90、60、30 和 7 天，随着日期临近，严重程度从信息级别升级为严重级别。</block>
+  <block id="8a46b64d28b84f6e9e9f3b9872e38cee" category="paragraph">对于容量使用情况，突发警报阈值现在基于订阅的承诺突发百分比，而不是固定的 20%。例如，如果您的承诺突发为 40%，则关键警报将在承诺容量利用率的 140% 时触发。</block>
+  <block id="e3d24640551dafdb75a00b4fd537dff8" category="paragraph">要了解更多信息，请参阅 <block ref="cbab6f28009066f6897c1b7fa4cf2447" category="inline-link-macro-rx"></block>。</block>
+  <block id="c1b9720fa055aceaf15e4ae2d736bee4" category="paragraph">Keystone STaaS 为每种存储类型提供预定义的性能服务级别 (PSL)，也称为基本性能服务级别。每个 PSL 都指定了性能目标（IOPS、吞吐量和延迟）、支持的协议、平台和最小容量要求。查看可用的 PSL，为您的工作负载选择合适的服务级别，并规划您的订阅。</block>
+  <block id="945427e2b06f5c5b28a97a55a2562518" category="summary">当您在 Keystone 中订阅高级数据保护附加服务时，可查看消耗数据、监控运行状况，并跟踪 MetroCluster 合作伙伴站点的 ADP 许可证分发情况。</block>
+  <block id="1d06cc542caaddb07154ca467aff5db5" category="paragraph">当您订阅高级数据保护附加服务时，可以在 NetApp Console 或 Digital Advisor 中查看您的 MetroCluster 合作伙伴站点的消费数据。在 NetApp Console 中，您还可以监控 MetroCluster 配置的健康状况，并跟踪高级数据保护许可证的分配情况。</block>
+  <block id="d39a6670ebd1d60790283a50ae2596dd" category="paragraph">在此选项卡上，您可以查看主站点和镜像站点上基本性能服务级别的消耗数据，监控 MetroCluster 设置的运行状况和同步状态，并查看两个集群中的 ADP 许可证利用率和分发情况。</block>
+  <block id="657c60651516cc4f005bfe07bff6ff18" category="paragraph">*示例：*工具提示显示消耗值，例如主站点为 109.29 TiB，镜像站点为 111.97 TiB。</block>
+  <block id="88b27708c84bb189d3b4a7928273f52b" category="paragraph"><block ref="88b27708c84bb189d3b4a7928273f52b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="01b8b12e2adaa33957abe80ab7f2437f" category="list-text">查看所选时间段的许可证分布图。</block>
+  <block id="32fc724cbc1e28cbde9f99d79050020d" category="paragraph">该图表显示了群集 A（主要）和群集 B（镜像）的 ADP 许可证使用情况。根据与订阅关联的许可证版本，图表显示每个站点上每个 ADP 附加组件性能服务级别（如 _Advanced data-protect premium tiering_ 和 Data-protect premium tiering）的消耗量。</block>
+  <block id="adb38e93c1bf605d9c642034b6e8ecaa" category="inline-image-macro">堆叠条形图显示不同许可证版本在 Cluster A 和 Cluster B 中的 ADP 许可证分配</block>
+  <block id="b52a8fe5a68b65cd156fdbdd49db6e3f" category="paragraph"><block ref="b52a8fe5a68b65cd156fdbdd49db6e3f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="012c1fa51b2cce435780c63eb94ec4e8" category="paragraph">您可以使用此数据验证给定日期的计费是否正确，并交叉检查订阅的使用借方值。</block>
+  <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">2026 年 6 月 29 日</block>
 </blocks>
