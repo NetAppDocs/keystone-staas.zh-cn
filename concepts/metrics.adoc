@@ -18,6 +18,7 @@ summary: NetApp Keystone STaaS服务使用多个术语来衡量指标。在使�
 
 
 
+[[metrics-measurement]]
 == 衡量指标
 
 * *以 GiB、TiB 和 PiB 为单位的容量测量*：使用 1024 为基数测量数据存储容量（1 GiB = 1024^3^ 字节、1 TiB = 1024^4^ 字节和 1 PiB = 1024^5^ 字节）。

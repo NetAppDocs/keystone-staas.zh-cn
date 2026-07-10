@@ -20,24 +20,28 @@ summary: 美国受保护支持是一项附加服务、可为美国公民在美�
 
 
 
+[[netapp-usps-monitoring]]
 == NetApp USPS监控
 
 NetApp USPS Keystone支持团队可监控您的产品和订阅服务的运行状况、提供远程支持并与Keystone成功经理协作。监控与相关Keystone订阅订单相关的产品的所有人员均为美国 在美国领土上作业的美国公民。
 
 
 
+[[keystone-success-manager]]
 == Keystone Success Manager
 
 Keystone成功经理(KSM)是一名美国员工美国公民土壤。其职责在您的NetApp Keystone 协议中进行了规定。
 
 
 
+[[deployment-activities]]
 == 部署活动
 
 如果适用、现场和远程部署和安装活动由美国执行美国公民土壤。脚注：免责声明[现场活动是否有合适的人员取决于Keystone系统部署的地理位置。]
 
 
 
+[[support]]
 == 支持
 
 必要的现场故障排除和支持活动(如果有)由美国政府执行美国公民土壤。脚注：免责声明

@@ -40,6 +40,7 @@ image:cidr-list.png["允许的网络接口"]
 
 
 
+[[generate-and-collect-support-bundles]]
 == 生成并收集支持包
 
 要对Keystone收集器的问题进行故障排除、您可以与NetApp支持人员联系、他们可能会要求提供_.tar_文件。您可以通过Keystone收集器管理TUI实用程序生成此文件。

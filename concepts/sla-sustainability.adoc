@@ -18,6 +18,7 @@ summary: 了解 Keystone 可持续性 SLO 如何为您的 STaaS 部署定义功�
 
 
 
+[[metrics]]
 == 指标
 
 * *瓦特*：存储阵列或 AFX 群集消耗的功率，并由监控工具报告。参考最大功耗限制在 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 中提供。
@@ -33,6 +34,7 @@ summary: 了解 Keystone 可持续性 SLO 如何为您的 STaaS 部署定义功�
 
 
 
+[[supported-configurations]]
 === 支持的配置
 
 可持续性 SLO 适用于具有以下支持配置的标准 Keystone STaaS 订单：
@@ -47,6 +49,7 @@ summary: 了解 Keystone 可持续性 SLO 如何为您的 STaaS 部署定义功�
 
 
 
+[[service-credits]]
 == 服务抵免额
 
 
@@ -80,6 +83,7 @@ NOTE: SLA和保证按提名提供。
 |===
 
 
+[[service-credit-request]]
 === 服务信用请求
 
 要申请服务消费金，请在服务月结束后 7 天内向 NetApp Keystone 支持开具优先级 3 (P3) 支持工单，并在 excel 表格中提供所需的详细信息，如下所示：

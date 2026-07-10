@@ -18,6 +18,7 @@ summary: 作为 NetApp Keystone STaaS 订阅者，您可以搜索和过滤数据
 
 
 
+[[search-and-filter-data-from-netapp-console]]
 == 从NetApp控制台搜索和过滤数据
 
 在控制台中，您可以根据选项卡内表中可用的列参数搜索和过滤Keystone数据。例如，在*Subscriptions*页面下的*Subscriptions*选项卡中，您可以通过在搜索框中输入Keystone版本来过滤数据。同样，在“资产”页面下的“集群中的卷”选项卡中，您可以通过在搜索框中输入卷名称来过滤卷。
@@ -26,6 +27,7 @@ summary: 作为 NetApp Keystone STaaS 订阅者，您可以搜索和过滤数据
 
 
 
+[[generate-reports-from-netapp-console-or-digital-advisor]]
 == 从NetApp Console 或Digital Advisor生成报告
 
 您可以使用下载按钮生成并查看Keystone数据报告image:bluexp-download-report-2.png["控制台中的报告下载图标 2"]可在控制台或Digital Advisor内的选项卡中使用。这些选项卡允许您为订阅、历史使用情况、突发使用情况、性能、资产、卷和对象生成报告。
@@ -34,6 +36,7 @@ summary: 作为 NetApp Keystone STaaS 订阅者，您可以搜索和过滤数据
 
 
 
+[[generate-consolidated-report-from-digital-advisor]]
 == 从数字顾问生成综合报告
 
 在 Digital Advisor 中，您可以生成并查看您的订阅、历史使用情况、突发使用情况、性能、资产以及卷和对象的综合报告。要执行此操作，请从Digital Advisor的“报告”功能中选择*Keystone订阅*作为报告类型。您可以在客户、集群、监视列表或订阅级别生成这些报告。

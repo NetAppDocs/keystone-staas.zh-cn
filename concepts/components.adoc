@@ -18,48 +18,56 @@ summary: 了解在您的环境中启用NetApp Keystone STaaS服务所需的组�
 
 
 
+[[site-requirements]]
 == 站点要求
 
 某些站点特定的要求、例如空间、机架、PDU、电源、 和散热、以及此处讨论的其他网络和安全要求。
 
 
 
+[[space]]
 === 空间
 
 用于托管Keystone基础架构设备的占地空间(由客户提供)。NetApp 会根据最终配置提供重量规格。
 
 
 
+[[racks]]
 === 机架
 
 客户运营的产品中的四个后机架（由客户提供）。在 NetApp 运营的产品中， NetApp 或客户均可根据要求提供机架。NetApp 提供 42 个深机架。
 
 
 
+[[pdus]]
 === PDU
 
 您应提供已连接到两个单独的受保护电路且具有足够C13插座的配电单元(PDU)。在客户运营的产品中，在某些情况下，需要 C19 网点。在NetApp运营的产品中、NetApp或客户均可根据要求提供PDU。
 
 
 
+[[power]]
 === 电源
 
 您应提供所需的电源。NetApp 将根据 200V 额定电压（典型 A ，最大 A ，典型 W ，最大 W ，电源线类型， 和数量），具体取决于最终配置。所有组件都具有冗余电源。NetApp 将提供机柜内电源线。
 
 
 
+[[cooling]]
 === 散热
 
 NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU ，最大 BTU ）。
 
 
 
+[[virtual-machines]]
 === 虚拟机
 
 要部署Keystone收集器和ITOM收集器、需要使用虚拟机。有关安装前提条件，请参见link:../installation/installation-overview.html["Keystone收集器安装指南"]和link:../installation/itom-prereqs.html["ITOM收集器的安装要求"]。其他要求将在部署期间共享。
 
 
 
+[[deployment-options]]
 === 部署选项
 
 Keystone收集器可通过以下方法部署：
@@ -80,6 +88,7 @@ TIP: 建议使用Debian 12、Windows Server 2016或更高版本的操作系统�
 
 
 
+[[networking]]
 === 网络
 
 软件更新和使用情况数据上传需要对_keystone.AIo.com_进行出站访问、这对于NetApp收集器和AIops解决方案网关的操作和维护至关重要。
@@ -90,6 +99,7 @@ NetApp仅为NetApp提供的基础架构设备提供所需的收发器。您应�
 
 
 
+[[remote-access-requirement]]
 == 远程访问要求
 
 客户数据中心安装的存储基础架构或客户拥有的联合服务与Keystone运营中心之间需要网络连接。客户负责提供计算和虚拟机以及互联网服务。客户还负责操作系统修补(非基于OVA的部署)以及基于内部安全策略的安全强化。网络设计应采用安全协议、并且NetApp和客户都将批准防火墙策略。

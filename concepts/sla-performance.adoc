@@ -18,6 +18,7 @@ Keystone STaaS 提供基于延迟的性能服务级别目标 (SLO)，针对统�
 
 
 
+[[metrics]]
 == 指标
 
 * *性能降级*：^未达到第90^百分位延迟目标的时间(以分钟为单位)。
@@ -39,6 +40,7 @@ Keystone STaaS 提供基于延迟的性能服务级别目标 (SLO)，针对统�
 
 
 
+[[service-credits]]
 == 服务抵免额
 
 
@@ -58,6 +60,7 @@ NetApp会为性能降级发放服务抵免额：
 |===
 
 
+[[service-credit-calculation]]
 === 服务抵免额计算
 
 服务抵免额通过以下公式确定：
@@ -93,6 +96,7 @@ NetApp会为性能降级发放服务抵免额：
 
 
 
+[[service-credit-request]]
 === 服务信用请求
 
 如果检测到违反SLA、请向NetApp Keystone支持部门开立优先级3 (P3)支持服务单。

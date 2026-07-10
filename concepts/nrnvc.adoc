@@ -32,6 +32,7 @@ summary: 作为NetApp Keystone订阅的一部分、NetApp扩展了NRVC为您的�
 
 
 
+[[snaplock-compliance]]
 == SnapLock 合规性
 
 SnapLock 技术可在卷中设置的到期日期之后使驱动器不可用、从而启用NRNVC功能。要在卷上使用SnapLock 技术、您需要订阅NRNVC。这仅适用于文件和块服务。

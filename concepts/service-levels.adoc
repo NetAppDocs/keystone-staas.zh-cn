@@ -23,6 +23,7 @@ NOTE: AFX 订阅仅限于 AFX 存储类型，目前仅提供一个 PSL Extreme�
 
 
 
+[[performance-service-levels-instances]]
 == 性能服务级别实例
 
 在您的环境中，性能服务级别 (PSL) 可以有多个实例，称为性能服务级别实例 (PSLI)。每个 PSLI 都是分配给该性能服务级别的独立存储系统，承诺容量按每个 PSLI 进行测量。
@@ -40,6 +41,7 @@ TIP: NetApp Keystone STaaS 性能服务级别的详细服务说明可供查阅 h
 
 
 
+[[performance-service-levels-for-unified-storage]]
 == 统一存储的性能服务级别
 
 |===
@@ -76,6 +78,7 @@ TIP: NetApp Keystone STaaS 性能服务级别的详细服务说明可供查阅 h
 |===
 
 
+[[performance-service-levels-for-block-optimized-storage]]
 == 块优化存储的性能服务级别
 
 |===
@@ -112,6 +115,7 @@ TIP: NetApp Keystone STaaS 性能服务级别的详细服务说明可供查阅 h
 |===
 
 
+[[performance-service-levels-for-afx-storage]]
 == AFF 存储的性能服务级别
 
 |===
@@ -155,6 +159,7 @@ TIP: NetApp Keystone STaaS 性能服务级别的详细服务说明可供查阅 h
 ====
 
 
+[[performance-measurement-conditions-for-unified-block-optimized-and-afx-storage]]
 == 统一、块优化和 AFX 存储的性能测量条件
 
 基本性能服务级别指标取决于以下条件：
@@ -191,6 +196,7 @@ TIP: NetApp Keystone STaaS 性能服务级别的详细服务说明可供查阅 h
 
 
 
+[[performance-service-levels-for-object-storage]]
 == 对象存储的性能服务级别
 
 |===
@@ -215,6 +221,7 @@ TIP: NetApp Keystone STaaS 性能服务级别的详细服务说明可供查阅 h
 |===
 
 
+[[cloud-storage]]
 == 云存储
 
 |===

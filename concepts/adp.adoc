@@ -25,6 +25,7 @@ Keystone 高级数据保护服务可以将数据同步镜像到辅助站点。�
 
 
 
+[[understand-pricing]]
 == 了解定价
 
 高级数据保护附加服务的定价基于每个站点的承诺容量。附加费用适用于订阅中的所有容量，包括源数据、镜像副本和未镜像数据。
@@ -40,6 +41,7 @@ Keystone 高级数据保护服务可以将数据同步镜像到辅助站点。�
 
 
 
+[[supported-metrocluster-configurations]]
 == 支持的 MetroCluster 配置
 
 Keystone 支持以下 MetroCluster 部署方案：

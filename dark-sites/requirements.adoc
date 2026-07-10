@@ -18,6 +18,7 @@ summary: '在无法访问Internet的环境(也称为_dark site_or _private mode_
 
 
 
+[[requirements-for-vmware-vsphere]]
 == VMware vSphere的要求
 
 * 操作系统：VMware vCenter 服务器和 ESXi 8.0 或更高版本
@@ -28,6 +29,7 @@ summary: '在无法访问Internet的环境(也称为_dark site_or _private mode_
 
 
 
+[[requirements-for-linux]]
 == Linux的要求
 
 * 操作系统（选择一项）：
@@ -81,6 +83,7 @@ NOTE: Keystone Collector 仅支持上述第三方软件包。不支持安装其�
 
 
 
+[[networking-requirements]]
 == 网络要求
 
 Keystone收集器的网络连接要求如下：

@@ -2375,7 +2375,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="3f20b3134627198be1e0ff879a88cd8f" category="sidebar">高级数据保护</block>
   <block id="ca1d1a0086fee239544c6e4e89b5f8f8" category="doc">Data Infrastructure Insights 附加项消耗显示</block>
   <block id="4d0aa03b8805975279d25e57b83cad25" category="inline-link-macro">查看 DII 消耗量</block>
-  <block id="903f10a385ab3936430e26fbc1b90d88" category="paragraph">Data Infrastructure Insights (DII) 附加组件消耗现在显示在*当前消耗*和*消耗趋势*选项卡中。要了解更多信息，请参阅 <block ref="e1ed0a5aaa8506a20b57415cc0717b20" category="inline-link-macro-rx"></block>。</block>
   <block id="ade2f26a9f9c3f533ed70befc7417b6b" category="section-title">关于 Keystone 订阅的 DII</block>
   <block id="9843f64ed3799d5bdb14dda01a9b5a37" category="paragraph">DII 适用于新订阅和现有订阅。它可以集成到 Keystone 订阅中，作为承诺容量的附加组件。</block>
   <block id="28ee0e8daa391f128672facc133e687f" category="paragraph">当 DII 集成到 Keystone 订阅中时，它将为订阅中的每个基本性能服务级别提供相应的性能服务级别。例如，Extreme 映射到 DII Extreme，Premium 映射到 DII Premium，以及 Performance 映射到 DII Performance。这些映射可确保 DII 性能服务级别与 Keystone 订阅的基本性能服务级别保持一致。</block>
@@ -2402,14 +2401,11 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="40f098b2e9bcd6666815272fd1d0b84e" category="list-text">在 24 小时内，至少应有 10 个有效的指标可用。如果不满足条件，指标将被丢弃。</block>
   <block id="b4508efb1fe09000c916385cb19795aa" category="cell">*受影响的日历天数*</block>
   <block id="3006a02699b8df924e1d005be208a0d9" category="doc">集群中的卷选项卡中的新列</block>
-  <block id="0d7094993a6b3f640bb98a53fea4c3fe" category="paragraph">在 *Assets* 中的 *Volumes in clusters* 选项卡中添加了三个新列：*Hot data*、*Cold tier (%)* 和 *Hot tier (%)*。如需了解更多信息，请参阅 <block ref="7a83cbc726dfc64910620370804f995c" category="inline-link-macro-rx"></block> 和 <block ref="4baf769758bbb5f82afb8a6245e88ae4" category="inline-link-macro-rx"></block>。</block>
   <block id="c9a8bf8065acc2e0c13bda0c7508bd25" category="section-title">消费趋势中的已开票、未开票和临时突发用量</block>
-  <block id="d2de7b158906998c4520b48e1e885356" category="paragraph">*消费趋势*选项卡中的应计突发计费图现在显示已开票、未开票和临时突发使用情况。要了解更多信息，请参阅 <block ref="ac1214b73681d020aa16f3f415bc4e23" category="inline-link-macro-rx"></block>。</block>
   <block id="96d0cd446eb21b1af6c182f7aae637fc" category="section-title">监控视图的增强功能</block>
   <block id="4195f4a8e15a8ca8892e6bf2c9328dfc" category="paragraph">*Monitoring* 视图包含以下更新：</block>
   <block id="fdfe720b9ab3394f0dd5d8f33c28b35e" category="list-text">*Alerts 选项卡*：*Alert* 列重命名为 *Alert type &amp; condition*。您现在还可以使用 *Status* 列旁边的省略号图标来编辑 alert、添加备注或查看 alert 详细信息。</block>
   <block id="358e8af2cd36faf26c9af8949d13a966" category="list-text">*Alert monitors 选项卡*：*Condition* 列重命名为 *Monitor type &amp; condition*。</block>
-  <block id="b9744367609c907fb529ab20aba9b41b" category="paragraph">要了解更多信息，请参阅 <block ref="537df2748cf4cb2e4b656209c1a786f9" category="inline-link-macro-rx"></block> 和 <block ref="cbab6f28009066f6897c1b7fa4cf2447" category="inline-link-macro-rx"></block>。</block>
   <block id="699549a6c51c3112d231898402b61156" category="admonition">Keystone Collector 仅支持上述第三方软件包。不支持安装其他软件，这可能会影响收集器性能、数据收集和计费准确性。</block>
   <block id="9fc675b55df5c666e277ff0ddb9918bc" category="paragraph">您可以看到关于群集中的卷的详细信息，包括卷名、节点序列号、群集名称、主机名和性能服务级别。您还可以监控调配的容量、逻辑和物理利用率、冷数据和热数据。</block>
   <block id="951a19f47f142d3bea8b273df96be4b3" category="admonition">*Cold tier %* 和 *Hot tier %* 列显示每个层的数据百分比，分别计算为（Cold data / Total footprint）× 100 和（Hot data / Total footprint）× 100。</block>
@@ -2433,10 +2429,8 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="c4a7223f29b332fc54d3573ee04a51a1" category="list-text">从 *From Date* 和 *To Date* 字段中的日历图标选择时间范围。默认情况下，日期范围是从今天开始的最近 30 天。您可以更改此范围，但不能选择未来日期。</block>
   <block id="9b6f9894a20aba8f70839ec910a9bee6" category="admonition">如果选择的日期范围小于 30 天，则图表仅显示所选日期每天的一个数据收集点。例如，4 天的范围显示 4 个数据收集点，而不是 30 个。对于任何选定的范围，只有日期显示在图表的底部。只有当您使用下面描述的放大功能放大图表时，才能看到时间戳。</block>
   <block id="18515b3c335f09237bc0721c0cb72b94" category="doc">历史消费图表上突发容量以上</block>
-  <block id="ccb30c6d28628d4a2488596de7e2891b" category="paragraph">*消费趋势*选项卡中的历史消费图表现在突出显示超出突发限制的使用情况。要了解更多信息，请参阅 <block ref="06dd3a9283773166a29e1b7ff4424218" category="inline-link-macro-rx"></block>。</block>
   <block id="b3dc9240b9d14158cfa1e8c9f006c4cc" category="section-title">容量使用预测</block>
   <block id="d91e86bb82b2e269900865aa75c2f6b1" category="inline-link-macro">查看预测数据</block>
-  <block id="0794ebef867392ddd8fde9d8acc33d95" category="paragraph">您可以在 *消耗趋势* 选项卡的 *历史消耗* 视图中使用 *Forecast* 切换来预测当前日期后 120 天的容量使用情况。要了解更多信息，请参阅 <block ref="9484ad044036df23422b98e69c766760" category="inline-link-macro-rx"></block>。</block>
   <block id="3cad4604b833d612cf60efacf78eba67" category="section-title">订阅导出中的跟踪 ID</block>
   <block id="7c8889a3dbf6564af66cd90c8d50ab99" category="paragraph">现在，从*订阅*页面下载的订阅报告在 Excel 和 CSV 格式的性能服务级别数据中都包含*跟踪 ID*。</block>
   <block id="4f5116f256021abd73dfaa4f95b17237" category="section-title">订阅页面列可见性更新</block>
@@ -2643,7 +2637,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="bbb8f007e34c0752a6b247756b53fab3" category="doc">已重命名预配容量标签</block>
   <block id="d174bb4b9301e712299bb2a97af43ea4" category="paragraph">标签 *Provisioned capacity* 已重命名为 *Provisioned volume capacity*。更新后的标签也会反映在相关的 CSV 和 Excel 报告中。</block>
   <block id="c959d5af4f5382807b954dd4e30cb885" category="section-title">应计突发的预测切换</block>
-  <block id="a210e1436e5783be9e7a1e80f658f571" category="paragraph">现在，您可以使用 *消费趋势* 选项卡的 *累计突发* 视图中的 *预测* 切换来预测当前日期后 120 天的累计突发使用情况。要了解更多信息，请参阅 <block ref="9484ad044036df23422b98e69c766760" category="inline-link-macro-rx"></block>。</block>
   <block id="b833fc063470eb72aa05a5570f243c7b" category="admonition">您可以使用 *Forecast* 切换在 *Historical consumption* 视图中查看预计容量使用情况，并在 *Accrued burst* 视图中查看预计应计突发。如需了解更多信息，请参阅 <block ref="c3e0115050031e1e905cbb5a43dfe637" category="inline-link-macro-rx"></block>。</block>
   <block id="f0966c8c81211afb8b1cacba8a9fa525" category="paragraph">您可以通过 Console 或 Digital Advisor 查看累计突发数据使用情况。如果您在 Console 的*消费趋势*选项卡的*视图*下拉列表中选择了*累计突发*，或者在 Digital Advisor 的*消费趋势*选项卡中选择了*已开票累计突发*选项，则可以根据所选的计费周期，按月或按季度查看累计突发数据使用情况。</block>
   <block id="30403a0435001d542a0a621f63da7853" category="paragraph">在控制台中，当 *Forecast* 切换被禁用时，您可以查看已开具发票的突发使用情况以及未开具发票的突发使用情况（已累计但尚未计费）和临时突发使用情况（在当前计费周期内累计且尚未开具发票）。启用 *Forecast* 切换时，图表还显示从当前日期起接下来 120 天的预计应计突发使用量。要了解有关 *Forecast* 切换的更多信息，请参阅 <block ref="c3e0115050031e1e905cbb5a43dfe637" category="inline-link-macro-rx"></block>。</block>
@@ -2718,7 +2711,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="8c4d76fa92f09a8376865002414752f9" category="sidebar">何时生成发票？</block>
   <block id="58738d2f8ee7ea1370382ef241eb44f2" category="sidebar">了解 Keystone 账单</block>
   <block id="4f4e942fb2a8e3cbbc7009bb9e99d967" category="doc">改进了订阅时间线中同一天多个更新的显示</block>
-  <block id="fad09c803865d7a730faa5e2a3f20dc6" category="paragraph">订阅时间表图表现在会显示在同一天发生多个不同类型的订阅更新时的数字，而不是单独的图标。将鼠标悬停在数字上可查看当天的所有更新类型。下载的报告包括每个更新的单独一行，为您提供所有更改的完整记录。要了解更多信息，请参阅 <block ref="6bdc06544a2a6817dc4209abc6ea98ff" category="inline-link-macro-rx"></block>。</block>
   <block id="0e3e57bffd0893b655bd0cbbfa13b3f1" category="paragraph"><block ref="0e3e57bffd0893b655bd0cbbfa13b3f1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb648f8805fc9b54e9ef8edf7809ab97" category="paragraph">默认情况下，订阅时间轴显示为折线图，图标标记重要事件。当同一天发生多个不同类型的订阅更新时，图表将显示一个数字而不是单独的图标。将鼠标悬停在数字上可查看当天发生的所有更新类型，或将鼠标悬停在任何事件图标上可查看日期和承诺容量更改等详细信息。要在表格中查看这些事件，请从 *View as* 下拉列表中选择 *Table* 选项。要查看其他订阅时间表，请从 *Tracking ID* 下拉列表中选择或搜索。</block>
   <block id="08e7a28380a64fb6e2353778c694c0a9" category="paragraph"><block ref="08e7a28380a64fb6e2353778c694c0a9" category="inline-image-macro-rx" type="image"></block></block>
@@ -2726,17 +2718,14 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="bab3c4cbe1382c763eff57041def5e4a" category="paragraph">在 *Subscriptions* 选项卡中，过期的订阅会将昨天的日期显示为到期日期，而不是实际的订阅结束日期。</block>
   <block id="81d0f400f0bffbb1e2341f849b8278b7" category="section-title">2026 年 5 月 25 日</block>
   <block id="14bea224c3ef88c765b41449933ebeb8" category="doc">查看 MetroCluster 订阅的 ADP 许可证分发</block>
-  <block id="3ad62afeef69f8bc4e30a8bf1cd4ed24" category="paragraph">*高级数据保护 (ADP)* 选项卡上现在有一个新的*许可证分发*子选项卡，让您可以查看 MetroCluster 合作伙伴集群中的 ADP 许可证使用情况。要了解更多信息，请参阅 <block ref="1c707f11dcf40c95719514b3f1835196" category="inline-link-macro-rx"></block>。</block>
   <block id="82ee282c36e597ba42bea56f0d029b9e" category="section-title">查看卷的勒索软件防护状态</block>
   <block id="959a686de018aa5e6a4a2b33d83ab22b" category="inline-link-macro">ONTAP 中的自主勒索软件保护 (ARP)</block>
-  <block id="1c18f5a662955e3a23a23d54aca043b6" category="paragraph">*资产*中的*集群中的卷*选项卡现在包含一个 *ARP 状态*列，显示每个卷是启用还是禁用自主勒索软件防护 (ARP)，让您可以查看托管资产中的勒索软件防护状态。要了解有关 ARP 的更多信息，请参阅 <block ref="b12af018ff0eb76de3921de73532693b" category="inline-link-macro-rx"></block>。</block>
   <block id="aa2298f4012d00689c6db262f51b627f" category="section-title">使用"反馈"选项卡分享反馈</block>
   <block id="6938bc958f8539e0bb0d56145bf54011" category="paragraph">现在，您可以使用锚定在屏幕右下角的新*反馈*选项卡，从 Keystone 控制面板中的任何屏幕提供反馈。点击它将打开一个面板，您可以在其中分享您的体验并直接向 NetApp 提交评论。</block>
   <block id="03c47a6c52980a6f54e9df7f4c59cb77" category="section-title">改进容量使用和订阅到期的警报</block>
   <block id="00d1cd9fd062313d8bbfe761883837c6" category="paragraph">系统生成的监控器现在为容量使用情况和订阅到期提供更精细的告警。</block>
   <block id="ba9431d5ada7b4b6e05b421ef88f8c24" category="paragraph">对于订阅到期，警报现在在五个阈值处触发：到期前 180、90、60、30 和 7 天，随着日期临近，严重程度从信息级别升级为严重级别。</block>
   <block id="8a46b64d28b84f6e9e9f3b9872e38cee" category="paragraph">对于容量使用情况，突发警报阈值现在基于订阅的承诺突发百分比，而不是固定的 20%。例如，如果您的承诺突发为 40%，则关键警报将在承诺容量利用率的 140% 时触发。</block>
-  <block id="e3d24640551dafdb75a00b4fd537dff8" category="paragraph">要了解更多信息，请参阅 <block ref="cbab6f28009066f6897c1b7fa4cf2447" category="inline-link-macro-rx"></block>。</block>
   <block id="c1b9720fa055aceaf15e4ae2d736bee4" category="paragraph">Keystone STaaS 为每种存储类型提供预定义的性能服务级别 (PSL)，也称为基本性能服务级别。每个 PSL 都指定了性能目标（IOPS、吞吐量和延迟）、支持的协议、平台和最小容量要求。查看可用的 PSL，为您的工作负载选择合适的服务级别，并规划您的订阅。</block>
   <block id="945427e2b06f5c5b28a97a55a2562518" category="summary">当您在 Keystone 中订阅高级数据保护附加服务时，可查看消耗数据、监控运行状况，并跟踪 MetroCluster 合作伙伴站点的 ADP 许可证分发情况。</block>
   <block id="1d06cc542caaddb07154ca467aff5db5" category="paragraph">当您订阅高级数据保护附加服务时，可以在 NetApp Console 或 Digital Advisor 中查看您的 MetroCluster 合作伙伴站点的消费数据。在 NetApp Console 中，您还可以监控 MetroCluster 配置的健康状况，并跟踪高级数据保护许可证的分配情况。</block>
@@ -2749,4 +2738,15 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="b52a8fe5a68b65cd156fdbdd49db6e3f" category="paragraph"><block ref="b52a8fe5a68b65cd156fdbdd49db6e3f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="012c1fa51b2cce435780c63eb94ec4e8" category="paragraph">您可以使用此数据验证给定日期的计费是否正确，并交叉检查订阅的使用借方值。</block>
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">2026 年 6 月 29 日</block>
+  <block id="db3bd850e74f5f766861f5bd86ef4fe1" category="paragraph">Data Infrastructure Insights (DII) 附加组件消耗现在显示在*当前消耗*和*消耗趋势*选项卡中。要了解更多信息，请参阅<block ref="e85da089c52c9c7ee134719c608656f0" category="inline-link-rx"></block>。</block>
+  <block id="f232290b59d55feef549685803343ca2" category="paragraph">*Assets* 中的 *Volumes in clusters* 选项卡中新增了三个列：*Hot data*、*Cold tier (%)* 和 *Hot tier (%)*。如需了解更多信息，请参阅<block ref="e5507f6e8dbcc07ae7ce3bb876484b8a" category="inline-link-rx"></block>和<block ref="7f77c8bd4b401343bdf134614dcbbc54" category="inline-link-rx"></block>。</block>
+  <block id="06b177e8e58693c82d283c78208b2127" category="paragraph">*消费趋势*选项卡中的应计突发计费图现在显示已开票、未开票和临时突发使用情况。要了解更多信息，请参阅<block ref="31e7618d7776b538d013c0ecba98f3c8" category="inline-link-rx"></block>。</block>
+  <block id="fca5caacfbcacffcbb1ae54a267af000" category="paragraph">要了解更多信息，请参阅<block ref="1b1ff4fe51e533ed4f70a60bc9d1b098" category="inline-link-rx"></block>和<block ref="53f3a389a016659ce834d4711c4f49e9" category="inline-link-rx"></block>。</block>
+  <block id="d83b5b5f3beaf482542f053de748fcaa" category="paragraph">*消费趋势*选项卡中的历史消费图表现在突出显示超出突发限制的使用情况。要了解更多信息，请参阅<block ref="e264c10903bb9a5694a7b9af6dafa638" category="inline-link-rx"></block>。</block>
+  <block id="ee885a60d72aa21cfa1b979efe382e3a" category="paragraph">您可以在 *消耗趋势* 选项卡的 *历史消耗* 视图中使用 *Forecast* 切换来预测当前日期后 120 天的容量使用情况。要了解更多信息，请参阅<block ref="66d7c7dbf3416596c75cfd488116093b" category="inline-link-rx"></block>。</block>
+  <block id="59cd389cee057923ba31ddf4336c8526" category="paragraph">现在，您可以使用 *消费趋势* 选项卡的 *累计突发* 视图中的 *预测* 切换来预测当前日期后 120 天的累计突发使用情况。要了解更多信息，请参阅<block ref="66d7c7dbf3416596c75cfd488116093b" category="inline-link-rx"></block>。</block>
+  <block id="ba5dc947a0339c89568e57148a12b467" category="paragraph">订阅时间表图表现在会显示在同一天发生多个不同类型的订阅更新时的数字，而不是单独的图标。将鼠标悬停在数字上可查看当天的所有更新类型。下载的报告包括每个更新的单独一行，为您提供所有更改的完整记录。要了解更多信息，请参阅<block ref="1d47dbd375b0b6ee7030543c5313f259" category="inline-link-rx"></block>。</block>
+  <block id="d10eadebc0b314becd9cc0f66d6b041c" category="paragraph">*高级数据保护 (ADP)* 选项卡上现在有一个新的*许可证分发*子选项卡，让您可以查看 MetroCluster 合作伙伴集群中的 ADP 许可证使用情况。要了解更多信息，请参阅<block ref="02535faa6c919b6de457f7dc6857a103" category="inline-link-rx"></block>。</block>
+  <block id="7c6b47b84335342a0bf3ff0db6c0648a" category="paragraph">*资产*中的*集群中的卷*选项卡现在包含一个 *ARP 状态*列，显示每个卷是启用还是禁用自主勒索软件防护 (ARP)，让您可以查看托管资产中的勒索软件防护状态。要了解有关 ARP 的更多信息，请参阅<block ref="a49accf015518c5fe1c46dfa42f23f5c" category="inline-link-rx"></block>。</block>
+  <block id="86160081a3f709a69c529a9b26266813" category="paragraph">要了解更多信息，请参阅<block ref="53f3a389a016659ce834d4711c4f49e9" category="inline-link-rx"></block>。</block>
 </blocks>

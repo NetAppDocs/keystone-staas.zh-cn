@@ -18,6 +18,7 @@ summary: 通过下载OVA模板、部署此模板等操作、在VMware vSphere系
 
 
 
+[[deploying-the-ova-template]]
 == 部署OVA模板
 
 请按照以下步骤操作：
@@ -59,6 +60,7 @@ NOTE: 管理员密码以可逆格式存储在vCenter中、应用作启动凭据�
 
 
 
+[[initial-system-configuration]]
 == 初始系统配置
 
 在VMware vSphere系统上执行以下步骤、以便对通过OVA部署的Keystone收集器服务器进行初始配置：

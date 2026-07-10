@@ -42,6 +42,7 @@ NOTE: 建议使用Debian 12、Windows Server 2016或更高版本的操作系统�
 
 
 
+[[networking-requirements]]
 == 网络要求
 
 下表列出了ITOM收集器的网络连接要求。

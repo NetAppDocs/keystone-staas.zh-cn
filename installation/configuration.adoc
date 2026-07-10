@@ -55,6 +55,7 @@ summary: 完成配置以使Keystone收集器能够收集存储环境中的使用
 
 
 
+[[configure-http-proxy-on-keystone-collector]]
 == 在Keystone收集器上配置HTTP代理
 
 收集器软件支持使用HTTP代理与Internet进行通信。可以在TUI中配置此功能。
@@ -68,6 +69,7 @@ summary: 完成配置以使Keystone收集器能够收集存储环境中的使用
 
 
 
+[[limit-collection-of-private-data]]
 == 限制私有数据的收集
 
 Keystone收集器收集执行订阅计量所需的有限配置、状态和性能信息。您可以选择通过屏蔽上传的内容中的敏感信息来进一步限制收集的信息。这不会影响计费计算。但是、限制信息可能会影响报告信息的可用性、因为某些要素(例如卷名称)会替换为UUID、而这些要素可以由用户轻松识别。
@@ -80,6 +82,7 @@ image:tui-4.png["TUI屏幕"]
 
 
 
+[[trust-a-custom-root-ca]]
 == 信任自定义根CA
 
 根据公共根证书颁发机构(CA)验证证书是Keystone收集器安全功能的一部分。但是、如果需要、您可以将Keystone收集器配置为信任自定义根CA。
@@ -111,6 +114,7 @@ image:kc-custom-ca.png["用于CA自定义的TUI屏幕"]
 
 
 
+[[create-performance-service-levels]]
 == 创建性能服务级别
 
 您可以使用Keystone Collector 管理 TUI 实用程序创建性能服务级别 (PSL)。通过 TUI 创建 PSL 会自动选择为每个性能服务级别设置的默认值，从而减少通过Active IQ Unified Manager创建 PSL 时手动设置这些值时可能发生的错误的可能性。

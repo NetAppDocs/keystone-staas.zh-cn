@@ -18,6 +18,7 @@ Keystone STaaS 支持 NetApp 平台上的统一、块优化、AFX 和对象存�
 
 
 
+[[keystone-staas-standard-and-add-on-services]]
 == Keystone STaaS 标准和附加服务
 
 Keystone STaaS可为您的存储提供标准和可选服务。
@@ -33,6 +34,7 @@ NOTE: AFX 订阅是独立的，不能与同一订阅中的统一、块优化或�
 
 
 
+[[supported-data-storage-types]]
 == 支持的数据存储类型
 
 用于统一、块优化、对象和 AFX 存储的 Keystone STaaS 服务支持多种功能和协议，如下表所述：
@@ -96,6 +98,7 @@ S3
 
 
 
+[[services-for-cloud-storage]]
 == 云存储服务
 
 Keystone STaaS可提供云存储服务。Keystone STaaS支持Amazon Web Services (AWS)、Microsoft Azure和Google云平台上的Cloud Volumes ONTAP 数据管理功能。

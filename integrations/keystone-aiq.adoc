@@ -47,6 +47,7 @@ NOTE: Keystone 订阅中的容量消耗在仪表板和报告中以 TiBs 显示�
 
 
 
+[[search-by-keystone-watchlists]]
 == 按Keystone监视列表搜索
 
 关注列表是 Digital Advisor 的一项功能。有关信息，请参见 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["了解监视列表"^]。有关创建关注列表的信息，请参阅 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["创建监视列表"^] 。

@@ -18,6 +18,7 @@ summary: '使用"资产"选项卡可查看ONTAP集群和节点以及由Keystone�
 
 
 
+[[view-keystone-subscription-assets-from-netapp-console]]
 == 从NetApp控制台查看Keystone订阅资产
 
 *订阅*页面中的*资产*选项卡显示与订阅相关的集群、 StorageGRID节点和ONTAP节点中的卷的详细信息，包括各种详细信息和容量状态。
@@ -106,6 +107,7 @@ TIP: 您可以使用列选择器自定义表格image:column-selector.png["列选
 ====
 
 
+[[view-keystone-subscription-assets-from-digital-advisor]]
 == 从 Digital Advisor 查看 Keystone 订阅资产
 
 Digital Advisor 中 Keystone 信息中心的“资产”选项卡包含两个子选项卡：“ONTAP”和“StorageGRID”。此选项卡会根据您的订阅累积ONTAP的集群级别信息和StorageGRID的网格级别信息、并对数据进行隔离和提供准确的详细信息。您可以点击相应的子选项卡查看这些信息。

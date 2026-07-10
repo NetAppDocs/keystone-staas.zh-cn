@@ -18,6 +18,7 @@ summary: 当您在 Keystone 中订阅高级数据保护附加服务时，可查�
 
 
 
+[[view-metrocluster-subscriptions-consumption-and-health-status]]
 == 查看 MetroCluster 订阅消费和运行状况状态
 
 请按照以下步骤操作：

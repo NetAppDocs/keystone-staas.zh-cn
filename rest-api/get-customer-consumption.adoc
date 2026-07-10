@@ -83,6 +83,7 @@ curl -X 'GET' \ 'https://api.activeiq.netapp.com/v1/keystone/customer/consumptio
 ----
 
 
+[[get-the-historical-consumption-details-for-a-customer]]
 == 获取客户的历史消耗详细信息
 
 此API将根据指定的时间范围检索与给定客户ID关联的所有订阅的历史消耗详细信息。

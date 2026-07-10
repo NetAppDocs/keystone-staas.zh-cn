@@ -20,6 +20,7 @@ summary: '完成几个步骤、在无法访问Internet的环境(也称为_dark s
 
 
 
+[[deploy-on-vmware-vsphere]]
 == 在VMware vSphere上部署
 
 请按照以下步骤操作：
@@ -30,6 +31,7 @@ summary: '完成几个步骤、在无法访问Internet的环境(也称为_dark s
 
 
 
+[[install-on-linux]]
 == 在Linux上安装
 
 Keystone收集器软件使用提供的.deb或.rpm文件安装在Linux服务器上、具体取决于Linux分发版本。

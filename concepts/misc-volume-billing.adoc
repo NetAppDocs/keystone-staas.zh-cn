@@ -39,30 +39,35 @@ summary: Keystone 计费规则因特定卷配置而异。此页面说明克隆�
 |===
 
 
+[[billing-for-cloned-volumes]]
 == 为克隆的卷计费
 
 克隆的卷作为标准卷计费，其性能服务级别与从中克隆的卷相同。无论其大小或用途如何，都会对所有克隆卷进行测量和计费。
 
 
 
+[[billing-for-temporary-volumes]]
 == 临时卷的计费
 
 有时， ONTAP 会在移动卷时创建临时（ TMP ）卷。这些临时卷的使用寿命很短，不会对这些卷上的使用量进行计费。
 
 
 
+[[billing-for-snapmirror-destinations]]
 == 为 SnapMirror 目标计费
 
 SnapMirror 目标卷的定价（无论用于灾难恢复还是长期保留）均基于分配给目标卷的性能服务级别。数据保护无需额外付费。
 
 
 
+[[billing-for-luns]]
 == LUN 计费
 
 对于 LUN，计费基于卷的性能服务级别。
 
 
 
+[[system-and-root-volumes]]
 == 系统卷和根卷
 
 系统卷和根卷会作为Keystone服务整体监控的一部分进行监控、但不会计入或计费。这些卷上的消费免除计费。

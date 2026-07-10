@@ -50,12 +50,14 @@ NOTE: Keystone Collector 仅支持上述第三方软件包。不支持安装其�
 
 
 
+[[other-requirements]]
 == 其他要求
 
 确保满足以下通用要求：
 
 
 
+[[networking-requirements]]
 === 网络要求
 
 下表列出了Keystone收集器的网络连接要求。
@@ -223,6 +225,7 @@ NOTE: 在全新安装Unified Manager期间、MySQL的默认端口3306仅限于�
 
 
 
+[[url-access]]
 === URL访问
 
 Keystone收集器需要访问以下Internet主机：

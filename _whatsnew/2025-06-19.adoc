@@ -4,6 +4,7 @@
 
 
 
+[[keystone-dashboard-in-bluexp]]
 === BlueXP 中的 Keystone 仪表板
 
 您现在可以直接从 BlueXP 访问 Keystone 仪表板。此集成让您可以在一个位置监控、管理和跟踪所有 Keystone 订阅以及其他 NetApp 服务。

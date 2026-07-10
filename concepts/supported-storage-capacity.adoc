@@ -18,12 +18,14 @@ Keystone STaaS 使用多个容量术语来衡量、提交和计费存储。了�
 
 
 
+[[logical-capacity]]
 == 逻辑容量
 
 这是在应用存储阵列提供的任何数据效率之前存储用户数据所需的存储容量。
 
 
 
+[[committed-capacity]]
 == 已提交容量
 
 订阅期间每月支付的最低逻辑容量：
@@ -34,12 +36,14 @@ Keystone STaaS 使用多个容量术语来衡量、提交和计费存储。了�
 
 
 
+[[changes-to-committed-capacity]]
 === 已提交容量的更改
 
 在订阅期间，您可以根据某些条件更改承诺的容量。有关容量增加和减少规则的完整详细信息，请参阅 link:../concepts/capacity-requirements.html["Keystone性能服务级别的容量要求"]。如需请求更改，请联系您的 Keystone 成功经理 (KSM) 或 link:../concepts/support-services.html["NetApp 支持"]。
 
 
 
+[[consumed-capacity]]
 == 已用容量
 
 消耗容量是指当前在服务上消耗的容量（以存储的 TiB 为单位）。根据数据存储类型进行不同的计算：
@@ -75,6 +79,7 @@ Keystone STaaS 使用多个容量术语来衡量、提交和计费存储。了�
 
 
 
+[[burst-capacity]]
 == 突发容量
 
 NetApp Keystone STaaS 服务允许您在承诺容量的基础上使用额外容量，以实现性能服务级别。这称为突发容量使用。
@@ -88,6 +93,7 @@ NetApp Keystone STaaS 服务允许您在承诺容量的基础上使用额外容�
 
 
 
+[[billed-capacity]]
 == 计费容量
 
 每月账单 = （已提交容量 [TiB] * 已提交速率 [$/TiB] ） + （每日平均已配置突发容量 [TiB] * 突发速率 [$/TiB] ）。每月账单包含基于已提交容量的最低费用。

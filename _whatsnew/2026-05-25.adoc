@@ -6,6 +6,7 @@ NetApp Console中Keystone仪表板的新增强功能：
 
 
 
+[[improved-display-of-multiple-updates-on-the-same-day-in-the-subscription-timeline]]
 === 改进了订阅时间线中同一天多个更新的显示
 
-订阅时间表图表现在会显示在同一天发生多个不同类型的订阅更新时的数字，而不是单独的图标。将鼠标悬停在数字上可查看当天的所有更新类型。下载的报告包括每个更新的单独一行，为您提供所有更改的完整记录。要了解更多信息，请参阅 link:./integrations/subscription-timeline.html["查看 Keystone 订阅的时间线"]。
+订阅时间表图表现在会显示在同一天发生多个不同类型的订阅更新时的数字，而不是单独的图标。将鼠标悬停在数字上可查看当天的所有更新类型。下载的报告包括每个更新的单独一行，为您提供所有更改的完整记录。要了解更多信息，请参阅 https://docs.netapp.com/us-en/keystone-staas/integrations/subscription-timeline.html["查看 Keystone 订阅的时间线"]。

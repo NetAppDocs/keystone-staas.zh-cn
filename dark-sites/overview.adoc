@@ -31,6 +31,7 @@ NOTE: Keystone收集器可以在配置时不受连接限制、也称为_standard
 
 
 
+[[keystone-collector-in-private-mode]]
 == Keystone收集器处于私用模式
 
 Keystone收集器负责定期从存储系统收集使用情况数据、并将指标导出到脱机使用情况报告程序和本地文件存储。然后、在验证检查后、用户会将以加密和纯文本格式创建的生成文件手动转发到NetApp。收到这些文件后、NetApp的Keystone计费平台将对这些文件进行身份验证和处理、并将其集成到计费和订阅管理系统中以计算每月费用。

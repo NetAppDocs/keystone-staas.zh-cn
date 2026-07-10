@@ -4,6 +4,7 @@
 
 
 
+[[enhanced-logical-usage-tracking-with-a-new-column]]
 === 使用新列增强逻辑使用情况跟踪
 
 添加了新列“总占用空间”，以增强对FabricPool卷的Keystone消耗跟踪：

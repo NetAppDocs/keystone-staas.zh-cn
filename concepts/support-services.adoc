@@ -18,6 +18,7 @@ NetApp 为 Keystone 客户提供运营服务。客户可通过 ITOM 解决方案
 
 
 
+[[netapp-support-services]]
 == NetApp 支持服务
 
 NetApp 为 Keystone 客户提供远程运营服务。这些服务涵盖一系列存储管理活动，包括资产和配置管理、容量和性能管理、变更管理、事件和事故管理、服务请求履行和报告。
@@ -27,6 +28,7 @@ NetApp 为 Keystone 客户提供远程运营服务。这些服务涵盖一系列
 
 
 
+[[contact-support]]
 == 联系支持部门
 
 如果您的 Keystone 订阅遇到问题，请使用您的 NSS 凭据登录到 link:https://support.netapp.com["NetApp 支持站点"^] 以创建支持案例。
@@ -45,12 +47,14 @@ NetApp 为 Keystone 客户提供远程运营服务。这些服务涵盖一系列
 
 
 
+[[support-monitoring]]
 == 支持监控
 
 NetApp 使用 ITOM 监控解决方案来主动监控产品和订阅服务的运行状况，并连接到 NetApp Keystone 环境进行故障排除。
 
 
 
+[[additional-resources]]
 == 其他资源
 
 有关Keystone服务的详细信息、请参见：

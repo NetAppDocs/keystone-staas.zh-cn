@@ -20,6 +20,7 @@ NetApp数据基础架构洞察(Data Infrastructure Insight、DII、以前称为C
 
 
 
+[[about-dii-for-keystone-subscriptions]]
 == 关于 Keystone 订阅的 DII
 
 DII 适用于新订阅和现有订阅。它可以集成到 Keystone 订阅中，作为承诺容量的附加组件。
@@ -28,6 +29,7 @@ DII 适用于新订阅和现有订阅。它可以集成到 Keystone 订阅中，
 
 
 
+[[deployment-of-dii-for-keystone]]
 == 部署适用于Keystone的DII
 
 客户可以通过两种方式集成DII for Keystone：既可以作为监控其他非Keystone环境的现有实例的一部分、也可以作为新实例的一部分。客户负责设置DII。如果在复杂环境中设置DII需要帮助，客户团队可以参与link:https://www.netapp.com/services/["NetApp 专业服务"^]。
@@ -62,6 +64,7 @@ NOTE: 虽然 DII 为已部署的硬件提供了广泛的监控功能，但它无
 
 
 
+[[view-dii-consumption]]
 == 查看 DII 消耗量
 
 您可以通过 NetApp Console 或 Digital Advisor 查看 DII 附加服务的消耗情况。DII 性能服务级别（例如 DII Extreme、DII Premium 和 DII Performance）的消耗数据与您的基本性能服务级别一起显示在当前消耗和消耗趋势视图中。
@@ -82,6 +85,7 @@ image:keystone-widget-dii.png["显示 DII 服务级别的 Keystone 订阅小部�
 
 
 
+[[billing-and-metering]]
 == 计费和计量
 
 下面概述了DII附加服务的计费和计量详细信息：
@@ -94,6 +98,7 @@ image:keystone-widget-dii.png["显示 DII 服务级别的 Keystone 订阅小部�
 
 
 
+[[support-and-user-access]]
 == 支持和用户访问
 
 如果客户启用了*允许NetApp访问您的数据基础架构洞察力环境*选项，经批准的NetApp支持团队成员可以访问客户的DII实例。要执行此操作，请转到*help > Support*并启用选项。

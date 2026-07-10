@@ -18,6 +18,7 @@ summary: '可用性 SLO 的目标是在计费期间为所有部署用于交付 K
 
 
 
+[[metrics]]
 == 指标
 
 * *每月正常运行时间百分比* = [(当月符合条件的秒数 - 当月 PSLI 不可用服务的秒数) / 当月符合条件的秒数] x 100%
@@ -27,6 +28,7 @@ summary: '可用性 SLO 的目标是在计费期间为所有部署用于交付 K
 
 
 
+[[service-credits]]
 == 服务抵免额
 
 
@@ -67,6 +69,7 @@ NOTE: SLA和保证按提名提供。
 |===
 
 
+[[service-credit-calculation]]
 === 服务抵免额计算
 
 服务抵免额通过以下公式确定：
@@ -119,6 +122,7 @@ NOTE: SLA和保证按提名提供。
 
 
 
+[[service-credit-request]]
 === 服务信用请求
 
 如果检测到违反SLA、请向NetApp Keystone支持部门开立优先级3 (P3)支持服务单。

@@ -38,6 +38,7 @@ NOTE: *问题描述 收集器*：Keystone收集器在使用量计量系统中运
 
 
 
+[[view-system-logs]]
 == 查看系统日志
 
 您可以使用Keystone收集器系统日志查看系统信息并执行故障排除。Keystone收集器使用主机的_jogal_日志记录系统、可以通过标准_jogalctl_系统实用程序查看系统日志。您可以使用以下关键服务来检查日志：
@@ -96,6 +97,7 @@ NOTE: *问题描述 收集器*：Keystone收集器在使用量计量系统中运
 ----
 
 
+[[generate-and-collect-support-bundles]]
 == 生成并收集支持包
 
 通过Keystone收集器TUI、您可以生成支持包、然后将其添加到服务请求中以解决支持问题。请遵循此操作步骤 ：
