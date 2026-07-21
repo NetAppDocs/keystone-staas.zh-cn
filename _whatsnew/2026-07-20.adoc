@@ -1,0 +1,14 @@
+= 查看订阅到期和自动续订状态
+:allow-uri-read: 
+
+
+NetApp Console中Keystone仪表板的新增强功能：
+
+
+
+[[view-subscription-expiry-and-auto-renewal-status]]
+=== 查看订阅到期和自动续订状态
+
+订阅表中的*订阅到期天数*列（*存储 > Keystone > 订阅*）现在会在到期日期旁边显示一个图标。图标颜色表示自动续订关闭时的到期临近程度：绿色（>120 天）、橙色（91–120 天）、红色（<90 天）或灰色（已过期）。对于已启用自动续订的订阅，将显示一个自动续订图标，表明订阅将在当前期限结束时自动续订。该状态为只读，反映您的合同条款。打开订阅后，这些图标将显示在*当前消费量*、*消费趋势*、*订阅时间表*和*资产*选项卡的订阅详细信息标题中，让您在导航时可以查看到期和续订状态。
+
+要了解更多信息，请参阅 https://docs.netapp.com/us-en/keystone-staas/integrations/subscriptions-tab.html["查看您的 Keystone 订阅的详细信息"]。

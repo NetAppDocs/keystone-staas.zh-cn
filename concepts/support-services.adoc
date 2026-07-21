@@ -59,7 +59,7 @@ NetApp 使用 ITOM 监控解决方案来主动监控产品和订阅服务的运�
 
 有关Keystone服务的详细信息、请参见：
 
-* link:https://www.netapp.com/us/solutions/keystone/index.aspx["NetApp Keystone"^]
+* link:https://www.netapp.com/keystone/["NetApp Keystone"^]
 * link:https://docs.netapp.com["NetApp 产品文档"^]
 
 

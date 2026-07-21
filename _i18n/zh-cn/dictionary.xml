@@ -655,7 +655,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="efca37f4dc4125775aa5043cc3e4ba6c" category="list-text">选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。您不能选择未来日期。</block>
   <block id="f9e4dd599c840788d289af630bc65cdb" category="list-text">*当前突发*：指示已用容量是否在定义的突发限制内或以上。如果任何使用量在您的订阅的突发限制范围内、例如、超出已提交容量20%、则属于突发限制范围。如果使用量超过突发限制、则进一步使用量将被视为超过突发限制。此字段显示特定颜色：</block>
   <block id="c3ce6809be6bdc67ae978395484d0585" category="list-text">ONTAP 9.8或更高版本</block>
-  <block id="ad98fcce772f03d25a2b4758c7fbf35c" category="list-text">确保已配置Unified Manager 9.10或更高版本。有关安装Unified Manager的信息、请参见以下链接：</block>
   <block id="8414d36b2c6d9865a2f13b42f9ef6e91" category="list-text">StorageGRID<block ref="eb0ecbdf20891e5963990e2643405555" prefix=" " category="inline-code"></block> 或更高版本。有关升级StorageGRID 的信息、请参见 <block ref="97cb3175bb06374adaf739435d4e2f76" category="inline-link-macro-rx"></block>。</block>
   <block id="3b41a0b0d60e10655d8e46d1aa287167" category="paragraph">对于StorageGRID、此选项卡显示对象存储节点的物理使用情况。</block>
   <block id="88895084439cc3245895b1c40dc5b078" category="inline-link-macro">使用Keystone监视列表进行搜索</block>
@@ -721,7 +720,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="c977c72cd7678128aadf339e54fc0498" category="sidebar">如何处理冷数据或使用率较低的数据？</block>
   <block id="3c433d996e071fc968830570a2649830" category="sidebar">如何保护Keystone数据？</block>
   <block id="b01022ea67a6b913d57f7194fcc72d9d" category="section-title">查看已开票的应计突发量</block>
-  <block id="0cd22f9baa25202637cff789fe1dfe9f" category="list-text">Active IQ Unified Manager (Unified Manager) 9.10或更高版本</block>
   <block id="cbe21b6da30db10de9cd33de72b5dc48" category="paragraph">SnapLock 技术可在卷中设置的到期日期之后使驱动器不可用、从而启用NRNVC功能。要在卷上使用SnapLock 技术、您需要订阅NRNVC。这仅适用于文件和块服务。</block>
   <block id="d33f2a600ba4fe43084a26e95e4908c0" category="paragraph">* 相关信息 *</block>
   <block id="e6158c69831c3faa8af6ba0dce7118fd" category="list-text"><block ref="e6158c69831c3faa8af6ba0dce7118fd" category="inline-link-macro-rx"></block></block>
@@ -1696,7 +1694,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="7e147d47de92c4a609c07c4bb5e40f29" category="list-text">*计费周期*：订阅的发票周期。</block>
   <block id="15d3201050b72761174ef874891c70c2" category="list-text">*性能服务级别*：与订阅相关的费率计划数量，每个费率计划对应特定的性能服务级别和承诺容量。</block>
   <block id="7977aee626f33c6d577f1efc799f2747" category="list-text">*最高容量*：订阅内消耗的最大容量。</block>
-  <block id="e0e64854d2f2c608544b01e8cc518243" category="list-text">*订阅到期天数*：订阅到期前剩余的天数。</block>
   <block id="e567b31e26c159f427dde0e64b05c3c2" category="admonition">您可以使用列选择器自定义表中显示的列<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block>图标。对于某些字段和列、您可能会看到追加信息有关数据的信息或警告图标以及工具提示。</block>
   <block id="ed4d0852f1703e0820b9637850aeae85" category="paragraph">要在 Digital Advisor 中查看您的订阅，请按照以下步骤操作：</block>
   <block id="01bbb3898ca00363b1b5c84f5c112a6e" category="list-text">从 Digital Advisor 左侧导航窗格中，转到 *常规 &gt; Keystone 订阅 &gt; 订阅*。</block>
@@ -2281,7 +2278,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="1e007e954fdd7587bcd939b10c21e650" category="list-text">在 Console 中，您可以与应计突发计费图进行交互，以过滤每日数据使用情况。要了解更多信息，请参阅 <block ref="0cc16f2bbc32fd70c68f98b9b0b4296a" category="inline-link-macro-rx"></block>。</block>
   <block id="1b342e2d578a51d6b3d947da95fe0f10" category="paragraph">在 Console 中，您可以通过选择代表应计突发计费图中的计费周期的任何条形图来筛选表。筛选后，该表仅显示选定计费周期内的天数。要再次查看完整数据集，请使用 *Clear filters* 选项。如果选定期间没有可用数据，则会显示一条消息，指示没有可用数据。</block>
   <block id="e6f9cff2e05b0c21bfa8eacbea1108b9" category="paragraph"><block ref="e6f9cff2e05b0c21bfa8eacbea1108b9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c4eab7429b9b42ab319272d31567f10b" category="paragraph"><block ref="c4eab7429b9b42ab319272d31567f10b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6331e16cef510e2a7170f77ace7d4d3c" category="list-text">*使用类型*：您可能已经订阅了多个 Keystone 版本。性能服务级别的费率计划规则可能因订阅版本而异。通过查看此列中的值，您可以知道使用类型是按预配、物理还是逻辑使用计费。要了解有关版本 1 的更多信息，请参阅<block ref="d7848503560f6eda6c1c5b670f722092" category="inline-link-rx"></block>。</block>
   <block id="8c4ee08746e9d4d8b64596c87ac3fab1" category="inline-image-macro">展开图标</block>
   <block id="b3aabf2706f0dd29444a14f90b5b670f" category="admonition">您可以单击表标题中的向下箭头 <block ref="f41a012a2c49083e45aae37ff23f77bc" category="inline-image-macro-rx" type="image"></block> 以展开所有订阅，并同时查看每个订阅的性能服务级别信息。这显示了详细的容量信息，包括当前使用量、承诺容量、配置容量、突发容量和所有订阅的可用容量。或者，您可以单击单个订阅行中 *Expiration date* 列旁边的向下箭头，一次展开一个。</block>
@@ -2472,7 +2468,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="513ac101f78fa63747befb7f73414070" category="paragraph">NetApp 使用 ITOM 监控解决方案来主动监控产品和订阅服务的运行状况，并连接到 NetApp Keystone 环境进行故障排除。</block>
   <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="section-title">其他资源</block>
   <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
-  <block id="07d64f85c46041387234eb4f1b2c6dda" category="list-text"><block ref="07d64f85c46041387234eb4f1b2c6dda" category="inline-link-macro-rx"></block></block>
   <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="inline-link-macro">NetApp 产品文档</block>
   <block id="c4c9ecac280f54a5500192a9efb21c2b" category="list-text"><block ref="c4c9ecac280f54a5500192a9efb21c2b" category="inline-link-macro-rx"></block></block>
   <block id="417de6e21a96febf9dc5f6d95a18c845" category="inline-link-macro">如何识别 ONTAP 平台的序列号</block>
@@ -2749,4 +2744,19 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="d10eadebc0b314becd9cc0f66d6b041c" category="paragraph">*高级数据保护 (ADP)* 选项卡上现在有一个新的*许可证分发*子选项卡，让您可以查看 MetroCluster 合作伙伴集群中的 ADP 许可证使用情况。要了解更多信息，请参阅<block ref="02535faa6c919b6de457f7dc6857a103" category="inline-link-rx"></block>。</block>
   <block id="7c6b47b84335342a0bf3ff0db6c0648a" category="paragraph">*资产*中的*集群中的卷*选项卡现在包含一个 *ARP 状态*列，显示每个卷是启用还是禁用自主勒索软件防护 (ARP)，让您可以查看托管资产中的勒索软件防护状态。要了解有关 ARP 的更多信息，请参阅<block ref="a49accf015518c5fe1c46dfa42f23f5c" category="inline-link-rx"></block>。</block>
   <block id="86160081a3f709a69c529a9b26266813" category="paragraph">要了解更多信息，请参阅<block ref="53f3a389a016659ce834d4711c4f49e9" category="inline-link-rx"></block>。</block>
+  <block id="74cf60fbdf1e9979b4bc96c9e0974a6b" category="doc">查看订阅到期和自动续订状态</block>
+  <block id="495b22b0bc55d3822a5ffc86d03d07c9" category="paragraph">订阅表中的*订阅到期天数*列（*存储 &gt; Keystone &gt; 订阅*）现在会在到期日期旁边显示一个图标。图标颜色表示自动续订关闭时的到期临近程度：绿色（&gt;120 天）、橙色（91–120 天）、红色（&lt;90 天）或灰色（已过期）。对于已启用自动续订的订阅，将显示一个自动续订图标，表明订阅将在当前期限结束时自动续订。该状态为只读，反映您的合同条款。打开订阅后，这些图标将显示在*当前消费量*、*消费趋势*、*订阅时间表*和*资产*选项卡的订阅详细信息标题中，让您在导航时可以查看到期和续订状态。</block>
+  <block id="ba93540c77434b5a45f562c939e84d30" category="paragraph">要了解更多信息，请参阅<block ref="97b83a5c42cc5367f46b598d7c9e65ca" category="inline-link-rx"></block>。</block>
+  <block id="e13f280ffa976818e3580eb46f21ed29" category="list-text"><block ref="e13f280ffa976818e3580eb46f21ed29" category="inline-link-macro-rx"></block></block>
+  <block id="23d4d9cd1c1ff2d6d2933321e5728e41" category="list-text">Active IQ Unified Manager（Unified Manager）9.10 之后且早于 9.16P2 的版本</block>
+  <block id="2532e6915fa7b6217c6d00baa817a264" category="list-text">确保配置了高于 9.10 且低于 9.16P2 的 Unified Manager。有关安装 Unified Manager 的信息，请参见以下链接：</block>
+  <block id="eb471dad784c59f27107be17f79c179b" category="paragraph"><block ref="eb471dad784c59f27107be17f79c179b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ed9a56ae580bae02af0f4033c1fc03e" category="list-text">*订阅到期天数*：在到期日期旁边显示一个图标，表明订阅即将到期以及是否会自动续订。此状态为只读，反映了您的合同条款。要查看合同详细信息，请参阅 <block ref="2cf57deab11a97384e65ae3b18f8e059" category="inline-link-macro-rx"></block>。</block>
+  <block id="0f90b275e273c351e98af167ee4042b0" category="paragraph">当自动续订处于关闭状态时，图标颜色表示接近到期时间：</block>
+  <block id="e0646e6cc1521e0d850cfe435090ef1a" category="list-text">*绿色*：距离过期还有 120 天以上。</block>
+  <block id="2eaf25d8a1f7859cabcfaf2c76ce332d" category="list-text">*橙色*：距到期还有 91 至 120 天。</block>
+  <block id="0f256230b1488e77dbb19f67f96d22e7" category="list-text">*红色*：距到期不足 90 天。为避免服务中断，请向 NetApp Keystone 支持部门提交续订申请。</block>
+  <block id="ec9f6b08367a17a666713d93adc74fa6" category="list-text">*灰色*：订阅已过期。</block>
+  <block id="9a43c87c7a255c40ac13d4fd963633ae" category="paragraph">对于自动续订的订阅，将显示一个自动续订图标，表明订阅将在当前期限结束时自动续订。</block>
+  <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026年7月20日</block>
 </blocks>
