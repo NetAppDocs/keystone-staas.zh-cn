@@ -2171,7 +2171,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="6df7635d9934b92e0bdbe5e5a544fccb" category="doc">填写您的保险覆盖范围通知框</block>
   <block id="8583cba6ee38a66f6e19ca7c15a5c1ed" category="inline-link-macro">管理警报监控器的覆盖范围缺口</block>
   <block id="a60761706ec1d12934bfc1dd049da2df" category="paragraph">“监控”页面上的“警报监控”选项卡包含一个“完善您的覆盖范围”通知框，当存在覆盖范围缺口时，该通知框就会出现。此框列出了缺少容量或到期监控器的订阅，以及没有订阅的监控器。您可以通过向现有监视器添加订阅、创建新监视器或删除未使用的监视器来弥补差距。欲了解更多信息，请参阅 <block ref="1ef75ae1f09bcc7a95c6bbe07a54229c" category="inline-link-macro-rx"></block>。</block>
-  <block id="39fb73624dac610b8274b1bd6e2c1193" category="paragraph">您可以从NetApp Console中的Keystone控制面板查看和创建Keystone订阅的警报监视器。仪表盘显示了系统生成的和用户定义的容量使用情况和订阅到期情况的监控器。您可以创建监视器来设置阈值、选择警报严重性以及添加通知的电子邮件收件人。您可以通过向未覆盖的订阅添加监视器或解决未使用的监视器问题来解决覆盖范围不足的问题。Digital Advisor不提供此功能。</block>
   <block id="ac092a2bcbdb5857ae37a4756db46a49" category="list-text">选择“创建监视器”按钮。</block>
   <block id="cb5198d92b18cf007a9117aa50f90c3e" category="list-text">更改所需字段，然后单击“创建”。</block>
   <block id="2fd74b6a7fe875798408a25e1558c434" category="section-title">管理覆盖缺口</block>
@@ -2759,4 +2758,8 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="ec9f6b08367a17a666713d93adc74fa6" category="list-text">*灰色*：订阅已过期。</block>
   <block id="9a43c87c7a255c40ac13d4fd963633ae" category="paragraph">对于自动续订的订阅，将显示一个自动续订图标，表明订阅将在当前期限结束时自动续订。</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026年7月20日</block>
+  <block id="a57e8f53025c55f550f7149fb9604dfb" category="paragraph">您可以从 NetApp Console 中的 Keystone 仪表板查看和创建 Keystone 订阅的警报监视器。仪表板显示系统生成的和用户定义的容量使用和订阅到期监视器。系统生成的监视器会自动为所有订阅创建，并带有预定义的阈值。您还可以创建用户定义的监视器，以设置自定义阈值、选择警报严重性以及为通知添加电子邮件收件人。您可以通过将监视器添加到未覆盖的订阅或解决未使用的监视器来弥补覆盖率差距。此功能在 Digital Advisor 中不可用。</block>
+  <block id="a24681f321af8a6f649af88394d08b33" category="paragraph">Keystone 会自动为您的所有订阅创建系统生成的监视器。这些监视器无法删除。编辑仅限于修改容量使用监视器的订阅编号和性能服务级别，以及修改订阅到期监视器的订阅编号。</block>
+  <block id="93c8e847adc98c4e55b9db4e1ae1da42" category="list-text">*订阅到期监视器*：在订阅到期日期前五个阈值（180、90、60、30 和 7 天）触发警报。随着到期日期的临近，严重程度从信息升级为关键。</block>
+  <block id="2699cef281fc3da983c3d28aec2a40f0" category="list-text">*容量使用率监视器*：警报基于您的订阅的承诺突发百分比，而不是固定值。例如，如果您的承诺突发为 40%，则当容量利用率达到承诺容量的 140% 时，会触发关键警报。</block>
 </blocks>
