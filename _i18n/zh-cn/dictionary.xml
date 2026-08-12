@@ -2762,4 +2762,6 @@ JSON正文提供的整体运行状况<block ref="39c3fbc3fb647215fe5fedcae04ab7c
   <block id="a24681f321af8a6f649af88394d08b33" category="paragraph">Keystone 会自动为您的所有订阅创建系统生成的监视器。这些监视器无法删除。编辑仅限于修改容量使用监视器的订阅编号和性能服务级别，以及修改订阅到期监视器的订阅编号。</block>
   <block id="93c8e847adc98c4e55b9db4e1ae1da42" category="list-text">*订阅到期监视器*：在订阅到期日期前五个阈值（180、90、60、30 和 7 天）触发警报。随着到期日期的临近，严重程度从信息升级为关键。</block>
   <block id="2699cef281fc3da983c3d28aec2a40f0" category="list-text">*容量使用率监视器*：警报基于您的订阅的承诺突发百分比，而不是固定值。例如，如果您的承诺突发为 40%，则当容量利用率达到承诺容量的 140% 时，会触发关键警报。</block>
+  <block id="68590e28745629d3e9c45d233ec874f4" category="paragraph">在 Digital Advisor 的*消费趋势*选项卡中，消费趋势图表不显示当天的消费数据，仅显示截至前一天的数据。</block>
+  <block id="c11ff4c4af6e617e0c27f005526215c1" category="paragraph">2026-08-10</block>
 </blocks>
