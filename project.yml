@@ -182,21 +182,21 @@ sidebar:
         url: "/concepts/pricing.html"
       - title: 针对特定卷类型的 Keystone 计费
         url: "/concepts/misc-volume-billing.html"
-  - title: 从Digital Advisor REST API访问Keystone
+  - title: 适用于 Keystone 的 Digital Advisor REST API
     entries:
-    - title: 开始使用Digital Advisor REST API检索Keystone数据
+    - title: 开始使用 Digital Advisor REST API
       url: "/rest-api/retrieve-keystone-data-with-digital-advisor-rest-api.html"
     - title: 生成刷新和访问令牌
       url: "/rest-api/generate-tokens.html"
-    - title: 使用Digital Advisor REST API获取所有客户的列表
+    - title: 获取 Keystone 客户列表
       url: "/rest-api/get-customer-list.html"
-    - title: 使用Digital Advisor REST API获取客户订阅
+    - title: 获取 Keystone 客户订阅
       url: "/rest-api/get-customer-subscriptions.html"
-    - title: 使用Digital Advisor REST API获取客户使用情况详细信息
+    - title: 获取 Keystone 客户消费详情
       url: "/rest-api/get-customer-consumption.html"
   - title: Keystone订阅服务版本1
     url: "/subscription-services-v1.html"
-  - title: 获取Keystone帮助
+  - title: Keystone 的支持服务
     url: "/concepts/support-services.html"
   - title: 法律声明
     url: "/legal-notices.html"

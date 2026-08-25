@@ -146,7 +146,7 @@ image:sla-breach.png["Excel工作表模板"]
 [NOTE]
 ====
 * 服务信用请求应在NetApp Keystone支持确认违规后六周内发起。所有服务抵免额均应由NetApp确认和批准。
-* 服务积分可能会应用于未来的发票。服务积分不适用于过期的 Keystone 订阅。要联系 NetApp 支持部门并打开服务积分请求所需的支持案例，请参阅 link:../concepts/support-services.html["获取Keystone帮助"]。
+* 服务积分可能会应用于未来的发票。服务积分不适用于过期的 Keystone 订阅。要联系 NetApp 支持并打开服务积分请求所需的支持案例，请参阅link:../concepts/support-services.html["Keystone 的支持服务"]。
 
 
 ====

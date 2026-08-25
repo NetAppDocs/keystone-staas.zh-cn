@@ -4,7 +4,7 @@ permalink: dark-sites/requirements.html
 keywords: installation, private mode, requirement, vmware vsphere, linux, networking,disk, space 
 summary: '在无法访问Internet的环境(也称为_dark site_or _private mode__)中安装Keystone收集器之前、请确保您的系统已准备好必要的软件并满足所有必需的前提条件。' 
 ---
-= 准备以私有模式安装Keystone Collector
+= 私有模式下 Keystone Collector 的安装要求
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -92,5 +92,5 @@ Keystone收集器的网络连接要求如下：
 * Keystone收集器服务器应可通过端口443 (HTTPS)访问Unified Manager服务器。
 * 应在Unified Manager服务器上为Keystone收集器设置具有应用程序用户权限的服务帐户。
 * 不需要外部Internet连接。
-* 每个月从Keystone Collector 导出一个文件并通过电子邮件发送给NetApp支持团队。如需了解如何联系支持团队的更多信息，请参阅 link:../concepts/support-services.html["获取Keystone帮助"]。
+* 每个月，从 Keystone Collector 导出文件并将其通过电子邮件发送给 NetApp 支持团队。有关如何联系支持团队的更多信息，请参阅 link:../concepts/support-services.html["Keystone 的支持服务"]。
 

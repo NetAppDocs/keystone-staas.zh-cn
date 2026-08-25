@@ -4,7 +4,7 @@ permalink: dark-sites/overview.html
 keywords: keystone, dark, site, staas, security, deployment, collector, encryption, access 
 summary: 'Keystone提供了一种_privi_部署模式(也称为_dark site_）、以满足您的业务和安全要求。' 
 ---
-= 了解Keystone (专用模式)
+= 在私密模式下了解 Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

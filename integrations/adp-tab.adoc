@@ -79,7 +79,7 @@ TIP: 您可以从 ADP 拓扑中选择 Cluster B 订阅（镜像），将其视�
 
 +
 
-TIP: 如果同步状态显示不同步或连接状态显示降级，请参阅 link:../concepts/support-services.html["获取Keystone帮助"] 以解决此问题。
+TIP: 如果同步状态显示不同步或连接状态显示降级，请参阅 link:../concepts/support-services.html["Keystone 的支持服务"] 以解决此问题。
 
 ** 查看主站点或镜像站点的历史消费趋势。
 +

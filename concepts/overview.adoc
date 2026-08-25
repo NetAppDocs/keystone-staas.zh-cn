@@ -42,6 +42,6 @@ Keystone 为文件、块和对象存储类型提供预定义性能服务级别�
 * link:../concepts/pricing.html["Keystone定价"]
 * link:../concepts/add-on.html["Keystone STaaS中的附加服务"]
 * link:../concepts/service-levels.html["Keystone 中的性能服务级别"]
-* link:../concepts/infra.html["Keystone基础架构"]
+* link:../concepts/infra.html["了解 Keystone 基础设施"]
 * link:../concepts/operational-models.html["Keystone中的操作模式"]
 

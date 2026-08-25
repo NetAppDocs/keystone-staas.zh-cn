@@ -95,5 +95,5 @@ image:sla-breach.png["Excel工作表模板"]
 * NetApp 确定是否发生服务级别违规。
 * 您必须按照 NetApp 的要求提供其他信息，包括您的瓦数消耗数据和测量方法。
 * 服务积分仅根据承诺容量计算。
-* 服务积分只能应用于下个月的发票。它们不适用于过期的 Keystone 订阅。要联系 NetApp 支持并打开服务积分请求所需的支持案例，请参阅link:../concepts/support-services.html["获取Keystone帮助"]。
+* 服务积分只能应用于下个月的发票。它们不适用于过期的 Keystone 订阅。要联系 NetApp 支持并打开服务积分请求所需的支持案例，请参阅link:../concepts/support-services.html["Keystone 的支持服务"]。
 
