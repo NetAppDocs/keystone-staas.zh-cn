@@ -22,6 +22,15 @@ summary: 在NetApp Keystone STaaS服务的先前版本中发现的问题已在�
 
 
  a| 
+在 Digital Advisor 的 *Consumption Trend* 选项卡中，当选择不同的日期范围时，已开票应计突发图表会显示同一计费周期的不同值。
+ a| 
+已修复
+ a| 
+2026-08-31
+
+
+
+ a| 
 在 Digital Advisor 的*消费趋势*选项卡中，消费趋势图表不显示当天的消费数据，仅显示截至前一天的数据。
  a| 
 已修复

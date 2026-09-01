@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concepts/metrics.html 
-keywords: metrics, GiB, IOPS, latency, durability, v3, version 3 
-summary: NetApp Keystone STaaS服务使用多个术语来衡量指标。在使用 Keystone 服务第 3 版时，您可能希望了解有关这些术语的更多信息。 
+keywords: metrics, GiB, TiB, PiB, IOPS, latency, durability, availability, capacity, performance, v3, version 3 
+summary: 了解 Keystone STaaS 如何衡量您的存储订阅的容量、性能和可用性。 
 ---
-= Keystone 中的存储指标和定义
+= Keystone STaaS 存储指标和定义
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,24 @@ summary: NetApp Keystone STaaS服务使用多个术语来衡量指标。在使�
 
 
 [role="lead"]
-了解 Keystone STaaS 用于衡量和报告存储订阅的关键术语，包括容量单位、性能指标和可用性定义。
+Keystone STaaS 使用特定术语来衡量和报告您的存储订阅。了解这些术语有助于您解读控制面板数据和订阅报告。
+
+[cols="1,3"]
+|===
+| 术语 | 定义 
 
 
+| 容量（GiB, TiB, PiB） | 数据存储容量使用 1024 的幂来衡量：1 GiB = 1024^3^ 字节，1 TiB = 1024^4^ 字节，1 PiB = 1024^5^ 字节。 
 
-[[metrics-measurement]]
-== 衡量指标
 
-* *以 GiB、TiB 和 PiB 为单位的容量测量*：使用 1024 为基数测量数据存储容量（1 GiB = 1024^3^ 字节、1 TiB = 1024^4^ 字节和 1 PiB = 1024^5^ 字节）。
-* *IOPS 中的操作计数器图表*：应用程序请求的每秒协议操作数。
-* *可用性*：以服务成功响应的I/O请求数的百分比除以对服务发出的I/O请求总数。这在一个月内的服务划分时进行衡量、不包括计划内服务停机或客户提供的设施、网络或其他服务不可用。
-* *持久性*：在不影响保真度的情况下访问数据的百分比、不包括客户导致的删除或损坏。
-* *延迟*：从客户端收到的I/O请求的服务时间、以服务划分(存储控制器I/O端口)为单位。
+| IOPS | IOPS（每秒 I/O 操作数）是应用程序每秒请求的协议操作数。IOPS 显示在 Keystone 仪表板上的运营计数器图表中。 
 
+
+| 可用性 | 可用性是服务成功响应的 I/O 请求占一个月内发出的 I/O 请求总数的百分比。这是在一个月内的服务分界点处进行衡量的，不包括计划内的服务停机时间，也不包括客户提供的设施、网络或其他服务不可用的情况。 
+
+
+| 耐用性 | 持久性是指在不损失保真度的情况下可以访问的数据百分比，不包括客户导致的删除或损坏。 
+
+
+| 延迟 | 延迟是在服务分界点（存储控制器 I/O 端口）测量的为从客户端接收的 I/O 请求提供服务的时间。 
+|===
